@@ -1,0 +1,1329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MakerSquare — AI Bootcamp Austin</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #0c1828;
+  --bg2: #0f1f33;
+  --bg3: #162840;
+  --border: rgba(61,158,255,0.12);
+  --border2: rgba(61,158,255,0.24);
+  --text: #ffffff;
+  --muted: #4e6a85;
+  --muted2: #8aaec8;
+  --accent: #3d9eff;
+  --accent2: #2b85e8;
+  --green: #4ade80;
+  --font-display: 'Inter', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  letter-spacing: -0.01em;
+}
+
+/* ── NAV ── */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  padding: 0 2.5rem;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(10,10,11,0.88);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-bottom: 1px solid var(--border);
+}
+.nav-logo {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  text-decoration: none;
+}
+.nav-logo span { color: var(--accent); }
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+.nav-links a {
+  font-size: 13px;
+  color: var(--muted2);
+  text-decoration: none;
+  letter-spacing: 0.01em;
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--text); }
+.nav-cta {
+  background: var(--accent);
+  color: #0a0a0b;
+  border: none;
+  padding: 9px 22px;
+  border-radius: 6px;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+  text-decoration: none;
+}
+.nav-cta:hover { background: var(--accent2); transform: translateY(-1px); }
+
+/* ── HERO ── */
+#hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 100px 2.5rem 80px;
+  position: relative;
+  overflow: hidden;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.hero-grid {
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(61,158,255,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(61,158,255,0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+  mask-image: radial-gradient(ellipse 60% 80% at 30% 50%, black 0%, transparent 70%);
+  -webkit-mask-image: radial-gradient(ellipse 60% 80% at 30% 50%, black 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+.hero-glow {
+  position: absolute;
+  width: 600px; height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(61,158,255,0.08) 0%, transparent 70%);
+  top: 50%; right: -150px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+.hero-left {
+  flex: 1;
+  max-width: 560px;
+  position: relative;
+  z-index: 1;
+}
+.hero-right {
+  flex: 0 0 340px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+  z-index: 1;
+  margin-left: auto;
+}
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(61,158,255,0.1);
+  border: 1px solid rgba(61,158,255,0.28);
+  border-radius: 100px;
+  padding: 6px 16px;
+  font-size: 11px;
+  color: var(--accent);
+  letter-spacing: 0.06em;
+  margin-bottom: 1.75rem;
+  animation: fadeUp 0.6s ease both;
+}
+.hero-badge-dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--green);
+  box-shadow: 0 0 8px var(--green);
+}
+h1 {
+  font-family: var(--font-display);
+  font-size: clamp(1.9rem, 3.2vw, 2.8rem);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  margin-bottom: 1.25rem;
+  animation: fadeUp 0.6s 0.1s ease both;
+}
+h1 em { font-style: normal; color: var(--accent); }
+.hero-sub {
+  font-size: 1rem;
+  color: var(--muted2);
+  max-width: 460px;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  font-weight: 300;
+  animation: fadeUp 0.6s 0.2s ease both;
+}
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+  animation: fadeUp 0.6s 0.3s ease both;
+}
+.btn-primary {
+  background: var(--accent);
+  color: #0a0a0b;
+  padding: 13px 26px;
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.15s;
+  display: inline-block;
+}
+.btn-primary:hover { background: var(--accent2); transform: translateY(-1px); }
+.btn-ghost {
+  color: var(--muted2);
+  padding: 13px 16px;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.btn-ghost:hover { color: var(--text); }
+
+/* Hero right — outcome cards */
+.hero-outcome-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  animation: fadeUp 0.6s ease both;
+}
+.hero-outcome-card:nth-child(1) { animation-delay: 0.15s; }
+.hero-outcome-card:nth-child(2) { animation-delay: 0.25s; }
+.hero-outcome-card:nth-child(3) { animation-delay: 0.35s; }
+.hoc-label {
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.4rem;
+}
+.hoc-text {
+  font-size: 14px;
+  color: var(--text);
+  line-height: 1.5;
+  font-weight: 400;
+}
+.hoc-sub {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 0.3rem;
+}
+.hero-stat-row {
+  display: flex;
+  gap: 0;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  animation: fadeUp 0.5s 0.4s ease both;
+}
+.hero-stat {
+  flex: 1;
+  padding: 1rem;
+  background: var(--bg2);
+  text-align: center;
+  border-right: 1px solid var(--border);
+}
+.hero-stat:last-child { border-right: none; }
+.hero-stat-num {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1;
+  margin-bottom: 3px;
+}
+.hero-stat-label {
+  font-size: 10px;
+  color: var(--muted);
+  letter-spacing: 0.03em;
+}
+
+/* ── TICKER ── */
+.ticker-wrap {
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  background: var(--bg2);
+  padding: 16px 0;
+  overflow: hidden;
+}
+.ticker-track {
+  display: flex;
+  width: max-content;
+  animation: ticker 24s linear infinite;
+}
+.ticker-item {
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  white-space: nowrap;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.ticker-item::after { content: '·'; color: var(--accent); }
+
+/* ── SHARED SECTION STYLES ── */
+.section-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 110px 2.5rem;
+}
+.section-wrap.full {
+  max-width: 100%;
+  background: var(--bg2);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.section-wrap.full .inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 110px 2.5rem;
+}
+.section-wrap.narrow { max-width: 780px; }
+
+.section-label {
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.section-label::before {
+  content: '';
+  width: 22px; height: 1px;
+  background: var(--accent);
+  flex-shrink: 0;
+}
+h2 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 3.8vw, 2.9rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.035em;
+  margin-bottom: 1rem;
+}
+h2 em { font-style: normal; color: var(--accent); }
+
+/* ── BENEFITS ── */
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+  margin-top: 3.5rem;
+}
+.benefit-card {
+  background: var(--bg2);
+  padding: 2.2rem;
+  transition: background 0.25s;
+}
+.benefit-card:hover { background: var(--bg3); }
+.benefit-icon {
+  width: 38px; height: 38px;
+  border-radius: 8px;
+  background: rgba(61,158,255,0.1);
+  border: 1px solid rgba(61,158,255,0.2);
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 1.1rem;
+  font-size: 15px;
+}
+.benefit-title {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 0.45rem;
+  letter-spacing: -0.01em;
+}
+.benefit-desc {
+  font-size: 13.5px;
+  color: var(--muted2);
+  line-height: 1.65;
+  font-weight: 300;
+}
+
+/* ── PERSONAS ── */
+.personas-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 3.5rem;
+}
+.persona-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 2.2rem;
+  transition: border-color 0.25s, background 0.25s;
+}
+.persona-card:hover {
+  background: var(--bg3);
+  border-color: rgba(61,158,255,0.2);
+}
+.persona-role {
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+}
+.persona-headline {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+}
+.persona-desc {
+  font-size: 14px;
+  color: var(--muted2);
+  line-height: 1.7;
+  font-weight: 300;
+}
+.persona-tag {
+  display: inline-block;
+  margin-top: 1.25rem;
+  font-size: 11px;
+  color: var(--muted);
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  padding: 4px 14px;
+  letter-spacing: 0.03em;
+}
+
+/* ── ABOUT ── */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.5rem;
+  align-items: start;
+}
+.about-body p {
+  color: var(--muted2);
+  font-weight: 300;
+  font-size: 15px;
+  margin-bottom: 1.1rem;
+  line-height: 1.75;
+}
+.checklist {
+  list-style: none;
+  margin-top: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.checklist li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--muted2);
+  line-height: 1.5;
+}
+.checklist li::before {
+  content: '→';
+  color: var(--accent);
+  flex-shrink: 0;
+  font-size: 12px;
+  margin-top: 3px;
+}
+.about-stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+  align-self: start;
+  min-width: 0;
+}
+.about-stat {
+  background: var(--bg2);
+  padding: 1.75rem;
+  min-width: 0;
+  overflow: hidden;
+}
+.about-stat-num {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  font-weight: 800;
+  color: var(--accent);
+  letter-spacing: -0.03em;
+  line-height: 1;
+  margin-bottom: 0.3rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.about-stat-label {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* ── WHY US / COMPARE ── */
+.compare-intro {
+  color: var(--muted2);
+  max-width: 520px;
+  font-size: 15px;
+  font-weight: 300;
+  margin-top: 0.75rem;
+  line-height: 1.7;
+}
+.compare-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 3rem;
+}
+.compare-card {
+  border-radius: 14px;
+  padding: 2.2rem;
+  border: 1px solid var(--border);
+}
+.compare-card.ours {
+  background: rgba(61,158,255,0.04);
+  border-color: rgba(61,158,255,0.22);
+}
+.compare-card.theirs { background: var(--bg3); }
+.compare-heading {
+  font-size: 11px;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  margin-bottom: 1.3rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+.compare-heading.ours { color: var(--accent); }
+.compare-heading.theirs { color: var(--muted); }
+.compare-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 0.55rem 0;
+  font-size: 14px;
+  border-bottom: 1px solid var(--border);
+}
+.compare-row:last-child { border-bottom: none; }
+.compare-row.good { color: var(--text); }
+.compare-row.bad { color: var(--muted); text-decoration: line-through; }
+.ci { flex-shrink: 0; font-size: 11px; margin-top: 3px; }
+.ci.yes { color: var(--green); }
+.ci.no { color: #444; }
+
+/* ── CURRICULUM ── */
+.phases {
+  margin-top: 3.5rem;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+}
+.phase {
+  display: grid;
+  grid-template-columns: 190px 1fr;
+  gap: 2.5rem;
+  align-items: start;
+  padding: 2.2rem 2.5rem;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg2);
+  transition: background 0.2s;
+}
+.phase:last-child { border-bottom: none; }
+.phase:hover { background: var(--bg3); }
+.phase-tag {
+  display: inline-block;
+  font-size: 10px;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: rgba(61,158,255,0.1);
+  border-radius: 4px;
+  padding: 3px 9px;
+  margin-bottom: 0.5rem;
+}
+.phase-weeks { font-size: 12px; color: var(--muted); }
+.phase-title {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  margin-bottom: 0.5rem;
+}
+.phase-desc {
+  font-size: 14px;
+  color: var(--muted2);
+  line-height: 1.7;
+  font-weight: 300;
+}
+.phase-deliverable {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 0.85rem;
+  font-size: 12px;
+  color: var(--green);
+  background: rgba(74,222,128,0.08);
+  border: 1px solid rgba(74,222,128,0.15);
+  border-radius: 5px;
+  padding: 4px 12px;
+}
+
+/* ── EMAIL CAPTURE ── */
+.email-capture {
+  max-width: 100%;
+  background: var(--bg2);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.email-capture .inner {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 80px 2.5rem;
+  text-align: center;
+}
+.email-capture h3 {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: 0.75rem;
+}
+.email-capture h3 em { font-style: normal; color: var(--accent); }
+.email-capture p {
+  font-size: 14px;
+  color: var(--muted2);
+  font-weight: 300;
+  margin-bottom: 2rem;
+  line-height: 1.7;
+}
+.email-form {
+  display: flex;
+  gap: 10px;
+  max-width: 460px;
+  margin: 0 auto;
+}
+.email-form input {
+  flex: 1;
+  background: var(--bg3);
+  border: 1px solid var(--border2);
+  border-radius: 8px;
+  padding: 13px 16px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--text);
+  outline: none;
+  transition: border-color 0.2s;
+}
+.email-form input::placeholder { color: var(--muted); }
+.email-form input:focus { border-color: rgba(61,158,255,0.4); }
+.email-form button {
+  background: var(--accent);
+  color: #0a0a0b;
+  border: none;
+  padding: 13px 22px;
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s;
+}
+.email-form button:hover { background: var(--accent2); }
+.email-fine {
+  margin-top: 1rem;
+  font-size: 11px;
+  color: var(--muted);
+  letter-spacing: 0.02em;
+}
+
+/* ── PRICING ── */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 3.5rem;
+}
+.pricing-card {
+  border-radius: 14px;
+  padding: 2.5rem;
+  border: 1px solid var(--border);
+  background: var(--bg2);
+  position: relative;
+}
+.pricing-card.featured {
+  border-color: rgba(61,158,255,0.3);
+  background: rgba(61,158,255,0.04);
+}
+.pricing-badge {
+  position: absolute;
+  top: -1px; right: 28px;
+  background: var(--accent);
+  color: #0a0a0b;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  padding: 5px 14px;
+  border-radius: 0 0 7px 7px;
+}
+.pricing-tier {
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.8rem;
+}
+.pricing-price {
+  font-family: var(--font-display);
+  font-size: 3.2rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  margin-bottom: 0.3rem;
+}
+.pricing-price.dimmed { color: var(--muted); }
+.pricing-sub {
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 1.8rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+  line-height: 1.5;
+}
+.pricing-features {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  margin-bottom: 2rem;
+}
+.pricing-features li {
+  font-size: 13.5px;
+  color: var(--muted2);
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  line-height: 1.4;
+}
+.pricing-features li::before { content: '✓'; color: var(--green); font-size: 11px; flex-shrink: 0; margin-top: 2px; }
+.pricing-features li.dim::before { color: var(--muted); }
+.pricing-features li.dim { color: var(--muted); }
+.btn-full {
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  transition: all 0.2s;
+  border: none;
+}
+.btn-full.primary { background: var(--accent); color: #0a0a0b; }
+.btn-full.primary:hover { background: var(--accent2); }
+.btn-full.ghost { background: transparent; color: var(--muted2); border: 1px solid var(--border2); }
+.btn-full.ghost:hover { border-color: var(--muted2); color: var(--text); }
+
+/* ── APPLICATION PROCESS ── */
+.apply-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+  margin-top: 3.5rem;
+}
+.apply-step {
+  background: var(--bg2);
+  padding: 2.5rem 2.2rem;
+  position: relative;
+}
+.apply-step-num {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 800;
+  color: rgba(61,158,255,0.12);
+  letter-spacing: -0.04em;
+  line-height: 1;
+  margin-bottom: 1.25rem;
+}
+.apply-step-title {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.6rem;
+}
+.apply-step-desc {
+  font-size: 13.5px;
+  color: var(--muted2);
+  line-height: 1.65;
+  font-weight: 300;
+}
+.apply-step-time {
+  display: inline-block;
+  margin-top: 1.1rem;
+  font-size: 11px;
+  color: var(--accent);
+  letter-spacing: 0.06em;
+  background: rgba(61,158,255,0.08);
+  border: 1px solid rgba(61,158,255,0.15);
+  border-radius: 100px;
+  padding: 3px 12px;
+}
+.apply-cta {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.apply-note {
+  font-size: 13px;
+  color: var(--muted);
+  font-weight: 300;
+}
+
+/* ── FAQ ── */
+.faq-list { margin-top: 3.5rem; }
+.faq-item { border-bottom: 1px solid var(--border); padding: 1.5rem 0; }
+.faq-q {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.6rem;
+}
+.faq-a {
+  font-size: 14px;
+  color: var(--muted2);
+  line-height: 1.75;
+  font-weight: 300;
+}
+
+/* ── FINAL CTA ── */
+.cta-section {
+  background: var(--bg2);
+  border-top: 1px solid var(--border);
+  text-align: center;
+  padding: 130px 2.5rem;
+}
+.cta-section .section-label { justify-content: center; }
+.cta-inner { max-width: 620px; margin: 0 auto; }
+.cta-inner h2 { margin-bottom: 1rem; }
+.cta-inner p {
+  color: var(--muted2);
+  font-size: 15px;
+  font-weight: 300;
+  max-width: 440px;
+  margin: 0 auto 2.5rem;
+  line-height: 1.75;
+}
+.cta-fine {
+  margin-top: 1.5rem;
+  font-size: 12px;
+  color: var(--muted);
+  letter-spacing: 0.01em;
+}
+
+/* ── FOOTER ── */
+footer {
+  border-top: 1px solid var(--border);
+  padding: 2rem 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.footer-logo {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none;
+  color: var(--text);
+}
+.footer-logo span { color: var(--accent); }
+.footer-copy { font-size: 12px; color: var(--muted); }
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes ticker {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  #hero { flex-direction: column; gap: 3rem; padding-top: 110px; }
+  .hero-right { flex: unset; width: 100%; margin-left: 0; }
+  .benefits-grid { grid-template-columns: 1fr 1fr; }
+  .personas-grid { grid-template-columns: 1fr 1fr; }
+  .about-grid, .compare-grid, .pricing-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .phase { grid-template-columns: 1fr; gap: 0.5rem; }
+  .apply-steps { grid-template-columns: 1fr; }
+  .email-form { flex-direction: column; }
+}
+@media (max-width: 600px) {
+  .benefits-grid { grid-template-columns: 1fr; }
+  .personas-grid { grid-template-columns: 1fr; }
+  .nav-links { display: none; }
+  footer { flex-direction: column; gap: 0.5rem; text-align: center; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">Maker<span>Square</span></a>
+  <ul class="nav-links">
+    <li><a href="#benefits">How it works</a></li>
+    <li><a href="#who">Who it's for</a></li>
+    <li><a href="curriculum.html">Curriculum</a></li>
+    <li><a href="pricing.html">Tuition</a></li>
+    <li><a href="housing.html">Housing</a></li>
+    <li><a href="team.html">Team</a></li>
+    <li><a href="apply.html">Apply</a></li>
+  </ul>
+  <a href="apply.html" class="nav-cta">Apply Now</a>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-glow"></div>
+
+  <div class="hero-left">
+    <div class="hero-badge">
+      <div class="hero-badge-dot"></div>
+      Austin, TX &nbsp;·&nbsp; Now Enrolling &nbsp;·&nbsp; Starts July 2026
+    </div>
+    <h1>You already know your industry.<br><em>Now learn to build with AI.</em></h1>
+    <p class="hero-sub">An 8-week, in-person program in Austin for operators, founders, and professionals who are ready to stop watching AI change their field — and start using it to build something real.</p>
+    <div class="hero-actions">
+      <a href="#apply" class="btn-primary">Apply Now →</a>
+      <a href="#curriculum" class="btn-ghost">See what you'll build</a>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="hero-outcome-card">
+      <div class="hoc-label">If you run a business</div>
+      <div class="hoc-text">Build AI tools that do the work your team keeps putting off</div>
+      <div class="hoc-sub">Automate reports, proposals, client comms, and internal ops — without hiring a developer</div>
+    </div>
+    <div class="hero-outcome-card">
+      <div class="hoc-label">If you're building a career</div>
+      <div class="hoc-text">Become the person your organization depends on for AI</div>
+      <div class="hoc-sub">Go from curious to hands-on — the skill that separates the next decade's leaders</div>
+    </div>
+    <div class="hero-outcome-card">
+      <div class="hoc-label">If you have an idea</div>
+      <div class="hoc-text">Ship your first AI product without a technical co-founder</div>
+      <div class="hoc-sub">Turn your domain expertise into a real, deployed product that solves a real problem</div>
+    </div>
+    <div class="hero-stat-row">
+      <div class="hero-stat">
+        <div class="hero-stat-num">8 wks</div>
+        <div class="hero-stat-label">In-person</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">Austin</div>
+        <div class="hero-stat-label">Texas</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">No code</div>
+        <div class="hero-stat-label">Required</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker-wrap">
+  <div class="ticker-track">
+    <span class="ticker-item">Marketing</span>
+    <span class="ticker-item">Consulting</span>
+    <span class="ticker-item">Operations</span>
+    <span class="ticker-item">Finance</span>
+    <span class="ticker-item">Healthcare</span>
+    <span class="ticker-item">Real Estate</span>
+    <span class="ticker-item">Legal</span>
+    <span class="ticker-item">Startups</span>
+    <span class="ticker-item">Marketing</span>
+    <span class="ticker-item">Consulting</span>
+    <span class="ticker-item">Operations</span>
+    <span class="ticker-item">Finance</span>
+    <span class="ticker-item">Healthcare</span>
+    <span class="ticker-item">Real Estate</span>
+    <span class="ticker-item">Legal</span>
+    <span class="ticker-item">Startups</span>
+  </div>
+</div>
+
+<!-- BENEFITS -->
+<div class="section-wrap" id="benefits">
+  <div class="section-label">How it works</div>
+  <h2>Built around your life,<br><em>designed to get you building.</em></h2>
+  <div class="benefits-grid">
+    <div class="benefit-card">
+      <div class="benefit-icon">⬡</div>
+      <div class="benefit-title">Keep Your Income While You Learn</div>
+      <div class="benefit-desc">Class meets Mon / Wed / Fri in Austin. The other two days are yours — keep your job, your clients, or your business running while you build new skills.</div>
+    </div>
+    <div class="benefit-card">
+      <div class="benefit-icon">◈</div>
+      <div class="benefit-title">Your Expertise Is the Advantage</div>
+      <div class="benefit-desc">No coding background required. The people who get the most out of this program are the ones who already know their industry deeply. We teach the AI — you bring the insight.</div>
+    </div>
+    <div class="benefit-card">
+      <div class="benefit-icon">◎</div>
+      <div class="benefit-title">Never Get Stuck</div>
+      <div class="benefit-desc">A dedicated instructor team is available around the clock — evening office hours, async feedback, and a cohort community so you never lose momentum between sessions.</div>
+    </div>
+    <div class="benefit-card">
+      <div class="benefit-icon">▣</div>
+      <div class="benefit-title">You Leave With Real Products</div>
+      <div class="benefit-desc">No certificates. You graduate with 3 deployed AI products — live, working tools you built yourself. Things you can show, sell, or put to work immediately.</div>
+    </div>
+    <div class="benefit-card">
+      <div class="benefit-icon">◇</div>
+      <div class="benefit-title">Small Cohorts, on Purpose</div>
+      <div class="benefit-desc">Every applicant completes a short take-home project before admission. We keep cohorts small and selective — the quality of the people around you is part of the program.</div>
+    </div>
+    <div class="benefit-card">
+      <div class="benefit-icon">△</div>
+      <div class="benefit-title">A Public Stage on Demo Day</div>
+      <div class="benefit-desc">At the end of the program, you present your capstone to Austin operators, founders, and investors at a public Demo Day. Your first real audience for what you built.</div>
+    </div>
+  </div>
+</div>
+
+<!-- WHO IT'S FOR -->
+<div class="section-wrap full" id="who">
+  <div class="inner">
+    <div class="section-label">Who it's for</div>
+    <h2>You don't need a technical background.<br><em>You need the right one.</em></h2>
+    <p class="compare-intro">MakerSquare isn't for everyone — and that's the point. Here's who tends to get the most out of it.</p>
+    <div class="personas-grid">
+
+      <div class="persona-card">
+        <div class="persona-role">The Operator</div>
+        <div class="persona-headline">You run something and there's always too much to do</div>
+        <div class="persona-desc">You manage a team, a practice, or a business. There are reports that take hours, proposals that get rewritten every time, client emails that follow the same pattern. You know AI should be doing half of this — you just haven't had the time or the right guide to set it up. You leave MakerSquare with tools that actually run without you.</div>
+        <span class="persona-tag">Business owners · GMs · Department heads · Consultants</span>
+      </div>
+
+      <div class="persona-card">
+        <div class="persona-role">The Career Builder</div>
+        <div class="persona-headline">You're good at your job and you want to stay that way</div>
+        <div class="persona-desc">You've built a real career — years of experience, a reputation, a network. But the ground is shifting and you feel it. Younger colleagues are experimenting with AI tools you haven't touched. You don't want to catch up in two years. You want to be ahead of it now, and you want the skills to prove it — not a certificate, but actual work you've shipped.</div>
+        <span class="persona-tag">Marketers · Finance professionals · HR leads · Account managers</span>
+      </div>
+
+      <div class="persona-card">
+        <div class="persona-role">The Domain Expert</div>
+        <div class="persona-headline">You know your field better than anyone — and you have an idea</div>
+        <div class="persona-desc">A decade in healthcare, law, real estate, or finance. You've seen the same inefficiency over and over. You've thought about building something to fix it — maybe for years. What stopped you was the technical layer. That layer is now accessible to anyone who's willing to learn how to use it. MakerSquare is where you finally ship the thing you've been thinking about.</div>
+        <span class="persona-tag">Lawyers · Healthcare professionals · Real estate agents · Financial advisors</span>
+      </div>
+
+      <div class="persona-card">
+        <div class="persona-role">The First-Time Builder</div>
+        <div class="persona-headline">You have the idea and the drive — you just need the technical layer</div>
+        <div class="persona-desc">You want to build a product. You have a clear problem in mind, you understand the market, and you have the work ethic. What you don't have is an engineering background — and you have zero interest in spending two years getting one. MakerSquare is the fastest path from "I have an idea" to a working product you can show to real users.</div>
+        <span class="persona-tag">Aspiring founders · Side project builders · Career changers</span>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<div class="section-wrap" id="about">
+  <div class="about-grid">
+    <div class="about-body">
+      <div class="section-label">About the program</div>
+      <h2>Made for people who<br><em>are ready to stop waiting.</em></h2>
+      <p>You've been watching AI change your industry. You've used the basic tools. You know this matters. But nobody has built a program for someone like you — experienced, non-technical, and ready to actually do something with it.</p>
+      <p>MakerSquare is for professionals who want to build, not just learn. In 8 weeks, you'll go from curious to shipped — with real products, real skills, and a real network in Austin's tech scene.</p>
+      <ul class="checklist">
+        <li>Build and deploy AI tools using no-code and low-code platforms</li>
+        <li>Create an AI that searches and reasons over your own documents and data</li>
+        <li>Set up automated workflows that run without you lifting a finger</li>
+        <li>Know when your AI tool is actually working — and how to fix it when it isn't</li>
+        <li>Price, position, and find your first customers for what you build</li>
+        <li>Present a live, working product to investors and operators at Demo Day</li>
+      </ul>
+    </div>
+    <div class="about-stats-grid">
+      <div class="about-stat">
+        <div class="about-stat-num">8</div>
+        <div class="about-stat-label">Weeks in-person</div>
+      </div>
+      <div class="about-stat">
+        <div class="about-stat-num">3</div>
+        <div class="about-stat-label">Products you ship</div>
+      </div>
+      <div class="about-stat">
+        <div class="about-stat-num">3×</div>
+        <div class="about-stat-label">Days per week</div>
+      </div>
+      <div class="about-stat">
+        <div class="about-stat-num">July</div>
+        <div class="about-stat-label">Next cohort starts</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- WHY US -->
+<div class="section-wrap full" id="why">
+  <div class="inner">
+    <div class="section-label">Why MakerSquare</div>
+    <h2>Most AI programs weren't<br><em>built for you.</em></h2>
+    <p class="compare-intro">Online courses are built for passive learners — you watch videos, maybe finish, get a certificate, build nothing. Intensive coding bootcamps require an engineering background you don't have. MakerSquare was built for the gap: experienced professionals who want to ship something real.</p>
+    <div class="compare-grid">
+      <div class="compare-card theirs">
+        <div class="compare-heading theirs">Most other programs</div>
+        <div class="compare-row bad"><span class="ci no">✕</span> Self-paced, easy to abandon</div>
+        <div class="compare-row bad"><span class="ci no">✕</span> Require a technical background</div>
+        <div class="compare-row bad"><span class="ci no">✕</span> You finish with a certificate, not a product</div>
+        <div class="compare-row bad"><span class="ci no">✕</span> 100+ students, no real accountability</div>
+        <div class="compare-row bad"><span class="ci no">✕</span> Theoretical — nothing actually deployed</div>
+        <div class="compare-row bad"><span class="ci no">✕</span> No community or network after you're done</div>
+      </div>
+      <div class="compare-card ours">
+        <div class="compare-heading ours">MakerSquare</div>
+        <div class="compare-row good"><span class="ci yes">✓</span> In-person, 3× a week — hard to quit</div>
+        <div class="compare-row good"><span class="ci yes">✓</span> Built specifically for non-technical professionals</div>
+        <div class="compare-row good"><span class="ci yes">✓</span> You graduate with 3 live, deployed products</div>
+        <div class="compare-row good"><span class="ci yes">✓</span> Small, selective cohorts — everyone's serious</div>
+        <div class="compare-row good"><span class="ci yes">✓</span> Real tools, real users, real outcomes</div>
+        <div class="compare-row good"><span class="ci yes">✓</span> Austin operator network for life</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CURRICULUM -->
+<div class="section-wrap" id="curriculum">
+  <div class="section-label">What you'll build</div>
+  <h2>8 weeks. 3 phases.<br><em>3 products you actually ship.</em></h2>
+  <div class="phases">
+    <div class="phase">
+      <div>
+        <div class="phase-tag">Phase 1</div>
+        <div class="phase-weeks">Weeks 1–2</div>
+      </div>
+      <div>
+        <div class="phase-title">Foundations</div>
+        <div class="phase-desc">How AI models actually work — the intuition, not the math. How to write prompts that get professional-grade results. The tools that let non-engineers build real products: Cursor, Lovable, Replit, and others. How to connect AI to the real world without writing code.</div>
+        <div class="phase-deliverable">→ Week 2: your first deployed AI tool, solving a real problem in your domain</div>
+      </div>
+    </div>
+    <div class="phase">
+      <div>
+        <div class="phase-tag">Phase 2</div>
+        <div class="phase-weeks">Weeks 3–5</div>
+      </div>
+      <div>
+        <div class="phase-title">Building</div>
+        <div class="phase-desc">AI that searches and reasons over your own documents, emails, and files. Automated agents that complete multi-step workflows on their own — even when you're not there. How to test whether your AI is actually doing what you think it is.</div>
+        <div class="phase-deliverable">→ Week 4: an AI built on your own data &nbsp;·&nbsp; Week 5: a fully automated workflow</div>
+      </div>
+    </div>
+    <div class="phase">
+      <div>
+        <div class="phase-tag">Phase 3</div>
+        <div class="phase-weeks">Weeks 6–8</div>
+      </div>
+      <div>
+        <div class="phase-title">Ship &amp; Scale</div>
+        <div class="phase-desc">Turning your prototype into something others can actually use. How to price it, find your first customers, and talk about what it does. Managing costs as usage grows. Your capstone: a fully deployed, production-ready AI product presented to a live Austin audience.</div>
+        <div class="phase-deliverable">→ Week 8: Demo Day — present to Austin operators, founders, and investors</div>
+      </div>
+    </div>
+  </div>
+  <div style="text-align:center; margin-top:2.5rem;">
+    <a href="curriculum.html" class="btn-ghost" style="display:inline-block;">See the full 8-week curriculum →</a>
+  </div>
+</div>
+
+<!-- EMAIL CAPTURE -->
+<div class="email-capture">
+  <div class="inner">
+    <h3>Not ready to apply yet?<br><em>Get the full details first.</em></h3>
+    <p>We'll send you the complete curriculum, a sample take-home project, and info on the next cohort. No pressure, no spam.</p>
+    <div class="email-form">
+      <input type="email" placeholder="Your email address" />
+      <button type="submit">Send it →</button>
+    </div>
+    <div class="email-fine">We'll get back to you within 24 hours.</div>
+  </div>
+</div>
+
+<!-- PRICING -->
+<div class="section-wrap full" id="pricing">
+  <div class="inner">
+    <div class="section-label">Tuition</div>
+    <h2>Straightforward pricing.<br><em>Intentionally small cohorts.</em></h2>
+    <div class="pricing-grid">
+      <div class="pricing-card featured">
+        <div class="pricing-badge">Applications Open</div>
+        <div class="pricing-tier">In-Person · Austin, TX · Starting July 2026</div>
+        <div class="pricing-price">$8,000</div>
+        <div class="pricing-sub">Small cohort &nbsp;·&nbsp; Selective admission &nbsp;·&nbsp; Short take-home project required</div>
+        <ul class="pricing-features">
+          <li>8 weeks in-person, Austin TX</li>
+          <li>Mon / Wed / Fri · 9am–3pm</li>
+          <li>24-hr async instructor support</li>
+          <li>3 deployed AI products</li>
+          <li>Demo Day + investor access</li>
+          <li>Lifetime alumni network</li>
+          <li>Payment plans available</li>
+        </ul>
+        <a href="#apply" class="btn-full primary">Apply Now →</a>
+      </div>
+      <div class="pricing-card">
+        <div class="pricing-tier">Corporate Cohort · Custom</div>
+        <div class="pricing-price dimmed">Custom</div>
+        <div class="pricing-sub">Private cohorts for teams &nbsp;·&nbsp; Custom curriculum &nbsp;·&nbsp; Flexible scheduling</div>
+        <ul class="pricing-features">
+          <li>Everything in the standard cohort</li>
+          <li>Private cohort for your team</li>
+          <li>Curriculum tailored to your industry</li>
+          <li>Flexible on timing and location</li>
+          <li class="dim">Contact us for pricing</li>
+        </ul>
+        <a href="#" class="btn-full ghost">Get in Touch</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- APPLICATION PROCESS -->
+<div class="section-wrap" id="apply">
+  <div class="section-label">How to apply</div>
+  <h2>Three steps.<br><em>The whole thing takes a week.</em></h2>
+  <div class="apply-steps">
+    <div class="apply-step">
+      <div class="apply-step-num">01</div>
+      <div class="apply-step-title">Fill out the application</div>
+      <div class="apply-step-desc">Tell us about your background, what you want to build, and why now. No resume required. We're not looking for credentials — we're looking for people with a real problem to solve and the drive to solve it.</div>
+      <span class="apply-step-time">~10 minutes</span>
+    </div>
+    <div class="apply-step">
+      <div class="apply-step-num">02</div>
+      <div class="apply-step-title">Complete a short take-home project</div>
+      <div class="apply-step-desc">We'll send you a short, practical challenge to complete at your own pace. It's designed around what you already know — not what you haven't learned yet. This is how we make sure every person in the room is serious.</div>
+      <span class="apply-step-time">2–3 hours, at your own pace</span>
+    </div>
+    <div class="apply-step">
+      <div class="apply-step-num">03</div>
+      <div class="apply-step-title">We'll be in touch within a week</div>
+      <div class="apply-step-desc">We review every application personally. If it's a fit, we'll reach out to schedule a short call. If the timing isn't right, we'll let you know — and keep you in mind for future cohorts.</div>
+      <span class="apply-step-time">Decision within 7 days</span>
+    </div>
+  </div>
+  <div class="apply-cta">
+    <a href="#" class="btn-primary">Start Your Application →</a>
+    <span class="apply-note">Questions first? Email us at hello@makersquare.ai</span>
+  </div>
+</div>
+
+<!-- FAQ -->
+<div class="section-wrap narrow" id="faq">
+  <div class="section-label">Questions</div>
+  <h2>Things people<br><em>usually ask us.</em></h2>
+  <div class="faq-list">
+    <div class="faq-item">
+      <div class="faq-q">Do I need to know how to code?</div>
+      <div class="faq-a">No. The only prerequisite is basic computer fluency and real experience in your field. If you've spent years building expertise in your industry, that's exactly what we're looking for. We'll handle the rest.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">What's the time commitment?</div>
+      <div class="faq-a">Class runs Mon / Wed / Fri from 9am–3pm (18 hours per week) for 8 weeks, plus 10–15 hours of project work on your own time. The schedule is intentional — you keep earning while you build.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">How selective is it?</div>
+      <div class="faq-a">Every applicant completes a short take-home project before a decision is made. We keep cohorts small by design — we're not looking for the most experienced people, we're looking for the most motivated.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">What do I actually walk away with?</div>
+      <div class="faq-a">Three deployed AI products, live and working. A Demo Day presentation to Austin operators and investors. And a cohort of fellow builders who become your long-term network — people who are building with AI in your city, in your field.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Is this right for me if I'm not trying to start a company?</div>
+      <div class="faq-a">Absolutely. Many students come in wanting to automate work at their existing job, build a tool for a client, or just develop a serious new skill. You don't need a startup idea — you just need a problem you care about solving.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Why Austin?</div>
+      <div class="faq-a">Austin has one of the fastest-growing concentrations of founders, operators, and domain experts in the country — with an active VC and angel community that becomes part of your network the moment you step on stage at Demo Day.</div>
+    </div>
+  </div>
+</div>
+
+<!-- FINAL CTA -->
+<div class="cta-section">
+  <div class="cta-inner">
+    <div class="section-label">Apply</div>
+    <h2>Starts July 2026.<br><em>Seats are limited.</em></h2>
+    <p>If you've been meaning to get serious about AI — not just read about it, but actually build something with it — this is the program. Applications are open now.</p>
+    <a href="apply.html" class="btn-primary" style="font-size:15px; padding:16px 40px;">Apply Now →</a>
+    <div class="cta-fine">Starts July 2026 &nbsp;·&nbsp; Austin, TX &nbsp;·&nbsp; Limited seats &nbsp;·&nbsp; $8,000 tuition</div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <a href="#" class="footer-logo">Maker<span>Square</span></a>
+  <div class="footer-copy">© 2026 MakerSquare. Austin, TX.</div>
+</footer>
+
+</body>
+</html>

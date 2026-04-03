@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Curriculum — MakerSquare AI Bootcamp</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --bg: #0c1828; --bg2: #0f1f33; --bg3: #162840;
+  --border: rgba(61,158,255,0.12); --border2: rgba(61,158,255,0.24);
+  --text: #ffffff; --muted: #4e6a85; --muted2: #8aaec8;
+  --accent: #3d9eff; --accent2: #2b85e8; --green: #4ade80;
+  --font: 'Inter', sans-serif;
+}
+html { scroll-behavior: smooth; }
+body { background: var(--bg); color: var(--text); font-family: var(--font); font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; letter-spacing: -0.01em; overflow-x: hidden; }
+
+nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 0 2.5rem; height: 64px; display: flex; align-items: center; justify-content: space-between; background: rgba(12,24,40,0.92); backdrop-filter: blur(18px); border-bottom: 1px solid var(--border); }
+.nav-logo { font-weight: 700; font-size: 18px; letter-spacing: -0.02em; color: var(--text); text-decoration: none; }
+.nav-logo span { color: var(--accent); }
+.nav-links { display: flex; gap: 2rem; list-style: none; }
+.nav-links a { font-size: 13px; color: var(--muted2); text-decoration: none; transition: color 0.2s; }
+.nav-links a:hover, .nav-links a.active { color: var(--text); }
+.nav-cta { background: var(--accent); color: #0a0a0b; border: none; padding: 9px 22px; border-radius: 6px; font-size: 13px; font-weight: 500; cursor: pointer; transition: background 0.2s; text-decoration: none; }
+.nav-cta:hover { background: var(--accent2); }
+
+.page-hero { padding: 120px 2.5rem 60px; max-width: 1100px; margin: 0 auto; }
+.page-label { font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 10px; }
+.page-label::before { content: ''; display: block; width: 24px; height: 1px; background: var(--accent); }
+h1 { font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 800; line-height: 1.1; letter-spacing: -0.035em; margin-bottom: 1.5rem; }
+h1 em { font-style: italic; color: var(--muted2); font-weight: 300; }
+.page-intro { font-size: 17px; color: var(--muted2); font-weight: 300; max-width: 620px; line-height: 1.75; margin-bottom: 2rem; }
+
+.main-content { max-width: 1100px; margin: 0 auto; padding: 0 2.5rem 100px; }
+
+/* PREWORK */
+.prework-block { background: var(--bg2); border: 1px solid var(--border); border-radius: 16px; padding: 2.5rem; margin-bottom: 3rem; }
+.prework-label { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.75rem; }
+.prework-title { font-size: 1.4rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 0.5rem; }
+.prework-desc { font-size: 14px; color: var(--muted2); font-weight: 300; line-height: 1.75; margin-bottom: 1.5rem; }
+.prework-modules { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.prework-module { background: var(--bg3); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem; }
+.prework-module-num { font-size: 11px; color: var(--accent); font-weight: 600; letter-spacing: 0.05em; margin-bottom: 0.3rem; }
+.prework-module-name { font-size: 13px; font-weight: 600; letter-spacing: -0.01em; margin-bottom: 0.25rem; }
+.prework-module-desc { font-size: 12px; color: var(--muted2); font-weight: 300; line-height: 1.6; }
+
+/* PHASE HEADERS */
+.phase-header { margin: 3rem 0 1.5rem; }
+.phase-badge { display: inline-flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); background: rgba(61,158,255,0.08); border: 1px solid rgba(61,158,255,0.15); border-radius: 100px; padding: 5px 14px; margin-bottom: 0.75rem; }
+.phase-header h2 { font-size: 1.8rem; font-weight: 800; letter-spacing: -0.03em; margin-bottom: 0.4rem; }
+.phase-header h2 em { font-style: italic; color: var(--muted2); font-weight: 300; }
+.phase-header p { font-size: 14px; color: var(--muted2); font-weight: 300; max-width: 560px; }
+
+/* WEEK CARDS */
+.week-card { border: 1px solid var(--border); border-radius: 16px; overflow: hidden; margin-bottom: 1.5rem; }
+.week-header { display: flex; align-items: center; justify-content: space-between; padding: 1.2rem 1.8rem; background: var(--bg2); border-bottom: 1px solid var(--border); }
+.week-label { font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); }
+.week-title { font-size: 17px; font-weight: 700; letter-spacing: -0.02em; }
+.week-deliverable-badge { font-size: 11px; font-weight: 600; color: var(--green); background: rgba(74,222,128,0.08); border: 1px solid rgba(74,222,128,0.2); border-radius: 6px; padding: 4px 10px; white-space: nowrap; }
+.week-days { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--border); }
+.day-block { background: var(--bg); padding: 1.4rem 1.6rem; }
+.day-label { font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.5rem; }
+.day-title { font-size: 14px; font-weight: 700; letter-spacing: -0.01em; margin-bottom: 0.5rem; }
+.day-tools { font-size: 11px; color: var(--accent); font-weight: 500; margin-bottom: 0.6rem; }
+.day-desc { font-size: 13px; color: var(--muted2); font-weight: 300; line-height: 1.65; }
+.day-deliverable { margin-top: 0.75rem; font-size: 12px; font-weight: 600; color: var(--green); }
+.week-deliverable-row { padding: 1rem 1.8rem; background: rgba(74,222,128,0.04); border-top: 1px solid rgba(74,222,128,0.12); display: flex; align-items: center; gap: 10px; }
+.week-deliverable-row span { font-size: 13px; color: var(--green); font-weight: 500; }
+.week-deliverable-row strong { font-size: 13px; color: var(--text); font-weight: 600; }
+
+/* TOOLS STRIP */
+.tools-strip { background: var(--bg2); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem 2rem; margin: 3rem 0; }
+.tools-strip-title { font-size: 13px; font-weight: 600; color: var(--muted2); margin-bottom: 0.75rem; letter-spacing: 0.02em; }
+.tools-list { display: flex; flex-wrap: wrap; gap: 8px; }
+.tool-chip { font-size: 12px; font-weight: 500; color: var(--muted2); background: var(--bg3); border: 1px solid var(--border); border-radius: 6px; padding: 5px 12px; }
+
+/* CTA */
+.page-cta { background: var(--bg2); border: 1px solid var(--border); border-radius: 16px; padding: 3rem; text-align: center; margin-top: 4rem; }
+.page-cta h3 { font-size: 1.6rem; font-weight: 800; letter-spacing: -0.03em; margin-bottom: 0.75rem; }
+.page-cta h3 em { font-style: italic; color: var(--muted2); font-weight: 300; }
+.page-cta p { font-size: 15px; color: var(--muted2); font-weight: 300; margin-bottom: 2rem; }
+.btn-primary { display: inline-block; background: var(--accent); color: #0a0a0b; padding: 13px 32px; border-radius: 8px; font-size: 14px; font-weight: 600; text-decoration: none; transition: background 0.2s; }
+.btn-primary:hover { background: var(--accent2); }
+.btn-ghost { display: inline-block; border: 1px solid var(--border2); color: var(--muted2); padding: 13px 32px; border-radius: 8px; font-size: 14px; font-weight: 500; text-decoration: none; transition: all 0.2s; margin-left: 1rem; }
+.btn-ghost:hover { color: var(--text); border-color: var(--accent); }
+
+footer { border-top: 1px solid var(--border); padding: 2rem 2.5rem; display: flex; justify-content: space-between; align-items: center; max-width: 1100px; margin: 0 auto; }
+.footer-logo { font-weight: 700; font-size: 15px; text-decoration: none; color: var(--text); }
+.footer-logo span { color: var(--accent); }
+.footer-copy { font-size: 12px; color: var(--muted); }
+
+@media (max-width: 900px) {
+  .week-days { grid-template-columns: 1fr; }
+  .prework-modules { grid-template-columns: 1fr 1fr; }
+  .week-header { flex-direction: column; align-items: flex-start; gap: 8px; }
+}
+@media (max-width: 600px) {
+  .nav-links { display: none; }
+  .prework-modules { grid-template-columns: 1fr; }
+  footer { flex-direction: column; gap: 0.5rem; text-align: center; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">Maker<span>Square</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html#benefits">How it works</a></li>
+    <li><a href="index.html#who">Who it's for</a></li>
+    <li><a href="curriculum.html" class="active">Curriculum</a></li>
+    <li><a href="pricing.html">Tuition</a></li>
+    <li><a href="housing.html">Housing</a></li>
+    <li><a href="team.html">Team</a></li>
+    <li><a href="apply.html">Apply</a></li>
+  </ul>
+  <a href="apply.html" class="nav-cta">Apply Now</a>
+</nav>
+
+<div class="page-hero">
+  <div class="page-label">Full Curriculum</div>
+  <h1>8 weeks. 3 phases.<br><em>Everything you need to build.</em></h1>
+  <p class="page-intro">No coding required. Before the program starts, you'll complete self-paced pre-work that gets you ready for Day 1. Then three weeks of foundations, three weeks of building, and two weeks of shipping — ending with a live Demo Day in front of Austin's tech community.</p>
+</div>
+
+<div class="main-content">
+
+  <!-- PRE-WORK -->
+  <div class="prework-block">
+    <div class="prework-label">Pre-Work · Self-Paced · Complete Before Day 1</div>
+    <div class="prework-title">Before the program begins</div>
+    <div class="prework-desc">All students complete six self-paced modules before their admissions interview. No time limit — most people finish in 2–3 weeks working evenings and weekends. This isn't busywork: your pre-work deliverables are reviewed by the admissions team, and the best projects are shared on Day 1.</div>
+    <div class="prework-modules">
+      <div class="prework-module">
+        <div class="prework-module-num">Module 1</div>
+        <div class="prework-module-name">How LLMs Actually Work</div>
+        <div class="prework-module-desc">Tokens, attention, context windows, hallucination. Explain it to a non-technical executive in 500 words.</div>
+      </div>
+      <div class="prework-module">
+        <div class="prework-module-num">Module 2</div>
+        <div class="prework-module-name">Prompt Engineering</div>
+        <div class="prework-module-desc">Build a system prompt, chain-of-thought prompt, and structured JSON output prompt. Test and score each one.</div>
+      </div>
+      <div class="prework-module">
+        <div class="prework-module-num">Module 3</div>
+        <div class="prework-module-name">Evaluation Frameworks</div>
+        <div class="prework-module-desc">Build a 10-case eval set for your prompt. Score it. Identify failure modes. Iterate and measure the delta.</div>
+      </div>
+      <div class="prework-module">
+        <div class="prework-module-num">Module 4</div>
+        <div class="prework-module-name">Domain Mapping</div>
+        <div class="prework-module-desc">Map AI opportunities in your field. Identify one product to build. Write a full product brief before you arrive.</div>
+      </div>
+      <div class="prework-module">
+        <div class="prework-module-num">Module 5</div>
+        <div class="prework-module-name">First Deployed Tool</div>
+        <div class="prework-module-desc">Use Lovable to build and deploy a live AI tool based on your product brief. Get a URL. Show something real.</div>
+      </div>
+      <div class="prework-module">
+        <div class="prework-module-num">Module 6</div>
+        <div class="prework-module-name">Admissions Prep</div>
+        <div class="prework-module-desc">Prepare your 15-minute admissions presentation. Know your numbers. Have honest answers to hard questions.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PHASE 1 -->
+  <div class="phase-header">
+    <div class="phase-badge">Phase 1</div>
+    <h2>Foundations<br><em>Weeks 1–2</em></h2>
+    <p>How AI tools work at depth — not theory, but the intuition you need to build with them. The no-code stack. Direct API calls. Your first major deliverable.</p>
+  </div>
+
+  <div class="week-card">
+    <div class="week-header">
+      <div>
+        <div class="week-label">Week 1</div>
+        <div class="week-title">Prompting, Evaluation, and How Models Work</div>
+      </div>
+    </div>
+    <div class="week-days">
+      <div class="day-block">
+        <div class="day-label">Monday</div>
+        <div class="day-title">How AI Models Work + Your First Professional Prompt</div>
+        <div class="day-tools">Tools: Claude.ai · OpenAI Tokenizer</div>
+        <div class="day-desc">Transformer architecture conceptually — attention, tokens, context windows. Why models predict next tokens. Hallucination: what it is, why it happens, how to design around it. Live demo: instructor breaks a prompt on purpose and the class diagnoses why. Students write their first professional system prompt for their domain.</div>
+      </div>
+      <div class="day-block">
+        <div class="day-label">Wednesday</div>
+        <div class="day-title">Prompt Engineering at Depth</div>
+        <div class="day-tools">Tools: Claude.ai · Anthropic Docs</div>
+        <div class="day-desc">Chain-of-thought prompting. Few-shot examples. Structured JSON output. Output format control. Students rebuild their Monday system prompt with all three techniques, then test 10 inputs and score each on accuracy, format, and usefulness.</div>
+      </div>
+      <div class="day-block">
+        <div class="day-label">Friday</div>
+        <div class="day-title">Evaluation Fundamentals</div>
+        <div class="day-tools">Tools: Claude.ai · Google Sheets</div>
+        <div class="day-desc">Why evals are the most underrated skill in AI development. The difference between a demo that works and a product that works. Students build a 10-case eval set with hand-written ideal outputs, score their current prompt, and name their top failure mode.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="week-card">
+    <div class="week-header">
+      <div>
+        <div class="week-label">Week 2</div>
+        <div class="week-title">The No-Code AI Stack + Direct API Calls</div>
+      </div>
+      <div class="week-deliverable-badge">Major Deliverable</div>
+    </div>
+    <div class="week-days">
+      <div class="day-block">
+        <div class="day-label">Monday</div>
+        <div class="day-title">Cursor, Lovable, Bolt, and Replit</div>
+        <div class="day-tools">Tools: Cursor · Lovable · Bolt.new · Replit</div>
+        <div class="day-desc">The no-code AI landscape. When to use which tool. The mental model: you're the product manager, the AI is the engineer. Live demo: instructor builds a complete, deployed AI tool in Lovable in 30 minutes. Students build and deploy their own using their product brief.</div>
+      </div>
+      <div class="day-block">
+        <div class="day-label">Wednesday</div>
+        <div class="day-title">Direct API Calls + Connecting Everything</div>
+        <div class="day-tools">Tools: Replit · Claude API · Make.com</div>
+        <div class="day-desc">What an API is and why it matters. Making a direct Claude API call from Replit. API cost awareness — calculating cost per call and extrapolating to 100 users. Connecting Lovable front ends to real API backends. Error handling so users see a useful message when something breaks.</div>
+      </div>
+      <div class="day-block">
+        <div class="day-label">Friday</div>
+        <div class="day-title">Major Deliverable — First Deployed AI Tool</div>
+        <div class="day-tools">Tools: All Week 1–2 tools</div>
+        <div class="day-desc">Students present their first deployed domain-specific AI tool. 3 minutes each: what it does, a live demo, what breaks and why, and what you'd fix first. Written feedback from instructor and cohort. This is the baseline everything else builds on.</div>
+        <div class="day-deliverable">✓ Deliverable: live deployed AI tool at a real URL</div>
+      </div>
+    </div>
+    <div class="week-deliverable-row">
+      <span>→</span>
+      <div><strong>Week 2 Deliverable:</strong> <span>A live, deployed, domain-specific AI tool. Real URL. Real domain. Real prompt engineering behind it.</span></div>
+    </div>
+  </div>
+
+  <!-- PHASE 2 -->
+  <div class="phase-header">
+    <div class="phase-badge">Phase 2</div>
+    <h2>Building<br><em>Weeks 3–5</em></h2>
+    <p>AI that knows your domain. Agents that act autonomously. Workflows that run without you. Two more major deliverables.</p>
+  </div>
+
+  <div class="week-card">
+    <div class="week-header">
+      <div>
+        <div class="week-label">Week 3</div>
+        <div class="week-title">RAG — AI That Knows Your Documents</div>
+      </div>
+    </div>
+    <div class="week-days">
+      <div class="day-block">
+        <div class="day-label">Monday</div>
+        <div class="day-title">RAG Fundamentals + Pipeline Construction</div>
+        <div class="day-tools">Tools: Pinecone · Claude API · Replit</div>
+        <div class="day-desc">What RAG is and why it matters. The pipeline: query → embed → search → retrieve → inject → generate. Vector databases and semantic search. Students set up a Pinecone index, embed 10 domain documents, and run their first semantic queries.</div>
+      </div>
+      <div class="day-block">
+        <div class="day-label">Wednesday</div>
+        <div class="day-title">Document Ingestion + Advanced Retrieval</div>
+        <div class="day-tools">Tools: Pinecone · Replit · Claude API</div>
+        <div class="day-desc">Chunking strategies and metadata. Ingesting 50+ real domain documents with a repeatable script. Hybrid search (semantic + keyword). Metadata filtering. Reranking. Students identify their top retrieval failure mode and implement the fix.</div>
+      </div>
+      <div class="day-block">
+        <div class="day-label">Friday</div>
+        <div class="day-title">RAG Quality and Evaluation</div>
+        <div class="day-tools">Tools: Pinecone · Claude API · Lovable</div>
+        <div class="day-desc">Measuring retrieval precision vs. generation groundedness. Building a RAG eval set. Students build the full Lovable front end: chat interface, citations, out-of-scope handling, streaming responses. URL exchanged by end of session for peer feedback.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="week-card">
+    <div class="week-header">
+      <div>
+        <div class="week-label">Week 4</div>
+        <div class="week-title">RAG in Production + User Testing</div>
+      </div>
+      <div class="week-deliverable-badge">Major Deliverable</div>
+    </div>
+    <div class="week-days">
+      <div class="day-block">
+        <div class="day-label">Monday</div>
+        <div class="day-title">Production Hardening — Caching, Logging, Fallbacks</div>
+        <div class="day-tools">Tools: Lovable · Pinecone · Replit</div>
+        <div class="day-desc">Streaming responses so users see output in real time. Fallback messages for pipeline failures. Query logging to Google Sheets or Airtable. Semantic caching for common queries. Students implement all four and run a production readiness check.</div>
+      </div>
+      <div class="day-block">
+        <div class="day-label">Wednesday</div>
+        <div class="day-title">User Testing</div>
+        <div class="day-tools">Tools: Deployed RAG product · Loom</div>
+        <div class="day-desc">The think-aloud protocol. In-class user testing pairs. Students identify their top 3 user friction points and prioritize the single highest-impact fix before the deliverable. External user sessions scheduled for this week.</div>
+      </div>
+      <div class="day-block">
+        <div class="day-label">Friday</div>
+        <div class="day-title">Major Deliverable — RAG-Powered Domain Product</div>
+        <div class="day-tools">Tools: All RAG tools</div>
+        <div class="day-desc">Students present their deployed RAG product. 4 minutes: the data it knows, a live demo, user testing findings, and top failure mode. Instructor and LATAM team provide full written assessment by Saturday morning.</div>
+        <div class="day-deliverable">✓ Deliverable: deployed RAG product with real data, citations, and user testing incorporated</div>
+      </div>
+    </div>
+    <div class="week-deliverable-row">
+      <span>→</span>
+      <div><strong>Week 4 Deliverable:</strong> <span>A deployed, domain-specific knowledge product. Real documents. Real users tested it. Real citations in every answer.</span></div>
+    </div>
+  </div>
+
+  <div class="week-card">
+    <div class="week-header">
+      <div>
+        <div class="week-label">Week 5</div>
+        <div class="week-title">AI Agents + Workflow Automation</div>
+      </div>
+      <div class="week-deliverable-badge">Major Deliverable</div>
+    </div>
+    <div class="week-days">
+      <div class="day-block">
+        <div class="day-label">Monday</div>
+        <div class="day-title">AI Agents — The Agentic Loop</div>
+        <div class="day-tools">Tools: Replit · Claude API · Tavily Search</div>
+        <div class="day-desc">The agentic loop: perceive, think, act, observe, repeat. Tool use in Claude. Single-tool agents. Multi-tool agents with domain-specific tools. Reliability and defensive design — human-in-the-loop checkpoints, confirmation steps for write actions, stress testing completion rates.</div>
+      </div>
+      <div class="day-block">
+        <div class="day-label">Wednesday</div>
+        <div class="day-title">Workflow Automation with Make.com</div>
+        <div class="day-tools">Tools: Make.com · Replit · Claude API · Airtable</div>
+        <div class="day-desc">Mapping a real business workflow. Event-driven automation: form submission → AI reasoning → route to owner → log to Airtable. Multi-agent orchestrator/subagent patterns for complex tasks. Students build the first version of their Week 5 automated workflow.</div>
+      </div>
+      <div class="day-block">
+        <div class="day-label">Friday</div>
+        <div class="day-title">Major Deliverable — Deployed AI Agent</div>
+        <div class="day-tools">Tools: All Phase 2 tools</div>
+        <div class="day-desc">Students present their deployed AI agent. 5 minutes: the workflow it automates, a live end-to-end demo, stress test results (completion rate + top failure mode), and what they'd build next. LATAM team full assessment by Saturday evening.</div>
+        <div class="day-deliverable">✓ Deliverable: deployed agent automating a real domain workflow with stress-test metrics</div>
+      </div>
+    </div>
+    <div class="week-deliverable-row">
+      <span>→</span>
+      <div><strong>Week 5 Deliverable:</strong> <span>A working agent that automates a real workflow. Has completed a 20-run stress test. Knows its own failure rate.</span></div>
+    </div>
+  </div>
+
+  <!-- PHASE 3 -->
+  <div class="phase-header">
+    <div class="phase-badge">Phase 3</div>
+    <h2>Ship &amp; Scale<br><em>Weeks 6–8</em></h2>
+    <p>Production-ready. Real users. Real costs. A capstone that works in front of a live audience at Demo Day.</p>
+  </div>
+
+  <div class="week-card">
+    <div class="week-header">
+      <div>
+        <div class="week-label">Week 6</div>
+        <div class="week-title">Database Integration + Production Readiness</div>
+      </div>
+    </div>
+    <div class="week-days">
+      <div class="day-block">
+        <div class="day-label">Monday</div>
+        <div class="day-title">Supabase — Real Data Behind Your Product</div>
+        <div class="day-tools">Tools: Supabase · Lovable · Replit</div>
+        <div class="day-desc">Connecting AI to a real Postgres database. When AI should read vs. write. Row-level security so users only see their own data. Students wire a Supabase database to their capstone — reads inform responses, writes require user confirmation.</div>
+      </div>
+      <div class="day-block">
+        <div class="day-label">Wednesday</div>
+        <div class="day-title">Real-Time Data + Architecture Review</div>
+        <div class="day-tools">Tools: Supabase · Replit · Lovable</div>
+        <div class="day-desc">Real-time subscriptions. Scheduled ingestion jobs. Students present their capstone architecture on the whiteboard — cohort identifies what will break under load and what has no fallback. Live data pipeline tested end to end.</div>
+      </div>
+      <div class="day-block">
+        <div class="day-label">Friday</div>
+        <div class="day-title">Production Readiness Audit</div>
+        <div class="day-tools">Tools: Full production checklist</div>
+        <div class="day-desc">The production checklist: error handling, fallbacks, logging, security, cost instrumentation, input sanitization, rate limiting. Live audit of a volunteer capstone. Students complete their own audit, document every gap with priority, and fix the top three issues.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="week-card">
+    <div class="week-header">
+      <div>
+        <div class="week-label">Week 7</div>
+        <div class="week-title">Productizing, Go-To-Market, and Cost Management</div>
+      </div>
+    </div>
+    <div class="week-days">
+      <div class="day-block">
+        <div class="day-label">Monday</div>
+        <div class="day-title">Productizing — The Gap Between Prototype and Product</div>
+        <div class="day-tools">Tools: Capstone product · Lovable</div>
+        <div class="day-desc">Onboarding, empty states, user-friendly error messages. The stranger test: a stranger uses your tool without explanation — you watch and take notes without helping. Students fix their top 3 productization gaps and explicitly scope v1.</div>
+      </div>
+      <div class="day-block">
+        <div class="day-label">Wednesday</div>
+        <div class="day-title">Go-To-Market + Pricing</div>
+        <div class="day-tools">Tools: Google Docs</div>
+        <div class="day-desc">Positioning your AI product. Pricing models: per-seat, usage-based, outcome-based. Finding your first 10 customers. The one-page GTM plan. 90-second pitches to the cohort — no deck, just talking. Students write their full GTM plan and get hard feedback from peers.</div>
+      </div>
+      <div class="day-block">
+        <div class="day-label">Friday</div>
+        <div class="day-title">Cost Management + Demo Day Prep</div>
+        <div class="day-tools">Tools: Google Sheets · Capstone product</div>
+        <div class="day-desc">API cost modeling at scale. Model selection trade-offs. Prompt caching and compression. Students build a cost model showing margin at 10, 100, and 1,000 users. Demo Day format briefed. Full 7-minute script written and peer-reviewed.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="week-card">
+    <div class="week-header">
+      <div>
+        <div class="week-label">Week 8</div>
+        <div class="week-title">Demo Day</div>
+      </div>
+      <div class="week-deliverable-badge">Public Demo Day</div>
+    </div>
+    <div class="week-days">
+      <div class="day-block">
+        <div class="day-label">Monday</div>
+        <div class="day-title">Final Build Day</div>
+        <div class="day-tools">Tools: All capstone tools</div>
+        <div class="day-desc">No lectures. Full build time. Instructor and LATAM team on floor for 1:1 support. 1:1 office hours with instructor — 5 minutes each, one thing to complete before Demo Day. Every capstone production-ready by end of day.</div>
+      </div>
+      <div class="day-block">
+        <div class="day-label">Wednesday</div>
+        <div class="day-title">Full Dry Run</div>
+        <div class="day-tools">Tools: Presentation setup</div>
+        <div class="day-desc">Room set up exactly like Demo Day. Every student delivers the full 7-minute presentation. Timed strictly. Written feedback immediately after each. Second run for students with significant changes. Final logistics, Q&amp;A prep, contingency plans.</div>
+      </div>
+      <div class="day-block">
+        <div class="day-label">Friday</div>
+        <div class="day-title">DEMO DAY</div>
+        <div class="day-tools">Public · Austin tech community</div>
+        <div class="day-desc">7 minutes per student. Live audience of Austin operators, investors, and hiring partners. Every student presents a production-ready AI product with a live demo. Q&amp;A from domain experts and investors. Documented outcomes shared publicly.</div>
+        <div class="day-deliverable">✓ Capstone: production-ready AI product presented to a live public audience</div>
+      </div>
+    </div>
+    <div class="week-deliverable-row">
+      <span>→</span>
+      <div><strong>Week 8 Capstone:</strong> <span>A production-ready AI product. Live audience. Real questions from real investors and operators.</span></div>
+    </div>
+  </div>
+
+  <!-- TOOLS STRIP -->
+  <div class="tools-strip">
+    <div class="tools-strip-title">Tools you'll use across the program</div>
+    <div class="tools-list">
+      <span class="tool-chip">Claude API</span>
+      <span class="tool-chip">Lovable</span>
+      <span class="tool-chip">Cursor</span>
+      <span class="tool-chip">Bolt.new</span>
+      <span class="tool-chip">Replit</span>
+      <span class="tool-chip">v0 by Vercel</span>
+      <span class="tool-chip">Pinecone</span>
+      <span class="tool-chip">Supabase</span>
+      <span class="tool-chip">Make.com</span>
+      <span class="tool-chip">Airtable</span>
+      <span class="tool-chip">Tavily Search</span>
+      <span class="tool-chip">ElevenLabs</span>
+      <span class="tool-chip">Twilio</span>
+      <span class="tool-chip">OpenAI API</span>
+      <span class="tool-chip">LangChain</span>
+      <span class="tool-chip">Google Sheets</span>
+    </div>
+  </div>
+
+  <div class="page-cta">
+    <h3>Ready to start building?<br><em>Applications are open now.</em></h3>
+    <p>Starts July 2026 in Austin, TX. Cohorts are small and selective — we review every application personally.</p>
+    <a href="apply.html" class="btn-primary">Apply Now →</a>
+    <a href="pricing.html" class="btn-ghost">See tuition &amp; payment options</a>
+  </div>
+
+</div>
+
+<footer>
+  <a href="index.html" class="footer-logo">Maker<span>Square</span></a>
+  <div class="footer-copy">© 2026 MakerSquare. Austin, TX.</div>
+</footer>
+</body>
+</html>
