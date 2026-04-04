@@ -125,9 +125,25 @@ footer { border-top: 1px solid var(--border); padding: 2rem 2.5rem; display: fle
   .form-grid { grid-template-columns: 1fr; }
   .form-group.full { grid-column: auto; }
 }
-@media (max-width: 600px) {
-  .nav-links { display: none; }
-  footer { flex-direction: column; gap: 0.5rem; text-align: center; }
+.nav-hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 6px; flex-shrink: 0; }
+.nav-hamburger span { display: block; width: 22px; height: 2px; background: var(--text); border-radius: 2px; transition: transform 0.25s, opacity 0.25s; }
+body.nav-open .nav-hamburger span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+body.nav-open .nav-hamburger span:nth-child(2) { opacity: 0; }
+body.nav-open .nav-hamburger span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+body.nav-open { overflow: hidden; }
+.nav-mobile-cta-item { display: none; }
+@media (max-width: 768px) {
+  .nav-hamburger { display: flex; }
+  .nav-cta { display: none; }
+  .nav-mobile-cta-item { display: block; border-bottom: none !important; }
+  .nav-mobile-apply { display: block; background: var(--gold); color: #0c1828; text-align: center; padding: 13px; border-radius: 8px; font-weight: 700; font-size: 15px; margin-top: 1rem; text-decoration: none; }
+  .nav-links { position: fixed; top: 64px; left: 0; right: 0; bottom: 0; background: var(--bg); flex-direction: column; padding: 0 1.5rem 2rem; gap: 0; z-index: 100; border-top: 1px solid var(--border); overflow-y: auto; transform: translateX(100%); transition: transform 0.25s ease; }
+  body.nav-open .nav-links { transform: translateX(0); }
+  .nav-links > li { border-bottom: 1px solid var(--border); }
+  .nav-links > li > a { display: block; font-size: 17px; padding: 1rem 0; color: var(--text); font-weight: 500; letter-spacing: 0; }
+  .page-hero { padding: 90px 1.25rem 40px; }
+  .main-content { padding: 0 1.25rem 60px; }
+  footer { flex-direction: column; gap: 0.5rem; text-align: center; padding: 1.5rem; }
 }
 </style>
 </head>
@@ -144,8 +160,10 @@ footer { border-top: 1px solid var(--border); padding: 2rem 2.5rem; display: fle
     <li><a href="team.html">Team</a></li>
     <li><a href="corporate.html">Corporate Training</a></li>
     <li><a href="apply.html">Apply</a></li>
+    <li class="nav-mobile-cta-item"><a href="#form" class="nav-mobile-apply">Apply for Discount →</a></li>
   </ul>
   <a href="#form" class="nav-cta">Apply for Discount</a>
+  <button class="nav-hamburger" onclick="document.body.classList.toggle('nav-open')" aria-label="Toggle menu"><span></span><span></span><span></span></button>
 </nav>
 
 <div class="page-hero">
