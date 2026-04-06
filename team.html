@@ -108,7 +108,7 @@ h2 em { font-style: italic; color: var(--muted2); font-weight: 300; }
 .mentor-type-desc { font-size: 12px; color: var(--muted2); font-weight: 300; line-height: 1.65; }
 
 /* MENTOR FORM */
-.mentor-form-wrap { background: var(--bg2); border: 1px solid var(--border); border-radius: 16px; padding: 2.5rem; }
+.mentor-form-wrap { padding: 0; }
 .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
 .form-group { display: flex; flex-direction: column; gap: 6px; }
 .form-group.full { grid-column: 1 / -1; }
@@ -170,7 +170,7 @@ body.nav-open { overflow: hidden; }
     <li><a href="corporate.html">Corporate Training</a></li>
     <li><a href="apply.html">Apply</a></li>
   </ul>
-  <a href="apply.html" class="nav-cta">Apply Now</a>
+  <a href="apply.html#form" class="nav-cta">Apply Now</a>
   <button class="nav-hamburger" onclick="document.body.classList.toggle('nav-open')" aria-label="Toggle menu"><span></span><span></span><span></span></button>
 </nav>
 <div class="mobile-menu">
@@ -184,7 +184,7 @@ body.nav-open { overflow: hidden; }
     <li><a href="corporate.html">Corporate Training</a></li>
     <li><a href="apply.html">Apply</a></li>
   </ul>
-  <a href="apply.html" class="mobile-menu-cta-btn" style="background:var(--accent);color:#0a0a0b;">Apply Now →</a>
+  <a href="apply.html#form" class="mobile-menu-cta-btn" style="background:var(--accent);color:#0a0a0b;">Apply Now →</a>
 </div>
 
 <div class="page-hero">
