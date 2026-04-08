@@ -956,6 +956,89 @@ body.nav-open { overflow: hidden; }
 .fade-up.visible { opacity: 1; transform: translateY(0); }
 /* PARALLAX HERO */
 .page-hero { will-change: transform; overflow: visible; }
+
+/* ── HERO EMAIL STRIP ── */
+.hero-email-strip { display: flex; align-items: center; gap: 8px; margin-top: 1.25rem; flex-wrap: wrap; }
+.hero-email-strip input[type="email"] {
+  background: rgba(255,255,255,0.06); border: 1px solid var(--border2);
+  border-radius: 8px; padding: 10px 14px; font-size: 13px; color: var(--text);
+  outline: none; width: 210px; font-family: var(--font-body); transition: border 0.2s;
+}
+.hero-email-strip input[type="email"]::placeholder { color: var(--muted); }
+.hero-email-strip input[type="email"]:focus { border-color: var(--accent); }
+.hero-email-btn {
+  background: var(--bg3); border: 1px solid var(--border2); color: var(--text);
+  padding: 10px 18px; border-radius: 8px; font-size: 13px; font-weight: 500;
+  cursor: pointer; font-family: var(--font-body); transition: background 0.2s, border-color 0.2s, color 0.2s; white-space: nowrap;
+}
+.hero-email-btn:hover { background: var(--accent); border-color: var(--accent); color: #0a0a0b; }
+.hero-email-note { font-size: 11px; color: var(--muted); width: 100%; margin-top: 2px; }
+
+/* ── HERO SEATS COUNTER ── */
+.hero-seats {
+  display: flex; align-items: center; gap: 10px; margin-top: 1rem;
+}
+.hero-seats-bar {
+  display: block; width: 80px; height: 4px;
+  background: rgba(61,158,255,0.15); border-radius: 2px; overflow: hidden;
+}
+.hero-seats-fill {
+  display: block; height: 100%; background: var(--accent); border-radius: 2px;
+}
+.hero-seats-text { font-size: 11px; color: var(--muted2); letter-spacing: 0.02em; }
+.hero-seats-text strong { color: var(--accent); }
+
+/* ── FOUNDER STRIP ── */
+.founder-strip {
+  display: flex; align-items: center; gap: 1.75rem;
+  max-width: 1100px; margin: 0 auto;
+  padding: 2rem 2.5rem;
+  background: var(--bg2);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.founder-avatar {
+  width: 60px; height: 60px; border-radius: 50%; flex-shrink: 0;
+  background: linear-gradient(135deg, #284055, #3d9eff30);
+  border: 2px solid var(--border2);
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: 17px; color: var(--accent); letter-spacing: 0.05em;
+}
+.founder-quote { flex: 1; }
+.founder-words {
+  font-size: 14px; color: var(--muted2); line-height: 1.7; font-style: italic; font-weight: 300;
+}
+.founder-byline { font-size: 11px; color: var(--muted); margin-top: 0.5rem; letter-spacing: 0.04em; }
+.founder-learn-more {
+  font-size: 12px; color: var(--accent); text-decoration: none; white-space: nowrap;
+  padding: 8px 14px; border: 1px solid rgba(61,158,255,0.25); border-radius: 6px;
+  transition: background 0.2s;
+}
+.founder-learn-more:hover { background: rgba(61,158,255,0.08); }
+@media (max-width: 768px) {
+  .founder-strip { flex-direction: column; align-items: flex-start; gap: 1rem; padding: 1.5rem 1.25rem; }
+  .founder-learn-more { align-self: flex-start; }
+}
+
+/* ── STICKY MOBILE CTA ── */
+.mobile-sticky-cta { display: none; }
+@media (max-width: 768px) {
+  .mobile-sticky-cta {
+    display: flex; position: fixed; bottom: 0; left: 0; right: 0; z-index: 200;
+    padding: 12px 1.25rem; background: rgba(26,47,68,0.97);
+    border-top: 1px solid var(--border2); backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    gap: 12px; align-items: center; justify-content: space-between;
+  }
+  .mobile-sticky-cta-text { font-size: 12px; color: var(--muted2); line-height: 1.4; }
+  .mobile-sticky-cta-text strong { color: var(--text); display: block; font-size: 13px; }
+  .mobile-sticky-cta-btn {
+    background: var(--accent); color: #0a0a0b; padding: 11px 22px;
+    border-radius: 8px; font-size: 14px; font-weight: 600;
+    text-decoration: none; white-space: nowrap; flex-shrink: 0;
+  }
+  body { padding-bottom: 68px; }
+}
 </style>
 </head>
 <body>
@@ -1006,6 +1089,15 @@ body.nav-open { overflow: hidden; }
       <a href="apply.html#form" class="btn-primary">Apply Now →</a>
       <a href="#waitlist" class="btn-ghost">Not ready? Join the waitlist</a>
     </div>
+    <form class="hero-email-strip" onsubmit="(function(f){f.preventDefault();var e=f.querySelector('input').value;window.location.href='https://tally.so/r/rjLpa5?email='+encodeURIComponent(e);})(this)">
+      <input type="email" placeholder="your@email.com" required>
+      <button type="submit" class="hero-email-btn">Get Curriculum →</button>
+      <span class="hero-email-note">Get the full curriculum + cohort details. No spam, no pressure.</span>
+    </form>
+    <div class="hero-seats">
+      <span class="hero-seats-bar"><span class="hero-seats-fill" style="width:25%"></span></span>
+      <span class="hero-seats-text"><strong>3 of 12 seats reserved</strong> — cohort fills on a rolling basis</span>
+    </div>
   </div>
 
   <div class="hero-right">
@@ -1040,6 +1132,16 @@ body.nav-open { overflow: hidden; }
     </div>
   </div>
 </section>
+
+<!-- FOUNDER STRIP -->
+<div class="founder-strip">
+  <div class="founder-avatar">MS</div>
+  <div class="founder-quote">
+    <div class="founder-words">"I built MakerSquare because I kept watching smart, experienced people get left behind by AI — not because they weren't capable, but because nobody built the right program for them. This is that program."</div>
+    <div class="founder-byline">Marliis Schneider · Founder, MakerSquare · Austin, TX</div>
+  </div>
+  <a href="team.html" class="founder-learn-more">Meet the team →</a>
+</div>
 
 <!-- TICKER -->
 <div class="ticker-wrap">
@@ -1366,6 +1468,10 @@ body.nav-open { overflow: hidden; }
       <div class="faq-a">Absolutely. Many students come in wanting to automate work at their existing job, build a tool for a client, or just develop a serious new skill. You don't need a startup idea — you just need a problem you care about solving.</div>
     </div>
     <div class="faq-item">
+      <div class="faq-q">Is $8,999 worth it? What's the ROI?</div>
+      <div class="faq-a">The people who get the most out of MakerSquare use what they build to either automate expensive work at their current job (often saving 10+ hours a week), raise their market value significantly, or ship something they've been sitting on for years. A single AI-powered workflow that replaces a $50K/yr contractor pays for the program in months. That said — we don't guarantee outcomes, and the ROI depends entirely on what you do with what you build.</div>
+    </div>
+    <div class="faq-item">
       <div class="faq-q">Why Austin?</div>
       <div class="faq-a">Austin has one of the fastest-growing concentrations of founders, operators, and domain experts in the country — with an active VC and angel community that becomes part of your network the moment you step on stage at Demo Day.</div>
     </div>
@@ -1381,6 +1487,12 @@ body.nav-open { overflow: hidden; }
     <a href="apply.html#form" class="btn-primary" style="font-size:15px; padding:16px 40px;">Apply Now →</a>
     <div class="cta-fine">Starts July 2026 &nbsp;·&nbsp; Austin, TX &nbsp;·&nbsp; Limited seats &nbsp;·&nbsp; $8,999 tuition</div>
   </div>
+</div>
+
+<!-- STICKY MOBILE CTA -->
+<div class="mobile-sticky-cta">
+  <span class="mobile-sticky-cta-text"><strong>July 2026 · Austin, TX</strong>12 seats · rolling admissions</span>
+  <a href="apply.html#form" class="mobile-sticky-cta-btn">Apply Now →</a>
 </div>
 
 <!-- FOOTER -->
