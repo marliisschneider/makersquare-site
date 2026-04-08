@@ -950,6 +950,12 @@ body.nav-open { overflow: hidden; }
   body.nav-open .mobile-menu { display: block; }
   footer { flex-direction: column; gap: 0.5rem; text-align: center; padding: 1.5rem; }
 }
+
+/* SCROLL ANIMATIONS */
+.fade-up { opacity: 0; transform: translateY(28px); transition: opacity 0.65s ease, transform 0.65s ease; }
+.fade-up.visible { opacity: 1; transform: translateY(0); }
+/* PARALLAX HERO */
+.page-hero { will-change: transform; overflow: visible; }
 </style>
 </head>
 <body>
@@ -979,9 +985,9 @@ body.nav-open { overflow: hidden; }
     <li><a href="housing.html">Housing</a></li>
     <li><a href="team.html">Team</a></li>
     <li><a href="corporate.html">Corporate Training</a></li>
-    <li><a href="apply.html">Apply</a></li>
+    <li><a href="apply.html#form">Apply</a></li>
   </ul>
-  <a href="apply.html" class="mobile-menu-cta-btn" style="background:var(--accent);color:#0a0a0b;">Apply Now →</a>
+  <a href="apply.html#form" class="mobile-menu-cta-btn" style="background:var(--accent);color:#0a0a0b;">Apply Now →</a>
 </div>
 
 <!-- HERO -->
@@ -1006,7 +1012,7 @@ body.nav-open { overflow: hidden; }
     <div class="hero-outcome-card">
       <div class="hoc-label">If you run a business</div>
       <div class="hoc-text">Build AI tools that do the work your team keeps putting off</div>
-      <div class="hoc-sub">Automate reports, proposals, client comms, and internal ops — without hiring a developer</div>
+      <div class="hoc-sub">Build AI agents that automate reports, proposals, client comms, and internal ops — without hiring a developer</div>
     </div>
     <div class="hero-outcome-card">
       <div class="hoc-label">If you're building a career</div>
@@ -1080,7 +1086,7 @@ body.nav-open { overflow: hidden; }
     <div class="benefit-card">
       <div class="benefit-icon">▣</div>
       <div class="benefit-title">You Leave With Real Products</div>
-      <div class="benefit-desc">No certificates. You graduate with 3 deployed AI products — live, working tools you built yourself. Things you can show, sell, or put to work immediately.</div>
+      <div class="benefit-desc">No certificates. You graduate with 3 deployed AI products — including a working AI agent — live tools you built yourself. Things you can show, sell, or put to work immediately.</div>
     </div>
     <div class="benefit-card">
       <div class="benefit-icon">◇</div>
@@ -1150,6 +1156,7 @@ body.nav-open { overflow: hidden; }
       <ul class="checklist">
         <li>Build and deploy AI tools using no-code and low-code platforms</li>
         <li>Create an AI that searches and reasons over your own documents and data</li>
+        <li>Build AI agents that complete multi-step workflows autonomously</li>
         <li>Set up automated workflows that run without you lifting a finger</li>
         <li>Know when your AI tool is actually working — and how to fix it when it isn't</li>
         <li>Price, position, and find your first customers for what you build</li>
@@ -1279,7 +1286,7 @@ body.nav-open { overflow: hidden; }
           <li>8 weeks in-person, Austin TX</li>
           <li>Mon / Wed / Fri · 9am–3pm</li>
           <li>24-hr async instructor support</li>
-          <li>3 deployed AI products</li>
+          <li>3 deployed AI products incl. an AI agent</li>
           <li>Demo Day + investor access</li>
           <li>Lifetime alumni network</li>
           <li>Payment plans available</li>
@@ -1382,5 +1389,26 @@ body.nav-open { overflow: hidden; }
   <div style="display:flex;gap:1.5rem;"><a href="privacy.html" style="font-size:12px;color:#4e6a85;text-decoration:none;">Privacy Policy</a><a href="terms.html" style="font-size:12px;color:#4e6a85;text-decoration:none;">Terms of Service</a></div><div class="footer-copy">© 2026 MakerSquare LLC. Austin, TX.</div>
 </footer>
 
+<script>
+(function(){
+  var obs = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if(e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.08 });
+  function init(){
+    document.querySelectorAll('.main-content > *, .page-hero > *').forEach(function(el, i){
+      el.classList.add('fade-up');
+      el.style.transitionDelay = Math.min(i * 0.08, 0.4) + 's';
+      obs.observe(el);
+    });
+    var hero = document.querySelector('.page-hero');
+    if(hero){
+      window.addEventListener('scroll', function(){
+        hero.style.transform = 'translateY(' + (window.scrollY * 0.13) + 'px)';
+      }, { passive: true });
+    }
+  }
+  if(document.readyState === 'loading'){ document.addEventListener('DOMContentLoaded', init); } else { init(); }
+})();
+</script>
 </body>
 </html>

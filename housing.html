@@ -31,16 +31,16 @@
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 :root {
-  --bg: #0c1828; --bg2: #0f1f33; --bg3: #162840;
-  --border: rgba(61,158,255,0.12); --border2: rgba(61,158,255,0.24);
-  --text: #ffffff; --muted: #4e6a85; --muted2: #8aaec8;
+  --bg: #1a2f44; --bg2: #213749; --bg3: #284055;
+  --border: rgba(61,158,255,0.15); --border2: rgba(61,158,255,0.28);
+  --text: #ffffff; --muted: #6b87a3; --muted2: #9bbdd6;
   --accent: #3d9eff; --accent2: #2b85e8; --green: #4ade80;
   --font: 'Inter', sans-serif;
 }
 html { scroll-behavior: smooth; }
 body { background: var(--bg); color: var(--text); font-family: var(--font); font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; letter-spacing: -0.01em; overflow-x: hidden; }
 
-nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 0 2.5rem; height: 64px; display: flex; align-items: center; justify-content: space-between; background: rgba(12,24,40,0.92); backdrop-filter: blur(18px); border-bottom: 1px solid var(--border); }
+nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 0 2.5rem; height: 64px; display: flex; align-items: center; justify-content: space-between; background: rgba(26,47,68,0.92); backdrop-filter: blur(18px); border-bottom: 1px solid var(--border); }
 .nav-logo { font-weight: 700; font-size: 18px; letter-spacing: -0.02em; color: var(--text); text-decoration: none; }
 .nav-logo span { color: var(--accent); }
 .nav-links { display: flex; gap: 2rem; list-style: none; }
@@ -49,7 +49,41 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 0 2.5re
 .nav-cta { background: var(--accent); color: #0a0a0b; border: none; padding: 9px 22px; border-radius: 6px; font-size: 13px; font-weight: 500; cursor: pointer; transition: background 0.2s; text-decoration: none; }
 .nav-cta:hover { background: var(--accent2); }
 
-.page-hero { padding: 120px 2.5rem 60px; max-width: 1100px; margin: 0 auto; }
+/* PARALLAX HERO */
+.hero-parallax {
+  position: relative;
+  height: 520px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 64px;
+}
+.hero-parallax-bg {
+  position: absolute;
+  inset: -60px 0;
+  background-image: url('https://assets.guesty.com/image/upload/v1721669613/oe6asaof4jb7pmquw4g9.jpg');
+  background-size: cover;
+  background-position: center;
+  will-change: transform;
+  transition: transform 0.05s linear;
+}
+.hero-parallax-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(26,47,68,0.55) 0%, rgba(26,47,68,0.75) 100%);
+}
+.hero-parallax-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 0 2rem;
+  max-width: 800px;
+}
+.hero-parallax-content .page-label { justify-content: center; margin-bottom: 1.2rem; }
+.hero-parallax-content h1 { margin-bottom: 1.2rem; }
+.hero-parallax-content .page-intro { margin: 0 auto; text-align: center; }
+
 .page-label { font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 10px; }
 .page-label::before { content: ''; display: block; width: 24px; height: 1px; background: var(--accent); }
 h1 { font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 800; line-height: 1.1; letter-spacing: -0.035em; margin-bottom: 1.5rem; }
@@ -65,24 +99,105 @@ h3 { font-size: 1.15rem; font-weight: 700; letter-spacing: -0.02em; margin-botto
 .section-label { font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 10px; }
 .section-label::before { content: ''; display: block; width: 24px; height: 1px; background: var(--accent); }
 
+/* SCROLL ANIMATIONS */
+.fade-up {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.fade-up-delay-1 { transition-delay: 0.1s; }
+.fade-up-delay-2 { transition-delay: 0.2s; }
+.fade-up-delay-3 { transition-delay: 0.3s; }
+.fade-up-delay-4 { transition-delay: 0.4s; }
+
 /* INTRO BLOCK */
-.intro-block { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; margin: 3rem 0 4rem; }
+.intro-block { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; margin: 4rem 0 4rem; }
 .intro-text p { font-size: 15px; color: var(--muted2); font-weight: 300; line-height: 1.8; margin-bottom: 1rem; }
 .intro-text p strong { color: var(--text); font-weight: 600; }
 .intro-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
-.stat-card { background: var(--bg2); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; }
+.stat-card { background: var(--bg2); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; transition: transform 0.2s, border-color 0.2s; }
+.stat-card:hover { transform: translateY(-3px); border-color: rgba(61,158,255,0.3); }
 .stat-num { font-size: 2rem; font-weight: 800; letter-spacing: -0.04em; color: var(--accent); margin-bottom: 0.2rem; }
 .stat-label { font-size: 13px; color: var(--muted2); font-weight: 300; }
+
+/* PHOTO GALLERY */
+.gallery-section { margin: 4rem 0; }
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 240px 200px;
+  gap: 10px;
+  margin-top: 1.5rem;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.gallery-item {
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+.gallery-item:first-child {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+  display: block;
+}
+.gallery-item:hover img { transform: scale(1.05); }
+.gallery-more {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.gallery-more img { filter: brightness(0.45); }
+.gallery-more-label {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  pointer-events: none;
+}
+
+/* LIGHTBOX */
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(15,25,38,0.96);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+}
+.lightbox.open { display: flex; }
+.lightbox-img { max-width: 90vw; max-height: 85vh; border-radius: 8px; object-fit: contain; }
+.lightbox-close { position: absolute; top: 1.5rem; right: 1.5rem; background: rgba(255,255,255,0.1); border: none; color: #fff; font-size: 24px; width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background 0.2s; }
+.lightbox-close:hover { background: rgba(255,255,255,0.2); }
+.lightbox-prev, .lightbox-next { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.1); border: none; color: #fff; font-size: 20px; width: 48px; height: 48px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background 0.2s; }
+.lightbox-prev { left: 1.5rem; }
+.lightbox-next { right: 1.5rem; }
+.lightbox-prev:hover, .lightbox-next:hover { background: rgba(255,255,255,0.2); }
 
 /* HOUSING OPTIONS */
 .section-divider { margin: 4rem 0 2rem; }
 .housing-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin-bottom: 3rem; }
-.housing-card { background: var(--bg2); border: 1px solid var(--border); border-radius: 16px; overflow: hidden; transition: border-color 0.25s; }
-.housing-card:hover { border-color: rgba(61,158,255,0.3); }
-.housing-card.featured { border-color: rgba(61,158,255,0.3); background: rgba(61,158,255,0.04); }
+.housing-card { background: var(--bg2); border: 1px solid var(--border); border-radius: 16px; overflow: hidden; transition: border-color 0.25s, transform 0.25s; }
+.housing-card:hover { border-color: rgba(61,158,255,0.3); transform: translateY(-4px); }
+.housing-card.featured { border-color: rgba(61,158,255,0.3); background: rgba(61,158,255,0.06); }
 .housing-card-top { padding: 1.8rem 1.8rem 0; }
-.housing-badge { display: inline-block; font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; background: rgba(61,158,255,0.1); color: var(--accent); border: 1px solid rgba(61,158,255,0.2); border-radius: 4px; padding: 3px 9px; margin-bottom: 1rem; }
-.housing-badge.recommended { background: rgba(74,222,128,0.1); color: var(--green); border-color: rgba(74,222,128,0.2); }
+.housing-badge { display: inline-block; font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; background: rgba(61,158,255,0.12); color: var(--accent); border: 1px solid rgba(61,158,255,0.2); border-radius: 4px; padding: 3px 9px; margin-bottom: 1rem; }
+.housing-badge.recommended { background: rgba(74,222,128,0.12); color: var(--green); border-color: rgba(74,222,128,0.2); }
 .housing-card-title { font-size: 1.1rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 0.3rem; }
 .housing-card-sub { font-size: 13px; color: var(--muted2); font-weight: 300; line-height: 1.6; margin-bottom: 1rem; }
 .housing-price-row { display: flex; align-items: baseline; gap: 6px; margin-bottom: 0.3rem; }
@@ -97,7 +212,8 @@ h3 { font-size: 1.15rem; font-weight: 700; letter-spacing: -0.02em; margin-botto
 /* NEIGHBORHOODS */
 .neighborhoods { margin: 4rem 0; }
 .neighborhood-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; margin-top: 1.5rem; }
-.neighborhood-card { background: var(--bg2); border: 1px solid var(--border); border-radius: 12px; padding: 1.4rem; }
+.neighborhood-card { background: var(--bg2); border: 1px solid var(--border); border-radius: 12px; padding: 1.4rem; transition: transform 0.2s, border-color 0.2s; }
+.neighborhood-card:hover { transform: translateY(-3px); border-color: rgba(61,158,255,0.3); }
 .neighborhood-name { font-size: 14px; font-weight: 700; letter-spacing: -0.01em; margin-bottom: 0.3rem; }
 .neighborhood-dist { font-size: 11px; color: var(--accent); font-weight: 600; margin-bottom: 0.5rem; }
 .neighborhood-desc { font-size: 12px; color: var(--muted2); font-weight: 300; line-height: 1.65; }
@@ -105,7 +221,7 @@ h3 { font-size: 1.15rem; font-weight: 700; letter-spacing: -0.02em; margin-botto
 /* HOW IT WORKS */
 .how-block { background: var(--bg2); border: 1px solid var(--border); border-radius: 16px; padding: 2.5rem; margin: 3rem 0; }
 .how-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 1.5rem; }
-.how-step-num { font-size: 2.5rem; font-weight: 800; color: rgba(61,158,255,0.12); letter-spacing: -0.04em; margin-bottom: 0.5rem; }
+.how-step-num { font-size: 2.5rem; font-weight: 800; color: rgba(61,158,255,0.15); letter-spacing: -0.04em; margin-bottom: 0.5rem; }
 .how-step-title { font-size: 14px; font-weight: 700; letter-spacing: -0.01em; margin-bottom: 0.4rem; }
 .how-step-desc { font-size: 13px; color: var(--muted2); font-weight: 300; line-height: 1.65; }
 
@@ -133,6 +249,9 @@ footer { border-top: 1px solid var(--border); padding: 2rem 2.5rem; display: fle
 @media (max-width: 900px) {
   .intro-block, .housing-grid, .neighborhood-grid, .how-steps { grid-template-columns: 1fr; }
   .intro-stats { grid-template-columns: 1fr 1fr; }
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); grid-template-rows: auto; }
+  .gallery-item:first-child { grid-column: span 2; grid-row: span 1; height: 240px; }
+  .gallery-item { height: 160px; }
 }
 .nav-hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 6px; flex-shrink: 0; }
 .nav-hamburger span { display: block; width: 22px; height: 2px; background: var(--text); border-radius: 2px; transition: transform 0.25s, opacity 0.25s; }
@@ -151,9 +270,11 @@ body.nav-open { overflow: hidden; }
   .nav-cta { display: none; }
   .nav-links { display: none; }
   body.nav-open .mobile-menu { display: block; }
-  .page-hero { padding: 90px 1.25rem 40px; }
   .main-content { padding: 0 1.25rem 60px; }
   footer { flex-direction: column; gap: 0.5rem; text-align: center; padding: 1.5rem; }
+  .gallery-grid { grid-template-columns: 1fr 1fr; }
+  .lightbox-prev { left: 0.5rem; }
+  .lightbox-next { right: 0.5rem; }
 }
 </style>
 </head>
@@ -188,48 +309,95 @@ body.nav-open { overflow: hidden; }
   <a href="apply.html#form" class="mobile-menu-cta-btn" style="background:var(--accent);color:#0a0a0b;">Apply Now →</a>
 </div>
 
-<div class="page-hero">
-  <div class="page-label">Housing</div>
-  <h1>Coming from out of town?<br><em>We've got you covered.</em></h1>
-  <p class="page-intro">MakerSquare is in Austin — but students come from across Texas and beyond. We've partnered with select Airbnb hosts near the program to offer discounted stays for enrolled students. No hotel searching, no logistics headaches.</p>
+<!-- PARALLAX HERO -->
+<div class="hero-parallax" id="heroParallax">
+  <div class="hero-parallax-bg" id="parallaxBg"></div>
+  <div class="hero-parallax-overlay"></div>
+  <div class="hero-parallax-content">
+    <div class="page-label">Housing</div>
+    <h1>Coming from out of town?<br><em>We've got you covered.</em></h1>
+    <p class="page-intro">MakerSquare is in Austin — but students come from across Texas and beyond. We've partnered with select Airbnb hosts near the program to offer discounted stays for enrolled students.</p>
+  </div>
 </div>
 
 <div class="main-content">
 
   <div class="intro-block">
-    <div class="intro-text">
+    <div class="intro-text fade-up">
       <p>The program runs <strong>Mon / Wed / Fri, 9am–3pm</strong> for 8 weeks. If you're flying in from Dallas, Houston, San Antonio, or further out, the most common setup is a furnished short-term rental close to campus — and that's exactly what we've arranged.</p>
       <p>We work directly with a curated list of Airbnb hosts who offer <strong>discounted rates for MakerSquare students</strong>. Each property has been reviewed for workspace quality, internet reliability, and proximity to the program location. You'll receive the full list with booking codes after admission.</p>
       <p>Prefer to arrange your own housing? That works too. Most students who drive in from nearby cities find a hotel or short-term rental in central Austin and commute on program days.</p>
     </div>
     <div class="intro-stats">
-      <div class="stat-card">
+      <div class="stat-card fade-up fade-up-delay-1">
         <div class="stat-num">~10</div>
         <div class="stat-label">Min from campus, partner properties</div>
       </div>
-      <div class="stat-card">
+      <div class="stat-card fade-up fade-up-delay-2">
         <div class="stat-num">10–20%</div>
         <div class="stat-label">Discount vs. standard Airbnb rates</div>
       </div>
-      <div class="stat-card">
+      <div class="stat-card fade-up fade-up-delay-3">
         <div class="stat-num">8</div>
         <div class="stat-label">Weeks of program housing available</div>
       </div>
-      <div class="stat-card">
+      <div class="stat-card fade-up fade-up-delay-4">
         <div class="stat-num">Wi-Fi</div>
         <div class="stat-label">Verified fast internet at each property</div>
       </div>
     </div>
   </div>
 
+  <!-- PHOTO GALLERY -->
+  <div class="gallery-section fade-up">
+    <div class="section-label">Featured Property</div>
+    <h2>East Austin Modern <em>Bungalow</em></h2>
+    <p style="font-size:14px;color:var(--muted2);font-weight:300;margin-bottom:1.5rem;margin-top:0.4rem;">One of our top partner properties — fully furnished, fast Wi-Fi, 10 min from campus. Available at a discounted rate for enrolled students.</p>
+    <div class="gallery-grid" id="galleryGrid">
+      <div class="gallery-item" onclick="openLightbox(0)">
+        <img src="https://assets.guesty.com/image/upload/v1721669613/oe6asaof4jb7pmquw4g9.jpg" alt="East Austin Modern Bungalow - Living area" loading="lazy">
+      </div>
+      <div class="gallery-item" onclick="openLightbox(1)">
+        <img src="https://assets.guesty.com/image/upload/v1721669614/lrfl1iz5ivvphrucqpe7.jpg" alt="Bungalow interior" loading="lazy">
+      </div>
+      <div class="gallery-item" onclick="openLightbox(2)">
+        <img src="https://assets.guesty.com/image/upload/v1721669613/zkurfw7jxxr34fdpazqi.jpg" alt="Bungalow bedroom" loading="lazy">
+      </div>
+      <div class="gallery-item" onclick="openLightbox(3)">
+        <img src="https://assets.guesty.com/image/upload/v1721669614/kafjkl0agl2caitee6w3.jpg" alt="Bungalow kitchen" loading="lazy">
+      </div>
+      <div class="gallery-item" onclick="openLightbox(4)">
+        <img src="https://assets.guesty.com/image/upload/v1721669614/cn9btehse7uwgei0vs3a.jpg" alt="Bungalow workspace" loading="lazy">
+      </div>
+      <div class="gallery-item" onclick="openLightbox(5)">
+        <img src="https://assets.guesty.com/image/upload/v1721669613/ldnsnrtbxcsyhraqkhmq.jpg" alt="Bungalow bathroom" loading="lazy">
+      </div>
+      <div class="gallery-item" onclick="openLightbox(6)">
+        <img src="https://assets.guesty.com/image/upload/v1721669613/pv4dazxrhj2awtimoudu.jpg" alt="Bungalow exterior" loading="lazy">
+      </div>
+      <div class="gallery-item gallery-more" onclick="openLightbox(7)">
+        <img src="https://assets.guesty.com/image/upload/v1721669613/jlrcxox5z7nqpmvjnw9u.jpg" alt="More photos" loading="lazy">
+        <div class="gallery-more-label">+9 more photos</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" onclick="closeLightboxOutside(event)">
+    <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+    <button class="lightbox-prev" onclick="shiftLightbox(-1)">‹</button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="">
+    <button class="lightbox-next" onclick="shiftLightbox(1)">›</button>
+  </div>
+
   <!-- HOUSING OPTIONS -->
-  <div class="section-divider">
+  <div class="section-divider fade-up">
     <div class="section-label">Partner options</div>
     <h2>Housing that fits<br><em>how you want to live while you build.</em></h2>
   </div>
 
   <div class="housing-grid">
-    <div class="housing-card featured">
+    <div class="housing-card featured fade-up fade-up-delay-1">
       <div class="housing-card-top">
         <span class="housing-badge recommended">Most Popular</span>
         <div class="housing-card-title">Furnished Studio or 1BR — East Austin</div>
@@ -249,7 +417,7 @@ body.nav-open { overflow: hidden; }
         <div class="housing-feature"><span class="ci">✓</span> Walking distance to coffee shops and coworking</div>
       </div>
     </div>
-    <div class="housing-card">
+    <div class="housing-card fade-up fade-up-delay-2">
       <div class="housing-card-top">
         <span class="housing-badge">Shared Option</span>
         <div class="housing-card-title">Shared House — Central Austin</div>
@@ -269,7 +437,7 @@ body.nav-open { overflow: hidden; }
         <div class="housing-feature"><span class="ci">✓</span> 15 minute drive to campus</div>
       </div>
     </div>
-    <div class="housing-card">
+    <div class="housing-card fade-up fade-up-delay-3">
       <div class="housing-card-top">
         <span class="housing-badge">Weekly Stay</span>
         <div class="housing-card-title">Boutique Hotel — Near Campus</div>
@@ -288,7 +456,7 @@ body.nav-open { overflow: hidden; }
         <div class="housing-feature"><span class="ci">✓</span> Fitness center access</div>
       </div>
     </div>
-    <div class="housing-card">
+    <div class="housing-card fade-up fade-up-delay-4">
       <div class="housing-card-top">
         <span class="housing-badge">Custom</span>
         <div class="housing-card-title">Arrange Your Own</div>
@@ -310,35 +478,35 @@ body.nav-open { overflow: hidden; }
 
   <!-- NEIGHBORHOODS -->
   <div class="neighborhoods">
-    <div class="section-label">Location</div>
-    <h2>The best Austin neighborhoods<br><em>for MakerSquare students.</em></h2>
+    <div class="section-label fade-up">Location</div>
+    <h2 class="fade-up">The best Austin neighborhoods<br><em>for MakerSquare students.</em></h2>
     <div class="neighborhood-grid">
-      <div class="neighborhood-card">
+      <div class="neighborhood-card fade-up fade-up-delay-1">
         <div class="neighborhood-name">East Austin</div>
         <div class="neighborhood-dist">~10 min to campus</div>
         <div class="neighborhood-desc">The most popular choice. Dense with coffee shops, coworking spaces, and walkable restaurants. Where most of the Austin tech scene lives and works. Lively without being overwhelming.</div>
       </div>
-      <div class="neighborhood-card">
+      <div class="neighborhood-card fade-up fade-up-delay-2">
         <div class="neighborhood-name">South Congress (SoCo)</div>
         <div class="neighborhood-dist">~15 min to campus</div>
         <div class="neighborhood-desc">Great food, quieter residential streets, easy parking. A good fit for students who want to avoid East Austin density but stay close to the energy.</div>
       </div>
-      <div class="neighborhood-card">
+      <div class="neighborhood-card fade-up fade-up-delay-3">
         <div class="neighborhood-name">Mueller / Hyde Park</div>
         <div class="neighborhood-dist">~12 min to campus</div>
         <div class="neighborhood-desc">Walkable, family-friendly, and quieter. Excellent for students who want a good study environment and easy grocery access. Strong coffee shop scene.</div>
       </div>
-      <div class="neighborhood-card">
+      <div class="neighborhood-card fade-up fade-up-delay-1">
         <div class="neighborhood-name">Domain / North Austin</div>
         <div class="neighborhood-dist">~20 min to campus</div>
         <div class="neighborhood-desc">More suburban feel. Better for students with families or who prefer larger spaces. Excellent highway access, easy parking, bigger apartments for less money.</div>
       </div>
-      <div class="neighborhood-card">
+      <div class="neighborhood-card fade-up fade-up-delay-2">
         <div class="neighborhood-name">Downtown / Rainey St</div>
         <div class="neighborhood-dist">~10 min to campus</div>
         <div class="neighborhood-desc">Best for students who want to be in the middle of Austin's nightlife and social scene. Higher cost. Walking distance to bars and restaurants makes it easy to network after class.</div>
       </div>
-      <div class="neighborhood-card">
+      <div class="neighborhood-card fade-up fade-up-delay-3">
         <div class="neighborhood-name">South Lamar</div>
         <div class="neighborhood-dist">~15 min to campus</div>
         <div class="neighborhood-desc">Good mix of residential quiet and local activity. Strong restaurant corridor, reliable Airbnb inventory. A reliable choice for most students.</div>
@@ -347,22 +515,22 @@ body.nav-open { overflow: hidden; }
   </div>
 
   <!-- HOW IT WORKS -->
-  <div class="how-block">
+  <div class="how-block fade-up">
     <div class="section-label">How it works</div>
     <h3 style="font-size:1.3rem; margin-bottom:0.3rem;">Getting your housing set up</h3>
     <p style="font-size:14px; color:var(--muted2); font-weight:300; margin-bottom:1.5rem;">After you're admitted, housing is handled in three easy steps.</p>
     <div class="how-steps">
-      <div class="how-step">
+      <div class="how-step fade-up fade-up-delay-1">
         <div class="how-step-num">01</div>
         <div class="how-step-title">Tell us your preference</div>
         <div class="how-step-desc">When you complete enrollment, you'll fill out a brief housing preference form. Private vs. shared, budget range, any specific requirements. Takes 2 minutes.</div>
       </div>
-      <div class="how-step">
+      <div class="how-step fade-up fade-up-delay-2">
         <div class="how-step-num">02</div>
         <div class="how-step-title">Receive the matched listings</div>
         <div class="how-step-desc">Our housing coordinator sends you 2–3 pre-negotiated options that match your preferences, with the partner discount code and direct booking link for each.</div>
       </div>
-      <div class="how-step">
+      <div class="how-step fade-up fade-up-delay-3">
         <div class="how-step-num">03</div>
         <div class="how-step-title">Book directly, arrive ready</div>
         <div class="how-step-desc">You book directly with the host. We share the campus address, parking info, and a neighborhood guide so you know the area before you arrive on Day 1.</div>
@@ -371,32 +539,32 @@ body.nav-open { overflow: hidden; }
   </div>
 
   <!-- FAQ -->
-  <div class="section-label" style="margin-top:3.5rem;">Questions</div>
-  <h2 style="margin-bottom:0.5rem;">Housing FAQ</h2>
+  <div class="section-label fade-up" style="margin-top:3.5rem;">Questions</div>
+  <h2 class="fade-up" style="margin-bottom:0.5rem;">Housing FAQ</h2>
   <div class="faq-list">
-    <div class="faq-item">
+    <div class="faq-item fade-up">
       <div class="faq-q">Is housing required through MakerSquare?</div>
       <div class="faq-a">Not at all. The partner program is optional. Many students are Austin locals or have their own housing sorted. We offer it because out-of-town students asked for it, not because it's required.</div>
     </div>
-    <div class="faq-item">
+    <div class="faq-item fade-up">
       <div class="faq-q">Can I book housing before I'm admitted?</div>
       <div class="faq-a">We recommend waiting until you have your admission confirmed before booking. The program has a clear start date and a fixed end date, so it's straightforward to book once you're in.</div>
     </div>
-    <div class="faq-item">
+    <div class="faq-item fade-up">
       <div class="faq-q">What if I want to stay longer or arrive early?</div>
       <div class="faq-a">All partner properties allow extended stays. Just let us know your preferred dates in the housing form and the coordinator will check availability. Many students arrive a few days early to settle in before Day 1.</div>
     </div>
-    <div class="faq-item">
+    <div class="faq-item fade-up">
       <div class="faq-q">Is there a housing deposit or fee through MakerSquare?</div>
       <div class="faq-a">No. We negotiate the discounts, but you book and pay directly with the host. MakerSquare doesn't charge any housing coordination fee.</div>
     </div>
-    <div class="faq-item">
+    <div class="faq-item fade-up">
       <div class="faq-q">What if I have family coming with me?</div>
       <div class="faq-a">Let us know in the housing preference form. We have a few larger furnished homes in the partner network — great for students bringing a partner or family for the 8 weeks.</div>
     </div>
   </div>
 
-  <div class="page-cta">
+  <div class="page-cta fade-up">
     <h3>Questions about housing?<br><em>We're happy to help.</em></h3>
     <p>Email our housing coordinator at housing@makersquare.ai — or apply first and we'll walk you through everything during enrollment.</p>
     <a href="apply.html#form" class="btn-primary">Apply Now →</a>
@@ -409,5 +577,70 @@ body.nav-open { overflow: hidden; }
   <a href="index.html" class="footer-logo">Maker<span>Square</span></a>
   <div style="display:flex;gap:1.5rem;"><a href="privacy.html" style="font-size:12px;color:#4e6a85;text-decoration:none;">Privacy Policy</a><a href="terms.html" style="font-size:12px;color:#4e6a85;text-decoration:none;">Terms of Service</a></div><div class="footer-copy">© 2026 MakerSquare LLC. Austin, TX.</div>
 </footer>
+
+<script>
+// PARALLAX
+const parallaxBg = document.getElementById('parallaxBg');
+window.addEventListener('scroll', () => {
+  const scrollY = window.scrollY;
+  parallaxBg.style.transform = `translateY(${scrollY * 0.4}px)`;
+}, { passive: true });
+
+// SCROLL ANIMATIONS
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.12 });
+
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+// LIGHTBOX
+const images = [
+  'https://assets.guesty.com/image/upload/v1721669613/oe6asaof4jb7pmquw4g9.jpg',
+  'https://assets.guesty.com/image/upload/v1721669614/lrfl1iz5ivvphrucqpe7.jpg',
+  'https://assets.guesty.com/image/upload/v1721669613/zkurfw7jxxr34fdpazqi.jpg',
+  'https://assets.guesty.com/image/upload/v1721669614/kafjkl0agl2caitee6w3.jpg',
+  'https://assets.guesty.com/image/upload/v1721669614/cn9btehse7uwgei0vs3a.jpg',
+  'https://assets.guesty.com/image/upload/v1721669613/ldnsnrtbxcsyhraqkhmq.jpg',
+  'https://assets.guesty.com/image/upload/v1721669613/pv4dazxrhj2awtimoudu.jpg',
+  'https://assets.guesty.com/image/upload/v1721669613/jlrcxox5z7nqpmvjnw9u.jpg',
+  'https://assets.guesty.com/image/upload/v1721669613/c4wj1psmaxqilsbyi4p0.jpg',
+  'https://assets.guesty.com/image/upload/v1721669613/gaa71fu5hohuh6vesfwp.jpg',
+  'https://assets.guesty.com/image/upload/v1721669613/a3vqyvtjngzcmw7d9fuk.jpg',
+  'https://assets.guesty.com/image/upload/v1721669614/uwfzcwijddyqni4bxsxt.jpg',
+  'https://assets.guesty.com/image/upload/v1721669614/j26issbljg4diepkbkcl.jpg',
+  'https://assets.guesty.com/image/upload/v1721669614/yyisnnbdjdfp39lnrcka.jpg',
+  'https://assets.guesty.com/image/upload/v1721669614/mwsq7nodrnsyenlhcgcp.jpg',
+  'https://assets.guesty.com/image/upload/v1721669614/hv7tfmv0zwlgbhycftgy.jpg',
+];
+let currentIdx = 0;
+
+function openLightbox(idx) {
+  currentIdx = idx;
+  document.getElementById('lightboxImg').src = images[idx];
+  document.getElementById('lightbox').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('open');
+  document.body.style.overflow = '';
+}
+function closeLightboxOutside(e) {
+  if (e.target === document.getElementById('lightbox')) closeLightbox();
+}
+function shiftLightbox(dir) {
+  currentIdx = (currentIdx + dir + images.length) % images.length;
+  document.getElementById('lightboxImg').src = images[currentIdx];
+}
+document.addEventListener('keydown', (e) => {
+  if (!document.getElementById('lightbox').classList.contains('open')) return;
+  if (e.key === 'ArrowRight') shiftLightbox(1);
+  if (e.key === 'ArrowLeft') shiftLightbox(-1);
+  if (e.key === 'Escape') closeLightbox();
+});
+</script>
 </body>
 </html>

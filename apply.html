@@ -31,16 +31,16 @@
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 :root {
-  --bg: #0c1828; --bg2: #0f1f33; --bg3: #162840;
-  --border: rgba(61,158,255,0.12); --border2: rgba(61,158,255,0.24);
-  --text: #ffffff; --muted: #4e6a85; --muted2: #8aaec8;
+  --bg: #1a2f44; --bg2: #213749; --bg3: #284055;
+  --border: rgba(61,158,255,0.15); --border2: rgba(61,158,255,0.28);
+  --text: #ffffff; --muted: #6b87a3; --muted2: #9bbdd6;
   --accent: #3d9eff; --accent2: #2b85e8; --green: #4ade80;
   --font: 'Inter', sans-serif;
 }
 html { scroll-behavior: smooth; }
 body { background: var(--bg); color: var(--text); font-family: var(--font); font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; letter-spacing: -0.01em; overflow-x: hidden; }
 
-nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 0 2.5rem; height: 64px; display: flex; align-items: center; justify-content: space-between; background: rgba(12,24,40,0.92); backdrop-filter: blur(18px); border-bottom: 1px solid var(--border); }
+nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 0 2.5rem; height: 64px; display: flex; align-items: center; justify-content: space-between; background: rgba(26,47,68,0.92); backdrop-filter: blur(18px); border-bottom: 1px solid var(--border); }
 .nav-logo { font-weight: 700; font-size: 18px; letter-spacing: -0.02em; color: var(--text); text-decoration: none; }
 .nav-logo span { color: var(--accent); }
 .nav-links { display: flex; gap: 2rem; list-style: none; }
@@ -163,6 +163,12 @@ body.nav-open { overflow: hidden; }
   .main-content { padding: 0 1.25rem 60px; }
   footer { flex-direction: column; gap: 0.5rem; text-align: center; padding: 1.5rem; }
 }
+
+/* SCROLL ANIMATIONS */
+.fade-up { opacity: 0; transform: translateY(28px); transition: opacity 0.65s ease, transform 0.65s ease; }
+.fade-up.visible { opacity: 1; transform: translateY(0); }
+/* PARALLAX HERO */
+.page-hero { will-change: transform; overflow: visible; }
 </style>
 </head>
 <body>
@@ -405,5 +411,26 @@ body.nav-open { overflow: hidden; }
   <a href="index.html" class="footer-logo">Maker<span>Square</span></a>
   <div style="display:flex;gap:1.5rem;"><a href="privacy.html" style="font-size:12px;color:#4e6a85;text-decoration:none;">Privacy Policy</a><a href="terms.html" style="font-size:12px;color:#4e6a85;text-decoration:none;">Terms of Service</a></div><div class="footer-copy">© 2026 MakerSquare LLC. Austin, TX.</div>
 </footer>
+<script>
+(function(){
+  var obs = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if(e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.08 });
+  function init(){
+    document.querySelectorAll('.main-content > *, .page-hero > *').forEach(function(el, i){
+      el.classList.add('fade-up');
+      el.style.transitionDelay = Math.min(i * 0.08, 0.4) + 's';
+      obs.observe(el);
+    });
+    var hero = document.querySelector('.page-hero');
+    if(hero){
+      window.addEventListener('scroll', function(){
+        hero.style.transform = 'translateY(' + (window.scrollY * 0.13) + 'px)';
+      }, { passive: true });
+    }
+  }
+  if(document.readyState === 'loading'){ document.addEventListener('DOMContentLoaded', init); } else { init(); }
+})();
+</script>
 </body>
 </html>
