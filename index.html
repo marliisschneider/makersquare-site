@@ -953,6 +953,31 @@ body.nav-open { overflow: hidden; }
   footer { flex-direction: column; gap: 0.5rem; text-align: center; padding: 1.5rem; }
 }
 
+/* WHY NOW STATS */
+.whynow-wrap {
+  max-width: 1100px; margin: 0 auto; padding: 90px 2.5rem;
+}
+.whynow-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2.5rem;
+}
+.whynow-card {
+  background: var(--bg2); border: 1px solid var(--border); border-radius: 14px; padding: 2rem;
+}
+.whynow-stat {
+  font-size: 3rem; font-weight: 800; letter-spacing: -0.04em; color: var(--accent); line-height: 1;
+  margin-bottom: 0.75rem;
+}
+.whynow-desc {
+  font-size: 14px; color: var(--muted2); line-height: 1.65; font-weight: 300;
+}
+.whynow-source {
+  font-size: 10px; color: var(--muted); margin-top: 0.75rem; letter-spacing: 0.04em; text-transform: uppercase;
+}
+@media (max-width: 900px) {
+  .whynow-grid { grid-template-columns: 1fr; gap: 1rem; }
+  .whynow-wrap { padding: 60px 1.25rem; }
+}
+
 /* SCROLL ANIMATIONS */
 .fade-up { opacity: 0; transform: translateY(28px); transition: opacity 0.65s ease, transform 0.65s ease; }
 .fade-up.visible { opacity: 1; transform: translateY(0); }
@@ -1170,6 +1195,29 @@ body.nav-open { overflow: hidden; }
   </div>
 </div>
 
+<!-- WHY NOW -->
+<div class="whynow-wrap">
+  <div class="section-label">Why now</div>
+  <h2>The window to get ahead<br><em>is open. It won't stay open.</em></h2>
+  <div class="whynow-grid">
+    <div class="whynow-card">
+      <div class="whynow-stat">70%</div>
+      <div class="whynow-desc">of employee work time could be augmented or automated by AI tools available today — most professionals haven't touched any of them.</div>
+      <div class="whynow-source">McKinsey Global Institute, 2023</div>
+    </div>
+    <div class="whynow-card">
+      <div class="whynow-stat">87%</div>
+      <div class="whynow-desc">of executives are actively deploying or expanding AI across their organizations. The people who can build with it — not just talk about it — are already ahead.</div>
+      <div class="whynow-source">IBM Institute for Business Value, 2023</div>
+    </div>
+    <div class="whynow-card">
+      <div class="whynow-stat">44%</div>
+      <div class="whynow-desc">of workers' core skills will be disrupted in the next five years. AI fluency isn't a career upgrade anymore — it's a baseline requirement.</div>
+      <div class="whynow-source">World Economic Forum, Future of Jobs 2023</div>
+    </div>
+  </div>
+</div>
+
 <!-- BENEFITS -->
 <div class="section-wrap" id="benefits">
   <div class="section-label">How it works</div>
@@ -1202,8 +1250,8 @@ body.nav-open { overflow: hidden; }
     </div>
     <div class="benefit-card">
       <div class="benefit-icon">△</div>
-      <div class="benefit-title">A Public Stage on Demo Day</div>
-      <div class="benefit-desc">At the end of the program, you present your capstone to Austin operators, founders, and investors at a public Demo Day. Your first real audience for what you built.</div>
+      <div class="benefit-title">A Real Product Launch on Demo Day</div>
+      <div class="benefit-desc">The program ends with a public launch event — not a graduation ceremony. You demo a live, working product to Austin founders, operators, and investors. Your first real launch, on a real stage.</div>
     </div>
   </div>
 </div>
@@ -1267,7 +1315,7 @@ body.nav-open { overflow: hidden; }
         <li>Connect AI to your documents, data, and existing tools</li>
         <li>Ship 3 real, deployed AI products by the end of the program</li>
         <li>Know when your AI tool is actually working — and how to fix it when it isn't</li>
-        <li>Present a live, working product to investors and operators at Demo Day</li>
+        <li>Launch a live, working product at a public Demo Day with investors and operators</li>
       </ul>
     </div>
     <div class="about-stats-grid">
@@ -1357,9 +1405,9 @@ body.nav-open { overflow: hidden; }
         <div class="phase-weeks">Ship &amp; Scale</div>
       </div>
       <div>
-        <div class="phase-title">Capstone + Demo Day</div>
-        <div class="phase-desc">Scope and build your third product — something meaningful to your actual work or business. A full build sprint with instructor support, ending with a live Demo Day presentation to Austin operators, founders, and investors.</div>
-        <div class="phase-deliverable">→ Friday of Week 4: Demo Day — present to a live Austin audience</div>
+        <div class="phase-title">Capstone + Launch Day</div>
+        <div class="phase-desc">Scope and build your third product — something meaningful to your actual work or business. A full build sprint with instructor support, ending with a public launch event where you demo a live product to Austin operators, founders, and investors.</div>
+        <div class="phase-deliverable">→ Friday of Week 4: Demo Day — a real product launch, not a graduation</div>
       </div>
     </div>
   </div>
@@ -1466,7 +1514,7 @@ body.nav-open { overflow: hidden; }
     </div>
     <div class="faq-item">
       <div class="faq-q">What do I actually walk away with?</div>
-      <div class="faq-a">Three deployed AI products, live and working. A Demo Day presentation to Austin operators and investors. And a cohort of fellow builders who become your long-term network — people who are building with AI in your city, in your field.</div>
+      <div class="faq-a">Three deployed AI products, live and working. A real product launch at Demo Day — in front of Austin operators and investors. And a cohort of fellow builders who become your long-term network — people who are building with AI in your city, in your field.</div>
     </div>
     <div class="faq-item">
       <div class="faq-q">Is this right for me if I'm not trying to start a company?</div>
@@ -1478,7 +1526,7 @@ body.nav-open { overflow: hidden; }
     </div>
     <div class="faq-item">
       <div class="faq-q">Why Austin?</div>
-      <div class="faq-a">Austin has one of the fastest-growing concentrations of founders, operators, and domain experts in the country — with an active VC and angel community that becomes part of your network the moment you step on stage at Demo Day.</div>
+      <div class="faq-a">Austin has one of the fastest-growing concentrations of founders, operators, and domain experts in the country — with an active VC and angel community that becomes part of your network the moment you launch at Demo Day.</div>
     </div>
   </div>
 </div>
