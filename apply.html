@@ -175,9 +175,6 @@ footer { border-top: 1px solid var(--border); padding: 2rem 2.5rem; display: fle
 @media (max-width: 900px) {
   .criteria-grid, .form-grid { grid-template-columns: 1fr; }
   .form-group.full { grid-column: auto; }
-  .timeline-item { grid-template-columns: 90px 1fr; gap: 1rem; }
-  .timeline-item::before { left: 37px; }
-  .timeline-dot { left: 32px; }
   .ta-header { padding: 1rem 1.25rem; gap: 0.75rem; }
   .ta-cohort-name { font-size: 0.95rem; }
   .ta-body { padding: 1.25rem 1rem; }
@@ -189,6 +186,34 @@ footer { border-top: 1px solid var(--border); padding: 2rem 2.5rem; display: fle
   .cohort-section h2 { font-size: 1.6rem; }
   .ta-badge { display: none; }
   .ta-cohort-range { font-size: 11px; }
+  /* Timeline: switch to left-border stacked layout on mobile */
+  .timeline-item {
+    display: block;
+    padding-left: 1.25rem;
+    padding-bottom: 1.5rem;
+    border-left: 2px solid var(--border);
+    position: relative;
+  }
+  .timeline-item:last-child { border-left-color: transparent; }
+  .timeline-item::before { display: none; }
+  .timeline-dot {
+    position: absolute;
+    left: -5px;
+    top: 3px;
+    width: 8px;
+    height: 8px;
+  }
+  .timeline-date {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: left;
+    margin-bottom: 0.3rem;
+  }
+  .timeline-date-label { font-size: 11px; }
+  .timeline-date-sub { font-size: 11px; margin-top: 0; }
+  .timeline-content { padding-left: 0; }
 }
 .nav-hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 6px; flex-shrink: 0; }
 .nav-hamburger span { display: block; width: 22px; height: 2px; background: var(--text); border-radius: 2px; transition: transform 0.25s, opacity 0.25s; }
@@ -285,7 +310,7 @@ body.nav-open { overflow: hidden; }
         <div class="cohort-label">Cohort 1</div>
         <div class="cohort-dates">July 2026</div>
         <div class="cohort-demo">Jul 6 – Aug 1 · Demo Day Aug 1</div>
-        <div class="cohort-spots">9 of 12 spots remaining</div>
+        <div class="cohort-spots">9 of 15 spots remaining</div>
         <a href="#form" class="cohort-cta">Apply Now →</a>
       </div>
       <div class="cohort-card" onclick="selectCohort(this, 'sep')">
@@ -293,7 +318,7 @@ body.nav-open { overflow: hidden; }
         <div class="cohort-label">Cohort 2</div>
         <div class="cohort-dates">September 2026</div>
         <div class="cohort-demo">Sep 14 – Oct 9 · Demo Day Oct 9</div>
-        <div class="cohort-spots">12 spots available</div>
+        <div class="cohort-spots">15 spots available</div>
         <a href="#form" class="cohort-cta ghost">Join Waitlist →</a>
       </div>
       <div class="cohort-card" onclick="selectCohort(this, 'oct')">
@@ -301,7 +326,7 @@ body.nav-open { overflow: hidden; }
         <div class="cohort-label">Cohort 3</div>
         <div class="cohort-dates">October 2026</div>
         <div class="cohort-demo">Oct 26 – Nov 20 · Demo Day Nov 20</div>
-        <div class="cohort-spots">12 spots available</div>
+        <div class="cohort-spots">15 spots available</div>
         <a href="#form" class="cohort-cta ghost">Join Waitlist →</a>
       </div>
       <div class="cohort-card" onclick="selectCohort(this, 'jan')">
