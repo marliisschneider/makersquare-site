@@ -446,6 +446,8 @@ h2 em { font-style: normal; color: var(--accent); }
   border-radius: 100px;
   padding: 4px 14px;
   letter-spacing: 0.03em;
+  white-space: normal;
+  word-break: break-word;
 }
 
 /* ── ABOUT ── */
@@ -1033,11 +1035,17 @@ body.nav-open { overflow: hidden; }
   .mobile-sticky-cta-text { font-size: 12px; color: var(--muted2); line-height: 1.4; }
   .mobile-sticky-cta-text strong { color: var(--text); display: block; font-size: 13px; }
   .mobile-sticky-cta-btn {
-    background: var(--accent); color: #0a0a0b; padding: 11px 22px;
-    border-radius: 8px; font-size: 14px; font-weight: 600;
+    background: #ffffff; color: #0a0a0b; padding: 11px 22px;
+    border-radius: 8px; font-size: 14px; font-weight: 700;
     text-decoration: none; white-space: nowrap; flex-shrink: 0;
+    box-shadow: 0 0 16px rgba(255,255,255,0.15);
   }
   body { padding-bottom: 68px; }
+  .persona-card { padding: 1.5rem; }
+  .section-wrap { padding: 60px 1.25rem; }
+  .section-wrap.full .inner { padding: 60px 1.25rem; }
+  .pricing-card { padding: 1.5rem; }
+  #pricing .inner { padding-left: 1.25rem; padding-right: 1.25rem; }
 }
 </style>
 </head>
@@ -1104,17 +1112,14 @@ body.nav-open { overflow: hidden; }
     <div class="hero-outcome-card">
       <div class="hoc-label">If you run a business</div>
       <div class="hoc-text">Build AI tools that do the work your team keeps putting off</div>
-      <div class="hoc-sub">Build AI agents that automate reports, proposals, client comms, and internal ops — without hiring a developer</div>
     </div>
     <div class="hero-outcome-card">
       <div class="hoc-label">If you're building a career</div>
       <div class="hoc-text">Become the person your organization depends on for AI</div>
-      <div class="hoc-sub">Go from curious to hands-on — the skill that separates the next decade's leaders</div>
     </div>
     <div class="hero-outcome-card">
       <div class="hoc-label">If you have an idea</div>
       <div class="hoc-text">Ship your first AI product without a technical co-founder</div>
-      <div class="hoc-sub">Turn your domain expertise into a real, deployed product that solves a real problem</div>
     </div>
     <div class="hero-stat-row">
       <div class="hero-stat">
