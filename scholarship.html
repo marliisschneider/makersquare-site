@@ -33,7 +33,7 @@
 :root {
   --bg: #1a2f44; --bg2: #1c3d5c; --bg3: #224669;
   --border: rgba(61,158,255,0.2); --border2: rgba(61,158,255,0.35);
-  --text: #ffffff; --muted: #6b87a3; --muted2: #9bbdd6;
+  --text: #ffffff; --muted: #8aa5bf; --muted2: #b8d4e8;
   --accent: #3d9eff; --accent2: #2b85e8; --green: #4ade80;
   --gold: #f5c842;
   --font: 'Inter', sans-serif;
@@ -164,6 +164,21 @@ body.nav-open { overflow: hidden; }
 .fade-up.visible { opacity: 1; transform: translateY(0); }
 /* PARALLAX HERO */
 .page-hero { will-change: transform; overflow: visible; }
+
+/* FAQ ACCORDION */
+.faq-item { padding: 0; cursor: default; }
+.faq-q {
+  display: flex; justify-content: space-between; align-items: flex-start;
+  gap: 1rem; padding: 1.4rem 0; margin-bottom: 0; cursor: pointer;
+  user-select: none;
+}
+.faq-q::after {
+  content: '+'; font-size: 1.4rem; font-weight: 300; color: var(--accent);
+  flex-shrink: 0; line-height: 1.1; transition: transform 0.25s;
+}
+.faq-item.open .faq-q::after { transform: rotate(45deg); }
+.faq-a { display: none; padding-bottom: 1.4rem; margin-top: 0; }
+.faq-item.open .faq-a { display: block; }
 </style>
 </head>
 <body>
@@ -362,6 +377,17 @@ body.nav-open { overflow: hidden; }
   }
   if(document.readyState === 'loading'){ document.addEventListener('DOMContentLoaded', init); } else { init(); }
 })();
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(function(q) {
+    q.addEventListener('click', function() {
+      var item = this.parentElement;
+      var isOpen = item.classList.contains('open');
+      var list = item.parentElement;
+      list.querySelectorAll('.faq-item').forEach(function(i) { i.classList.remove('open'); });
+      if (!isOpen) item.classList.add('open');
+    });
+  });
 </script>
 </body>
 </html>
