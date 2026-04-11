@@ -489,35 +489,33 @@ h2 em { font-style: normal; color: var(--accent); }
 .about-stats-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1px;
-  background: var(--border);
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  overflow: hidden;
+  gap: 0.75rem;
   align-self: start;
   min-width: 0;
 }
 .about-stat {
   background: var(--bg2);
-  padding: 1.75rem;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.75rem 1.5rem;
   min-width: 0;
-  overflow: hidden;
+  transition: border-color 0.2s;
 }
+.about-stat:hover { border-color: var(--border2); }
 .about-stat-num {
   font-family: var(--font-display);
-  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  font-size: clamp(2.8rem, 4.5vw, 4rem);
   font-weight: 800;
   color: var(--accent);
-  letter-spacing: -0.03em;
+  letter-spacing: -0.04em;
   line-height: 1;
-  margin-bottom: 0.3rem;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  margin-bottom: 0.5rem;
 }
 .about-stat-label {
-  font-size: 12px;
-  color: var(--muted);
+  font-size: 13px;
+  color: var(--muted2);
+  font-weight: 400;
+  line-height: 1.4;
 }
 
 /* ── WHY US / COMPARE ── */
@@ -1321,19 +1319,19 @@ body.nav-open { overflow: hidden; }
     <div class="about-stats-grid">
       <div class="about-stat">
         <div class="about-stat-num">4</div>
-        <div class="about-stat-label">Weeks in-person</div>
+        <div class="about-stat-label">Weeks in-person<br>in Austin, TX</div>
       </div>
       <div class="about-stat">
         <div class="about-stat-num">3</div>
-        <div class="about-stat-label">Products you ship</div>
+        <div class="about-stat-label">Real products<br>you ship & own</div>
       </div>
       <div class="about-stat">
         <div class="about-stat-num">3×</div>
-        <div class="about-stat-label">Days per week</div>
+        <div class="about-stat-label">Days per week,<br>9am – 3pm</div>
       </div>
       <div class="about-stat">
         <div class="about-stat-num">July</div>
-        <div class="about-stat-label">Next cohort starts</div>
+        <div class="about-stat-label">Next cohort starts,<br>applications open</div>
       </div>
     </div>
   </div>
