@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Apply to MakerSquare — AI Bootcamp Austin TX | July 2026</title>
-<meta name="description" content="Apply to MakerSquare's AI bootcamp in Austin. 4-week in-person program for non-technical professionals. Applications open now. Cohort 1 starts July 7, 2026.">
+<meta name="description" content="Apply to MakerSquare's AI bootcamp in Austin. 4-week in-person program for non-technical professionals. Applications open now. Cohort 1 starts July 6, 2026.">
 <meta name="robots" content="index, follow">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <!-- Google tag (gtag.js) -->
@@ -19,14 +19,14 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.makersquare.ai/apply.html">
 <meta property="og:title" content="Apply to MakerSquare — AI Bootcamp Austin TX">
-<meta property="og:description" content="Applications open now. 4-week in-person AI bootcamp for non-technical professionals. Cohort 1 starts July 7, 2026 in Austin, TX.">
+<meta property="og:description" content="Applications open now. 4-week in-person AI bootcamp for non-technical professionals. Cohort 1 starts July 6, 2026 in Austin, TX.">
 <meta property="og:image" content="https://www.makersquare.ai/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://www.makersquare.ai/og-image.jpg">
 <meta name="twitter:title" content="Apply to MakerSquare — AI Bootcamp Austin TX">
-<meta name="twitter:description" content="Applications open now. 4-week in-person AI bootcamp for non-technical professionals. Cohort 1 starts July 7, 2026 in Austin, TX.">
+<meta name="twitter:description" content="Applications open now. 4-week in-person AI bootcamp for non-technical professionals. Cohort 1 starts July 6, 2026 in Austin, TX.">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -123,6 +123,27 @@ select.form-input { cursor: pointer; }
 .btn-primary-lg:hover { background: var(--accent2); }
 .form-note { font-size: 13px; color: var(--muted); font-weight: 300; }
 
+/* COHORT SELECTOR */
+.cohort-section { margin: 0 0 4rem; }
+.cohort-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-top: 1.5rem; }
+.cohort-card { background: var(--bg2); border: 1px solid var(--border); border-radius: 16px; padding: 1.75rem 1.5rem; cursor: pointer; transition: border-color 0.2s; display: flex; flex-direction: column; }
+.cohort-card:hover { border-color: var(--border2); }
+.cohort-card.selected { border-color: var(--accent); background: rgba(61,158,255,0.06); }
+.cohort-badge { font-size: 10px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 3px 10px; border-radius: 100px; display: inline-block; margin-bottom: 1.25rem; width: fit-content; }
+.cohort-badge.open { background: rgba(74,222,128,0.12); color: var(--green); border: 1px solid rgba(74,222,128,0.25); }
+.cohort-badge.soon { background: rgba(61,158,255,0.08); color: var(--accent); border: 1px solid rgba(61,158,255,0.2); }
+.cohort-badge.coming { background: rgba(107,135,163,0.1); color: var(--muted); border: 1px solid rgba(107,135,163,0.2); }
+.cohort-label { font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.4rem; }
+.cohort-dates { font-size: 1.05rem; font-weight: 700; letter-spacing: -0.02em; color: var(--text); margin-bottom: 0.35rem; }
+.cohort-demo { font-size: 12px; color: var(--muted2); margin-bottom: 0.5rem; }
+.cohort-spots { font-size: 12px; color: var(--muted); margin-bottom: 1.25rem; flex: 1; }
+.cohort-cta { display: block; text-align: center; background: var(--accent); color: #0a0a0b; border-radius: 8px; padding: 10px 16px; font-size: 13px; font-weight: 700; text-decoration: none; transition: background 0.2s, border-color 0.2s; }
+.cohort-cta:hover { background: var(--accent2); text-decoration: none; }
+.cohort-cta.ghost { background: transparent; border: 1px solid var(--border2); color: var(--muted2); }
+.cohort-cta.ghost:hover { border-color: var(--accent); color: var(--text); background: rgba(61,158,255,0.06); }
+@media (max-width: 900px) { .cohort-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 540px) { .cohort-grid { grid-template-columns: 1fr; } }
+
 /* FAQ */
 .faq-list { margin-top: 1.5rem; }
 .faq-item { border-bottom: 1px solid var(--border); padding: 1.4rem 0; }
@@ -216,6 +237,46 @@ body.nav-open { overflow: hidden; }
 
 <div class="main-content">
 
+  <!-- COHORT SELECTOR -->
+  <div class="cohort-section">
+    <div class="section-label">Upcoming cohorts</div>
+    <h2 style="margin-bottom:1.5rem;">Pick your start date.<br><em>One application, any cohort.</em></h2>
+    <div class="cohort-grid">
+      <div class="cohort-card selected" onclick="selectCohort(this)">
+        <span class="cohort-badge open">● Open Now</span>
+        <div class="cohort-label">Cohort 1</div>
+        <div class="cohort-dates">Jul 6 – Aug 1, 2026</div>
+        <div class="cohort-demo">Demo Day: Aug 1</div>
+        <div class="cohort-spots">9 of 12 spots remaining</div>
+        <a href="#form" class="cohort-cta">Apply Now →</a>
+      </div>
+      <div class="cohort-card" onclick="selectCohort(this)">
+        <span class="cohort-badge soon">Enrolling Soon</span>
+        <div class="cohort-label">Cohort 2</div>
+        <div class="cohort-dates">Sep 14 – Oct 9, 2026</div>
+        <div class="cohort-demo">Demo Day: Oct 9</div>
+        <div class="cohort-spots">12 spots available</div>
+        <a href="#form" class="cohort-cta ghost">Join Waitlist →</a>
+      </div>
+      <div class="cohort-card" onclick="selectCohort(this)">
+        <span class="cohort-badge soon">Enrolling Soon</span>
+        <div class="cohort-label">Cohort 3</div>
+        <div class="cohort-dates">Oct 26 – Nov 20, 2026</div>
+        <div class="cohort-demo">Demo Day: Nov 20</div>
+        <div class="cohort-spots">12 spots available</div>
+        <a href="#form" class="cohort-cta ghost">Join Waitlist →</a>
+      </div>
+      <div class="cohort-card" onclick="selectCohort(this)">
+        <span class="cohort-badge coming">Coming Soon</span>
+        <div class="cohort-label">Cohort 4</div>
+        <div class="cohort-dates">Jan 11 – Feb 5, 2027</div>
+        <div class="cohort-demo">Demo Day: Feb 5</div>
+        <div class="cohort-spots">Accepting early interest</div>
+        <a href="#form" class="cohort-cta ghost">Get Notified →</a>
+      </div>
+    </div>
+  </div>
+
   <!-- PROCESS -->
   <div class="process-section">
     <div class="section-label">The process</div>
@@ -245,7 +306,7 @@ body.nav-open { overflow: hidden; }
   <!-- TIMELINE -->
   <div class="timeline-section">
     <div class="section-label">Timeline</div>
-    <h2 style="margin-bottom:0.5rem;">Key dates for the<br><em>July 2026 cohort.</em></h2>
+    <h2 style="margin-bottom:0.5rem;">Key dates for<br><em>Cohort 1 — July 2026.</em></h2>
     <div class="timeline">
       <div class="timeline-item">
         <div class="timeline-date">
@@ -307,7 +368,7 @@ body.nav-open { overflow: hidden; }
       <div class="timeline-item">
         <div class="timeline-date">
           <div class="timeline-date-label">Demo Day</div>
-          <div class="timeline-date-sub">August 28, 2026</div>
+          <div class="timeline-date-sub">August 1, 2026</div>
         </div>
         <div class="timeline-dot muted"></div>
         <div class="timeline-content">
@@ -418,6 +479,11 @@ body.nav-open { overflow: hidden; }
   <div style="display:flex;gap:1.5rem;"><a href="privacy.html" style="font-size:12px;color:#4e6a85;text-decoration:none;">Privacy Policy</a><a href="terms.html" style="font-size:12px;color:#4e6a85;text-decoration:none;">Terms of Service</a></div><div class="footer-copy">© 2026 MakerSquare LLC. Austin, TX.</div>
 </footer>
 <script>
+function selectCohort(card) {
+  document.querySelectorAll('.cohort-card').forEach(function(c){ c.classList.remove('selected'); });
+  card.classList.add('selected');
+}
+
 (function(){
   var obs = new IntersectionObserver(function(entries){
     entries.forEach(function(e){ if(e.isIntersecting) e.target.classList.add('visible'); });
