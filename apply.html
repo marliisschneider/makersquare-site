@@ -74,22 +74,40 @@ h2 em { font-style: italic; color: var(--muted2); font-weight: 300; }
 .step-desc { font-size: 13px; color: var(--muted2); font-weight: 300; line-height: 1.7; margin-bottom: 1rem; }
 .step-time { display: inline-block; font-size: 11px; font-weight: 600; color: var(--accent); background: rgba(61,158,255,0.08); border: 1px solid rgba(61,158,255,0.15); border-radius: 100px; padding: 4px 12px; }
 
-/* TIMELINE */
+/* TIMELINE ACCORDION */
 .timeline-section { margin: 4rem 0; }
-.timeline { position: relative; margin-top: 2rem; }
-.timeline-item { display: grid; grid-template-columns: 140px 1fr; gap: 2rem; align-items: start; padding-bottom: 2rem; position: relative; }
-.timeline-item:not(:last-child)::before { content: ''; position: absolute; left: 62px; top: 28px; bottom: 0; width: 1px; background: var(--border); }
+.ta-item { border: 1px solid var(--border); border-radius: 14px; overflow: hidden; margin-bottom: 0.75rem; transition: border-color 0.2s; }
+.ta-item.open { border-color: var(--border2); }
+.ta-header { display: flex; align-items: center; gap: 1.25rem; padding: 1.25rem 1.5rem; cursor: pointer; background: var(--bg2); user-select: none; }
+.ta-header:hover { background: var(--bg3); }
+.ta-item.open .ta-header { background: rgba(61,158,255,0.05); }
+.ta-header-info { flex: 1; }
+.ta-cohort-tag { font-size: 10px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.ta-cohort-name { font-size: 1rem; font-weight: 700; letter-spacing: -0.02em; margin: 0.15rem 0 0.2rem; }
+.ta-cohort-range { font-size: 12px; color: var(--muted2); }
+.ta-badge { font-size: 10px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 3px 10px; border-radius: 100px; white-space: nowrap; }
+.ta-badge.open { background: rgba(74,222,128,0.12); color: var(--green); border: 1px solid rgba(74,222,128,0.25); }
+.ta-badge.soon { background: rgba(61,158,255,0.08); color: var(--accent); border: 1px solid rgba(61,158,255,0.2); }
+.ta-badge.coming { background: rgba(107,135,163,0.1); color: var(--muted); border: 1px solid rgba(107,135,163,0.2); }
+.ta-chevron { font-size: 18px; color: var(--muted); transition: transform 0.25s; line-height: 1; }
+.ta-item.open .ta-chevron { transform: rotate(180deg); }
+.ta-body { display: none; padding: 1.75rem 1.5rem 1.75rem; border-top: 1px solid var(--border); }
+.ta-item.open .ta-body { display: block; }
+.timeline { position: relative; }
+.timeline-item { display: grid; grid-template-columns: 130px 1fr; gap: 2rem; align-items: start; padding-bottom: 1.75rem; position: relative; }
+.timeline-item:not(:last-child)::before { content: ''; position: absolute; left: 54px; top: 28px; bottom: 0; width: 1px; background: var(--border); }
 .timeline-date { text-align: right; padding-top: 4px; }
 .timeline-date-label { font-size: 12px; font-weight: 700; color: var(--accent); letter-spacing: 0.03em; }
 .timeline-date-sub { font-size: 11px; color: var(--muted); font-weight: 300; margin-top: 2px; }
-.timeline-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--accent); position: absolute; left: 57px; top: 6px; }
+.timeline-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--accent); position: absolute; left: 49px; top: 6px; }
 .timeline-dot.muted { background: var(--muted); }
 .timeline-content { padding-left: 2rem; }
-.timeline-title { font-size: 15px; font-weight: 700; letter-spacing: -0.01em; margin-bottom: 0.35rem; }
+.timeline-title { font-size: 14px; font-weight: 700; letter-spacing: -0.01em; margin-bottom: 0.3rem; }
 .timeline-desc { font-size: 13px; color: var(--muted2); font-weight: 300; line-height: 1.7; }
 .timeline-tag { display: inline-block; font-size: 10px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 3px 9px; border-radius: 4px; margin-top: 0.5rem; }
 .timeline-tag.open { background: rgba(74,222,128,0.1); color: var(--green); border: 1px solid rgba(74,222,128,0.2); }
 .timeline-tag.upcoming { background: rgba(61,158,255,0.08); color: var(--accent); border: 1px solid rgba(61,158,255,0.15); }
+@media (max-width: 600px) { .timeline-item { grid-template-columns: 90px 1fr; gap: 1rem; } .timeline-item::before { left: 37px; } .timeline-dot { left: 32px; } }
 
 /* WHAT WE LOOK FOR */
 .criteria-section { margin: 4rem 0; }
@@ -242,35 +260,35 @@ body.nav-open { overflow: hidden; }
     <div class="section-label">Upcoming cohorts</div>
     <h2 style="margin-bottom:1.5rem;">Pick your start date.<br><em>One application, any cohort.</em></h2>
     <div class="cohort-grid">
-      <div class="cohort-card selected" onclick="selectCohort(this)">
+      <div class="cohort-card selected" onclick="selectCohort(this, 'july')">
         <span class="cohort-badge open">● Open Now</span>
         <div class="cohort-label">Cohort 1</div>
-        <div class="cohort-dates">Jul 6 – Aug 1, 2026</div>
-        <div class="cohort-demo">Demo Day: Aug 1</div>
+        <div class="cohort-dates">July 2026</div>
+        <div class="cohort-demo">Jul 6 – Aug 1 · Demo Day Aug 1</div>
         <div class="cohort-spots">9 of 12 spots remaining</div>
         <a href="#form" class="cohort-cta">Apply Now →</a>
       </div>
-      <div class="cohort-card" onclick="selectCohort(this)">
+      <div class="cohort-card" onclick="selectCohort(this, 'sep')">
         <span class="cohort-badge soon">Enrolling Soon</span>
         <div class="cohort-label">Cohort 2</div>
-        <div class="cohort-dates">Sep 14 – Oct 9, 2026</div>
-        <div class="cohort-demo">Demo Day: Oct 9</div>
+        <div class="cohort-dates">September 2026</div>
+        <div class="cohort-demo">Sep 14 – Oct 9 · Demo Day Oct 9</div>
         <div class="cohort-spots">12 spots available</div>
         <a href="#form" class="cohort-cta ghost">Join Waitlist →</a>
       </div>
-      <div class="cohort-card" onclick="selectCohort(this)">
+      <div class="cohort-card" onclick="selectCohort(this, 'oct')">
         <span class="cohort-badge soon">Enrolling Soon</span>
         <div class="cohort-label">Cohort 3</div>
-        <div class="cohort-dates">Oct 26 – Nov 20, 2026</div>
-        <div class="cohort-demo">Demo Day: Nov 20</div>
+        <div class="cohort-dates">October 2026</div>
+        <div class="cohort-demo">Oct 26 – Nov 20 · Demo Day Nov 20</div>
         <div class="cohort-spots">12 spots available</div>
         <a href="#form" class="cohort-cta ghost">Join Waitlist →</a>
       </div>
-      <div class="cohort-card" onclick="selectCohort(this)">
+      <div class="cohort-card" onclick="selectCohort(this, 'jan')">
         <span class="cohort-badge coming">Coming Soon</span>
         <div class="cohort-label">Cohort 4</div>
-        <div class="cohort-dates">Jan 11 – Feb 5, 2027</div>
-        <div class="cohort-demo">Demo Day: Feb 5</div>
+        <div class="cohort-dates">January 2027</div>
+        <div class="cohort-demo">Jan 11 – Feb 5 · Demo Day Feb 5</div>
         <div class="cohort-spots">Accepting early interest</div>
         <a href="#form" class="cohort-cta ghost">Get Notified →</a>
       </div>
@@ -305,77 +323,248 @@ body.nav-open { overflow: hidden; }
 
   <!-- TIMELINE -->
   <div class="timeline-section">
-    <div class="section-label">Timeline</div>
-    <h2 style="margin-bottom:0.5rem;">Key dates for<br><em>Cohort 1 — July 2026.</em></h2>
-    <div class="timeline">
-      <div class="timeline-item">
-        <div class="timeline-date">
-          <div class="timeline-date-label">Now</div>
-          <div class="timeline-date-sub">April 2026</div>
+    <div class="section-label">Key dates</div>
+    <h2 style="margin-bottom:1.5rem;">Deadlines and dates<br><em>for each cohort.</em></h2>
+    <div class="timeline-accordion">
+
+      <!-- JULY 2026 -->
+      <div class="ta-item open" id="ta-july">
+        <div class="ta-header" onclick="toggleTimeline('ta-july')">
+          <div class="ta-header-info">
+            <div class="ta-cohort-tag">Cohort 1</div>
+            <div class="ta-cohort-name">July 2026</div>
+            <div class="ta-cohort-range">Jul 6 – Aug 1, 2026 · Demo Day Aug 1</div>
+          </div>
+          <span class="ta-badge open">● Open Now</span>
+          <div class="ta-chevron">⌄</div>
         </div>
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <div class="timeline-title">Applications Open</div>
-          <div class="timeline-desc">Submit your application any time. Early applicants receive priority review. First-come, first-served for interviews once you complete the take-home project.</div>
-          <span class="timeline-tag open">Open Now</span>
+        <div class="ta-body">
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-date"><div class="timeline-date-label">Now</div><div class="timeline-date-sub">April 2026</div></div>
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-title">Applications Open</div>
+                <div class="timeline-desc">Submit any time. Early applicants get priority review and first access to interviews.</div>
+                <span class="timeline-tag open">Open Now</span>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date"><div class="timeline-date-label">Rolling</div><div class="timeline-date-sub">Apr – Jun</div></div>
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-title">Take-Home Projects + Interviews</div>
+                <div class="timeline-desc">Reviewed on a rolling basis. Interviews scheduled within 1 week of project submission.</div>
+                <span class="timeline-tag upcoming">Rolling</span>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date"><div class="timeline-date-label">Deadline</div><div class="timeline-date-sub">Jun 15, 2026</div></div>
+              <div class="timeline-dot muted"></div>
+              <div class="timeline-content">
+                <div class="timeline-title">Final Application Deadline</div>
+                <div class="timeline-desc">Apply by Jun 1 to leave time for the take-home project and interview before the cohort fills.</div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date"><div class="timeline-date-label">Enroll by</div><div class="timeline-date-sub">Jun 22, 2026</div></div>
+              <div class="timeline-dot muted"></div>
+              <div class="timeline-content">
+                <div class="timeline-title">Deposit + Pre-Work Access</div>
+                <div class="timeline-desc">Pay deposit, unlock pre-work modules. Most builders spend 2–3 weeks on pre-work before Day 1.</div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date"><div class="timeline-date-label">Day 1</div><div class="timeline-date-sub">Jul 6, 2026</div></div>
+              <div class="timeline-dot muted"></div>
+              <div class="timeline-content">
+                <div class="timeline-title">Program Starts</div>
+                <div class="timeline-desc">Mon / Wed / Fri, 9am–3pm, Austin TX. Come with pre-work done and your product brief ready.</div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date"><div class="timeline-date-label">Demo Day</div><div class="timeline-date-sub">Aug 1, 2026</div></div>
+              <div class="timeline-dot muted"></div>
+              <div class="timeline-content">
+                <div class="timeline-title">Demo Day — Public Launch Event</div>
+                <div class="timeline-desc">Present your deployed AI product to Austin operators, investors, and hiring partners. Open to the public.</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="timeline-item">
-        <div class="timeline-date">
-          <div class="timeline-date-label">Rolling</div>
-          <div class="timeline-date-sub">April–June</div>
+
+      <!-- SEPTEMBER 2026 -->
+      <div class="ta-item" id="ta-sep">
+        <div class="ta-header" onclick="toggleTimeline('ta-sep')">
+          <div class="ta-header-info">
+            <div class="ta-cohort-tag">Cohort 2</div>
+            <div class="ta-cohort-name">September 2026</div>
+            <div class="ta-cohort-range">Sep 14 – Oct 9, 2026 · Demo Day Oct 9</div>
+          </div>
+          <span class="ta-badge soon">Enrolling Soon</span>
+          <div class="ta-chevron">⌄</div>
         </div>
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <div class="timeline-title">Take-Home Projects + Interviews</div>
-          <div class="timeline-desc">We review take-home projects on a rolling basis and schedule admissions interviews within 1 week of project submission. No waiting for a batch review cycle.</div>
-          <span class="timeline-tag upcoming">Rolling Review</span>
+        <div class="ta-body">
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-date"><div class="timeline-date-label">Opens</div><div class="timeline-date-sub">Jul 2026</div></div>
+              <div class="timeline-dot muted"></div>
+              <div class="timeline-content">
+                <div class="timeline-title">Applications Open</div>
+                <div class="timeline-desc">Applications for the September cohort open in July. Join the waitlist now for early access.</div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date"><div class="timeline-date-label">Deadline</div><div class="timeline-date-sub">Aug 22, 2026</div></div>
+              <div class="timeline-dot muted"></div>
+              <div class="timeline-content">
+                <div class="timeline-title">Final Application Deadline</div>
+                <div class="timeline-desc">Apply by Aug 8 to allow time for the take-home project and interview.</div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date"><div class="timeline-date-label">Enroll by</div><div class="timeline-date-sub">Sep 1, 2026</div></div>
+              <div class="timeline-dot muted"></div>
+              <div class="timeline-content">
+                <div class="timeline-title">Deposit + Pre-Work Access</div>
+                <div class="timeline-desc">Pay deposit and unlock pre-work modules ahead of Day 1.</div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date"><div class="timeline-date-label">Day 1</div><div class="timeline-date-sub">Sep 14, 2026</div></div>
+              <div class="timeline-dot muted"></div>
+              <div class="timeline-content">
+                <div class="timeline-title">Program Starts</div>
+                <div class="timeline-desc">Mon / Wed / Fri, 9am–3pm, Austin TX.</div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date"><div class="timeline-date-label">Demo Day</div><div class="timeline-date-sub">Oct 9, 2026</div></div>
+              <div class="timeline-dot muted"></div>
+              <div class="timeline-content">
+                <div class="timeline-title">Demo Day — Public Launch Event</div>
+                <div class="timeline-desc">Present your deployed AI product to Austin operators, investors, and hiring partners.</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="timeline-item">
-        <div class="timeline-date">
-          <div class="timeline-date-label">Deadline</div>
-          <div class="timeline-date-sub">June 15, 2026</div>
+
+      <!-- OCTOBER 2026 -->
+      <div class="ta-item" id="ta-oct">
+        <div class="ta-header" onclick="toggleTimeline('ta-oct')">
+          <div class="ta-header-info">
+            <div class="ta-cohort-tag">Cohort 3</div>
+            <div class="ta-cohort-name">October 2026</div>
+            <div class="ta-cohort-range">Oct 26 – Nov 20, 2026 · Demo Day Nov 20</div>
+          </div>
+          <span class="ta-badge soon">Enrolling Soon</span>
+          <div class="ta-chevron">⌄</div>
         </div>
-        <div class="timeline-dot muted"></div>
-        <div class="timeline-content">
-          <div class="timeline-title">Final Application Deadline</div>
-          <div class="timeline-desc">All applications for the July cohort must be submitted by June 15. We strongly recommend applying by June 1 to allow time for your take-home project and interview before the cohort fills.</div>
+        <div class="ta-body">
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-date"><div class="timeline-date-label">Opens</div><div class="timeline-date-sub">Aug 2026</div></div>
+              <div class="timeline-dot muted"></div>
+              <div class="timeline-content">
+                <div class="timeline-title">Applications Open</div>
+                <div class="timeline-desc">Applications for the October cohort open in August. Join the waitlist now for early access.</div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date"><div class="timeline-date-label">Deadline</div><div class="timeline-date-sub">Oct 5, 2026</div></div>
+              <div class="timeline-dot muted"></div>
+              <div class="timeline-content">
+                <div class="timeline-title">Final Application Deadline</div>
+                <div class="timeline-desc">Apply by Sep 20 to allow time for the take-home project and interview.</div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date"><div class="timeline-date-label">Enroll by</div><div class="timeline-date-sub">Oct 14, 2026</div></div>
+              <div class="timeline-dot muted"></div>
+              <div class="timeline-content">
+                <div class="timeline-title">Deposit + Pre-Work Access</div>
+                <div class="timeline-desc">Pay deposit and unlock pre-work modules ahead of Day 1.</div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date"><div class="timeline-date-label">Day 1</div><div class="timeline-date-sub">Oct 26, 2026</div></div>
+              <div class="timeline-dot muted"></div>
+              <div class="timeline-content">
+                <div class="timeline-title">Program Starts</div>
+                <div class="timeline-desc">Mon / Wed / Fri, 9am–3pm, Austin TX.</div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date"><div class="timeline-date-label">Demo Day</div><div class="timeline-date-sub">Nov 20, 2026</div></div>
+              <div class="timeline-dot muted"></div>
+              <div class="timeline-content">
+                <div class="timeline-title">Demo Day — Public Launch Event</div>
+                <div class="timeline-desc">Present your deployed AI product to Austin operators, investors, and hiring partners.</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="timeline-item">
-        <div class="timeline-date">
-          <div class="timeline-date-label">Enroll by</div>
-          <div class="timeline-date-sub">June 22, 2026</div>
+
+      <!-- JANUARY 2027 -->
+      <div class="ta-item" id="ta-jan">
+        <div class="ta-header" onclick="toggleTimeline('ta-jan')">
+          <div class="ta-header-info">
+            <div class="ta-cohort-tag">Cohort 4</div>
+            <div class="ta-cohort-name">January 2027</div>
+            <div class="ta-cohort-range">Jan 11 – Feb 5, 2027 · Demo Day Feb 5</div>
+          </div>
+          <span class="ta-badge coming">Coming Soon</span>
+          <div class="ta-chevron">⌄</div>
         </div>
-        <div class="timeline-dot muted"></div>
-        <div class="timeline-content">
-          <div class="timeline-title">Enrollment + Pre-Work Begins</div>
-          <div class="timeline-desc">Once admitted, you pay your deposit and gain access to the pre-work curriculum. Most builders spend 2–3 weeks on pre-work before Day 1. Enrollment deadline is June 22.</div>
+        <div class="ta-body">
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-date"><div class="timeline-date-label">Opens</div><div class="timeline-date-sub">Nov 2026</div></div>
+              <div class="timeline-dot muted"></div>
+              <div class="timeline-content">
+                <div class="timeline-title">Applications Open</div>
+                <div class="timeline-desc">Applications for the January cohort open in November. Get notified when they do.</div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date"><div class="timeline-date-label">Deadline</div><div class="timeline-date-sub">Dec 20, 2026</div></div>
+              <div class="timeline-dot muted"></div>
+              <div class="timeline-content">
+                <div class="timeline-title">Final Application Deadline</div>
+                <div class="timeline-desc">Apply by Dec 5 to allow time for the take-home project and interview over the holidays.</div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date"><div class="timeline-date-label">Enroll by</div><div class="timeline-date-sub">Dec 28, 2026</div></div>
+              <div class="timeline-dot muted"></div>
+              <div class="timeline-content">
+                <div class="timeline-title">Deposit + Pre-Work Access</div>
+                <div class="timeline-desc">Pay deposit and unlock pre-work modules before the new year.</div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date"><div class="timeline-date-label">Day 1</div><div class="timeline-date-sub">Jan 11, 2027</div></div>
+              <div class="timeline-dot muted"></div>
+              <div class="timeline-content">
+                <div class="timeline-title">Program Starts</div>
+                <div class="timeline-desc">Mon / Wed / Fri, 9am–3pm, Austin TX.</div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date"><div class="timeline-date-label">Demo Day</div><div class="timeline-date-sub">Feb 5, 2027</div></div>
+              <div class="timeline-dot muted"></div>
+              <div class="timeline-content">
+                <div class="timeline-title">Demo Day — Public Launch Event</div>
+                <div class="timeline-desc">Present your deployed AI product to Austin operators, investors, and hiring partners.</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="timeline-item">
-        <div class="timeline-date">
-          <div class="timeline-date-label">Day 1</div>
-          <div class="timeline-date-sub">July 6, 2026</div>
-        </div>
-        <div class="timeline-dot muted"></div>
-        <div class="timeline-content">
-          <div class="timeline-title">Program Starts</div>
-          <div class="timeline-desc">First day of class. Mon / Wed / Fri, 9am–3pm, Austin TX. Come with your pre-work complete and your product brief ready. The first session goes deep, fast.</div>
-        </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-date">
-          <div class="timeline-date-label">Demo Day</div>
-          <div class="timeline-date-sub">August 1, 2026</div>
-        </div>
-        <div class="timeline-dot muted"></div>
-        <div class="timeline-content">
-          <div class="timeline-title">Demo Day — Public Event</div>
-          <div class="timeline-desc">You present your production-ready AI product to Austin operators, investors, and hiring partners. Open to the public — this is a real event, not a classroom presentation.</div>
-        </div>
-      </div>
+
     </div>
   </div>
 
@@ -479,9 +668,19 @@ body.nav-open { overflow: hidden; }
   <div style="display:flex;gap:1.5rem;"><a href="privacy.html" style="font-size:12px;color:#4e6a85;text-decoration:none;">Privacy Policy</a><a href="terms.html" style="font-size:12px;color:#4e6a85;text-decoration:none;">Terms of Service</a></div><div class="footer-copy">© 2026 MakerSquare LLC. Austin, TX.</div>
 </footer>
 <script>
-function selectCohort(card) {
+function selectCohort(card, cohortId) {
   document.querySelectorAll('.cohort-card').forEach(function(c){ c.classList.remove('selected'); });
   card.classList.add('selected');
+  document.querySelectorAll('.ta-item').forEach(function(t){ t.classList.remove('open'); });
+  var target = document.getElementById('ta-' + cohortId);
+  if(target) target.classList.add('open');
+}
+function toggleTimeline(id) {
+  var el = document.getElementById(id);
+  if(!el) return;
+  var isOpen = el.classList.contains('open');
+  document.querySelectorAll('.ta-item').forEach(function(t){ t.classList.remove('open'); });
+  if(!isOpen) el.classList.add('open');
 }
 
 (function(){
