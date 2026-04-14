@@ -1081,6 +1081,15 @@ body.nav-open { overflow: hidden; }
 .faq-item.open .faq-q::after { transform: rotate(45deg); }
 .faq-a { display: none; padding-bottom: 1.4rem; margin-top: 0; }
 .faq-item.open .faq-a { display: block; }
+
+/* OUTCOMES GRID */
+.outcomes-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.2rem; margin-top: 2.5rem; }
+.outcome-card { background: var(--bg2); border: 1px solid var(--border); border-radius: 14px; padding: 1.75rem; }
+.outcome-num { font-size: 2.8rem; font-weight: 800; color: var(--accent); letter-spacing: -0.04em; line-height: 1; margin-bottom: 0.5rem; }
+.outcome-title { font-size: 14px; font-weight: 600; margin-bottom: 0.4rem; letter-spacing: -0.01em; }
+.outcome-desc { font-size: 13px; color: var(--muted2); font-weight: 300; line-height: 1.65; }
+@media (max-width: 900px) { .outcomes-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 480px) { .outcomes-grid { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
@@ -1261,63 +1270,30 @@ body.nav-open { overflow: hidden; }
   </div>
 </div>
 
-<!-- WHY NOW -->
-<div class="whynow-wrap">
-  <div class="section-label">Why now</div>
-  <h2>The window to get ahead<br><em>is open. It won't stay open.</em></h2>
-  <div class="whynow-grid">
-    <div class="whynow-card">
-      <div class="whynow-stat">70%</div>
-      <div class="whynow-desc">of employee work time could be augmented or automated by AI tools available today — most professionals haven't touched any of them.</div>
-      <div class="whynow-source">McKinsey Global Institute, 2023</div>
-    </div>
-    <div class="whynow-card">
-      <div class="whynow-stat">87%</div>
-      <div class="whynow-desc">of executives are actively deploying or expanding AI across their organizations. The people who can build with it — not just talk about it — are already ahead.</div>
-      <div class="whynow-source">IBM Institute for Business Value, 2023</div>
-    </div>
-    <div class="whynow-card">
-      <div class="whynow-stat">44%</div>
-      <div class="whynow-desc">of workers' core skills will be disrupted in the next five years. AI fluency isn't a career upgrade anymore — it's a baseline requirement.</div>
-      <div class="whynow-source">World Economic Forum, Future of Jobs 2023</div>
-    </div>
-  </div>
-</div>
-
-<!-- BENEFITS -->
+<!-- WHAT YOU GET -->
 <div class="section-wrap" id="benefits">
-  <div class="section-label">How it works</div>
-  <h2>Built around your life,<br><em>designed to get you building.</em></h2>
-  <div class="benefits-grid">
-    <div class="benefit-card">
-      <div class="benefit-icon">⬡</div>
-      <div class="benefit-title">Keep Your Income While You Learn</div>
-      <div class="benefit-desc">Class meets Mon / Wed / Fri in Austin. The other two days are yours — keep your job, your clients, or your business running while you build new skills.</div>
+  <div class="section-label">What you get</div>
+  <h2>Everything you need to go from<br><em>idea to shipped product.</em></h2>
+  <div class="outcomes-grid">
+    <div class="outcome-card">
+      <div class="outcome-num">4 wks</div>
+      <div class="outcome-title">In-person · Austin, TX</div>
+      <div class="outcome-desc">Mon / Wed / Fri · 9am–3pm. Keep your job, your clients, your income — build on the other days.</div>
     </div>
-    <div class="benefit-card">
-      <div class="benefit-icon">◈</div>
-      <div class="benefit-title">Your Expertise Is the Advantage</div>
-      <div class="benefit-desc">No coding background required. The people who get the most out of this program are the ones who already know their industry deeply. We teach the AI — you bring the insight.</div>
+    <div class="outcome-card">
+      <div class="outcome-num">3</div>
+      <div class="outcome-title">Deployed AI products</div>
+      <div class="outcome-desc">You leave with three live tools you built yourself. Not exercises. Not a certificate. Real things you can show, sell, or put to work.</div>
     </div>
-    <div class="benefit-card">
-      <div class="benefit-icon">◎</div>
-      <div class="benefit-title">Never Get Stuck</div>
-      <div class="benefit-desc">A dedicated instructor team is available around the clock — evening office hours, async feedback, and a cohort community so you never lose momentum between sessions.</div>
+    <div class="outcome-card">
+      <div class="outcome-num">≤15</div>
+      <div class="outcome-title">People per cohort</div>
+      <div class="outcome-desc">Selective admission. Every applicant completes a take-home project. Everyone in the room is serious.</div>
     </div>
-    <div class="benefit-card">
-      <div class="benefit-icon">▣</div>
-      <div class="benefit-title">You Leave With Real Products</div>
-      <div class="benefit-desc">No certificates. You leave with 3 deployed AI products — including a working AI agent — live tools you built yourself. Things you can show, sell, or put to work immediately.</div>
-    </div>
-    <div class="benefit-card">
-      <div class="benefit-icon">◇</div>
-      <div class="benefit-title">Small Cohorts, on Purpose</div>
-      <div class="benefit-desc">Every applicant completes a short take-home project before admission. We keep cohorts small and selective — the quality of the people around you is part of the program.</div>
-    </div>
-    <div class="benefit-card">
-      <div class="benefit-icon">△</div>
-      <div class="benefit-title">A Real Product Launch on Demo Day</div>
-      <div class="benefit-desc">The program ends with a public launch event — not a graduation ceremony. You demo a live, working product to Austin founders, operators, and investors. Your first real launch, on a real stage.</div>
+    <div class="outcome-card">
+      <div class="outcome-num">Demo<br>Day</div>
+      <div class="outcome-title">Public product launch</div>
+      <div class="outcome-desc">The program ends with a live launch event — your product, on stage, in front of Austin founders, operators, and investors.</div>
     </div>
   </div>
 </div>
@@ -1326,271 +1302,31 @@ body.nav-open { overflow: hidden; }
 <div class="section-wrap full" id="who">
   <div class="inner">
     <div class="section-label">Who it's for</div>
-    <h2>You don't need a technical background.<br><em>You need the right one.</em></h2>
-    <p class="compare-intro">MakerSquare isn't for everyone — and that's the point. Here's who tends to get the most out of it.</p>
+    <h2>You don't need a technical background.<br><em>You need to know your field.</em></h2>
     <div class="personas-grid">
-
       <div class="persona-card">
-        <div class="persona-role">The Operator</div>
-        <div class="persona-headline">You run something and there's always too much to do</div>
-        <div class="persona-desc">You manage a team, a practice, or a business. There are reports that take hours, proposals that get rewritten every time, client emails that follow the same pattern. You know AI should be doing half of this — you just haven't had the time or the right guide to set it up. You leave MakerSquare with tools that actually run without you.</div>
-        <span class="persona-tag">Business owners · GMs · Department heads · Consultants</span>
+        <div class="persona-role">Operators &amp; business owners</div>
+        <div class="persona-headline">You run something — AI should be doing half of it</div>
+        <div class="persona-desc">Reports, proposals, client emails, internal workflows. You know what needs automating. We'll help you build it.</div>
       </div>
-
       <div class="persona-card">
-        <div class="persona-role">The Career Builder</div>
-        <div class="persona-headline">You're good at your job and you want to stay that way</div>
-        <div class="persona-desc">You've built a real career — years of experience, a reputation, a network. But the ground is shifting and you feel it. Younger colleagues are experimenting with AI tools you haven't touched. You don't want to catch up in two years. You want to be ahead of it now, and you want the skills to prove it — not a certificate, but actual work you've shipped.</div>
-        <span class="persona-tag">Marketers · Finance professionals · HR leads · Account managers</span>
+        <div class="persona-role">Professionals &amp; career builders</div>
+        <div class="persona-headline">Your expertise is the advantage — add the AI layer</div>
+        <div class="persona-desc">Years in marketing, finance, healthcare, law. That domain knowledge is the moat. We teach the technical layer on top of it.</div>
       </div>
-
       <div class="persona-card">
-        <div class="persona-role">The Domain Expert</div>
-        <div class="persona-headline">You know your field better than anyone — and you have an idea</div>
-        <div class="persona-desc">A decade in healthcare, law, real estate, or finance. You've seen the same inefficiency over and over. You've thought about building something to fix it — maybe for years. What stopped you was the technical layer. That layer is now accessible to anyone who's willing to learn how to use it. MakerSquare is where you finally ship the thing you've been thinking about.</div>
-        <span class="persona-tag">Lawyers · Healthcare professionals · Real estate agents · Financial advisors</span>
+        <div class="persona-role">Founders &amp; first-time builders</div>
+        <div class="persona-headline">You have the idea — skip the technical co-founder</div>
+        <div class="persona-desc">A clear problem, a real market, the drive to ship. MakerSquare is the fastest path from idea to working product.</div>
       </div>
-
-      <div class="persona-card">
-        <div class="persona-role">The First-Time Builder</div>
-        <div class="persona-headline">You have the idea and the drive — you just need the technical layer</div>
-        <div class="persona-desc">You want to build a product. You have a clear problem in mind, you understand the market, and you have the work ethic. What you don't have is an engineering background — and you have zero interest in spending two years getting one. MakerSquare is the fastest path from "I have an idea" to a working product you can show to real users.</div>
-        <span class="persona-tag">Aspiring founders · Side project builders · Career changers</span>
-      </div>
-
     </div>
-    <div style="text-align:center; margin-top:3rem; display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+    <div style="text-align:center; margin-top:2.5rem; display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
       <a href="apply.html#form" class="btn-primary">Apply Now →</a>
-      <a href="#waitlist" class="btn-ghost">Join the waitlist instead</a>
+      <a href="pricing.html" class="btn-ghost">View pricing</a>
     </div>
   </div>
 </div>
 
-<!-- ABOUT -->
-<div class="section-wrap" id="about">
-  <div class="about-grid">
-    <div class="about-body">
-      <div class="section-label">About the program</div>
-      <h2>Made for people who<br><em>are ready to stop waiting.</em></h2>
-      <p>You've been watching AI change your industry. You know it matters. But nobody built the right program for someone like you — experienced, non-technical, and ready to actually do something with it. MakerSquare closes that gap.</p>
-      <ul class="checklist">
-        <li>Ship 3 real, deployed AI products — yours to keep and build on</li>
-        <li>Build automated workflows that run without you lifting a finger</li>
-        <li>Connect AI to your documents, data, and existing tools</li>
-        <li>Launch at a public Demo Day in front of Austin investors and operators</li>
-      </ul>
-    </div>
-    <div class="about-stats-grid">
-      <div class="about-stat">
-        <div class="about-stat-num">4</div>
-        <div class="about-stat-label">Weeks in-person<br>in Austin, TX</div>
-      </div>
-      <div class="about-stat">
-        <div class="about-stat-num">3</div>
-        <div class="about-stat-label">Real products<br>you ship & own</div>
-      </div>
-      <div class="about-stat">
-        <div class="about-stat-num">3×</div>
-        <div class="about-stat-label">Days per week,<br>9am – 3pm</div>
-      </div>
-      <div class="about-stat">
-        <div class="about-stat-num">July</div>
-        <div class="about-stat-label">Next cohort starts,<br>applications open</div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- WHY US -->
-<div class="section-wrap full" id="why">
-  <div class="inner">
-    <div class="section-label">Why MakerSquare</div>
-    <h2>Most AI programs weren't<br><em>built for you.</em></h2>
-    <p class="compare-intro">Online courses are built for passive learners — you watch videos, maybe finish, get a certificate, build nothing. Intensive coding bootcamps require an engineering background you don't have. MakerSquare was built for the gap: experienced professionals who want to ship something real.</p>
-    <div class="compare-grid">
-      <div class="compare-card theirs">
-        <div class="compare-heading theirs">Most other programs</div>
-        <div class="compare-row bad"><span class="ci no">✕</span> Self-paced, easy to abandon</div>
-        <div class="compare-row bad"><span class="ci no">✕</span> Require a technical background</div>
-        <div class="compare-row bad"><span class="ci no">✕</span> You finish with a certificate, not a product</div>
-        <div class="compare-row bad"><span class="ci no">✕</span> 100+ people, no real accountability</div>
-        <div class="compare-row bad"><span class="ci no">✕</span> Theoretical — nothing actually deployed</div>
-        <div class="compare-row bad"><span class="ci no">✕</span> No community or network after you're done</div>
-      </div>
-      <div class="compare-card ours">
-        <div class="compare-heading ours">MakerSquare</div>
-        <div class="compare-row good"><span class="ci yes">✓</span> In-person, 3× a week — hard to quit</div>
-        <div class="compare-row good"><span class="ci yes">✓</span> Built specifically for non-technical professionals</div>
-        <div class="compare-row good"><span class="ci yes">✓</span> You leave with 3 live, deployed products</div>
-        <div class="compare-row good"><span class="ci yes">✓</span> Small, selective cohorts — everyone's serious</div>
-        <div class="compare-row good"><span class="ci yes">✓</span> Real tools, real users, real outcomes</div>
-        <div class="compare-row good"><span class="ci yes">✓</span> Austin operator network for life</div>
-      </div>
-    </div>
-    <div style="text-align:center; margin-top:3rem; display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
-      <a href="apply.html#form" class="btn-primary">Apply Now →</a>
-      <a href="#waitlist" class="btn-ghost">Join the waitlist instead</a>
-    </div>
-  </div>
-</div>
-
-<!-- CURRICULUM -->
-<div class="section-wrap" id="curriculum">
-  <div class="section-label">What you'll build</div>
-  <h2>4 weeks. 3 products.<br><em>All of them actually shipped.</em></h2>
-  <div class="phases">
-    <div class="phase">
-      <div>
-        <div class="phase-tag">Week 1</div>
-        <div class="phase-weeks">Foundations</div>
-      </div>
-      <div>
-        <div class="phase-title">Think Like a Builder</div>
-        <div class="phase-desc">What AI can actually do — the intuition, not the hype. How to write prompts that get professional-grade results. How to map a real problem from your own work and scope it for your first build.</div>
-        <div class="phase-deliverable">→ End of Week 1: your first workflow scoped and ready to build</div>
-      </div>
-    </div>
-    <div class="phase">
-      <div>
-        <div class="phase-tag">Weeks 2–3</div>
-        <div class="phase-weeks">Build</div>
-      </div>
-      <div>
-        <div class="phase-title">Ship Two Products</div>
-        <div class="phase-desc">Automation fundamentals using no-code platforms. Connecting AI to your documents, data, and existing tools. Multi-step pipelines that run without you. Two deployed products, each presented to the cohort for real feedback.</div>
-        <div class="phase-deliverable">→ Week 2: Product 1 ships &nbsp;·&nbsp; Week 3: Product 2 ships</div>
-      </div>
-    </div>
-    <div class="phase">
-      <div>
-        <div class="phase-tag">Week 4</div>
-        <div class="phase-weeks">Ship &amp; Scale</div>
-      </div>
-      <div>
-        <div class="phase-title">Capstone + Demo Day</div>
-        <div class="phase-desc">Scope and build your third product — something meaningful to your actual work or business. A full build sprint with instructor support, ending with a public launch event where you demo a live product to Austin operators, founders, and investors.</div>
-        <div class="phase-deliverable">→ Friday of Week 4: Demo Day — a real product launch, not a graduation</div>
-      </div>
-    </div>
-  </div>
-  <div style="text-align:center; margin-top:2.5rem;">
-    <a href="curriculum.html" class="btn-ghost" style="display:inline-block;">See the full 4-week curriculum →</a>
-  </div>
-</div>
-
-<!-- EMAIL CAPTURE -->
-<div class="email-capture" id="waitlist">
-  <div class="inner">
-    <h3>Not ready to apply yet?<br><em>Get the full details first.</em></h3>
-    <p>We'll send you the complete curriculum, a sample take-home project, and info on the next cohort. No pressure, no spam.</p>
-    <iframe data-tally-src="https://tally.so/embed/rjLpa5?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1&formEventsForwarding=1" loading="lazy" width="100%" height="372" frameborder="0" marginheight="0" marginwidth="0" title="Join the Waitlist"></iframe>
-    <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
-  </div>
-</div>
-
-<!-- PRICING -->
-<div class="section-wrap full" id="pricing">
-  <div class="inner">
-    <div class="section-label">Tuition</div>
-    <h2>Straightforward pricing.<br><em>Intentionally small cohorts.</em></h2>
-    <div class="pricing-grid">
-      <div class="pricing-card featured">
-        <div class="pricing-badge">Applications Open</div>
-        <div class="pricing-tier">In-Person · Austin, TX · Next cohort July 6, 2026</div>
-        <div class="pricing-price">$5,999</div>
-        <div class="pricing-sub">Selective admission &nbsp;·&nbsp; Short take-home project required</div>
-        <ul class="pricing-features">
-          <li>4 weeks in-person, Austin TX</li>
-          <li>Mon / Wed / Fri · 9am–3pm</li>
-          <li>24-hr async instructor support</li>
-          <li>3 deployed AI products</li>
-          <li>Demo Day + Investor/Employer access</li>
-          <li>Lifetime alumni network</li>
-          <li>Payment plans available</li>
-        </ul>
-        <a href="apply.html#form" class="btn-full primary">Apply Now →</a>
-      </div>
-      <div class="pricing-card">
-        <div class="pricing-tier">Corporate Cohort · Custom</div>
-        <div class="pricing-price dimmed">Custom</div>
-        <div class="pricing-sub">Private cohorts for teams &nbsp;·&nbsp; Custom curriculum &nbsp;·&nbsp; Flexible scheduling</div>
-        <ul class="pricing-features">
-          <li>Everything in the standard cohort</li>
-          <li>Private cohort for your team</li>
-          <li>Curriculum tailored to your industry</li>
-          <li>Flexible on timing and location</li>
-          <li class="dim">Contact us for pricing</li>
-        </ul>
-        <a href="corporate.html" class="btn-full ghost">Get in Touch</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- APPLICATION PROCESS -->
-<div class="section-wrap" id="apply">
-  <div class="section-label">How to apply</div>
-  <h2>Three steps.<br><em>The whole thing takes a week.</em></h2>
-  <div class="apply-steps">
-    <div class="apply-step">
-      <div class="apply-step-num">01</div>
-      <div class="apply-step-title">Fill out the application</div>
-      <div class="apply-step-desc">Tell us about your background, what you want to build, and why now. No resume required. We're not looking for credentials — we're looking for people with a real problem to solve and the drive to solve it.</div>
-      <span class="apply-step-time">~10 minutes</span>
-    </div>
-    <div class="apply-step">
-      <div class="apply-step-num">02</div>
-      <div class="apply-step-title">Complete a short take-home project</div>
-      <div class="apply-step-desc">We'll send you a short, practical challenge to complete at your own pace. It's designed around what you already know — not what you haven't learned yet. This is how we make sure every person in the room is serious.</div>
-      <span class="apply-step-time">2–3 hours, at your own pace</span>
-    </div>
-    <div class="apply-step">
-      <div class="apply-step-num">03</div>
-      <div class="apply-step-title">We'll be in touch within a week</div>
-      <div class="apply-step-desc">We review every application personally. If it's a fit, we'll reach out to schedule a short call. If the timing isn't right, we'll let you know — and keep you in mind for future cohorts.</div>
-      <span class="apply-step-time">Decision within 7 days</span>
-    </div>
-  </div>
-  <div class="apply-cta">
-    <a href="apply.html#form" class="btn-primary">Start Your Application →</a>
-    <span class="apply-note">Questions first? Email us at hello@makersquare.ai</span>
-  </div>
-</div>
-
-<!-- FAQ -->
-<div class="section-wrap narrow" id="faq">
-  <div class="section-label">Questions</div>
-  <h2>Things people<br><em>usually ask us.</em></h2>
-  <div class="faq-list">
-    <div class="faq-item">
-      <div class="faq-q">Do I need to know how to code?</div>
-      <div class="faq-a">No. The only prerequisite is basic computer fluency and real experience in your field. If you've spent years building expertise in your industry, that's exactly what we're looking for. We'll handle the rest.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q">What's the time commitment?</div>
-      <div class="faq-a">Class runs Mon / Wed / Fri from 9am–3pm (18 hours per week) for 4 weeks, plus some independent build time between sessions. The schedule is intentional — you keep earning while you build.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q">How selective is it?</div>
-      <div class="faq-a">Every applicant completes a short take-home project before a decision is made. We keep cohorts small by design — we're not looking for the most experienced people, we're looking for the most motivated.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q">What do I actually walk away with?</div>
-      <div class="faq-a">Three deployed AI products, live and working. A real product launch at Demo Day — in front of Austin operators and investors. And a cohort of fellow builders who become your long-term network — people who are building with AI in your city, in your field.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q">Is this right for me if I'm not trying to start a company?</div>
-      <div class="faq-a">Absolutely. Many builders come in wanting to automate work at their existing job, build a tool for a client, or just develop a serious new skill. You don't need a startup idea — you just need a problem you care about solving.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q">Is $5,999 worth it? What's the ROI?</div>
-      <div class="faq-a">The people who get the most out of MakerSquare use what they build to either automate expensive work at their current job (often saving 10+ hours a week), raise their market value significantly, or ship something they've been sitting on for years. A single AI-powered workflow that replaces a $50K/yr contractor pays for the program in months. That said — we don't guarantee outcomes, and the ROI depends entirely on what you do with what you build.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q">Why Austin?</div>
-      <div class="faq-a">Austin has one of the fastest-growing concentrations of founders, operators, and domain experts in the country — with an active VC and angel community that becomes part of your network the moment you launch at Demo Day.</div>
-    </div>
-  </div>
 </div>
 
 <!-- FINAL CTA -->
