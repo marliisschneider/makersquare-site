@@ -115,10 +115,16 @@ h1 em { font-style: italic; color: var(--muted2); font-weight: 300; }
 .tool-chip { font-size: 12px; font-weight: 500; color: var(--muted2); background: var(--bg3); border: 1px solid var(--border); border-radius: 6px; padding: 5px 12px; }
 
 /* CTA */
-.page-cta { background: var(--bg2); border: 1px solid var(--border); border-radius: 16px; padding: 3rem; text-align: center; margin-top: 4rem; }
-.page-cta h3 { font-size: 1.6rem; font-weight: 800; letter-spacing: -0.03em; margin-bottom: 0.75rem; }
+.page-cta { background: var(--bg2); border: 1px solid var(--border2); border-radius: 16px; padding: 3.5rem 3rem; text-align: center; margin-top: 4rem; position: relative; overflow: hidden; }
+.page-cta::before { content: ''; position: absolute; top: -60px; left: 50%; transform: translateX(-50%); width: 400px; height: 200px; background: radial-gradient(ellipse, rgba(129,170,251,0.12) 0%, transparent 70%); pointer-events: none; }
+.page-cta-label { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--green); background: rgba(74,222,128,0.08); border: 1px solid rgba(74,222,128,0.2); border-radius: 100px; padding: 5px 14px; display: inline-block; margin-bottom: 1.25rem; }
+.page-cta h3 { font-size: clamp(1.6rem, 3.5vw, 2.2rem); font-weight: 800; letter-spacing: -0.035em; margin-bottom: 0.75rem; line-height: 1.15; }
 .page-cta h3 em { font-style: italic; color: var(--muted2); font-weight: 300; }
-.page-cta p { font-size: 15px; color: var(--muted2); font-weight: 300; margin-bottom: 2rem; }
+.page-cta p { font-size: 15px; color: var(--muted2); font-weight: 300; margin-bottom: 0.6rem; }
+.page-cta-meta { display: flex; justify-content: center; gap: 2rem; margin: 1.5rem 0 2rem; flex-wrap: wrap; }
+.page-cta-meta-item { font-size: 13px; color: var(--muted2); display: flex; align-items: center; gap: 6px; }
+.page-cta-meta-item strong { color: var(--text); font-weight: 600; }
+.page-cta-meta-item::before { content: ''; display: block; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); flex-shrink: 0; }
 .btn-primary { display: inline-block; background: var(--accent); color: #0a0a0b; padding: 13px 32px; border-radius: 8px; font-size: 14px; font-weight: 600; text-decoration: none; transition: background 0.2s; }
 .btn-primary:hover { background: var(--accent2); }
 .btn-ghost { display: inline-block; border: 1px solid var(--border2); color: var(--muted2); padding: 13px 32px; border-radius: 8px; font-size: 14px; font-weight: 500; text-decoration: none; transition: all 0.2s; margin-left: 1rem; }
@@ -470,10 +476,16 @@ body.nav-open { overflow: hidden; }
   </div>
 
   <div class="page-cta">
-    <h3>Ready to start building?<br><em>Applications are open now.</em></h3>
-    <p>Starts July 2026 in Austin, TX. Cohorts are small and selective — we review every application personally.</p>
-    <a href="apply.html#form" class="btn-primary">Apply Now →</a>
-    <a href="index.html#waitlist" class="btn-ghost">Not ready? Join the waitlist</a>
+    <div class="page-cta-label">Next Cohort · Now Enrolling</div>
+    <h3>Three products. Four weeks.<br><em>Ship something real.</em></h3>
+    <p>Most people leave AI courses with notes. You'll leave with deployed products and the skills to keep building.</p>
+    <div class="page-cta-meta">
+      <div class="page-cta-meta-item"><strong>Starts July 6, 2026</strong> · Austin, TX</div>
+      <div class="page-cta-meta-item"><strong>15 seats</strong> · Cohort is filling now</div>
+      <div class="page-cta-meta-item"><strong>In-person</strong> · Mon / Wed / Fri</div>
+    </div>
+    <a href="apply.html#form" class="btn-primary">Apply for July →</a>
+    <a href="index.html#waitlist" class="btn-ghost">Have questions? Book a call</a>
   </div>
 
 </div>
