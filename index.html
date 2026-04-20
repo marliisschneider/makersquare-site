@@ -3,1443 +3,652 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MakerSquare — AI Bootcamp Austin, TX | 4-Week In-Person Program</title>
-<meta name="description" content="MakerSquare is a 4-week in-person AI bootcamp in Austin, TX for operators, founders, and professionals. No coding required. Build and deploy real AI products. Next cohort: July 6, 2026.">
+<title>MakerSquare | AI Bootcamp in Austin TX for Professionals</title>
+<meta name="description" content="The in person AI bootcamp in Austin, Texas built for operators, founders, and professionals. Learn to build real AI products. No coding experience required. Apply now for the next cohort.">
 <meta name="robots" content="index, follow">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PYX8ZYYW7E"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag("js", new Date());
-  gtag("config", "G-PYX8ZYYW7E");
-</script>
 <link rel="canonical" href="https://www.makersquare.ai/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.makersquare.ai/">
-<meta property="og:title" content="MakerSquare — AI Engineering Bootcamp in Austin, TX">
-<meta property="og:description" content="4-week in-person AI bootcamp in Austin for operators, founders, and professionals. No coding required. Build real AI products. Next cohort: July 6, 2026.">
+<meta property="og:title" content="MakerSquare | AI Bootcamp in Austin, TX">
+<meta property="og:description" content="In person AI bootcamp in Austin for professionals who want to build with AI, not just learn about it. No coding required.">
 <meta property="og:image" content="https://www.makersquare.ai/og-image.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://www.makersquare.ai/og-image.jpg">
-<meta name="twitter:title" content="MakerSquare — AI Engineering Bootcamp in Austin, TX">
-<meta name="twitter:description" content="4-week in-person AI bootcamp in Austin for operators, founders, and professionals. No coding required. Build real AI products. Next cohort: July 6, 2026.">
-<link href="https://fonts.googleapis.com/css2?family=Fustat:wght@800&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-<style>
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-:root {
-  --bg: #181849;
-  --bg2: #1e1e60;
-  --bg3: #242478;
-  --border: rgba(129,170,251,0.2);
-  --border2: rgba(129,170,251,0.35);
-  --text: #ffffff;
-  --muted: #8888a8;
-  --muted2: #C1D4FA;
-  --accent: #81AAFB;
-  --accent2: #538EE5;
-  --green: #4ade80;
-  --font-display: 'Inter', sans-serif;
-  --font-body: 'Inter', sans-serif;
-}
-
-html { scroll-behavior: smooth; }
-
-body {
-  background: var(--bg);
-  color: var(--text);
-  font-family: var(--font-body);
-  font-size: 16px;
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
-  letter-spacing: -0.01em;
-}
-
-/* ── NAV ── */
-nav {
-  position: fixed;
-  top: 0; left: 0; right: 0;
-  z-index: 100;
-  padding: 0 2.5rem;
-  height: 64px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: rgba(10,10,11,0.88);
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
-  border-bottom: 1px solid var(--border);
-}
-.nav-logo {
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 18px;
-  letter-spacing: -0.02em;
-  color: var(--text);
-  text-decoration: none;
-}
-.nav-logo span { color: var(--accent); }
-.nav-links {
-  display: flex;
-  gap: 2rem;
-  list-style: none;
-}
-.nav-links a {
-  font-size: 13px;
-  color: var(--muted2);
-  text-decoration: none;
-  letter-spacing: 0.01em;
-  transition: color 0.2s;
-}
-.nav-links a:hover { color: var(--text); }
-.nav-cta {
-  background: var(--accent);
-  color: #0a0a0b;
-  border: none;
-  padding: 9px 22px;
-  border-radius: 6px;
-  font-family: var(--font-body);
-  font-size: 13px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background 0.2s, transform 0.15s;
-  text-decoration: none;
-}
-.nav-cta:hover { background: var(--accent2); transform: translateY(-1px); }
-
-/* ── HERO ── */
-#hero {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  padding: 100px 2.5rem 80px;
-  position: relative;
-  overflow: hidden;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-.hero-grid {
-  position: fixed;
-  inset: 0;
-  background-image:
-    linear-gradient(rgba(61,158,255,0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(61,158,255,0.04) 1px, transparent 1px);
-  background-size: 60px 60px;
-  mask-image: radial-gradient(ellipse 60% 80% at 30% 50%, black 0%, transparent 70%);
-  -webkit-mask-image: radial-gradient(ellipse 60% 80% at 30% 50%, black 0%, transparent 70%);
-  pointer-events: none;
-  z-index: 0;
-}
-.hero-glow {
-  position: absolute;
-  width: 600px; height: 600px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(129,170,251,0.08) 0%, transparent 70%);
-  top: 50%; right: -150px;
-  transform: translateY(-50%);
-  pointer-events: none;
-}
-.hero-left {
-  flex: 1;
-  max-width: 560px;
-  position: relative;
-  z-index: 1;
-}
-.hero-right {
-  flex: 0 0 340px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  position: relative;
-  z-index: 1;
-  margin-left: auto;
-}
-.hero-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: rgba(129,170,251,0.1);
-  border: 1px solid rgba(129,170,251,0.28);
-  border-radius: 100px;
-  padding: 6px 16px;
-  font-size: 11px;
-  color: var(--accent);
-  letter-spacing: 0.06em;
-  margin-bottom: 1.75rem;
-  animation: fadeUp 0.6s ease both;
-}
-.hero-badge-dot {
-  width: 6px; height: 6px;
-  border-radius: 50%;
-  background: var(--green);
-  box-shadow: 0 0 8px var(--green);
-}
-h1 {
-  font-family: var(--font-display);
-  font-size: clamp(1.9rem, 3.2vw, 2.8rem);
-  font-weight: 800;
-  line-height: 1.15;
-  letter-spacing: -0.03em;
-  margin-bottom: 1.25rem;
-  animation: fadeUp 0.6s 0.1s ease both;
-}
-h1 em { font-style: normal; color: var(--accent); }
-.hero-sub {
-  font-size: 1rem;
-  color: var(--muted2);
-  max-width: 460px;
-  line-height: 1.8;
-  margin-bottom: 2rem;
-  font-weight: 300;
-  animation: fadeUp 0.6s 0.2s ease both;
-}
-.hero-actions {
-  display: flex;
-  gap: 12px;
-  align-items: center;
-  flex-wrap: wrap;
-  animation: fadeUp 0.6s 0.3s ease both;
-}
-.btn-primary {
-  background: var(--accent);
-  color: #0a0a0b;
-  padding: 13px 26px;
-  border-radius: 8px;
-  font-family: var(--font-body);
-  font-size: 14px;
-  font-weight: 500;
-  text-decoration: none;
-  transition: background 0.2s, transform 0.15s;
-  display: inline-block;
-}
-.btn-primary:hover { background: var(--accent2); transform: translateY(-1px); }
-.btn-ghost {
-  color: var(--muted2);
-  padding: 13px 16px;
-  font-size: 14px;
-  text-decoration: none;
-  transition: color 0.2s;
-}
-.btn-ghost:hover { color: var(--text); }
-
-/* Hero right — outcome cards */
-.hero-outcome-card {
-  background: var(--bg2);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 1.25rem 1.5rem;
-  animation: fadeUp 0.6s ease both;
-}
-.hero-outcome-card:nth-child(1) { animation-delay: 0.15s; }
-.hero-outcome-card:nth-child(2) { animation-delay: 0.25s; }
-.hero-outcome-card:nth-child(3) { animation-delay: 0.35s; }
-.hoc-label {
-  font-size: 10px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--accent);
-  margin-bottom: 0.4rem;
-}
-.hoc-text {
-  font-size: 14px;
-  color: var(--text);
-  line-height: 1.5;
-  font-weight: 400;
-}
-.hoc-sub {
-  font-size: 12px;
-  color: var(--muted);
-  margin-top: 0.3rem;
-}
-.hero-stat-row {
-  display: flex;
-  gap: 0;
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  overflow: hidden;
-  animation: fadeUp 0.5s 0.4s ease both;
-}
-.hero-stat {
-  flex: 1;
-  padding: 1rem;
-  background: var(--bg2);
-  text-align: center;
-  border-right: 1px solid var(--border);
-}
-.hero-stat:last-child { border-right: none; }
-.hero-stat-num {
-  font-family: var(--font-display);
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: var(--text);
-  line-height: 1;
-  margin-bottom: 3px;
-}
-.hero-stat-label {
-  font-size: 10px;
-  color: var(--muted);
-  letter-spacing: 0.03em;
-}
-
-/* ── TICKER ── */
-.ticker-wrap {
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-  background: var(--bg2);
-  padding: 16px 0;
-  overflow: hidden;
-}
-.ticker-track {
-  display: flex;
-  width: max-content;
-  animation: ticker 24s linear infinite;
-}
-.ticker-item {
-  font-size: 11px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--muted);
-  white-space: nowrap;
-  padding: 0 2rem;
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-}
-.ticker-item::after { content: '·'; color: var(--accent); }
-
-/* ── SHARED SECTION STYLES ── */
-.section-wrap {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 72px 2.5rem;
-}
-.section-wrap.full {
-  max-width: 100%;
-  background: var(--bg2);
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-}
-.section-wrap.full .inner {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 72px 2.5rem;
-}
-.section-wrap.narrow { max-width: 780px; }
-
-.section-label {
-  font-size: 11px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--accent);
-  margin-bottom: 1rem;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.section-label::before {
-  content: '';
-  width: 22px; height: 1px;
-  background: var(--accent);
-  flex-shrink: 0;
-}
-h2 {
-  font-family: var(--font-display);
-  font-size: clamp(2rem, 3.8vw, 2.9rem);
-  font-weight: 800;
-  line-height: 1.1;
-  letter-spacing: -0.035em;
-  margin-bottom: 1rem;
-}
-h2 em { font-style: normal; color: var(--accent); }
-
-/* ── BENEFITS ── */
-.benefits-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-  margin-top: 3.5rem;
-}
-.benefit-card {
-  background: var(--bg2);
-  border: 1px solid var(--border2);
-  border-radius: 14px;
-  padding: 2.2rem;
-  transition: background 0.25s, border-color 0.25s;
-}
-.benefit-card:hover { background: var(--bg3); border-color: var(--accent); }
-.benefit-icon {
-  width: 38px; height: 38px;
-  border-radius: 8px;
-  background: rgba(129,170,251,0.1);
-  border: 1px solid rgba(129,170,251,0.2);
-  display: flex; align-items: center; justify-content: center;
-  margin-bottom: 1.1rem;
-  font-size: 15px;
-}
-.benefit-title {
-  font-family: var(--font-display);
-  font-size: 15px;
-  font-weight: 600;
-  margin-bottom: 0.45rem;
-  letter-spacing: -0.01em;
-}
-.benefit-desc {
-  font-size: 13.5px;
-  color: var(--muted2);
-  line-height: 1.65;
-  font-weight: 300;
-}
-
-/* ── PERSONAS ── */
-.personas-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  margin-top: 3.5rem;
-}
-.persona-card {
-  background: var(--bg2);
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 2.2rem;
-  transition: border-color 0.25s, background 0.25s;
-}
-.persona-card:hover {
-  background: var(--bg3);
-  border-color: rgba(129,170,251,0.2);
-}
-.persona-role {
-  font-size: 10px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--accent);
-  margin-bottom: 0.75rem;
-}
-.persona-headline {
-  font-family: var(--font-display);
-  font-size: 17px;
-  font-weight: 600;
-  letter-spacing: -0.015em;
-  margin-bottom: 0.75rem;
-  line-height: 1.3;
-}
-.persona-desc {
-  font-size: 14px;
-  color: var(--muted2);
-  line-height: 1.7;
-  font-weight: 300;
-}
-.persona-tag {
-  display: inline-block;
-  margin-top: 1.25rem;
-  font-size: 11px;
-  color: var(--muted);
-  background: var(--bg3);
-  border: 1px solid var(--border);
-  border-radius: 100px;
-  padding: 4px 14px;
-  letter-spacing: 0.03em;
-  white-space: normal;
-  word-break: break-word;
-}
-
-/* ── ABOUT ── */
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3.5rem;
-  align-items: start;
-}
-.about-body p {
-  color: var(--muted2);
-  font-weight: 300;
-  font-size: 15px;
-  margin-bottom: 1.1rem;
-  line-height: 1.75;
-}
-.checklist {
-  list-style: none;
-  margin-top: 1.75rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.6rem;
-}
-.checklist li {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  font-size: 14px;
-  color: var(--muted2);
-  line-height: 1.5;
-}
-.checklist li::before {
-  content: '→';
-  color: var(--accent);
-  flex-shrink: 0;
-  font-size: 12px;
-  margin-top: 3px;
-}
-.about-stats-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.75rem;
-  align-self: start;
-  min-width: 0;
-}
-.about-stat {
-  background: var(--bg2);
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 1.75rem 1.5rem;
-  min-width: 0;
-  transition: border-color 0.2s;
-}
-.about-stat:hover { border-color: var(--border2); }
-.about-stat-num {
-  font-family: var(--font-display);
-  font-size: clamp(2.8rem, 4.5vw, 4rem);
-  font-weight: 800;
-  color: var(--accent);
-  letter-spacing: -0.04em;
-  line-height: 1;
-  margin-bottom: 0.5rem;
-}
-.about-stat-label {
-  font-size: 13px;
-  color: var(--muted2);
-  font-weight: 400;
-  line-height: 1.4;
-}
-
-/* ── WHY US / COMPARE ── */
-.compare-intro {
-  color: var(--muted2);
-  max-width: 520px;
-  font-size: 15px;
-  font-weight: 300;
-  margin-top: 0.75rem;
-  line-height: 1.7;
-}
-.compare-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  margin-top: 3rem;
-}
-.compare-card {
-  border-radius: 14px;
-  padding: 2.2rem;
-  border: 1px solid var(--border);
-}
-.compare-card.ours {
-  background: rgba(61,158,255,0.04);
-  border-color: rgba(61,158,255,0.22);
-}
-.compare-card.theirs { background: var(--bg3); }
-.compare-heading {
-  font-size: 11px;
-  letter-spacing: 0.11em;
-  text-transform: uppercase;
-  margin-bottom: 1.3rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid var(--border);
-}
-.compare-heading.ours { color: var(--accent); }
-.compare-heading.theirs { color: var(--muted); }
-.compare-row {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  padding: 0.55rem 0;
-  font-size: 14px;
-  border-bottom: 1px solid var(--border);
-}
-.compare-row:last-child { border-bottom: none; }
-.compare-row.good { color: var(--text); }
-.compare-row.bad { color: var(--muted); text-decoration: line-through; }
-.ci { flex-shrink: 0; font-size: 11px; margin-top: 3px; }
-.ci.yes { color: var(--green); }
-.ci.no { color: #444; }
-
-/* ── CURRICULUM ── */
-.phases {
-  margin-top: 3.5rem;
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  overflow: hidden;
-}
-.phase {
-  display: grid;
-  grid-template-columns: 190px 1fr;
-  gap: 2.5rem;
-  align-items: start;
-  padding: 2.2rem 2.5rem;
-  border-bottom: 1px solid var(--border);
-  background: var(--bg2);
-  transition: background 0.2s;
-}
-.phase:last-child { border-bottom: none; }
-.phase:hover { background: var(--bg3); }
-.phase-tag {
-  display: inline-block;
-  font-size: 10px;
-  letter-spacing: 0.11em;
-  text-transform: uppercase;
-  color: var(--accent);
-  background: rgba(129,170,251,0.1);
-  border-radius: 4px;
-  padding: 3px 9px;
-  margin-bottom: 0.5rem;
-}
-.phase-weeks { font-size: 12px; color: var(--muted); }
-.phase-title {
-  font-family: var(--font-display);
-  font-size: 17px;
-  font-weight: 600;
-  letter-spacing: -0.015em;
-  margin-bottom: 0.5rem;
-}
-.phase-desc {
-  font-size: 14px;
-  color: var(--muted2);
-  line-height: 1.7;
-  font-weight: 300;
-}
-.phase-deliverable {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  margin-top: 0.85rem;
-  font-size: 12px;
-  color: var(--green);
-  background: rgba(74,222,128,0.08);
-  border: 1px solid rgba(74,222,128,0.15);
-  border-radius: 5px;
-  padding: 4px 12px;
-}
-
-/* ── EMAIL CAPTURE ── */
-.email-capture {
-  max-width: 100%;
-  background: var(--bg2);
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-}
-.email-capture .inner {
-  max-width: 640px;
-  margin: 0 auto;
-  padding: 80px 2.5rem;
-  text-align: center;
-}
-.email-capture h3 {
-  font-family: var(--font-display);
-  font-size: clamp(1.4rem, 2.5vw, 1.9rem);
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  line-height: 1.2;
-  margin-bottom: 0.75rem;
-}
-.email-capture h3 em { font-style: normal; color: var(--accent); }
-.email-capture p {
-  font-size: 14px;
-  color: var(--muted2);
-  font-weight: 300;
-  margin-bottom: 2rem;
-  line-height: 1.7;
-}
-.email-form {
-  display: flex;
-  gap: 10px;
-  max-width: 460px;
-  margin: 0 auto;
-}
-.email-form input {
-  flex: 1;
-  background: var(--bg3);
-  border: 1px solid var(--border2);
-  border-radius: 8px;
-  padding: 13px 16px;
-  font-family: var(--font-body);
-  font-size: 14px;
-  color: var(--text);
-  outline: none;
-  transition: border-color 0.2s;
-}
-.email-form input::placeholder { color: var(--muted); }
-.email-form input:focus { border-color: rgba(129,170,251,0.4); }
-.email-form button {
-  background: var(--accent);
-  color: #0a0a0b;
-  border: none;
-  padding: 13px 22px;
-  border-radius: 8px;
-  font-family: var(--font-body);
-  font-size: 14px;
-  font-weight: 500;
-  cursor: pointer;
-  white-space: nowrap;
-  transition: background 0.2s;
-}
-.email-form button:hover { background: var(--accent2); }
-.email-fine {
-  margin-top: 1rem;
-  font-size: 11px;
-  color: var(--muted);
-  letter-spacing: 0.02em;
-}
-
-/* ── PRICING ── */
-.pricing-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  margin-top: 3.5rem;
-}
-.pricing-card {
-  border-radius: 14px;
-  padding: 2.5rem;
-  border: 1px solid var(--border);
-  background: var(--bg2);
-  position: relative;
-}
-.pricing-card.featured {
-  border-color: rgba(61,158,255,0.3);
-  background: rgba(61,158,255,0.04);
-}
-.pricing-badge {
-  position: absolute;
-  top: -1px; right: 28px;
-  background: var(--accent);
-  color: #0a0a0b;
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  padding: 5px 14px;
-  border-radius: 0 0 7px 7px;
-}
-.pricing-tier {
-  font-size: 11px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--muted);
-  margin-bottom: 0.8rem;
-}
-.pricing-price {
-  font-family: var(--font-display);
-  font-size: 3.2rem;
-  font-weight: 800;
-  letter-spacing: -0.04em;
-  line-height: 1;
-  margin-bottom: 0.3rem;
-}
-.pricing-price.dimmed { color: var(--muted); }
-.pricing-sub {
-  font-size: 13px;
-  color: var(--muted);
-  margin-bottom: 1.8rem;
-  padding-bottom: 1.5rem;
-  border-bottom: 1px solid var(--border);
-  line-height: 1.5;
-}
-.pricing-features {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 0.65rem;
-  margin-bottom: 2rem;
-}
-.pricing-features li {
-  font-size: 13.5px;
-  color: var(--muted2);
-  display: flex;
-  align-items: flex-start;
-  gap: 9px;
-  line-height: 1.4;
-}
-.pricing-features li::before { content: '✓'; color: var(--green); font-size: 11px; flex-shrink: 0; margin-top: 2px; }
-.pricing-features li.dim::before { color: var(--muted); }
-.pricing-features li.dim { color: var(--muted); }
-.btn-full {
-  width: 100%;
-  padding: 14px;
-  border-radius: 8px;
-  font-family: var(--font-body);
-  font-size: 14px;
-  font-weight: 500;
-  cursor: pointer;
-  text-align: center;
-  display: block;
-  text-decoration: none;
-  transition: all 0.2s;
-  border: none;
-}
-.btn-full.primary { background: var(--accent); color: #0a0a0b; }
-.btn-full.primary:hover { background: var(--accent2); }
-.btn-full.ghost { background: transparent; color: var(--muted2); border: 1px solid var(--border2); }
-.btn-full.ghost:hover { border-color: var(--muted2); color: var(--text); }
-
-/* ── APPLICATION PROCESS ── */
-.apply-steps {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-  margin-top: 3.5rem;
-}
-.apply-step {
-  background: var(--bg2);
-  border: 1px solid var(--border2);
-  border-radius: 14px;
-  padding: 2.5rem 2.2rem;
-  position: relative;
-}
-.apply-step-num {
-  font-family: var(--font-display);
-  font-size: 3rem;
-  font-weight: 800;
-  color: rgba(129,170,251,0.28);
-  letter-spacing: -0.04em;
-  line-height: 1;
-  margin-bottom: 1.25rem;
-}
-.apply-step-title {
-  font-family: var(--font-display);
-  font-size: 16px;
-  font-weight: 600;
-  letter-spacing: -0.01em;
-  margin-bottom: 0.6rem;
-}
-.apply-step-desc {
-  font-size: 13.5px;
-  color: var(--muted2);
-  line-height: 1.65;
-  font-weight: 300;
-}
-.apply-step-time {
-  display: inline-block;
-  margin-top: 1.1rem;
-  font-size: 11px;
-  color: var(--accent);
-  letter-spacing: 0.06em;
-  background: rgba(129,170,251,0.08);
-  border: 1px solid rgba(129,170,251,0.15);
-  border-radius: 100px;
-  padding: 3px 12px;
-}
-.apply-cta {
-  margin-top: 3rem;
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-}
-.apply-note {
-  font-size: 13px;
-  color: var(--muted);
-  font-weight: 300;
-}
-
-/* ── FAQ ── */
-.faq-list { margin-top: 3.5rem; }
-.faq-item { border-bottom: 1px solid var(--border); padding: 1.5rem 0; }
-.faq-q {
-  font-family: var(--font-display);
-  font-size: 15px;
-  font-weight: 600;
-  letter-spacing: -0.01em;
-  margin-bottom: 0.6rem;
-}
-.faq-a {
-  font-size: 14px;
-  color: var(--muted2);
-  line-height: 1.75;
-  font-weight: 300;
-}
-
-/* ── FINAL CTA ── */
-.cta-section {
-  background: var(--bg2);
-  border-top: 1px solid var(--border);
-  text-align: center;
-  padding: 130px 2.5rem;
-}
-.cta-section .section-label { justify-content: center; }
-.cta-inner { max-width: 620px; margin: 0 auto; }
-.cta-inner h2 { margin-bottom: 1rem; }
-.cta-inner p {
-  color: var(--muted2);
-  font-size: 15px;
-  font-weight: 300;
-  max-width: 440px;
-  margin: 0 auto 2.5rem;
-  line-height: 1.75;
-}
-.cta-fine {
-  margin-top: 1.5rem;
-  font-size: 12px;
-  color: var(--muted);
-  letter-spacing: 0.01em;
-}
-
-/* ── FOOTER ── */
-footer {
-  border-top: 1px solid var(--border);
-  padding: 2rem 2.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-.footer-logo {
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 15px;
-  text-decoration: none;
-  color: var(--text);
-}
-.footer-logo span { color: var(--accent); }
-.footer-copy { font-size: 12px; color: var(--muted); }
-
-/* ── ANIMATIONS ── */
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(22px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-@keyframes ticker {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
-}
-
-/* ── RESPONSIVE ── */
-@media (max-width: 900px) {
-  #hero { flex-direction: column; gap: 3rem; padding-top: 110px; }
-  .hero-right { flex: unset; width: 100%; margin-left: 0; }
-  .benefits-grid { grid-template-columns: 1fr 1fr; }
-  .personas-grid { grid-template-columns: 1fr 1fr; }
-  .about-grid, .compare-grid, .pricing-grid { grid-template-columns: 1fr; gap: 2rem; }
-  .phase { grid-template-columns: 1fr; gap: 0.5rem; }
-  .apply-steps { grid-template-columns: 1fr; }
-  .email-form { flex-direction: column; }
-}
-.nav-hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 6px; flex-shrink: 0; }
-.nav-hamburger span { display: block; width: 22px; height: 2px; background: var(--text); border-radius: 2px; transition: transform 0.25s, opacity 0.25s; }
-body.nav-open .nav-hamburger span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-body.nav-open .nav-hamburger span:nth-child(2) { opacity: 0; }
-body.nav-open .nav-hamburger span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-body.nav-open { overflow: hidden; }
-.mobile-menu { display: none; position: fixed; top: 64px; left: 0; right: 0; bottom: 0; background: var(--bg); z-index: 9999; overflow-y: auto; overflow-x: hidden; border-top: 1px solid var(--border); }
-.mobile-menu-links { list-style: none; padding: 0 1.5rem; margin: 0; }
-.mobile-menu-links li { border-bottom: 1px solid var(--border); }
-.mobile-menu-links a { display: block; font-size: 17px; padding: 1rem 0; color: var(--text); font-weight: 500; text-decoration: none; }
-.mobile-menu-cta-btn { display: block; margin: 1.5rem; text-align: center; padding: 13px; border-radius: 8px; font-weight: 700; font-size: 15px; text-decoration: none; }
-@media (max-width: 768px) {
-  .benefits-grid { grid-template-columns: 1fr; }
-  .personas-grid { grid-template-columns: 1fr; }
-  .nav-hamburger { display: flex; }
-  .nav-cta { display: none; }
-  .nav-links { display: none; }
-  body.nav-open .mobile-menu { display: block; }
-  footer { flex-direction: column; gap: 0.5rem; text-align: center; padding: 1.5rem; }
-}
-
-/* WHY NOW STATS */
-.whynow-wrap {
-  max-width: 1100px; margin: 0 auto; padding: 90px 2.5rem;
-}
-.whynow-grid {
-  display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2.5rem;
-}
-.whynow-card {
-  background: var(--bg2); border: 1px solid var(--border); border-radius: 14px; padding: 2rem;
-}
-.whynow-stat {
-  font-size: 3rem; font-weight: 800; letter-spacing: -0.04em; color: var(--accent); line-height: 1;
-  margin-bottom: 0.75rem;
-}
-.whynow-desc {
-  font-size: 14px; color: var(--muted2); line-height: 1.65; font-weight: 300;
-}
-.whynow-source {
-  font-size: 10px; color: var(--muted); margin-top: 0.75rem; letter-spacing: 0.04em; text-transform: uppercase;
-}
-@media (max-width: 900px) {
-  .whynow-grid { grid-template-columns: 1fr; gap: 1rem; }
-  .whynow-wrap { padding: 60px 1.25rem; }
-}
-
-/* SCROLL ANIMATIONS */
-.fade-up { opacity: 0; transform: translateY(28px); transition: opacity 0.65s ease, transform 0.65s ease; }
-.fade-up.visible { opacity: 1; transform: translateY(0); }
-/* PARALLAX HERO */
-.page-hero { will-change: transform; overflow: visible; }
-
-/* ── HERO EMAIL STRIP ── */
-.hero-email-strip { display: flex; align-items: center; gap: 8px; margin-top: 1.25rem; flex-wrap: wrap; }
-.hero-email-strip input[type="email"] {
-  background: rgba(255,255,255,0.06); border: 1px solid var(--border2);
-  border-radius: 8px; padding: 10px 14px; font-size: 13px; color: var(--text);
-  outline: none; width: 210px; font-family: var(--font-body); transition: border 0.2s;
-}
-.hero-email-strip input[type="email"]::placeholder { color: var(--muted); }
-.hero-email-strip input[type="email"]:focus { border-color: var(--accent); }
-.hero-email-btn {
-  background: var(--bg3); border: 1px solid var(--border2); color: var(--text);
-  padding: 10px 18px; border-radius: 8px; font-size: 13px; font-weight: 500;
-  cursor: pointer; font-family: var(--font-body); transition: background 0.2s, border-color 0.2s, color 0.2s; white-space: nowrap;
-}
-.hero-email-btn:hover { background: var(--accent); border-color: var(--accent); color: #0a0a0b; }
-.hero-email-note { font-size: 11px; color: var(--muted); width: 100%; margin-top: 2px; }
-
-/* ── HERO SEATS COUNTER ── */
-.hero-seats {
-  display: flex; align-items: center; gap: 10px; margin-top: 1rem;
-}
-.hero-seats-bar {
-  display: block; width: 80px; height: 4px;
-  background: rgba(129,170,251,0.15); border-radius: 2px; overflow: hidden;
-}
-.hero-seats-fill {
-  display: block; height: 100%; background: var(--accent); border-radius: 2px;
-}
-.hero-seats-text { font-size: 11px; color: var(--muted2); letter-spacing: 0.02em; }
-.hero-seats-text strong { color: var(--accent); }
-
-/* ── FOUNDER STRIP ── */
-.founder-strip {
-  display: flex; align-items: center; gap: 1.75rem;
-  max-width: 1100px; margin: 0 auto;
-  padding: 2rem 2.5rem;
-  background: var(--bg2);
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-}
-.founder-avatar {
-  width: 60px; height: 60px; border-radius: 50%; flex-shrink: 0;
-  background: linear-gradient(135deg, #284055, #3d9eff30);
-  border: 2px solid var(--border2);
-  display: flex; align-items: center; justify-content: center;
-  font-weight: 700; font-size: 17px; color: var(--accent); letter-spacing: 0.05em;
-}
-.founder-quote { flex: 1; }
-.founder-words {
-  font-size: 14px; color: var(--muted2); line-height: 1.7; font-style: italic; font-weight: 300;
-}
-.founder-byline { font-size: 11px; color: var(--muted); margin-top: 0.5rem; letter-spacing: 0.04em; }
-.founder-learn-more {
-  font-size: 12px; color: var(--accent); text-decoration: none; white-space: nowrap;
-  padding: 8px 14px; border: 1px solid rgba(129,170,251,0.25); border-radius: 6px;
-  transition: background 0.2s;
-}
-.founder-learn-more:hover { background: rgba(129,170,251,0.08); }
-@media (max-width: 768px) {
-  .founder-strip { flex-direction: column; align-items: flex-start; gap: 1rem; padding: 1.5rem 1.25rem; }
-  .founder-learn-more { align-self: flex-start; }
-}
-
-/* ── STICKY MOBILE CTA ── */
-.mobile-sticky-cta { display: none; }
-@media (max-width: 768px) {
-  .mobile-sticky-cta {
-    display: flex; position: fixed; bottom: 0; left: 0; right: 0; z-index: 200;
-    padding: 12px 1.25rem; background: rgba(26,47,68,0.97);
-    border-top: 1px solid var(--border2); backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
-    gap: 12px; align-items: center; justify-content: space-between;
-  }
-  .mobile-sticky-cta-text { font-size: 12px; color: var(--muted2); line-height: 1.4; }
-  .mobile-sticky-cta-text strong { color: var(--text); display: block; font-size: 13px; }
-  .mobile-sticky-cta-btn {
-    background: #ffffff; color: #0a0a0b; padding: 11px 22px;
-    border-radius: 8px; font-size: 14px; font-weight: 700;
-    text-decoration: none; white-space: nowrap; flex-shrink: 0;
-    box-shadow: 0 0 16px rgba(255,255,255,0.15);
-  }
-  body { padding-bottom: 68px; }
-  .persona-card { padding: 1.5rem; }
-  .section-wrap { padding: 60px 1.25rem; }
-  .section-wrap.full .inner { padding: 60px 1.25rem; }
-  .pricing-card { padding: 1.5rem; }
-  #pricing .inner { padding-left: 1.25rem; padding-right: 1.25rem; }
-}
-
-/* FAQ ACCORDION */
-.faq-item { padding: 0; cursor: default; }
-.faq-q {
-  display: flex; justify-content: space-between; align-items: flex-start;
-  gap: 1rem; padding: 1.4rem 0; margin-bottom: 0; cursor: pointer;
-  user-select: none;
-}
-.faq-q::after {
-  content: '+'; font-size: 1.4rem; font-weight: 300; color: var(--accent);
-  flex-shrink: 0; line-height: 1.1; transition: transform 0.25s;
-}
-.faq-item.open .faq-q::after { transform: rotate(45deg); }
-.faq-a { display: none; padding-bottom: 1.4rem; margin-top: 0; }
-.faq-item.open .faq-a { display: block; }
-
-/* OUTCOMES GRID */
-.outcomes-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.2rem; margin-top: 2.5rem; }
-.outcome-card { background: var(--bg2); border: 1px solid var(--border); border-radius: 14px; padding: 1.75rem; }
-.outcome-num { font-size: 2.8rem; font-weight: 800; color: var(--accent); letter-spacing: -0.04em; line-height: 1; margin-bottom: 0.5rem; }
-.outcome-title { font-size: 14px; font-weight: 600; margin-bottom: 0.4rem; letter-spacing: -0.01em; }
-.outcome-desc { font-size: 13px; color: var(--muted2); font-weight: 300; line-height: 1.65; }
-@media (max-width: 900px) { .outcomes-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 480px) { .outcomes-grid { grid-template-columns: 1fr; } }
-</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.min.css">
+<script type="text/javascript">
+function ZFLead(){}
+ZFLead.utmPValObj=ZFLead.utmPValObj||{};
+ZFLead.utmPNameArr=new Array('utm_source','utm_medium','utm_campaign','utm_term','utm_content');
+ZFLead.prototype.zfutm_getLeadVal=function(pName){var qStr='';try{qStr=window.top.location.search.substring(1)}catch(e){qStr=''}var pNameTemp=pName+'=';var pValue='';if(typeof qStr!=="undefined"&&qStr!==null&&qStr.length>0){var begin=qStr.indexOf(pNameTemp);if(begin!=-1){begin=begin+pNameTemp.length;end=qStr.indexOf('&',begin);if(end==-1){end=qStr.length}pValue=decodeURIComponent(qStr.substring(begin,end))}}if(pValue==undefined||pValue==''){pValue=this.zfutm_gC(pName)}return pValue};
+ZFLead.prototype.zfutm_sC=function(paramName,path,domain,secure){var value=ZFLead.utmPValObj[paramName];if(typeof value!=="undefined"&&value!==null){var cookieStr=paramName+"="+encodeURIComponent(value);var exdate=new Date();exdate.setDate(exdate.getDate()+7);cookieStr+="; expires="+exdate.toGMTString();cookieStr+="; path=/";if(domain){cookieStr+="; domain="+encodeURIComponent(domain)}if(secure){cookieStr+="; secure"}document.cookie=cookieStr}};
+ZFLead.prototype.zfutm_ini=function(){for(var i=0;i<ZFLead.utmPNameArr.length;i++){var zf_pN=ZFLead.utmPNameArr[i];var zf_pV=this.zfutm_getLeadVal(zf_pN);if(typeof zf_pV!=="undefined"&&zf_pV!==null){ZFLead.utmPValObj[zf_pN]=zf_pV}}for(var pkey in ZFLead.utmPValObj){this.zfutm_sC(pkey)}};
+ZFLead.prototype.zfutm_gC=function(cookieName){var cookieArr=document.cookie.split('; ');for(var i=0;i<cookieArr.length;i++){var cookieVals=cookieArr[i].split('=');if(cookieVals[0]===cookieName&&cookieVals[1]){return decodeURIComponent(cookieVals[1])}}};
+ZFLead.prototype.zfutm_gC_enc=function(cookieName){var cookieArr=document.cookie.split('; ');for(var i=0;i<cookieArr.length;i++){var cookieVals=cookieArr[i].split('=');if(cookieVals[0]===cookieName&&cookieVals[1]){return cookieVals[1]}}};
+ZFLead.prototype.zfutm_iframeSprt=function(){var zf_frame=document.getElementsByTagName("iframe");for(var i=0;i<zf_frame.length;++i){if((zf_frame[i].src).indexOf('formperma')>0){var zf_src=zf_frame[i].src;for(var prmIdx=0;prmIdx<ZFLead.utmPNameArr.length;prmIdx++){var utmPm=ZFLead.utmPNameArr[prmIdx];var utmPmregex=new RegExp("[?&]"+utmPm+"=");if(!utmPmregex.test(zf_src)){var utmVal=this.zfutm_gC_enc(ZFLead.utmPNameArr[prmIdx]);if(typeof utmVal!=="undefined"){if(zf_src.indexOf('?')>0){zf_src=zf_src+'&'+utmPm+'='+utmVal}else{zf_src=zf_src+'?'+utmPm+'='+utmVal}}}}if(zf_frame[i].src.length<zf_src.length){zf_frame[i].src=zf_src}}}};
+ZFLead.prototype.zfutm_DHtmlSprt=function(){var zf_formsArr=document.forms;for(var frmInd=0;frmInd<zf_formsArr.length;frmInd++){var zf_form_act=zf_formsArr[frmInd].action;if(zf_form_act&&zf_form_act.indexOf('formperma')>0){for(var prmIdx=0;prmIdx<ZFLead.utmPNameArr.length;prmIdx++){var utmPm=ZFLead.utmPNameArr[prmIdx];var utmVal=this.zfutm_gC(ZFLead.utmPNameArr[prmIdx]);if(typeof utmVal!=="undefined"){var fieldObj=zf_formsArr[frmInd][utmPm];if(fieldObj){fieldObj.value=utmVal}}}}}};
+ZFLead.prototype.zfutm_jsEmbedSprt=function(id){document.getElementById('zforms_iframe_id').removeAttribute("onload");var jsEmbdFrm=document.getElementById("zforms_iframe_id");var embdSrc=jsEmbdFrm.src;for(var prmIdx=0;prmIdx<ZFLead.utmPNameArr.length;prmIdx++){var utmPm=ZFLead.utmPNameArr[prmIdx];var utmVal=this.zfutm_gC_enc(ZFLead.utmPNameArr[prmIdx]);if(typeof utmVal!=="undefined"){if(embdSrc.indexOf('?')>0){embdSrc=embdSrc+'&'+utmPm+'='+utmVal}else{embdSrc=embdSrc+'?'+utmPm+'='+utmVal}}}jsEmbdFrm.src=embdSrc};
+var zfutm_zfLead=new ZFLead();
+zfutm_zfLead.zfutm_ini();
+if(document.readyState=="complete"){zfutm_zfLead.zfutm_iframeSprt();zfutm_zfLead.zfutm_DHtmlSprt()}else{window.addEventListener('load',function(){zfutm_zfLead.zfutm_iframeSprt();zfutm_zfLead.zfutm_DHtmlSprt()},false)}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "EducationalOrganization",
+      "@id": "https://www.makersquare.ai/#organization",
+      "name": "MakerSquare",
+      "url": "https://www.makersquare.ai/",
+      "logo": "https://www.makersquare.ai/favicon.svg",
+      "image": "https://www.makersquare.ai/og-image.jpg",
+      "description": "MakerSquare is a 4-week in-person AI bootcamp in Austin, TX for non-technical professionals. Build and deploy 3 real AI products. No coding required.",
+      "address": {"@type": "PostalAddress", "addressLocality": "Austin", "addressRegion": "TX", "addressCountry": "US"},
+      "founder": {"@type": "Person", "name": "Marliis Schneider", "jobTitle": "Founder & CEO"},
+      "sameAs": ["https://www.linkedin.com/company/makersquare-ai"]
+    },
+    {
+      "@type": "Course",
+      "@id": "https://www.makersquare.ai/#course",
+      "name": "MakerSquare AI Bootcamp",
+      "description": "4-week in-person AI bootcamp in Austin, TX for operators, founders, and professionals. Build and deploy 3 real AI products. No coding required.",
+      "provider": {"@id": "https://www.makersquare.ai/#organization"},
+      "url": "https://www.makersquare.ai/",
+      "educationalLevel": "Beginner",
+      "teaches": ["Prompt engineering", "RAG systems", "AI agents", "Cursor", "Supabase", "Pinecone", "AI product development", "ElevenLabs", "Lovable"],
+      "hasCourseInstance": {
+        "@type": "CourseInstance",
+        "courseMode": "onsite",
+        "location": {"@type": "Place", "name": "MakerSquare Austin", "address": {"@type": "PostalAddress", "addressLocality": "Austin", "addressRegion": "TX", "addressCountry": "US"}},
+        "startDate": "2026-07-06",
+        "endDate": "2026-08-01",
+        "courseWorkload": "P4W",
+        "offers": {"@type": "Offer", "price": "5999", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://www.makersquare.ai/apply.html"}
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.makersquare.ai/#website",
+      "url": "https://www.makersquare.ai/",
+      "name": "MakerSquare",
+      "publisher": {"@id": "https://www.makersquare.ai/#organization"}
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "Do I need to know how to code to join MakerSquare?", "acceptedAnswer": {"@type": "Answer", "text": "No. Basic computer fluency and real experience in your field. We've had doctors, lawyers, real estate agents, and marketing directors build exceptional AI products."}},
+        {"@type": "Question", "name": "What is the time commitment for MakerSquare?", "acceptedAnswer": {"@type": "Answer", "text": "Mon/Wed/Fri, 9am to 3pm for 4 weeks (18 hrs/week in class), plus 10 to 15 hours of project work on your time."}},
+        {"@type": "Question", "name": "How much does MakerSquare cost?", "acceptedAnswer": {"@type": "Answer", "text": "Tuition is $5,999. A $1,500 scholarship is available for military veterans, first responders, and educators (reducing tuition to $4,499). Payment plans available. No income share agreements."}},
+        {"@type": "Question", "name": "What do I walk away with?", "acceptedAnswer": {"@type": "Answer", "text": "Three deployed AI products. A Demo Day presentation to Austin investors and operators. A cohort of builders who become your long-term network."}},
+        {"@type": "Question", "name": "Is MakerSquare only for people in Austin?", "acceptedAnswer": {"@type": "Answer", "text": "No. MakerSquare welcomes builders from anywhere. Housing assistance is available with partner Airbnb discounts starting from $1,600/month."}}
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
 <!-- NAV -->
-<nav>
-  <a href="index.html" class="nav-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1157.19 299.75" height="34" style="display:block;" aria-label="MakerSquare">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #80aafb;
-      }
-
-      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7 {
-        stroke-width: 0px;
-      }
-
-      .cls-2 {
-        fill: #ebf0fd;
-      }
-
-      .cls-3 {
-        fill: #ecf0fd;
-      }
-
-      .cls-4 {
-        fill: #89affb;
-      }
-
-      .cls-5 {
-        fill: #81aafb;
-      }
-
-      .cls-6 {
-        fill: #fff;
-      }
-
-      .cls-7 {
-        fill: #c1d4fa;
-      }
-    </style>
-  </defs>
-  <g>
-    <path class="cls-7" d="M84.05,96.9v100.82c0,7.24,4.21,13.81,10.79,16.83l20.84,9.7v-80.04l40.87,18.83v-32.54l-72.49-33.61Z"/>
-    <polygon class="cls-1" points="115.68 144.22 115.68 177.43 140.88 189.82 140.88 155.85 115.68 144.22"/>
-    <polygon class="cls-2" points="115.68 177.43 115.68 224.26 140.88 211.62 140.88 189.82 115.68 177.43"/>
-    <path class="cls-3" d="M156.54,130.51v32.54l40.87-18.82v80.04l20.84-9.71c6.57-3.02,10.79-9.6,10.79-16.83v-100.82l-72.49,33.61Z"/>
-    <polygon class="cls-4" points="172.31 155.84 172.31 213.05 197.41 224.34 197.41 144.23 172.31 155.84"/>
-    <path class="cls-5" d="M229.04,96.9l-22.05-8.79c-4.81-1.92-10.21-1.74-14.88.5l-35.57,17.06-35.57-17.06c-4.67-2.24-10.06-2.42-14.88-.5l-22.05,8.79,72.49,33.61h0l72.49-33.61Z"/>
-  </g>
-  <g>
-    <polygon class="cls-6" points="356.31 109.77 353.42 109.77 323.9 178.88 294.38 109.77 291.36 109.77 277.03 109.77 273.61 109.77 273.61 201.8 291.36 201.8 291.36 145.97 315.17 201.53 315.16 201.8 315.29 201.8 332.51 201.8 356.31 146.08 356.31 201.8 374.06 201.8 374.06 109.77 370.65 109.77 356.31 109.77"/>
-    <path class="cls-6" d="M416.93,132.91c-7.98,0-14.57,2.02-19.79,6.05-5.22,4.03-8.48,9.03-9.8,14.99l14.99,3.16h1.45c.44-2.28,1.8-4.36,4.08-6.25,2.28-1.89,5.3-2.83,9.07-2.83,4.03,0,7.36,1.23,9.99,3.68,2.22,2.07,3.49,4.62,3.84,7.64l-18.17,1.57c-8.5.7-14.97,2.96-19.39,6.77-4.43,3.81-6.64,8.96-6.64,15.45,0,4.03,1.01,7.63,3.02,10.78,2.02,3.16,4.8,5.61,8.35,7.36s7.6,2.63,12.16,2.63c4.91,0,9.34-.99,13.28-2.96,3.61-1.81,6.72-4.17,9.34-7.07v7.93h15.38v-37.74c0-9.9-2.78-17.57-8.35-23.01-5.57-5.44-13.17-8.15-22.81-8.15ZM422.65,186.03c-2.5,1.58-5.28,2.37-8.35,2.37-2.81,0-5.13-.59-6.97-1.78-1.84-1.18-2.76-2.74-2.76-4.67s.77-3.51,2.3-4.73c1.53-1.23,4.18-2.02,7.95-2.37l15.95-1.33c-.23,2.23-.94,4.36-2.15,6.39-1.49,2.5-3.48,4.54-5.98,6.11Z"/>
-    <polygon class="cls-6" points="528.95 136.06 528.95 135.01 506.73 135.01 482.93 160.68 482.93 106.08 482.54 105.03 465.18 107.14 465.18 201.8 482.93 201.8 482.93 184.63 491.72 175.35 509.49 201.8 529.35 201.8 529.35 200.75 503.48 162.94 528.95 136.06"/>
-    <path class="cls-6" d="M582.2,137.51c-5-3.07-10.87-4.6-17.62-4.6s-12.84,1.49-18.01,4.47c-5.17,2.98-9.23,7.14-12.16,12.49-2.94,5.35-4.4,11.53-4.4,18.54s1.49,13.19,4.47,18.54c2.98,5.35,7.12,9.51,12.43,12.49,5.3,2.98,11.46,4.47,18.47,4.47s12.99-1.58,18.21-4.73c5.21-3.15,9.18-7.71,11.9-13.67l-14.2-5.92h-1.58c-1.49,2.81-3.55,5.04-6.18,6.71-2.63,1.67-5.35,2.5-8.15,2.5-3.16,0-6.07-.79-8.74-2.37-2.67-1.58-4.82-3.66-6.44-6.25-1.05-1.67-1.75-3.45-2.12-5.33h48.08l1.97-1.97v-3.16c0-7.36-1.4-13.81-4.21-19.33-2.81-5.52-6.71-9.82-11.7-12.88ZM556.04,150.2c2.63-1.45,5.61-2.17,8.94-2.17,2.98,0,5.67.68,8.09,2.04,2.41,1.36,4.34,3.27,5.79,5.72.89,1.51,1.51,3.18,1.85,5h-32.54c.35-1.68.94-3.23,1.77-4.67,1.45-2.5,3.48-4.47,6.11-5.92Z"/>
-    <path class="cls-6" d="M632.3,139.48c-1.99,1.38-3.74,3.02-5.26,4.89v-9.37h-16.44v66.79h17.75v-33.4c0-3.68.66-6.86,1.97-9.53s3.18-4.71,5.59-6.12c2.41-1.4,5.28-2.1,8.61-2.1h8.81v-15.65h-6.18c-5.61,0-10.56,1.49-14.86,4.47Z"/>
-    <path class="cls-6" d="M710.27,168.74c-3.51-3.02-8.63-5.33-15.38-6.9l-12.62-2.89c-2.1-.44-3.66-1.16-4.67-2.17-1.01-1.01-1.51-2.08-1.51-3.22,0-1.75.9-3.11,2.7-4.08,1.8-.96,4.01-1.45,6.64-1.45,2.89,0,5.5.7,7.82,2.1,2.32,1.4,3.79,3.2,4.41,5.39l1.45.26,14.99-3.29c-1.58-6.14-4.84-10.94-9.8-14.4-4.95-3.46-10.98-5.19-18.08-5.19-5.26,0-9.97.88-14.13,2.63-4.16,1.75-7.43,4.19-9.8,7.3-2.37,3.11-3.55,6.77-3.55,10.98,0,4.91,1.69,9.05,5.06,12.43,3.37,3.38,8.17,5.77,14.4,7.17l12.62,2.76c2.45.53,4.29,1.27,5.52,2.24,1.23.97,1.84,2.28,1.84,3.94,0,1.93-1.01,3.48-3.02,4.67-2.02,1.18-4.52,1.78-7.49,1.78s-5.77-.7-8.09-2.1c-2.32-1.4-3.84-3.33-4.54-5.78l-1.58-.4-16.17,4.08c1.75,5.96,5.28,10.67,10.58,14.13,5.3,3.46,11.68,5.19,19.13,5.19,5.52,0,10.43-.92,14.73-2.76,4.29-1.84,7.67-4.47,10.12-7.89,2.45-3.42,3.68-7.41,3.68-11.97,0-5.34-1.75-9.53-5.26-12.56Z"/>
-    <path class="cls-6" d="M774.15,142.08c-2.27-2.39-4.98-4.43-8.15-6.09-3.94-2.06-8.46-3.09-13.54-3.09-6.05,0-11.53,1.51-16.44,4.54-4.91,3.02-8.79,7.19-11.64,12.49-2.85,5.3-4.27,11.42-4.27,18.34s1.42,13.08,4.27,18.47c2.85,5.39,6.73,9.6,11.64,12.62,4.91,3.02,10.39,4.54,16.44,4.54,5.08,0,9.6-1.05,13.54-3.16,2.58-1.38,4.86-3,6.84-4.87v32.22h17.75v-93.09h-16.44v7.07ZM764.94,185.63c-2.63,1.67-5.74,2.5-9.34,2.5s-6.6-.83-9.27-2.5c-2.67-1.66-4.76-3.99-6.25-6.97-1.49-2.98-2.24-6.4-2.24-10.25s.74-7.39,2.24-10.32c1.49-2.94,3.57-5.24,6.25-6.9,2.67-1.66,5.76-2.5,9.27-2.5s6.71.83,9.34,2.5c2.63,1.67,4.69,3.97,6.18,6.9,1.49,2.94,2.24,6.38,2.24,10.32s-.75,7.28-2.24,10.25c-1.49,2.98-3.55,5.31-6.18,6.97Z"/>
-    <path class="cls-6" d="M852.77,167.49c0,5.52-.92,9.77-2.76,12.75s-4.06,5.04-6.64,6.18c-2.59,1.14-4.93,1.71-7.03,1.71-2.72,0-5.04-.66-6.97-1.97-1.93-1.32-3.4-3.27-4.4-5.85-1.01-2.58-1.51-5.72-1.51-9.4v-35.9h-17.75v41.55c0,5.96,1.16,10.98,3.48,15.05,2.32,4.08,5.46,7.14,9.4,9.2,3.94,2.06,8.24,3.09,12.89,3.09,4.21,0,8.04-.77,11.5-2.3,3.46-1.53,6.53-3.7,9.2-6.51.67-.71,1.31-1.45,1.91-2.23v8.93h16.44v-66.79h-17.75v32.48Z"/>
-    <path class="cls-6" d="M913.39,132.91c-7.98,0-14.57,2.02-19.79,6.05-5.22,4.03-8.48,9.03-9.8,14.99l14.99,3.16h1.45c.44-2.28,1.8-4.36,4.08-6.25,2.28-1.89,5.3-2.83,9.07-2.83,4.03,0,7.36,1.23,9.99,3.68,2.22,2.07,3.49,4.62,3.84,7.64l-18.17,1.57c-8.5.7-14.97,2.96-19.39,6.77-4.43,3.81-6.64,8.96-6.64,15.45,0,4.03,1.01,7.63,3.02,10.78,2.02,3.16,4.8,5.61,8.35,7.36,3.55,1.75,7.6,2.63,12.16,2.63,4.91,0,9.34-.99,13.28-2.96,3.61-1.81,6.72-4.17,9.34-7.07v7.93h15.38v-37.74c0-9.9-2.78-17.57-8.35-23.01-5.57-5.44-13.17-8.15-22.81-8.15ZM919.11,186.03c-2.5,1.58-5.28,2.37-8.35,2.37-2.81,0-5.13-.59-6.97-1.78-1.84-1.18-2.76-2.74-2.76-4.67s.77-3.51,2.3-4.73c1.53-1.23,4.18-2.02,7.95-2.37l15.95-1.33c-.23,2.23-.94,4.36-2.15,6.39-1.49,2.5-3.48,4.54-5.98,6.11Z"/>
-    <path class="cls-6" d="M981.36,139.48c-1.99,1.38-3.74,3.02-5.26,4.89v-9.37h-16.44v66.79h17.75v-33.4c0-3.68.66-6.86,1.97-9.53s3.18-4.71,5.59-6.12c2.41-1.4,5.28-2.1,8.61-2.1h8.81v-15.65h-6.18c-5.61,0-10.56,1.49-14.86,4.47Z"/>
-    <path class="cls-6" d="M1068.93,150.39c-2.81-5.52-6.71-9.82-11.7-12.88s-10.87-4.6-17.62-4.6-12.84,1.49-18.01,4.47c-5.17,2.98-9.23,7.14-12.16,12.49-2.94,5.35-4.4,11.53-4.4,18.54s1.49,13.19,4.47,18.54c2.98,5.35,7.12,9.51,12.43,12.49,5.3,2.98,11.46,4.47,18.47,4.47s12.99-1.58,18.21-4.73c5.21-3.15,9.18-7.71,11.9-13.67l-14.2-5.92h-1.58c-1.49,2.81-3.55,5.04-6.18,6.71-2.63,1.67-5.35,2.5-8.15,2.5-3.16,0-6.07-.79-8.74-2.37-2.67-1.58-4.82-3.66-6.44-6.25-1.05-1.67-1.75-3.45-2.12-5.33h48.08l1.97-1.97v-3.16c0-7.36-1.4-13.81-4.21-19.33ZM1031.07,150.2c2.63-1.45,5.61-2.17,8.94-2.17,2.98,0,5.67.68,8.09,2.04,2.41,1.36,4.34,3.27,5.79,5.72.89,1.51,1.51,3.18,1.85,5h-32.54c.35-1.68.94-3.23,1.77-4.67,1.45-2.5,3.48-4.47,6.11-5.92Z"/>
-  </g>
-</svg></a>
-  <ul class="nav-links">
-    <li><a href="#benefits">How it works</a></li>
-    <li><a href="#who">Who it's for</a></li>
-    <li><a href="curriculum.html">Curriculum</a></li>
-    <li><a href="pricing.html">Pricing</a></li>
-    <li><a href="housing.html">Housing</a></li>
-    <li><a href="team.html">Team</a></li>
-    <li><a href="corporate.html">Corporate Training</a></li>
-    <li><a href="apply.html">Apply</a></li>
-  </ul>
-  <a href="apply.html#form" class="nav-cta">Apply Now</a>
-  <button class="nav-hamburger" onclick="document.body.classList.toggle('nav-open')" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><img src="logo-light.png" alt="MakerSquare"></a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="curriculum.html">Curriculum</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="housing.html">Housing</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="corporate.html">Corporate</a></li>
+      <li><a href="scholarship.html">Scholarship</a></li>
+      <li><a href="apply.html" class="nav-apply">Apply</a></li>
+    </ul>
+    <a href="apply.html" class="btn btn-primary btn-arrow">Apply Now </a>
+    <div class="nav-social"><a href="https://www.linkedin.com/company/makersquare-ai" target="_blank" rel="noopener" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>Follow us</a></div>
+    <button class="nav-hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
 </nav>
 <div class="mobile-menu">
   <ul class="mobile-menu-links">
-    <li><a href="#benefits">How it works</a></li>
-    <li><a href="#who">Who it's for</a></li>
+    <li><a href="index.html">Home</a></li>
     <li><a href="curriculum.html">Curriculum</a></li>
     <li><a href="pricing.html">Pricing</a></li>
     <li><a href="housing.html">Housing</a></li>
     <li><a href="team.html">Team</a></li>
-    <li><a href="corporate.html">Corporate Training</a></li>
-    <li><a href="apply.html#form">Apply</a></li>
+    <li><a href="corporate.html">Corporate</a></li>
+    <li><a href="scholarship.html">Scholarship</a></li>
+    <li><a href="apply.html">Apply</a></li>
   </ul>
-  <a href="apply.html#form" class="mobile-menu-cta-btn" style="background:var(--accent);color:#0a0a0b;">Apply Now →</a>
+  <a href="apply.html" class="btn btn-primary btn-block btn-lg" style="margin-top:24px;">Apply Now</a>
 </div>
 
-<!-- HERO -->
-<section id="hero">
-  <div class="hero-grid"></div>
+
+<!-- ═══ HERO ═══ -->
+<section class="hero">
   <div class="hero-glow"></div>
+  <div class="hero-glow-2"></div>
+  <div class="hero-dots"></div>
+  <div class="deco-square deco-square--md" style="top:18%;right:32%;transform:rotate(15deg);"></div>
+  <div class="deco-square deco-square--sm deco-square--filled" style="top:72%;left:8%;transform:rotate(-8deg);"></div>
 
-  <div class="hero-left">
-    <div class="hero-badge">
-      <div class="hero-badge-dot"></div>
-      Austin, TX &nbsp;·&nbsp; Now Enrolling &nbsp;·&nbsp; Next cohort July 6, 2026
+  <div class="container">
+    <div>
+      <div class="hero-badge hero-enter hero-enter-d1">
+        <div class="hero-badge-dot"></div>
+        AI Bootcamp &middot; Austin, TX &middot; Now Enrolling
+      </div>
+      <h1 class="hero-enter hero-enter-d2">You already know your industry.<br><span class="text-gradient">Now learn to build with AI.</span></h1>
+      <p class="hero-sub hero-enter hero-enter-d3">4 weeks. In-person. Austin, TX. You leave with <span class="hi">3 deployed AI products</span> and the skills to keep building.</p>
+      <div class="hero-actions hero-enter hero-enter-d4">
+        <a href="apply.html" class="btn btn-primary btn-lg btn-arrow">Apply Now </a>
+        <a href="#curriculum" class="btn btn-ghost btn-arrow">See the curriculum </a>
+      </div>
+      <p class="hero-urgency hero-enter hero-enter-d5"><span style="font-family:var(--font-display);font-weight:800;color:var(--indigo);font-size:1rem;">3</span> of <span style="font-family:var(--font-display);font-weight:800;color:var(--navy);font-size:1rem;">15</span> seats reserved. Cohort fills on a rolling basis.</p>
     </div>
-    <h1>You already know your industry.<br><em>Now learn to build with AI.</em></h1>
-    <p class="hero-sub">4 weeks. In-person. Austin, TX. You leave with 3 deployed AI products and the skills to keep building.</p>
-    <div class="hero-actions">
-      <a href="apply.html#form" class="btn-primary">Apply Now →</a>
-      <a href="#waitlist" class="btn-ghost">Not ready? Join the waitlist</a>
-    </div>
-    <form class="hero-email-strip" onsubmit="(function(f){f.preventDefault();var e=f.querySelector('input').value;window.location.href='https://tally.so/r/rjLpa5?email='+encodeURIComponent(e);})(this)">
-      <input type="email" placeholder="your@email.com" required>
-      <button type="submit" class="hero-email-btn">Get Curriculum →</button>
-      <span class="hero-email-note">Get the full curriculum + cohort details. No spam, no pressure.</span>
-    </form>
-    <div class="hero-seats">
-      <span class="hero-seats-bar"><span class="hero-seats-fill" style="width:25%"></span></span>
-      <span class="hero-seats-text"><strong>3 of 15 seats reserved</strong> — cohort fills on a rolling basis</span>
-    </div>
-  </div>
 
-  <div class="hero-right">
-    <div class="hero-outcome-card">
-      <div class="hoc-label">If you run a business</div>
-      <div class="hoc-text">Build AI tools that do the work your team keeps putting off</div>
-    </div>
-    <div class="hero-outcome-card">
-      <div class="hoc-label">If you're building a career</div>
-      <div class="hoc-text">Become the person your organization depends on for AI</div>
-    </div>
-    <div class="hero-outcome-card">
-      <div class="hoc-label">If you have an idea</div>
-      <div class="hoc-text">Ship your first AI product without a technical co-founder</div>
-    </div>
-    <div class="hero-stat-row">
-      <div class="hero-stat">
-        <div class="hero-stat-num">4 wks</div>
-        <div class="hero-stat-label">In-person</div>
+    <!-- Mockup visual -->
+    <div class="hero-visual hero-enter hero-enter-d3">
+      <div class="ui-mockup">
+        <div class="ui-mockup-bar"><div class="ui-mockup-dot"></div><div class="ui-mockup-dot"></div><div class="ui-mockup-dot"></div><div class="ui-mockup-url"></div></div>
+        <div class="ui-mockup-body" style="padding:16px;display:flex;flex-direction:column;gap:12px;">
+          <!-- Sidebar + main area -->
+          <div style="display:flex;gap:12px;">
+            <!-- Sidebar -->
+            <div style="width:60px;flex-shrink:0;display:flex;flex-direction:column;gap:8px;">
+              <div style="width:36px;height:36px;border-radius:10px;background:var(--indigo);opacity:0.15;"></div>
+              <div style="height:6px;background:var(--cloud);border-radius:3px;width:80%;"></div>
+              <div style="height:6px;background:rgba(64,61,216,0.12);border-radius:3px;width:100%;"></div>
+              <div style="height:6px;background:var(--cloud);border-radius:3px;width:60%;"></div>
+              <div style="height:6px;background:var(--cloud);border-radius:3px;width:90%;"></div>
+            </div>
+            <!-- Chat area -->
+            <div style="flex:1;display:flex;flex-direction:column;gap:10px;">
+              <!-- User message -->
+              <div style="align-self:flex-end;background:var(--indigo);border-radius:12px 12px 4px 12px;padding:8px 12px;max-width:75%;">
+                <div style="height:5px;background:rgba(255,255,255,0.4);border-radius:3px;width:90%;margin-bottom:4px;"></div>
+                <div style="height:5px;background:rgba(255,255,255,0.25);border-radius:3px;width:60%;"></div>
+              </div>
+              <!-- AI response -->
+              <div style="align-self:flex-start;background:var(--cloud);border-radius:12px 12px 12px 4px;padding:10px 12px;max-width:85%;">
+                <div style="height:5px;background:rgba(24,24,73,0.12);border-radius:3px;width:95%;margin-bottom:5px;"></div>
+                <div style="height:5px;background:rgba(24,24,73,0.08);border-radius:3px;width:80%;margin-bottom:5px;"></div>
+                <div style="height:5px;background:rgba(24,24,73,0.08);border-radius:3px;width:65%;margin-bottom:8px;"></div>
+                <!-- Citation chip -->
+                <div style="display:inline-flex;gap:4px;background:rgba(64,61,216,0.08);border:1px solid rgba(64,61,216,0.12);border-radius:6px;padding:3px 8px;">
+                  <div style="width:4px;height:4px;border-radius:50%;background:var(--indigo);margin-top:2px;"></div>
+                  <div style="height:5px;background:rgba(64,61,216,0.2);border-radius:3px;width:50px;"></div>
+                </div>
+              </div>
+              <!-- User message 2 -->
+              <div style="align-self:flex-end;background:var(--indigo);border-radius:12px 12px 4px 12px;padding:8px 12px;max-width:65%;">
+                <div style="height:5px;background:rgba(255,255,255,0.35);border-radius:3px;width:80%;"></div>
+              </div>
+              <!-- Input bar -->
+              <div style="display:flex;gap:8px;margin-top:auto;">
+                <div style="flex:1;height:32px;background:var(--light-bg);border:1px solid rgba(24,24,73,0.08);border-radius:8px;"></div>
+                <div style="width:32px;height:32px;background:var(--indigo);border-radius:8px;flex-shrink:0;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="hero-stat">
-        <div class="hero-stat-num">Austin</div>
-        <div class="hero-stat-label">Texas</div>
-      </div>
-      <div class="hero-stat">
-        <div class="hero-stat-num">No code</div>
-        <div class="hero-stat-label">Required</div>
+      <div class="floating-card floating-card--1"><div style="font-weight:700;color:var(--navy);"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg> AI Product Live</div><div style="color:var(--text-muted);font-size:0.72rem;margin-top:2px;">Deployed in 4 weeks</div></div>
+      <div class="floating-card floating-card--2"><div style="font-weight:700;color:var(--green);">&#10003; RAG Pipeline Active</div><div style="color:var(--text-muted);font-size:0.72rem;margin-top:2px;">47 docs indexed</div></div>
+      <div class="floating-card floating-card--3"><div style="font-weight:600;color:var(--navy);font-size:0.75rem;">Demo Day Ready</div><div style="color:var(--text-muted);font-size:0.68rem;">Austin, TX</div></div>
+
+      <div class="hero-stat-pills hero-enter hero-enter-d6">
+        <div class="hero-stat-pill"><div class="hero-stat-pill-num" data-count="4" data-suffix=" weeks">0</div><div class="hero-stat-pill-label">In-person</div></div>
+        <div class="hero-stat-pill"><div class="hero-stat-pill-num">Austin, TX</div><div class="hero-stat-pill-label">Location</div></div>
+        <div class="hero-stat-pill"><div class="hero-stat-pill-num" data-count="3" data-suffix=" products">0</div><div class="hero-stat-pill-label">You ship by Demo Day</div></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- FOUNDER STRIP -->
-<div class="founder-strip">
-  <div class="founder-avatar">MS</div>
-  <div class="founder-quote">
-    <div class="founder-words">"I built MakerSquare because I kept watching smart, experienced people get left behind by AI — not because they weren't capable, but because nobody built the right program for them. This is that program."</div>
-    <div class="founder-byline">Marliis Schneider · Founder, MakerSquare · Austin, TX</div>
-  </div>
-  <a href="team.html" class="founder-learn-more">Meet the team →</a>
-</div>
 
-<!-- TICKER -->
-<div class="ticker-wrap">
+<!-- ═══ TOOLS TICKER ═══ -->
+<div class="ticker">
+  <div class="ticker-label">Tools you'll learn to use</div>
   <div class="ticker-track">
-    <span class="ticker-item">Marketing</span>
-    <span class="ticker-item">Consulting</span>
-    <span class="ticker-item">Operations</span>
-    <span class="ticker-item">Finance</span>
-    <span class="ticker-item">Healthcare</span>
-    <span class="ticker-item">Real Estate</span>
-    <span class="ticker-item">Legal</span>
-    <span class="ticker-item">Startups</span>
-    <span class="ticker-item">Marketing</span>
-    <span class="ticker-item">Consulting</span>
-    <span class="ticker-item">Operations</span>
-    <span class="ticker-item">Finance</span>
-    <span class="ticker-item">Healthcare</span>
-    <span class="ticker-item">Real Estate</span>
-    <span class="ticker-item">Legal</span>
-    <span class="ticker-item">Startups</span>
+    <span class="ticker-item">Claude API</span><span class="ticker-item">Cursor</span><span class="ticker-item">Supabase</span><span class="ticker-item">Pinecone</span><span class="ticker-item">Lovable</span><span class="ticker-item">v0</span><span class="ticker-item">Bolt</span><span class="ticker-item">Railway</span><span class="ticker-item">ElevenLabs</span><span class="ticker-item">Braintrust</span>
+    <span class="ticker-item">Claude API</span><span class="ticker-item">Cursor</span><span class="ticker-item">Supabase</span><span class="ticker-item">Pinecone</span><span class="ticker-item">Lovable</span><span class="ticker-item">v0</span><span class="ticker-item">Bolt</span><span class="ticker-item">Railway</span><span class="ticker-item">ElevenLabs</span><span class="ticker-item">Braintrust</span>
   </div>
 </div>
 
-<!-- WHAT YOU GET -->
-<div class="section-wrap" id="benefits">
-  <div class="section-label">What you get</div>
-  <h2>Everything you need to go from<br><em>idea to shipped product.</em></h2>
-  <div class="outcomes-grid">
-    <div class="outcome-card">
-      <div class="outcome-num">4 wks</div>
-      <div class="outcome-title">In-person · Austin, TX</div>
-      <div class="outcome-desc">Mon / Wed / Fri · 9am–3pm. Keep your job, your clients, your income — build on the other days.</div>
-    </div>
-    <div class="outcome-card">
-      <div class="outcome-num">3</div>
-      <div class="outcome-title">Deployed AI products</div>
-      <div class="outcome-desc">You leave with three live tools you built yourself. Not exercises. Not a certificate. Real things you can show, sell, or put to work.</div>
-    </div>
-    <div class="outcome-card">
-      <div class="outcome-num">≤15</div>
-      <div class="outcome-title">People per cohort</div>
-      <div class="outcome-desc">Selective admission. Every applicant completes a take-home project. Everyone in the room is serious.</div>
-    </div>
-    <div class="outcome-card">
-      <div class="outcome-num">Demo<br>Day</div>
-      <div class="outcome-title">Public product launch</div>
-      <div class="outcome-desc">The program ends with a live launch event — your product, on stage, in front of Austin founders, operators, and investors.</div>
-    </div>
+
+<!-- ═══ STATS STRIP ═══ -->
+<div class="container">
+  <div class="stats-strip">
+    <div class="stats-strip-card reveal reveal-d1"><div class="stats-strip-num" data-count="88" data-suffix="%">0</div><div class="stats-strip-label">of orgs use AI in at least one function</div><div class="stats-strip-source">McKinsey, 2025</div></div>
+    <div class="stats-strip-card reveal reveal-d2"><div class="stats-strip-num">1%</div><div class="stats-strip-label">have achieved real AI maturity</div><div class="stats-strip-source">McKinsey, 2025</div></div>
+    <div class="stats-strip-card reveal reveal-d3"><div class="stats-strip-num" data-count="7" data-suffix="x">0</div><div class="stats-strip-label">growth in AI-fluent job demand</div><div class="stats-strip-source">Gloat Research, 2026</div></div>
+    <div class="stats-strip-card reveal reveal-d4"><div class="stats-strip-num" data-count="59" data-suffix="%">0</div><div class="stats-strip-label">of leaders report an AI skills gap</div><div class="stats-strip-source">DataCamp, 2026</div></div>
   </div>
 </div>
 
-<!-- WHO IT'S FOR -->
-<div class="section-wrap full" id="who">
-  <div class="inner">
-    <div class="section-label">Who it's for</div>
-    <h2>You don't need a technical background.<br><em>You need to know your field.</em></h2>
-    <div class="personas-grid">
-      <div class="persona-card">
-        <div class="persona-role">Operators &amp; business owners</div>
-        <div class="persona-headline">You run something — AI should be doing half of it</div>
-        <div class="persona-desc">Reports, proposals, client emails, internal workflows. You know what needs automating. We'll help you build it.</div>
-      </div>
-      <div class="persona-card">
-        <div class="persona-role">Professionals &amp; career builders</div>
-        <div class="persona-headline">Your expertise is the advantage — add the AI layer</div>
-        <div class="persona-desc">Years in marketing, finance, healthcare, law. That domain knowledge is the moat. We teach the technical layer on top of it.</div>
-      </div>
-      <div class="persona-card">
-        <div class="persona-role">Founders &amp; first-time builders</div>
-        <div class="persona-headline">You have the idea — skip the technical co-founder</div>
-        <div class="persona-desc">A clear problem, a real market, the drive to ship. MakerSquare is the fastest path from idea to working product.</div>
+
+<!-- ═══ REVIEWS ═══ -->
+<section class="section section--alt" id="reviews">
+  <div class="container">
+    <div style="text-align:center;">
+      <div class="section-label reveal" style="justify-content:center;">Alumni reviews</div>
+      <h2 class="reveal">What our graduates say<br><span class="text-accent">about MakerSquare.</span></h2>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card reveal reveal-d1"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><blockquote>"I cannot stress enough how amazing this program is and how much it <span class="bl">changed my life</span>."</blockquote><div class="review-author">MakerSquare Graduate</div><div class="review-source">Course Report</div></div>
+      <div class="review-card reveal reveal-d2"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><blockquote>"Attending MakerSquare was the <span class="bl">best decision I had made in my life</span>. An experience of enlightenment and transformation."</blockquote><div class="review-author">MakerSquare Graduate</div><div class="review-source">Course Report</div></div>
+      <div class="review-card reveal reveal-d3"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><blockquote>"The instructors care about the students and help in any way they can. They <span class="bl">offer any support they can</span>."</blockquote><div class="review-author">MakerSquare Graduate</div><div class="review-source">Course Report</div></div>
+      <div class="review-card reveal reveal-d4"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><blockquote>"A no-nonsense boot camp with no filler. The <span class="bl">entire curriculum was centered on real world skills</span>."</blockquote><div class="review-author">MakerSquare Graduate</div><div class="review-source">Course Report</div></div>
+    </div>
+    <div style="text-align:center;margin-top:var(--s7);"><a href="https://www.coursereport.com/schools/makersquare" target="_blank" rel="noopener" class="btn btn-ghost btn-arrow" style="font-size:0.85rem;">Read reviews on Course Report </a></div>
+  </div>
+</section>
+
+
+<!-- ═══ HOW IT WORKS ═══ -->
+<section class="section" id="how-it-works">
+  <div class="container">
+    <div class="section-label reveal">How it works</div>
+    <h2 class="reveal">Everything you need to go from<br><span class="text-accent">idea to shipped product.</span></h2>
+    <div class="bento-grid">
+      <div class="bento-card reveal reveal-d1"><div class="bento-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></div><h3>4 Weeks In-Person, Mon/Wed/Fri</h3><p>Keep your job, your clients, your income. Build on the other days. <span class="bl">9am to 3pm</span> in Austin.</p></div>
+      <div class="bento-card reveal reveal-d2"><div class="bento-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div><h3>3 Deployed AI Products</h3><p>You leave with three live tools you built yourself. Not exercises. Not a certificate. <span class="bl">Real things you can show, sell, or put to work.</span></p></div>
+      <div class="bento-card reveal reveal-d3"><div class="bento-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></div><h3>15 People Per Cohort</h3><p>Selective admission. Every applicant completes a take-home project. <span class="bl">Everyone in the room is serious.</span></p></div>
+      <div class="bento-card--visual reveal reveal-d4" style="border-radius:var(--r-xl);overflow:hidden;padding:var(--s7);">
+        <!-- Schedule illustration -->
+        <div style="width:100%;max-width:260px;">
+          <div style="font-family:var(--font-display);font-size:0.7rem;font-weight:700;color:var(--indigo);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:10px;opacity:0.6;">Your week</div>
+          <div style="display:flex;gap:6px;margin-bottom:6px;">
+            <div style="flex:1;padding:8px 4px;border-radius:8px;background:var(--indigo);text-align:center;"><div style="font-size:0.6rem;color:rgba(255,255,255,0.7);font-weight:600;">MON</div><div style="font-size:0.55rem;color:rgba(255,255,255,0.5);margin-top:2px;">9-3pm</div></div>
+            <div style="flex:1;padding:8px 4px;border-radius:8px;background:var(--white);border:1px dashed rgba(24,24,73,0.12);text-align:center;opacity:0.5;"><div style="font-size:0.6rem;color:var(--text-muted);font-weight:600;">TUE</div><div style="font-size:0.55rem;color:var(--text-muted);margin-top:2px;">Free</div></div>
+            <div style="flex:1;padding:8px 4px;border-radius:8px;background:var(--indigo);text-align:center;"><div style="font-size:0.6rem;color:rgba(255,255,255,0.7);font-weight:600;">WED</div><div style="font-size:0.55rem;color:rgba(255,255,255,0.5);margin-top:2px;">9-3pm</div></div>
+            <div style="flex:1;padding:8px 4px;border-radius:8px;background:var(--white);border:1px dashed rgba(24,24,73,0.12);text-align:center;opacity:0.5;"><div style="font-size:0.6rem;color:var(--text-muted);font-weight:600;">THU</div><div style="font-size:0.55rem;color:var(--text-muted);margin-top:2px;">Free</div></div>
+            <div style="flex:1;padding:8px 4px;border-radius:8px;background:var(--indigo);text-align:center;"><div style="font-size:0.6rem;color:rgba(255,255,255,0.7);font-weight:600;">FRI</div><div style="font-size:0.55rem;color:rgba(255,255,255,0.5);margin-top:2px;">9-3pm</div></div>
+          </div>
+          <div style="text-align:center;font-size:0.65rem;color:var(--text-muted);margin-top:8px;">Keep your job. Build on class days.</div>
+        </div>
       </div>
     </div>
-    <div style="text-align:center; margin-top:2.5rem; display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
-      <a href="apply.html#form" class="btn-primary">Apply Now →</a>
-      <a href="pricing.html" class="btn-ghost">View pricing</a>
+  </div>
+</section>
+
+
+<!-- ═══ WHO IT'S FOR ═══ -->
+<section class="section section--alt" id="who">
+  <div class="container">
+    <div class="section-label reveal">Who it's for</div>
+    <h2 class="reveal">You don't need a technical background.<br><span class="text-accent">You need to know your field.</span></h2>
+    <div class="persona-grid">
+      <div class="persona-card reveal reveal-d1"><div class="persona-role">Operators &amp; business owners</div><h3>You run something. AI should be doing half of it.</h3><p>Reports, proposals, client emails, internal workflows. You know what needs automating. We help you build it.</p></div>
+      <div class="persona-card reveal reveal-d2"><div class="persona-role">Professionals &amp; career builders</div><h3>Your expertise is the advantage. Add the AI layer.</h3><p>Years in marketing, finance, healthcare, law. That domain knowledge is the moat. We teach the technical layer on top of it.</p></div>
+      <div class="persona-card reveal reveal-d3"><div class="persona-role">Founders &amp; first-time builders</div><h3>You have the idea. Skip the technical co-founder.</h3><p>A clear problem, a real market, the drive to ship. MakerSquare is the fastest path from idea to working product.</p></div>
     </div>
   </div>
-</div>
+</section>
 
-</div>
 
-<!-- FINAL CTA -->
-<div class="cta-section">
-  <div class="cta-inner">
-    <div class="section-label">Apply</div>
-    <h2>Next cohort: July 6, 2026.<br><em>Seats are limited.</em></h2>
-    <p>If you've been meaning to get serious about AI — not just read about it, but actually build something with it — this is the program. Applications are open now.</p>
-    <a href="apply.html#form" class="btn-primary" style="font-size:15px; padding:16px 40px;">Apply Now →</a>
-    <div class="cta-fine">Next cohort July 6 &nbsp;·&nbsp; Austin, TX &nbsp;·&nbsp; Limited seats &nbsp;·&nbsp; $5,999</div>
+<!-- ═══ WHAT YOU'LL BUILD ═══ -->
+<section class="section" id="build">
+  <div class="container">
+    <div class="section-label reveal">What you might build</div>
+    <h2 class="reveal">Real products, from<br><span class="text-accent">real domain expertise.</span></h2>
+    <div class="build-grid">
+      <!-- Law firm: Document search UI -->
+      <div class="build-card reveal reveal-d1">
+        <div class="build-card-visual" style="padding:20px;">
+          <div style="width:85%;max-width:220px;background:var(--white);border-radius:10px;box-shadow:var(--shadow-sm);padding:12px;position:relative;z-index:1;">
+            <!-- Search bar -->
+            <div style="display:flex;gap:6px;margin-bottom:10px;">
+              <div style="flex:1;height:24px;background:var(--light-bg);border:1px solid rgba(24,24,73,0.08);border-radius:6px;"></div>
+              <div style="width:24px;height:24px;background:var(--indigo);border-radius:6px;flex-shrink:0;opacity:0.8;"></div>
+            </div>
+            <!-- Results -->
+            <div style="display:flex;flex-direction:column;gap:6px;">
+              <div style="display:flex;gap:8px;align-items:flex-start;padding:6px;background:rgba(64,61,216,0.04);border-radius:6px;border-left:3px solid var(--indigo);">
+                <div><div style="height:4px;background:var(--navy);border-radius:2px;width:70px;margin-bottom:4px;opacity:0.3;"></div><div style="height:3px;background:var(--cloud);border-radius:2px;width:100px;"></div></div>
+              </div>
+              <div style="display:flex;gap:8px;align-items:flex-start;padding:6px;border-radius:6px;">
+                <div><div style="height:4px;background:var(--navy);border-radius:2px;width:60px;margin-bottom:4px;opacity:0.2;"></div><div style="height:3px;background:var(--cloud);border-radius:2px;width:90px;"></div></div>
+              </div>
+              <div style="display:flex;gap:8px;align-items:flex-start;padding:6px;border-radius:6px;">
+                <div><div style="height:4px;background:var(--navy);border-radius:2px;width:80px;margin-bottom:4px;opacity:0.2;"></div><div style="height:3px;background:var(--cloud);border-radius:2px;width:75px;"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="build-card-body"><div class="build-card-persona">Law firm</div><h3>AI research assistant</h3><p>Search case law, summarize findings, draft memos. <span class="bl">60% reduction in research time.</span></p></div>
+      </div>
+
+      <!-- Real estate: Data table with flags -->
+      <div class="build-card reveal reveal-d2">
+        <div class="build-card-visual" style="padding:20px;">
+          <div style="width:85%;max-width:220px;background:var(--white);border-radius:10px;box-shadow:var(--shadow-sm);padding:12px;position:relative;z-index:1;">
+            <!-- Table header -->
+            <div style="display:flex;gap:4px;margin-bottom:8px;padding-bottom:6px;border-bottom:1px solid rgba(24,24,73,0.06);">
+              <div style="flex:2;height:4px;background:var(--navy);border-radius:2px;opacity:0.2;"></div>
+              <div style="flex:1;height:4px;background:var(--navy);border-radius:2px;opacity:0.2;"></div>
+              <div style="flex:1;height:4px;background:var(--navy);border-radius:2px;opacity:0.2;"></div>
+            </div>
+            <!-- Rows -->
+            <div style="display:flex;gap:4px;margin-bottom:6px;align-items:center;">
+              <div style="flex:2;height:4px;background:var(--cloud);border-radius:2px;"></div>
+              <div style="flex:1;height:4px;background:var(--cloud);border-radius:2px;"></div>
+              <div style="width:14px;height:14px;border-radius:4px;background:var(--green-bg);border:1px solid var(--green-border);flex-shrink:0;"></div>
+            </div>
+            <div style="display:flex;gap:4px;margin-bottom:6px;align-items:center;">
+              <div style="flex:2;height:4px;background:var(--cloud);border-radius:2px;"></div>
+              <div style="flex:1;height:4px;background:var(--cloud);border-radius:2px;"></div>
+              <div style="width:14px;height:14px;border-radius:4px;background:#FEF3C7;border:1px solid #FDE68A;flex-shrink:0;"></div>
+            </div>
+            <div style="display:flex;gap:4px;margin-bottom:6px;align-items:center;">
+              <div style="flex:2;height:4px;background:var(--cloud);border-radius:2px;"></div>
+              <div style="flex:1;height:4px;background:var(--cloud);border-radius:2px;"></div>
+              <div style="width:14px;height:14px;border-radius:4px;background:var(--green-bg);border:1px solid var(--green-border);flex-shrink:0;"></div>
+            </div>
+            <div style="display:flex;gap:4px;align-items:center;">
+              <div style="flex:2;height:4px;background:var(--cloud);border-radius:2px;"></div>
+              <div style="flex:1;height:4px;background:var(--cloud);border-radius:2px;"></div>
+              <div style="width:14px;height:14px;border-radius:4px;background:#FEE2E2;border:1px solid #FECACA;flex-shrink:0;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="build-card-body"><div class="build-card-persona">Real estate ops</div><h3>Automated lease abstraction</h3><p>Extract terms, flag anomalies, populate database. <span class="bl">Eliminates 4 hrs manual review per property.</span></p></div>
+      </div>
+
+      <!-- Staffing: Profile cards with scores -->
+      <div class="build-card reveal reveal-d3">
+        <div class="build-card-visual" style="padding:20px;">
+          <div style="width:85%;max-width:220px;display:flex;flex-direction:column;gap:6px;position:relative;z-index:1;">
+            <!-- Profile card 1 -->
+            <div style="display:flex;gap:8px;align-items:center;background:var(--white);border-radius:8px;padding:8px 10px;box-shadow:var(--shadow-sm);">
+              <div style="width:28px;height:28px;border-radius:50%;background:var(--ice);flex-shrink:0;"></div>
+              <div style="flex:1;"><div style="height:4px;background:var(--navy);opacity:0.2;border-radius:2px;width:70%;margin-bottom:3px;"></div><div style="height:3px;background:var(--cloud);border-radius:2px;width:50%;"></div></div>
+              <div style="font-family:var(--font-display);font-size:0.7rem;font-weight:800;color:var(--green);background:var(--green-bg);border-radius:4px;padding:2px 6px;">94</div>
+            </div>
+            <!-- Profile card 2 -->
+            <div style="display:flex;gap:8px;align-items:center;background:var(--white);border-radius:8px;padding:8px 10px;box-shadow:var(--shadow-sm);">
+              <div style="width:28px;height:28px;border-radius:50%;background:var(--cloud);flex-shrink:0;"></div>
+              <div style="flex:1;"><div style="height:4px;background:var(--navy);opacity:0.2;border-radius:2px;width:60%;margin-bottom:3px;"></div><div style="height:3px;background:var(--cloud);border-radius:2px;width:45%;"></div></div>
+              <div style="font-family:var(--font-display);font-size:0.7rem;font-weight:800;color:var(--azure);background:var(--cloud);border-radius:4px;padding:2px 6px;">87</div>
+            </div>
+            <!-- Profile card 3 -->
+            <div style="display:flex;gap:8px;align-items:center;background:var(--white);border-radius:8px;padding:8px 10px;box-shadow:var(--shadow-sm);">
+              <div style="width:28px;height:28px;border-radius:50%;background:var(--cloud);flex-shrink:0;"></div>
+              <div style="flex:1;"><div style="height:4px;background:var(--navy);opacity:0.2;border-radius:2px;width:75%;margin-bottom:3px;"></div><div style="height:3px;background:var(--cloud);border-radius:2px;width:55%;"></div></div>
+              <div style="font-family:var(--font-display);font-size:0.7rem;font-weight:800;color:var(--amber);background:#FFFBEB;border-radius:4px;padding:2px 6px;">72</div>
+            </div>
+          </div>
+        </div>
+        <div class="build-card-body"><div class="build-card-persona">Staffing agency</div><h3>Candidate screening tool</h3><p>Read resumes, score fit, draft recruiter notes. <span class="bl">1 recruiter does the work of 3.</span></p></div>
+      </div>
+    </div>
   </div>
-</div>
+</section>
 
-<!-- STICKY MOBILE CTA -->
-<div class="mobile-sticky-cta">
-  <span class="mobile-sticky-cta-text"><strong>Next cohort July 6 · Austin, TX</strong>15 seats · rolling admissions</span>
-  <a href="apply.html#form" class="mobile-sticky-cta-btn">Apply Now →</a>
-</div>
+
+<!-- ═══ CURRICULUM ═══ -->
+<section class="section section--alt" id="curriculum">
+  <div class="container">
+    <div class="section-label reveal">Curriculum</div>
+    <h2 class="reveal">4 weeks. 3 products.<br><span class="text-accent">We start where courses end.</span></h2>
+    <p class="section-sub reveal">No beginner hand-holding. No visual automation tools. Production prompting, RAG, agents, evals, and real deployment.</p>
+    <div class="phases">
+      <div class="phase-card reveal reveal-d1">
+        <div><div class="phase-num">01</div><div class="phase-tag">Week 1</div></div>
+        <div><h3>Advanced Foundations</h3><p>Advanced prompting, structured output, <span class="bl">AI-assisted coding with Cursor</span>, direct API calls, real integrations. First product skeleton deployed by Friday.</p><div class="phase-deliverable">&#10003; Product 1 skeleton deployed and running</div></div>
+      </div>
+      <div class="phase-card reveal reveal-d2">
+        <div><div class="phase-num">02</div><div class="phase-tag">Weeks 2-3</div></div>
+        <div><h3>RAG, Agents &amp; Interfaces</h3><p><span class="bl">RAG pipelines</span> with Supabase and Pinecone. AI agents with evals and guardrails. Real interfaces with Lovable, v0, Bolt. Voice and multimodal with ElevenLabs and Whisper.</p><div class="phase-deliverable">&#10003; Product 1 ships Week 2. Product 2 ships Week 3.</div></div>
+      </div>
+      <div class="phase-card reveal reveal-d3">
+        <div><div class="phase-num">03</div><div class="phase-tag">Week 4</div></div>
+        <div><h3>Ship &amp; Scale: Capstone + Demo Day</h3><p>Your most ambitious product. Combine RAG + interface, voice + agent, or build something that could be a business. Full build sprint, then <span class="bl">Demo Day in front of Austin's tech community</span>.</p><div class="phase-deliverable">&#10003; Capstone presented at Demo Day. 5 minutes on stage.</div></div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:40px;"><a href="curriculum.html" class="btn btn-ghost btn-arrow">See the full 4-week curriculum </a></div>
+  </div>
+</section>
+
+
+<!-- ═══ DEMO DAY ═══ -->
+<section class="section" id="demo-day">
+  <div class="container">
+    <div class="section-label reveal">Demo Day</div>
+    <h2 class="reveal">The moment it<br><span class="text-accent">all comes together.</span></h2>
+    <div class="demo-grid">
+      <div class="demo-visual reveal">
+        <div style="padding:var(--s7);">
+          <!-- Stage/screen area -->
+          <div style="background:var(--navy);border-radius:var(--r-lg);padding:16px;margin-bottom:16px;position:relative;overflow:hidden;">
+            <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--indigo),var(--azure),var(--sky));"></div>
+            <div style="display:flex;gap:10px;align-items:flex-start;margin-top:4px;">
+              <!-- Slide content -->
+              <div style="flex:1;">
+                <div style="height:5px;background:rgba(255,255,255,0.25);border-radius:3px;width:60%;margin-bottom:6px;"></div>
+                <div style="height:4px;background:rgba(255,255,255,0.1);border-radius:2px;width:90%;margin-bottom:4px;"></div>
+                <div style="height:4px;background:rgba(255,255,255,0.1);border-radius:2px;width:70%;margin-bottom:10px;"></div>
+                <div style="display:flex;gap:6px;">
+                  <div style="width:36px;height:28px;background:rgba(64,61,216,0.3);border-radius:4px;"></div>
+                  <div style="width:36px;height:28px;background:rgba(129,170,251,0.2);border-radius:4px;"></div>
+                  <div style="width:36px;height:28px;background:rgba(64,61,216,0.15);border-radius:4px;"></div>
+                </div>
+              </div>
+              <!-- Live demo indicator -->
+              <div style="background:rgba(34,197,94,0.2);border:1px solid rgba(34,197,94,0.3);border-radius:6px;padding:4px 8px;display:flex;align-items:center;gap:4px;flex-shrink:0;">
+                <div style="width:5px;height:5px;border-radius:50%;background:var(--green);"></div>
+                <div style="font-size:0.55rem;color:var(--green);font-weight:700;">LIVE</div>
+              </div>
+            </div>
+          </div>
+          <!-- Presenter -->
+          <div style="display:flex;align-items:flex-end;justify-content:center;gap:20px;margin-bottom:12px;">
+            <div style="width:1px;height:40px;background:rgba(24,24,73,0.08);"></div>
+            <div style="display:flex;flex-direction:column;align-items:center;">
+              <div style="width:32px;height:32px;border-radius:50%;background:var(--ice);border:2px solid var(--indigo);margin-bottom:4px;"></div>
+              <div style="width:20px;height:20px;background:var(--cloud);border-radius:4px;"></div>
+            </div>
+            <div style="width:1px;height:40px;background:rgba(24,24,73,0.08);"></div>
+          </div>
+          <!-- Audience row -->
+          <div style="display:flex;justify-content:center;gap:6px;flex-wrap:wrap;">
+            <div style="width:22px;height:22px;border-radius:50%;background:var(--cloud);"></div>
+            <div style="width:22px;height:22px;border-radius:50%;background:var(--ice);"></div>
+            <div style="width:22px;height:22px;border-radius:50%;background:var(--cloud);"></div>
+            <div style="width:22px;height:22px;border-radius:50%;background:var(--ice);"></div>
+            <div style="width:22px;height:22px;border-radius:50%;background:var(--cloud);"></div>
+            <div style="width:22px;height:22px;border-radius:50%;background:var(--ice);"></div>
+            <div style="width:22px;height:22px;border-radius:50%;background:var(--cloud);"></div>
+            <div style="width:22px;height:22px;border-radius:50%;background:var(--ice);"></div>
+            <div style="width:22px;height:22px;border-radius:50%;background:var(--cloud);"></div>
+            <div style="width:22px;height:22px;border-radius:50%;background:var(--ice);"></div>
+          </div>
+        </div>
+      </div>
+      <div class="demo-content">
+        <h3 class="reveal">Your product. <span class="bl">Their attention.</span></h3>
+        <p class="reveal">Every cohort ends the same way: you take the stage at MakerSquare HQ and demo what you built to a room of <span class="hi">seed investors, tech hub leaders, and operators</span>.</p>
+        <div class="demo-highlights reveal">
+          <div class="demo-highlight"><div class="demo-highlight-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></div><span>5-minute live demo on stage at MakerSquare HQ</span></div>
+          <div class="demo-highlight"><div class="demo-highlight-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg></div><span>Seed-stage investors and Austin tech leaders in the room</span></div>
+          <div class="demo-highlight"><div class="demo-highlight-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="8.5" cy="7" r="4"/><path d="M20 8v6m3-3h-6"/></svg></div><span>Direct intros to people who fund, hire, and partner</span></div>
+          <div class="demo-highlight"><div class="demo-highlight-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="7"/><path d="M8.21 13.89L7 23l5-3 5 3-1.21-9.12"/></svg></div><span>Feedback from people who've built and scaled companies</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══ PRICING ═══ -->
+<section class="section section--alt" id="pricing">
+  <div class="container">
+    <div class="section-label reveal">Pricing</div>
+    <h2 class="reveal">Straightforward pricing.<br><span class="text-accent">Everything included.</span></h2>
+    <div class="pricing-grid">
+      <div class="pricing-card pricing-card--featured reveal reveal-d1">
+        <div class="pricing-badge">Applications Open</div>
+        <div class="pricing-tier">In-Person &middot; Austin, TX &middot; Starting July 2026</div>
+        <div class="pricing-price">$5,999</div>
+        <div class="pricing-sub">15 seats per cohort &middot; Payment plans available &middot; No ISA</div>
+        <ul class="pricing-features">
+          <li>4 weeks in-person, Austin TX</li>
+          <li>Mon / Wed / Fri &middot; 9am&ndash;3pm</li>
+          <li>24-hr async instructor support</li>
+          <li>3 deployed AI products including a working AI agent</li>
+          <li>Demo Day + investor access</li>
+          <li>Guest speakers and mentors</li>
+          <li>Lifetime alumni network</li>
+          <li>$1,500 scholarship for veterans, first responders &amp; educators</li>
+        </ul>
+        <a href="apply.html" class="btn btn-primary btn-block btn-lg btn-arrow">Apply Now </a>
+      </div>
+      <div class="pricing-card reveal reveal-d2">
+        <div class="pricing-tier">Corporate Cohort &middot; Custom</div>
+        <div class="pricing-price pricing-price--dim">Custom</div>
+        <div class="pricing-sub">Private cohorts for teams (8-20 people) &middot; Flexible schedule</div>
+        <ul class="pricing-features">
+          <li>Custom curriculum for your industry</li>
+          <li>Dedicated instructor</li>
+          <li>On-site or Austin-based</li>
+          <li>Internal Demo Day option</li>
+          <li class="dim">Contact for pricing</li>
+        </ul>
+        <a href="corporate.html" class="btn btn-ghost btn-block btn-lg">Get in Touch</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══ HOW TO APPLY ═══ -->
+<section class="section" id="apply">
+  <div class="container">
+    <div class="section-label reveal">How to apply</div>
+    <h2 class="reveal">Three steps.<br><span class="text-accent">The whole thing takes about a week.</span></h2>
+    <div class="steps-grid">
+      <div class="step-card reveal reveal-d1"><div class="step-num">01</div><h3>Fill out the application</h3><p>Who you are, what you do, what you want to build, why now. <span class="bl">No resume required.</span></p><span class="step-time">~10 minutes</span></div>
+      <div class="step-card reveal reveal-d2"><div class="step-num">02</div><h3>Complete a take-home project</h3><p>Designed around what you already know. This is how we keep every cohort serious.</p><span class="step-time">2&ndash;4 hours, at your own pace</span></div>
+      <div class="step-card reveal reveal-d3"><div class="step-num">03</div><h3>Admissions interview</h3><p>A 30-minute conversation, not a test. Decision within 48 hours.</p><span class="step-time">30-min video call</span></div>
+    </div>
+    <div style="text-align:center;margin-top:40px;">
+      <a href="apply.html" class="btn btn-primary btn-lg btn-arrow">Start Your Application </a>
+      <p style="margin-top:var(--s4);font-size:0.88rem;color:var(--text-secondary);">Questions? <a href="mailto:hello@makersquare.ai" style="color:var(--indigo);font-weight:600;">hello@makersquare.ai</a></p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══ FAQ ═══ -->
+<section class="section section--alt" id="faq">
+  <div class="container">
+    <div style="text-align:center;">
+      <div class="section-label reveal" style="justify-content:center;">Questions</div>
+      <h2 class="reveal">Things people<br><span class="text-accent">usually ask us.</span></h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item reveal"><button class="faq-question">Do I need to know how to code?<span class="faq-chevron">&#9660;</span></button><div class="faq-answer"><div class="faq-answer-inner">No. Basic computer fluency and real experience in your field. That's it. We've had doctors, lawyers, real estate agents, and marketing directors build exceptional AI products.</div></div></div>
+      <div class="faq-item reveal"><button class="faq-question">What's the time commitment?<span class="faq-chevron">&#9660;</span></button><div class="faq-answer"><div class="faq-answer-inner">Mon / Wed / Fri, 9am to 3pm for 4 weeks (18 hrs/week in class), plus 10 to 15 hours of project work on your time.</div></div></div>
+      <div class="faq-item reveal"><button class="faq-question">How selective is it?<span class="faq-chevron">&#9660;</span></button><div class="faq-answer"><div class="faq-answer-inner">10-15 builders per cohort. Every applicant completes a take-home project. Most common rejection reason: vague problem statement. The take-home matters more than the written app.</div></div></div>
+      <div class="faq-item reveal"><button class="faq-question">What do I actually walk away with?<span class="faq-chevron">&#9660;</span></button><div class="faq-answer"><div class="faq-answer-inner">Three deployed AI products. A Demo Day presentation to investors. A cohort of builders who become your long-term network.</div></div></div>
+      <div class="faq-item reveal"><button class="faq-question">What does $5,999 include?<span class="faq-chevron">&#9660;</span></button><div class="faq-answer"><div class="faq-answer-inner">4 weeks in-person instruction, 24-hour async support, Demo Day, guest speakers, alumni network. Not included: API costs (~$20-50 total) and housing (partner discounts available).</div></div></div>
+      <div class="faq-item reveal"><button class="faq-question">I'm coming from out of town. Is that okay?<span class="faq-chevron">&#9660;</span></button><div class="faq-answer"><div class="faq-answer-inner">Absolutely. We have a housing program with partner Airbnb hosts and discounted rates near campus. Details shared after admission.</div></div></div>
+      <div class="faq-item reveal"><button class="faq-question">Can my employer pay?<span class="faq-chevron">&#9660;</span></button><div class="faq-answer"><div class="faq-answer-inner">Yes. We issue invoices and can provide a proposal letter for your employer. Many alumni have their company cover it as professional development.</div></div></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══ WAITLIST FORM ═══ -->
+<section class="section" id="waitlist">
+  <div class="container">
+    <div class="form-section reveal">
+      <div class="section-label" style="justify-content:center;">Get the details</div>
+      <h2>Want the full curriculum first?<br><span class="text-accent">No pressure.</span></h2>
+      <p>Complete curriculum, cohort details, and next steps. <span class="bl">No spam.</span></p>
+      <div id="zf_div_mhFZPMq0V3WZYAI6xuzmlbrneQRMVHNeivSuj3rbvt8"></div>
+      <script type="text/javascript">
+      (function() {
+          try{
+              var f = document.createElement("iframe");
+              var ifrmSrc = 'https://forms.zohopublic.com/makersquare/form/Waitlist/formperma/mhFZPMq0V3WZYAI6xuzmlbrneQRMVHNeivSuj3rbvt8?zf_rszfm=1';
+              try{
+                  if ( typeof ZFAdvLead != "undefined" && typeof zfutm_zfAdvLead != "undefined" ) { for( var prmIdx = 0 ; prmIdx < ZFAdvLead.utmPNameArr.length ; prmIdx ++ ) { var utmPm = ZFAdvLead.utmPNameArr[ prmIdx ]; utmPm = ( ZFAdvLead.isSameDomian && ( ZFAdvLead.utmcustPNameArr.indexOf(utmPm) == -1 ) ) ? "zf_" + utmPm : utmPm; var utmVal = zfutm_zfAdvLead.zfautm_gC_enc( ZFAdvLead.utmPNameArr[ prmIdx ] ); if ( typeof utmVal !== "undefined" ) { if ( utmVal != "" ) { if(ifrmSrc.indexOf('?') > 0){ ifrmSrc = ifrmSrc+'&'+utmPm+'='+utmVal; }else{ ifrmSrc = ifrmSrc+'?'+utmPm+'='+utmVal; } } } } }
+                  if ( typeof ZFLead !== "undefined" && typeof zfutm_zfLead !== "undefined" ) { for( var prmIdx = 0 ; prmIdx < ZFLead.utmPNameArr.length ; prmIdx ++ ) { var utmPm = ZFLead.utmPNameArr[ prmIdx ]; var utmVal = zfutm_zfLead.zfutm_gC_enc( ZFLead.utmPNameArr[ prmIdx ] ); if ( typeof utmVal !== "undefined" ) { if ( utmVal != "" ){ if(ifrmSrc.indexOf('?') > 0){ ifrmSrc = ifrmSrc+'&'+utmPm+'='+utmVal; }else{ ifrmSrc = ifrmSrc+'?'+utmPm+'='+utmVal; } } } } }
+              }catch(e){}
+              f.src = ifrmSrc; f.style.border="none"; f.style.height="858px"; f.style.width="100%"; f.style.maxWidth="560px"; f.style.transition="all 0.5s ease"; f.setAttribute("aria-label", "Waitlist");
+              var d = document.getElementById("zf_div_mhFZPMq0V3WZYAI6xuzmlbrneQRMVHNeivSuj3rbvt8"); d.appendChild(f);
+              window.addEventListener('message', function (){ var evntData = event.data; if( evntData && evntData.constructor == String ){ var zf_ifrm_data = evntData.split("|"); if ( zf_ifrm_data.length == 2 || zf_ifrm_data.length == 3 ) { var zf_perma = zf_ifrm_data[0]; var zf_ifrm_ht_nw = ( parseInt(zf_ifrm_data[1], 10) + 15 ) + "px"; var iframe = document.getElementById("zf_div_mhFZPMq0V3WZYAI6xuzmlbrneQRMVHNeivSuj3rbvt8").getElementsByTagName("iframe")[0]; if ( (iframe.src).indexOf('formperma') > 0 && (iframe.src).indexOf(zf_perma) > 0 ) { var prevIframeHeight = iframe.style.height; if ( prevIframeHeight != zf_ifrm_ht_nw ) { iframe.style.height = zf_ifrm_ht_nw; } } } } }, false);
+          }catch(e){}
+      })();
+      </script>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══ FINAL CTA ═══ -->
+<section class="section section--dark" style="padding:120px 0;">
+  <div class="container">
+    <div class="cta-final">
+      <div class="section-label reveal" style="justify-content:center;">Apply</div>
+      <h2 class="reveal">Next cohort: July 6, 2026.<br><span style="color:var(--sky);">Seats are limited.</span></h2>
+      <p class="reveal">If you've been meaning to get serious about AI, not just read about it, but actually build something with it. This is the program. <span style="color:var(--sky);font-weight:600;">Applications are open now.</span></p>
+      <div class="reveal"><a href="apply.html" class="btn btn-primary btn-lg btn-arrow" style="font-size:1.05rem;">Apply Now </a></div>
+      <div class="cta-details reveal">July 6, 2026 &middot; Austin, TX &middot; 15 seats &middot; $5,999</div>
+    </div>
+  </div>
+</section>
+
 
 <!-- FOOTER -->
-<footer>
-  <a href="#" class="footer-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1157.19 299.75" height="26" style="display:block;" aria-label="MakerSquare">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #80aafb;
-      }
-
-      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7 {
-        stroke-width: 0px;
-      }
-
-      .cls-2 {
-        fill: #ebf0fd;
-      }
-
-      .cls-3 {
-        fill: #ecf0fd;
-      }
-
-      .cls-4 {
-        fill: #89affb;
-      }
-
-      .cls-5 {
-        fill: #81aafb;
-      }
-
-      .cls-6 {
-        fill: #fff;
-      }
-
-      .cls-7 {
-        fill: #c1d4fa;
-      }
-    </style>
-  </defs>
-  <g>
-    <path class="cls-7" d="M84.05,96.9v100.82c0,7.24,4.21,13.81,10.79,16.83l20.84,9.7v-80.04l40.87,18.83v-32.54l-72.49-33.61Z"/>
-    <polygon class="cls-1" points="115.68 144.22 115.68 177.43 140.88 189.82 140.88 155.85 115.68 144.22"/>
-    <polygon class="cls-2" points="115.68 177.43 115.68 224.26 140.88 211.62 140.88 189.82 115.68 177.43"/>
-    <path class="cls-3" d="M156.54,130.51v32.54l40.87-18.82v80.04l20.84-9.71c6.57-3.02,10.79-9.6,10.79-16.83v-100.82l-72.49,33.61Z"/>
-    <polygon class="cls-4" points="172.31 155.84 172.31 213.05 197.41 224.34 197.41 144.23 172.31 155.84"/>
-    <path class="cls-5" d="M229.04,96.9l-22.05-8.79c-4.81-1.92-10.21-1.74-14.88.5l-35.57,17.06-35.57-17.06c-4.67-2.24-10.06-2.42-14.88-.5l-22.05,8.79,72.49,33.61h0l72.49-33.61Z"/>
-  </g>
-  <g>
-    <polygon class="cls-6" points="356.31 109.77 353.42 109.77 323.9 178.88 294.38 109.77 291.36 109.77 277.03 109.77 273.61 109.77 273.61 201.8 291.36 201.8 291.36 145.97 315.17 201.53 315.16 201.8 315.29 201.8 332.51 201.8 356.31 146.08 356.31 201.8 374.06 201.8 374.06 109.77 370.65 109.77 356.31 109.77"/>
-    <path class="cls-6" d="M416.93,132.91c-7.98,0-14.57,2.02-19.79,6.05-5.22,4.03-8.48,9.03-9.8,14.99l14.99,3.16h1.45c.44-2.28,1.8-4.36,4.08-6.25,2.28-1.89,5.3-2.83,9.07-2.83,4.03,0,7.36,1.23,9.99,3.68,2.22,2.07,3.49,4.62,3.84,7.64l-18.17,1.57c-8.5.7-14.97,2.96-19.39,6.77-4.43,3.81-6.64,8.96-6.64,15.45,0,4.03,1.01,7.63,3.02,10.78,2.02,3.16,4.8,5.61,8.35,7.36s7.6,2.63,12.16,2.63c4.91,0,9.34-.99,13.28-2.96,3.61-1.81,6.72-4.17,9.34-7.07v7.93h15.38v-37.74c0-9.9-2.78-17.57-8.35-23.01-5.57-5.44-13.17-8.15-22.81-8.15ZM422.65,186.03c-2.5,1.58-5.28,2.37-8.35,2.37-2.81,0-5.13-.59-6.97-1.78-1.84-1.18-2.76-2.74-2.76-4.67s.77-3.51,2.3-4.73c1.53-1.23,4.18-2.02,7.95-2.37l15.95-1.33c-.23,2.23-.94,4.36-2.15,6.39-1.49,2.5-3.48,4.54-5.98,6.11Z"/>
-    <polygon class="cls-6" points="528.95 136.06 528.95 135.01 506.73 135.01 482.93 160.68 482.93 106.08 482.54 105.03 465.18 107.14 465.18 201.8 482.93 201.8 482.93 184.63 491.72 175.35 509.49 201.8 529.35 201.8 529.35 200.75 503.48 162.94 528.95 136.06"/>
-    <path class="cls-6" d="M582.2,137.51c-5-3.07-10.87-4.6-17.62-4.6s-12.84,1.49-18.01,4.47c-5.17,2.98-9.23,7.14-12.16,12.49-2.94,5.35-4.4,11.53-4.4,18.54s1.49,13.19,4.47,18.54c2.98,5.35,7.12,9.51,12.43,12.49,5.3,2.98,11.46,4.47,18.47,4.47s12.99-1.58,18.21-4.73c5.21-3.15,9.18-7.71,11.9-13.67l-14.2-5.92h-1.58c-1.49,2.81-3.55,5.04-6.18,6.71-2.63,1.67-5.35,2.5-8.15,2.5-3.16,0-6.07-.79-8.74-2.37-2.67-1.58-4.82-3.66-6.44-6.25-1.05-1.67-1.75-3.45-2.12-5.33h48.08l1.97-1.97v-3.16c0-7.36-1.4-13.81-4.21-19.33-2.81-5.52-6.71-9.82-11.7-12.88ZM556.04,150.2c2.63-1.45,5.61-2.17,8.94-2.17,2.98,0,5.67.68,8.09,2.04,2.41,1.36,4.34,3.27,5.79,5.72.89,1.51,1.51,3.18,1.85,5h-32.54c.35-1.68.94-3.23,1.77-4.67,1.45-2.5,3.48-4.47,6.11-5.92Z"/>
-    <path class="cls-6" d="M632.3,139.48c-1.99,1.38-3.74,3.02-5.26,4.89v-9.37h-16.44v66.79h17.75v-33.4c0-3.68.66-6.86,1.97-9.53s3.18-4.71,5.59-6.12c2.41-1.4,5.28-2.1,8.61-2.1h8.81v-15.65h-6.18c-5.61,0-10.56,1.49-14.86,4.47Z"/>
-    <path class="cls-6" d="M710.27,168.74c-3.51-3.02-8.63-5.33-15.38-6.9l-12.62-2.89c-2.1-.44-3.66-1.16-4.67-2.17-1.01-1.01-1.51-2.08-1.51-3.22,0-1.75.9-3.11,2.7-4.08,1.8-.96,4.01-1.45,6.64-1.45,2.89,0,5.5.7,7.82,2.1,2.32,1.4,3.79,3.2,4.41,5.39l1.45.26,14.99-3.29c-1.58-6.14-4.84-10.94-9.8-14.4-4.95-3.46-10.98-5.19-18.08-5.19-5.26,0-9.97.88-14.13,2.63-4.16,1.75-7.43,4.19-9.8,7.3-2.37,3.11-3.55,6.77-3.55,10.98,0,4.91,1.69,9.05,5.06,12.43,3.37,3.38,8.17,5.77,14.4,7.17l12.62,2.76c2.45.53,4.29,1.27,5.52,2.24,1.23.97,1.84,2.28,1.84,3.94,0,1.93-1.01,3.48-3.02,4.67-2.02,1.18-4.52,1.78-7.49,1.78s-5.77-.7-8.09-2.1c-2.32-1.4-3.84-3.33-4.54-5.78l-1.58-.4-16.17,4.08c1.75,5.96,5.28,10.67,10.58,14.13,5.3,3.46,11.68,5.19,19.13,5.19,5.52,0,10.43-.92,14.73-2.76,4.29-1.84,7.67-4.47,10.12-7.89,2.45-3.42,3.68-7.41,3.68-11.97,0-5.34-1.75-9.53-5.26-12.56Z"/>
-    <path class="cls-6" d="M774.15,142.08c-2.27-2.39-4.98-4.43-8.15-6.09-3.94-2.06-8.46-3.09-13.54-3.09-6.05,0-11.53,1.51-16.44,4.54-4.91,3.02-8.79,7.19-11.64,12.49-2.85,5.3-4.27,11.42-4.27,18.34s1.42,13.08,4.27,18.47c2.85,5.39,6.73,9.6,11.64,12.62,4.91,3.02,10.39,4.54,16.44,4.54,5.08,0,9.6-1.05,13.54-3.16,2.58-1.38,4.86-3,6.84-4.87v32.22h17.75v-93.09h-16.44v7.07ZM764.94,185.63c-2.63,1.67-5.74,2.5-9.34,2.5s-6.6-.83-9.27-2.5c-2.67-1.66-4.76-3.99-6.25-6.97-1.49-2.98-2.24-6.4-2.24-10.25s.74-7.39,2.24-10.32c1.49-2.94,3.57-5.24,6.25-6.9,2.67-1.66,5.76-2.5,9.27-2.5s6.71.83,9.34,2.5c2.63,1.67,4.69,3.97,6.18,6.9,1.49,2.94,2.24,6.38,2.24,10.32s-.75,7.28-2.24,10.25c-1.49,2.98-3.55,5.31-6.18,6.97Z"/>
-    <path class="cls-6" d="M852.77,167.49c0,5.52-.92,9.77-2.76,12.75s-4.06,5.04-6.64,6.18c-2.59,1.14-4.93,1.71-7.03,1.71-2.72,0-5.04-.66-6.97-1.97-1.93-1.32-3.4-3.27-4.4-5.85-1.01-2.58-1.51-5.72-1.51-9.4v-35.9h-17.75v41.55c0,5.96,1.16,10.98,3.48,15.05,2.32,4.08,5.46,7.14,9.4,9.2,3.94,2.06,8.24,3.09,12.89,3.09,4.21,0,8.04-.77,11.5-2.3,3.46-1.53,6.53-3.7,9.2-6.51.67-.71,1.31-1.45,1.91-2.23v8.93h16.44v-66.79h-17.75v32.48Z"/>
-    <path class="cls-6" d="M913.39,132.91c-7.98,0-14.57,2.02-19.79,6.05-5.22,4.03-8.48,9.03-9.8,14.99l14.99,3.16h1.45c.44-2.28,1.8-4.36,4.08-6.25,2.28-1.89,5.3-2.83,9.07-2.83,4.03,0,7.36,1.23,9.99,3.68,2.22,2.07,3.49,4.62,3.84,7.64l-18.17,1.57c-8.5.7-14.97,2.96-19.39,6.77-4.43,3.81-6.64,8.96-6.64,15.45,0,4.03,1.01,7.63,3.02,10.78,2.02,3.16,4.8,5.61,8.35,7.36,3.55,1.75,7.6,2.63,12.16,2.63,4.91,0,9.34-.99,13.28-2.96,3.61-1.81,6.72-4.17,9.34-7.07v7.93h15.38v-37.74c0-9.9-2.78-17.57-8.35-23.01-5.57-5.44-13.17-8.15-22.81-8.15ZM919.11,186.03c-2.5,1.58-5.28,2.37-8.35,2.37-2.81,0-5.13-.59-6.97-1.78-1.84-1.18-2.76-2.74-2.76-4.67s.77-3.51,2.3-4.73c1.53-1.23,4.18-2.02,7.95-2.37l15.95-1.33c-.23,2.23-.94,4.36-2.15,6.39-1.49,2.5-3.48,4.54-5.98,6.11Z"/>
-    <path class="cls-6" d="M981.36,139.48c-1.99,1.38-3.74,3.02-5.26,4.89v-9.37h-16.44v66.79h17.75v-33.4c0-3.68.66-6.86,1.97-9.53s3.18-4.71,5.59-6.12c2.41-1.4,5.28-2.1,8.61-2.1h8.81v-15.65h-6.18c-5.61,0-10.56,1.49-14.86,4.47Z"/>
-    <path class="cls-6" d="M1068.93,150.39c-2.81-5.52-6.71-9.82-11.7-12.88s-10.87-4.6-17.62-4.6-12.84,1.49-18.01,4.47c-5.17,2.98-9.23,7.14-12.16,12.49-2.94,5.35-4.4,11.53-4.4,18.54s1.49,13.19,4.47,18.54c2.98,5.35,7.12,9.51,12.43,12.49,5.3,2.98,11.46,4.47,18.47,4.47s12.99-1.58,18.21-4.73c5.21-3.15,9.18-7.71,11.9-13.67l-14.2-5.92h-1.58c-1.49,2.81-3.55,5.04-6.18,6.71-2.63,1.67-5.35,2.5-8.15,2.5-3.16,0-6.07-.79-8.74-2.37-2.67-1.58-4.82-3.66-6.44-6.25-1.05-1.67-1.75-3.45-2.12-5.33h48.08l1.97-1.97v-3.16c0-7.36-1.4-13.81-4.21-19.33ZM1031.07,150.2c2.63-1.45,5.61-2.17,8.94-2.17,2.98,0,5.67.68,8.09,2.04,2.41,1.36,4.34,3.27,5.79,5.72.89,1.51,1.51,3.18,1.85,5h-32.54c.35-1.68.94-3.23,1.77-4.67,1.45-2.5,3.48-4.47,6.11-5.92Z"/>
-  </g>
-</svg></a>
-  <div style="display:flex;gap:1.5rem;"><a href="privacy.html" style="font-size:12px;color:#4e6a85;text-decoration:none;">Privacy Policy</a><a href="terms.html" style="font-size:12px;color:#4e6a85;text-decoration:none;">Terms of Service</a></div><div class="footer-copy">© 2026 MakerSquare LLC. Austin, TX.</div>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo"><img src="logo-dark.png" alt="MakerSquare"></a>
+        <p>4-week in-person AI bootcamp in Austin, TX for operators, founders, and professionals.</p>
+        <a href="apply.html" class="btn btn-primary btn-arrow" style="font-size:0.82rem;padding:10px 20px;">Apply Now </a>
+      </div>
+      <div>
+        <div class="footer-col-title">Program</div>
+        <ul class="footer-col-links">
+          <li><a href="curriculum.html">Curriculum</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="apply.html">Apply</a></li>
+          <li><a href="scholarship.html">Scholarship</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Company</div>
+        <ul class="footer-col-links">
+          <li><a href="team.html">Team</a></li>
+          <li><a href="corporate.html">Corporate Training</a></li>
+          <li><a href="housing.html">Housing</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Contact</div>
+        <a href="mailto:hello@makersquare.ai" class="footer-contact-email">hello@makersquare.ai</a>
+        <p style="font-size:0.82rem;color:rgba(255,255,255,0.4);">Austin, TX</p>
+        <div class="footer-social"><a href="https://www.linkedin.com/company/makersquare-ai" target="_blank" rel="noopener" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>Follow us on LinkedIn</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">&copy; 2026 MakerSquare LLC. Austin, TX.</div>
+      <div class="footer-bottom-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </div>
+    </div>
+  </div>
 </footer>
 
-<script>
-(function(){
-  var obs = new IntersectionObserver(function(entries){
-    entries.forEach(function(e){ if(e.isIntersecting) e.target.classList.add('visible'); });
-  }, { threshold: 0.08 });
-  function init(){
-    document.querySelectorAll('.main-content > *, .page-hero > *').forEach(function(el, i){
-      el.classList.add('fade-up');
-      el.style.transitionDelay = Math.min(i * 0.08, 0.4) + 's';
-      obs.observe(el);
-    });
-    var hero = document.querySelector('.page-hero');
-    if(hero){
-      window.addEventListener('scroll', function(){
-        hero.style.transform = 'translateY(' + (window.scrollY * 0.13) + 'px)';
-      }, { passive: true });
-    }
-  }
-  if(document.readyState === 'loading'){ document.addEventListener('DOMContentLoaded', init); } else { init(); }
-})();
-
-  // FAQ accordion
-  document.querySelectorAll('.faq-q').forEach(function(q) {
-    q.addEventListener('click', function() {
-      var item = this.parentElement;
-      var isOpen = item.classList.contains('open');
-      var list = item.parentElement;
-      list.querySelectorAll('.faq-item').forEach(function(i) { i.classList.remove('open'); });
-      if (!isOpen) item.classList.add('open');
-    });
-  });
-</script>
+<script src="js/main.min.js"></script>
+<script type="text/javascript" src="https://forms.zoho.com/js/zf_gclid.js"> </script>
+<script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script><script id="zsiqscript" src="https://salesiq.zohopublic.com/widget?wc=siq885ea214ffc25f4f452068cc9bc1cec4353b0ff61817b77233444928d383fe96" defer></script>
 </body>
 </html>
