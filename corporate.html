@@ -3,637 +3,437 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Corporate AI Training Austin — MakerSquare | 2-Week Team Intensive</title>
-<meta name="description" content="MakerSquare's 2-week corporate AI training intensive for teams of 10–20. Custom curriculum built around your workflows. One deployed AI tool by Day 10. Austin TX or on-site.">
+<title>Corporate AI Training for Teams | MakerSquare Austin TX</title>
+<meta name="description" content="Private AI training for teams. Your employees build a real AI tool for your business in 2 weeks. On site or in Austin. Custom curriculum. No technical background required.">
 <meta name="robots" content="index, follow">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PYX8ZYYW7E"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag("js", new Date());
-  gtag("config", "G-PYX8ZYYW7E");
-</script>
-<link rel="canonical" href="https://www.makersquare.ai/corporate.html">
+<link rel="canonical" href="https://www.makersquare.ai/corporate">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://www.makersquare.ai/corporate.html">
-<meta property="og:title" content="Corporate AI Training Austin — MakerSquare">
-<meta property="og:description" content="2-week corporate AI training intensive for teams of 10–20. Custom curriculum, company-specific project, deployed tool by Day 10. Austin TX or on-site.">
+<meta property="og:url" content="https://www.makersquare.ai/corporate">
+<meta property="og:title" content="Corporate AI Training | MakerSquare Austin">
+<meta property="og:description" content="Private AI training for teams. Build a real AI tool for your business in 2 weeks. On site or in Austin.">
 <meta property="og:image" content="https://www.makersquare.ai/og-image.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://www.makersquare.ai/og-image.jpg">
-<meta name="twitter:title" content="Corporate AI Training Austin — MakerSquare">
-<meta name="twitter:description" content="2-week corporate AI training intensive for teams of 10–20. Custom curriculum, company-specific project, deployed tool by Day 10. Austin TX or on-site.">
-<link href="https://fonts.googleapis.com/css2?family=Fustat:wght@800&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.min.css">
 <style>
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-:root {
-  --bg: #181849; --bg2: #1e1e60; --bg3: #242478;
-  --border: rgba(129,170,251,0.2); --border2: rgba(129,170,251,0.35);
-  --text: #ffffff; --muted: #8888a8; --muted2: #C1D4FA;
-  --accent: #81AAFB; --accent2: #538EE5; --green: #4ade80;
-  --font: 'Inter', sans-serif;
-}
-html { scroll-behavior: smooth; }
-body { background: var(--bg); color: var(--text); font-family: var(--font); font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; letter-spacing: -0.01em; overflow-x: hidden; }
+/* ── Corporate-specific ── */
+.corp-stats { display: grid; grid-template-columns: repeat(4,1fr); gap: var(--s4); margin-top: var(--s8); }
+.corp-stat { background: var(--white); border: 1px solid rgba(24,24,73,0.06); border-radius: var(--r-lg); padding: var(--s5); text-align: center; transition: all 0.3s ease; }
+.corp-stat:hover { transform: translateY(-2px); box-shadow: var(--shadow-sm); }
+.corp-stat-num { font-family: var(--font-display); font-size: 1.5rem; font-weight: 800; color: var(--indigo); margin-bottom: 2px; }
+.corp-stat-label { font-size: 0.75rem; color: var(--text-muted); }
 
-nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 0 2.5rem; height: 64px; display: flex; align-items: center; justify-content: space-between; background: rgba(24,24,73,0.92); backdrop-filter: blur(18px); border-bottom: 1px solid var(--border); }
-.nav-logo { font-family: 'Fustat', var(--font); font-weight: 800; font-size: 18px; letter-spacing: -0.02em; color: var(--text); text-decoration: none; }
-.nav-logo span { color: var(--accent); }
-.nav-links { display: flex; gap: 2rem; list-style: none; }
-.nav-links a { font-size: 13px; color: var(--muted2); text-decoration: none; transition: color 0.2s; }
-.nav-links a:hover, .nav-links a.active { color: var(--text); }
-.nav-cta { background: var(--accent); color: #0a0a0b; border: none; padding: 9px 22px; border-radius: 6px; font-size: 13px; font-weight: 500; cursor: pointer; transition: background 0.2s; text-decoration: none; }
-.nav-cta:hover { background: var(--accent2); }
+.outcomes-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: var(--s5); margin-top: var(--s8); }
+.outcome-card { background: var(--white); border: 1px solid rgba(24,24,73,0.06); border-radius: var(--r-xl); padding: var(--s7); transition: all 0.3s ease; text-align: center; }
+.outcome-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border-color: var(--ice); }
+.outcome-icon { width: 52px; height: 52px; border-radius: var(--r-md); background: linear-gradient(135deg, var(--cloud) 0%, rgba(64,61,216,0.08) 100%); border: 1px solid var(--ice); display: flex; align-items: center; justify-content: center; color: var(--indigo); margin: 0 auto var(--s4); box-shadow: 0 2px 8px rgba(64,61,216,0.06), inset 0 1px 0 rgba(255,255,255,0.7); position: relative; }
+.outcome-icon::after { content: ''; position: absolute; inset: 0; border-radius: var(--r-md); background: linear-gradient(180deg, rgba(255,255,255,0.35) 0%, transparent 50%); pointer-events: none; }
+.outcome-card h3 { font-size: 1rem; margin-bottom: var(--s2); }
+.outcome-card p { font-size: 0.82rem; color: var(--text-secondary); line-height: 1.6; }
 
-.page-hero { padding: 120px 2.5rem 70px; max-width: 1100px; margin: 0 auto; }
-.page-label { font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 10px; }
-.page-label::before { content: ''; display: block; width: 24px; height: 1px; background: var(--accent); }
-h1 { font-size: clamp(2.2rem, 5vw, 3.8rem); font-weight: 800; line-height: 1.08; letter-spacing: -0.035em; margin-bottom: 1.5rem; }
-h1 em { font-style: italic; color: var(--muted2); font-weight: 300; }
-.page-intro { font-size: 18px; color: var(--muted2); font-weight: 300; max-width: 580px; line-height: 1.75; margin-bottom: 2.5rem; }
+.week-split { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s5); margin-top: var(--s8); }
+.week-block { border-radius: var(--r-xl); padding: var(--s8); }
+.week-block--1 { background: var(--cloud); border: 1px solid var(--ice); }
+.week-block--2 { background: var(--navy); color: var(--white); }
+.week-block-label { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: var(--s3); }
+.week-block--1 .week-block-label { color: var(--indigo); }
+.week-block--2 .week-block-label { color: var(--sky); }
+.week-block h3 { font-family: var(--font-display); font-size: 1.3rem; font-weight: 800; margin-bottom: var(--s4); }
+.week-block--2 h3 { color: var(--white); }
+.week-block-list { list-style: none; display: flex; flex-direction: column; gap: var(--s3); }
+.week-block-list li { display: flex; align-items: flex-start; gap: 8px; font-size: 0.88rem; line-height: 1.5; }
+.week-block--1 .week-block-list li { color: var(--text-secondary); }
+.week-block--2 .week-block-list li { color: rgba(255,255,255,0.75); }
+.week-block-list li::before { content: '\2713'; font-weight: 700; font-size: 0.72rem; margin-top: 3px; flex-shrink: 0; }
+.week-block--1 .week-block-list li::before { color: var(--indigo); }
+.week-block--2 .week-block-list li::before { color: var(--sky); }
 
-.btn-primary { display: inline-block; background: var(--accent); color: #0a0a0b; padding: 13px 28px; border-radius: 8px; font-size: 15px; font-weight: 700; cursor: pointer; transition: background 0.2s; text-decoration: none; border: none; font-family: var(--font); }
-.btn-primary:hover { background: var(--accent2); }
-.btn-ghost { display: inline-block; border: 1px solid var(--border2); color: var(--muted2); padding: 12px 24px; border-radius: 8px; font-size: 14px; font-weight: 500; text-decoration: none; transition: all 0.2s; }
-.btn-ghost:hover { border-color: var(--accent); color: var(--text); }
+.example-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: var(--s5); margin-top: var(--s8); }
+.example-card { background: var(--white); border: 1px solid rgba(24,24,73,0.06); border-radius: var(--r-xl); padding: var(--s6); transition: all 0.3s ease; display: flex; gap: var(--s5); align-items: flex-start; }
+.example-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); border-color: var(--ice); }
+.example-icon { width: 48px; height: 48px; min-width: 48px; border-radius: var(--r-md); background: linear-gradient(135deg, var(--cloud) 0%, rgba(64,61,216,0.08) 100%); border: 1px solid var(--ice); display: flex; align-items: center; justify-content: center; color: var(--indigo); flex-shrink: 0; box-shadow: 0 2px 6px rgba(64,61,216,0.06), inset 0 1px 0 rgba(255,255,255,0.7); position: relative; }
+.example-icon::after { content: ''; position: absolute; inset: 0; border-radius: var(--r-md); background: linear-gradient(180deg, rgba(255,255,255,0.35) 0%, transparent 50%); pointer-events: none; }
+.example-industry { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--indigo); margin-bottom: var(--s1); }
+.example-card h3 { font-size: 0.95rem; margin-bottom: var(--s2); }
+.example-card p { font-size: 0.82rem; color: var(--text-secondary); line-height: 1.5; }
+.example-result { font-size: 0.78rem; font-weight: 600; color: var(--green); margin-top: var(--s2); }
 
-.main-content { max-width: 1100px; margin: 0 auto; padding: 0 2.5rem 100px; }
-h2 { font-size: 1.9rem; font-weight: 800; letter-spacing: -0.03em; }
-h2 em { font-style: italic; color: var(--muted2); font-weight: 300; }
-.section-label { font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 10px; }
-.section-label::before { content: ''; display: block; width: 24px; height: 1px; background: var(--accent); }
+.process-steps { display: grid; grid-template-columns: repeat(3,1fr); gap: var(--s5); margin-top: var(--s8); }
+.process-step { text-align: center; }
+.process-step-num { font-family: var(--font-display); font-size: 1.2rem; font-weight: 800; color: var(--white); background: var(--indigo); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto var(--s3); }
+.process-step h3 { font-size: 0.95rem; margin-bottom: var(--s2); }
+.process-step p { font-size: 0.82rem; color: var(--text-secondary); line-height: 1.6; }
 
-/* HERO STAT STRIP */
-.stat-strip { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: 16px; overflow: hidden; margin-top: 3.5rem; }
-.stat-cell { background: var(--bg2); padding: 1.75rem 2rem; }
-.stat-num { font-size: 2.2rem; font-weight: 800; letter-spacing: -0.04em; color: var(--accent); line-height: 1; margin-bottom: 0.35rem; }
-.stat-label { font-size: 12px; color: var(--muted2); font-weight: 300; line-height: 1.5; }
+.page-cta { background: var(--white); border: 1px solid rgba(24,24,73,0.06); border-radius: var(--r-xl); padding: var(--s10); text-align: center; margin-top: var(--s10); }
+.page-cta h3 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 800; color: var(--navy); margin-bottom: var(--s3); }
+.page-cta p { font-size: 0.95rem; color: var(--text-secondary); margin-bottom: var(--s6); max-width: 480px; margin-left: auto; margin-right: auto; }
 
-/* THE ARGUMENT */
-.argument-section { margin: 5rem 0; display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
-.argument-text h2 { margin-bottom: 1.25rem; }
-.argument-text p { font-size: 15px; color: var(--muted2); font-weight: 300; line-height: 1.8; margin-bottom: 1rem; }
-.argument-text p strong { color: var(--text); font-weight: 600; }
-.argument-callout { background: var(--bg2); border: 1px solid var(--border2); border-radius: 20px; padding: 2.5rem; }
-.argument-callout-title { font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted2); margin-bottom: 1.5rem; }
-.argument-lines { display: flex; flex-direction: column; gap: 1.25rem; }
-.argument-line { display: flex; gap: 1rem; align-items: flex-start; }
-.arg-icon { font-size: 1.1rem; flex-shrink: 0; margin-top: 1px; }
-.arg-text { font-size: 14px; color: var(--muted2); font-weight: 300; line-height: 1.65; }
-.arg-text strong { color: var(--text); font-weight: 600; display: block; margin-bottom: 2px; font-size: 14px; }
-
-/* THE PROGRAM */
-.program-section { margin: 5rem 0; }
-.program-weeks { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 2.5rem; }
-.week-card { background: var(--bg2); border: 1px solid var(--border); border-radius: 20px; padding: 2.5rem; }
-.week-label { font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem; }
-.week-title { font-size: 1.2rem; font-weight: 800; letter-spacing: -0.025em; margin-bottom: 1rem; }
-.week-desc { font-size: 13px; color: var(--muted2); font-weight: 300; line-height: 1.75; margin-bottom: 1.5rem; }
-.week-items { display: flex; flex-direction: column; gap: 0.6rem; }
-.week-item { font-size: 13px; color: var(--muted2); font-weight: 300; display: flex; gap: 0.6rem; line-height: 1.5; }
-.week-item::before { content: '→'; color: var(--accent); flex-shrink: 0; font-size: 12px; margin-top: 1px; }
-.week-deliverable { margin-top: 1.75rem; padding-top: 1.25rem; border-top: 1px solid var(--border); display: flex; align-items: flex-start; gap: 0.75rem; }
-.deliverable-tag { font-size: 10px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--green); background: rgba(74,222,128,0.08); border: 1px solid rgba(74,222,128,0.2); padding: 3px 8px; border-radius: 4px; white-space: nowrap; flex-shrink: 0; margin-top: 2px; }
-.deliverable-text { font-size: 12px; color: var(--muted2); font-weight: 300; line-height: 1.5; }
-
-/* THE PROJECT */
-.project-section { margin: 5rem 0; background: var(--bg2); border: 1px solid var(--border2); border-radius: 24px; padding: 3.5rem; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
-.project-left h2 { margin-bottom: 1rem; }
-.project-left p { font-size: 15px; color: var(--muted2); font-weight: 300; line-height: 1.8; margin-bottom: 1rem; }
-.project-left p strong { color: var(--text); font-weight: 600; }
-.project-examples { display: flex; flex-direction: column; gap: 0.75rem; }
-.project-example { background: var(--bg3); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.25rem; }
-.example-industry { font-size: 10px; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.3rem; }
-.example-project { font-size: 13px; color: var(--muted2); font-weight: 300; }
-
-/* OUTCOMES */
-.outcomes-section { margin: 5rem 0; }
-.outcomes-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2.5rem; }
-.outcome-card { background: var(--bg2); border: 1px solid var(--border); border-radius: 16px; padding: 2rem; }
-.outcome-icon { font-size: 1.5rem; margin-bottom: 1rem; }
-.outcome-title { font-size: 15px; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 0.5rem; }
-.outcome-desc { font-size: 13px; color: var(--muted2); font-weight: 300; line-height: 1.75; }
-
-/* HOW IT STARTS */
-.process-section { margin: 5rem 0; }
-.process-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 2.5rem; }
-.process-step { background: var(--bg2); border: 1px solid var(--border2); border-radius: 16px; padding: 2.5rem 2rem; }
-.process-num { font-size: 3rem; font-weight: 800; color: rgba(129,170,251,0.28); letter-spacing: -0.04em; line-height: 1; margin-bottom: 1.25rem; }
-.process-title { font-size: 15px; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 0.5rem; }
-.process-desc { font-size: 13px; color: var(--muted2); font-weight: 300; line-height: 1.75; }
-.process-time { display: inline-block; margin-top: 1rem; font-size: 11px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; color: var(--accent); background: rgba(129,170,251,0.08); border: 1px solid rgba(129,170,251,0.15); padding: 4px 10px; border-radius: 4px; }
-
-/* CONTACT FORM */
-.contact-section { margin: 5rem 0; }
-.contact-layout { display: grid; grid-template-columns: 1fr 1.6fr; gap: 4rem; align-items: start; margin-top: 2.5rem; }
-.contact-left h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 0.75rem; letter-spacing: -0.02em; }
-.contact-left p { font-size: 14px; color: var(--muted2); font-weight: 300; line-height: 1.75; margin-bottom: 1.5rem; }
-.contact-detail { display: flex; align-items: center; gap: 0.75rem; font-size: 13px; color: var(--muted2); margin-bottom: 0.6rem; }
-.contact-detail a { color: var(--accent); text-decoration: none; }
-.contact-detail a:hover { text-decoration: underline; }
-.contact-form { padding: 0; }
-.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
-.form-group { margin-bottom: 1rem; }
-.form-group label { display: block; font-size: 12px; font-weight: 600; color: var(--muted2); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.5rem; }
-.form-group input,
-.form-group select,
-.form-group textarea { width: 100%; background: var(--bg3); border: 1px solid var(--border); border-radius: 8px; padding: 11px 14px; font-size: 14px; font-family: var(--font); color: var(--text); outline: none; transition: border-color 0.2s; }
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus { border-color: rgba(129,170,251,0.4); }
-.form-group select { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' fill='none' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%238aaec8' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 14px center; }
-.form-group select option { background: var(--bg2); }
-.form-group textarea { resize: vertical; min-height: 110px; }
-.form-submit { display: flex; align-items: center; justify-content: space-between; margin-top: 1.5rem; gap: 1rem; flex-wrap: wrap; }
-.btn-primary-lg { background: var(--accent); color: #0a0a0b; border: none; padding: 13px 28px; border-radius: 8px; font-size: 15px; font-weight: 700; cursor: pointer; transition: background 0.2s; font-family: var(--font); }
-.btn-primary-lg:hover { background: var(--accent2); }
-.form-note { font-size: 12px; color: var(--muted); font-weight: 300; }
-
-/* FAQ */
-.faq-list { margin-top: 1.5rem; }
-.faq-item { border-bottom: 1px solid var(--border); padding: 1.4rem 0; }
-.faq-q { font-size: 15px; font-weight: 600; letter-spacing: -0.01em; margin-bottom: 0.5rem; }
-.faq-a { font-size: 14px; color: var(--muted2); font-weight: 300; line-height: 1.75; }
-
-footer { border-top: 1px solid var(--border); padding: 2rem 2.5rem; display: flex; justify-content: space-between; align-items: center; max-width: 1100px; margin: 0 auto; }
-.footer-logo { font-family: 'Fustat', var(--font); font-weight: 800; font-size: 15px; text-decoration: none; color: var(--text); }
-.footer-logo span { color: var(--accent); }
-.footer-copy { font-size: 12px; color: var(--muted); }
-
-.nav-hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 6px; flex-shrink: 0; }
-.nav-hamburger span { display: block; width: 22px; height: 2px; background: var(--text); border-radius: 2px; transition: transform 0.25s, opacity 0.25s; }
-body.nav-open .nav-hamburger span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-body.nav-open .nav-hamburger span:nth-child(2) { opacity: 0; }
-body.nav-open .nav-hamburger span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-body.nav-open { overflow: hidden; }
-.mobile-menu { display: none; position: fixed; top: 64px; left: 0; right: 0; bottom: 0; background: var(--bg); z-index: 9999; overflow-y: auto; overflow-x: hidden; border-top: 1px solid var(--border); }
-.mobile-menu-links { list-style: none; padding: 0 1.5rem; margin: 0; }
-.mobile-menu-links li { border-bottom: 1px solid var(--border); }
-.mobile-menu-links a { display: block; font-size: 17px; padding: 1rem 0; color: var(--text); font-weight: 500; text-decoration: none; }
-.mobile-menu-cta-btn { display: block; margin: 1.5rem; text-align: center; padding: 13px; border-radius: 8px; font-weight: 700; font-size: 15px; text-decoration: none; }
-@media (max-width: 768px) {
-  .stat-strip { grid-template-columns: repeat(2, 1fr); }
-  .argument-section { grid-template-columns: 1fr; gap: 2rem; }
-  .program-weeks { grid-template-columns: 1fr; }
-  .project-section { grid-template-columns: 1fr; gap: 2rem; }
-  .outcomes-grid { grid-template-columns: 1fr; }
-  .process-steps { grid-template-columns: 1fr; }
-  .contact-layout { grid-template-columns: 1fr; }
-  .form-row { grid-template-columns: 1fr; }
-  .nav-hamburger { display: flex; }
-  .nav-cta { display: none; }
-  .nav-links { display: none; }
-  body.nav-open .mobile-menu { display: block; }
-  .page-hero { padding: 90px 1.25rem 40px; }
-  .main-content { padding: 0 1.25rem 60px; }
-  footer { flex-direction: column; gap: 0.5rem; text-align: center; padding: 1.5rem; }
-}
-
-/* SCROLL ANIMATIONS */
-.fade-up { opacity: 0; transform: translateY(28px); transition: opacity 0.65s ease, transform 0.65s ease; }
-.fade-up.visible { opacity: 1; transform: translateY(0); }
-/* PARALLAX HERO */
-.page-hero { will-change: transform; overflow: visible; }
-
-/* FAQ ACCORDION */
-.faq-item { padding: 0; cursor: default; }
-.faq-q {
-  display: flex; justify-content: space-between; align-items: flex-start;
-  gap: 1rem; padding: 1.4rem 0; margin-bottom: 0; cursor: pointer;
-  user-select: none;
-}
-.faq-q::after {
-  content: '+'; font-size: 1.4rem; font-weight: 300; color: var(--accent);
-  flex-shrink: 0; line-height: 1.1; transition: transform 0.25s;
-}
-.faq-item.open .faq-q::after { transform: rotate(45deg); }
-.faq-a { display: none; padding-bottom: 1.4rem; margin-top: 0; }
-.faq-item.open .faq-a { display: block; }
+@media (max-width: 1024px) { .week-split, .example-grid { grid-template-columns: 1fr; } .outcomes-grid { grid-template-columns: 1fr; } }
+@media (max-width: 768px) { .corp-stats { grid-template-columns: 1fr 1fr; } .process-steps { grid-template-columns: 1fr; } }
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "MakerSquare Corporate AI Training",
+  "description": "2-week AI intensive for teams of 8-20. Custom curriculum, dedicated instructor, real deployed tool by Day 10.",
+  "provider": {"@type": "EducationalOrganization", "name": "MakerSquare", "url": "https://www.makersquare.ai/"},
+  "url": "https://www.makersquare.ai/corporate.html",
+  "areaServed": {"@type": "Country", "name": "US"},
+  "serviceType": "Corporate AI Training"
+}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.makersquare.ai/"},{"@type":"ListItem","position":2,"name":"Corporate Training","item":"https://www.makersquare.ai/corporate"}]}
+</script>
 </head>
 <body>
 
-<nav>
-  <a href="index.html" class="nav-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1157.19 299.75" height="34" style="display:block;" aria-label="MakerSquare">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #80aafb;
-      }
-
-      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7 {
-        stroke-width: 0px;
-      }
-
-      .cls-2 {
-        fill: #ebf0fd;
-      }
-
-      .cls-3 {
-        fill: #ecf0fd;
-      }
-
-      .cls-4 {
-        fill: #89affb;
-      }
-
-      .cls-5 {
-        fill: #81aafb;
-      }
-
-      .cls-6 {
-        fill: #fff;
-      }
-
-      .cls-7 {
-        fill: #c1d4fa;
-      }
-    </style>
-  </defs>
-  <g>
-    <path class="cls-7" d="M84.05,96.9v100.82c0,7.24,4.21,13.81,10.79,16.83l20.84,9.7v-80.04l40.87,18.83v-32.54l-72.49-33.61Z"/>
-    <polygon class="cls-1" points="115.68 144.22 115.68 177.43 140.88 189.82 140.88 155.85 115.68 144.22"/>
-    <polygon class="cls-2" points="115.68 177.43 115.68 224.26 140.88 211.62 140.88 189.82 115.68 177.43"/>
-    <path class="cls-3" d="M156.54,130.51v32.54l40.87-18.82v80.04l20.84-9.71c6.57-3.02,10.79-9.6,10.79-16.83v-100.82l-72.49,33.61Z"/>
-    <polygon class="cls-4" points="172.31 155.84 172.31 213.05 197.41 224.34 197.41 144.23 172.31 155.84"/>
-    <path class="cls-5" d="M229.04,96.9l-22.05-8.79c-4.81-1.92-10.21-1.74-14.88.5l-35.57,17.06-35.57-17.06c-4.67-2.24-10.06-2.42-14.88-.5l-22.05,8.79,72.49,33.61h0l72.49-33.61Z"/>
-  </g>
-  <g>
-    <polygon class="cls-6" points="356.31 109.77 353.42 109.77 323.9 178.88 294.38 109.77 291.36 109.77 277.03 109.77 273.61 109.77 273.61 201.8 291.36 201.8 291.36 145.97 315.17 201.53 315.16 201.8 315.29 201.8 332.51 201.8 356.31 146.08 356.31 201.8 374.06 201.8 374.06 109.77 370.65 109.77 356.31 109.77"/>
-    <path class="cls-6" d="M416.93,132.91c-7.98,0-14.57,2.02-19.79,6.05-5.22,4.03-8.48,9.03-9.8,14.99l14.99,3.16h1.45c.44-2.28,1.8-4.36,4.08-6.25,2.28-1.89,5.3-2.83,9.07-2.83,4.03,0,7.36,1.23,9.99,3.68,2.22,2.07,3.49,4.62,3.84,7.64l-18.17,1.57c-8.5.7-14.97,2.96-19.39,6.77-4.43,3.81-6.64,8.96-6.64,15.45,0,4.03,1.01,7.63,3.02,10.78,2.02,3.16,4.8,5.61,8.35,7.36s7.6,2.63,12.16,2.63c4.91,0,9.34-.99,13.28-2.96,3.61-1.81,6.72-4.17,9.34-7.07v7.93h15.38v-37.74c0-9.9-2.78-17.57-8.35-23.01-5.57-5.44-13.17-8.15-22.81-8.15ZM422.65,186.03c-2.5,1.58-5.28,2.37-8.35,2.37-2.81,0-5.13-.59-6.97-1.78-1.84-1.18-2.76-2.74-2.76-4.67s.77-3.51,2.3-4.73c1.53-1.23,4.18-2.02,7.95-2.37l15.95-1.33c-.23,2.23-.94,4.36-2.15,6.39-1.49,2.5-3.48,4.54-5.98,6.11Z"/>
-    <polygon class="cls-6" points="528.95 136.06 528.95 135.01 506.73 135.01 482.93 160.68 482.93 106.08 482.54 105.03 465.18 107.14 465.18 201.8 482.93 201.8 482.93 184.63 491.72 175.35 509.49 201.8 529.35 201.8 529.35 200.75 503.48 162.94 528.95 136.06"/>
-    <path class="cls-6" d="M582.2,137.51c-5-3.07-10.87-4.6-17.62-4.6s-12.84,1.49-18.01,4.47c-5.17,2.98-9.23,7.14-12.16,12.49-2.94,5.35-4.4,11.53-4.4,18.54s1.49,13.19,4.47,18.54c2.98,5.35,7.12,9.51,12.43,12.49,5.3,2.98,11.46,4.47,18.47,4.47s12.99-1.58,18.21-4.73c5.21-3.15,9.18-7.71,11.9-13.67l-14.2-5.92h-1.58c-1.49,2.81-3.55,5.04-6.18,6.71-2.63,1.67-5.35,2.5-8.15,2.5-3.16,0-6.07-.79-8.74-2.37-2.67-1.58-4.82-3.66-6.44-6.25-1.05-1.67-1.75-3.45-2.12-5.33h48.08l1.97-1.97v-3.16c0-7.36-1.4-13.81-4.21-19.33-2.81-5.52-6.71-9.82-11.7-12.88ZM556.04,150.2c2.63-1.45,5.61-2.17,8.94-2.17,2.98,0,5.67.68,8.09,2.04,2.41,1.36,4.34,3.27,5.79,5.72.89,1.51,1.51,3.18,1.85,5h-32.54c.35-1.68.94-3.23,1.77-4.67,1.45-2.5,3.48-4.47,6.11-5.92Z"/>
-    <path class="cls-6" d="M632.3,139.48c-1.99,1.38-3.74,3.02-5.26,4.89v-9.37h-16.44v66.79h17.75v-33.4c0-3.68.66-6.86,1.97-9.53s3.18-4.71,5.59-6.12c2.41-1.4,5.28-2.1,8.61-2.1h8.81v-15.65h-6.18c-5.61,0-10.56,1.49-14.86,4.47Z"/>
-    <path class="cls-6" d="M710.27,168.74c-3.51-3.02-8.63-5.33-15.38-6.9l-12.62-2.89c-2.1-.44-3.66-1.16-4.67-2.17-1.01-1.01-1.51-2.08-1.51-3.22,0-1.75.9-3.11,2.7-4.08,1.8-.96,4.01-1.45,6.64-1.45,2.89,0,5.5.7,7.82,2.1,2.32,1.4,3.79,3.2,4.41,5.39l1.45.26,14.99-3.29c-1.58-6.14-4.84-10.94-9.8-14.4-4.95-3.46-10.98-5.19-18.08-5.19-5.26,0-9.97.88-14.13,2.63-4.16,1.75-7.43,4.19-9.8,7.3-2.37,3.11-3.55,6.77-3.55,10.98,0,4.91,1.69,9.05,5.06,12.43,3.37,3.38,8.17,5.77,14.4,7.17l12.62,2.76c2.45.53,4.29,1.27,5.52,2.24,1.23.97,1.84,2.28,1.84,3.94,0,1.93-1.01,3.48-3.02,4.67-2.02,1.18-4.52,1.78-7.49,1.78s-5.77-.7-8.09-2.1c-2.32-1.4-3.84-3.33-4.54-5.78l-1.58-.4-16.17,4.08c1.75,5.96,5.28,10.67,10.58,14.13,5.3,3.46,11.68,5.19,19.13,5.19,5.52,0,10.43-.92,14.73-2.76,4.29-1.84,7.67-4.47,10.12-7.89,2.45-3.42,3.68-7.41,3.68-11.97,0-5.34-1.75-9.53-5.26-12.56Z"/>
-    <path class="cls-6" d="M774.15,142.08c-2.27-2.39-4.98-4.43-8.15-6.09-3.94-2.06-8.46-3.09-13.54-3.09-6.05,0-11.53,1.51-16.44,4.54-4.91,3.02-8.79,7.19-11.64,12.49-2.85,5.3-4.27,11.42-4.27,18.34s1.42,13.08,4.27,18.47c2.85,5.39,6.73,9.6,11.64,12.62,4.91,3.02,10.39,4.54,16.44,4.54,5.08,0,9.6-1.05,13.54-3.16,2.58-1.38,4.86-3,6.84-4.87v32.22h17.75v-93.09h-16.44v7.07ZM764.94,185.63c-2.63,1.67-5.74,2.5-9.34,2.5s-6.6-.83-9.27-2.5c-2.67-1.66-4.76-3.99-6.25-6.97-1.49-2.98-2.24-6.4-2.24-10.25s.74-7.39,2.24-10.32c1.49-2.94,3.57-5.24,6.25-6.9,2.67-1.66,5.76-2.5,9.27-2.5s6.71.83,9.34,2.5c2.63,1.67,4.69,3.97,6.18,6.9,1.49,2.94,2.24,6.38,2.24,10.32s-.75,7.28-2.24,10.25c-1.49,2.98-3.55,5.31-6.18,6.97Z"/>
-    <path class="cls-6" d="M852.77,167.49c0,5.52-.92,9.77-2.76,12.75s-4.06,5.04-6.64,6.18c-2.59,1.14-4.93,1.71-7.03,1.71-2.72,0-5.04-.66-6.97-1.97-1.93-1.32-3.4-3.27-4.4-5.85-1.01-2.58-1.51-5.72-1.51-9.4v-35.9h-17.75v41.55c0,5.96,1.16,10.98,3.48,15.05,2.32,4.08,5.46,7.14,9.4,9.2,3.94,2.06,8.24,3.09,12.89,3.09,4.21,0,8.04-.77,11.5-2.3,3.46-1.53,6.53-3.7,9.2-6.51.67-.71,1.31-1.45,1.91-2.23v8.93h16.44v-66.79h-17.75v32.48Z"/>
-    <path class="cls-6" d="M913.39,132.91c-7.98,0-14.57,2.02-19.79,6.05-5.22,4.03-8.48,9.03-9.8,14.99l14.99,3.16h1.45c.44-2.28,1.8-4.36,4.08-6.25,2.28-1.89,5.3-2.83,9.07-2.83,4.03,0,7.36,1.23,9.99,3.68,2.22,2.07,3.49,4.62,3.84,7.64l-18.17,1.57c-8.5.7-14.97,2.96-19.39,6.77-4.43,3.81-6.64,8.96-6.64,15.45,0,4.03,1.01,7.63,3.02,10.78,2.02,3.16,4.8,5.61,8.35,7.36,3.55,1.75,7.6,2.63,12.16,2.63,4.91,0,9.34-.99,13.28-2.96,3.61-1.81,6.72-4.17,9.34-7.07v7.93h15.38v-37.74c0-9.9-2.78-17.57-8.35-23.01-5.57-5.44-13.17-8.15-22.81-8.15ZM919.11,186.03c-2.5,1.58-5.28,2.37-8.35,2.37-2.81,0-5.13-.59-6.97-1.78-1.84-1.18-2.76-2.74-2.76-4.67s.77-3.51,2.3-4.73c1.53-1.23,4.18-2.02,7.95-2.37l15.95-1.33c-.23,2.23-.94,4.36-2.15,6.39-1.49,2.5-3.48,4.54-5.98,6.11Z"/>
-    <path class="cls-6" d="M981.36,139.48c-1.99,1.38-3.74,3.02-5.26,4.89v-9.37h-16.44v66.79h17.75v-33.4c0-3.68.66-6.86,1.97-9.53s3.18-4.71,5.59-6.12c2.41-1.4,5.28-2.1,8.61-2.1h8.81v-15.65h-6.18c-5.61,0-10.56,1.49-14.86,4.47Z"/>
-    <path class="cls-6" d="M1068.93,150.39c-2.81-5.52-6.71-9.82-11.7-12.88s-10.87-4.6-17.62-4.6-12.84,1.49-18.01,4.47c-5.17,2.98-9.23,7.14-12.16,12.49-2.94,5.35-4.4,11.53-4.4,18.54s1.49,13.19,4.47,18.54c2.98,5.35,7.12,9.51,12.43,12.49,5.3,2.98,11.46,4.47,18.47,4.47s12.99-1.58,18.21-4.73c5.21-3.15,9.18-7.71,11.9-13.67l-14.2-5.92h-1.58c-1.49,2.81-3.55,5.04-6.18,6.71-2.63,1.67-5.35,2.5-8.15,2.5-3.16,0-6.07-.79-8.74-2.37-2.67-1.58-4.82-3.66-6.44-6.25-1.05-1.67-1.75-3.45-2.12-5.33h48.08l1.97-1.97v-3.16c0-7.36-1.4-13.81-4.21-19.33ZM1031.07,150.2c2.63-1.45,5.61-2.17,8.94-2.17,2.98,0,5.67.68,8.09,2.04,2.41,1.36,4.34,3.27,5.79,5.72.89,1.51,1.51,3.18,1.85,5h-32.54c.35-1.68.94-3.23,1.77-4.67,1.45-2.5,3.48-4.47,6.11-5.92Z"/>
-  </g>
-</svg></a>
-  <ul class="nav-links">
-    <li><a href="index.html#benefits">How it works</a></li>
-    <li><a href="index.html#who">Who it's for</a></li>
-    <li><a href="curriculum.html">Curriculum</a></li>
-    <li><a href="pricing.html">Pricing</a></li>
-    <li><a href="housing.html">Housing</a></li>
-    <li><a href="team.html">Team</a></li>
-    <li><a href="corporate.html" class="active">Corporate Training</a></li>
-    <li><a href="apply.html">Apply</a></li>
-  </ul>
-  <a href="#contact" class="nav-cta">Get in Touch</a>
-  <button class="nav-hamburger" onclick="document.body.classList.toggle('nav-open')" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><img src="logo-light.png" alt="MakerSquare"></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="curriculum.html">Curriculum</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="housing.html">Housing</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="corporate.html" class="active">Corporate</a></li>
+      <li><a href="scholarship.html">Scholarship</a></li>
+      <li><a href="apply.html" class="nav-apply">Apply</a></li>
+    </ul>
+    <a href="#contact" class="btn btn-primary btn-arrow">Get in Touch </a>
+    <div class="nav-social"><a href="https://www.linkedin.com/company/makersquare-ai" target="_blank" rel="noopener" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>Follow us</a></div>
+    <button class="nav-hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
 </nav>
 <div class="mobile-menu">
   <ul class="mobile-menu-links">
-    <li><a href="index.html#benefits">How it works</a></li>
-    <li><a href="index.html#who">Who it's for</a></li>
+    <li><a href="index.html">Home</a></li>
     <li><a href="curriculum.html">Curriculum</a></li>
     <li><a href="pricing.html">Pricing</a></li>
     <li><a href="housing.html">Housing</a></li>
     <li><a href="team.html">Team</a></li>
-    <li><a href="corporate.html">Corporate Training</a></li>
+    <li><a href="corporate.html">Corporate</a></li>
+    <li><a href="scholarship.html">Scholarship</a></li>
     <li><a href="apply.html">Apply</a></li>
   </ul>
-  <a href="#contact" class="mobile-menu-cta-btn" style="background:var(--accent);color:#0a0a0b;">Get in Touch →</a>
+  <a href="#contact" class="btn btn-primary btn-block btn-lg" style="margin-top:24px;">Get in Touch</a>
 </div>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="index.html">Home</a></li>
+    <li class="sep">/</li>
+    <li class="current">Corporate Training</li>
+  </ol>
+</nav>
 
 <!-- HERO -->
-<div class="page-hero">
-  <div class="page-label">For Companies &amp; Teams</div>
-  <h1>The best investment you can make<br><em>is the people already in it.</em></h1>
-  <p class="page-intro">Your people know the business. A 2-week AI intensive gives them the tools to do twice as much with that knowledge — automating the work that slows them down, and shipping something real before we leave.</p>
-  <div style="display:flex; gap:1rem; flex-wrap:wrap;">
-    <a href="#contact" class="btn-primary">Talk to Us →</a>
-    <a href="#program" class="btn-ghost">See the program</a>
-  </div>
-
-  <div class="stat-strip">
-    <div class="stat-cell">
-      <div class="stat-num">2</div>
-      <div class="stat-label">Weeks. Full days. Done.</div>
-    </div>
-    <div class="stat-cell">
-      <div class="stat-num">1</div>
-      <div class="stat-label">Project built for your business specifically</div>
-    </div>
-    <div class="stat-cell">
-      <div class="stat-num">10–20</div>
-      <div class="stat-label">People per cohort</div>
-    </div>
-    <div class="stat-cell">
-      <div class="stat-num">Day 10</div>
-      <div class="stat-label">Your team presents the live tool to leadership</div>
-    </div>
-  </div>
-</div>
-
-<div class="main-content">
-
-  <!-- THE ARGUMENT -->
-  <div class="argument-section">
-    <div class="argument-text">
-      <div class="section-label">Why companies do this now</div>
-      <h2 style="margin-bottom:1.25rem;">Your people already know<br><em>the business. Use that.</em></h2>
-      <p>Most companies try to solve output problems by adding headcount. The ones moving fastest right now are doing something different: <strong>investing in the people already there</strong> — giving them AI tools that multiply what they already know how to do.</p>
-      <p>Your team's domain expertise is the asset. AI removes the manual, repetitive work that consumes it. Two weeks is enough to see what that looks like inside your specific business — and to leave with something running.</p>
-    </div>
-    <div class="argument-callout">
-      <div class="argument-callout-title">What changes after two weeks</div>
-      <div class="argument-lines">
-        <div class="argument-line">
-          <div class="arg-icon">⚡</div>
-          <div class="arg-text">
-            <strong>Tasks that took hours take minutes</strong>
-            Research, drafting, data summarization, reporting — your team learns to use AI on the work they already do, not hypothetical use cases.
+<section class="section" style="padding-top:var(--s8);padding-bottom:var(--s9);">
+  <div class="container">
+    <div class="page-hero-grid">
+      <div>
+        <div class="section-label reveal">Corporate Training</div>
+    <h1 class="reveal" style="font-size:clamp(2rem,4vw,3rem);">The best investment you can make<br><span class="text-gradient">is the people already in it.</span></h1>
+    <p class="section-sub reveal" style="max-width:620px;">Your people know the business. A 2-week AI intensive gives them the tools to do twice as much.</p>
+      </div>
+      <div class="page-hero-visual reveal">
+        <div style="background:var(--light-bg);border:1px solid rgba(24,24,73,0.06);border-radius:var(--r-xl);padding:var(--s6);position:relative;">
+          <div style="display:flex;gap:8px;margin-bottom:10px;">
+            <div style="flex:1;background:var(--white);border:1px solid rgba(24,24,73,0.06);border-radius:var(--r-sm);padding:10px;text-align:center;"><div style="font-family:var(--font-display);font-size:1.1rem;font-weight:800;color:var(--navy);">W1</div><div style="font-size:0.6rem;color:var(--text-muted);">Learn</div></div>
+            <div style="flex:1;background:var(--navy);border-radius:var(--r-sm);padding:10px;text-align:center;"><div style="font-family:var(--font-display);font-size:1.1rem;font-weight:800;color:var(--white);">W2</div><div style="font-size:0.6rem;color:var(--sky);">Build</div></div>
           </div>
+          <div style="display:flex;align-items:center;gap:6px;margin-bottom:8px;"><div style="width:20px;height:20px;border-radius:50%;background:var(--cloud);"></div><div style="width:20px;height:20px;border-radius:50%;background:var(--cloud);"></div><div style="width:20px;height:20px;border-radius:50%;background:var(--cloud);"></div><div style="width:20px;height:20px;border-radius:50%;background:var(--cloud);"></div><div style="font-size:0.6rem;color:var(--text-muted);margin-left:4px;">8-20 people</div></div>
+          <div style="height:6px;background:linear-gradient(90deg,var(--indigo),var(--green));border-radius:3px;margin-top:12px;"></div>
+          <div style="display:flex;justify-content:space-between;margin-top:4px;font-size:0.6rem;color:var(--text-muted);"><span>Day 1</span><span>Day 10 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="7"/><path d="M8.21 13.89L7 23l5-3 5 3-1.21-9.12"/></svg></span></div>
+          <div style="position:absolute;top:-10px;right:-10px;background:var(--white);border:1px solid rgba(24,24,73,0.06);border-radius:var(--r-sm);padding:5px 10px;box-shadow:var(--shadow-md);font-size:0.65rem;font-weight:700;color:var(--green);animation:float-1 4s ease-in-out infinite;">1 tool deployed</div>
         </div>
-        <div class="argument-line">
-          <div class="arg-icon">🔧</div>
-          <div class="arg-text">
-            <strong>A live tool, built for your workflows</strong>
-            Not a certificate. Not a slide deck. A working AI tool your team actually uses on Day 11 — built against your real data and processes during the program.
-          </div>
-        </div>
-        <div class="argument-line">
-          <div class="arg-icon">📈</div>
-          <div class="arg-text">
-            <strong>Capability that compounds</strong>
-            Once your team knows how to use AI on one workflow, they apply it to the next. The two-week investment keeps paying without additional training spend.
-          </div>
+      </div>
+    </div>
+
+    <div class="corp-stats">
+      <div class="corp-stat reveal reveal-d1"><div class="corp-stat-num">2 weeks</div><div class="corp-stat-label">Full-time intensive</div></div>
+      <div class="corp-stat reveal reveal-d2"><div class="corp-stat-num">1 tool</div><div class="corp-stat-label">Built for your business</div></div>
+      <div class="corp-stat reveal reveal-d3"><div class="corp-stat-num">8-20</div><div class="corp-stat-label">People per cohort</div></div>
+      <div class="corp-stat reveal reveal-d4"><div class="corp-stat-num">Day 10</div><div class="corp-stat-label">Team presents to leadership</div></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- WHY NOW -->
+<section class="section section--alt">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--s8);align-items:start;">
+      <div>
+        <div class="section-label reveal">Why companies do this now</div>
+        <h2 class="reveal">Your people already know the business. <span class="text-accent">Use that.</span></h2>
+        <p class="reveal" style="color:var(--text-secondary);line-height:1.75;margin-top:var(--s3);">Most companies solve output problems by adding headcount. The ones moving fastest right now invest in the people already there, giving them AI tools that multiply what they already know.</p>
+        <p class="reveal" style="color:var(--text-secondary);line-height:1.75;margin-top:var(--s3);">Your team's domain expertise is the asset. AI removes the manual, repetitive work that consumes it. Two weeks is enough to see what that looks like inside your specific business.</p>
+      </div>
+      <div class="reveal">
+        <div style="background:var(--white);border:1px solid rgba(24,24,73,0.06);border-radius:var(--r-xl);padding:var(--s7);display:flex;flex-direction:column;gap:var(--s5);">
+          <div style="font-family:var(--font-display);font-size:0.85rem;font-weight:700;color:var(--navy);">What changes after two weeks</div>
+          <div style="display:flex;gap:12px;align-items:flex-start;"><span style="font-size:1.1rem;flex-shrink:0;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></span><div><div style="font-weight:600;color:var(--navy);font-size:0.9rem;">Tasks that took hours take minutes</div><div style="font-size:0.82rem;color:var(--text-secondary);margin-top:2px;">Research, drafting, data summarization, reporting. Your team uses AI on their actual work, not hypothetical use cases.</div></div></div>
+          <div style="display:flex;gap:12px;align-items:flex-start;"><span style="font-size:1.1rem;flex-shrink:0;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></span><div><div style="font-weight:600;color:var(--navy);font-size:0.9rem;">A live tool, built for your workflows</div><div style="font-size:0.82rem;color:var(--text-secondary);margin-top:2px;">Not a certificate. A working AI tool your team actually uses on Day 11, built against your real data and processes.</div></div></div>
+          <div style="display:flex;gap:12px;align-items:flex-start;"><span style="font-size:1.1rem;flex-shrink:0;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></span><div><div style="font-weight:600;color:var(--navy);font-size:0.9rem;">Capability that compounds</div><div style="font-size:0.82rem;color:var(--text-secondary);margin-top:2px;">Once your team knows how to use AI on one workflow, they apply it to the next. The investment keeps paying without additional training.</div></div></div>
         </div>
       </div>
     </div>
   </div>
+</section>
 
-  <!-- THE PROGRAM -->
-  <div class="program-section" id="program">
-    <div class="section-label">The program</div>
-    <h2 style="margin-bottom:0.5rem;">Two weeks. Full days.<br><em>No fluff.</em></h2>
-    <p style="font-size:14px; color:var(--muted2); font-weight:300; max-width:540px; line-height:1.75; margin-bottom:0;">Mon–Fri, on-site or in Austin. Every session is applied — your team works on real problems from your business, not case studies from someone else's.</p>
-    <div class="program-weeks">
-      <div class="week-card">
-        <div class="week-label">Week 1</div>
-        <div class="week-title">Learn it. Apply it immediately.</div>
-        <div class="week-desc">Day 1 starts with how AI actually works — no theory for its own sake. By the end of the first week your team is using AI tools in their daily workflows and has scoped the project they'll build in Week 2.</div>
-        <div class="week-items">
-          <div class="week-item">How AI models work and what they're actually useful for in your context</div>
-          <div class="week-item">Prompt engineering — getting reliable, professional-quality outputs</div>
-          <div class="week-item">AI tools applied to your team's real daily work: research, writing, analysis, summarization</div>
-          <div class="week-item">Identifying automation opportunities inside your existing workflows</div>
-          <div class="week-item">Project scoping — defining exactly what your team will build in Week 2</div>
-        </div>
-        <div class="week-deliverable">
-          <div class="deliverable-tag">End of Week 1</div>
-          <div class="deliverable-text">Every participant has integrated AI into at least one part of their actual job. Project scope defined and approved by leadership.</div>
-        </div>
+
+<!-- TWO WEEKS -->
+<section class="section">
+  <div class="container">
+    <div style="text-align:center;">
+      <div class="section-label reveal" style="justify-content:center;">The program</div>
+      <h2 class="reveal">Two weeks. Full days. <span class="text-accent">No fluff.</span></h2>
+      <p class="section-sub reveal" style="margin:var(--s3) auto 0;">Mon-Fri. On-site at your office or in Austin.</p>
+    </div>
+
+    <div class="week-split">
+      <div class="week-block week-block--1 reveal reveal-d1">
+        <div class="week-block-label">Week 1 &middot; Learn</div>
+        <h3>How AI works. Applied to your work.</h3>
+        <ul class="week-block-list">
+          <li>How AI models work (the intuition, not the math)</li>
+          <li>Prompt engineering for real business tasks</li>
+          <li>AI applied to your team's actual daily work</li>
+          <li>Identify automation opportunities across the org</li>
+          <li>Scope the project your team will build in Week 2</li>
+        </ul>
+        <div style="margin-top:var(--s5);padding-top:var(--s4);border-top:1px solid var(--ice);font-size:0.82rem;color:var(--indigo);font-weight:600;">End of Week 1: Every participant has integrated AI into their actual job. Project scope approved by leadership.</div>
       </div>
-      <div class="week-card">
-        <div class="week-label">Week 2</div>
-        <div class="week-title">Build it. Ship it. Present it.</div>
-        <div class="week-desc">Week 2 is entirely focused on building and deploying the project your team scoped. By Friday afternoon they present a live, working AI tool to your leadership — something built for your data, your processes, your team.</div>
-        <div class="week-items">
-          <div class="week-item">Building the company-specific AI tool using no-code and low-code platforms</div>
-          <div class="week-item">Connecting AI to your real data sources, documents, and workflows</div>
-          <div class="week-item">Testing, refining, and making it production-ready</div>
-          <div class="week-item">Documenting how to maintain and expand it after the program ends</div>
-          <div class="week-item">Presenting to leadership — what was built, what it automates, what it saves</div>
-        </div>
-        <div class="week-deliverable">
-          <div class="deliverable-tag">End of Week 2</div>
-          <div class="deliverable-text">A deployed, working AI tool built for your business. Presented live to leadership. Ready to use on Day 11.</div>
-        </div>
+      <div class="week-block week-block--2 reveal reveal-d2">
+        <div class="week-block-label">Week 2 &middot; Build</div>
+        <h3>Build it. Ship it. Present it.</h3>
+        <ul class="week-block-list">
+          <li>Full build sprint on the scoped project</li>
+          <li>No-code and low-code AI tools</li>
+          <li>Connect to your real data and systems</li>
+          <li>Test, refine, document for maintenance</li>
+          <li>Present the deployed tool to leadership</li>
+        </ul>
+        <div style="margin-top:var(--s5);padding-top:var(--s4);border-top:1px solid rgba(255,255,255,0.1);font-size:0.82rem;color:var(--sky);font-weight:600;">End of Week 2: A deployed, working AI tool. Presented live to leadership. Ready to use on Day 11.</div>
       </div>
     </div>
   </div>
+</section>
 
-  <!-- THE PROJECT -->
-  <div class="project-section">
-    <div class="project-left">
-      <div class="section-label">The project</div>
-      <h2 style="margin-bottom:1rem;">Built for your business.<br><em>Not a template.</em></h2>
-      <p>Every corporate intensive ends with one project — built specifically for the company running the program. Before the intensive starts, we spend time with your leadership team understanding your workflows, your data, and where the highest-ROI automation opportunity is.</p>
-      <p>Your team then builds that tool during Week 2. <strong>It's yours. It runs after we leave.</strong> It's not a demo — it's the actual thing, deployed on infrastructure you control.</p>
+
+<!-- CASE STUDIES -->
+<section class="section section--alt">
+  <div class="container">
+    <div style="text-align:center;">
+      <div class="section-label reveal" style="justify-content:center;">Examples</div>
+      <h2 class="reveal">Built for your business. <span class="text-accent">Not a template.</span></h2>
+      <p class="section-sub reveal" style="margin:var(--s3) auto 0;">Pre-work scoping with leadership. Your team builds during Week 2. Deployed on infrastructure you control.</p>
     </div>
-    <div>
-      <div style="font-size:12px; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--muted2); margin-bottom:1rem;">Examples of what teams have built</div>
-      <div class="project-examples">
-        <div class="project-example">
+
+    <div class="example-grid">
+      <div class="example-card reveal reveal-d1">
+        <div class="example-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></div>
+        <div>
           <div class="example-industry">Law Firm</div>
-          <div class="example-project">AI research assistant that searches case law, summarizes findings, and drafts initial memos — cutting attorney research time by 60%.</div>
+          <h3>AI research assistant</h3>
+          <p>Search case law, summarize findings, draft memos from precedent.</p>
+          <div class="example-result">60% reduction in research time</div>
         </div>
-        <div class="project-example">
+      </div>
+      <div class="example-card reveal reveal-d2">
+        <div class="example-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><path d="M9 22V12h6v10"/></svg></div>
+        <div>
           <div class="example-industry">Real Estate Operations</div>
-          <div class="example-project">Automated lease abstraction tool that extracts key terms, flags anomalies, and populates a tracking database — eliminating 4 hours of manual review per property.</div>
+          <h3>Automated lease abstraction</h3>
+          <p>Extract terms, flag anomalies, populate database automatically.</p>
+          <div class="example-result">Eliminates 4 hrs manual review per property</div>
         </div>
-        <div class="project-example">
+      </div>
+      <div class="example-card reveal reveal-d3">
+        <div class="example-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="1" y="4" width="22" height="16" rx="2"/><path d="M1 10h22"/></svg></div>
+        <div>
           <div class="example-industry">Financial Services</div>
-          <div class="example-project">Client reporting assistant that pulls account data, drafts narrative summaries, and formats PDFs — reducing a 3-hour monthly process to 20 minutes.</div>
+          <h3>Client reporting assistant</h3>
+          <p>Pull data, draft narratives, format branded PDFs automatically.</p>
+          <div class="example-result">3 hours reduced to 20 minutes</div>
         </div>
-        <div class="project-example">
+      </div>
+      <div class="example-card reveal reveal-d4">
+        <div class="example-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></div>
+        <div>
           <div class="example-industry">Staffing Agency</div>
-          <div class="example-project">Candidate screening tool that reads resumes, scores against job requirements, and drafts recruiter briefing notes — letting one recruiter do the work of three.</div>
+          <h3>Candidate screening tool</h3>
+          <p>Read resumes, score fit, draft recruiter notes at scale.</p>
+          <div class="example-result">1 recruiter does the work of 3</div>
         </div>
       </div>
     </div>
   </div>
+</section>
 
-  <!-- WHAT THEY LEAVE WITH -->
-  <div class="outcomes-section">
-    <div class="section-label">What your team leaves with</div>
-    <h2 style="margin-bottom:2.5rem;">Specific outcomes.<br><em>Not vague skills.</em></h2>
+
+<!-- WHAT THEY LEAVE WITH -->
+<section class="section">
+  <div class="container">
+    <div style="text-align:center;">
+      <div class="section-label reveal" style="justify-content:center;">Outcomes</div>
+      <h2 class="reveal">Specific outcomes. <span class="text-accent">Not vague skills.</span></h2>
+    </div>
+
     <div class="outcomes-grid">
-      <div class="outcome-card">
-        <div class="outcome-icon">🔧</div>
-        <div class="outcome-title">One deployed AI tool</div>
-        <div class="outcome-desc">Built during the program for your specific workflows and data. Yours to use, modify, and expand. Not a prototype — something that runs in production on Day 11.</div>
+      <div class="outcome-card reveal reveal-d1">
+        <div class="outcome-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></div>
+        <h3>One deployed AI tool</h3>
+        <p>Built for your specific workflows and data. Yours to use, modify, and expand. Not a prototype. Something that runs in production on Day 11.</p>
       </div>
-      <div class="outcome-card">
-        <div class="outcome-icon">🧠</div>
-        <div class="outcome-title">A team that knows how to use AI</div>
-        <div class="outcome-desc">Not just the one person who was already into it. Every participant leaves knowing how to apply AI to their actual job — and how to identify what to automate next.</div>
+      <div class="outcome-card reveal reveal-d2">
+        <div class="outcome-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2a10 10 0 0110 10c0 5.52-4.48 10-10 10S2 17.52 2 12"/><path d="M12 2c3 3 4.5 6.5 4.5 10S15 19 12 22"/><path d="M2 12h10"/></svg></div>
+        <h3>A team that knows how to use AI</h3>
+        <p>Not just the one person who was already into it. Every participant leaves knowing how to apply AI to their job and what to automate next.</p>
       </div>
-      <div class="outcome-card">
-        <div class="outcome-icon">📋</div>
-        <div class="outcome-title">A roadmap of what to build next</div>
-        <div class="outcome-desc">By the end of the program your team has identified 5–10 additional automation opportunities in your business. You know exactly where to invest next — without needing external help.</div>
+      <div class="outcome-card reveal reveal-d3">
+        <div class="outcome-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M16 13H8m8 4H8m2-8H8"/></svg></div>
+        <h3>A roadmap of what to build next</h3>
+        <p>Your team identifies 5-10 additional automation opportunities. You know exactly where to invest next, without needing external help.</p>
       </div>
     </div>
   </div>
+</section>
 
-  <!-- PROCESS -->
-  <div class="process-section">
-    <div class="section-label">How it works</div>
-    <h2 style="margin-bottom:0.5rem;">From first call to<br><em>deployed tool.</em></h2>
-    <p style="font-size:14px; color:var(--muted2); font-weight:300; max-width:480px; margin-bottom:0;">We move fast. Most engagements go from first conversation to Day 1 of the intensive in under 3 weeks.</p>
+
+<!-- PROCESS -->
+<section class="section section--alt">
+  <div class="container">
+    <div style="text-align:center;">
+      <div class="section-label reveal" style="justify-content:center;">How it works</div>
+      <h2 class="reveal">From first call to <span class="text-accent">deployed tool.</span></h2>
+      <p class="section-sub reveal" style="margin:var(--s3) auto 0;">Most engagements go from first conversation to Day 1 in under 3 weeks.</p>
+    </div>
+
     <div class="process-steps">
-      <div class="process-step">
-        <div class="process-num">01</div>
-        <div class="process-title">Discovery Call</div>
-        <div class="process-desc">We talk to you and 1–2 people who know the business operations well. We identify the highest-ROI automation opportunity and determine if the program is the right fit. No long sales cycle.</div>
-        <div class="process-time">45 minutes</div>
+      <div class="process-step reveal reveal-d1">
+        <div class="process-step-num">01</div>
+        <h3>Discovery Call</h3>
+        <p>We talk to you and 1-2 people who know the operations well. We identify the highest-ROI automation opportunity. No long sales cycle.</p>
+        <div style="margin-top:var(--s3);font-size:0.75rem;font-weight:600;color:var(--indigo);">45 minutes</div>
       </div>
-      <div class="process-step">
-        <div class="process-num">02</div>
-        <div class="process-title">Pre-Work Scoping</div>
-        <div class="process-desc">Before Week 1 starts, we spend 2–3 days with your team understanding your tools, your data sources, and exactly what the project will be. Your leadership signs off on the project scope before anything is built.</div>
-        <div class="process-time">2–3 days on-site or remote</div>
+      <div class="process-step reveal reveal-d2">
+        <div class="process-step-num">02</div>
+        <h3>Pre-Work Scoping</h3>
+        <p>We work with your team to understand your tools, data sources, and exactly what the project will be. Leadership signs off on scope before anything is built.</p>
+        <div style="margin-top:var(--s3);font-size:0.75rem;font-weight:600;color:var(--indigo);">2-3 days, on-site or remote</div>
       </div>
-      <div class="process-step">
-        <div class="process-num">03</div>
-        <div class="process-title">The Two-Week Intensive</div>
-        <div class="process-desc">Full days, on-site at your office or in Austin. By end of Day 10 your team presents a live tool to leadership. We leave documentation, a maintenance guide, and a prioritized roadmap of what to build next.</div>
-        <div class="process-time">10 days, Mon–Fri</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- CONTACT -->
-  <div class="contact-section" id="contact">
-    <div class="section-label">Get in touch</div>
-    <h2 style="margin-bottom:2.5rem;">Tell us about<br><em>your team.</em></h2>
-    <div class="contact-layout">
-      <div class="contact-left">
-        <h3>What happens next</h3>
-        <p>Send us a message and we'll respond within one business day. If it sounds like a fit, we'll schedule a 45-minute discovery call — no pitch deck, no demo. Just a conversation about where AI could make the biggest difference for your team right now.</p>
-        <div class="contact-detail">📍 Austin, TX — or on-site at your office</div>
-        <div class="contact-detail">✉ <a href="mailto:hello@makersquare.ai">hello@makersquare.ai</a></div>
-      </div>
-      <div class="contact-form">
-        <iframe data-tally-src="https://tally.so/embed/xXyLz9?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1&formEventsForwarding=1" loading="lazy" width="100%" height="1096" frameborder="0" marginheight="0" marginwidth="0" title="Bring MakerSquare to Your Team"></iframe>
-        <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+      <div class="process-step reveal reveal-d3">
+        <div class="process-step-num">03</div>
+        <h3>Two-Week Intensive</h3>
+        <p>Full days on-site. Day 10: your team presents a live tool to leadership. We leave documentation, a maintenance guide, and a prioritized roadmap.</p>
+        <div style="margin-top:var(--s3);font-size:0.75rem;font-weight:600;color:var(--indigo);">10 days, Mon-Fri</div>
       </div>
     </div>
   </div>
+</section>
 
-  <!-- FAQ -->
-  <div style="margin-top:4rem;">
-    <div class="section-label">FAQ</div>
-    <h2 style="margin-bottom:0.5rem;">Questions we<br><em>hear often.</em></h2>
+
+<!-- FAQ -->
+<section class="section section--alt">
+  <div class="container">
+    <div style="text-align:center;">
+      <div class="section-label reveal" style="justify-content:center;">FAQ</div>
+      <h2 class="reveal">Questions we <span class="text-accent">hear often.</span></h2>
+    </div>
+
     <div class="faq-list">
-      <div class="faq-item">
-        <div class="faq-q">Do our people need any technical background?</div>
-        <div class="faq-a">No. The only requirement is that participants know your business well. We've run this with lawyers, account managers, operations coordinators, recruiters, and finance teams — people who use computers every day but have never written a line of code. Domain knowledge is the asset. We provide the technical layer.</div>
+      <div class="faq-item reveal"><button class="faq-question">Do our people need any technical background?<span class="faq-chevron">&#9660;</span></button><div class="faq-answer"><div class="faq-answer-inner">No. The only requirement is that participants know your business well. We've run this with lawyers, account managers, operations coordinators, recruiters, and finance teams. People who use computers every day but have never written code. Domain knowledge is the asset. We provide the technical layer.</div></div></div>
+      <div class="faq-item reveal"><button class="faq-question">Can you run this at our office?<span class="faq-chevron">&#9660;</span></button><div class="faq-answer"><div class="faq-answer-inner">Yes. On-site delivery is available for teams of 12 or more. It's often the right call because it's less disruptive to operations and keeps people in the context of your actual business. Travel and logistics are included in the engagement cost.</div></div></div>
+      <div class="faq-item reveal"><button class="faq-question">Who owns what gets built?<span class="faq-chevron">&#9660;</span></button><div class="faq-answer"><div class="faq-answer-inner">You do. 100%. Everything built during the program belongs to your company: the tool, the code, the documentation. We retain no rights. The only thing we ask is permission to describe the engagement category anonymously when talking to prospective clients.</div></div></div>
+      <div class="faq-item reveal"><button class="faq-question">What if we want to run this for multiple teams?<span class="faq-chevron">&#9660;</span></button><div class="faq-answer"><div class="faq-answer-inner">We run sequential cohorts. One team goes through the intensive, then the next. Each cohort gets its own scoping and builds its own project. For 50+ people, we design a multi-cohort plan and pricing in the initial conversation.</div></div></div>
+      <div class="faq-item reveal"><button class="faq-question">How do you handle proprietary data?<span class="faq-chevron">&#9660;</span></button><div class="faq-answer"><div class="faq-answer-inner">We work within your security requirements. We can operate entirely on your infrastructure, use only AI tools with no data retention policies, or follow whatever data handling requirements your legal and IT teams specify. We address this explicitly during scoping before any agreement is signed.</div></div></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="container">
+    <div style="max-width:600px;margin:0 auto;text-align:center;">
+      <div class="section-label reveal" style="justify-content:center;">Get started</div>
+      <h2 class="reveal">Tell us about <span class="text-accent">your team.</span></h2>
+      <p class="reveal" style="font-size:0.9rem;color:var(--text-secondary);margin-top:var(--s2);margin-bottom:var(--s6);">We respond within one business day. If it sounds like a fit, we schedule a 45-minute discovery call. No pitch deck, no demo. Just a conversation about where AI could make the biggest difference for your team right now.</p>
+
+      <!-- FORM PLACEHOLDER -->
+      <div id="zf_div_kYTFNWAyd-_QE2cD3XdNwC1mJe5sVVaavC45od_tmt0"></div>
+      <script type="text/javascript">
+      (function() {
+          try{
+              var f = document.createElement("iframe");
+              var ifrmSrc = 'https://forms.zohopublic.com/makersquare/form/CorporateForm1/formperma/kYTFNWAyd-_QE2cD3XdNwC1mJe5sVVaavC45od_tmt0?zf_rszfm=1';
+              try{
+                  if ( typeof ZFAdvLead != "undefined" && typeof zfutm_zfAdvLead != "undefined" ) { for( var prmIdx = 0 ; prmIdx < ZFAdvLead.utmPNameArr.length ; prmIdx ++ ) { var utmPm = ZFAdvLead.utmPNameArr[ prmIdx ]; utmPm = ( ZFAdvLead.isSameDomian && ( ZFAdvLead.utmcustPNameArr.indexOf(utmPm) == -1 ) ) ? "zf_" + utmPm : utmPm; var utmVal = zfutm_zfAdvLead.zfautm_gC_enc( ZFAdvLead.utmPNameArr[ prmIdx ] ); if ( typeof utmVal !== "undefined" ) { if ( utmVal != "" ) { if(ifrmSrc.indexOf('?') > 0){ ifrmSrc = ifrmSrc+'&'+utmPm+'='+utmVal; }else{ ifrmSrc = ifrmSrc+'?'+utmPm+'='+utmVal; } } } } }
+                  if ( typeof ZFLead !== "undefined" && typeof zfutm_zfLead !== "undefined" ) { for( var prmIdx = 0 ; prmIdx < ZFLead.utmPNameArr.length ; prmIdx ++ ) { var utmPm = ZFLead.utmPNameArr[ prmIdx ]; var utmVal = zfutm_zfLead.zfutm_gC_enc( ZFLead.utmPNameArr[ prmIdx ] ); if ( typeof utmVal !== "undefined" ) { if ( utmVal != "" ){ if(ifrmSrc.indexOf('?') > 0){ ifrmSrc = ifrmSrc+'&'+utmPm+'='+utmVal; }else{ ifrmSrc = ifrmSrc+'?'+utmPm+'='+utmVal; } } } } }
+              }catch(e){}
+              f.src = ifrmSrc; f.style.border="none"; f.style.height="1410px"; f.style.width="100%"; f.style.maxWidth="560px"; f.style.transition="all 0.5s ease"; f.setAttribute("aria-label", "Corporate Form");
+              var d = document.getElementById("zf_div_kYTFNWAyd-_QE2cD3XdNwC1mJe5sVVaavC45od_tmt0"); d.appendChild(f);
+              window.addEventListener('message', function (){ var evntData = event.data; if( evntData && evntData.constructor == String ){ var zf_ifrm_data = evntData.split("|"); if ( zf_ifrm_data.length == 2 || zf_ifrm_data.length == 3 ) { var zf_perma = zf_ifrm_data[0]; var zf_ifrm_ht_nw = ( parseInt(zf_ifrm_data[1], 10) + 15 ) + "px"; var iframe = document.getElementById("zf_div_kYTFNWAyd-_QE2cD3XdNwC1mJe5sVVaavC45od_tmt0").getElementsByTagName("iframe")[0]; if ( (iframe.src).indexOf('formperma') > 0 && (iframe.src).indexOf(zf_perma) > 0 ) { var prevIframeHeight = iframe.style.height; if ( prevIframeHeight != zf_ifrm_ht_nw ) { iframe.style.height = zf_ifrm_ht_nw; } } } } }, false);
+          }catch(e){}
+      })();
+      </script>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo"><img src="logo-dark.png" alt="MakerSquare"></a>
+        <p>4-week in-person AI bootcamp in Austin, TX for operators, founders, and professionals.</p>
+        <a href="apply.html" class="btn btn-primary btn-arrow" style="font-size:0.82rem;padding:10px 20px;">Apply Now </a>
       </div>
-      <div class="faq-item">
-        <div class="faq-q">Can you run this at our office?</div>
-        <div class="faq-a">Yes. On-site delivery is available and is often the right call for teams of 12 or more — it's less disruptive to your operations and keeps people in the context of your actual business. Travel and logistics are included in the engagement cost.</div>
+      <div>
+        <div class="footer-col-title">Program</div>
+        <ul class="footer-col-links">
+          <li><a href="curriculum.html">Curriculum</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="apply.html">Apply</a></li>
+          <li><a href="scholarship.html">Scholarship</a></li>
+        </ul>
       </div>
-      <div class="faq-item">
-        <div class="faq-q">Who owns what gets built?</div>
-        <div class="faq-a">You do. Everything built during the program — the tool, the code, the documentation — belongs to your company. We retain no rights to it. The only thing we ask is permission to describe the engagement category anonymously (e.g., "worked with a professional services firm") when talking to prospective clients, unless you want us to use your name.</div>
+      <div>
+        <div class="footer-col-title">Company</div>
+        <ul class="footer-col-links">
+          <li><a href="team.html">Team</a></li>
+          <li><a href="corporate.html">Corporate Training</a></li>
+          <li><a href="housing.html">Housing</a></li>
+        </ul>
       </div>
-      <div class="faq-item">
-        <div class="faq-q">What if we want to run this for multiple teams?</div>
-        <div class="faq-a">We can run sequential cohorts — one team through the intensive, then the next. Each cohort gets its own scoping and builds its own project. For companies with 50+ people to train, we'll work out a multi-cohort plan and pricing in the initial conversation.</div>
+      <div>
+        <div class="footer-col-title">Contact</div>
+        <a href="mailto:hello@makersquare.ai" class="footer-contact-email">hello@makersquare.ai</a>
+        <p style="font-size:0.82rem;color:rgba(255,255,255,0.4);">Austin, TX</p>
+        <div class="footer-social"><a href="https://www.linkedin.com/company/makersquare-ai" target="_blank" rel="noopener" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>Follow us on LinkedIn</a></div>
       </div>
-      <div class="faq-item">
-        <div class="faq-q">How do you handle our proprietary data?</div>
-        <div class="faq-a">We work within your security requirements. We can operate entirely on your infrastructure, use only publicly available AI tools with no data retention policies, or follow whatever data handling requirements your legal and IT teams specify. We'll address this explicitly during scoping before any agreement is signed.</div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">&copy; 2026 MakerSquare LLC. Austin, TX.</div>
+      <div class="footer-bottom-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
       </div>
     </div>
   </div>
-
-</div>
-
-<footer>
-  <a href="index.html" class="footer-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1157.19 299.75" height="26" style="display:block;" aria-label="MakerSquare">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #80aafb;
-      }
-
-      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7 {
-        stroke-width: 0px;
-      }
-
-      .cls-2 {
-        fill: #ebf0fd;
-      }
-
-      .cls-3 {
-        fill: #ecf0fd;
-      }
-
-      .cls-4 {
-        fill: #89affb;
-      }
-
-      .cls-5 {
-        fill: #81aafb;
-      }
-
-      .cls-6 {
-        fill: #fff;
-      }
-
-      .cls-7 {
-        fill: #c1d4fa;
-      }
-    </style>
-  </defs>
-  <g>
-    <path class="cls-7" d="M84.05,96.9v100.82c0,7.24,4.21,13.81,10.79,16.83l20.84,9.7v-80.04l40.87,18.83v-32.54l-72.49-33.61Z"/>
-    <polygon class="cls-1" points="115.68 144.22 115.68 177.43 140.88 189.82 140.88 155.85 115.68 144.22"/>
-    <polygon class="cls-2" points="115.68 177.43 115.68 224.26 140.88 211.62 140.88 189.82 115.68 177.43"/>
-    <path class="cls-3" d="M156.54,130.51v32.54l40.87-18.82v80.04l20.84-9.71c6.57-3.02,10.79-9.6,10.79-16.83v-100.82l-72.49,33.61Z"/>
-    <polygon class="cls-4" points="172.31 155.84 172.31 213.05 197.41 224.34 197.41 144.23 172.31 155.84"/>
-    <path class="cls-5" d="M229.04,96.9l-22.05-8.79c-4.81-1.92-10.21-1.74-14.88.5l-35.57,17.06-35.57-17.06c-4.67-2.24-10.06-2.42-14.88-.5l-22.05,8.79,72.49,33.61h0l72.49-33.61Z"/>
-  </g>
-  <g>
-    <polygon class="cls-6" points="356.31 109.77 353.42 109.77 323.9 178.88 294.38 109.77 291.36 109.77 277.03 109.77 273.61 109.77 273.61 201.8 291.36 201.8 291.36 145.97 315.17 201.53 315.16 201.8 315.29 201.8 332.51 201.8 356.31 146.08 356.31 201.8 374.06 201.8 374.06 109.77 370.65 109.77 356.31 109.77"/>
-    <path class="cls-6" d="M416.93,132.91c-7.98,0-14.57,2.02-19.79,6.05-5.22,4.03-8.48,9.03-9.8,14.99l14.99,3.16h1.45c.44-2.28,1.8-4.36,4.08-6.25,2.28-1.89,5.3-2.83,9.07-2.83,4.03,0,7.36,1.23,9.99,3.68,2.22,2.07,3.49,4.62,3.84,7.64l-18.17,1.57c-8.5.7-14.97,2.96-19.39,6.77-4.43,3.81-6.64,8.96-6.64,15.45,0,4.03,1.01,7.63,3.02,10.78,2.02,3.16,4.8,5.61,8.35,7.36s7.6,2.63,12.16,2.63c4.91,0,9.34-.99,13.28-2.96,3.61-1.81,6.72-4.17,9.34-7.07v7.93h15.38v-37.74c0-9.9-2.78-17.57-8.35-23.01-5.57-5.44-13.17-8.15-22.81-8.15ZM422.65,186.03c-2.5,1.58-5.28,2.37-8.35,2.37-2.81,0-5.13-.59-6.97-1.78-1.84-1.18-2.76-2.74-2.76-4.67s.77-3.51,2.3-4.73c1.53-1.23,4.18-2.02,7.95-2.37l15.95-1.33c-.23,2.23-.94,4.36-2.15,6.39-1.49,2.5-3.48,4.54-5.98,6.11Z"/>
-    <polygon class="cls-6" points="528.95 136.06 528.95 135.01 506.73 135.01 482.93 160.68 482.93 106.08 482.54 105.03 465.18 107.14 465.18 201.8 482.93 201.8 482.93 184.63 491.72 175.35 509.49 201.8 529.35 201.8 529.35 200.75 503.48 162.94 528.95 136.06"/>
-    <path class="cls-6" d="M582.2,137.51c-5-3.07-10.87-4.6-17.62-4.6s-12.84,1.49-18.01,4.47c-5.17,2.98-9.23,7.14-12.16,12.49-2.94,5.35-4.4,11.53-4.4,18.54s1.49,13.19,4.47,18.54c2.98,5.35,7.12,9.51,12.43,12.49,5.3,2.98,11.46,4.47,18.47,4.47s12.99-1.58,18.21-4.73c5.21-3.15,9.18-7.71,11.9-13.67l-14.2-5.92h-1.58c-1.49,2.81-3.55,5.04-6.18,6.71-2.63,1.67-5.35,2.5-8.15,2.5-3.16,0-6.07-.79-8.74-2.37-2.67-1.58-4.82-3.66-6.44-6.25-1.05-1.67-1.75-3.45-2.12-5.33h48.08l1.97-1.97v-3.16c0-7.36-1.4-13.81-4.21-19.33-2.81-5.52-6.71-9.82-11.7-12.88ZM556.04,150.2c2.63-1.45,5.61-2.17,8.94-2.17,2.98,0,5.67.68,8.09,2.04,2.41,1.36,4.34,3.27,5.79,5.72.89,1.51,1.51,3.18,1.85,5h-32.54c.35-1.68.94-3.23,1.77-4.67,1.45-2.5,3.48-4.47,6.11-5.92Z"/>
-    <path class="cls-6" d="M632.3,139.48c-1.99,1.38-3.74,3.02-5.26,4.89v-9.37h-16.44v66.79h17.75v-33.4c0-3.68.66-6.86,1.97-9.53s3.18-4.71,5.59-6.12c2.41-1.4,5.28-2.1,8.61-2.1h8.81v-15.65h-6.18c-5.61,0-10.56,1.49-14.86,4.47Z"/>
-    <path class="cls-6" d="M710.27,168.74c-3.51-3.02-8.63-5.33-15.38-6.9l-12.62-2.89c-2.1-.44-3.66-1.16-4.67-2.17-1.01-1.01-1.51-2.08-1.51-3.22,0-1.75.9-3.11,2.7-4.08,1.8-.96,4.01-1.45,6.64-1.45,2.89,0,5.5.7,7.82,2.1,2.32,1.4,3.79,3.2,4.41,5.39l1.45.26,14.99-3.29c-1.58-6.14-4.84-10.94-9.8-14.4-4.95-3.46-10.98-5.19-18.08-5.19-5.26,0-9.97.88-14.13,2.63-4.16,1.75-7.43,4.19-9.8,7.3-2.37,3.11-3.55,6.77-3.55,10.98,0,4.91,1.69,9.05,5.06,12.43,3.37,3.38,8.17,5.77,14.4,7.17l12.62,2.76c2.45.53,4.29,1.27,5.52,2.24,1.23.97,1.84,2.28,1.84,3.94,0,1.93-1.01,3.48-3.02,4.67-2.02,1.18-4.52,1.78-7.49,1.78s-5.77-.7-8.09-2.1c-2.32-1.4-3.84-3.33-4.54-5.78l-1.58-.4-16.17,4.08c1.75,5.96,5.28,10.67,10.58,14.13,5.3,3.46,11.68,5.19,19.13,5.19,5.52,0,10.43-.92,14.73-2.76,4.29-1.84,7.67-4.47,10.12-7.89,2.45-3.42,3.68-7.41,3.68-11.97,0-5.34-1.75-9.53-5.26-12.56Z"/>
-    <path class="cls-6" d="M774.15,142.08c-2.27-2.39-4.98-4.43-8.15-6.09-3.94-2.06-8.46-3.09-13.54-3.09-6.05,0-11.53,1.51-16.44,4.54-4.91,3.02-8.79,7.19-11.64,12.49-2.85,5.3-4.27,11.42-4.27,18.34s1.42,13.08,4.27,18.47c2.85,5.39,6.73,9.6,11.64,12.62,4.91,3.02,10.39,4.54,16.44,4.54,5.08,0,9.6-1.05,13.54-3.16,2.58-1.38,4.86-3,6.84-4.87v32.22h17.75v-93.09h-16.44v7.07ZM764.94,185.63c-2.63,1.67-5.74,2.5-9.34,2.5s-6.6-.83-9.27-2.5c-2.67-1.66-4.76-3.99-6.25-6.97-1.49-2.98-2.24-6.4-2.24-10.25s.74-7.39,2.24-10.32c1.49-2.94,3.57-5.24,6.25-6.9,2.67-1.66,5.76-2.5,9.27-2.5s6.71.83,9.34,2.5c2.63,1.67,4.69,3.97,6.18,6.9,1.49,2.94,2.24,6.38,2.24,10.32s-.75,7.28-2.24,10.25c-1.49,2.98-3.55,5.31-6.18,6.97Z"/>
-    <path class="cls-6" d="M852.77,167.49c0,5.52-.92,9.77-2.76,12.75s-4.06,5.04-6.64,6.18c-2.59,1.14-4.93,1.71-7.03,1.71-2.72,0-5.04-.66-6.97-1.97-1.93-1.32-3.4-3.27-4.4-5.85-1.01-2.58-1.51-5.72-1.51-9.4v-35.9h-17.75v41.55c0,5.96,1.16,10.98,3.48,15.05,2.32,4.08,5.46,7.14,9.4,9.2,3.94,2.06,8.24,3.09,12.89,3.09,4.21,0,8.04-.77,11.5-2.3,3.46-1.53,6.53-3.7,9.2-6.51.67-.71,1.31-1.45,1.91-2.23v8.93h16.44v-66.79h-17.75v32.48Z"/>
-    <path class="cls-6" d="M913.39,132.91c-7.98,0-14.57,2.02-19.79,6.05-5.22,4.03-8.48,9.03-9.8,14.99l14.99,3.16h1.45c.44-2.28,1.8-4.36,4.08-6.25,2.28-1.89,5.3-2.83,9.07-2.83,4.03,0,7.36,1.23,9.99,3.68,2.22,2.07,3.49,4.62,3.84,7.64l-18.17,1.57c-8.5.7-14.97,2.96-19.39,6.77-4.43,3.81-6.64,8.96-6.64,15.45,0,4.03,1.01,7.63,3.02,10.78,2.02,3.16,4.8,5.61,8.35,7.36,3.55,1.75,7.6,2.63,12.16,2.63,4.91,0,9.34-.99,13.28-2.96,3.61-1.81,6.72-4.17,9.34-7.07v7.93h15.38v-37.74c0-9.9-2.78-17.57-8.35-23.01-5.57-5.44-13.17-8.15-22.81-8.15ZM919.11,186.03c-2.5,1.58-5.28,2.37-8.35,2.37-2.81,0-5.13-.59-6.97-1.78-1.84-1.18-2.76-2.74-2.76-4.67s.77-3.51,2.3-4.73c1.53-1.23,4.18-2.02,7.95-2.37l15.95-1.33c-.23,2.23-.94,4.36-2.15,6.39-1.49,2.5-3.48,4.54-5.98,6.11Z"/>
-    <path class="cls-6" d="M981.36,139.48c-1.99,1.38-3.74,3.02-5.26,4.89v-9.37h-16.44v66.79h17.75v-33.4c0-3.68.66-6.86,1.97-9.53s3.18-4.71,5.59-6.12c2.41-1.4,5.28-2.1,8.61-2.1h8.81v-15.65h-6.18c-5.61,0-10.56,1.49-14.86,4.47Z"/>
-    <path class="cls-6" d="M1068.93,150.39c-2.81-5.52-6.71-9.82-11.7-12.88s-10.87-4.6-17.62-4.6-12.84,1.49-18.01,4.47c-5.17,2.98-9.23,7.14-12.16,12.49-2.94,5.35-4.4,11.53-4.4,18.54s1.49,13.19,4.47,18.54c2.98,5.35,7.12,9.51,12.43,12.49,5.3,2.98,11.46,4.47,18.47,4.47s12.99-1.58,18.21-4.73c5.21-3.15,9.18-7.71,11.9-13.67l-14.2-5.92h-1.58c-1.49,2.81-3.55,5.04-6.18,6.71-2.63,1.67-5.35,2.5-8.15,2.5-3.16,0-6.07-.79-8.74-2.37-2.67-1.58-4.82-3.66-6.44-6.25-1.05-1.67-1.75-3.45-2.12-5.33h48.08l1.97-1.97v-3.16c0-7.36-1.4-13.81-4.21-19.33ZM1031.07,150.2c2.63-1.45,5.61-2.17,8.94-2.17,2.98,0,5.67.68,8.09,2.04,2.41,1.36,4.34,3.27,5.79,5.72.89,1.51,1.51,3.18,1.85,5h-32.54c.35-1.68.94-3.23,1.77-4.67,1.45-2.5,3.48-4.47,6.11-5.92Z"/>
-  </g>
-</svg></a>
-  <div style="display:flex;gap:1.5rem;"><a href="privacy.html" style="font-size:12px;color:#4e6a85;text-decoration:none;">Privacy Policy</a><a href="terms.html" style="font-size:12px;color:#4e6a85;text-decoration:none;">Terms of Service</a></div><div class="footer-copy">© 2026 MakerSquare LLC. Austin, TX.</div>
 </footer>
 
-<script>
-(function(){
-  var obs = new IntersectionObserver(function(entries){
-    entries.forEach(function(e){ if(e.isIntersecting) e.target.classList.add('visible'); });
-  }, { threshold: 0.08 });
-  function init(){
-    document.querySelectorAll('.main-content > *, .page-hero > *').forEach(function(el, i){
-      el.classList.add('fade-up');
-      el.style.transitionDelay = Math.min(i * 0.08, 0.4) + 's';
-      obs.observe(el);
-    });
-    var hero = document.querySelector('.page-hero');
-    if(hero){
-      window.addEventListener('scroll', function(){
-        hero.style.transform = 'translateY(' + (window.scrollY * 0.13) + 'px)';
-      }, { passive: true });
-    }
-  }
-  if(document.readyState === 'loading'){ document.addEventListener('DOMContentLoaded', init); } else { init(); }
-})();
-
-  // FAQ accordion
-  document.querySelectorAll('.faq-q').forEach(function(q) {
-    q.addEventListener('click', function() {
-      var item = this.parentElement;
-      var isOpen = item.classList.contains('open');
-      var list = item.parentElement;
-      list.querySelectorAll('.faq-item').forEach(function(i) { i.classList.remove('open'); });
-      if (!isOpen) item.classList.add('open');
-    });
-  });
-</script>
+<script src="js/main.min.js"></script>
+<script type="text/javascript" src="https://forms.zoho.com/js/zf_gclid.js"> </script>
+<script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script><script id="zsiqscript" src="https://salesiq.zohopublic.com/widget?wc=siq885ea214ffc25f4f452068cc9bc1cec4353b0ff61817b77233444928d383fe96" defer></script>
 </body>
 </html>
