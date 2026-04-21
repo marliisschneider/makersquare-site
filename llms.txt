@@ -18,24 +18,24 @@ The program is open to anyone nationwide (and internationally) — not just Aust
 ## What Students Build
 
 Over 4 weeks, students build and deploy 3 AI products:
-1. Week 1: First deployed AI tool — advanced prompting, Cursor, direct API integrations
-2. Week 2: RAG-powered product — AI that reasons over your own documents using Supabase/Pinecone
-3. Week 3: Interface + voice/multimodal product — real UI with Lovable/v0/Bolt, voice with ElevenLabs/Whisper
+1. Week 1: First deployed AI tool — advanced prompting, Windsurf, direct API integrations
+2. Week 2: RAG-powered product — AI that reasons over your own documents using Supabase
+3. Week 3: Interface + voice/multimodal product — real UI with v0 and Replit, voice with ElevenLabs/Whisper
 4. Week 4: Capstone — most ambitious product combining RAG, agents, interfaces. Presented at Demo Day.
 
 ## Curriculum Overview
 
 - Pre-work: 3 self-paced steps (describe your role, pick your use case, build your first prompt system)
-- Week 1 — Advanced Foundations: Advanced prompting, structured output, Cursor, API integrations, Product 1 sprint
-- Week 2 — RAG + Agents: Vector embeddings, Supabase/Pinecone, AI agents, evals with Braintrust. Product 1 ships.
-- Week 3 — Interfaces + Voice: Lovable/v0/Bolt frontends, ElevenLabs/Whisper, Claude Vision. Product 2 ships.
+- Week 1 — Advanced Foundations: Advanced prompting, structured output, Windsurf, API integrations, Product 1 sprint
+- Week 2 — RAG + Agents: Vector embeddings on Supabase, AI agents, automated testing with Braintrust. Product 1 ships.
+- Week 3 — Interfaces + Voice: v0 and Replit frontends, ElevenLabs/Whisper, Claude Vision. Product 2 ships.
 - Week 4 — Ship & Scale: Capstone scoping, full build sprint, Demo Day presentation
 
-No visual automation tools (Zapier, Make, n8n). Production-level skills: prompting, RAG, agents, evals, deployment.
+No visual automation tools (Zapier, Make, n8n). Production-level skills: prompting, RAG, agents, automated testing, deployment.
 
 ## Tools & Tech Stack
 
-Claude API, ChatGPT, Claude Vision, Cursor, Railway, Hoppscotch, Supabase, Pinecone, Airtable, Google Sheets, Lovable, v0, Bolt, ElevenLabs, Whisper, Braintrust
+Claude API, ChatGPT, Windsurf, Supabase, v0, Railway, Replit, ElevenLabs, Whisper, Claude Vision, Braintrust, Airtable, Google Sheets, Notion
 
 ## Key Facts
 
@@ -68,7 +68,7 @@ Every cohort ends with a public Demo Day at MakerSquare HQ in Austin. Each build
 - The only in-person AI product-building bootcamp for non-technical professionals in Austin
 - Builds real, deployed products — not coursework or certificates
 - Graduates ship 3 AI products and present at Demo Day to Austin investors and operators
-- No visual automation tools — teaches production-level AI building with Cursor, APIs, RAG, agents
+- No visual automation tools — teaches production-level AI building with Windsurf, APIs, RAG, agents
 - Schedule allows builders to keep working 2 days per week (Tue/Thu)
 - 4.41/5 alumni rating on Course Report (legacy MakerSquare program)
 
