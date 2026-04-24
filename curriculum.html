@@ -4,14 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI Bootcamp Curriculum | Learn AI in Austin TX | MakerSquare</title>
-<meta name="description" content="Hands on AI curriculum covering prompt engineering, RAG systems, AI agents, voice AI, and deployment. Build and ship real AI products in 4 weeks. Designed for non technical professionals.">
+<meta name="description" content="Hands on AI curriculum: expert prompting, Claude Code, Supabase, Composio, Playwright, and voice AI. Build and ship three real AI products in a 2-week intensive. Designed for non technical professionals.">
 <meta name="robots" content="index, follow">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="canonical" href="https://www.makersquare.ai/curriculum">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.makersquare.ai/curriculum">
 <meta property="og:title" content="AI Bootcamp Curriculum | MakerSquare Austin">
-<meta property="og:description" content="Hands on AI curriculum. Prompt engineering, RAG, AI agents, and real deployment. Ship 3 products in 4 weeks.">
+<meta property="og:description" content="Hands on AI curriculum. Expert prompting, Claude Code, Supabase, Composio, Playwright, voice AI. Ship 3 products in a 2-week intensive.">
 <meta property="og:image" content="https://www.makersquare.ai/og-image.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,7 +35,7 @@
 .tl-week-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--indigo); margin-bottom: var(--s1); }
 .tl-header h3 { font-family: var(--font-display); font-size: clamp(1.3rem, 2.5vw, 1.7rem); font-weight: 800; color: var(--navy); letter-spacing: -0.03em; }
 
-/* Day pills — compact, expandable */
+/* Day pills */
 .tl-days { display: flex; gap: var(--s3); margin-bottom: var(--s5); flex-wrap: wrap; }
 .tl-day { background: var(--white); border: 1px solid rgba(24,24,73,0.06); border-radius: var(--r-lg); padding: var(--s5); flex: 1; min-width: 200px; transition: all 0.3s ease; cursor: default; }
 .tl-day:hover { border-color: var(--ice); box-shadow: var(--shadow-md); transform: translateY(-2px); }
@@ -45,7 +45,7 @@
 .tl-day-tool { font-size: 0.65rem; font-weight: 600; color: var(--indigo); background: rgba(64,61,216,0.06); border-radius: 4px; padding: 2px 7px; }
 .tl-day-desc { font-size: 0.82rem; color: var(--text-secondary); line-height: 1.6; margin-top: var(--s3); }
 
-/* Deliverable callout — the focal point */
+/* Deliverable callout */
 .tl-deliverable { display: flex; align-items: center; gap: var(--s5); background: var(--green-bg); border: 1px solid var(--green-border); border-radius: var(--r-lg); padding: var(--s5) var(--s6); }
 .tl-del-icon { width: 44px; height: 44px; min-width: 44px; border-radius: var(--r-md); background: var(--green); display: flex; align-items: center; justify-content: center; font-size: 1.1rem; color: var(--white); font-weight: 800; }
 .tl-del-text { font-family: var(--font-display); font-size: 0.95rem; font-weight: 700; color: var(--navy); line-height: 1.4; }
@@ -65,7 +65,7 @@
 .prework-card h3 { font-size: 1rem; margin-bottom: var(--s2); }
 .prework-card p { font-size: 0.82rem; color: var(--text-secondary); line-height: 1.6; }
 
-/* Tools grid — interactive */
+/* Tools grid */
 .tools-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: var(--s3); margin-top: var(--s8); }
 .tool-card { background: var(--white); border: 1px solid rgba(24,24,73,0.06); border-radius: var(--r-lg); padding: var(--s5); text-align: center; transition: all 0.3s cubic-bezier(0.16,1,0.3,1); cursor: default; position: relative; overflow: hidden; }
 .tool-card::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 50% 0%, rgba(64,61,216,0.06) 0%, transparent 70%); opacity: 0; transition: opacity 0.3s; }
@@ -80,6 +80,19 @@
 .tool-icon--voice { background: rgba(129,170,251,0.1); color: var(--sky); }
 .tool-name { font-family: var(--font-display); font-size: 0.85rem; font-weight: 700; color: var(--navy); margin-bottom: 2px; }
 .tool-use { font-size: 0.7rem; color: var(--text-muted); line-height: 1.4; }
+
+/* Coming Soon: part-time waitlist */
+.coming-soon-card { position: relative; background: linear-gradient(135deg, rgba(245,158,11,0.06) 0%, rgba(64,61,216,0.04) 100%); border: 1px solid rgba(245,158,11,0.18); border-radius: var(--r-xl); padding: var(--s10) var(--s8); text-align: center; overflow: hidden; }
+.coming-soon-card::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 80% 10%, rgba(245,158,11,0.08) 0%, transparent 45%); pointer-events: none; }
+.coming-soon-badge { display: inline-flex; align-items: center; gap: 6px; background: var(--white); border: 1px solid rgba(245,158,11,0.25); color: var(--amber); font-size: 0.68rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; padding: 6px 12px; border-radius: 999px; margin-bottom: var(--s5); position: relative; z-index: 1; }
+.coming-soon-badge::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--amber); box-shadow: 0 0 0 3px rgba(245,158,11,0.2); }
+.coming-soon-card h2 { position: relative; z-index: 1; font-family: var(--font-display); font-size: clamp(1.6rem, 3.2vw, 2.2rem); font-weight: 800; color: var(--navy); letter-spacing: -0.03em; margin-bottom: var(--s4); }
+.coming-soon-card p.coming-soon-lede { position: relative; z-index: 1; font-size: 1rem; color: var(--text-secondary); max-width: 560px; margin: 0 auto var(--s7); line-height: 1.6; }
+.coming-soon-meta { position: relative; z-index: 1; display: flex; flex-wrap: wrap; justify-content: center; gap: var(--s3); margin-bottom: var(--s7); }
+.coming-soon-meta-item { display: inline-flex; align-items: center; gap: 6px; background: var(--white); border: 1px solid rgba(24,24,73,0.06); border-radius: var(--r-sm); padding: 6px 12px; font-size: 0.78rem; font-weight: 600; color: var(--navy); }
+.coming-soon-meta-item svg { width: 14px; height: 14px; color: var(--indigo); }
+.waitlist-embed { position: relative; z-index: 1; max-width: 560px; margin: 0 auto; background: var(--white); border: 1px solid rgba(24,24,73,0.06); border-radius: var(--r-lg); padding: var(--s4); }
+.waitlist-embed iframe { display: block; margin: 0 auto; }
 
 .page-cta { background: var(--white); border: 1px solid rgba(24,24,73,0.06); border-radius: var(--r-xl); padding: var(--s10); text-align: center; margin-top: var(--s10); }
 .page-cta h3 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 800; color: var(--navy); margin-bottom: var(--s3); }
@@ -98,25 +111,24 @@
 {
   "@context": "https://schema.org",
   "@type": "Course",
-  "name": "MakerSquare AI Bootcamp — 4-Week Curriculum",
-  "description": "4-week in-person AI curriculum for non-technical professionals. Advanced prompting, RAG, AI agents, voice/multimodal, and real deployment. 3 shipped products by Demo Day.",
+  "name": "MakerSquare AI Bootcamp: 2-Week Intensive Curriculum",
+  "description": "2-week in-person AI intensive for non-technical professionals. Expert prompting, Claude Code, Supabase, Composio automations, Playwright browser control, voice AI, and real deployment. 3 shipped products by Demo Day.",
   "provider": {"@type": "EducationalOrganization", "name": "MakerSquare", "url": "https://www.makersquare.ai/"},
   "url": "https://www.makersquare.ai/curriculum",
   "educationalLevel": "Beginner",
-  "teaches": ["Advanced prompt engineering", "RAG systems", "AI agents", "Automated testing", "Windsurf", "Supabase", "ElevenLabs", "Whisper", "v0", "Replit", "Braintrust"],
+  "teaches": ["Expert prompt engineering", "Claude Code", "Claude Skills", "Supabase", "Composio", "Playwright browser control", "Voice AI with Whisper and ElevenLabs", "OpenRouter", "Lovable", "CodeRabbit", "Vercel deployment", "Agentic workflows with APIs"],
   "hasCourseInstance": {
     "@type": "CourseInstance",
     "courseMode": "onsite",
     "startDate": "2026-07-06",
-    "endDate": "2026-08-01",
-    "courseWorkload": "P4W",
+    "endDate": "2026-07-17",
+    "courseWorkload": "P2W",
     "offers": {"@type": "Offer", "price": "5999", "priceCurrency": "USD", "url": "https://www.makersquare.ai/apply"}
   },
   "syllabusSections": [
-    {"@type": "Syllabus", "name": "Pre-work", "description": "3 self-paced steps: describe your role, pick your use case, build your first prompt system."},
-    {"@type": "Syllabus", "name": "Week 1: Advanced Foundations", "description": "Advanced prompting, structured output, AI-assisted coding with Windsurf, API integrations, first product sprint."},
-    {"@type": "Syllabus", "name": "Weeks 2-3: RAG, Agents & Interfaces", "description": "RAG pipelines with Supabase, AI agents with automated testing, real interfaces with v0 and Replit, voice with ElevenLabs/Whisper."},
-    {"@type": "Syllabus", "name": "Week 4: Ship & Scale", "description": "Capstone scoping, full build sprint, Demo Day presentation to Austin investors and operators."}
+    {"@type": "Syllabus", "name": "Pre-work", "description": "3 self-paced steps: set up accounts, run your first expert-level conversation with Claude, define your capstone problem."},
+    {"@type": "Syllabus", "name": "Week 1: Build", "description": "How models work, talking to Claude like an expert, Warp + GitHub + Obsidian, PRD writing, build and deploy a website with Lovable + Vercel, Supabase and Claude Skills. Product 1 ships Friday."},
+    {"@type": "Syllabus", "name": "Week 2: Automate + Ship", "description": "Sales automation with Composio, Playwright browser control, voice AI with Whisper + ElevenLabs, Claude Code + CodeRabbit agentic workflows, advanced tools. Demo Day Friday."}
   ]
 }
 </script>
@@ -174,7 +186,7 @@
       <div>
         <div class="section-label reveal">Full Curriculum</div>
     <h1 class="reveal" style="font-size:clamp(2rem,4vw,3rem);">We start where courses end.</h1>
-    <p class="section-sub reveal" style="max-width:620px;">No beginner hand-holding. No visual automation tools. <span class="bl">Production prompting, RAG, agents, automated testing, and real deployment.</span> Updated before every cohort.</p>
+    <p class="section-sub reveal" style="max-width:620px;">No beginner hand-holding. Two weeks, Monday to Friday, 9am to 3pm. <span class="bl">Production tools including Claude Code, GitHub, Vercel, Supabase, Composio, Playwright, and more.</span> Updated before every cohort.</p>
       </div>
       <div class="page-hero-visual reveal">
         <div style="background:var(--light-bg);border:1px solid rgba(24,24,73,0.06);border-radius:var(--r-xl);padding:var(--s6);position:relative;">
@@ -224,8 +236,8 @@
 <section class="section">
   <div class="container">
     <div style="text-align:center;margin-bottom:var(--s6);">
-      <div class="section-label reveal" style="justify-content:center;">4 Weeks</div>
-      <h2 class="reveal">Week by week.<br><span class="text-accent">Product by product.</span></h2>
+      <div class="section-label reveal" style="justify-content:center;">2 Weeks, 10 Days</div>
+      <h2 class="reveal">Day by day.<br><span class="text-accent">Product by product.</span></h2>
     </div>
 
     <div class="timeline">
@@ -234,32 +246,44 @@
       <div class="tl-week reveal">
         <div class="tl-marker">1</div>
         <div class="tl-header">
-          <div class="tl-week-label">Week 1</div>
-          <h3>Advanced Foundations. <span class="text-accent">From user to builder.</span></h3>
+          <div class="tl-week-label">Week 1: Build</div>
+          <h3>Set up the tools. <span class="text-accent">Ship Product 1 by Friday.</span></h3>
         </div>
         <div class="tl-days">
           <div class="tl-day">
             <div class="tl-day-label">Mon</div>
-            <div class="tl-day-title">Advanced Prompting &amp; Structured Output</div>
-            <div class="tl-day-tools"><span class="tl-day-tool">Claude</span><span class="tl-day-tool">ChatGPT</span><span class="tl-day-tool">JSON</span></div>
-            <p class="tl-day-desc">System prompts, context setting, few-shot examples, structured JSON output. You'll know which model to use, when, and why.</p>
+            <div class="tl-day-title">Models + Expert Prompting</div>
+            <div class="tl-day-tools"><span class="tl-day-tool">Claude</span><span class="tl-day-tool">ChatGPT</span><span class="tl-day-tool">OpenRouter</span></div>
+            <p class="tl-day-desc">How LLMs actually work. The real differences between Claude, GPT, Gemini, and DeepSeek. Talking to Claude like an expert, not a search engine.</p>
+          </div>
+          <div class="tl-day">
+            <div class="tl-day-label">Tue</div>
+            <div class="tl-day-title">Your Stack + PRD</div>
+            <div class="tl-day-tools"><span class="tl-day-tool">Warp</span><span class="tl-day-tool">GitHub</span><span class="tl-day-tool">Obsidian</span></div>
+            <p class="tl-day-desc">Warp Terminal, first GitHub push, Obsidian as your knowledge system. Draft your capstone PRD with Claude. Scope before you build.</p>
           </div>
           <div class="tl-day">
             <div class="tl-day-label">Wed</div>
-            <div class="tl-day-title">Real Integrations with Windsurf</div>
-            <div class="tl-day-tools"><span class="tl-day-tool">Windsurf</span><span class="tl-day-tool">Claude API</span><span class="tl-day-tool">Railway</span></div>
-            <p class="tl-day-desc">APIs explained for non-engineers. AI-assisted coding with Windsurf. Write real scripts, deploy a real integration.</p>
+            <div class="tl-day-title">Website + Deploy</div>
+            <div class="tl-day-tools"><span class="tl-day-tool">Lovable</span><span class="tl-day-tool">Vercel</span></div>
+            <p class="tl-day-desc">Build a real landing page in plain English. Connect GitHub to Vercel. Push to main, auto-deploy in 30 seconds. Live URL by end of day.</p>
+          </div>
+          <div class="tl-day">
+            <div class="tl-day-label">Thu</div>
+            <div class="tl-day-title">Supabase + Claude Skills</div>
+            <div class="tl-day-tools"><span class="tl-day-tool">Supabase</span><span class="tl-day-tool">Claude Skills</span><span class="tl-day-tool">MCP</span></div>
+            <p class="tl-day-desc">Databases without jargon. Table, form, dashboard, all wired together. Build your first Claude Skill. Understand MCP vs. API.</p>
           </div>
           <div class="tl-day">
             <div class="tl-day-label">Fri</div>
-            <div class="tl-day-title">Product 1 Sprint</div>
-            <div class="tl-day-tools"><span class="tl-day-tool">Windsurf</span><span class="tl-day-tool">Claude API</span></div>
-            <p class="tl-day-desc">Scope Product 1 based on your use case. Full build sprint. Working skeleton deployed by end of Friday.</p>
+            <div class="tl-day-title">Product 1 Ships + Content</div>
+            <div class="tl-day-tools"><span class="tl-day-tool">Live demo</span><span class="tl-day-tool">LinkedIn</span></div>
+            <p class="tl-day-desc">4-minute live demo to your cohort on real data. Then set up a content habit with Claude. The proof-of-work that gets clients and jobs.</p>
           </div>
         </div>
         <div class="tl-deliverable">
           <div class="tl-del-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
-          <div><div class="tl-del-text">Product 1 skeleton deployed and running</div><div class="tl-del-sub">Working prototype at a real URL by Friday</div></div>
+          <div><div class="tl-del-text">Product 1 live at a public URL</div><div class="tl-del-sub">Website + Supabase + Claude Skill, all wired together, shipped Friday</div></div>
         </div>
       </div>
 
@@ -267,93 +291,39 @@
       <div class="tl-week reveal">
         <div class="tl-marker">2</div>
         <div class="tl-header">
-          <div class="tl-week-label">Week 2</div>
-          <h3>RAG + Agents. <span class="text-accent">Product 1 ships.</span></h3>
+          <div class="tl-week-label">Week 2: Automate + Ship</div>
+          <h3>Connect Claude to the real world. <span class="text-accent">Demo Day Friday.</span></h3>
         </div>
         <div class="tl-days">
           <div class="tl-day">
             <div class="tl-day-label">Mon</div>
-            <div class="tl-day-title">RAG: Connect AI to Your Data</div>
-            <div class="tl-day-tools"><span class="tl-day-tool">Supabase</span><span class="tl-day-tool">Claude API</span></div>
-            <p class="tl-day-desc">Vector embeddings, document ingestion, semantic search with Supabase. Connect your real industry documents to an AI that can reason over them.</p>
+            <div class="tl-day-title">Sales Automation</div>
+            <div class="tl-day-tools"><span class="tl-day-tool">Composio</span><span class="tl-day-tool">Gmail</span><span class="tl-day-tool">Slack</span></div>
+            <p class="tl-day-desc">Pipelines vs. agents. Lead enrichment and follow-up automations. Connect Claude to Gmail, Slack, HubSpot via Composio. No integration code.</p>
+          </div>
+          <div class="tl-day">
+            <div class="tl-day-label">Tue</div>
+            <div class="tl-day-title">Browser Control + Voice AI</div>
+            <div class="tl-day-tools"><span class="tl-day-tool">Playwright</span><span class="tl-day-tool">Whisper</span><span class="tl-day-tool">ElevenLabs</span></div>
+            <p class="tl-day-desc">Playwright for sites with no API. Navigate, extract, schedule. Voice stack: Whisper transcribes, Claude reasons, ElevenLabs speaks.</p>
           </div>
           <div class="tl-day">
             <div class="tl-day-label">Wed</div>
-            <div class="tl-day-title">AI Agents + Automated Testing</div>
-            <div class="tl-day-tools"><span class="tl-day-tool">Claude API</span><span class="tl-day-tool">Braintrust</span></div>
-            <p class="tl-day-desc">Agent loops, tool use, error handling, guardrails. Run automated tests on your AI — scored outputs, side-by-side comparisons — so you can improve with confidence.</p>
+            <div class="tl-day-title">Claude Code + Agentic APIs</div>
+            <div class="tl-day-tools"><span class="tl-day-tool">Claude Code</span><span class="tl-day-tool">CodeRabbit</span><span class="tl-day-tool">Render</span></div>
+            <p class="tl-day-desc">Claude Code as a full project collaborator in Warp. Build an agentic workflow calling an external API. CodeRabbit reviews every PR before merge.</p>
           </div>
           <div class="tl-day">
-            <div class="tl-day-label">Fri</div>
-            <div class="tl-day-title">Product 1 Ships</div>
-            <div class="tl-day-tools"><span class="tl-day-tool">Live demo</span><span class="tl-day-tool">4 min</span></div>
-            <p class="tl-day-desc">4-minute live demo to your cohort. Written feedback from instructor. Full assessment by Saturday morning.</p>
-          </div>
-        </div>
-        <div class="tl-deliverable">
-          <div class="tl-del-icon">&#10003;</div>
-          <div><div class="tl-del-text">Product 1 live and deployed</div><div class="tl-del-sub">Industry Q&amp;A bot, CRM AI, lead response agent, or contract analyzer</div></div>
-        </div>
-      </div>
-
-      <!-- WEEK 3 -->
-      <div class="tl-week reveal">
-        <div class="tl-marker">3</div>
-        <div class="tl-header">
-          <div class="tl-week-label">Week 3</div>
-          <h3>Interfaces + Voice. <span class="text-accent">Product 2 ships.</span></h3>
-        </div>
-        <div class="tl-days">
-          <div class="tl-day">
-            <div class="tl-day-label">Mon</div>
-            <div class="tl-day-title">Building Real Interfaces</div>
-            <div class="tl-day-tools"><span class="tl-day-tool">v0</span><span class="tl-day-tool">Replit</span></div>
-            <p class="tl-day-desc">AI-generated frontends with v0, full-stack prototypes on Replit. Connect backends to real UIs. Webhooks, real-time data, and interfaces anyone can use.</p>
-          </div>
-          <div class="tl-day">
-            <div class="tl-day-label">Wed</div>
-            <div class="tl-day-title">Voice &amp; Multimodal AI</div>
-            <div class="tl-day-tools"><span class="tl-day-tool">ElevenLabs</span><span class="tl-day-tool">Whisper</span><span class="tl-day-tool">Claude Vision</span></div>
-            <p class="tl-day-desc">Speech-to-text with Whisper. Text-to-speech with ElevenLabs. Image and PDF processing with Claude Vision.</p>
-          </div>
-          <div class="tl-day">
-            <div class="tl-day-label">Fri</div>
-            <div class="tl-day-title">Product 2 Ships</div>
-            <div class="tl-day-tools"><span class="tl-day-tool">Live demo</span><span class="tl-day-tool">5 min</span></div>
-            <p class="tl-day-desc">5-minute demo with a real interface. The bar: a non-technical person should be able to use it without instructions.</p>
-          </div>
-        </div>
-        <div class="tl-deliverable">
-          <div class="tl-del-icon">&#10003;</div>
-          <div><div class="tl-del-text">Product 2 live with real UI</div><div class="tl-del-sub">Chatbot, voice agent, document processor, or multimodal intake tool</div></div>
-        </div>
-      </div>
-
-      <!-- WEEK 4 -->
-      <div class="tl-week reveal">
-        <div class="tl-marker">&#9733;</div>
-        <div class="tl-header">
-          <div class="tl-week-label">Week 4</div>
-          <h3>Ship &amp; Scale. <span class="text-accent">Capstone + Demo Day.</span></h3>
-        </div>
-        <div class="tl-days">
-          <div class="tl-day">
-            <div class="tl-day-label">Mon</div>
-            <div class="tl-day-title">Capstone Scoping</div>
-            <div class="tl-day-tools"><span class="tl-day-tool">All tools</span></div>
-            <p class="tl-day-desc">Your most ambitious product. Combine RAG + interface, voice + agent, or build something that could be a business.</p>
-          </div>
-          <div class="tl-day">
-            <div class="tl-day-label">Wed</div>
-            <div class="tl-day-title">Full Build Sprint</div>
-            <div class="tl-day-tools"><span class="tl-day-tool">No lectures</span><span class="tl-day-tool">All day</span></div>
-            <p class="tl-day-desc">No lectures. Full build day. Deploy and demo-ready by end of day. Instructor available for 1:1 troubleshooting.</p>
+            <div class="tl-day-label">Thu</div>
+            <div class="tl-day-title">Advanced Tools + Capstone Sprint</div>
+            <div class="tl-day-tools"><span class="tl-day-tool">OpenRouter</span><span class="tl-day-tool">Splashtop</span></div>
+            <p class="tl-day-desc">Financial models with Claude. OpenRouter routing, fallbacks, cost control. Splashtop for running automations on a dedicated machine. Full capstone build, deployed by 2:30pm.</p>
           </div>
           <div class="tl-day">
             <div class="tl-day-label">Fri</div>
             <div class="tl-day-title" style="color:var(--indigo);">DEMO DAY</div>
             <div class="tl-day-tools"><span class="tl-day-tool" style="background:rgba(64,61,216,0.1);color:var(--indigo);">Public event</span><span class="tl-day-tool" style="background:rgba(64,61,216,0.1);color:var(--indigo);">5 min</span></div>
-            <p class="tl-day-desc">Austin tech community in the room. 5 minutes each. Live demo, hard questions, real feedback from builders and investors.</p>
+            <p class="tl-day-desc">Austin tech community in the room. 5 minutes each. Live demo on real data, hard questions, real feedback from builders and investors.</p>
           </div>
         </div>
         <div class="tl-deliverable tl-deliverable--demo">
@@ -377,20 +347,19 @@
     </div>
 
     <div class="tools-grid">
-      <div class="tool-card reveal"><div class="tool-icon tool-icon--ai">&#9679;</div><div class="tool-name">Claude API</div><div class="tool-use">Primary LLM</div></div>
+      <div class="tool-card reveal"><div class="tool-icon tool-icon--ai">&#9679;</div><div class="tool-name">Claude</div><div class="tool-use">Primary LLM</div></div>
+      <div class="tool-card reveal"><div class="tool-icon tool-icon--ai">&#9679;</div><div class="tool-name">Claude Code</div><div class="tool-use">Full project collaborator</div></div>
       <div class="tool-card reveal"><div class="tool-icon tool-icon--ai">&#9679;</div><div class="tool-name">ChatGPT</div><div class="tool-use">Model comparison</div></div>
-      <div class="tool-card reveal"><div class="tool-icon tool-icon--build">&#9670;</div><div class="tool-name">Windsurf</div><div class="tool-use">AI-assisted code</div></div>
-      <div class="tool-card reveal"><div class="tool-icon tool-icon--data">&#9632;</div><div class="tool-name">Supabase</div><div class="tool-use">Vector storage</div></div>
-      <div class="tool-card reveal"><div class="tool-icon tool-icon--ui"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></div><div class="tool-name">v0</div><div class="tool-use">UI generation</div></div>
-      <div class="tool-card reveal"><div class="tool-icon tool-icon--build">&#9670;</div><div class="tool-name">Railway</div><div class="tool-use">Deployment</div></div>
-      <div class="tool-card reveal"><div class="tool-icon tool-icon--ui"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></div><div class="tool-name">Replit</div><div class="tool-use">Full-stack prototypes</div></div>
+      <div class="tool-card reveal"><div class="tool-icon tool-icon--build">&#9670;</div><div class="tool-name">OpenRouter</div><div class="tool-use">One API, every model</div></div>
+      <div class="tool-card reveal"><div class="tool-icon tool-icon--build">&#9670;</div><div class="tool-name">Warp Terminal</div><div class="tool-use">AI-native terminal</div></div>
+      <div class="tool-card reveal"><div class="tool-icon tool-icon--ui"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></div><div class="tool-name">Lovable</div><div class="tool-use">Website builder</div></div>
+      <div class="tool-card reveal"><div class="tool-icon tool-icon--build">&#9670;</div><div class="tool-name">Composio</div><div class="tool-use">Claude &harr; 200+ tools</div></div>
+      <div class="tool-card reveal"><div class="tool-icon tool-icon--build">&#9670;</div><div class="tool-name">Playwright</div><div class="tool-use">Browser control</div></div>
+      <div class="tool-card reveal"><div class="tool-icon tool-icon--build">&#9670;</div><div class="tool-name">CodeRabbit</div><div class="tool-use">AI code review</div></div>
+      <div class="tool-card reveal"><div class="tool-icon tool-icon--data">&#9632;</div><div class="tool-name">Obsidian</div><div class="tool-use">Knowledge system</div></div>
+      <div class="tool-card reveal"><div class="tool-icon tool-icon--data">&#9632;</div><div class="tool-name">Splashtop</div><div class="tool-use">Remote access</div></div>
       <div class="tool-card reveal"><div class="tool-icon tool-icon--voice">&#9835;</div><div class="tool-name">ElevenLabs</div><div class="tool-use">Text-to-speech</div></div>
       <div class="tool-card reveal"><div class="tool-icon tool-icon--voice">&#9835;</div><div class="tool-name">Whisper</div><div class="tool-use">Speech-to-text</div></div>
-      <div class="tool-card reveal"><div class="tool-icon tool-icon--ai">&#9679;</div><div class="tool-name">Claude Vision</div><div class="tool-use">Image &amp; PDF</div></div>
-      <div class="tool-card reveal"><div class="tool-icon tool-icon--build">&#9670;</div><div class="tool-name">Braintrust</div><div class="tool-use">Automated testing</div></div>
-      <div class="tool-card reveal"><div class="tool-icon tool-icon--data">&#9632;</div><div class="tool-name">Airtable</div><div class="tool-use">Data layer</div></div>
-      <div class="tool-card reveal"><div class="tool-icon tool-icon--data">&#9632;</div><div class="tool-name">Google Sheets</div><div class="tool-use">Data &amp; reports</div></div>
-      <div class="tool-card reveal"><div class="tool-icon tool-icon--data">&#9632;</div><div class="tool-name">Notion</div><div class="tool-use">Docs &amp; knowledge</div></div>
     </div>
   </div>
 </section>
@@ -400,26 +369,47 @@
 <section class="section">
   <div class="container">
     <div class="page-cta reveal">
-      <h3>Three products. Four weeks.<br><span class="text-accent">Ship something real.</span></h3>
-      <p>Next cohort starts July 6, 2026. Austin, TX. 15 seats.</p>
+      <h3>Three products. Two weeks.<br><span class="text-accent">Ship something real.</span></h3>
+      <p>Next cohort: July 6 to 17, 2026. Austin, TX. 15 seats.</p>
+      <a href="apply.html" class="btn btn-primary btn-lg btn-arrow" style="margin-top:var(--s4);">Apply Now </a>
+    </div>
+  </div>
+</section>
 
-      <!-- FORM PLACEHOLDER — Replace with Zoho form embed -->
-      <div id="zf_div_nTImQ0KPomI6Vy_bACDwGZGRtGFyK2z--JarTy-PDJY"></div>
-      <script type="text/javascript">
-      (function() {
-          try{
-              var f = document.createElement("iframe");
-              var ifrmSrc = 'https://forms.zohopublic.com/makersquare/form/ApplicationForm/formperma/nTImQ0KPomI6Vy_bACDwGZGRtGFyK2z--JarTy-PDJY?zf_rszfm=1';
-              try{
-                  if ( typeof ZFAdvLead != "undefined" && typeof zfutm_zfAdvLead != "undefined" ) { for( var prmIdx = 0 ; prmIdx < ZFAdvLead.utmPNameArr.length ; prmIdx ++ ) { var utmPm = ZFAdvLead.utmPNameArr[ prmIdx ]; utmPm = ( ZFAdvLead.isSameDomian && ( ZFAdvLead.utmcustPNameArr.indexOf(utmPm) == -1 ) ) ? "zf_" + utmPm : utmPm; var utmVal = zfutm_zfAdvLead.zfautm_gC_enc( ZFAdvLead.utmPNameArr[ prmIdx ] ); if ( typeof utmVal !== "undefined" ) { if ( utmVal != "" ) { if(ifrmSrc.indexOf('?') > 0){ ifrmSrc = ifrmSrc+'&'+utmPm+'='+utmVal; }else{ ifrmSrc = ifrmSrc+'?'+utmPm+'='+utmVal; } } } } }
-                  if ( typeof ZFLead !== "undefined" && typeof zfutm_zfLead !== "undefined" ) { for( var prmIdx = 0 ; prmIdx < ZFLead.utmPNameArr.length ; prmIdx ++ ) { var utmPm = ZFLead.utmPNameArr[ prmIdx ]; var utmVal = zfutm_zfLead.zfutm_gC_enc( ZFLead.utmPNameArr[ prmIdx ] ); if ( typeof utmVal !== "undefined" ) { if ( utmVal != "" ){ if(ifrmSrc.indexOf('?') > 0){ ifrmSrc = ifrmSrc+'&'+utmPm+'='+utmVal; }else{ ifrmSrc = ifrmSrc+'?'+utmPm+'='+utmVal; } } } } }
-              }catch(e){}
-              f.src = ifrmSrc; f.style.border="none"; f.style.height="2408px"; f.style.width="100%"; f.style.maxWidth="560px"; f.style.transition="all 0.5s ease"; f.setAttribute("aria-label", "Application Form");
-              var d = document.getElementById("zf_div_nTImQ0KPomI6Vy_bACDwGZGRtGFyK2z--JarTy-PDJY"); d.appendChild(f);
-              window.addEventListener('message', function (){ var evntData = event.data; if( evntData && evntData.constructor == String ){ var zf_ifrm_data = evntData.split("|"); if ( zf_ifrm_data.length == 2 || zf_ifrm_data.length == 3 ) { var zf_perma = zf_ifrm_data[0]; var zf_ifrm_ht_nw = ( parseInt(zf_ifrm_data[1], 10) + 15 ) + "px"; var iframe = document.getElementById("zf_div_nTImQ0KPomI6Vy_bACDwGZGRtGFyK2z--JarTy-PDJY").getElementsByTagName("iframe")[0]; if ( (iframe.src).indexOf('formperma') > 0 && (iframe.src).indexOf(zf_perma) > 0 ) { var prevIframeHeight = iframe.style.height; if ( prevIframeHeight != zf_ifrm_ht_nw ) { iframe.style.height = zf_ifrm_ht_nw; } } } } }, false);
-          }catch(e){}
-      })();
-      </script>
+
+<!-- COMING SOON: Part-time waitlist -->
+<section class="section">
+  <div class="container">
+    <div class="coming-soon-card reveal">
+      <div class="coming-soon-badge">Coming Soon</div>
+      <h2>Can&rsquo;t take two full weeks off?</h2>
+      <p class="coming-soon-lede">We&rsquo;re launching a <strong>4-week part-time format</strong>. Fridays plus weekends. Same curriculum. Same three shipped products. Same public Demo Day, built around your work schedule.</p>
+      <div class="coming-soon-meta">
+        <span class="coming-soon-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Fri / Sat / Sun, 4 weeks</span>
+        <span class="coming-soon-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l2.5 6 6.5.5-5 4.5 1.5 6.5-6-3.5-6 3.5 1.5-6.5-5-4.5 6.5-.5z"/></svg>Same Demo Day</span>
+        <span class="coming-soon-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 7h-3V4a2 2 0 00-2-2H9a2 2 0 00-2 2v3H4a2 2 0 00-2 2v11a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z"/></svg>Keep your day job</span>
+      </div>
+      <div class="waitlist-embed">
+        <div id="zf_div_mhFZPMq0V3WZYAI6xuzmlbrneQRMVHNeivSuj3rbvt8"></div>
+        <script type="text/javascript">
+        (function() {
+            try{
+                var f = document.createElement("iframe");
+                var ifrmSrc = 'https://forms.zohopublic.com/makersquare/form/Waitlist/formperma/mhFZPMq0V3WZYAI6xuzmlbrneQRMVHNeivSuj3rbvt8?zf_rszfm=1';
+                try{
+                    if ( typeof ZFAdvLead != "undefined" && typeof zfutm_zfAdvLead != "undefined" ) { for( var prmIdx = 0 ; prmIdx < ZFAdvLead.utmPNameArr.length ; prmIdx ++ ) { var utmPm = ZFAdvLead.utmPNameArr[ prmIdx ]; utmPm = ( ZFAdvLead.isSameDomian && ( ZFAdvLead.utmcustPNameArr.indexOf(utmPm) == -1 ) ) ? "zf_" + utmPm : utmPm; var utmVal = zfutm_zfAdvLead.zfautm_gC_enc( ZFAdvLead.utmPNameArr[ prmIdx ] ); if ( typeof utmVal !== "undefined" ) { if ( utmVal != "" ) { if(ifrmSrc.indexOf('?') > 0){ ifrmSrc = ifrmSrc+'&'+utmPm+'='+utmVal; }else{ ifrmSrc = ifrmSrc+'?'+utmPm+'='+utmVal; } } } } }
+                    if ( typeof ZFLead !== "undefined" && typeof zfutm_zfLead !== "undefined" ) { for( var prmIdx = 0 ; prmIdx < ZFLead.utmPNameArr.length ; prmIdx ++ ) { var utmPm = ZFLead.utmPNameArr[ prmIdx ]; var utmVal = zfutm_zfLead.zfutm_gC_enc( ZFLead.utmPNameArr[ prmIdx ] ); if ( typeof utmVal !== "undefined" ) { if ( utmVal != "" ){ if(ifrmSrc.indexOf('?') > 0){ ifrmSrc = ifrmSrc+'&'+utmPm+'='+utmVal; }else{ ifrmSrc = ifrmSrc+'?'+utmPm+'='+utmVal; } } } } }
+                }catch(e){}
+                f.src = ifrmSrc; f.style.border="none"; f.style.height="858px"; f.style.width="100%"; f.style.maxWidth="560px"; f.style.transition="all 0.5s ease"; f.setAttribute("aria-label", 'Waitlist');
+                var d = document.getElementById("zf_div_mhFZPMq0V3WZYAI6xuzmlbrneQRMVHNeivSuj3rbvt8");
+                d.appendChild(f);
+                window.addEventListener('message', function (){ var evntData = event.data; if( evntData && evntData.constructor == String ){ var zf_ifrm_data = evntData.split("|"); if ( zf_ifrm_data.length == 2 || zf_ifrm_data.length == 3 ) { var zf_perma = zf_ifrm_data[0]; var zf_ifrm_ht_nw = ( parseInt(zf_ifrm_data[1], 10) + 15 ) + "px"; var iframe = document.getElementById("zf_div_mhFZPMq0V3WZYAI6xuzmlbrneQRMVHNeivSuj3rbvt8").getElementsByTagName("iframe")[0]; if ( (iframe.src).indexOf('formperma') > 0 && (iframe.src).indexOf(zf_perma) > 0 ) { var prevIframeHeight = iframe.style.height; var zf_tout = false; if( zf_ifrm_data.length == 3 ) { iframe.scrollIntoView(); zf_tout = true; } if ( prevIframeHeight != zf_ifrm_ht_nw ) { if( zf_tout ) { setTimeout(function(){ iframe.style.height = zf_ifrm_ht_nw; },500); } else { iframe.style.height = zf_ifrm_ht_nw; } } } } } }, false);
+            }catch(e){}
+        })();
+        </script>
+      </div>
+    </div>
+  </div>
 </section>
 
 
@@ -429,7 +419,7 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="index.html" class="footer-logo"><img src="logo-dark.png" alt="MakerSquare"></a>
-        <p>4-week in-person AI bootcamp in Austin, TX for operators, founders, and professionals.</p>
+        <p>2-week in-person AI intensive in Austin, TX for operators, founders, and professionals.</p>
         <a href="apply.html" class="btn btn-primary btn-arrow" style="font-size:0.82rem;padding:10px 20px;">Apply Now </a>
       </div>
       <div>

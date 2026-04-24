@@ -1,12 +1,12 @@
 # MakerSquare
 
-> MakerSquare is a 4-week, in-person AI bootcamp in Austin, TX for non-technical professionals — operators, founders, career builders, and domain experts. No coding required. Students build and deploy 3 real AI products and present at Demo Day in front of Austin's tech, investor, and operator community.
+> MakerSquare is a 2-week, in-person AI intensive in Austin, TX for non-technical professionals: operators, founders, career builders, and domain experts. No coding required. Students build and deploy 3 real AI products and present at Demo Day in front of Austin's tech, investor, and operator community.
 
 ## What MakerSquare Is
 
-MakerSquare is the only in-person AI product-building bootcamp in Austin, Texas designed specifically for professionals without a technical background. Unlike online courses or certifications that teach AI literacy, MakerSquare graduates ship working AI products. The program is 4 weeks long, meets Monday, Wednesday, and Friday from 9am to 3pm, and is intentionally kept to 15 builders per cohort.
+MakerSquare is the only in-person AI product-building intensive in Austin, Texas designed specifically for professionals without a technical background. Unlike online courses or certifications that teach AI literacy, MakerSquare graduates ship working AI products. The program is 2 weeks long, meets Monday through Friday from 9am to 3pm, and is intentionally kept to 15 builders per cohort. Optional Saturday office hours are offered for extra build time.
 
-The program is open to anyone nationwide (and internationally) — not just Austin locals. Housing assistance is available for builders who relocate.
+The program is open to anyone nationwide (and internationally), not just Austin locals. Housing assistance is available for builders who relocate temporarily.
 
 ## Who It's For
 
@@ -17,43 +17,53 @@ The program is open to anyone nationwide (and internationally) — not just Aust
 
 ## What Students Build
 
-Over 4 weeks, students build and deploy 3 AI products:
-1. Week 1: First deployed AI tool — advanced prompting, Windsurf, direct API integrations
-2. Week 2: RAG-powered product — AI that reasons over your own documents using Supabase
-3. Week 3: Interface + voice/multimodal product — real UI with v0 and Replit, voice with ElevenLabs/Whisper
-4. Week 4: Capstone — most ambitious product combining RAG, agents, interfaces. Presented at Demo Day.
+Over 2 weeks (10 teaching days), students build and deploy 3 AI products:
+1. Product 1 (Day 5, Friday of Week 1): Website + Supabase + Claude Skill, wired together and deployed to a live URL.
+2. Product 2 (Day 9, Thursday of Week 2): A workflow or automation combining Composio, Playwright, or voice AI with the builder's real data.
+3. Capstone (Day 10, Demo Day Friday): Most ambitious product combining Claude Code, agentic APIs, and the full stack. Presented at public Demo Day.
 
 ## Curriculum Overview
 
-- Pre-work: 3 self-paced steps (describe your role, pick your use case, build your first prompt system)
-- Week 1 — Advanced Foundations: Advanced prompting, structured output, Windsurf, API integrations, Product 1 sprint
-- Week 2 — RAG + Agents: Vector embeddings on Supabase, AI agents, automated testing with Braintrust. Product 1 ships.
-- Week 3 — Interfaces + Voice: v0 and Replit frontends, ElevenLabs/Whisper, Claude Vision. Product 2 ships.
-- Week 4 — Ship & Scale: Capstone scoping, full build sprint, Demo Day presentation
+- Pre-work: 3 self-paced steps (set up accounts, run your first expert-level conversation with Claude, define your capstone problem)
+- Week 1: Build. How models work, talking to Claude like an expert, Warp + GitHub + Obsidian, PRD writing, build and deploy a website with Lovable + Vercel, Supabase and Claude Skills. Product 1 ships Friday.
+- Week 2: Automate + Ship. Sales automation with Composio, Playwright browser control, voice AI with Whisper + ElevenLabs, Claude Code + CodeRabbit agentic workflows, advanced tools. Demo Day Friday.
 
-No visual automation tools (Zapier, Make, n8n). Production-level skills: prompting, RAG, agents, automated testing, deployment.
+No visual automation tools (Zapier, Make, n8n). Production-level skills: expert prompting, Claude Skills, agentic workflows, browser control, voice AI, real deployment.
 
 ## Tools & Tech Stack
 
-Claude API, ChatGPT, Windsurf, Supabase, v0, Railway, Replit, ElevenLabs, Whisper, Claude Vision, Braintrust, Airtable, Google Sheets, Notion
+Claude, Claude Code, ChatGPT, OpenRouter, Warp Terminal, GitHub, Vercel, Supabase, Lovable, Composio, Playwright, CodeRabbit, Obsidian, Splashtop, ElevenLabs, Whisper
+
+## Part-Time Format (Coming Soon)
+
+A 4-week part-time format (Fridays plus weekends) is planned as a separate track for professionals who can't take two full weeks away from work. Same curriculum, same three shipped products, same public Demo Day. Waitlist open on the curriculum page.
 
 ## Key Facts
 
-- Duration: 4 weeks
-- Format: In-person, Austin TX (Mon/Wed/Fri, 9am–3pm)
-- Prerequisites: No coding required. Basic computer fluency + real-world domain expertise.
-- Cohort 1: July 6 – August 1, 2026 (Demo Day Aug 1)
-- Cohort 2: September 14 – October 9, 2026
-- Cohort 3: October 26 – November 20, 2026
-- Cohort 4: January 11 – February 5, 2027
+- Duration: 2 weeks (10 teaching days, Mon through Fri)
+- Format: In-person, Austin TX (Mon-Fri, 9am to 3pm), optional Saturday office hours
+- Prerequisites: No coding required. Basic computer fluency plus real-world domain expertise.
 - Cohort size: 15 builders per cohort
 - Tuition: $5,999 (flat fee, no ISA)
 - Payment plans: Pay in full $5,999 or 2 payments of $3,100 ($6,199 total)
 - Deposit: $1,000 locks seat
 - Scholarship: $1,500 off for military, first responders, and educators ($4,499 total)
 - Housing: Partner Airbnb discounts from $1,600/month
-- Corporate training: 2-week intensive for teams of 8–20 (custom pricing)
+- Corporate training: custom 2-week intensive for teams of 8 to 20 (custom pricing)
 - Alumni subscription: $199/month (optional, first month free)
+
+## 2026 Cohort Calendar (2-Week Intensive)
+
+- Cohort 1: July 6 to July 17, 2026 (Demo Day Fri July 17 evening) — 15 seats
+- Cohort 2: July 27 to August 7, 2026 (Demo Day Fri August 7 evening) — 15 seats
+- Cohort 3: August 17 to August 28, 2026 (Demo Day Fri August 28 evening) — 15 seats
+- Cohort 4: September 8 to September 18, 2026 (Demo Day Fri September 18 evening) — 15 seats. Starts Tuesday due to Labor Day (Mon Sep 7); 9 teaching days. Saturday office hours remain optional drop-in, not a required makeup class.
+- Cohort 5: September 28 to October 9, 2026 (Demo Day Fri October 9 evening) — 15 seats
+- Cohort 6: October 19 to October 30, 2026 (Demo Day Fri October 30 evening) — 15 seats
+- Cohort 7: November 9 to November 20, 2026 (Demo Day Fri November 20 evening) — 15 seats. Veterans Day (Nov 11) is a day off mid-program.
+- Cohort 8: November 30 to December 11, 2026 (Demo Day Fri December 11 evening) — 15 seats. Starts after the Thanksgiving break. Ends before Christmas.
+
+Cohorts run Monday through Friday, 9am to 3pm, with optional Saturday office hours (10am to 1pm).
 
 ## Demo Day
 
@@ -65,11 +75,11 @@ Every cohort ends with a public Demo Day at MakerSquare HQ in Austin. Each build
 
 ## Differentiators
 
-- The only in-person AI product-building bootcamp for non-technical professionals in Austin
-- Builds real, deployed products — not coursework or certificates
+- The only in-person AI product-building intensive for non-technical professionals in Austin
+- Builds real, deployed products, not coursework or certificates
 - Graduates ship 3 AI products and present at Demo Day to Austin investors and operators
-- No visual automation tools — teaches production-level AI building with Windsurf, APIs, RAG, agents
-- Schedule allows builders to keep working 2 days per week (Tue/Thu)
+- No visual automation tools. Teaches production-level AI building with Claude Code, Claude Skills, Composio, Playwright, APIs, and agentic workflows
+- 2-week intensive format: fully immersive, Mon-Fri, 9am to 3pm, with optional Saturday office hours
 - 4.41/5 alumni rating on Course Report (legacy MakerSquare program)
 
 ## Founder
