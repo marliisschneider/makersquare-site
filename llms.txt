@@ -4,7 +4,7 @@
 
 ## What MakerSquare Is
 
-MakerSquare is the only in-person AI product-building intensive in Austin, Texas designed specifically for professionals without a technical background. Unlike online courses or certifications that teach AI literacy, MakerSquare graduates ship working AI products. The program is 2 weeks long, meets Monday through Friday from 9am to 3pm, and is intentionally kept to 15 builders per cohort. Optional Saturday office hours are offered for extra build time.
+MakerSquare is the only in-person AI product-building intensive in Austin, Texas designed specifically for professionals without a technical background. Unlike online courses or certifications that teach AI literacy, MakerSquare graduates ship working AI products. The program is 2 weeks long, meets Monday through Friday from 9am to 5pm, and is intentionally kept to 15 builders per cohort. Optional Saturday office hours are offered for extra build time.
 
 The program is open to anyone nationwide (and internationally), not just Austin locals. Housing assistance is available for builders who relocate temporarily.
 
@@ -41,7 +41,7 @@ A 4-week part-time format (Fridays plus weekends) is planned as a separate track
 ## Key Facts
 
 - Duration: 2 weeks (10 teaching days, Mon through Fri)
-- Format: In-person, Austin TX (Mon-Fri, 9am to 3pm), optional Saturday office hours
+- Format: In-person, Austin TX (Mon-Fri, 9am to 5pm), optional Saturday office hours
 - Prerequisites: No coding required. Basic computer fluency plus real-world domain expertise.
 - Cohort size: 15 builders per cohort
 - Tuition: $5,999 (flat fee, no ISA)
@@ -63,7 +63,7 @@ A 4-week part-time format (Fridays plus weekends) is planned as a separate track
 - Cohort 7: November 9 to November 20, 2026 (Demo Day Fri November 20 evening) — 15 seats. Veterans Day (Nov 11) is a day off mid-program.
 - Cohort 8: November 30 to December 11, 2026 (Demo Day Fri December 11 evening) — 15 seats. Starts after the Thanksgiving break. Ends before Christmas.
 
-Cohorts run Monday through Friday, 9am to 3pm, with optional Saturday office hours (10am to 1pm).
+Cohorts run Monday through Friday, 9am to 5pm, with optional Saturday office hours (10am to 1pm).
 
 ## Demo Day
 
@@ -79,7 +79,7 @@ Every cohort ends with a public Demo Day at MakerSquare HQ in Austin. Each build
 - Builds real, deployed products, not coursework or certificates
 - Graduates ship 3 AI products and present at Demo Day to Austin investors and operators
 - No visual automation tools. Teaches production-level AI building with Claude Code, Claude Skills, Composio, Playwright, APIs, and agentic workflows
-- 2-week intensive format: fully immersive, Mon-Fri, 9am to 3pm, with optional Saturday office hours
+- 2-week intensive format: fully immersive, Mon-Fri, 9am to 5pm, with optional Saturday office hours
 - 4.41/5 alumni rating on Course Report (legacy MakerSquare program)
 
 ## Founder
