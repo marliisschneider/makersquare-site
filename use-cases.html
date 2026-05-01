@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Industry Use Cases | MakerSquare AI Bootcamp</title>
+<meta name="description" content="See what professionals from every industry build at MakerSquare. Real AI tools for legal, healthcare, finance, real estate, marketing, and more. No coding required.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="canonical" href="https://www.makersquare.ai/use-cases">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.min.css">
+<style>
+/* Use Cases Page Styles */
+.use-hero {
+  padding: calc(var(--nav-height) + 60px) 0 80px;
+  background: linear-gradient(135deg, var(--navy) 0%, #2a2875 50%, var(--indigo) 100%);
+  position: relative;
+  overflow: hidden;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+}
+.use-hero::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -30%;
+  width: 1200px;
+  height: 1200px;
+  background: radial-gradient(circle, rgba(129,170,251,0.15) 0%, transparent 60%);
+  pointer-events: none;
+  animation: pulse 8s ease-in-out infinite;
+}
+.use-hero::after {
+  content: '';
+  position: absolute;
+  bottom: -30%;
+  left: -20%;
+  width: 900px;
+  height: 900px;
+  background: radial-gradient(circle, rgba(64,61,216,0.2) 0%, transparent 60%);
+  pointer-events: none;
+  animation: pulse 10s ease-in-out infinite reverse;
+}
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.1); opacity: 0.7; }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(2deg); }
+}
+@keyframes float-reverse {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(15px) rotate(-2deg); }
+}
+@keyframes slide-in {
+  from { opacity: 0; transform: translateX(30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.use-hero-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--s10);
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.use-hero-content { max-width: 580px; }
+.use-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: var(--r-full);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--sky);
+  margin-bottom: var(--s5);
+  backdrop-filter: blur(10px);
+}
+.use-hero-badge svg { width: 16px; height: 16px; }
+.use-hero h1 {
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
+  margin-bottom: var(--s5);
+  color: var(--white);
+  line-height: 1.1;
+}
+.use-hero h1 span {
+  background: linear-gradient(135deg, var(--sky) 0%, #a5d6ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.use-hero-sub {
+  font-size: 1.2rem;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.7;
+  margin-bottom: var(--s6);
+}
+.use-hero-stats {
+  display: flex;
+  gap: var(--s6);
+  margin-bottom: var(--s7);
+  padding-top: var(--s5);
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+.use-hero-stat-num {
+  font-family: var(--font-display);
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--white);
+  line-height: 1;
+}
+.use-hero-stat-label {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.5);
+  margin-top: 4px;
+}
+.use-hero-cta { display: flex; gap: var(--s4); align-items: center; flex-wrap: wrap; }
+.use-hero-cta .btn-primary { background: var(--white); color: var(--navy); }
+.use-hero-cta .btn-primary:hover { background: var(--sky); transform: translateY(-2px); }
+.use-hero-cta .btn-ghost {
+  color: var(--white);
+  border-color: rgba(255,255,255,0.3);
+}
+.use-hero-cta .btn-ghost:hover {
+  background: rgba(255,255,255,0.1);
+  border-color: rgba(255,255,255,0.5);
+}
+
+/* Floating Industry Cards Visual */
+.use-hero-visual {
+  position: relative;
+  height: 520px;
+  perspective: 1000px;
+}
+.floating-card {
+  position: absolute;
+  background: var(--white);
+  border-radius: var(--r-xl);
+  padding: 20px;
+  box-shadow: 0 25px 80px rgba(0,0,0,0.3);
+  animation: float 6s ease-in-out infinite;
+  opacity: 0;
+  animation: slide-in 0.6s ease forwards, float 6s ease-in-out infinite;
+}
+.floating-card:nth-child(1) {
+  top: 0; right: 20px;
+  width: 280px;
+  animation-delay: 0s, 0.6s;
+}
+.floating-card:nth-child(2) {
+  top: 140px; left: 0;
+  width: 260px;
+  animation-delay: 0.2s, 0.8s;
+  animation-name: slide-in, float-reverse;
+}
+.floating-card:nth-child(3) {
+  bottom: 80px; right: 0;
+  width: 300px;
+  animation-delay: 0.4s, 1s;
+}
+.floating-card:nth-child(4) {
+  bottom: 0; left: 40px;
+  width: 220px;
+  animation-delay: 0.6s, 1.2s;
+  animation-name: slide-in, float-reverse;
+}
+.floating-card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.floating-card-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.floating-card-icon.legal { background: #EEF2FF; color: #4F46E5; }
+.floating-card-icon.health { background: #FEE2E2; color: #DC2626; }
+.floating-card-icon.finance { background: #D1FAE5; color: #059669; }
+.floating-card-icon.recruit { background: #FEF3C7; color: #D97706; }
+.floating-card-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--navy);
+}
+.floating-card-industry {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+.floating-card-preview {
+  background: var(--light-bg);
+  border-radius: var(--r-md);
+  padding: 12px;
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+.floating-card-metric {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--ice);
+}
+.floating-card-metric-label { font-size: 0.72rem; color: var(--text-muted); }
+.floating-card-metric-value {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--green);
+}
+
+/* Industry Pills Navigation */
+.industry-pills-section {
+  padding: var(--s8) 0;
+  background: var(--white);
+  border-bottom: 1px solid var(--ice);
+  position: sticky;
+  top: var(--nav-height);
+  z-index: 90;
+}
+.industry-pills { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+.industry-pill { display: inline-flex; align-items: center; gap: 8px; padding: 10px 18px; background: var(--light-bg); border: 1.5px solid rgba(24,24,73,0.08); border-radius: var(--r-full); font-size: 0.85rem; font-weight: 600; color: var(--text-secondary); cursor: pointer; transition: all 0.25s ease; text-decoration: none; }
+.industry-pill:hover { border-color: var(--indigo); color: var(--indigo); background: rgba(64,61,216,0.04); transform: translateY(-2px); box-shadow: 0 4px 12px rgba(64,61,216,0.1); }
+.industry-pill svg { width: 18px; height: 18px; opacity: 0.7; }
+.industry-pill:hover svg { opacity: 1; }
+
+@media (max-width: 1000px) {
+  .use-hero-inner { grid-template-columns: 1fr; text-align: center; }
+  .use-hero-content { max-width: 100%; margin: 0 auto; }
+  .use-hero-visual { display: none; }
+  .use-hero-stats { justify-content: center; }
+  .use-hero-cta { justify-content: center; }
+  .use-hero { min-height: auto; padding-bottom: var(--s10); }
+}
+
+/* Big Statement */
+.big-statement { padding: var(--s12) 0; text-align: center; background: var(--white); }
+.big-statement h2 { font-size: clamp(1.8rem, 3.5vw, 2.6rem); max-width: 900px; margin: 0 auto; line-height: 1.25; }
+.big-statement p { font-size: 1.1rem; color: var(--text-secondary); max-width: 700px; margin: var(--s5) auto 0; line-height: 1.7; }
+
+/* Use Case Cards - New Design */
+.use-cases-section { padding: var(--s10) 0; }
+.use-cases-section:nth-child(odd) { background: var(--light-bg); }
+
+.use-case-card { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s8); align-items: center; max-width: 1100px; margin: 0 auto; }
+.use-case-card.reverse { direction: rtl; }
+.use-case-card.reverse > * { direction: ltr; }
+
+.use-case-content { padding: var(--s6) 0; }
+.use-case-industry-tag { display: inline-flex; align-items: center; gap: 8px; padding: 8px 16px; background: rgba(64,61,216,0.08); border-radius: var(--r-full); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--indigo); margin-bottom: var(--s5); }
+.use-case-industry-tag svg { width: 16px; height: 16px; }
+.use-case-content h3 { font-size: 1.8rem; margin-bottom: var(--s4); line-height: 1.2; }
+.use-case-content > p { font-size: 1.05rem; color: var(--text-secondary); line-height: 1.75; margin-bottom: var(--s5); }
+
+.pain-points { margin-bottom: var(--s5); }
+.pain-points-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); margin-bottom: var(--s3); }
+.pain-point { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 10px; font-size: 0.92rem; color: var(--text-secondary); }
+.pain-point::before { content: ''; width: 6px; height: 6px; min-width: 6px; border-radius: 50%; background: #EF4444; margin-top: 7px; }
+
+.solutions { background: rgba(64,61,216,0.04); border: 1px solid rgba(64,61,216,0.1); border-radius: var(--r-lg); padding: var(--s5); margin-bottom: var(--s5); }
+.solutions-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--indigo); margin-bottom: var(--s3); display: flex; align-items: center; gap: 6px; }
+.solutions-label svg { width: 14px; height: 14px; }
+.solution-item { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 10px; font-size: 0.92rem; color: var(--navy); }
+.solution-item:last-child { margin-bottom: 0; }
+.solution-item::before { content: '\2713'; color: var(--green); font-weight: 700; font-size: 0.85rem; }
+
+.tools-built { display: flex; flex-wrap: wrap; gap: 8px; }
+.tool-tag { font-size: 0.75rem; font-weight: 600; color: var(--navy); background: var(--cloud); border: 1px solid var(--ice); border-radius: var(--r-full); padding: 6px 14px; }
+
+/* Visual Side */
+.use-case-visual { position: relative; }
+.use-case-mockup { background: var(--white); border-radius: var(--r-xl); box-shadow: var(--shadow-lg); border: 1px solid rgba(24,24,73,0.08); overflow: hidden; }
+.mockup-header { display: flex; align-items: center; gap: 6px; padding: 12px 16px; background: var(--light-bg); border-bottom: 1px solid rgba(24,24,73,0.06); }
+.mockup-dot { width: 10px; height: 10px; border-radius: 50%; }
+.mockup-dot:nth-child(1) { background: #FF5F57; }
+.mockup-dot:nth-child(2) { background: #FEBC2E; }
+.mockup-dot:nth-child(3) { background: #28C840; }
+.mockup-body { padding: 20px; min-height: 280px; }
+
+/* Specific mockup styles */
+.chat-mockup .message { display: flex; gap: 10px; margin-bottom: 14px; }
+.chat-mockup .message.user { justify-content: flex-end; }
+.chat-mockup .avatar { width: 32px; height: 32px; border-radius: 50%; background: var(--ice); flex-shrink: 0; }
+.chat-mockup .bubble { max-width: 75%; padding: 12px 16px; border-radius: 16px; font-size: 0.85rem; line-height: 1.5; }
+.chat-mockup .message.ai .bubble { background: var(--cloud); color: var(--navy); border-bottom-left-radius: 4px; }
+.chat-mockup .message.user .bubble { background: var(--indigo); color: var(--white); border-bottom-right-radius: 4px; }
+
+.data-mockup .data-row { display: flex; align-items: center; gap: 12px; padding: 12px; border-bottom: 1px solid rgba(24,24,73,0.06); }
+.data-mockup .data-row:last-child { border-bottom: none; }
+.data-mockup .data-icon { width: 36px; height: 36px; border-radius: 8px; background: var(--cloud); display: flex; align-items: center; justify-content: center; }
+.data-mockup .data-info { flex: 1; }
+.data-mockup .data-title { font-size: 0.85rem; font-weight: 600; color: var(--navy); margin-bottom: 2px; }
+.data-mockup .data-meta { font-size: 0.75rem; color: var(--text-muted); }
+.data-mockup .data-status { font-size: 0.7rem; font-weight: 700; padding: 4px 10px; border-radius: var(--r-full); }
+.data-mockup .status-green { background: var(--green-bg); color: var(--green); }
+.data-mockup .status-yellow { background: #FEF3C7; color: #D97706; }
+.data-mockup .status-blue { background: var(--cloud); color: var(--indigo); }
+
+.score-mockup .candidate { display: flex; align-items: center; gap: 14px; padding: 14px; background: var(--light-bg); border-radius: var(--r-md); margin-bottom: 10px; }
+.score-mockup .candidate:last-child { margin-bottom: 0; }
+.score-mockup .candidate-avatar { width: 44px; height: 44px; border-radius: 50%; background: linear-gradient(135deg, var(--ice) 0%, var(--cloud) 100%); }
+.score-mockup .candidate-info { flex: 1; }
+.score-mockup .candidate-name { font-size: 0.9rem; font-weight: 600; color: var(--navy); }
+.score-mockup .candidate-role { font-size: 0.78rem; color: var(--text-muted); }
+.score-mockup .candidate-score { font-family: var(--font-display); font-size: 1.1rem; font-weight: 800; padding: 6px 12px; border-radius: 8px; }
+.score-mockup .score-high { background: var(--green-bg); color: var(--green); }
+.score-mockup .score-mid { background: var(--cloud); color: var(--azure); }
+.score-mockup .score-low { background: #FEF3C7; color: #D97706; }
+
+/* Floating stat badge */
+.floating-stat { position: absolute; background: var(--white); border-radius: var(--r-md); padding: 14px 18px; box-shadow: var(--shadow-md); border: 1px solid rgba(24,24,73,0.06); }
+.floating-stat-num { font-family: var(--font-display); font-size: 1.5rem; font-weight: 800; color: var(--indigo); line-height: 1; }
+.floating-stat-label { font-size: 0.72rem; color: var(--text-muted); margin-top: 2px; }
+.floating-stat.top-right { top: -20px; right: -20px; }
+.floating-stat.bottom-left { bottom: -20px; left: -20px; }
+
+/* Quote Section */
+.quote-section { padding: var(--s11) 0; background: linear-gradient(135deg, var(--indigo) 0%, var(--navy) 100%); text-align: center; }
+.quote-section blockquote { font-family: var(--font-display); font-size: clamp(1.3rem, 2.5vw, 1.8rem); font-weight: 600; color: var(--white); max-width: 800px; margin: 0 auto var(--s5); line-height: 1.4; }
+.quote-section cite { font-size: 0.95rem; color: var(--sky); font-style: normal; }
+
+/* More Industries Grid */
+.more-industries { padding: var(--s11) 0; background: var(--white); }
+.more-industries h2 { text-align: center; margin-bottom: var(--s9); }
+.industries-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--s5); }
+.industry-card { background: var(--light-bg); border: 1px solid rgba(24,24,73,0.06); border-radius: var(--r-xl); padding: var(--s6); transition: all 0.3s ease; }
+.industry-card:hover { border-color: var(--indigo); box-shadow: var(--shadow-md); transform: translateY(-4px); }
+.industry-card-icon { width: 48px; height: 48px; border-radius: var(--r-md); background: var(--white); border: 1px solid var(--ice); display: flex; align-items: center; justify-content: center; color: var(--indigo); margin-bottom: var(--s4); }
+.industry-card h4 { font-size: 1rem; margin-bottom: var(--s2); }
+.industry-card p { font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: var(--s3); }
+.industry-card-examples { font-size: 0.78rem; color: var(--indigo); font-weight: 600; }
+
+/* Final CTA */
+.final-cta { padding: var(--s12) 0; background: var(--light-bg); text-align: center; }
+.final-cta h2 { margin-bottom: var(--s4); }
+.final-cta p { font-size: 1.1rem; color: var(--text-secondary); max-width: 600px; margin: 0 auto var(--s6); line-height: 1.7; }
+
+@media (max-width: 900px) {
+  .use-case-card, .use-case-card.reverse { grid-template-columns: 1fr; direction: ltr; }
+  .use-case-visual { order: -1; max-width: 500px; margin: 0 auto var(--s6); }
+  .industries-grid { grid-template-columns: repeat(2, 1fr); }
+  .floating-stat { display: none; }
+}
+@media (max-width: 600px) {
+  .industries-grid { grid-template-columns: 1fr; }
+  .industry-pills { gap: 8px; }
+  .industry-pill { padding: 8px 14px; font-size: 0.8rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><img src="logo-light.png" alt="MakerSquare"></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="use-cases.html" class="active">Use Cases</a></li>
+      <li><a href="curriculum.html">Curriculum</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="housing.html">Housing</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="corporate.html">Corporate</a></li>
+      <li><a href="scholarship.html">Scholarship</a></li>
+      <li><a href="apply.html" class="nav-apply">Apply</a></li>
+    </ul>
+    <a href="apply.html" class="btn btn-primary btn-arrow">Apply Now </a>
+    <button class="nav-hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+
+<!-- HERO -->
+<section class="use-hero">
+  <div class="container">
+    <div class="use-hero-inner">
+      <div class="use-hero-content">
+        <div class="use-hero-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          Built by industry experts, not engineers
+        </div>
+        <h1>You know your industry.<br><span>Now automate it.</span></h1>
+        <p class="use-hero-sub">Every job has repetitive work that AI can handle. At MakerSquare, professionals build custom AI tools for their exact workflows—and ship them before they leave.</p>
+
+        <div class="use-hero-stats">
+          <div>
+            <div class="use-hero-stat-num">15+</div>
+            <div class="use-hero-stat-label">Industries represented</div>
+          </div>
+          <div>
+            <div class="use-hero-stat-num">3-5</div>
+            <div class="use-hero-stat-label">Tools shipped per student</div>
+          </div>
+          <div>
+            <div class="use-hero-stat-num">0</div>
+            <div class="use-hero-stat-label">Lines of code written</div>
+          </div>
+        </div>
+
+        <div class="use-hero-cta">
+          <a href="apply.html" class="btn btn-primary btn-lg btn-arrow">Apply Now </a>
+          <a href="#legal" class="btn btn-ghost btn-lg">See Use Cases ↓</a>
+        </div>
+      </div>
+
+      <div class="use-hero-visual">
+        <!-- Legal Card -->
+        <div class="floating-card">
+          <div class="floating-card-header">
+            <div class="floating-card-icon legal">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <div>
+              <div class="floating-card-title">Case Law Assistant</div>
+              <div class="floating-card-industry">Legal / Law Firms</div>
+            </div>
+          </div>
+          <div class="floating-card-preview">
+            "Find TX non-compete cases for sales roles"<br>
+            → 23 cases found, top 3 summarized
+          </div>
+          <div class="floating-card-metric">
+            <span class="floating-card-metric-label">Research time</span>
+            <span class="floating-card-metric-value">-60%</span>
+          </div>
+        </div>
+
+        <!-- Healthcare Card -->
+        <div class="floating-card">
+          <div class="floating-card-header">
+            <div class="floating-card-icon health">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </div>
+            <div>
+              <div class="floating-card-title">Prior Auth Generator</div>
+              <div class="floating-card-industry">Healthcare</div>
+            </div>
+          </div>
+          <div class="floating-card-preview">
+            ICD-10: M54.5 → Letter generated<br>
+            Medical necessity: documented
+          </div>
+          <div class="floating-card-metric">
+            <span class="floating-card-metric-label">Time per letter</span>
+            <span class="floating-card-metric-value">30m → 2m</span>
+          </div>
+        </div>
+
+        <!-- Finance Card -->
+        <div class="floating-card">
+          <div class="floating-card-header">
+            <div class="floating-card-icon finance">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+            </div>
+            <div>
+              <div class="floating-card-title">Invoice Auto-Coder</div>
+              <div class="floating-card-industry">Finance / Accounting</div>
+            </div>
+          </div>
+          <div class="floating-card-preview">
+            INV-4521: $4,250 → GL 6100<br>
+            Status: Auto-coded ✓
+          </div>
+          <div class="floating-card-metric">
+            <span class="floating-card-metric-label">Auto-categorized</span>
+            <span class="floating-card-metric-value">95%</span>
+          </div>
+        </div>
+
+        <!-- Recruiting Card -->
+        <div class="floating-card">
+          <div class="floating-card-header">
+            <div class="floating-card-icon recruit">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+            </div>
+            <div>
+              <div class="floating-card-title">Resume Screener</div>
+              <div class="floating-card-industry">Recruiting</div>
+            </div>
+          </div>
+          <div class="floating-card-metric">
+            <span class="floating-card-metric-label">Productivity</span>
+            <span class="floating-card-metric-value">3x</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INDUSTRY PILLS NAVIGATION -->
+<section class="industry-pills-section">
+  <div class="container">
+    <div class="industry-pills">
+      <a href="#legal" class="industry-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>Legal</a>
+      <a href="#healthcare" class="industry-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Healthcare</a>
+      <a href="#finance" class="industry-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>Finance</a>
+      <a href="#realestate" class="industry-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>Real Estate</a>
+      <a href="#recruiting" class="industry-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>Recruiting</a>
+      <a href="#marketing" class="industry-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>Marketing</a>
+      <a href="#more" class="industry-pill">+ 8 More</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- BIG STATEMENT -->
+<section class="big-statement">
+  <div class="container">
+    <h2>You don't need engineers.<br>You need <span class="text-accent">your own expertise + the right tools.</span></h2>
+    <p>The best AI tools come from people who understand the problem. A lawyer builds a better legal research tool than any engineer. A recruiter builds a better screening system. That's the MakerSquare thesis.</p>
+  </div>
+</section>
+
+
+<!-- LEGAL USE CASE -->
+<section class="use-cases-section" id="legal">
+  <div class="container">
+    <div class="use-case-card">
+      <div class="use-case-content">
+        <div class="use-case-industry-tag">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          Legal / Law Firms
+        </div>
+        <h3>AI Legal Research Assistant</h3>
+        <p>Associates spend days on research. Contracts pile up for review. You know exactly what you're looking for, but the tools make you dig.</p>
+
+        <div class="pain-points">
+          <div class="pain-points-label">The daily grind</div>
+          <div class="pain-point">10+ hours researching case law for a single memo</div>
+          <div class="pain-point">Reading 100-page contracts to find 5 key clauses</div>
+          <div class="pain-point">Clients won't pay for research time anymore</div>
+        </div>
+
+        <div class="solutions">
+          <div class="solutions-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>What you build</div>
+          <div class="solution-item">Case law search that finds and summarizes relevant precedents</div>
+          <div class="solution-item">Contract clause extractor that flags non-standard terms</div>
+          <div class="solution-item">Client FAQ bot trained on your practice area</div>
+        </div>
+
+        <div class="tools-built">
+          <span class="tool-tag">Claude Code</span>
+          <span class="tool-tag">PDF Extraction</span>
+          <span class="tool-tag">Vector Search</span>
+          <span class="tool-tag">Vercel Deploy</span>
+        </div>
+      </div>
+
+      <div class="use-case-visual">
+        <div class="use-case-mockup chat-mockup">
+          <div class="mockup-header"><div class="mockup-dot"></div><div class="mockup-dot"></div><div class="mockup-dot"></div></div>
+          <div class="mockup-body">
+            <div class="message user"><div class="bubble">Find Texas cases on non-compete enforceability for sales employees</div></div>
+            <div class="message ai"><div class="avatar"></div><div class="bubble">Found 23 relevant cases. Top 3 by relevance:<br><br><strong>Marsh USA v. Cook (2011)</strong> - Set the "reasonableness" standard for geographic scope...<br><br><strong>Evan's World Travel v. Adams (2008)</strong> - Key precedent for customer relationships...</div></div>
+            <div class="message user"><div class="bubble">Summarize the holding in Marsh v Cook</div></div>
+          </div>
+        </div>
+        <div class="floating-stat top-right">
+          <div class="floating-stat-num">60%</div>
+          <div class="floating-stat-label">Less research time</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- HEALTHCARE USE CASE -->
+<section class="use-cases-section" id="healthcare">
+  <div class="container">
+    <div class="use-case-card reverse">
+      <div class="use-case-content">
+        <div class="use-case-industry-tag">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          Healthcare / Medical Practices
+        </div>
+        <h3>AI Admin & Patient Assistant</h3>
+        <p>Your clinical team is drowning in paperwork. Prior auths, patient calls, visit summaries. The admin burden is crushing your ability to care for patients.</p>
+
+        <div class="pain-points">
+          <div class="pain-points-label">The daily grind</div>
+          <div class="pain-point">30+ minutes per prior authorization letter</div>
+          <div class="pain-point">Front desk answers the same 50 questions daily</div>
+          <div class="pain-point">Denial appeals require custom letters every time</div>
+        </div>
+
+        <div class="solutions">
+          <div class="solutions-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>What you build</div>
+          <div class="solution-item">Prior auth letter generator from diagnosis codes</div>
+          <div class="solution-item">Patient FAQ chatbot for scheduling, prep, billing</div>
+          <div class="solution-item">Visit summary generator from voice notes</div>
+        </div>
+
+        <div class="tools-built">
+          <span class="tool-tag">Claude Skills</span>
+          <span class="tool-tag">Whisper</span>
+          <span class="tool-tag">ElevenLabs</span>
+          <span class="tool-tag">Lovable</span>
+        </div>
+      </div>
+
+      <div class="use-case-visual">
+        <div class="use-case-mockup data-mockup">
+          <div class="mockup-header"><div class="mockup-dot"></div><div class="mockup-dot"></div><div class="mockup-dot"></div></div>
+          <div class="mockup-body">
+            <div class="data-row">
+              <div class="data-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--indigo)" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg></div>
+              <div class="data-info"><div class="data-title">Prior Auth - MRI Lumbar</div><div class="data-meta">Patient: Johnson, M. | Generated 2m ago</div></div>
+              <div class="data-status status-green">Sent</div>
+            </div>
+            <div class="data-row">
+              <div class="data-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--indigo)" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg></div>
+              <div class="data-info"><div class="data-title">Prior Auth - PT Referral</div><div class="data-meta">Patient: Williams, S. | Generated 5m ago</div></div>
+              <div class="data-status status-green">Sent</div>
+            </div>
+            <div class="data-row">
+              <div class="data-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--indigo)" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+              <div class="data-info"><div class="data-title">Patient Inquiry</div><div class="data-meta">"What should I eat before my colonoscopy?"</div></div>
+              <div class="data-status status-blue">Auto-replied</div>
+            </div>
+            <div class="data-row">
+              <div class="data-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--indigo)" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div>
+              <div class="data-info"><div class="data-title">Denial Appeal - Blue Cross</div><div class="data-meta">Patient: Chen, L. | Draft ready</div></div>
+              <div class="data-status status-yellow">Review</div>
+            </div>
+          </div>
+        </div>
+        <div class="floating-stat bottom-left">
+          <div class="floating-stat-num">80%</div>
+          <div class="floating-stat-label">Calls handled by AI</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- RECRUITING USE CASE -->
+<section class="use-cases-section" id="recruiting">
+  <div class="container">
+    <div class="use-case-card">
+      <div class="use-case-content">
+        <div class="use-case-industry-tag">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+          Recruiting / Staffing
+        </div>
+        <h3>AI Candidate Screener</h3>
+        <p>200 resumes land in your inbox. You know what a good candidate looks like. You just need help finding them faster.</p>
+
+        <div class="pain-points">
+          <div class="pain-points-label">The daily grind</div>
+          <div class="pain-point">Days spent reviewing resumes for a single role</div>
+          <div class="pain-point">No time for personalized outreach at scale</div>
+          <div class="pain-point">Candidate notes scattered across 5 different tools</div>
+        </div>
+
+        <div class="solutions">
+          <div class="solutions-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>What you build</div>
+          <div class="solution-item">Resume parser that scores fit and extracts key qualifications</div>
+          <div class="solution-item">Personalized outreach generator based on candidate background</div>
+          <div class="solution-item">Candidate profile consolidator from all touchpoints</div>
+        </div>
+
+        <div class="tools-built">
+          <span class="tool-tag">Resume Parsing</span>
+          <span class="tool-tag">Claude Code</span>
+          <span class="tool-tag">Composio</span>
+          <span class="tool-tag">Supabase</span>
+        </div>
+      </div>
+
+      <div class="use-case-visual">
+        <div class="use-case-mockup score-mockup">
+          <div class="mockup-header"><div class="mockup-dot"></div><div class="mockup-dot"></div><div class="mockup-dot"></div></div>
+          <div class="mockup-body">
+            <div class="candidate">
+              <div class="candidate-avatar"></div>
+              <div class="candidate-info"><div class="candidate-name">Sarah Chen</div><div class="candidate-role">7 yrs exp. | Previously: Salesforce, HubSpot</div></div>
+              <div class="candidate-score score-high">94</div>
+            </div>
+            <div class="candidate">
+              <div class="candidate-avatar"></div>
+              <div class="candidate-info"><div class="candidate-name">Michael Torres</div><div class="candidate-role">5 yrs exp. | Previously: Oracle, SAP</div></div>
+              <div class="candidate-score score-mid">87</div>
+            </div>
+            <div class="candidate">
+              <div class="candidate-avatar"></div>
+              <div class="candidate-info"><div class="candidate-name">Jessica Park</div><div class="candidate-role">3 yrs exp. | Previously: Startup, Agency</div></div>
+              <div class="candidate-score score-mid">82</div>
+            </div>
+            <div class="candidate">
+              <div class="candidate-avatar"></div>
+              <div class="candidate-info"><div class="candidate-name">David Kim</div><div class="candidate-role">2 yrs exp. | Career changer</div></div>
+              <div class="candidate-score score-low">71</div>
+            </div>
+          </div>
+        </div>
+        <div class="floating-stat top-right">
+          <div class="floating-stat-num">3x</div>
+          <div class="floating-stat-label">Recruiter productivity</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- QUOTE -->
+<section class="quote-section">
+  <div class="container">
+    <blockquote>"I spent 6 months trying to learn Python to automate my job. At MakerSquare, I built more in 2 weeks than I did in 6 months on my own."</blockquote>
+    <cite>Marketing Director, Austin Agency</cite>
+  </div>
+</section>
+
+
+<!-- REAL ESTATE USE CASE -->
+<section class="use-cases-section" id="realestate">
+  <div class="container">
+    <div class="use-case-card reverse">
+      <div class="use-case-content">
+        <div class="use-case-industry-tag">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+          Real Estate / Property Management
+        </div>
+        <h3>AI Lease Analyst</h3>
+        <p>Lease abstraction takes forever. Comps require pulling from 10 sources. Your expertise is in deals, not data entry.</p>
+
+        <div class="pain-points">
+          <div class="pain-points-label">The daily grind</div>
+          <div class="pain-point">2-4 hours to abstract a single lease</div>
+          <div class="pain-point">Comp analysis means manual data from multiple sources</div>
+          <div class="pain-point">Tenant inquiries pile up unanswered</div>
+        </div>
+
+        <div class="solutions">
+          <div class="solutions-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>What you build</div>
+          <div class="solution-item">Lease abstractor that extracts terms into your database</div>
+          <div class="solution-item">Market comp analyzer from public data sources</div>
+          <div class="solution-item">Tenant inquiry bot for availability and tours</div>
+        </div>
+
+        <div class="tools-built">
+          <span class="tool-tag">PDF Extraction</span>
+          <span class="tool-tag">Playwright</span>
+          <span class="tool-tag">Supabase</span>
+          <span class="tool-tag">Claude Skills</span>
+        </div>
+      </div>
+
+      <div class="use-case-visual">
+        <div class="use-case-mockup data-mockup">
+          <div class="mockup-header"><div class="mockup-dot"></div><div class="mockup-dot"></div><div class="mockup-dot"></div></div>
+          <div class="mockup-body">
+            <div style="font-size:0.75rem;font-weight:700;color:var(--text-muted);margin-bottom:12px;text-transform:uppercase;letter-spacing:0.05em;">Lease Abstract - 500 Congress Ave</div>
+            <div class="data-row" style="padding:10px 0;">
+              <div class="data-info"><div class="data-meta">Tenant</div><div class="data-title">Acme Corp</div></div>
+              <div class="data-info"><div class="data-meta">Term</div><div class="data-title">5 years</div></div>
+              <div class="data-info"><div class="data-meta">Base Rent</div><div class="data-title">$42/SF NNN</div></div>
+            </div>
+            <div class="data-row" style="padding:10px 0;">
+              <div class="data-info"><div class="data-meta">Escalations</div><div class="data-title">3% annual</div></div>
+              <div class="data-info"><div class="data-meta">TI Allowance</div><div class="data-title">$65/SF</div></div>
+              <div class="data-info"><div class="data-meta">Options</div><div class="data-title">2x 5-yr</div></div>
+            </div>
+            <div style="margin-top:12px;padding:10px;background:rgba(239,68,68,0.08);border-radius:8px;border-left:3px solid #EF4444;">
+              <div style="font-size:0.72rem;font-weight:700;color:#EF4444;margin-bottom:4px;">FLAG: Non-standard clause</div>
+              <div style="font-size:0.8rem;color:var(--text-secondary);">Early termination right at month 36 with 6-month notice</div>
+            </div>
+          </div>
+        </div>
+        <div class="floating-stat bottom-left">
+          <div class="floating-stat-num">4hrs</div>
+          <div class="floating-stat-label">Saved per lease</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- MARKETING USE CASE -->
+<section class="use-cases-section" id="marketing">
+  <div class="container">
+    <div class="use-case-card">
+      <div class="use-case-content">
+        <div class="use-case-industry-tag">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          Marketing / Agencies
+        </div>
+        <h3>AI Content Engine</h3>
+        <p>Briefs to copy takes days. Social calendars need constant feeding. You have the strategy, but execution is a bottleneck.</p>
+
+        <div class="pain-points">
+          <div class="pain-points-label">The daily grind</div>
+          <div class="pain-point">Days of back-and-forth from brief to final copy</div>
+          <div class="pain-point">Social calendar needs constant manual creation</div>
+          <div class="pain-point">Client reports pull from 10 different platforms</div>
+        </div>
+
+        <div class="solutions">
+          <div class="solutions-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>What you build</div>
+          <div class="solution-item">Brief-to-copy generator in your brand voice</div>
+          <div class="solution-item">Social calendar builder from campaign themes</div>
+          <div class="solution-item">Cross-platform report compiler with insights</div>
+        </div>
+
+        <div class="tools-built">
+          <span class="tool-tag">Claude Skills</span>
+          <span class="tool-tag">Playwright</span>
+          <span class="tool-tag">Composio</span>
+          <span class="tool-tag">Lovable</span>
+        </div>
+      </div>
+
+      <div class="use-case-visual">
+        <div class="use-case-mockup chat-mockup">
+          <div class="mockup-header"><div class="mockup-dot"></div><div class="mockup-dot"></div><div class="mockup-dot"></div></div>
+          <div class="mockup-body">
+            <div class="message user"><div class="bubble">Generate 5 LinkedIn posts for our Q2 product launch. Tone: confident but approachable.</div></div>
+            <div class="message ai"><div class="avatar"></div><div class="bubble"><strong>Post 1 - Teaser (Week 1)</strong><br>Something big is coming. After 18 months of R&D and 500+ customer conversations, we're ready to change how teams handle [X]...<br><br><strong>Post 2 - Problem (Week 2)</strong><br>We talked to 200 ops leaders last year. The #1 frustration? Not the tools. It's the...</div></div>
+          </div>
+        </div>
+        <div class="floating-stat top-right">
+          <div class="floating-stat-num">10x</div>
+          <div class="floating-stat-label">Content velocity</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- FINANCE USE CASE -->
+<section class="use-cases-section" id="finance">
+  <div class="container">
+    <div class="use-case-card reverse">
+      <div class="use-case-content">
+        <div class="use-case-industry-tag">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+          Finance / Accounting
+        </div>
+        <h3>AI Financial Ops Automator</h3>
+        <p>Invoice processing, expense categorization, month-end close. You understand the numbers. The busywork doesn't need you.</p>
+
+        <div class="pain-points">
+          <div class="pain-points-label">The daily grind</div>
+          <div class="pain-point">Manual data entry and GL coding for every invoice</div>
+          <div class="pain-point">Expense reports need line-by-line review</div>
+          <div class="pain-point">Month-end close has 50+ manual reconciliation steps</div>
+        </div>
+
+        <div class="solutions">
+          <div class="solutions-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>What you build</div>
+          <div class="solution-item">Invoice parser with automatic GL coding</div>
+          <div class="solution-item">Expense categorizer with policy violation flags</div>
+          <div class="solution-item">Close checklist automation with status dashboard</div>
+        </div>
+
+        <div class="tools-built">
+          <span class="tool-tag">Document Parsing</span>
+          <span class="tool-tag">Supabase</span>
+          <span class="tool-tag">Composio</span>
+          <span class="tool-tag">Workflows</span>
+        </div>
+      </div>
+
+      <div class="use-case-visual">
+        <div class="use-case-mockup data-mockup">
+          <div class="mockup-header"><div class="mockup-dot"></div><div class="mockup-dot"></div><div class="mockup-dot"></div></div>
+          <div class="mockup-body">
+            <div style="font-size:0.75rem;font-weight:700;color:var(--text-muted);margin-bottom:12px;text-transform:uppercase;letter-spacing:0.05em;">Invoice Processing Queue</div>
+            <div class="data-row">
+              <div class="data-info"><div class="data-title">INV-4521 | Acme Supplies</div><div class="data-meta">$4,250.00 | GL: 6100-Office Supplies</div></div>
+              <div class="data-status status-green">Auto-coded</div>
+            </div>
+            <div class="data-row">
+              <div class="data-info"><div class="data-title">INV-4522 | CloudHost Inc</div><div class="data-meta">$12,500.00 | GL: 6200-Software</div></div>
+              <div class="data-status status-green">Auto-coded</div>
+            </div>
+            <div class="data-row">
+              <div class="data-info"><div class="data-title">INV-4523 | Travel Expense</div><div class="data-meta">$890.00 | GL: 6500-T&E</div></div>
+              <div class="data-status status-yellow">Over limit</div>
+            </div>
+            <div class="data-row">
+              <div class="data-info"><div class="data-title">INV-4524 | Consulting Co</div><div class="data-meta">$25,000.00 | GL: ???</div></div>
+              <div class="data-status status-yellow">Needs review</div>
+            </div>
+          </div>
+        </div>
+        <div class="floating-stat bottom-left">
+          <div class="floating-stat-num">95%</div>
+          <div class="floating-stat-label">Auto-categorized</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- MORE INDUSTRIES -->
+<section class="more-industries" id="more">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:var(--s4);">
+      <div class="section-label" style="justify-content:center;">And many more</div>
+    </div>
+    <h2>Every industry has AI use cases.<br><span class="text-accent">Here's what else students build.</span></h2>
+
+    <div class="industries-grid">
+      <div class="industry-card">
+        <div class="industry-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
+        <h4>Consulting</h4>
+        <p>Industry research bots, proposal generators, knowledge base search across past projects.</p>
+        <div class="industry-card-examples">Research time: -70%</div>
+      </div>
+
+      <div class="industry-card">
+        <div class="industry-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <h4>Insurance</h4>
+        <p>Claims intake automation, policy comparison tools, coverage Q&A chatbots.</p>
+        <div class="industry-card-examples">Claims processing: 5x faster</div>
+      </div>
+
+      <div class="industry-card">
+        <div class="industry-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 20h20"/><path d="M5 20V8l7-5 7 5v12"/></svg></div>
+        <h4>Construction</h4>
+        <p>RFP response drafters, change order documentation, safety compliance generators.</p>
+        <div class="industry-card-examples">RFP turnaround: -50%</div>
+      </div>
+
+      <div class="industry-card">
+        <div class="industry-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/></svg></div>
+        <h4>Hospitality</h4>
+        <p>Menu description writers, review response bots, catering inquiry handlers.</p>
+        <div class="industry-card-examples">Review response: 90% auto</div>
+      </div>
+
+      <div class="industry-card">
+        <div class="industry-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/></svg></div>
+        <h4>Education</h4>
+        <p>Course outline generators, quiz creators, feedback analyzers, learning path recommenders.</p>
+        <div class="industry-card-examples">Content creation: 8x faster</div>
+      </div>
+
+      <div class="industry-card">
+        <div class="industry-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+        <h4>Nonprofit</h4>
+        <p>Grant narrative drafters, donor thank-you generators, impact report compilers.</p>
+        <div class="industry-card-examples">Grant writing: -60% time</div>
+      </div>
+
+      <div class="industry-card">
+        <div class="industry-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></div>
+        <h4>Retail</h4>
+        <p>Product description generators, customer FAQ bots, inventory alert systems.</p>
+        <div class="industry-card-examples">Support tickets: -80%</div>
+      </div>
+
+      <div class="industry-card">
+        <div class="industry-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+        <h4>Energy</h4>
+        <p>Field report generators, compliance document compilers, customer outage bots.</p>
+        <div class="industry-card-examples">Documentation: 4x faster</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="container">
+    <div class="section-label" style="justify-content:center;">Your turn</div>
+    <h2>Your industry expertise is the moat.<br><span class="text-accent">We teach you to build on top of it.</span></h2>
+    <p>Every use case on this page was built by someone who came in knowing their field, not knowing how to code. 2 weeks later, they shipped real products.</p>
+    <a href="apply.html" class="btn btn-primary btn-lg btn-arrow">Apply Now </a>
+    <p style="margin-top:var(--s5);font-size:0.9rem;color:var(--text-muted);">Next cohort: July 6, 2026 &middot; Austin, TX &middot; 15 seats &middot; $5,999</p>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo"><img src="logo-dark.png" alt="MakerSquare"></a>
+        <p>2-week in-person AI intensive in Austin, TX for operators, founders, and professionals.</p>
+        <a href="apply.html" class="btn btn-primary btn-arrow" style="font-size:0.82rem;padding:10px 20px;">Apply Now </a>
+      </div>
+      <div>
+        <div class="footer-col-title">Program</div>
+        <ul class="footer-col-links">
+          <li><a href="use-cases.html">Use Cases</a></li>
+          <li><a href="curriculum.html">Curriculum</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="apply.html">Apply</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Company</div>
+        <ul class="footer-col-links">
+          <li><a href="team.html">Team</a></li>
+          <li><a href="corporate.html">Corporate</a></li>
+          <li><a href="housing.html">Housing</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Contact</div>
+        <a href="mailto:hello@makersquare.ai" class="footer-contact-email">hello@makersquare.ai</a>
+        <p style="font-size:0.82rem;color:rgba(255,255,255,0.4);">Austin, TX</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">&copy; 2026 MakerSquare LLC. Austin, TX.</div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.min.js"></script>
+</body>
+</html>
