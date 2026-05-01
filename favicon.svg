@@ -1,17 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
-  <!-- MakerSquare M logo mark -->
-  <!-- Left leg of M -->
-  <path d="M4 8 L4 26 L10 26 L10 14 L4 8Z" fill="#403DD8"/>
-  <path d="M4 8 L10 8 L10 14 L4 8Z" fill="#6366F1"/>
+  <!-- Left block top -->
+  <polygon points="4,12 10,8 10,14 4,18" fill="#6580C8"/>
+  <!-- Left block front -->
+  <polygon points="4,18 10,14 10,26 4,26" fill="#B8C9F2"/>
 
-  <!-- Middle peak of M -->
-  <path d="M10 14 L16 8 L22 14 L16 20 L10 14Z" fill="#81AAFB"/>
+  <!-- Middle V top -->
+  <polygon points="10,8 16,14 22,8 16,2" fill="#6580C8"/>
+  <!-- Middle V front -->
+  <polygon points="10,14 16,20 16,14 10,8" fill="#D4DFFB"/>
+  <polygon points="16,14 16,20 22,14 22,8" fill="#B8C9F2"/>
 
-  <!-- Right leg of M -->
-  <path d="M22 14 L22 26 L28 26 L28 8 L22 14Z" fill="#403DD8"/>
-  <path d="M22 8 L28 8 L22 14Z" fill="#6366F1"/>
-
-  <!-- 3D depth effects -->
-  <path d="M10 14 L10 26 L16 26 L16 20 L10 14Z" fill="#C7D2FE"/>
-  <path d="M16 20 L16 26 L22 26 L22 14 L16 20Z" fill="#A5B4FC"/>
+  <!-- Right block top -->
+  <polygon points="22,8 28,12 28,18 22,14" fill="#6580C8"/>
+  <!-- Right block front -->
+  <polygon points="22,14 28,18 28,26 22,26" fill="#D4DFFB"/>
 </svg>
