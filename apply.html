@@ -37,6 +37,30 @@
 .cohort-name { font-family: var(--font-display); font-size: 1rem; font-weight: 800; color: var(--navy); margin-bottom: var(--s1); }
 .cohort-dates { font-size: 0.78rem; color: var(--text-secondary); line-height: 1.5; }
 .cohort-seats { font-family: var(--font-display); font-size: 0.82rem; font-weight: 700; color: var(--indigo); margin-top: var(--s3); }
+a.cohort-seats { display: inline-block; text-decoration: none; transition: transform 0.2s; }
+a.cohort-seats:hover { transform: translateX(2px); }
+.cohort-card--coming-soon { cursor: pointer; }
+.cohort-card--coming-soon:hover { border-color: var(--indigo); }
+.cohort-card--coming-soon:focus-visible { outline: 2px solid var(--indigo); outline-offset: 3px; }
+.cohort-card--coming-soon .cohort-cta { display: block; margin-top: var(--s3); font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--indigo); opacity: 0.7; transition: opacity 0.2s; }
+.cohort-card--coming-soon:hover .cohort-cta { opacity: 1; }
+
+/* Waitlist modal */
+.wl-modal { position: fixed; inset: 0; z-index: 9999; display: none; align-items: flex-start; justify-content: center; padding: var(--s5); overflow-y: auto; }
+.wl-modal.open { display: flex; }
+.wl-modal__backdrop { position: fixed; inset: 0; background: rgba(24,24,73,0.55); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); }
+.wl-modal__dialog { position: relative; background: var(--white); border-radius: var(--r-xl); width: 100%; max-width: 600px; padding: var(--s8) 0 var(--s4); box-shadow: 0 30px 80px rgba(24,24,73,0.25); margin: var(--s6) 0; overflow: hidden; }
+.wl-modal__close { position: absolute; top: var(--s4); right: var(--s4); width: 36px; height: 36px; border-radius: 50%; border: 1px solid rgba(24,24,73,0.08); background: var(--white); font-size: 1.4rem; line-height: 1; cursor: pointer; color: var(--text-muted); display: flex; align-items: center; justify-content: center; transition: all 0.2s; }
+.wl-modal__close:hover { background: var(--light-bg); color: var(--navy); }
+.wl-modal__head { text-align: center; margin-bottom: var(--s5); padding: 0 var(--s4); }
+.wl-modal__head h3 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 800; color: var(--navy); margin-bottom: var(--s2); }
+.wl-modal__head p { font-size: 0.9rem; color: var(--text-secondary); }
+.wl-modal__body { display: flex; justify-content: center; }
+body.wl-modal-open { overflow: hidden; }
+@media (max-width: 768px) {
+  .wl-modal { padding: 0; }
+  .wl-modal__dialog { border-radius: 0; min-height: 100vh; margin: 0; padding: var(--s7) 0 var(--s4); }
+}
 
 .what-matters-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s8); margin-top: var(--s9); }
 .matters-list { list-style: none; display: flex; flex-direction: column; gap: var(--s4); }
@@ -202,7 +226,7 @@
         <div class="cohort-status cohort-status--open">Open Now</div>
         <div class="cohort-name">Cohort 1</div>
         <div class="cohort-dates">Jul 6 &ndash; Jul 17, 2026<br>Demo Day: Fri Jul 17 eve</div>
-        <div class="cohort-seats"><span data-count="6">0</span> of 15 spots remaining</div>
+        <a class="cohort-seats cohort-seats--apply" href="#form">Apply &rarr;</a>
       </div>
       <div class="cohort-card reveal reveal-d2">
         <div class="cohort-status cohort-status--soon">Enrolling Soon</div>
@@ -216,35 +240,40 @@
         <div class="cohort-dates">Aug 17 &ndash; Aug 28, 2026<br>Demo Day: Fri Aug 28 eve</div>
         <div class="cohort-seats">15 spots available</div>
       </div>
-      <div class="cohort-card reveal reveal-d4">
+      <div class="cohort-card cohort-card--coming-soon reveal reveal-d4" role="button" tabindex="0" aria-label="Join the waitlist for Cohort 4">
         <div class="cohort-status cohort-status--early">Coming Soon</div>
         <div class="cohort-name">Cohort 4</div>
         <div class="cohort-dates">Sep 8 &ndash; Sep 18, 2026<br>Demo Day: Fri Sep 18 eve</div>
         <div class="cohort-seats">15 spots available</div>
+        <span class="cohort-cta">Join waitlist &rarr;</span>
       </div>
-      <div class="cohort-card reveal reveal-d5">
+      <div class="cohort-card cohort-card--coming-soon reveal reveal-d5" role="button" tabindex="0" aria-label="Join the waitlist for Cohort 5">
         <div class="cohort-status cohort-status--early">Coming Soon</div>
         <div class="cohort-name">Cohort 5</div>
         <div class="cohort-dates">Sep 28 &ndash; Oct 9, 2026<br>Demo Day: Fri Oct 9 eve</div>
         <div class="cohort-seats">15 spots available</div>
+        <span class="cohort-cta">Join waitlist &rarr;</span>
       </div>
-      <div class="cohort-card reveal reveal-d6">
+      <div class="cohort-card cohort-card--coming-soon reveal reveal-d6" role="button" tabindex="0" aria-label="Join the waitlist for Cohort 6">
         <div class="cohort-status cohort-status--early">Coming Soon</div>
         <div class="cohort-name">Cohort 6</div>
         <div class="cohort-dates">Oct 19 &ndash; Oct 30, 2026<br>Demo Day: Fri Oct 30 eve</div>
         <div class="cohort-seats">15 spots available</div>
+        <span class="cohort-cta">Join waitlist &rarr;</span>
       </div>
-      <div class="cohort-card reveal">
+      <div class="cohort-card cohort-card--coming-soon reveal" role="button" tabindex="0" aria-label="Join the waitlist for Cohort 7">
         <div class="cohort-status cohort-status--early">Coming Soon</div>
         <div class="cohort-name">Cohort 7</div>
         <div class="cohort-dates">Nov 9 &ndash; Nov 20, 2026<br>Demo Day: Fri Nov 20 eve</div>
         <div class="cohort-seats">15 spots available</div>
+        <span class="cohort-cta">Join waitlist &rarr;</span>
       </div>
-      <div class="cohort-card reveal">
+      <div class="cohort-card cohort-card--coming-soon reveal" role="button" tabindex="0" aria-label="Join the waitlist for Cohort 8">
         <div class="cohort-status cohort-status--early">Coming Soon</div>
         <div class="cohort-name">Cohort 8</div>
         <div class="cohort-dates">Nov 30 &ndash; Dec 11, 2026<br>Demo Day: Fri Dec 11 eve</div>
         <div class="cohort-seats">15 spots available</div>
+        <span class="cohort-cta">Join waitlist &rarr;</span>
       </div>
     </div>
   </div>
@@ -548,6 +577,22 @@
 </section>
 
 
+<!-- WAITLIST MODAL -->
+<div id="wl-modal" class="wl-modal" role="dialog" aria-modal="true" aria-labelledby="wl-modal-title" aria-hidden="true">
+  <div class="wl-modal__backdrop" data-wl-close></div>
+  <div class="wl-modal__dialog">
+    <button type="button" class="wl-modal__close" aria-label="Close waitlist" data-wl-close>&times;</button>
+    <div class="wl-modal__head">
+      <h3 id="wl-modal-title">Join the waitlist</h3>
+      <p>Be first to know when this cohort opens for applications.</p>
+    </div>
+    <div class="wl-modal__body">
+      <div id="zf_div_mhFZPMq0V3WZYAI6xuzmlbrneQRMVHNeivSuj3rbvt8_apply"></div>
+    </div>
+  </div>
+</div>
+
+
 <!-- FOOTER -->
 <footer class="footer">
   <div class="container">
@@ -593,6 +638,102 @@
 </footer>
 
 <script src="js/main.min.js"></script>
+<script>
+(function(){
+  var modal = document.getElementById('wl-modal');
+  if(!modal) return;
+  var iframeMounted = false;
+  var lastFocused = null;
+
+  function mountIframe(){
+    if(iframeMounted) return;
+    iframeMounted = true;
+    try{
+      var f = document.createElement('iframe');
+      var ifrmSrc = 'https://forms.zohopublic.com/makersquare/form/Waitlist/formperma/mhFZPMq0V3WZYAI6xuzmlbrneQRMVHNeivSuj3rbvt8?zf_rszfm=1';
+      try{
+        if (typeof ZFAdvLead != 'undefined' && typeof zfutm_zfAdvLead != 'undefined') {
+          for (var i = 0; i < ZFAdvLead.utmPNameArr.length; i++) {
+            var utmPm = ZFAdvLead.utmPNameArr[i];
+            utmPm = (ZFAdvLead.isSameDomian && (ZFAdvLead.utmcustPNameArr.indexOf(utmPm) == -1)) ? 'zf_' + utmPm : utmPm;
+            var utmVal = zfutm_zfAdvLead.zfautm_gC_enc(ZFAdvLead.utmPNameArr[i]);
+            if (typeof utmVal !== 'undefined' && utmVal !== '') {
+              ifrmSrc += (ifrmSrc.indexOf('?') > 0 ? '&' : '?') + utmPm + '=' + utmVal;
+            }
+          }
+        }
+        if (typeof ZFLead !== 'undefined' && typeof zfutm_zfLead !== 'undefined') {
+          for (var j = 0; j < ZFLead.utmPNameArr.length; j++) {
+            var utmPm2 = ZFLead.utmPNameArr[j];
+            var utmVal2 = zfutm_zfLead.zfutm_gC_enc(ZFLead.utmPNameArr[j]);
+            if (typeof utmVal2 !== 'undefined' && utmVal2 !== '') {
+              ifrmSrc += (ifrmSrc.indexOf('?') > 0 ? '&' : '?') + utmPm2 + '=' + utmVal2;
+            }
+          }
+        }
+      }catch(e){}
+      f.src = ifrmSrc;
+      f.style.border = 'none';
+      f.style.height = '858px';
+      f.style.width = '100%';
+      f.style.maxWidth = '560px';
+      f.style.display = 'block';
+      f.style.transition = 'all 0.5s ease';
+      f.setAttribute('aria-label', 'Waitlist');
+      var d = document.getElementById('zf_div_mhFZPMq0V3WZYAI6xuzmlbrneQRMVHNeivSuj3rbvt8_apply');
+      d.appendChild(f);
+      window.addEventListener('message', function(e){
+        var evntData = e.data;
+        if (evntData && evntData.constructor == String) {
+          var zf_ifrm_data = evntData.split('|');
+          if (zf_ifrm_data.length == 2 || zf_ifrm_data.length == 3) {
+            var zf_perma = zf_ifrm_data[0];
+            var zf_ifrm_ht_nw = (parseInt(zf_ifrm_data[1], 10) + 15) + 'px';
+            var iframe = document.getElementById('zf_div_mhFZPMq0V3WZYAI6xuzmlbrneQRMVHNeivSuj3rbvt8_apply').getElementsByTagName('iframe')[0];
+            if (iframe && (iframe.src).indexOf('formperma') > 0 && (iframe.src).indexOf(zf_perma) > 0) {
+              if (iframe.style.height != zf_ifrm_ht_nw) {
+                iframe.style.height = zf_ifrm_ht_nw;
+              }
+            }
+          }
+        }
+      }, false);
+    }catch(e){}
+  }
+
+  function openModal(trigger){
+    lastFocused = trigger || document.activeElement;
+    mountIframe();
+    modal.classList.add('open');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('wl-modal-open');
+    var closeBtn = modal.querySelector('.wl-modal__close');
+    if(closeBtn) closeBtn.focus();
+  }
+
+  function closeModal(){
+    modal.classList.remove('open');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('wl-modal-open');
+    if(lastFocused && lastFocused.focus) lastFocused.focus();
+  }
+
+  document.querySelectorAll('.cohort-card--coming-soon').forEach(function(card){
+    card.addEventListener('click', function(){ openModal(card); });
+    card.addEventListener('keydown', function(e){
+      if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); openModal(card); }
+    });
+  });
+
+  modal.addEventListener('click', function(e){
+    if(e.target.hasAttribute('data-wl-close')) closeModal();
+  });
+
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && modal.classList.contains('open')) closeModal();
+  });
+})();
+</script>
 <script type="text/javascript" src="https://forms.zoho.com/js/zf_gclid.js"> </script>
 <script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script><script id="zsiqscript" src="https://salesiq.zohopublic.com/widget?wc=siq885ea214ffc25f4f452068cc9bc1cec4353b0ff61817b77233444928d383fe96" defer></script>
 </body>
