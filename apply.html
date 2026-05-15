@@ -130,8 +130,8 @@ body.wl-modal-open { overflow: hidden; }
   "url": "https://www.makersquare.ai/apply",
   "hasCourseInstance": [
     {"@type": "CourseInstance", "name": "Cohort 1", "courseMode": "onsite", "startDate": "2026-07-06", "endDate": "2026-07-17", "courseWorkload": "P2W", "offers": {"@type": "Offer", "price": "5999", "priceCurrency": "USD", "availability": "https://schema.org/InStock"}},
-    {"@type": "CourseInstance", "name": "Cohort 2", "courseMode": "onsite", "startDate": "2026-07-27", "endDate": "2026-08-07", "courseWorkload": "P2W", "offers": {"@type": "Offer", "price": "5999", "priceCurrency": "USD", "availability": "https://schema.org/PreOrder"}},
-    {"@type": "CourseInstance", "name": "Cohort 3", "courseMode": "onsite", "startDate": "2026-08-17", "endDate": "2026-08-28", "courseWorkload": "P2W", "offers": {"@type": "Offer", "price": "5999", "priceCurrency": "USD", "availability": "https://schema.org/PreOrder"}},
+    {"@type": "CourseInstance", "name": "Cohort 2", "courseMode": "onsite", "startDate": "2026-07-27", "endDate": "2026-08-07", "courseWorkload": "P2W", "offers": {"@type": "Offer", "price": "5999", "priceCurrency": "USD", "availability": "https://schema.org/InStock"}},
+    {"@type": "CourseInstance", "name": "Cohort 3", "courseMode": "onsite", "startDate": "2026-08-17", "endDate": "2026-08-28", "courseWorkload": "P2W", "offers": {"@type": "Offer", "price": "5999", "priceCurrency": "USD", "availability": "https://schema.org/InStock"}},
     {"@type": "CourseInstance", "name": "Cohort 4", "courseMode": "onsite", "startDate": "2026-09-08", "endDate": "2026-09-18", "courseWorkload": "P2W", "offers": {"@type": "Offer", "price": "5999", "priceCurrency": "USD", "availability": "https://schema.org/PreOrder"}},
     {"@type": "CourseInstance", "name": "Cohort 5", "courseMode": "onsite", "startDate": "2026-09-28", "endDate": "2026-10-09", "courseWorkload": "P2W", "offers": {"@type": "Offer", "price": "5999", "priceCurrency": "USD", "availability": "https://schema.org/PreOrder"}},
     {"@type": "CourseInstance", "name": "Cohort 6", "courseMode": "onsite", "startDate": "2026-10-19", "endDate": "2026-10-30", "courseWorkload": "P2W", "offers": {"@type": "Offer", "price": "5999", "priceCurrency": "USD", "availability": "https://schema.org/PreOrder"}},
@@ -240,17 +240,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="cohort-dates">Jul 6 &ndash; Jul 17, 2026<br>Demo Day: Fri Jul 17 eve</div>
         <a class="cohort-seats cohort-seats--apply" href="#form">Apply &rarr;</a>
       </div>
-      <div class="cohort-card reveal reveal-d2">
-        <div class="cohort-status cohort-status--soon">Enrolling Soon</div>
+      <div class="cohort-card cohort-card--active reveal reveal-d2">
+        <div class="cohort-status cohort-status--open">Open Now</div>
         <div class="cohort-name">Cohort 2</div>
         <div class="cohort-dates">Jul 27 &ndash; Aug 7, 2026<br>Demo Day: Fri Aug 7 eve</div>
-        <div class="cohort-seats">15 spots available</div>
+        <a class="cohort-seats cohort-seats--apply" href="#form">Apply &rarr;</a>
       </div>
-      <div class="cohort-card reveal reveal-d3">
-        <div class="cohort-status cohort-status--soon">Enrolling Soon</div>
+      <div class="cohort-card cohort-card--active reveal reveal-d3">
+        <div class="cohort-status cohort-status--open">Open Now</div>
         <div class="cohort-name">Cohort 3</div>
         <div class="cohort-dates">Aug 17 &ndash; Aug 28, 2026<br>Demo Day: Fri Aug 28 eve</div>
-        <div class="cohort-seats">15 spots available</div>
+        <a class="cohort-seats cohort-seats--apply" href="#form">Apply &rarr;</a>
       </div>
       <div class="cohort-card cohort-card--coming-soon reveal reveal-d4" role="button" tabindex="0" aria-label="Join the waitlist for Cohort 4">
         <div class="cohort-status cohort-status--early">Coming Soon</div>
@@ -390,7 +390,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="ta-item reveal" data-ta>
         <div class="ta-header" onclick="this.parentElement.classList.toggle('open');var b=this.parentElement.querySelector('.ta-body');b.style.maxHeight=this.parentElement.classList.contains('open')?b.scrollHeight+'px':'0';">
           <div class="ta-header-info"><div class="ta-cohort-tag">Cohort 2</div><div class="ta-cohort-name">July 2026</div><div class="ta-cohort-range">Jul 27 &ndash; Aug 7 &middot; Demo Day Aug 7</div></div>
-          <span class="ta-badge soon">Enrolling Soon</span>
+          <span class="ta-badge open">Open Now</span>
           <div class="ta-chevron">&#9660;</div>
         </div>
         <div class="ta-body"><div class="ta-body-inner">
@@ -408,7 +408,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="ta-item reveal" data-ta>
         <div class="ta-header" onclick="this.parentElement.classList.toggle('open');var b=this.parentElement.querySelector('.ta-body');b.style.maxHeight=this.parentElement.classList.contains('open')?b.scrollHeight+'px':'0';">
           <div class="ta-header-info"><div class="ta-cohort-tag">Cohort 3</div><div class="ta-cohort-name">August 2026</div><div class="ta-cohort-range">Aug 17 &ndash; Aug 28 &middot; Demo Day Aug 28</div></div>
-          <span class="ta-badge soon">Enrolling Soon</span>
+          <span class="ta-badge open">Open Now</span>
           <div class="ta-chevron">&#9660;</div>
         </div>
         <div class="ta-body"><div class="ta-body-inner">
