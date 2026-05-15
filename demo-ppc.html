@@ -11,8 +11,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-MJTW9WQ3');</script>
 <!-- End Google Tag Manager -->
-<title>MakerSquare | 2-Week AI Bootcamp in Austin TX | Apply Today</title>
-<meta name="description" content="Learn to build with AI in 2 weeks. In-person bootcamp in Austin, TX. Ship 3 real AI products + present at Demo Day. No coding required. Apply now.">
+<title>MakerSquare | 2 Week AI Bootcamp in Austin TX | Apply Today</title>
+<meta name="description" content="Learn to build with AI in 2 weeks. In person bootcamp in Austin, TX. Ship 3 real AI products + present at Demo Day. No coding required. Apply now.">
 <meta name="robots" content="noindex, nofollow">
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -20,8 +20,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="canonical" href="https://www.makersquare.ai/demo-ppc">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.makersquare.ai/demo-ppc">
-<meta property="og:title" content="MakerSquare | 2-Week AI Bootcamp in Austin TX">
-<meta property="og:description" content="Learn to build with AI in 2 weeks. In-person bootcamp in Austin, TX. Ship 3 real AI products + present at Demo Day. No coding required.">
+<meta property="og:title" content="MakerSquare | 2 Week AI Bootcamp in Austin TX">
+<meta property="og:description" content="Learn to build with AI in 2 weeks. In person bootcamp in Austin, TX. Ship 3 real AI products + present at Demo Day. No coding required.">
 <meta property="og:image" content="https://www.makersquare.ai/og-image.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -77,6 +77,29 @@ if(document.readyState=="complete"){zfutm_zfLead.zfutm_iframeSprt();zfutm_zfLead
 
 /* ── Form wrap ── */
 .lp-form-wrap { max-width: 640px; margin: var(--s7) auto 0; }
+
+/* ── Curriculum download modal ── */
+.lp-modal { position: fixed; inset: 0; z-index: 9999; display: none; align-items: flex-start; justify-content: center; padding: var(--s5); overflow-y: auto; }
+.lp-modal.open { display: flex; }
+.lp-modal__backdrop { position: fixed; inset: 0; background: rgba(24,24,73,0.55); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); }
+.lp-modal__dialog { position: relative; background: var(--white); border-radius: var(--r-xl); width: 100%; max-width: 600px; padding: var(--s8) 0 var(--s4); box-shadow: 0 30px 80px rgba(24,24,73,0.25); margin: var(--s6) 0; overflow: hidden; }
+.lp-modal__close { position: absolute; top: var(--s4); right: var(--s4); width: 36px; height: 36px; border-radius: 50%; border: 1px solid rgba(24,24,73,0.08); background: var(--white); font-size: 1.4rem; line-height: 1; cursor: pointer; color: var(--text-muted); display: flex; align-items: center; justify-content: center; transition: all 0.2s; z-index: 2; }
+.lp-modal__close:hover { background: var(--light-bg); color: var(--navy); }
+.lp-modal__head { text-align: center; margin-bottom: var(--s5); padding: 0 var(--s5); }
+.lp-modal__head h3 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 800; color: var(--navy); margin-bottom: var(--s2); }
+.lp-modal__head p { font-size: 0.9rem; color: var(--text-secondary); }
+.lp-modal__body { display: flex; justify-content: center; padding: 0 var(--s4); }
+body.lp-modal-open { overflow: hidden; }
+@media (max-width: 768px) {
+  .lp-modal { padding: 0; }
+  .lp-modal__dialog { border-radius: 0; min-height: 100vh; margin: 0; padding: var(--s7) 0 var(--s4); }
+}
+
+/* ── Inline curriculum CTA (under phases) ── */
+.lp-inline-cta { background: var(--white); border: 1px solid rgba(24,24,73,0.06); border-radius: var(--r-xl); padding: var(--s7) var(--s8); margin-top: var(--s8); display: flex; align-items: center; justify-content: space-between; gap: var(--s5); flex-wrap: wrap; }
+.lp-inline-cta__text { flex: 1; min-width: 240px; }
+.lp-inline-cta__title { font-family: var(--font-display); font-size: 1.15rem; font-weight: 800; color: var(--navy); letter-spacing: -0.02em; margin-bottom: 4px; }
+.lp-inline-cta__sub { font-size: 0.9rem; color: var(--text-secondary); line-height: 1.55; }
 </style>
 </head>
 <body>
@@ -108,9 +131,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         AI Bootcamp &middot; Austin, TX &middot; Now Enrolling
       </div>
       <h1 class="hero-enter hero-enter-d2">You already know your industry.<br><span class="text-gradient">Now learn to build with AI.</span></h1>
-      <p class="hero-sub hero-enter hero-enter-d3">2 weeks. In-person. Austin, TX. You leave with <span class="hi">3 deployed AI products</span> and the skills to keep building.</p>
+      <p class="hero-sub hero-enter hero-enter-d3">2 weeks. In person. Austin, TX. You leave with <span class="hi">3 deployed AI products</span> and the skills to keep building.</p>
       <div class="hero-actions hero-enter hero-enter-d4">
-        <a href="#form" class="btn btn-primary btn-lg btn-arrow">Apply Now </a>
+        <button type="button" class="btn btn-primary btn-lg" data-curriculum-trigger>Download Curriculum</button>
+        <a href="#form" class="btn btn-ghost btn-lg btn-arrow">Apply Now </a>
       </div>
     </div>
 
@@ -157,7 +181,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="floating-card floating-card--3"><div style="font-weight:600;color:var(--navy);font-size:0.75rem;">Demo Day Ready</div><div style="color:var(--text-muted);font-size:0.68rem;">Austin, TX</div></div>
 
       <div class="hero-stat-pills hero-enter hero-enter-d6">
-        <div class="hero-stat-pill"><div class="hero-stat-pill-num">2 weeks</div><div class="hero-stat-pill-label">In-person</div></div>
+        <div class="hero-stat-pill"><div class="hero-stat-pill-num">2 weeks</div><div class="hero-stat-pill-label">In person</div></div>
         <div class="hero-stat-pill"><div class="hero-stat-pill-num">Austin, TX</div><div class="hero-stat-pill-label">Location</div></div>
         <div class="hero-stat-pill"><div class="hero-stat-pill-num">3 products</div><div class="hero-stat-pill-label">You ship</div></div>
       </div>
@@ -181,7 +205,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="stats-strip">
     <div class="stats-strip-card reveal reveal-d1"><div class="stats-strip-num" data-count="88" data-suffix="%">0</div><div class="stats-strip-label">of orgs use AI in at least one function</div><div class="stats-strip-source">McKinsey, 2025</div></div>
     <div class="stats-strip-card reveal reveal-d2"><div class="stats-strip-num">1%</div><div class="stats-strip-label">have achieved real AI maturity</div><div class="stats-strip-source">McKinsey, 2025</div></div>
-    <div class="stats-strip-card reveal reveal-d3"><div class="stats-strip-num" data-count="7" data-suffix="x">0</div><div class="stats-strip-label">growth in AI-fluent job demand</div><div class="stats-strip-source">Gloat Research, 2026</div></div>
+    <div class="stats-strip-card reveal reveal-d3"><div class="stats-strip-num" data-count="7" data-suffix="x">0</div><div class="stats-strip-label">growth in AI fluent job demand</div><div class="stats-strip-source">Gloat Research, 2026</div></div>
     <div class="stats-strip-card reveal reveal-d4"><div class="stats-strip-num" data-count="59" data-suffix="%">0</div><div class="stats-strip-label">of leaders report an AI skills gap</div><div class="stats-strip-source">DataCamp, 2026</div></div>
   </div>
 </div>
@@ -195,7 +219,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="bento-grid">
       <div class="bento-card reveal reveal-d1">
         <div class="bento-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></div>
-        <h3>2 Weeks In-Person, Mon to Fri</h3>
+        <h3>2 Weeks In Person, Monday to Friday</h3>
         <p>9am to 5pm in Austin. <span class="bl">Ship 3 real products.</span> Public Demo Day on Day 10.</p>
       </div>
       <div class="bento-card reveal reveal-d2">
@@ -209,9 +233,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p>Expert prompting, Claude Code, agentic workflows, voice AI. <span class="bl">No visual automation toys.</span></p>
       </div>
       <div class="bento-card reveal reveal-d4">
-        <div class="bento-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
-        <h3>24-Hour Async Support</h3>
-        <p>Stuck at 11pm? <span class="bl">Instructors and TAs answer within 24 hours,</span> every day of the program.</p>
+        <div class="bento-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></div>
+        <h3>Demo Day with Austin's Tech Community</h3>
+        <p>Present your capstone in front of <span class="bl">Austin's tech community:</span> builders, operators, and investors. Real feedback first; connections and interest follow.</p>
       </div>
     </div>
   </div>
@@ -256,7 +280,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="build-card-body">
           <div class="build-card-persona">Product 01 &middot; Day 5</div>
-          <h3>AI-Powered Website</h3>
+          <h3>AI Powered Website</h3>
           <p>Live at a public URL. Built with <span class="bl">Lovable, Vercel, Supabase, and Claude Skills.</span></p>
         </div>
       </div>
@@ -299,7 +323,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="build-card-body">
           <div class="build-card-persona">Product 02 &middot; Day 9</div>
           <h3>Agentic Automation</h3>
-          <p><span class="bl">Composio, Playwright, or voice AI</span> &mdash; Claude wired up to real systems doing real work.</p>
+          <p><span class="bl">Composio, Playwright, or voice AI.</span> Claude wired up to real systems doing real work.</p>
         </div>
       </div>
 
@@ -338,7 +362,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="build-card-body">
           <div class="build-card-persona">Capstone &middot; Demo Day</div>
           <h3>Full Agentic Product</h3>
-          <p>Live demo on stage in front of <span class="bl">Austin investors and operators.</span></p>
+          <p>Live demo on stage in front of <span class="bl">Austin's tech community.</span></p>
         </div>
       </div>
     </div>
@@ -361,7 +385,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <div class="section-label reveal">Curriculum</div>
     <h2 class="reveal">2 weeks. 3 products.<br><span class="text-accent">We start where courses end.</span></h2>
-    <p class="section-sub reveal">Expert prompting, Claude Code, agentic workflows, browser control, voice AI, and real deployment. No beginner hand-holding.</p>
+    <p class="section-sub reveal">Expert prompting, Claude Code, agentic workflows, browser control, voice AI, and real deployment. No beginner hand holding.</p>
     <div class="phases">
       <div class="phase-card reveal reveal-d1">
         <div><div class="phase-num">01</div><div class="phase-tag">Week 1: Build</div></div>
@@ -373,8 +397,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <div class="phase-card reveal reveal-d3">
         <div><div class="phase-num">03</div><div class="phase-tag">Demo Day</div></div>
-        <div><h3>Public event. Austin investors in the room.</h3><p>Five minutes on stage. Live demo on real data. Hard questions from builders and investors. <span class="bl">Demo Day closes the program</span> on the Friday evening of Week 2.</p><div class="phase-deliverable">&#10003; Capstone presented at Demo Day. 3 products shipped total.</div></div>
+        <div><h3>Public event. Austin's tech community in the room.</h3><p>Five minutes on stage. Live demo on real data. Real feedback from people who've built, scaled, and invested. <span class="bl">Demo Day closes the program</span> on the Friday evening of Week 2.</p><div class="phase-deliverable">&#10003; Capstone presented at Demo Day. 3 products shipped total.</div></div>
       </div>
+    </div>
+
+    <!-- Inline curriculum CTA -->
+    <div class="lp-inline-cta reveal">
+      <div class="lp-inline-cta__text">
+        <div class="lp-inline-cta__title">Want the full curriculum?</div>
+        <div class="lp-inline-cta__sub">We'll send the weekly breakdown: what you'll build, what you'll learn, day by day.</div>
+      </div>
+      <button type="button" class="btn btn-primary" data-curriculum-trigger>Download Curriculum</button>
     </div>
   </div>
 </section>
@@ -390,13 +423,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <!-- Featured pricing card -->
       <div class="pricing-card pricing-card--featured reveal reveal-d1">
         <div class="pricing-badge">Applications Open</div>
-        <div class="pricing-tier">In-Person &middot; Austin, TX</div>
+        <div class="pricing-tier">In Person &middot; Austin, TX</div>
         <div class="pricing-price">$5,999</div>
         <div class="pricing-sub">Payment plans available</div>
         <ul class="pricing-features">
-          <li>2-week in-person curriculum</li>
+          <li>2 week in person curriculum</li>
           <li>3 deployed AI products</li>
-          <li>Demo Day on stage with Austin investors</li>
+          <li>Demo Day on stage with Austin's tech community</li>
           <li>Lifetime alumni network</li>
         </ul>
         <a href="#form" class="btn btn-primary btn-block btn-lg btn-arrow">Apply Now </a>
@@ -456,15 +489,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="faq-list">
       <div class="faq-item reveal"><button class="faq-question">Do I need to know how to code?<span class="faq-chevron">&#9660;</span></button><div class="faq-answer"><div class="faq-answer-inner">No. We've had doctors, lawyers, marketers, and operators build exceptional AI products. Your domain expertise matters more than technical skills.</div></div></div>
 
-      <div class="faq-item reveal"><button class="faq-question">How long is the program and what's the schedule?<span class="faq-chevron">&#9660;</span></button><div class="faq-answer"><div class="faq-answer-inner">2 weeks in-person in Austin, Mon&ndash;Fri from 9am to 5pm. Demo Day closes the program on the Friday evening of Week 2. Optional Saturday office hours during both weeks.</div></div></div>
+      <div class="faq-item reveal"><button class="faq-question">How long is the program and what's the schedule?<span class="faq-chevron">&#9660;</span></button><div class="faq-answer"><div class="faq-answer-inner">2 weeks in person in Austin, Monday to Friday from 9am to 5pm. Demo Day closes the program on the Friday evening of Week 2. Optional Saturday office hours during both weeks.</div></div></div>
 
-      <div class="faq-item reveal"><button class="faq-question">How much does it cost?<span class="faq-chevron">&#9660;</span></button><div class="faq-answer"><div class="faq-answer-inner">Tuition is $5,999. Payment plans are available. No income-share agreements.</div></div></div>
+      <div class="faq-item reveal"><button class="faq-question">How much does it cost?<span class="faq-chevron">&#9660;</span></button><div class="faq-answer"><div class="faq-answer-inner">Tuition is $5,999. Payment plans are available. No income share agreements.</div></div></div>
 
-      <div class="faq-item reveal"><button class="faq-question">What do I walk away with?<span class="faq-chevron">&#9660;</span></button><div class="faq-answer"><div class="faq-answer-inner">Three deployed AI products, a Demo Day presentation in front of Austin investors and operators, and a cohort of builders who become your long-term network.</div></div></div>
+      <div class="faq-item reveal"><button class="faq-question">What do I walk away with?<span class="faq-chevron">&#9660;</span></button><div class="faq-answer"><div class="faq-answer-inner">Three deployed AI products, a Demo Day presentation in front of Austin's tech community, and a cohort of builders who become your long term network.</div></div></div>
 
-      <div class="faq-item reveal"><button class="faq-question">I'm coming from out of town. Is housing included?<span class="faq-chevron">&#9660;</span></button><div class="faq-answer"><div class="faq-answer-inner">No, housing is not included in tuition. We work with vetted Airbnb partners near campus who offer discounted rates &mdash; booking codes are shared after admission.</div></div></div>
+      <div class="faq-item reveal"><button class="faq-question">I'm coming from out of town. Is housing included?<span class="faq-chevron">&#9660;</span></button><div class="faq-answer"><div class="faq-answer-inner">No, housing is not included in tuition. We work with vetted Airbnb partners near campus who offer discounted rates. Booking codes are shared after admission.</div></div></div>
 
-      <div class="faq-item reveal"><button class="faq-question">How selective is admission?<span class="faq-chevron">&#9660;</span></button><div class="faq-answer"><div class="faq-answer-inner">10&ndash;15 builders per cohort. We review every application personally. There's a short take-home project at your own pace &mdash; designed around your existing expertise, not coding ability.</div></div></div>
+      <div class="faq-item reveal"><button class="faq-question">How selective is admission?<span class="faq-chevron">&#9660;</span></button><div class="faq-answer"><div class="faq-answer-inner">10 to 15 builders per cohort. We review every application personally. There's a short take home project at your own pace, designed around your existing expertise, not coding ability.</div></div></div>
     </div>
   </div>
 </section>
@@ -500,6 +533,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </section>
 
 
+<!-- ═══ CURRICULUM DOWNLOAD MODAL ═══ -->
+<div id="curr-modal" class="lp-modal" role="dialog" aria-modal="true" aria-labelledby="curr-modal-title" aria-hidden="true">
+  <div class="lp-modal__backdrop" data-curr-close></div>
+  <div class="lp-modal__dialog">
+    <button type="button" class="lp-modal__close" aria-label="Close" data-curr-close>&times;</button>
+    <div class="lp-modal__head">
+      <h3 id="curr-modal-title">Get the full curriculum</h3>
+      <p>Tell us where to send the weekly breakdown. We'll also answer any questions about the program.</p>
+    </div>
+    <div class="lp-modal__body">
+      <div id="zf_div_mhFZPMq0V3WZYAI6xuzmlbrneQRMVHNeivSuj3rbvt8_ppc"></div>
+    </div>
+  </div>
+</div>
+
+
 <!-- ═══ FOOTER: logo + email + LinkedIn + privacy links ═══ -->
 <footer class="lp-footer">
   <div class="lp-footer-inner">
@@ -522,5 +571,98 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </footer>
 
 <script src="js/main.min.js"></script>
+<script>
+(function(){
+  var modal = document.getElementById('curr-modal');
+  if(!modal) return;
+  var iframeMounted = false;
+  var lastFocused = null;
+
+  function mountIframe(){
+    if(iframeMounted) return;
+    iframeMounted = true;
+    try{
+      var f = document.createElement('iframe');
+      var ifrmSrc = 'https://forms.zohopublic.com/makersquare/form/Waitlist/formperma/mhFZPMq0V3WZYAI6xuzmlbrneQRMVHNeivSuj3rbvt8?zf_rszfm=1';
+      try{
+        if (typeof ZFAdvLead != 'undefined' && typeof zfutm_zfAdvLead != 'undefined') {
+          for (var i = 0; i < ZFAdvLead.utmPNameArr.length; i++) {
+            var utmPm = ZFAdvLead.utmPNameArr[i];
+            utmPm = (ZFAdvLead.isSameDomian && (ZFAdvLead.utmcustPNameArr.indexOf(utmPm) == -1)) ? 'zf_' + utmPm : utmPm;
+            var utmVal = zfutm_zfAdvLead.zfautm_gC_enc(ZFAdvLead.utmPNameArr[i]);
+            if (typeof utmVal !== 'undefined' && utmVal !== '') {
+              ifrmSrc += (ifrmSrc.indexOf('?') > 0 ? '&' : '?') + utmPm + '=' + utmVal;
+            }
+          }
+        }
+        if (typeof ZFLead !== 'undefined' && typeof zfutm_zfLead !== 'undefined') {
+          for (var j = 0; j < ZFLead.utmPNameArr.length; j++) {
+            var utmPm2 = ZFLead.utmPNameArr[j];
+            var utmVal2 = zfutm_zfLead.zfutm_gC_enc(ZFLead.utmPNameArr[j]);
+            if (typeof utmVal2 !== 'undefined' && utmVal2 !== '') {
+              ifrmSrc += (ifrmSrc.indexOf('?') > 0 ? '&' : '?') + utmPm2 + '=' + utmVal2;
+            }
+          }
+        }
+      }catch(e){}
+      f.src = ifrmSrc;
+      f.style.border = 'none';
+      f.style.height = '858px';
+      f.style.width = '100%';
+      f.style.maxWidth = '560px';
+      f.style.display = 'block';
+      f.style.transition = 'all 0.5s ease';
+      f.setAttribute('aria-label', 'Get the full curriculum');
+      var d = document.getElementById('zf_div_mhFZPMq0V3WZYAI6xuzmlbrneQRMVHNeivSuj3rbvt8_ppc');
+      d.appendChild(f);
+      window.addEventListener('message', function(e){
+        var evntData = e.data;
+        if (evntData && evntData.constructor == String) {
+          var zf_ifrm_data = evntData.split('|');
+          if (zf_ifrm_data.length == 2 || zf_ifrm_data.length == 3) {
+            var zf_perma = zf_ifrm_data[0];
+            var zf_ifrm_ht_nw = (parseInt(zf_ifrm_data[1], 10) + 15) + 'px';
+            var iframe = document.getElementById('zf_div_mhFZPMq0V3WZYAI6xuzmlbrneQRMVHNeivSuj3rbvt8_ppc').getElementsByTagName('iframe')[0];
+            if (iframe && (iframe.src).indexOf('formperma') > 0 && (iframe.src).indexOf(zf_perma) > 0) {
+              if (iframe.style.height != zf_ifrm_ht_nw) {
+                iframe.style.height = zf_ifrm_ht_nw;
+              }
+            }
+          }
+        }
+      }, false);
+    }catch(e){}
+  }
+
+  function openModal(trigger){
+    lastFocused = trigger || document.activeElement;
+    mountIframe();
+    modal.classList.add('open');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('lp-modal-open');
+    var closeBtn = modal.querySelector('.lp-modal__close');
+    if(closeBtn) closeBtn.focus();
+  }
+
+  function closeModal(){
+    modal.classList.remove('open');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('lp-modal-open');
+    if(lastFocused && lastFocused.focus) lastFocused.focus();
+  }
+
+  document.querySelectorAll('[data-curriculum-trigger]').forEach(function(btn){
+    btn.addEventListener('click', function(){ openModal(btn); });
+  });
+
+  modal.querySelectorAll('[data-curr-close]').forEach(function(el){
+    el.addEventListener('click', closeModal);
+  });
+
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && modal.classList.contains('open')) closeModal();
+  });
+})();
+</script>
 </body>
 </html>
