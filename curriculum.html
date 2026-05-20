@@ -112,7 +112,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 .cs-waitlist { position: relative; z-index: 1; margin-top: var(--s10); padding-top: var(--s9); border-top: 1px solid rgba(24,24,73,0.08); }
 .cs-waitlist-head { margin-bottom: var(--s5); }
 .cs-waitlist-head h3 { font-family: var(--font-display); font-size: 1.4rem; font-weight: 800; color: var(--navy); margin-bottom: var(--s2); }
-.cs-waitlist-head p { font-size: 0.95rem; color: var(--text-secondary); }
+.cs-waitlist-head p { font-size: 0.95rem; color: var(--text-secondary); max-width: 560px; margin: 0 auto; }
+
+/* 4-week waitlist modal */
+.fw-modal { position: fixed; inset: 0; z-index: 9999; display: none; align-items: flex-start; justify-content: center; padding: var(--s5); overflow-y: auto; }
+.fw-modal.open { display: flex; }
+.fw-modal__backdrop { position: fixed; inset: 0; background: rgba(24,24,73,0.55); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); }
+.fw-modal__dialog { position: relative; background: var(--white); border-radius: var(--r-xl); width: 100%; max-width: 600px; padding: var(--s8) 0 var(--s4); box-shadow: 0 30px 80px rgba(24,24,73,0.25); margin: var(--s6) 0; overflow: hidden; }
+.fw-modal__close { position: absolute; top: var(--s4); right: var(--s4); width: 36px; height: 36px; border-radius: 50%; border: 1px solid rgba(24,24,73,0.08); background: var(--white); font-size: 1.4rem; line-height: 1; cursor: pointer; color: var(--text-muted); display: flex; align-items: center; justify-content: center; transition: all 0.2s; z-index: 2; }
+.fw-modal__close:hover { background: var(--light-bg); color: var(--navy); }
+.fw-modal__head { text-align: center; margin-bottom: var(--s5); padding: 0 var(--s5); }
+.fw-modal__head h3 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 800; color: var(--navy); margin-bottom: var(--s2); }
+.fw-modal__head p { font-size: 0.92rem; color: var(--text-secondary); line-height: 1.55; }
+.fw-modal__body { display: flex; justify-content: center; padding: 0 var(--s4); }
+body.fw-modal-open { overflow: hidden; }
+@media (max-width: 768px) {
+  .fw-modal { padding: 0; }
+  .fw-modal__dialog { border-radius: 0; min-height: 100vh; margin: 0; padding: var(--s7) 0 var(--s4); }
+}
 
 .page-cta { background: var(--white); border: 1px solid rgba(24,24,73,0.06); border-radius: var(--r-xl); padding: var(--s8); text-align: center; margin-top: 0; }
 .page-cta h3 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 800; color: var(--navy); margin-bottom: var(--s3); }
@@ -354,10 +371,39 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="tl-deliverable tl-deliverable--demo">
           <div class="tl-del-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="7"/><path d="M8.21 13.89L7 23l5-3 5 3-1.21-9.12"/></svg></div>
-          <div><div class="tl-del-text">Capstone presented at Demo Day</div><div class="tl-del-sub">On stage. Austin investors and operators in the room.</div></div>
+          <div><div class="tl-del-text">Capstone presented at Demo Day</div><div class="tl-del-sub">On stage. Austin's tech community in the room.</div></div>
         </div>
       </div>
 
+    </div>
+  </div>
+</section>
+
+
+<!-- 2-WEEK CURRICULUM FORM EMBED -->
+<section class="section" style="padding-top:var(--s4);padding-bottom:var(--s8);">
+  <div class="container">
+    <div style="max-width:640px;margin:0 auto;text-align:center;">
+      <div class="section-label reveal" style="justify-content:center;">Get the curriculum</div>
+      <h2 class="reveal">Want the full 2-week curriculum?</h2>
+      <p class="section-sub reveal" style="margin:var(--s3) auto var(--s6);">Full breakdown of our <span class="bl">2-week in-person program</span> in Austin. We'll also answer any questions about the program.</p>
+      <div id="zf_div_curriculum_2week" style="display:flex;justify-content:center;"></div>
+      <script type="text/javascript">
+      (function() {
+          try{
+              var f = document.createElement("iframe");
+              var ifrmSrc = 'https://forms.zohopublic.com/makersquare/form/Waitlist/formperma/mhFZPMq0V3WZYAI6xuzmlbrneQRMVHNeivSuj3rbvt8?zf_rszfm=1';
+              try{
+                  if ( typeof ZFAdvLead != "undefined" && typeof zfutm_zfAdvLead != "undefined" ) { for( var prmIdx = 0 ; prmIdx < ZFAdvLead.utmPNameArr.length ; prmIdx ++ ) { var utmPm = ZFAdvLead.utmPNameArr[ prmIdx ]; utmPm = ( ZFAdvLead.isSameDomian && ( ZFAdvLead.utmcustPNameArr.indexOf(utmPm) == -1 ) ) ? "zf_" + utmPm : utmPm; var utmVal = zfutm_zfAdvLead.zfautm_gC_enc( ZFAdvLead.utmPNameArr[ prmIdx ] ); if ( typeof utmVal !== "undefined" ) { if ( utmVal != "" ) { if(ifrmSrc.indexOf('?') > 0){ ifrmSrc = ifrmSrc+'&'+utmPm+'='+utmVal; }else{ ifrmSrc = ifrmSrc+'?'+utmPm+'='+utmVal; } } } } }
+                  if ( typeof ZFLead !== "undefined" && typeof zfutm_zfLead !== "undefined" ) { for( var prmIdx = 0 ; prmIdx < ZFLead.utmPNameArr.length ; prmIdx ++ ) { var utmPm = ZFLead.utmPNameArr[ prmIdx ]; var utmVal = zfutm_zfLead.zfutm_gC_enc( ZFLead.utmPNameArr[ prmIdx ] ); if ( typeof utmVal !== "undefined" ) { if ( utmVal != "" ){ if(ifrmSrc.indexOf('?') > 0){ ifrmSrc = ifrmSrc+'&'+utmPm+'='+utmVal; }else{ ifrmSrc = ifrmSrc+'?'+utmPm+'='+utmVal; } } } } }
+              }catch(e){}
+              f.src = ifrmSrc; f.style.border="none"; f.style.height="858px"; f.style.width="100%"; f.style.maxWidth="560px"; f.style.transition="all 0.5s ease"; f.setAttribute("aria-label", "Get the 2-week curriculum");
+              var d = document.getElementById("zf_div_curriculum_2week");
+              d.appendChild(f);
+              window.addEventListener('message', function (){ var evntData = event.data; if( evntData && evntData.constructor == String ){ var zf_ifrm_data = evntData.split("|"); if ( zf_ifrm_data.length == 2 || zf_ifrm_data.length == 3 ) { var zf_perma = zf_ifrm_data[0]; var zf_ifrm_ht_nw = ( parseInt(zf_ifrm_data[1], 10) + 15 ) + "px"; var iframeEl = document.getElementById("zf_div_curriculum_2week").getElementsByTagName("iframe")[0]; if ( iframeEl && (iframeEl.src).indexOf('formperma') > 0 && (iframeEl.src).indexOf(zf_perma) > 0 ) { var prevIframeHeight = iframeEl.style.height; if ( prevIframeHeight != zf_ifrm_ht_nw ) { iframeEl.style.height = zf_ifrm_ht_nw; } } } } }, false);
+          }catch(e){}
+      })();
+      </script>
     </div>
   </div>
 </section>
@@ -404,7 +450,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 <!-- COMING SOON: 4-Week Part-Time Program + Waitlist -->
-<section class="section" style="padding-top:0;">
+<section class="section" id="part-time" style="padding-top:0;">
   <div class="container">
     <div class="coming-soon-card reveal">
 
@@ -564,31 +610,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
 
-      <!-- Waitlist -->
+      <!-- 4-week curriculum trigger -->
       <div class="cs-waitlist">
         <div class="cs-waitlist-head">
-          <h3>Get the full curriculum</h3>
-          <p>Tell us where to send the week-by-week breakdown — we'll also answer any questions about the program.</p>
+          <h3>Get the 4-week curriculum</h3>
+          <p>Download the full breakdown of our part-time format and get updates as we open this new program.</p>
         </div>
-        <div class="waitlist-embed">
-          <div id="zf_div_mhFZPMq0V3WZYAI6xuzmlbrneQRMVHNeivSuj3rbvt8"></div>
-        <script type="text/javascript">
-        (function() {
-            try{
-                var f = document.createElement("iframe");
-                var ifrmSrc = 'https://forms.zohopublic.com/makersquare/form/Waitlist/formperma/mhFZPMq0V3WZYAI6xuzmlbrneQRMVHNeivSuj3rbvt8?zf_rszfm=1';
-                try{
-                    if ( typeof ZFAdvLead != "undefined" && typeof zfutm_zfAdvLead != "undefined" ) { for( var prmIdx = 0 ; prmIdx < ZFAdvLead.utmPNameArr.length ; prmIdx ++ ) { var utmPm = ZFAdvLead.utmPNameArr[ prmIdx ]; utmPm = ( ZFAdvLead.isSameDomian && ( ZFAdvLead.utmcustPNameArr.indexOf(utmPm) == -1 ) ) ? "zf_" + utmPm : utmPm; var utmVal = zfutm_zfAdvLead.zfautm_gC_enc( ZFAdvLead.utmPNameArr[ prmIdx ] ); if ( typeof utmVal !== "undefined" ) { if ( utmVal != "" ) { if(ifrmSrc.indexOf('?') > 0){ ifrmSrc = ifrmSrc+'&'+utmPm+'='+utmVal; }else{ ifrmSrc = ifrmSrc+'?'+utmPm+'='+utmVal; } } } } }
-                    if ( typeof ZFLead !== "undefined" && typeof zfutm_zfLead !== "undefined" ) { for( var prmIdx = 0 ; prmIdx < ZFLead.utmPNameArr.length ; prmIdx ++ ) { var utmPm = ZFLead.utmPNameArr[ prmIdx ]; var utmVal = zfutm_zfLead.zfutm_gC_enc( ZFLead.utmPNameArr[ prmIdx ] ); if ( typeof utmVal !== "undefined" ) { if ( utmVal != "" ){ if(ifrmSrc.indexOf('?') > 0){ ifrmSrc = ifrmSrc+'&'+utmPm+'='+utmVal; }else{ ifrmSrc = ifrmSrc+'?'+utmPm+'='+utmVal; } } } } }
-                }catch(e){}
-                f.src = ifrmSrc; f.style.border="none"; f.style.height="858px"; f.style.width="100%"; f.style.maxWidth="560px"; f.style.transition="all 0.5s ease"; f.setAttribute("aria-label", 'Waitlist');
-                var d = document.getElementById("zf_div_mhFZPMq0V3WZYAI6xuzmlbrneQRMVHNeivSuj3rbvt8");
-                d.appendChild(f);
-                window.addEventListener('message', function (){ var evntData = event.data; if( evntData && evntData.constructor == String ){ var zf_ifrm_data = evntData.split("|"); if ( zf_ifrm_data.length == 2 || zf_ifrm_data.length == 3 ) { var zf_perma = zf_ifrm_data[0]; var zf_ifrm_ht_nw = ( parseInt(zf_ifrm_data[1], 10) + 15 ) + "px"; var iframe = document.getElementById("zf_div_mhFZPMq0V3WZYAI6xuzmlbrneQRMVHNeivSuj3rbvt8").getElementsByTagName("iframe")[0]; if ( (iframe.src).indexOf('formperma') > 0 && (iframe.src).indexOf(zf_perma) > 0 ) { var prevIframeHeight = iframe.style.height; var zf_tout = false; if( zf_ifrm_data.length == 3 ) { iframe.scrollIntoView(); zf_tout = true; } if ( prevIframeHeight != zf_ifrm_ht_nw ) { if( zf_tout ) { setTimeout(function(){ iframe.style.height = zf_ifrm_ht_nw; },500); } else { iframe.style.height = zf_ifrm_ht_nw; } } } } } }, false);
-            }catch(e){}
-        })();
-        </script>
-      </div>
+        <div style="text-align:center;">
+          <button type="button" class="btn btn-primary btn-lg btn-arrow" data-fourweek-trigger>Get the 4-Week Curriculum </button>
+        </div>
       </div>
     </div>
   </div>
@@ -639,7 +669,127 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </footer>
 
+<!-- 4-WEEK WAITLIST MODAL -->
+<div id="fourweek-modal" class="fw-modal" role="dialog" aria-modal="true" aria-labelledby="fourweek-modal-title" aria-hidden="true">
+  <div class="fw-modal__backdrop" data-fourweek-close></div>
+  <div class="fw-modal__dialog">
+    <button type="button" class="fw-modal__close" aria-label="Close" data-fourweek-close>&times;</button>
+    <div class="fw-modal__head">
+      <h3 id="fourweek-modal-title">Get the 4-week curriculum</h3>
+      <p>Download the full breakdown of our part-time format and get updates as we open this new program.</p>
+    </div>
+    <div class="fw-modal__body">
+      <div id="zf_div_4week_curriculum"></div>
+    </div>
+  </div>
+</div>
+
 <script src="js/main.min.js"></script>
+<script>
+(function(){
+  var modal = document.getElementById('fourweek-modal');
+  if(!modal) return;
+  var iframeMounted = false;
+  var lastFocused = null;
+
+  function mountIframe(){
+    if(iframeMounted) return;
+    iframeMounted = true;
+    try{
+      var f = document.createElement('iframe');
+      var ifrmSrc = 'https://forms.zohopublic.com/makersquare/form/Waitlist4Week/formperma/_aYXz_FXU2ztdKhVXnz_rdiYEwqRK5SVkAsyyka-eyI?zf_rszfm=1';
+      try{
+        if (typeof ZFAdvLead != 'undefined' && typeof zfutm_zfAdvLead != 'undefined') {
+          for (var i = 0; i < ZFAdvLead.utmPNameArr.length; i++) {
+            var utmPm = ZFAdvLead.utmPNameArr[i];
+            utmPm = (ZFAdvLead.isSameDomian && (ZFAdvLead.utmcustPNameArr.indexOf(utmPm) == -1)) ? 'zf_' + utmPm : utmPm;
+            var utmVal = zfutm_zfAdvLead.zfautm_gC_enc(ZFAdvLead.utmPNameArr[i]);
+            if (typeof utmVal !== 'undefined' && utmVal !== '') {
+              ifrmSrc += (ifrmSrc.indexOf('?') > 0 ? '&' : '?') + utmPm + '=' + utmVal;
+            }
+          }
+        }
+        if (typeof ZFLead !== 'undefined' && typeof zfutm_zfLead !== 'undefined') {
+          for (var j = 0; j < ZFLead.utmPNameArr.length; j++) {
+            var utmPm2 = ZFLead.utmPNameArr[j];
+            var utmVal2 = zfutm_zfLead.zfutm_gC_enc(ZFLead.utmPNameArr[j]);
+            if (typeof utmVal2 !== 'undefined' && utmVal2 !== '') {
+              ifrmSrc += (ifrmSrc.indexOf('?') > 0 ? '&' : '?') + utmPm2 + '=' + utmVal2;
+            }
+          }
+        }
+        if (!((new RegExp("[?&]referrername=")).test(ifrmSrc))) {
+          var rfr = window.location.href;
+          try { rfr = window.self !== window.top ? window.top.location.href : (/^https?:\/\/[\w.-]+\.[a-zA-Z]{2,}/i.test(rfr) ? rfr : ""); } catch (e) {}
+          if (rfr && rfr !== "") {
+            if (rfr.length > 1800) {
+              var queryIndex = rfr.indexOf('?');
+              if (queryIndex > -1) { rfr = rfr.substring(0, queryIndex); }
+              if (rfr.length > 1800) { rfr = rfr.substring(0, 1800); }
+            }
+            ifrmSrc += ((ifrmSrc.indexOf('?') > 0) ? '&' : '?') + 'referrername=' + encodeURIComponent(rfr);
+          }
+        }
+      }catch(e){}
+      f.src = ifrmSrc;
+      f.style.border = 'none';
+      f.style.height = '619px';
+      f.style.width = '100%';
+      f.style.maxWidth = '560px';
+      f.style.display = 'block';
+      f.style.transition = 'all 0.5s ease';
+      f.setAttribute('aria-label', 'Get the 4-week curriculum');
+      var d = document.getElementById('zf_div_4week_curriculum');
+      d.appendChild(f);
+      window.addEventListener('message', function(e){
+        var evntData = e.data;
+        if (evntData && evntData.constructor == String) {
+          var zf_ifrm_data = evntData.split('|');
+          if (zf_ifrm_data.length == 2 || zf_ifrm_data.length == 3) {
+            var zf_perma = zf_ifrm_data[0];
+            var zf_ifrm_ht_nw = (parseInt(zf_ifrm_data[1], 10) + 15) + 'px';
+            var iframe = document.getElementById('zf_div_4week_curriculum').getElementsByTagName('iframe')[0];
+            if (iframe && (iframe.src).indexOf('formperma') > 0 && (iframe.src).indexOf(zf_perma) > 0) {
+              if (iframe.style.height != zf_ifrm_ht_nw) {
+                iframe.style.height = zf_ifrm_ht_nw;
+              }
+            }
+          }
+        }
+      }, false);
+    }catch(e){}
+  }
+
+  function openModal(trigger){
+    lastFocused = trigger || document.activeElement;
+    mountIframe();
+    modal.classList.add('open');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('fw-modal-open');
+    var closeBtn = modal.querySelector('.fw-modal__close');
+    if(closeBtn) closeBtn.focus();
+  }
+
+  function closeModal(){
+    modal.classList.remove('open');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('fw-modal-open');
+    if(lastFocused && lastFocused.focus) lastFocused.focus();
+  }
+
+  document.querySelectorAll('[data-fourweek-trigger]').forEach(function(btn){
+    btn.addEventListener('click', function(){ openModal(btn); });
+  });
+
+  modal.querySelectorAll('[data-fourweek-close]').forEach(function(el){
+    el.addEventListener('click', closeModal);
+  });
+
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && modal.classList.contains('open')) closeModal();
+  });
+})();
+</script>
 <script type="text/javascript" src="https://forms.zoho.com/js/zf_gclid.js"> </script>
 <script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script><script id="zsiqscript" src="https://salesiq.zohopublic.com/widget?wc=siq885ea214ffc25f4f452068cc9bc1cec4353b0ff61817b77233444928d383fe96" defer></script>
 </body>

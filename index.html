@@ -92,7 +92,7 @@ if(document.readyState=="complete"){zfutm_zfLead.zfutm_iframeSprt();zfutm_zfLead
         {"@type": "Question", "name": "Do I need to know how to code to join MakerSquare?", "acceptedAnswer": {"@type": "Answer", "text": "No. Basic computer fluency and real experience in your field. We've had doctors, lawyers, real estate agents, and marketing directors build exceptional AI products."}},
         {"@type": "Question", "name": "What is the time commitment for MakerSquare?", "acceptedAnswer": {"@type": "Answer", "text": "Mon-Fri, 9am to 5pm for 2 weeks (40 hrs/week in class), plus optional Saturday office hours."}},
         {"@type": "Question", "name": "How much does MakerSquare cost?", "acceptedAnswer": {"@type": "Answer", "text": "Tuition is $5,999. A $1,500 scholarship is available for military veterans, first responders, and educators (reducing tuition to $4,499). Payment plans available. No income share agreements."}},
-        {"@type": "Question", "name": "What do I walk away with?", "acceptedAnswer": {"@type": "Answer", "text": "Three deployed AI products. A Demo Day presentation to Austin investors and operators. A cohort of builders who become your long-term network."}},
+        {"@type": "Question", "name": "What do I walk away with?", "acceptedAnswer": {"@type": "Answer", "text": "Three deployed AI products. A Demo Day presentation to Austin's tech community. A cohort of builders who become your long-term network."}},
         {"@type": "Question", "name": "Is MakerSquare only for people in Austin?", "acceptedAnswer": {"@type": "Answer", "text": "No. MakerSquare welcomes builders from anywhere. Housing assistance is available with partner Airbnb discounts starting from $1,600/month."}}
       ]
     }
@@ -100,6 +100,24 @@ if(document.readyState=="complete"){zfutm_zfLead.zfutm_iframeSprt();zfutm_zfLead
 }
 </script>
 <script src="https://cdn.pagesense.io/js/makersquare/2d11a6657de44371ae8b77f2ef843ad4.js"></script>
+<style>
+/* Curriculum download modal */
+.cm-modal { position: fixed; inset: 0; z-index: 9999; display: none; align-items: flex-start; justify-content: center; padding: var(--s5); overflow-y: auto; }
+.cm-modal.open { display: flex; }
+.cm-modal__backdrop { position: fixed; inset: 0; background: rgba(24,24,73,0.55); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); }
+.cm-modal__dialog { position: relative; background: var(--white); border-radius: var(--r-xl); width: 100%; max-width: 600px; padding: var(--s8) 0 var(--s4); box-shadow: 0 30px 80px rgba(24,24,73,0.25); margin: var(--s6) 0; overflow: hidden; }
+.cm-modal__close { position: absolute; top: var(--s4); right: var(--s4); width: 36px; height: 36px; border-radius: 50%; border: 1px solid rgba(24,24,73,0.08); background: var(--white); font-size: 1.4rem; line-height: 1; cursor: pointer; color: var(--text-muted); display: flex; align-items: center; justify-content: center; transition: all 0.2s; z-index: 2; }
+.cm-modal__close:hover { background: var(--light-bg); color: var(--navy); }
+.cm-modal__head { text-align: center; margin-bottom: var(--s5); padding: 0 var(--s5); }
+.cm-modal__head h3 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 800; color: var(--navy); margin-bottom: var(--s2); }
+.cm-modal__head p { font-size: 0.92rem; color: var(--text-secondary); line-height: 1.55; }
+.cm-modal__body { display: flex; justify-content: center; padding: 0 var(--s4); }
+body.cm-modal-open { overflow: hidden; }
+@media (max-width: 768px) {
+  .cm-modal { padding: 0; }
+  .cm-modal__dialog { border-radius: 0; min-height: 100vh; margin: 0; padding: var(--s7) 0 var(--s4); }
+}
+</style>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -159,8 +177,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <h1 class="hero-enter hero-enter-d2">You already know your industry.<br><span class="text-gradient">Now learn to build with AI.</span></h1>
       <p class="hero-sub hero-enter hero-enter-d3">2 weeks. In-person. Austin, TX. You leave with <span class="hi">3 deployed AI products</span> and the skills to keep building.</p>
       <div class="hero-actions hero-enter hero-enter-d4">
-        <a href="apply.html" class="btn btn-primary btn-lg btn-arrow">Apply Now </a>
-        <a href="#curriculum" class="btn btn-ghost btn-arrow">See the curriculum </a>
+        <button type="button" class="btn btn-primary btn-lg" data-curriculum-trigger>Get Curriculum</button>
+        <a href="apply.html" class="btn btn-ghost btn-arrow">Apply Now </a>
       </div>
     </div>
 
@@ -510,7 +528,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <div class="phase-card reveal reveal-d3">
         <div><div class="phase-num">03</div><div class="phase-tag">Demo Day</div></div>
-        <div><h3>Public event. Austin investors in the room.</h3><p>Five minutes on stage, live demo on real data, hard questions from builders and investors. <span class="bl">Demo Day closes the program</span> on the Friday evening of Week 2.</p><div class="phase-deliverable">&#10003; Capstone presented at Demo Day. 3 products shipped total.</div></div>
+        <div><h3>Public event. Austin's tech community in the room.</h3><p>Five minutes on stage, live demo on real data, real feedback from people actively building with AI. <span class="bl">Demo Day closes the program</span> on the Friday evening of Week 2.</p><div class="phase-deliverable">&#10003; Capstone presented at Demo Day. 3 products shipped total.</div></div>
       </div>
     </div>
     <div style="text-align:center;margin-top:40px;"><a href="curriculum.html" class="btn btn-ghost btn-arrow">See the full 2-week curriculum</a></div>
@@ -574,12 +592,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <div class="demo-content">
         <h3 class="reveal">Your product. <span class="bl">Their attention.</span></h3>
-        <p class="reveal">Every cohort ends the same way: you take the stage at MakerSquare HQ and demo what you built to a room of <span class="hi">seed investors, tech hub leaders, and operators</span>.</p>
+        <p class="reveal">Every cohort ends the same way: you take the stage at MakerSquare HQ and demo what you built to <span class="hi">Austin's tech community</span> &mdash; builders, founders, operators, and investors actively building with AI.</p>
         <div class="demo-highlights reveal">
           <div class="demo-highlight"><div class="demo-highlight-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></div><span>5-minute live demo on stage at MakerSquare HQ</span></div>
-          <div class="demo-highlight"><div class="demo-highlight-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg></div><span>Seed-stage investors and Austin tech leaders in the room</span></div>
-          <div class="demo-highlight"><div class="demo-highlight-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="8.5" cy="7" r="4"/><path d="M20 8v6m3-3h-6"/></svg></div><span>Direct intros to people who fund, hire, and partner</span></div>
-          <div class="demo-highlight"><div class="demo-highlight-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="7"/><path d="M8.21 13.89L7 23l5-3 5 3-1.21-9.12"/></svg></div><span>Feedback from people who've built and scaled companies</span></div>
+          <div class="demo-highlight"><div class="demo-highlight-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg></div><span>Austin's tech community and operators in the room</span></div>
+          <div class="demo-highlight"><div class="demo-highlight-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="8.5" cy="7" r="4"/><path d="M20 8v6m3-3h-6"/></svg></div><span>Connect with builders, founders, and operators</span></div>
+          <div class="demo-highlight"><div class="demo-highlight-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="7"/><path d="M8.21 13.89L7 23l5-3 5 3-1.21-9.12"/></svg></div><span>Real feedback from people actively building with AI</span></div>
         </div>
       </div>
     </div>
@@ -603,7 +621,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li>Mon to Fri &middot; 9am&ndash;5pm</li>
           <li>24-hr async instructor support</li>
           <li>3 deployed AI products including a working AI agent</li>
-          <li>Demo Day + investor access</li>
+          <li>Demo Day with Austin's tech community</li>
           <li>Guest speakers and mentors</li>
           <li>Lifetime alumni network</li>
           <li>$1,500 scholarship for veterans, first responders &amp; educators</li>
@@ -657,38 +675,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="faq-item reveal"><button class="faq-question">Do I need to know how to code?<span class="faq-chevron">&#9660;</span></button><div class="faq-answer"><div class="faq-answer-inner">No. Basic computer fluency and real experience in your field. That's it. We've had doctors, lawyers, real estate agents, and marketing directors build exceptional AI products.</div></div></div>
       <div class="faq-item reveal"><button class="faq-question">What's the time commitment?<span class="faq-chevron">&#9660;</span></button><div class="faq-answer"><div class="faq-answer-inner">Mon-Fri, 9am to 5pm for 2 weeks (40 hrs/week in class), plus optional Saturday office hours.</div></div></div>
       <div class="faq-item reveal"><button class="faq-question">How selective is it?<span class="faq-chevron">&#9660;</span></button><div class="faq-answer"><div class="faq-answer-inner">10-15 builders per cohort. Every applicant completes a take-home project. Most common rejection reason: vague problem statement. The take-home matters more than the written app.</div></div></div>
-      <div class="faq-item reveal"><button class="faq-question">What do I actually walk away with?<span class="faq-chevron">&#9660;</span></button><div class="faq-answer"><div class="faq-answer-inner">Three deployed AI products. A Demo Day presentation to investors. A cohort of builders who become your long-term network.</div></div></div>
+      <div class="faq-item reveal"><button class="faq-question">What do I actually walk away with?<span class="faq-chevron">&#9660;</span></button><div class="faq-answer"><div class="faq-answer-inner">Three deployed AI products. A Demo Day presentation to Austin's tech community. A cohort of builders who become your long-term network.</div></div></div>
       <div class="faq-item reveal"><button class="faq-question">What does $5,999 include?<span class="faq-chevron">&#9660;</span></button><div class="faq-answer"><div class="faq-answer-inner">2 weeks in-person instruction, 24-hour async support, optional Saturday office hours, Demo Day, guest speakers, alumni network. Not included: API costs (~$15-30 total) and housing (partner discounts available).</div></div></div>
       <div class="faq-item reveal"><button class="faq-question">I'm coming from out of town. Is that okay?<span class="faq-chevron">&#9660;</span></button><div class="faq-answer"><div class="faq-answer-inner">Absolutely. We have a housing program with partner Airbnb hosts and discounted rates near campus. Details shared after admission.</div></div></div>
       <div class="faq-item reveal"><button class="faq-question">Can my employer pay?<span class="faq-chevron">&#9660;</span></button><div class="faq-answer"><div class="faq-answer-inner">Yes. We issue invoices and can provide a proposal letter for your employer. Many alumni have their company cover it as professional development.</div></div></div>
-    </div>
-  </div>
-</section>
-
-
-<!-- ═══ WAITLIST FORM ═══ -->
-<section class="section" id="waitlist">
-  <div class="container">
-    <div class="form-section reveal">
-      <div class="section-label" style="justify-content:center;">Get the details</div>
-      <h2>Want the full curriculum first?<br><span class="text-accent">No pressure.</span></h2>
-      <p>Complete curriculum, cohort details, and next steps. <span class="bl">No spam.</span></p>
-      <div id="zf_div_mhFZPMq0V3WZYAI6xuzmlbrneQRMVHNeivSuj3rbvt8"></div>
-      <script type="text/javascript">
-      (function() {
-          try{
-              var f = document.createElement("iframe");
-              var ifrmSrc = 'https://forms.zohopublic.com/makersquare/form/Waitlist/formperma/mhFZPMq0V3WZYAI6xuzmlbrneQRMVHNeivSuj3rbvt8?zf_rszfm=1';
-              try{
-                  if ( typeof ZFAdvLead != "undefined" && typeof zfutm_zfAdvLead != "undefined" ) { for( var prmIdx = 0 ; prmIdx < ZFAdvLead.utmPNameArr.length ; prmIdx ++ ) { var utmPm = ZFAdvLead.utmPNameArr[ prmIdx ]; utmPm = ( ZFAdvLead.isSameDomian && ( ZFAdvLead.utmcustPNameArr.indexOf(utmPm) == -1 ) ) ? "zf_" + utmPm : utmPm; var utmVal = zfutm_zfAdvLead.zfautm_gC_enc( ZFAdvLead.utmPNameArr[ prmIdx ] ); if ( typeof utmVal !== "undefined" ) { if ( utmVal != "" ) { if(ifrmSrc.indexOf('?') > 0){ ifrmSrc = ifrmSrc+'&'+utmPm+'='+utmVal; }else{ ifrmSrc = ifrmSrc+'?'+utmPm+'='+utmVal; } } } } }
-                  if ( typeof ZFLead !== "undefined" && typeof zfutm_zfLead !== "undefined" ) { for( var prmIdx = 0 ; prmIdx < ZFLead.utmPNameArr.length ; prmIdx ++ ) { var utmPm = ZFLead.utmPNameArr[ prmIdx ]; var utmVal = zfutm_zfLead.zfutm_gC_enc( ZFLead.utmPNameArr[ prmIdx ] ); if ( typeof utmVal !== "undefined" ) { if ( utmVal != "" ){ if(ifrmSrc.indexOf('?') > 0){ ifrmSrc = ifrmSrc+'&'+utmPm+'='+utmVal; }else{ ifrmSrc = ifrmSrc+'?'+utmPm+'='+utmVal; } } } } }
-              }catch(e){}
-              f.src = ifrmSrc; f.style.border="none"; f.style.height="858px"; f.style.width="100%"; f.style.maxWidth="560px"; f.style.transition="all 0.5s ease"; f.setAttribute("aria-label", "Waitlist");
-              var d = document.getElementById("zf_div_mhFZPMq0V3WZYAI6xuzmlbrneQRMVHNeivSuj3rbvt8"); d.appendChild(f);
-              window.addEventListener('message', function (){ var evntData = event.data; if( evntData && evntData.constructor == String ){ var zf_ifrm_data = evntData.split("|"); if ( zf_ifrm_data.length == 2 || zf_ifrm_data.length == 3 ) { var zf_perma = zf_ifrm_data[0]; var zf_ifrm_ht_nw = ( parseInt(zf_ifrm_data[1], 10) + 15 ) + "px"; var iframe = document.getElementById("zf_div_mhFZPMq0V3WZYAI6xuzmlbrneQRMVHNeivSuj3rbvt8").getElementsByTagName("iframe")[0]; if ( (iframe.src).indexOf('formperma') > 0 && (iframe.src).indexOf(zf_perma) > 0 ) { var prevIframeHeight = iframe.style.height; if ( prevIframeHeight != zf_ifrm_ht_nw ) { iframe.style.height = zf_ifrm_ht_nw; } } } } }, false);
-          }catch(e){}
-      })();
-      </script>
     </div>
   </div>
 </section>
@@ -752,7 +742,115 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </footer>
 
+<!-- ═══ CURRICULUM DOWNLOAD MODAL ═══ -->
+<div id="cm-modal" class="cm-modal" role="dialog" aria-modal="true" aria-labelledby="cm-modal-title" aria-hidden="true">
+  <div class="cm-modal__backdrop" data-cm-close></div>
+  <div class="cm-modal__dialog">
+    <button type="button" class="cm-modal__close" aria-label="Close" data-cm-close>&times;</button>
+    <div class="cm-modal__head">
+      <h3 id="cm-modal-title">Want the full curriculum first?</h3>
+      <p>Full breakdown of our <strong>2-week in-person program</strong> in Austin. Cohort details and next steps included. No spam.</p>
+    </div>
+    <div class="cm-modal__body">
+      <div id="zf_div_curriculum_home"></div>
+    </div>
+  </div>
+</div>
+
 <script src="js/main.min.js"></script>
+<script>
+(function(){
+  var modal = document.getElementById('cm-modal');
+  if(!modal) return;
+  var iframeMounted = false;
+  var lastFocused = null;
+
+  function mountIframe(){
+    if(iframeMounted) return;
+    iframeMounted = true;
+    try{
+      var f = document.createElement('iframe');
+      var ifrmSrc = 'https://forms.zohopublic.com/makersquare/form/Waitlist/formperma/mhFZPMq0V3WZYAI6xuzmlbrneQRMVHNeivSuj3rbvt8?zf_rszfm=1';
+      try{
+        if (typeof ZFAdvLead != 'undefined' && typeof zfutm_zfAdvLead != 'undefined') {
+          for (var i = 0; i < ZFAdvLead.utmPNameArr.length; i++) {
+            var utmPm = ZFAdvLead.utmPNameArr[i];
+            utmPm = (ZFAdvLead.isSameDomian && (ZFAdvLead.utmcustPNameArr.indexOf(utmPm) == -1)) ? 'zf_' + utmPm : utmPm;
+            var utmVal = zfutm_zfAdvLead.zfautm_gC_enc(ZFAdvLead.utmPNameArr[i]);
+            if (typeof utmVal !== 'undefined' && utmVal !== '') {
+              ifrmSrc += (ifrmSrc.indexOf('?') > 0 ? '&' : '?') + utmPm + '=' + utmVal;
+            }
+          }
+        }
+        if (typeof ZFLead !== 'undefined' && typeof zfutm_zfLead !== 'undefined') {
+          for (var j = 0; j < ZFLead.utmPNameArr.length; j++) {
+            var utmPm2 = ZFLead.utmPNameArr[j];
+            var utmVal2 = zfutm_zfLead.zfutm_gC_enc(ZFLead.utmPNameArr[j]);
+            if (typeof utmVal2 !== 'undefined' && utmVal2 !== '') {
+              ifrmSrc += (ifrmSrc.indexOf('?') > 0 ? '&' : '?') + utmPm2 + '=' + utmVal2;
+            }
+          }
+        }
+      }catch(e){}
+      f.src = ifrmSrc;
+      f.style.border = 'none';
+      f.style.height = '858px';
+      f.style.width = '100%';
+      f.style.maxWidth = '560px';
+      f.style.display = 'block';
+      f.style.transition = 'all 0.5s ease';
+      f.setAttribute('aria-label', 'Get the full curriculum');
+      var d = document.getElementById('zf_div_curriculum_home');
+      d.appendChild(f);
+      window.addEventListener('message', function(e){
+        var evntData = e.data;
+        if (evntData && evntData.constructor == String) {
+          var zf_ifrm_data = evntData.split('|');
+          if (zf_ifrm_data.length == 2 || zf_ifrm_data.length == 3) {
+            var zf_perma = zf_ifrm_data[0];
+            var zf_ifrm_ht_nw = (parseInt(zf_ifrm_data[1], 10) + 15) + 'px';
+            var iframe = document.getElementById('zf_div_curriculum_home').getElementsByTagName('iframe')[0];
+            if (iframe && (iframe.src).indexOf('formperma') > 0 && (iframe.src).indexOf(zf_perma) > 0) {
+              if (iframe.style.height != zf_ifrm_ht_nw) {
+                iframe.style.height = zf_ifrm_ht_nw;
+              }
+            }
+          }
+        }
+      }, false);
+    }catch(e){}
+  }
+
+  function openModal(trigger){
+    lastFocused = trigger || document.activeElement;
+    mountIframe();
+    modal.classList.add('open');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('cm-modal-open');
+    var closeBtn = modal.querySelector('.cm-modal__close');
+    if(closeBtn) closeBtn.focus();
+  }
+
+  function closeModal(){
+    modal.classList.remove('open');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('cm-modal-open');
+    if(lastFocused && lastFocused.focus) lastFocused.focus();
+  }
+
+  document.querySelectorAll('[data-curriculum-trigger]').forEach(function(btn){
+    btn.addEventListener('click', function(){ openModal(btn); });
+  });
+
+  modal.querySelectorAll('[data-cm-close]').forEach(function(el){
+    el.addEventListener('click', closeModal);
+  });
+
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && modal.classList.contains('open')) closeModal();
+  });
+})();
+</script>
 <script type="text/javascript" src="https://forms.zoho.com/js/zf_gclid.js"> </script>
 <script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script><script id="zsiqscript" src="https://salesiq.zohopublic.com/widget?wc=siq885ea214ffc25f4f452068cc9bc1cec4353b0ff61817b77233444928d383fe96" defer></script>
 </body>
