@@ -100,6 +100,120 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.makersquare.ai/"},{"@type":"ListItem","position":2,"name":"Corporate Training","item":"https://www.makersquare.ai/corporate"}]}
 </script>
 <script src="https://cdn.pagesense.io/js/makersquare/2d11a6657de44371ae8b77f2ef843ad4.js"></script>
+<script>
+    let hasLogged = false;
+    window.addEventListener('message', function (){
+        try {
+            var debugMode = false;
+            var u = new URL(event.origin);
+            if (u.host === "forms.zohopublic.com") {
+
+                var evntData = event.data;
+                if(debugMode) {
+                    if(!hasLogged) {
+                        console.log("%cForms - Post Message Debugging", "border-width: 2px; border-style: dashed; padding: 20px;");
+                        hasLogged = true;
+                    }
+                    console.log("%cEvent received :: Event Data : ", "background-color: rgb(175 193 239); color: #2908fa", evntData);
+                }
+                if( evntData && evntData.constructor == Object ){
+                    var type = evntData.type;
+                    if(type && type == "zf_gtm"){
+                        var zf_payload_data = evntData.payload;
+                        if(Object.keys(zf_payload_data).length > 0){
+                            var n = zf_payload_data.n;
+                            var e = zf_payload_data.e;
+                            var p = zf_payload_data.p;
+                            var f = zf_payload_data.f;
+                            var a = zf_payload_data.a;
+                            var c = zf_payload_data.c;
+                            var d = zf_payload_data.d;
+
+                            if(debugMode) {
+                                console.log("Event : " + e + " :: Form : " + n + " :: Page : " + p + " :: Field : " + f);
+                            }
+
+                            window.dataLayer = window.dataLayer || [];
+                            window.dataLayer.push({
+                                    'event': e,
+                                    'zf_category' : c,
+                                    'zf_page' : p,
+                                    'zf_field' : f,
+                                    'zf_action' : a,
+                                    'zf_formname' : n,
+                                    'zf_data' : d
+                            });
+
+                            if(debugMode) {
+                                console.log("Event " + e + " fired successfully");
+                            }
+
+                            switch(e) {
+                                case "zf_submitform":
+
+                                            // Submit event Listener
+                                            break;
+
+                                case "zf_onclickfield":
+
+                                            // Field Click event Listener
+                                            break;
+
+                                case "zf_pageview":
+
+                                            // Field Click event Listener
+                                            break;
+
+                                case "zf_saveform":
+
+                                            // Save form event Listener
+                                            break;
+
+                                case "zf_reviewform":
+
+                                            // Review form event Listener
+                                            break;
+
+                                case "zf_formview":
+
+                                            // Form view event Listener
+                                            break;
+                            }
+
+                        }
+                    }
+                }
+            }
+        } catch(error) {
+
+        }
+    }, false);
+</script>
+<!-- Zoho UTM passthrough (modificado: incluye fbclid) -->
+<script type="text/javascript">
+function ZFLead(){}
+ZFLead.utmPValObj=ZFLead.utmPValObj||{};
+ZFLead.utmPNameArr=new Array('utm_source','utm_medium','utm_campaign','utm_term','utm_content','fbclid');
+ZFLead.prototype.zfutm_getLeadVal=function(pName){var qStr='';try{qStr=window.top.location.search.substring(1)}catch(e){qStr=''}var pNameTemp=pName+'=';var pValue='';if(typeof qStr!=="undefined"&&qStr!==null&&qStr.length>0){var begin=qStr.indexOf(pNameTemp);if(begin!=-1){begin=begin+pNameTemp.length;end=qStr.indexOf('&',begin);if(end==-1){end=qStr.length}pValue=decodeURIComponent(qStr.substring(begin,end))}}if(pValue==undefined||pValue==''){pValue=this.zfutm_gC(pName)}return pValue};
+ZFLead.prototype.zfutm_sC=function(paramName,path,domain,secure){var value=ZFLead.utmPValObj[paramName];if(typeof value!=="undefined"&&value!==null){var cookieStr=paramName+"="+encodeURIComponent(value);var exdate=new Date();exdate.setDate(exdate.getDate()+7);cookieStr+="; expires="+exdate.toGMTString();cookieStr+="; path=/";if(domain){cookieStr+="; domain="+encodeURIComponent(domain)}if(secure){cookieStr+="; secure"}document.cookie=cookieStr}};
+ZFLead.prototype.zfutm_ini=function(){for(var i=0;i<ZFLead.utmPNameArr.length;i++){var zf_pN=ZFLead.utmPNameArr[i];var zf_pV=this.zfutm_getLeadVal(zf_pN);if(typeof zf_pV!=="undefined"&&zf_pV!==null){ZFLead.utmPValObj[zf_pN]=zf_pV}}for(var pkey in ZFLead.utmPValObj){this.zfutm_sC(pkey)}};
+ZFLead.prototype.zfutm_gC=function(cookieName){var cookieArr=document.cookie.split('; ');for(var i=0;i<cookieArr.length;i++){var cookieVals=cookieArr[i].split('=');if(cookieVals[0]===cookieName&&cookieVals[1]){return decodeURIComponent(cookieVals[1])}}};
+ZFLead.prototype.zfutm_gC_enc=function(cookieName){var cookieArr=document.cookie.split('; ');for(var i=0;i<cookieArr.length;i++){var cookieVals=cookieArr[i].split('=');if(cookieVals[0]===cookieName&&cookieVals[1]){return cookieVals[1]}}};
+ZFLead.prototype.zfutm_iframeSprt=function(){var zf_frame=document.getElementsByTagName("iframe");for(var i=0;i<zf_frame.length;++i){if((zf_frame[i].src).indexOf('formperma')>0){var zf_src=zf_frame[i].src;for(var prmIdx=0;prmIdx<ZFLead.utmPNameArr.length;prmIdx++){var utmPm=ZFLead.utmPNameArr[prmIdx];var utmPmregex=new RegExp("[?&]"+utmPm+"=");if(!utmPmregex.test(zf_src)){var utmVal=this.zfutm_gC_enc(ZFLead.utmPNameArr[prmIdx]);if(typeof utmVal!=="undefined"){if(zf_src.indexOf('?')>0){zf_src=zf_src+'&'+utmPm+'='+utmVal}else{zf_src=zf_src+'?'+utmPm+'='+utmVal}}}}if(zf_frame[i].src.length<zf_src.length){zf_frame[i].src=zf_src}}}};
+ZFLead.prototype.zfutm_DHtmlSprt=function(){var zf_formsArr=document.forms;for(var frmInd=0;frmInd<zf_formsArr.length;frmInd++){var zf_form_act=zf_formsArr[frmInd].action;if(zf_form_act&&zf_form_act.indexOf('formperma')>0){for(var prmIdx=0;prmIdx<ZFLead.utmPNameArr.length;prmIdx++){var utmPm=ZFLead.utmPNameArr[prmIdx];var utmVal=this.zfutm_gC(ZFLead.utmPNameArr[prmIdx]);if(typeof utmVal!=="undefined"){var fieldObj=zf_formsArr[frmInd][utmPm];if(fieldObj){fieldObj.value=utmVal}}}}}};
+ZFLead.prototype.zfutm_jsEmbedSprt=function(id){document.getElementById('zforms_iframe_id').removeAttribute("onload");var jsEmbdFrm=document.getElementById("zforms_iframe_id");var embdSrc=jsEmbdFrm.src;for(var prmIdx=0;prmIdx<ZFLead.utmPNameArr.length;prmIdx++){var utmPm=ZFLead.utmPNameArr[prmIdx];var utmVal=this.zfutm_gC_enc(ZFLead.utmPNameArr[prmIdx]);if(typeof utmVal!=="undefined"){if(embdSrc.indexOf('?')>0){embdSrc=embdSrc+'&'+utmPm+'='+utmVal}else{embdSrc=embdSrc+'?'+utmPm+'='+utmVal}}}jsEmbdFrm.src=embdSrc};
+var zfutm_zfLead=new ZFLead();
+zfutm_zfLead.zfutm_ini();
+if(document.readyState=="complete"){zfutm_zfLead.zfutm_iframeSprt();zfutm_zfLead.zfutm_DHtmlSprt()}else{window.addEventListener('load',function(){zfutm_zfLead.zfutm_iframeSprt();zfutm_zfLead.zfutm_DHtmlSprt()},false)}
+</script>
+<!-- X conversion tracking base code -->
+<script>
+!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='https://static.ads-twitter.com/uwt.js',
+a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+twq('config','rcjjn');
+</script>
+<!-- End X conversion tracking base code -->
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
