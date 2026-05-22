@@ -582,6 +582,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <script src="js/main.min.js"></script>
 <script type="text/javascript" src="https://forms.zoho.com/js/zf_gclid.js"> </script>
+<script>
+document.querySelector('form') && document.querySelector('form').addEventListener('submit', function() {
+  var gclidField = document.querySelector('[name="GCLID"]');
+  if (gclidField && gclidField.value === 'undefined') {
+    gclidField.value = '';
+  }
+});
+</script>
 <script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script><script id="zsiqscript" src="https://salesiq.zohopublic.com/widget?wc=siq885ea214ffc25f4f452068cc9bc1cec4353b0ff61817b77233444928d383fe96" defer></script>
 </body>
 </html>

@@ -641,7 +641,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div style="max-width:640px;margin:0 auto;text-align:center;">
       <div class="section-label reveal" style="justify-content:center;">Reserve your seat</div>
       <h2 class="reveal">Start your <span class="text-accent">application.</span></h2>
-      <p class="reveal" style="color:var(--text-secondary);margin-top:var(--s3);margin-bottom:var(--s6);">Fill out the application form below. Marliis will follow up within 24 hours with next steps.</p>
+      <p class="reveal" style="color:var(--text-secondary);margin-top:var(--s3);margin-bottom:var(--s6);">Fill out the application form below. Once you submit it, you'll be redirected to the deposit payment page so you can secure your spot. Marliis will follow up within 24 hours with next steps.</p>
 
       <!-- FORM PLACEHOLDER -->
       <div id="zf_div_nTImQ0KPomI6Vy_bACDwGZGRtGFyK2z--JarTy-PDJY" style="margin-top:var(--s4);"></div>
@@ -846,6 +846,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 })();
 </script>
 <script type="text/javascript" src="https://forms.zoho.com/js/zf_gclid.js"> </script>
+<script>
+document.querySelector('form') && document.querySelector('form').addEventListener('submit', function() {
+  var gclidField = document.querySelector('[name="GCLID"]');
+  if (gclidField && gclidField.value === 'undefined') {
+    gclidField.value = '';
+  }
+});
+</script>
 <script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script><script id="zsiqscript" src="https://salesiq.zohopublic.com/widget?wc=siq885ea214ffc25f4f452068cc9bc1cec4353b0ff61817b77233444928d383fe96" defer></script>
 </body>
 </html>
