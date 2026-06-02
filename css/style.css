@@ -101,8 +101,8 @@ h3 { font-size: 1.15rem; font-weight: 700; letter-spacing: -0.02em; }
 .nav-inner { display: flex; align-items: center; justify-content: space-between; width: 100%; max-width: var(--max-width); margin: 0 auto; }
 .nav-logo { display: flex; align-items: center; }
 .nav-logo img { height: 44px; width: auto; }
-.nav-links { display: flex; gap: var(--s6); list-style: none; align-items: center; }
-.nav-links a { font-size: 0.875rem; color: var(--text-secondary); font-weight: 500; transition: color 0.2s; padding-bottom: 2px; border-bottom: 2px solid transparent; }
+.nav-links { display: flex; gap: var(--s3); list-style: none; align-items: center; }
+.nav-links a { font-size: 0.8rem; color: var(--text-secondary); font-weight: 500; transition: color 0.2s; padding-bottom: 2px; border-bottom: 2px solid transparent; }
 .nav-links a:hover { color: var(--navy); }
 .nav-links a.active { color: var(--navy); font-weight: 600; border-bottom-color: var(--indigo); }
 .nav-links a.nav-apply { color: var(--indigo); font-weight: 700; }
