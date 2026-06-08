@@ -270,14 +270,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="nav-inner">
     <a href="index.html" class="nav-logo"><img src="logo-light.png" alt="MakerSquare"></a>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
       <li style="white-space:nowrap;"><a href="use-cases.html">Use Cases</a></li>
       <li><a href="curriculum.html">Curriculum</a></li>
       
       <li><a href="pricing.html">Pricing</a></li>
-      <li><a href="team.html">Team</a></li>
-      <li><a href="corporate.html">Corporate</a></li>
-      <li><a href="scholarship.html">Scholarship</a></li>
       <li><a href="enroll.html" class="nav-apply active">Enroll</a></li>
     </ul>
     <a href="#form" class="btn btn-primary btn-arrow" style="white-space:nowrap;">Secure Your Spot </a>
@@ -287,13 +283,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </nav>
 <div class="mobile-menu">
   <ul class="mobile-menu-links">
-    <li><a href="index.html">Home</a></li>
     <li><a href="curriculum.html">Curriculum</a></li>
     
     <li><a href="pricing.html">Pricing</a></li>
-        <li><a href="team.html">Team</a></li>
-    <li><a href="corporate.html">Corporate</a></li>
-    <li><a href="scholarship.html">Scholarship</a></li>
     <li><a href="comparison.html">Compare</a></li>
     <li><a href="enroll.html">Enroll</a></li>
   </ul>
@@ -302,7 +294,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <nav class="breadcrumbs" aria-label="Breadcrumb">
   <ol>
-    <li><a href="index.html">Home</a></li>
     <li class="sep">/</li>
     <li class="current">Enroll</li>
   </ol>
@@ -353,19 +344,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="cohort-status cohort-status--open">Open Now</div>
         <div class="cohort-name">Cohort 1</div>
         <div class="cohort-dates">Jul 6 &ndash; Jul 17, 2026<br>Demo Day: Fri Jul 17 eve</div>
-        <a class="cohort-seats cohort-seats--apply" href="#form">Secure Your Spot &rarr;</a>
+        <a class="cohort-seats cohort-seats--apply" href="#form" data-cohort="Cohort 1 · Jul 6–17, 2026">Secure Your Spot &rarr;</a>
       </div>
       <div class="cohort-card cohort-card--active reveal reveal-d2">
         <div class="cohort-status cohort-status--open">Open Now</div>
         <div class="cohort-name">Cohort 2</div>
         <div class="cohort-dates">Jul 27 &ndash; Aug 7, 2026<br>Demo Day: Fri Aug 7 eve</div>
-        <a class="cohort-seats cohort-seats--apply" href="#form">Secure Your Spot &rarr;</a>
+        <a class="cohort-seats cohort-seats--apply" href="#form" data-cohort="Cohort 2 · Jul 27–Aug 7, 2026">Secure Your Spot &rarr;</a>
       </div>
       <div class="cohort-card cohort-card--active reveal reveal-d3">
         <div class="cohort-status cohort-status--open">Open Now</div>
         <div class="cohort-name">Cohort 3</div>
         <div class="cohort-dates">Aug 17 &ndash; Aug 28, 2026<br>Demo Day: Fri Aug 28 eve</div>
-        <a class="cohort-seats cohort-seats--apply" href="#form">Secure Your Spot &rarr;</a>
+        <a class="cohort-seats cohort-seats--apply" href="#form" data-cohort="Cohort 3 · Aug 17–28, 2026">Secure Your Spot &rarr;</a>
       </div>
       <div class="cohort-card cohort-card--coming-soon reveal reveal-d4" role="button" tabindex="0" aria-label="Get the curriculum and updates for Cohort 4">
         <div class="cohort-status cohort-status--early">Coming Soon</div>
@@ -444,7 +435,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div style="max-width:640px;margin:0 auto;text-align:center;">
       <div class="section-label reveal" style="justify-content:center;">Reserve your seat</div>
       <h2 class="reveal">Secure your <span class="text-accent">spot.</span></h2>
-      <p class="reveal" style="color:var(--text-secondary);margin-top:var(--s3);margin-bottom:var(--s6);">Fill out the short form below. Once you submit, you'll be redirected to pay the $500 deposit and lock in your cohort. Confirmation within 24 hours.</p>
+      <p class="reveal" style="color:var(--text-secondary);margin-top:var(--s3);margin-bottom:var(--s5);">Fill out the short form below. Once you submit, you'll be redirected to pay the $500 deposit and lock in your cohort. Confirmation within 24 hours.</p>
+
+      <!-- Cohort selection banner — shown via JS when user clicks a cohort's Secure Your Spot -->
+      <div id="cohort-selected-banner" style="display:none;align-items:center;gap:12px;background:rgba(64,61,216,0.06);border:1px solid rgba(64,61,216,0.2);border-radius:var(--r-md);padding:12px 18px;margin-bottom:var(--s5);text-align:left;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#403dd8" stroke-width="2.5" stroke-linecap="round" style="flex-shrink:0;"><polyline points="20 6 9 17 4 12"/></svg>
+        <span style="font-size:0.85rem;color:var(--navy);">Applying for: <strong id="cohort-banner-label" style="color:var(--indigo);"></strong></span>
+        <a href="#cohort-grid" style="font-size:0.75rem;color:var(--text-muted);margin-left:auto;white-space:nowrap;">Change &uarr;</a>
+      </div>
+
+      <div style="font-size:0.82rem;color:var(--text-secondary);text-align:center;margin-bottom:var(--s5);">You'll walk away with 3 deployed AI products + a <strong style="color:var(--navy);">LinkedIn certificate</strong> on Day 14.</div>
 
       <!-- FORM PLACEHOLDER -->
       <div id="zf_div_nTImQ0KPomI6Vy_bACDwGZGRtGFyK2z--JarTy-PDJY" style="margin-top:var(--s4);"></div>
@@ -724,7 +724,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li><a href="pricing.html">Pricing</a></li>
           <li><a href="housing.html">Housing</a></li>
           <li><a href="enroll.html">Enroll</a></li>
-          <li><a href="scholarship.html">Scholarship</a></li>
           <li><a href="faq.html">FAQ</a></li>
           <li><a href="demo-day.html">Demo Day</a></li>
         </ul>
@@ -733,7 +732,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="footer-col-title">Company</div>
         <ul class="footer-col-links">
           <li><a href="about.html">About</a></li>
-          <li><a href="team.html">Team</a></li>
           <li><a href="corporate.html">Corporate Training</a></li>
           <li><a href="comparison.html">How We Compare</a></li>
           <li><a href="alumni.html">Alumni</a></li>
@@ -863,5 +861,28 @@ document.querySelector('form') && document.querySelector('form').addEventListene
 });
 </script>
 <script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script><script id="zsiqscript" src="https://salesiq.zohopublic.com/widget?wc=siq885ea214ffc25f4f452068cc9bc1cec4353b0ff61817b77233444928d383fe96" defer></script>
+
+<script>
+(function() {
+  function showBanner(label) {
+    var banner = document.getElementById('cohort-selected-banner');
+    var lbl = document.getElementById('cohort-banner-label');
+    if (banner && lbl && label) {
+      lbl.textContent = label;
+      banner.style.display = 'flex';
+    }
+  }
+  // Show previously selected cohort on load
+  try { var saved = sessionStorage.getItem('ms_cohort'); if (saved) showBanner(saved); } catch(e) {}
+  // Intercept cohort card clicks
+  document.addEventListener('click', function(e) {
+    var link = e.target.closest('a[data-cohort]');
+    if (!link) return;
+    var label = link.getAttribute('data-cohort');
+    try { sessionStorage.setItem('ms_cohort', label); } catch(e) {}
+    showBanner(label);
+  });
+})();
+</script>
 </body>
 </html>
