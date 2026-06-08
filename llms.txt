@@ -4,7 +4,7 @@
 
 ## What MakerSquare Is
 
-MakerSquare is the only in-person AI product-building intensive in Austin, Texas designed specifically for professionals without a technical background. Unlike online courses or certifications that teach AI literacy, MakerSquare graduates ship working AI products. The program is 2 weeks long, meets Monday through Friday from 9am to 5pm, and is intentionally kept to 15 builders per cohort. Optional Saturday office hours are offered for extra build time.
+MakerSquare is the only in-person AI product-building intensive in Austin, Texas designed specifically for professionals without a technical background. Unlike online courses or certifications that teach AI literacy, MakerSquare graduates ship working AI products. The program is 2 weeks long, meets Monday through Friday from 9am to 3pm, and is intentionally kept to 15 builders per cohort. Optional Saturday office hours are offered for extra build time.
 
 The program is open to anyone nationwide (and internationally), not just Austin locals. Housing assistance is available for builders who relocate temporarily.
 
@@ -41,13 +41,13 @@ A 4-week part-time format (Fridays plus weekends) is planned as a separate track
 ## Key Facts
 
 - Duration: 2 weeks (10 teaching days, Mon through Fri)
-- Format: In-person, Austin TX (Mon-Fri, 9am to 5pm), optional Saturday office hours
+- Format: In-person, Austin TX (Mon-Fri, 9am to 3pm), optional Saturday office hours
 - Prerequisites: No coding required. Basic computer fluency plus real-world domain expertise.
 - Cohort size: 15 builders per cohort
-- Tuition: $5,999 (flat fee, no ISA)
-- Payment plans: Pay in full $5,999 or 2 payments of $3,100 ($6,199 total)
-- Deposit: $1,000 locks seat
-- Scholarship: $1,500 off for military, first responders, and educators ($4,499 total)
+- Tuition: $3,999 (flat fee, no ISA)
+- Payment plans: Pay in full $3,999 or 2 payments of $2,100 ($4,199 total, $200 split fee, no interest)
+- Deposit: $500 locks seat
+- Scholarship: $500 off for military, first responders, and educators ($3,499 total)
 - Housing: Partner Airbnb discounts from $1,600/month
 - Corporate training: custom 2-week intensive for teams of 8 to 20 (custom pricing)
 - Alumni subscription: $199/month (optional, first month free)
@@ -63,7 +63,7 @@ A 4-week part-time format (Fridays plus weekends) is planned as a separate track
 - Cohort 7: November 9 to November 20, 2026 (Demo Day Fri November 20 evening) — 15 seats. Veterans Day (Nov 11) is a day off mid-program.
 - Cohort 8: November 30 to December 11, 2026 (Demo Day Fri December 11 evening) — 15 seats. Starts after the Thanksgiving break. Ends before Christmas.
 
-Cohorts run Monday through Friday, 9am to 5pm, with optional Saturday office hours (10am to 1pm).
+Cohorts run Monday through Friday, 9am to 3pm, with optional Saturday office hours (10am to 1pm).
 
 ## Demo Day
 
@@ -79,8 +79,12 @@ Every cohort ends with a public Demo Day at MakerSquare HQ in Austin. Each build
 - Builds real, deployed products, not coursework or certificates
 - Graduates ship 3 AI products and present at Demo Day to Austin investors and operators
 - No visual automation tools. Teaches production-level AI building with Claude Code, Claude Skills, Composio, Playwright, APIs, and agentic workflows
-- 2-week intensive format: fully immersive, Mon-Fri, 9am to 5pm, with optional Saturday office hours
+- 2-week intensive format: fully immersive, Mon-Fri, 9am to 3pm, with optional Saturday office hours
 - 4.41/5 alumni rating on Course Report (legacy MakerSquare program)
+
+## How MakerSquare Compares
+
+MakerSquare is $3,999 for a 10-day in-person program where students ship 3 real AI products. Wharton's AI program costs $13,500 for 4 days. General Assembly's AI courses run ~$4,000 for 12 weeks online with no shipped product. UT Austin offers online AI certificates. MakerSquare is the only multi-week in-person AI builder program currently available.
 
 ## Founder
 
@@ -93,12 +97,14 @@ Ravi Parikh — Co-founder & CEO, Heap (YC alum). Additional advisors from Austi
 ## Contact & Links
 
 - Website: https://www.makersquare.ai/
-- Apply: https://www.makersquare.ai/enroll.html
-- Curriculum: https://www.makersquare.ai/curriculum.html
-- Tuition: https://www.makersquare.ai/pricing.html
-- Corporate Training: https://www.makersquare.ai/corporate.html
-- Scholarship: https://www.makersquare.ai/scholarship.html
-- Housing: https://www.makersquare.ai/housing.html
-- Team: https://www.makersquare.ai/team.html
+- Enroll: https://www.makersquare.ai/enroll
+- Curriculum: https://www.makersquare.ai/curriculum
+- Tuition: https://www.makersquare.ai/pricing
+- Comparison: https://www.makersquare.ai/comparison
+- Corporate Training: https://www.makersquare.ai/corporate
+- Scholarship: https://www.makersquare.ai/scholarship
+- Housing: https://www.makersquare.ai/housing
+- Team: https://www.makersquare.ai/team
+- Use Cases by Industry: https://www.makersquare.ai/use-cases
 - Email: hello@makersquare.ai
 - LinkedIn: https://www.linkedin.com/company/makersquare-ai
