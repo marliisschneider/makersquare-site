@@ -34,7 +34,7 @@ This site relies on a set of marketing / lead-attribution scripts. They are crit
 
 ### Public pages (the list)
 
-`404.html`, `apply.html`, `corporate.html`, `curriculum.html`, `demo-ppc.html`, `enroll.html`, `housing.html`, `index.html`, `pricing.html`, `privacy.html`, `scholarship.html`, `team.html`, `terms.html`, `use-cases.html`
+`404.html`, `about.html`, `alumni.html`, `apply.html`, `comparison.html`, `corporate.html`, `curriculum.html`, `demo-day.html`, `demo-ppc.html`, `enroll.html`, `faq.html`, `housing.html`, `index.html`, `pricing.html`, `privacy.html`, `scholarship.html`, `team.html`, `terms.html`, `use-cases.html`
 
 `HANDOFF.html` is an internal handoff doc, not a deployed page — exempt from these rules.
 
