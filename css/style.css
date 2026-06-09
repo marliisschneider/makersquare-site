@@ -350,7 +350,7 @@ h3 { font-size: 1.15rem; font-weight: 700; letter-spacing: -0.02em; }
    FOOTER — FULL
    ══════════════════════════════════════════════════════════════════════════════ */
 .footer { background: var(--navy); color: rgba(255,255,255,0.7); padding: var(--s10) 0 0; }
-.footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: var(--s8); padding-bottom: var(--s10); }
+.footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr; gap: var(--s8); padding-bottom: var(--s10); }
 .footer-brand .footer-logo { display: inline-block; margin-bottom: var(--s3); }
 .footer-brand .footer-logo img { height: 40px; width: auto; }
 .footer-brand p { font-size: 0.85rem; color: rgba(255,255,255,0.5); line-height: 1.6; max-width: 280px; margin-bottom: var(--s5); }
