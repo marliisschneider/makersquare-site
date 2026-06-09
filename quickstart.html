@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="facebook-domain-verification" content="fligau9appze71fwy7uaaw2v12bc4n" />
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MJTW9WQ3');</script>
+<!-- End Google Tag Manager -->
+<title>Free Claude Quickstart Guide | MakerSquare</title>
+<meta name="description" content="Get the free Claude Quickstart Guide from MakerSquare. Set up Claude in Cursor in 15 minutes and start working with AI in your own files.">
+<meta name="robots" content="noindex, follow">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="canonical" href="https://www.makersquare.ai/quickstart">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.makersquare.ai/quickstart">
+<meta property="og:title" content="Free Claude Quickstart Guide | MakerSquare">
+<meta property="og:description" content="Set up Claude in Cursor in 15 minutes. Start working with AI inside your own files — no copy-pasting.">
+<meta property="og:image" content="https://www.makersquare.ai/og-image.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.min.css">
+
+<!-- Zoho UTM passthrough -->
+<script type="text/javascript">
+function ZFLead(){}
+ZFLead.utmPValObj=ZFLead.utmPValObj||{};
+ZFLead.utmPNameArr=new Array('utm_source','utm_medium','utm_campaign','utm_term','utm_content','fbclid');
+ZFLead.prototype.zfutm_getLeadVal=function(pName){var qStr='';try{qStr=window.top.location.search.substring(1)}catch(e){qStr=''}var pNameTemp=pName+'=';var pValue='';if(typeof qStr!=="undefined"&&qStr!==null&&qStr.length>0){var begin=qStr.indexOf(pNameTemp);if(begin!=-1){begin=begin+pNameTemp.length;end=qStr.indexOf('&',begin);if(end==-1){end=qStr.length}pValue=decodeURIComponent(qStr.substring(begin,end))}}if(pValue==undefined||pValue==''){pValue=this.zfutm_gC(pName)}return pValue};
+ZFLead.prototype.zfutm_sC=function(paramName,path,domain,secure){var value=ZFLead.utmPValObj[paramName];if(typeof value!=="undefined"&&value!==null){var cookieStr=paramName+"="+encodeURIComponent(value);var exdate=new Date();exdate.setDate(exdate.getDate()+7);cookieStr+="; expires="+exdate.toGMTString();cookieStr+="; path=/";if(domain){cookieStr+="; domain="+encodeURIComponent(domain)}if(secure){cookieStr+="; secure"}document.cookie=cookieStr}};
+ZFLead.prototype.zfutm_gC=function(cookieName){var cookieArr=document.cookie.split(';');for(var i=0;i<cookieArr.length;i++){var cookiePair=cookieArr[i].split('=');if(cookieName==cookiePair[0].trim()){return decodeURIComponent(cookiePair[1])}}return null};
+ZFLead.prototype.zfutm_iframeSpotCheck=function(){try{return window.self===window.top}catch(e){return false}};
+ZFLead.prototype.zfutm_main=function(){var zfutm_that=this;for(var prmIdx=0;prmIdx<ZFLead.utmPNameArr.length;prmIdx++){var utmParam=ZFLead.utmPNameArr[prmIdx];ZFLead.utmPValObj[utmParam]=zfutm_that.zfutm_getLeadVal(utmParam)}if(this.zfutm_iframeSpotCheck()){for(var prmIdx=0;prmIdx<ZFLead.utmPNameArr.length;prmIdx++){var utmParam=ZFLead.utmPNameArr[prmIdx];if(typeof ZFLead.utmPValObj[utmParam]!=="undefined"&&ZFLead.utmPValObj[utmParam]!=""){zfutm_that.zfutm_sC(utmParam)}}}};
+var zfutm_zfLead = new ZFLead();zfutm_zfLead.zfutm_main();
+</script>
+
+<style>
+.qs-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--white);
+  padding: var(--s10) var(--s6);
+}
+.qs-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--s12);
+  align-items: center;
+  max-width: 1000px;
+  width: 100%;
+}
+.qs-logo {
+  display: inline-block;
+  margin-bottom: var(--s7);
+}
+.qs-logo img { height: 36px; width: auto; }
+.qs-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--indigo);
+  margin-bottom: var(--s4);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.qs-label::before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  background: var(--indigo);
+  border-radius: 2px;
+}
+.qs-inner h1 {
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  color: var(--navy);
+  line-height: 1.15;
+  margin-bottom: var(--s4);
+}
+.qs-sub {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: var(--s6);
+}
+.qs-bullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: var(--s8);
+}
+.qs-bullets li {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.qs-bullets li::before {
+  content: '\2713';
+  color: var(--green);
+  font-weight: 700;
+  font-size: 0.8rem;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+.qs-form-box {
+  background: var(--light-bg);
+  border: 1px solid rgba(24,24,73,0.06);
+  border-radius: var(--r-xl);
+  padding: var(--s7);
+}
+.qs-form-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: var(--s4);
+}
+.qs-success {
+  display: none;
+  text-align: center;
+  padding: var(--s6) 0;
+}
+.qs-success-icon {
+  width: 52px;
+  height: 52px;
+  background: var(--green-bg);
+  border: 1px solid var(--green-border);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--s4);
+  font-size: 1.4rem;
+  color: var(--green);
+}
+.qs-success h3 {
+  font-size: 1.1rem;
+  color: var(--navy);
+  margin-bottom: var(--s2);
+}
+.qs-success p {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+}
+.qs-footer {
+  text-align: center;
+  margin-top: var(--s8);
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+.qs-footer a { color: var(--indigo); font-weight: 600; }
+@media (max-width: 768px) {
+  .qs-inner { grid-template-columns: 1fr; gap: var(--s8); }
+}
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJTW9WQ3"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="qs-page">
+  <div style="width:100%;max-width:1000px;">
+
+    <div class="qs-inner">
+
+      <!-- Left: copy -->
+      <div>
+        <a href="index.html" class="qs-logo"><img src="logo-light.png" alt="MakerSquare"></a>
+        <div class="qs-label">Free Guide</div>
+        <h1>Claude works faster when it lives inside your files.</h1>
+        <p class="qs-sub">Set up Claude in Cursor in about 15 minutes. No more copy-pasting — Claude reads, writes, and works with your documents directly.</p>
+        <ul class="qs-bullets">
+          <li>Step-by-step setup for Windows and Mac</li>
+          <li>How to analyze spreadsheets and documents with AI</li>
+          <li>Give Claude a persistent memory with Obsidian</li>
+          <li>Ready-to-use prompts you can try today</li>
+        </ul>
+        <div style="font-size:0.78rem;color:var(--text-muted);">Free · PDF · 1 page</div>
+      </div>
+
+      <!-- Right: form -->
+      <div class="qs-form-box">
+        <div class="qs-form-label">Get the free guide</div>
+
+        <div id="qs-form-wrap">
+          <div id="zf_div_rdQab2Cz8BSqyuqwl2v7Nkf8Cmx0n51eb-XlMe1fhJw"></div>
+          <script type="text/javascript">
+          (function() {
+            try{
+              var f = document.createElement("iframe");
+              var ifrmSrc = 'https://forms.zohopublic.com/makersquare/form/ClaudeQuickstartDownload/formperma/rdQab2Cz8BSqyuqwl2v7Nkf8Cmx0n51eb-XlMe1fhJw?zf_rszfm=1';
+              try{
+                if ( typeof ZFAdvLead != "undefined" && typeof zfutm_zfAdvLead != "undefined" ) {
+                  for( var prmIdx = 0 ; prmIdx < ZFAdvLead.utmPNameArr.length ; prmIdx ++ ) {
+                    var utmPm = ZFAdvLead.utmPNameArr[ prmIdx ];
+                    utmPm = ( ZFAdvLead.isSameDomian && ( ZFAdvLead.utmcustPNameArr.indexOf(utmPm) == -1 ) ) ? "zf_" + utmPm : utmPm;
+                    var utmVal = zfutm_zfAdvLead.zfautm_gC_enc( ZFAdvLead.utmPNameArr[ prmIdx ] );
+                    if ( typeof utmVal !== "undefined" ) {
+                      if ( utmVal != "" ) {
+                        if(ifrmSrc.indexOf('?') > 0){ ifrmSrc = ifrmSrc+'&'+utmPm+'='+utmVal; }
+                        else{ ifrmSrc = ifrmSrc+'?'+utmPm+'='+utmVal; }
+                      }
+                    }
+                  }
+                }
+                if ( typeof ZFLead !== "undefined" && typeof zfutm_zfLead !== "undefined" ) {
+                  for( var prmIdx = 0 ; prmIdx < ZFLead.utmPNameArr.length ; prmIdx ++ ) {
+                    var utmPm = ZFLead.utmPNameArr[ prmIdx ];
+                    var utmVal = zfutm_zfLead.zfutm_gC_enc( ZFLead.utmPNameArr[ prmIdx ] );
+                    if ( typeof utmVal !== "undefined" ) {
+                      if ( utmVal != "" ){
+                        if(ifrmSrc.indexOf('?') > 0){ ifrmSrc = ifrmSrc+'&'+utmPm+'='+utmVal; }
+                        else{ ifrmSrc = ifrmSrc+'?'+utmPm+'='+utmVal; }
+                      }
+                    }
+                  }
+                }
+                if (!((new RegExp("[?&]referrername=")).test(ifrmSrc))) {
+                  var rfr = window.location.href;
+                  try {
+                    rfr = window.self !== window.top ? window.top.location.href : (/^https?:\/\/[\w.-]+\.[a-zA-Z]{2,}/i.test(rfr) ? rfr : "");
+                  } catch (e) {}
+                  if (rfr && rfr !== "") {
+                    if (rfr.length > 1800) { var queryIndex = rfr.indexOf('?'); if (queryIndex > -1) { rfr = rfr.substring(0, queryIndex); } if (rfr.length > 1800) { rfr = rfr.substring(0, 1800); } }
+                    ifrmSrc += ((ifrmSrc.indexOf('?') > 0) ? '&' : '?') + 'referrername=' + encodeURIComponent(rfr);
+                  }
+                }
+              }catch(e){}
+              f.src = ifrmSrc;
+              f.style.border="none";
+              f.style.height="562px";
+              f.style.width="100%";
+              f.style.transition="all 0.5s ease";
+              f.setAttribute("aria-label", 'Claude Quickstart Download');
+              var d = document.getElementById("zf_div_rdQab2Cz8BSqyuqwl2v7Nkf8Cmx0n51eb-XlMe1fhJw");
+              d.appendChild(f);
+              window.addEventListener('message', function(event){
+                var evntData = event.data;
+                if( evntData && evntData.constructor == String ){
+                  var zf_ifrm_data = evntData.split("|");
+                  if ( zf_ifrm_data.length == 2 || zf_ifrm_data.length == 3 ) {
+                    var zf_perma = zf_ifrm_data[0];
+                    var zf_ifrm_ht_nw = ( parseInt(zf_ifrm_data[1], 10) + 15 ) + "px";
+                    var iframe = document.getElementById("zf_div_rdQab2Cz8BSqyuqwl2v7Nkf8Cmx0n51eb-XlMe1fhJw").getElementsByTagName("iframe")[0];
+                    if ( (iframe.src).indexOf('formperma') > 0 && (iframe.src).indexOf(zf_perma) > 0 ) {
+                      var prevIframeHeight = iframe.style.height;
+                      var zf_tout = false;
+                      if( zf_ifrm_data.length == 3 ) { iframe.scrollIntoView(); zf_tout = true; }
+                      if ( prevIframeHeight != zf_ifrm_ht_nw ) {
+                        if( zf_tout ) { setTimeout(function(){ iframe.style.height = zf_ifrm_ht_nw; },500); }
+                        else { iframe.style.height = zf_ifrm_ht_nw; }
+                      }
+                    }
+                  }
+                }
+                /* Download trigger on submit */
+                if( evntData && evntData.constructor == Object ){
+                  var type = evntData.type;
+                  if(type && type == "zf_gtm"){
+                    var zf_payload_data = evntData.payload;
+                    if(Object.keys(zf_payload_data).length > 0){
+                      var e = zf_payload_data.e;
+                      if(e === "zf_submitform"){
+                        var link = document.createElement('a');
+                        link.href = 'pdfs/claude-quickstart-makersquare.pdf';
+                        link.download = 'claude-quickstart-makersquare.pdf';
+                        document.body.appendChild(link);
+                        link.click();
+                        document.body.removeChild(link);
+                        document.getElementById('qs-form-wrap').style.display = 'none';
+                        document.getElementById('qs-success').style.display = 'block';
+                      }
+                    }
+                  }
+                }
+              }, false);
+            }catch(e){}
+          })();
+          </script>
+        </div>
+
+        <div id="qs-success" class="qs-success">
+          <div class="qs-success-icon">&#10003;</div>
+          <h3>Your download is starting!</h3>
+          <p>If it doesn't start automatically, <a href="pdfs/claude-quickstart-makersquare.pdf" download>click here</a>.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="qs-footer">
+      From the team at <a href="index.html">MakerSquare</a> &middot; <a href="https://www.makersquare.ai/quickstart">makersquare.ai/quickstart</a>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
