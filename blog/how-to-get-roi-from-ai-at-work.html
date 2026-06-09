@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="facebook-domain-verification" content="fligau9appze71fwy7uaaw2v12bc4n" />
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MJTW9WQ3');</script>
+<!-- End Google Tag Manager -->
+<title>How to Get ROI from AI at Work: What the Data Actually Shows | MakerSquare</title>
+<meta name="description" content="Over 80% of companies see no productivity gains from AI despite significant investment. Research from BCG, Goldman Sachs, and Anthropic reveals what separates the companies that do, and how to get ROI from AI at work.">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/png" href="../favicon.png">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="canonical" href="https://www.makersquare.ai/blog/how-to-get-roi-from-ai-at-work">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.makersquare.ai/blog/how-to-get-roi-from-ai-at-work">
+<meta property="og:title" content="The companies getting real returns from AI have something in common. It's not the software.">
+<meta property="og:description" content="Over 80% of companies see no productivity gains from AI despite significant investment. Research from BCG, Goldman Sachs, and Anthropic reveals what separates the companies that do.">
+<meta property="og:image" content="https://www.makersquare.ai/images/blog/ai-roi-og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.min.css">
+
+<!-- BlogPosting schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "The companies getting real returns from AI have something in common. It's not the software.",
+  "alternativeHeadline": "How to Get ROI from AI at Work: What the Data Actually Shows",
+  "description": "Over 80% of companies see no productivity gains from AI despite significant investment. Research from BCG, Goldman Sachs, and Anthropic reveals what separates the companies that do, and how to get ROI from AI at work.",
+  "author": {"@type": "Person", "name": "Marliis Schneider", "url": "https://www.makersquare.ai/about"},
+  "publisher": {"@type": "Organization", "name": "MakerSquare", "url": "https://www.makersquare.ai"},
+  "datePublished": "2026-06-05",
+  "url": "https://www.makersquare.ai/blog/how-to-get-roi-from-ai-at-work",
+  "image": "https://www.makersquare.ai/images/blog/ai-roi-og.png",
+  "keywords": "how to get ROI from AI at work, AI training, AI productivity, AI investment returns, AI at work"
+}
+</script>
+
+<!-- FAQPage schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why aren't companies seeing ROI from AI?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Most organizations approached AI as a software decision rather than a capability-building one. They bought access to tools and assumed results would follow. A G-P survey of 6,000 executives and Goldman Sachs research both confirmed no meaningful productivity gains at the aggregate level, because most companies deployed without a training strategy."}
+    },
+    {
+      "@type": "Question",
+      "name": "How much AI training do employees actually need?",
+      "acceptedAnswer": {"@type": "Answer", "text": "BCG's 2026 research found that professionals with five or more hours of AI training are significantly more likely to become regular users (79%) compared to those with less (67%). The threshold is less about time and more about having enough practice to move from basic prompting to real, applied work."}
+    },
+    {
+      "@type": "Question",
+      "name": "What separates companies getting strong AI returns from those that aren't?",
+      "acceptedAnswer": {"@type": "Answer", "text": "BCG's AI leaders research shows that companies with intentional AI training strategies achieve 67% higher ROI and adopt AI 2.3x faster than industry peers. The differentiator is whether employees have developed genuine capability with the tools, not which software the organization purchased."}
+    },
+    {
+      "@type": "Question",
+      "name": "Does AI training matter for non-technical employees?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Yes. BCG and Anthropic research both identify managers, operators, and knowledge workers as among the biggest beneficiaries of AI training. The skills that drive results — judgment, context, knowing when and how to use AI effectively — are professional skills, not technical ones."}
+    }
+  ]
+}
+</script>
+
+<style>
+.post-hero {
+  padding: calc(var(--nav-height) + var(--s10)) 0 var(--s4);
+  border-bottom: 1px solid rgba(24,24,73,0.06);
+}
+.post-hero-inner {
+  max-width: 760px;
+  margin: 0 auto;
+}
+.post-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--indigo);
+  margin-bottom: var(--s4);
+}
+.post-tag::before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  background: var(--indigo);
+  border-radius: 2px;
+}
+.post-title {
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 800;
+  color: var(--navy);
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  margin-bottom: var(--s5);
+}
+.post-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--s3);
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  flex-wrap: wrap;
+}
+.post-meta-dot {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: var(--text-muted);
+}
+.post-hero-img {
+  margin-top: var(--s7);
+  border-radius: var(--r-xl);
+  overflow: hidden;
+  max-height: 420px;
+}
+.post-hero-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.post-body-wrap {
+  padding: var(--s6) 0 var(--s10);
+}
+.post-body {
+  max-width: 760px;
+  margin: 0 auto;
+}
+.takeaways-box {
+  background: rgba(64,61,216,0.04);
+  border: 1px solid rgba(64,61,216,0.12);
+  border-radius: var(--r-lg);
+  padding: var(--s5) var(--s6);
+  margin-bottom: var(--s8);
+}
+.takeaways-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--indigo);
+  margin-bottom: var(--s3);
+}
+.takeaways-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.takeaways-list li {
+  font-size: 0.9rem;
+  color: var(--navy);
+  line-height: 1.65;
+  padding-left: 16px;
+  position: relative;
+}
+.takeaways-list li::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  background: var(--indigo);
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 9px;
+}
+.post-body p {
+  font-size: 1rem;
+  color: #2d2d4e;
+  line-height: 1.85;
+  margin-bottom: var(--s5);
+}
+.post-body h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--navy);
+  letter-spacing: -0.02em;
+  margin-top: var(--s8);
+  margin-bottom: var(--s4);
+}
+.post-body a {
+  color: var(--indigo);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(64,61,216,0.25);
+  transition: border-color 0.2s;
+}
+.post-body a:hover { border-bottom-color: var(--indigo); }
+.faq-section {
+  margin-top: var(--s9);
+  padding-top: var(--s7);
+  border-top: 1px solid rgba(24,24,73,0.06);
+}
+.faq-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--indigo);
+  margin-bottom: var(--s6);
+}
+.faq-item { margin-bottom: var(--s6); }
+.faq-item:last-child { margin-bottom: 0; }
+.faq-q {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: var(--s2);
+  line-height: 1.4;
+}
+.faq-a {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.75;
+}
+.post-cta {
+  background: var(--navy);
+  border-radius: var(--r-xl);
+  padding: var(--s8);
+  margin-top: var(--s9);
+  text-align: center;
+}
+.post-cta p {
+  color: rgba(255,255,255,0.65);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: var(--s5);
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.post-cta-actions { display: flex; gap: var(--s3); justify-content: center; flex-wrap: wrap; }
+.post-cta-actions .btn { transition: all 0.25s ease; }
+.post-cta-actions .btn:first-child:hover { background: var(--ice) !important; color: var(--navy) !important; }
+.post-cta-actions .btn:last-child:hover { background: rgba(255,255,255,0.1) !important; color: var(--white) !important; border-color: rgba(255,255,255,0.4) !important; }
+.sources-section {
+  margin-top: var(--s9);
+  padding-top: var(--s7);
+  border-top: 1px solid rgba(24,24,73,0.06);
+}
+.sources-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--indigo);
+  margin-bottom: var(--s5);
+}
+.source-item {
+  display: flex;
+  gap: var(--s4);
+  align-items: flex-start;
+  padding: var(--s3) 0;
+  border-bottom: 1px solid rgba(24,24,73,0.06);
+}
+.source-item:last-child { border-bottom: none; }
+.source-num {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  background: var(--cloud);
+  border-radius: 50%;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--indigo);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+}
+.source-name {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 2px;
+}
+.source-name a { color: var(--indigo); text-decoration: none; border: none; }
+.source-name a:hover { text-decoration: underline; }
+.source-detail { font-size: 0.78rem; color: var(--text-muted); }
+.post-back {
+  margin-bottom: var(--s6);
+}
+.post-back a {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.2s;
+  border: none !important;
+}
+.post-back a:hover { color: var(--indigo); }
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJTW9WQ3"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo"><img src="../logo-light.png" alt="MakerSquare"></a>
+    <ul class="nav-links">
+      <li><a href="../about.html">About</a></li>
+      <li style="white-space:nowrap;"><a href="../use-cases.html">Use Cases</a></li>
+      <li><a href="../curriculum.html">Curriculum</a></li>
+      <li><a href="../pricing.html">Pricing</a></li>
+      <li><a href="index.html" class="active">Blog</a></li>
+      <li><a href="../enroll.html" class="nav-apply">Enroll</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="../enroll.html" class="btn btn-primary btn-arrow" style="white-space:nowrap;">Secure Your Spot </a>
+      <div class="nav-social"><a href="https://www.linkedin.com/company/makersquare-ai" target="_blank" rel="noopener" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>Follow us</a></div>
+      <button class="nav-hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu">
+  <ul class="mobile-menu-links">
+    <li><a href="../about.html">About</a></li>
+    <li><a href="../use-cases.html">Use Cases</a></li>
+    <li><a href="../curriculum.html">Curriculum</a></li>
+    <li><a href="../pricing.html">Pricing</a></li>
+    <li><a href="index.html">Blog</a></li>
+    <li><a href="../enroll.html">Enroll</a></li>
+  </ul>
+  <a href="../enroll.html" class="btn btn-primary btn-block btn-lg" style="margin-top:24px;">Secure Your Spot</a>
+</div>
+
+<!-- POST HERO -->
+<section class="post-hero section">
+  <div class="container">
+    <div class="post-hero-inner">
+      <div class="post-back"><a href="index.html">&#8592; Blog</a></div>
+      <div class="post-tag">AI at Work</div>
+      <h1 class="post-title">The companies getting real returns from AI have something in common. It's not the software.</h1>
+      <div class="post-meta">
+        <span>Marliis Schneider</span>
+        <span class="post-meta-dot"></span>
+        <span>June 5, 2026</span>
+        <span class="post-meta-dot"></span>
+        <span>4 min read</span>
+      </div>
+      <div class="post-hero-img">
+        <img src="../images/blog/ai-roi-og.png" alt="The companies getting real returns from AI have something in common">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POST BODY -->
+<div class="post-body-wrap">
+  <div class="container">
+    <div class="post-body">
+
+      <div class="takeaways-box">
+        <div class="takeaways-label">Key takeaways</div>
+        <ul class="takeaways-list">
+          <li>Over 80% of companies report no measurable AI productivity gains, despite significant investment (G-P, 2026).</li>
+          <li>The most consistent reason: organizations deployed tools without investing in AI training for their people.</li>
+          <li>Companies with intentional AI training strategies see 67% higher ROI and adopt 2.3x faster than industry peers (BCG, 2026).</li>
+          <li>Among professionals with 5 or more hours of AI training, 79% become regular users, vs. 67% with less (BCG, 2026).</li>
+        </ul>
+      </div>
+
+      <p>Stanford researchers described it plainly at the end of last year: the era of AI evangelism is giving way to an era of AI evaluation. For most organizations, the question is no longer whether AI will change how work gets done. It's why the results are so uneven, and what the companies actually seeing returns are doing differently. For any organization trying to figure out how to get ROI from AI at work, five major 2026 research studies point to the same answer: companies that invest in training their people see dramatically better returns than those that simply deploy the tools and move on.</p>
+
+      <h2>Why companies aren't seeing ROI from AI</h2>
+      <p>A survey of 6,000 executives conducted by G-P in early 2026 found that over 80% of companies report no measurable AI productivity gains, despite significant AI investment. Goldman Sachs published a similar finding: "no meaningful relationship between AI and productivity at the economy-wide level." The reason isn't hard to find. Most organizations treated AI as a software purchase, not a capability to develop. They bought access to the tools and assumed the results would follow. BCG's research tracks what happens when companies take a different approach. Among organizations with intentional AI training strategies, ROI runs 67% higher and adoption happens 2.3x faster than industry peers.</p>
+
+      <h2>What the labor market is already signaling</h2>
+      <p>The debate about AI ROI is still open, but companies aren't waiting for it to resolve. Anthropic's March 2026 workforce report found that hiring of 22-to-25-year-olds in roles with high AI exposure slowed 14% over the past year. Organizations that have figured out how to use AI effectively are already adjusting what they pay for and who they bring on, and doing it quietly.</p>
+
+      <h2>How to get ROI from AI at work: what the data shows</h2>
+      <p>BCG's 2026 AI at Work research offers the clearest answer to the AI investment gap yet. Among professionals who have spent five or more hours on AI training, 79% become regular users. Among those with less than five hours, that figure sits at 67%. The companies in that top 20% are not necessarily the ones with the largest software budgets. They are the ones that gave their people enough time to actually get good at using the tools.</p>
+
+      <h2>What this means for AI training at work</h2>
+      <p>That gap between tool access and actual capability is what <a href="https://www.makersquare.ai?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_how-to-get-roi-from-ai-at-work_homepage_2026-06-05" target="_blank">MakerSquare</a> was built around. The program is an in-person AI training for founders, operators, and managers who need to develop a genuine working skill with AI, not just experiment with it. The <a href="https://www.makersquare.ai/curriculum?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_how-to-get-roi-from-ai-at-work_curriculum-link_2026-06-05" target="_blank">curriculum</a> is built around the same question the BCG research keeps asking: not whether your team has access to the tools, but whether they can actually use them to get real work done.</p>
+
+      <p>Most organizations measure AI adoption by licenses purchased and tools deployed. The ones seeing returns shifted that metric to something harder to fake: can our people actually use this to get real work done?</p>
+
+      <!-- FAQ -->
+      <div class="faq-section">
+        <div class="faq-label">Frequently asked questions</div>
+        <div class="faq-item">
+          <div class="faq-q">Why aren't companies seeing ROI from AI?</div>
+          <div class="faq-a">Most organizations approached AI as a software decision rather than a capability-building one. They bought access to tools and assumed results would follow. A G-P survey of 6,000 executives and Goldman Sachs research both confirmed no meaningful AI productivity gains at the aggregate level, because most companies deployed without a training strategy.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">How much AI training do employees actually need?</div>
+          <div class="faq-a">BCG's 2026 research found that professionals with five or more hours of AI training are significantly more likely to become regular users (79%) compared to those with less (67%). The threshold is less about time and more about having enough practice to move from basic prompting to real, applied work.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">What separates companies getting strong AI returns from those that aren't?</div>
+          <div class="faq-a">BCG's AI leaders research shows that companies with intentional AI training strategies achieve 67% higher ROI and adopt AI 2.3x faster than industry peers. The differentiator is whether employees have developed genuine capability with the tools, not which software the organization purchased.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Does AI training matter for non-technical employees?</div>
+          <div class="faq-a">Yes. BCG and Anthropic research both identify managers, operators, and knowledge workers as among the biggest beneficiaries of AI training. The skills that drive results — judgment, context, knowing when and how to use AI effectively — are professional skills, not technical ones.</div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="post-cta">
+        <p>MakerSquare is built around exactly this gap — in-person AI training for operators, founders, and managers who need to actually get good at using these tools.</p>
+        <div class="post-cta-actions">
+          <a href="https://www.makersquare.ai/curriculum?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_how-to-get-roi-from-ai-at-work_curriculum_2026-06-05" class="btn btn-arrow" style="background:var(--white);color:var(--navy);font-weight:700;">Get the curriculum </a>
+          <a href="https://ai-builder-brief.beehiiv.com/?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_how-to-get-roi-from-ai-at-work_newsletter_2026-06-05" target="_blank" rel="noopener" class="btn" style="background:transparent;color:rgba(255,255,255,0.65);border:1.5px solid rgba(255,255,255,0.2);">Sign up for the newsletter</a>
+        </div>
+      </div>
+
+      <!-- Sources -->
+      <div class="sources-section">
+        <div class="sources-label">Sources</div>
+        <div class="source-item">
+          <div class="source-num">1</div>
+          <div>
+            <div class="source-name"><a href="https://hai.stanford.edu/news/stanford-ai-experts-predict-what-will-happen-in-2026" target="_blank" rel="noopener">Stanford HAI — AI Experts Predict What Will Happen in 2026</a></div>
+            <div class="source-detail">Stanford Human-Centered AI Institute · December 2025</div>
+          </div>
+        </div>
+        <div class="source-item">
+          <div class="source-num">2</div>
+          <div>
+            <div class="source-name"><a href="https://www.globalization-partners.com/resources/report-ai-at-work-2026/" target="_blank" rel="noopener">AI at Work: The 2026 Reality Check</a></div>
+            <div class="source-detail">Globalization Partners (G-P) · Survey of 6,000 executives · 2026</div>
+          </div>
+        </div>
+        <div class="source-item">
+          <div class="source-num">3</div>
+          <div>
+            <div class="source-name"><a href="https://fortune.com/2026/03/03/goldman-earnings-ai-anxiety-no-meaningful-impact-productivity-economy-30-percent-in-2-areas/" target="_blank" rel="noopener">Goldman finds 'no meaningful relationship between AI and productivity at the economy-wide level'</a></div>
+            <div class="source-detail">Fortune · March 2026</div>
+          </div>
+        </div>
+        <div class="source-item">
+          <div class="source-num">4</div>
+          <div>
+            <div class="source-name"><a href="https://www.anthropic.com/research/labor-market-impacts" target="_blank" rel="noopener">Labor market impacts of AI: A new measure and early evidence</a></div>
+            <div class="source-detail">Anthropic · Massenkoff & McCrory · March 2026</div>
+          </div>
+        </div>
+        <div class="source-item">
+          <div class="source-num">5</div>
+          <div>
+            <div class="source-name"><a href="https://www.bcg.com/publications/2026/ai-at-work-why-strategy-matters-more-than-tools" target="_blank" rel="noopener">AI at Work: Why Strategy Matters More Than Tools</a></div>
+            <div class="source-detail">BCG · 4th annual AI at Work survey · June 2026</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="footer-logo"><img src="../logo-dark.png" alt="MakerSquare"></a>
+        <p>2-week in-person AI intensive in Austin, TX for operators, founders, and professionals.</p>
+        <a href="../enroll.html" class="btn btn-primary btn-arrow" style="font-size:0.82rem;padding:10px 20px;">Secure Your Spot </a>
+      </div>
+      <div>
+        <div class="footer-col-title">Program</div>
+        <ul class="footer-col-links">
+          <li><a href="../use-cases.html">Use Cases</a></li>
+          <li><a href="../curriculum.html">Curriculum</a></li>
+          <li><a href="../pricing.html">Pricing</a></li>
+          <li><a href="../housing.html">Housing</a></li>
+          <li><a href="../enroll.html">Enroll</a></li>
+          <li><a href="../scholarship.html">Scholarship</a></li>
+          <li><a href="../faq.html">FAQ</a></li>
+          <li><a href="../demo-day.html">Demo Day</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Company</div>
+        <ul class="footer-col-links">
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../team.html">Team</a></li>
+          <li><a href="../corporate.html">Corporate Training</a></li>
+          <li><a href="../comparison.html">How We Compare</a></li>
+          <li><a href="../alumni.html">Alumni</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Learn</div>
+        <ul class="footer-col-links">
+          <li><a href="index.html">Blog</a></li>
+          <li><a href="../quickstart.html">Claude Quickstart Guide</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Contact</div>
+        <a href="mailto:hello@makersquare.ai" class="footer-contact-email">hello@makersquare.ai</a>
+        <p style="font-size:0.82rem;color:rgba(255,255,255,0.4);">Austin, TX</p>
+        <div class="footer-social"><a href="https://www.linkedin.com/company/makersquare-ai" target="_blank" rel="noopener" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>Follow us on LinkedIn</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">&copy; 2026 MakerSquare LLC. Austin, TX.</div>
+      <div class="footer-bottom-links">
+        <a href="../privacy.html">Privacy Policy</a>
+        <a href="../terms.html">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.min.js"></script>
+</body>
+</html>
