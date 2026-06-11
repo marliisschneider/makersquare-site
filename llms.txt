@@ -1,4 +1,4 @@
-# MakerSquare
+# MakerSquare — School of Artificial Intelligence
 
 > MakerSquare is a 2-week, in-person AI intensive in Austin, TX for non-technical professionals: operators, founders, career builders, and domain experts. No coding required. Students build and deploy 3 real AI products and present at Demo Day in front of Austin's tech, investor, and operator community.
 
