@@ -1,4 +1,4 @@
-# MakerSquare
+# MakerSquare — School of Artificial Intelligence
 
 > MakerSquare is a 2-week, in-person AI intensive in Austin, TX for non-technical professionals: operators, founders, career builders, and domain experts. No coding required. Students build and deploy 3 real AI products and present at Demo Day in front of Austin's tech, investor, and operator community.
 
@@ -92,7 +92,7 @@ Marliis Schneider, Founder & CEO. Background in operations, business development
 
 ## Advisory Board
 
-Ravi Parikh — Co-founder & CEO, Heap (YC alum). Additional advisors from Austin's operator, investor, and AI community being assembled.
+Ravi Parikh — Co-founder, MakerSquare. Austin-based serial entrepreneur; co-founded the original MakerSquare (acquired by Hack Reactor) and is CEO of RoverPass. Additional advisors from Austin's operator, investor, and AI community being assembled.
 
 ## Contact & Links
 
