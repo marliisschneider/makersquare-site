@@ -68,7 +68,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 .tl-deliverable--demo .tl-del-sub { color: var(--sky); }
 
 /* Pre-work */
-.prework-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: var(--s5); margin-top: var(--s8); }
+.prework-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: var(--s5); margin-top: var(--s8); }
 .prework-card { background: var(--white); border: 1px solid rgba(24,24,73,0.06); border-radius: var(--r-xl); padding: var(--s6); text-align: center; transition: all 0.3s ease; }
 .prework-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border-color: var(--ice); }
 .prework-num { font-family: var(--font-display); font-size: 1.8rem; font-weight: 800; color: var(--cloud); margin-bottom: var(--s2); }
@@ -153,7 +153,7 @@ body.fw-modal-open { overflow: hidden; }
   "provider": {"@type": "EducationalOrganization", "name": "MakerSquare", "url": "https://www.makersquare.ai/"},
   "url": "https://www.makersquare.ai/curriculum",
   "educationalLevel": "Beginner",
-  "teaches": ["Expert prompt engineering", "Claude Code", "Claude Skills", "Supabase", "Composio", "Playwright browser control", "Voice AI with Whisper and ElevenLabs", "OpenRouter", "Lovable", "CodeRabbit", "Vercel deployment", "Agentic workflows with APIs"],
+  "teaches": ["Expert prompt engineering", "Claude Code", "Claude Skills", "Supabase", "Composio", "Playwright browser control", "Voice AI with Whisper and ElevenLabs", "OpenRouter", "Lovable", "Figma Make", "GitHub", "Vercel", "Render", "AI evals", "Agentic workflows with APIs"],
   "hasCourseInstance": {
     "@type": "CourseInstance",
     "courseMode": "onsite",
@@ -163,9 +163,9 @@ body.fw-modal-open { overflow: hidden; }
     "offers": {"@type": "Offer", "price": "3999", "priceCurrency": "USD", "url": "https://www.makersquare.ai/enroll"}
   },
   "syllabusSections": [
-    {"@type": "Syllabus", "name": "Pre-work", "description": "3 self-paced steps: set up accounts, run your first expert-level conversation with Claude, define your capstone problem."},
-    {"@type": "Syllabus", "name": "Week 1: Build", "description": "How models work, talking to Claude like an expert, Warp + GitHub + Obsidian, PRD writing, build and deploy a website with Lovable + Vercel, Supabase and Claude Skills. Product 1 ships Friday."},
-    {"@type": "Syllabus", "name": "Week 2: Automate + Ship", "description": "Sales automation with Composio, Playwright browser control, voice AI with Whisper + ElevenLabs, Claude Code + CodeRabbit agentic workflows, advanced tools. Demo Day Friday."}
+    {"@type": "Syllabus", "name": "Pre-work", "description": "4 tasks (~1–1.5 hours): set up accounts (Claude, GitHub, Vercel, Supabase, Warp, Anthropic Console), have your first expert conversation with Claude, define your problem, and bring your Materials Kit — real data, documents, and inputs from your own work."},
+    {"@type": "Syllabus", "name": "Week 1: Build", "description": "How models work, talking to Claude like an expert, Warp + GitHub, PRD writing, build and deploy a website with Lovable + Vercel, Supabase and Claude Skills. Product 1 ships Friday."},
+    {"@type": "Syllabus", "name": "Week 2: Automate & Ship", "description": "Connect Claude to real tools via Composio, build automations across scripts, browser control, and voice, build a real AI agent (Product 2), learn evals and data safety, capstone sprint, public Demo Day."}
   ]
 }
 </script>
@@ -364,23 +364,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <div style="text-align:center;">
       <div class="section-label reveal" style="justify-content:center;">Before Day 1</div>
-      <h2 class="reveal">Three things. Self-paced.</h2>
+      <h2 class="reveal">Four tasks. About an hour.</h2>
+      <p class="section-sub reveal" style="margin:var(--s3) auto 0;max-width:540px;">The rule is gather, don't build — so Day 1 starts at full speed.</p>
     </div>
     <div class="prework-grid">
       <div class="prework-card reveal reveal-d1">
         <div class="prework-num">01</div>
-        <h3>Tell us who you are</h3>
-        <p>Your role, your industry, a real problem you've tried to solve.</p>
+        <h3>Set up your accounts</h3>
+        <p>Claude, GitHub, Vercel, Supabase, Warp, and the Anthropic Console (with $10 in API credits). We send exact links.</p>
       </div>
       <div class="prework-card reveal reveal-d2">
         <div class="prework-num">02</div>
-        <h3>Pick your use case</h3>
-        <p>One task to automate. What goes in, what comes out, who uses it.</p>
+        <h3>Have your first expert conversation</h3>
+        <p>Talk to Claude about your field like an expert would. Save the conversation — you'll use it on Day 1.</p>
       </div>
       <div class="prework-card reveal reveal-d3">
         <div class="prework-num">03</div>
-        <h3>Build your first prompt</h3>
-        <p>System prompt, 5 real inputs, iterate, submit best outputs + notes.</p>
+        <h3>Know your problem</h3>
+        <p>Four short written answers: what the problem is, who it affects, what inputs it needs, and what "solved" looks like. This is also our fit check.</p>
+      </div>
+      <div class="prework-card reveal reveal-d4">
+        <div class="prework-num">04</div>
+        <h3>Bring your Materials Kit</h3>
+        <p>A real dataset, a few documents, and a list of about 10 real inputs (redacted). Every hands-on day runs on your own material, not toy data.</p>
       </div>
     </div>
   </div>
@@ -408,14 +414,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="tl-day">
             <div class="tl-day-label">Mon</div>
             <div class="tl-day-title">Models + Expert Prompting</div>
-            <div class="tl-day-tools"><span class="tl-day-tool">Claude</span><span class="tl-day-tool">ChatGPT</span><span class="tl-day-tool">OpenRouter</span></div>
-            <p class="tl-day-desc">How LLMs actually work. The real differences between Claude, GPT, Gemini, and DeepSeek. Talking to Claude like an expert, not a search engine.</p>
+            <div class="tl-day-tools"><span class="tl-day-tool">Claude</span><span class="tl-day-tool">OpenRouter</span></div>
+            <p class="tl-day-desc">How LLMs actually work. The real differences between Claude, GPT, Gemini, and DeepSeek via OpenRouter. Talking to Claude like an expert, not a search engine.</p>
           </div>
           <div class="tl-day">
             <div class="tl-day-label">Tue</div>
             <div class="tl-day-title">Your Stack + PRD</div>
-            <div class="tl-day-tools"><span class="tl-day-tool">Warp</span><span class="tl-day-tool">GitHub</span><span class="tl-day-tool">Obsidian</span></div>
-            <p class="tl-day-desc">Warp Terminal, first GitHub push, Obsidian as your knowledge system. Draft your capstone PRD with Claude. Scope before you build.</p>
+            <div class="tl-day-tools"><span class="tl-day-tool">Warp</span><span class="tl-day-tool">GitHub</span></div>
+            <p class="tl-day-desc">Warp Terminal, first GitHub push. Draft your capstone PRD with Claude. Scope before you build.</p>
           </div>
           <div class="tl-day">
             <div class="tl-day-label">Wed</div>
@@ -447,32 +453,32 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="tl-marker">2</div>
         <div class="tl-header">
           <div class="tl-week-label">Week 2: Automate + Ship</div>
-          <h3>Connect Claude to the real world. <span class="text-accent">Demo Day Friday.</span></h3>
+          <h3>Build a real AI agent. <span class="text-accent">Demo Day Friday.</span></h3>
         </div>
         <div class="tl-days">
           <div class="tl-day">
             <div class="tl-day-label">Mon</div>
-            <div class="tl-day-title">Sales Automation</div>
+            <div class="tl-day-title">AI Agents + Automation</div>
             <div class="tl-day-tools"><span class="tl-day-tool">Composio</span><span class="tl-day-tool">Gmail</span><span class="tl-day-tool">Slack</span></div>
-            <p class="tl-day-desc">Pipelines vs. agents. Lead enrichment and follow-up automations. Connect Claude to Gmail, Slack, HubSpot via Composio. No integration code.</p>
+            <p class="tl-day-desc">Pipelines vs. agents. Connect Claude to Gmail, Slack, HubSpot, and 200+ tools via Composio — no integration code. Build automations that run on your real data.</p>
           </div>
           <div class="tl-day">
             <div class="tl-day-label">Tue</div>
             <div class="tl-day-title">Browser Control + Voice AI</div>
             <div class="tl-day-tools"><span class="tl-day-tool">Playwright</span><span class="tl-day-tool">Whisper</span><span class="tl-day-tool">ElevenLabs</span></div>
-            <p class="tl-day-desc">Playwright for sites with no API. Navigate, extract, schedule. Voice stack: Whisper transcribes, Claude reasons, ElevenLabs speaks.</p>
+            <p class="tl-day-desc">Playwright for sites with no API: navigate, extract, schedule. Voice stack: Whisper transcribes, Claude reasons, ElevenLabs speaks.</p>
           </div>
           <div class="tl-day">
             <div class="tl-day-label">Wed</div>
-            <div class="tl-day-title">Claude Code + Agentic APIs</div>
-            <div class="tl-day-tools"><span class="tl-day-tool">Claude Code</span><span class="tl-day-tool">CodeRabbit</span><span class="tl-day-tool">Render</span></div>
-            <p class="tl-day-desc">Claude Code as a full project collaborator in Warp. Build an AI automation that connects to an external tool. CodeRabbit reviews every PR before merge.</p>
+            <div class="tl-day-title">Build Your AI Agent &middot; Product 2 Ships</div>
+            <div class="tl-day-tools"><span class="tl-day-tool">Claude Code</span><span class="tl-day-tool">Render</span></div>
+            <p class="tl-day-desc">Claude Code as a full project collaborator in Warp. Ship a working AI agent that connects to an external tool. Deployed on Render, running on your own data.</p>
           </div>
           <div class="tl-day">
             <div class="tl-day-label">Thu</div>
-            <div class="tl-day-title">Advanced Tools + Capstone Sprint</div>
-            <div class="tl-day-tools"><span class="tl-day-tool">OpenRouter</span><span class="tl-day-tool">Splashtop</span></div>
-            <p class="tl-day-desc">Financial models with Claude. OpenRouter routing, fallbacks, cost control. Splashtop for running automations on a dedicated machine. Full capstone build, deployed by 2:30pm.</p>
+            <div class="tl-day-title">Evals + Data Safety + Capstone Sprint</div>
+            <div class="tl-day-tools"><span class="tl-day-tool">OpenRouter</span><span class="tl-day-tool">Evals</span></div>
+            <p class="tl-day-desc">Learn to test and trust your AI — evals, document Q&amp;A, and handling data and access safely. OpenRouter for routing and cost control. Full capstone build, deployed by 2:30pm.</p>
           </div>
           <div class="tl-day">
             <div class="tl-day-label">Fri</div>
@@ -480,6 +486,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="tl-day-tools"><span class="tl-day-tool" style="background:rgba(64,61,216,0.1);color:var(--indigo);">Public event</span><span class="tl-day-tool" style="background:rgba(64,61,216,0.1);color:var(--indigo);">5 min</span></div>
             <p class="tl-day-desc">Austin tech community in the room. 5 minutes each. Live demo on real data, hard questions, real feedback from builders and investors.</p>
           </div>
+        </div>
+        <div class="tl-deliverable" style="margin-bottom:var(--s4);">
+          <div class="tl-del-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+          <div><div class="tl-del-text">Product 2 ships Wednesday</div><div class="tl-del-sub">A working AI agent or automation, deployed and running on your real data</div></div>
         </div>
         <div class="tl-deliverable tl-deliverable--demo">
           <div class="tl-del-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="7"/><path d="M8.21 13.89L7 23l5-3 5 3-1.21-9.12"/></svg></div>
@@ -521,8 +531,36 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </section>
 
 
-<!-- TOOLS -->
+<!-- 3 PRODUCTS -->
 <section class="section section--alt">
+  <div class="container">
+    <div style="text-align:center;">
+      <div class="section-label reveal" style="justify-content:center;">What you'll ship</div>
+      <h2 class="reveal">Three products.<br><span class="text-accent">All deployed. All yours.</span></h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s5);margin-top:var(--s8);">
+      <div class="reveal" style="background:var(--white);border:1px solid rgba(24,24,73,0.06);border-radius:var(--r-xl);padding:var(--s7);">
+        <div style="font-size:0.68rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:var(--indigo);margin-bottom:var(--s3);">Product 1 &middot; End of Week 1</div>
+        <h3 style="font-family:var(--font-display);font-size:1.1rem;font-weight:800;color:var(--navy);margin-bottom:var(--s3);">Your first real build</h3>
+        <p style="font-size:0.85rem;color:var(--text-secondary);line-height:1.6;">A live site, data tool, or Claude Skill — deployed to a public URL and demoed live to your cohort on Friday of Week 1.</p>
+      </div>
+      <div class="reveal reveal-d1" style="background:var(--white);border:1px solid rgba(24,24,73,0.06);border-radius:var(--r-xl);padding:var(--s7);">
+        <div style="font-size:0.68rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:var(--indigo);margin-bottom:var(--s3);">Product 2 &middot; Week 2</div>
+        <h3 style="font-family:var(--font-display);font-size:1.1rem;font-weight:800;color:var(--navy);margin-bottom:var(--s3);">A working AI agent</h3>
+        <p style="font-size:0.85rem;color:var(--text-secondary);line-height:1.6;">A real automation or AI agent — connecting Claude to your actual tools via Composio, browser control, or voice, running on your own data.</p>
+      </div>
+      <div class="reveal reveal-d2" style="background:var(--white);border:1px solid rgba(24,24,73,0.06);border-radius:var(--r-xl);padding:var(--s7);">
+        <div style="font-size:0.68rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:var(--green);margin-bottom:var(--s3);">Capstone &middot; Demo Day</div>
+        <h3 style="font-family:var(--font-display);font-size:1.1rem;font-weight:800;color:var(--navy);margin-bottom:var(--s3);">Your main project</h3>
+        <p style="font-size:0.85rem;color:var(--text-secondary);line-height:1.6;">Your most ambitious build — polished, deployed, and presented live on stage at Demo Day in front of Austin's tech community.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- TOOLS -->
+<section class="section">
   <div class="container">
     <div style="text-align:center;">
       <div class="section-label reveal" style="justify-content:center;">Tech stack</div>
@@ -533,18 +571,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="tools-grid">
       <div class="tool-card reveal"><div class="tool-icon tool-icon--ai">&#9679;</div><div class="tool-name">Claude</div><div class="tool-use">Primary LLM</div></div>
       <div class="tool-card reveal"><div class="tool-icon tool-icon--ai">&#9679;</div><div class="tool-name">Claude Code</div><div class="tool-use">Full project collaborator</div></div>
-      <div class="tool-card reveal"><div class="tool-icon tool-icon--ai">&#9679;</div><div class="tool-name">ChatGPT</div><div class="tool-use">Model comparison</div></div>
-      <div class="tool-card reveal"><div class="tool-icon tool-icon--build">&#9670;</div><div class="tool-name">OpenRouter</div><div class="tool-use">One API, every model</div></div>
+      <div class="tool-card reveal"><div class="tool-icon tool-icon--ai">&#9679;</div><div class="tool-name">OpenRouter</div><div class="tool-use">GPT / Gemini / DeepSeek</div></div>
       <div class="tool-card reveal"><div class="tool-icon tool-icon--build">&#9670;</div><div class="tool-name">Warp Terminal</div><div class="tool-use">AI-native terminal</div></div>
-      <div class="tool-card reveal"><div class="tool-icon tool-icon--ui"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></div><div class="tool-name">Lovable</div><div class="tool-use">Website builder</div></div>
+      <div class="tool-card reveal"><div class="tool-icon tool-icon--build">&#9670;</div><div class="tool-name">GitHub</div><div class="tool-use">Version control + deploy</div></div>
+      <div class="tool-card reveal"><div class="tool-icon tool-icon--build">&#9670;</div><div class="tool-name">Vercel</div><div class="tool-use">One-click deployment</div></div>
+      <div class="tool-card reveal"><div class="tool-icon tool-icon--build">&#9670;</div><div class="tool-name">Render</div><div class="tool-use">Server + automation hosting</div></div>
+      <div class="tool-card reveal"><div class="tool-icon tool-icon--data">&#9632;</div><div class="tool-name">Supabase</div><div class="tool-use">Database &amp; backend</div></div>
+      <div class="tool-card reveal"><div class="tool-icon tool-icon--ui"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></div><div class="tool-name">Lovable / Figma Make</div><div class="tool-use">Website builder</div></div>
       <div class="tool-card reveal"><div class="tool-icon tool-icon--build">&#9670;</div><div class="tool-name">Composio</div><div class="tool-use">Claude &harr; 200+ tools</div></div>
       <div class="tool-card reveal"><div class="tool-icon tool-icon--build">&#9670;</div><div class="tool-name">Playwright</div><div class="tool-use">Browser control</div></div>
-      <div class="tool-card reveal"><div class="tool-icon tool-icon--build">&#9670;</div><div class="tool-name">CodeRabbit</div><div class="tool-use">AI code review</div></div>
-      <div class="tool-card reveal"><div class="tool-icon tool-icon--data">&#9632;</div><div class="tool-name">Obsidian</div><div class="tool-use">Knowledge system</div></div>
-      <div class="tool-card reveal"><div class="tool-icon tool-icon--data">&#9632;</div><div class="tool-name">Splashtop</div><div class="tool-use">Remote access</div></div>
-      <div class="tool-card reveal"><div class="tool-icon tool-icon--voice">&#9835;</div><div class="tool-name">ElevenLabs</div><div class="tool-use">Text-to-speech</div></div>
       <div class="tool-card reveal"><div class="tool-icon tool-icon--voice">&#9835;</div><div class="tool-name">Whisper</div><div class="tool-use">Speech-to-text</div></div>
-      <div class="tool-card reveal"><div class="tool-icon tool-icon--data">&#9632;</div><div class="tool-name">Supabase</div><div class="tool-use">Database &amp; backend</div></div>
+      <div class="tool-card reveal"><div class="tool-icon tool-icon--voice">&#9835;</div><div class="tool-name">ElevenLabs</div><div class="tool-use">Text-to-speech</div></div>
     </div>
   </div>
 </section>
@@ -599,14 +636,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <div class="tl-day">
                 <div class="tl-day-label">Fri</div>
                 <div class="tl-day-title">Models + Expert Prompting</div>
-                <div class="tl-day-tools"><span class="tl-day-tool">Claude</span><span class="tl-day-tool">ChatGPT</span><span class="tl-day-tool">OpenRouter</span></div>
-                <p class="tl-day-desc">How LLMs actually work. The real differences between Claude, GPT, Gemini, DeepSeek, and Qwen. Talking to Claude like an expert, not a search engine.</p>
+                <div class="tl-day-tools"><span class="tl-day-tool">Claude</span><span class="tl-day-tool">OpenRouter</span></div>
+                <p class="tl-day-desc">How LLMs actually work. The real differences between Claude, GPT, Gemini, and DeepSeek via OpenRouter. Talking to Claude like an expert, not a search engine.</p>
               </div>
               <div class="tl-day">
                 <div class="tl-day-label">Sat</div>
                 <div class="tl-day-title">Your Stack</div>
-                <div class="tl-day-tools"><span class="tl-day-tool">Warp</span><span class="tl-day-tool">GitHub</span><span class="tl-day-tool">Obsidian</span></div>
-                <p class="tl-day-desc">Warp Terminal, first GitHub push, Obsidian as your knowledge system. First look at Claude Code in the terminal.</p>
+                <div class="tl-day-tools"><span class="tl-day-tool">Warp</span><span class="tl-day-tool">GitHub</span></div>
+                <p class="tl-day-desc">Warp Terminal, first GitHub push. First look at Claude Code in the terminal.</p>
               </div>
               <div class="tl-day">
                 <div class="tl-day-label">Sun</div>
@@ -664,9 +701,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="tl-days">
               <div class="tl-day">
                 <div class="tl-day-label">Fri</div>
-                <div class="tl-day-title">Sales Automation</div>
+                <div class="tl-day-title">AI Agents + Automation</div>
                 <div class="tl-day-tools"><span class="tl-day-tool">Composio</span><span class="tl-day-tool">Gmail</span><span class="tl-day-tool">Slack</span></div>
-                <p class="tl-day-desc">Pipelines vs. agents. Lead enrichment and follow-up automations. Connect Claude to Gmail, Slack, HubSpot via Composio. No integration code.</p>
+                <p class="tl-day-desc">Pipelines vs. agents. Connect Claude to Gmail, Slack, HubSpot, and 200+ tools via Composio — no integration code. Build automations on your real data.</p>
               </div>
               <div class="tl-day">
                 <div class="tl-day-label">Sat</div>
@@ -676,9 +713,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               </div>
               <div class="tl-day">
                 <div class="tl-day-label">Sun</div>
-                <div class="tl-day-title">Claude Code + APIs &middot; Product 2 Ships</div>
-                <div class="tl-day-tools"><span class="tl-day-tool">Claude Code</span><span class="tl-day-tool">CodeRabbit</span><span class="tl-day-tool">Render</span></div>
-                <p class="tl-day-desc">Claude Code as a full project collaborator in Warp. Build an AI automation that connects to an external tool. CodeRabbit reviews every PR before merge.</p>
+                <div class="tl-day-title">Build Your AI Agent &middot; Product 2 Ships</div>
+                <div class="tl-day-tools"><span class="tl-day-tool">Claude Code</span><span class="tl-day-tool">Render</span></div>
+                <p class="tl-day-desc">Claude Code as a full project collaborator in Warp. Ship a working AI agent that connects to an external tool. Deployed on Render, running on your own data.</p>
               </div>
             </div>
             <div class="tl-deliverable">
@@ -698,8 +735,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <div class="tl-day">
                 <div class="tl-day-label">Fri</div>
                 <div class="tl-day-title">Advanced Tools + Capstone Sprint</div>
-                <div class="tl-day-tools"><span class="tl-day-tool">OpenRouter</span><span class="tl-day-tool">Splashtop</span></div>
-                <p class="tl-day-desc">Financial models with Claude. OpenRouter routing, fallbacks, cost control. Splashtop for managing automations remotely. Capstone build kicks off &mdash; no new scope after 3pm.</p>
+                <div class="tl-day-tools"><span class="tl-day-tool">OpenRouter</span><span class="tl-day-tool">Evals</span></div>
+                <p class="tl-day-desc">Evals, document Q&amp;A, and data/access safety. OpenRouter routing, fallbacks, cost control. Capstone build kicks off &mdash; no new scope after 3pm.</p>
               </div>
               <div class="tl-day">
                 <div class="tl-day-label">Sat</div>
