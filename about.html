@@ -60,6 +60,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .about-principles { grid-template-columns: 1fr; }
 }
 @media (max-width: 640px) { .about-advisor-card { flex-direction: column; } }
+@media (max-width: 768px) { .about-advisor-grid-3 { grid-template-columns: 1fr !important; } }
+@media (max-width: 1024px) and (min-width: 769px) { .about-advisor-grid-3 { grid-template-columns: 1fr 1fr !important; } }
 </style>
 <script type="application/ld+json">
 {
@@ -279,7 +281,32 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
 
-    <p class="reveal" style="font-size:0.85rem;color:var(--text-muted);margin-top:var(--s5);">Additional advisors from Austin's operator, investor, and AI community are being assembled for 2026.</p>
+    <div class="about-advisor-grid-3" style="display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s5);margin-top:var(--s6);">
+      <div class="reveal" style="background:var(--white);border:1px solid rgba(24,24,73,0.06);border-radius:var(--r-xl);padding:var(--s6);">
+        <div style="width:56px;height:56px;border-radius:50%;overflow:hidden;margin-bottom:var(--s3);background:var(--cloud);">
+          <img src="chris-shonk.jpg" alt="Chris Shonk" style="width:100%;height:100%;object-fit:cover;" loading="lazy">
+        </div>
+        <div style="font-family:var(--font-display);font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:2px;">Chris Shonk</div>
+        <div style="font-size:0.78rem;color:var(--text-muted);margin-bottom:var(--s3);">Co-founder, ATX Venture Partners</div>
+        <p style="font-size:0.82rem;color:var(--text-secondary);line-height:1.6;">Austin-based GP and cofounder of ATX Venture Partners. Serial founder turned investor who's spent his career backing operators through cycles. Believes great companies are built by teams, not term sheets.</p>
+      </div>
+      <div class="reveal reveal-d1" style="background:var(--white);border:1px solid rgba(24,24,73,0.06);border-radius:var(--r-xl);padding:var(--s6);">
+        <div style="width:56px;height:56px;border-radius:50%;overflow:hidden;margin-bottom:var(--s3);background:var(--cloud);">
+          <img src="levon-terteryan.jpg" alt="Levon Terteryan" style="width:100%;height:100%;object-fit:cover;" loading="lazy">
+        </div>
+        <div style="font-family:var(--font-display);font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:2px;">Levon Terteryan</div>
+        <div style="font-size:0.78rem;color:var(--text-muted);margin-bottom:var(--s3);">Founder, Playgram.ai</div>
+        <p style="font-size:0.82rem;color:var(--text-secondary);line-height:1.6;">Founder of Playgram.ai, a multi-LLM team collaboration platform with infinite memory. Hands-on AI builder shipping real LLM products and advocating for AI accessibility in startups and universities.</p>
+      </div>
+      <div class="reveal reveal-d2" style="background:var(--white);border:1px solid rgba(24,24,73,0.06);border-radius:var(--r-xl);padding:var(--s6);">
+        <div style="width:56px;height:56px;border-radius:50%;overflow:hidden;margin-bottom:var(--s3);background:var(--cloud);">
+          <img src="vijay-mehra.jpg" alt="Vijay Mehra" style="width:100%;height:100%;object-fit:cover;" loading="lazy">
+        </div>
+        <div style="font-family:var(--font-display);font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:2px;">Vijay Mehra</div>
+        <div style="font-size:0.78rem;color:var(--text-muted);margin-bottom:var(--s3);">CEO, LenderBox</div>
+        <p style="font-size:0.82rem;color:var(--text-secondary);line-height:1.6;">Founded and bootstrapped Rethink into a leading Salesforce-based platform through a private equity exit. Now operating across commercial real estate and investing in early-stage tech, with deep expertise across real estate, finance, and enterprise software.</p>
+      </div>
+    </div>
   </div>
 </section>
 
