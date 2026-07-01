@@ -70,7 +70,7 @@ body.wl-modal-open { overflow: hidden; }
   .wl-modal__dialog { border-radius: 0; min-height: 100vh; margin: 0; padding: var(--s7) 0 var(--s4); }
 }
 
-.what-matters-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s8); margin-top: var(--s9); }
+.what-matters-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s8); margin-top: var(--s9); align-items: start; }
 .matters-list { list-style: none; display: flex; flex-direction: column; gap: var(--s4); }
 .matters-item { display: flex; gap: 12px; align-items: flex-start; }
 .matters-icon { width: 32px; height: 32px; min-width: 32px; border-radius: var(--r-sm); display: flex; align-items: center; justify-content: center; font-size: 0.85rem; flex-shrink: 0; }
@@ -501,7 +501,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <div>
         <h3 class="reveal" style="font-size:1.1rem;margin-bottom:var(--s5);color:var(--text-muted);">What doesn't matter</h3>
-        <ul class="matters-list">
+        <ul class="matters-list" style="gap:var(--s3);">
           <li class="matters-item reveal"><div class="matters-icon matters-icon--no">&mdash;</div><div><h4 style="color:var(--text-muted);">Prior coding experience</h4></div></li>
           <li class="matters-item reveal"><div class="matters-icon matters-icon--no">&mdash;</div><div><h4 style="color:var(--text-muted);">Prior AI experience</h4></div></li>
           <li class="matters-item reveal"><div class="matters-icon matters-icon--no">&mdash;</div><div><h4 style="color:var(--text-muted);">A tech degree</h4></div></li>
