@@ -92,6 +92,9 @@ body.lp-modal-open { overflow: hidden; }
 .lp-inline-cta__text { flex: 1; min-width: 240px; }
 .lp-inline-cta__title { font-family: var(--font-display); font-size: 1.15rem; font-weight: 800; color: var(--navy); letter-spacing: -0.02em; margin-bottom: 4px; }
 .lp-inline-cta__sub { font-size: 0.9rem; color: var(--text-secondary); line-height: 1.55; }
+@media (max-width: 640px) {
+  .before-after-grid, .for-you-grid { grid-template-columns: 1fr !important; }
+}
 </style>
 <script>
     let hasLogged = false;
@@ -207,6 +210,70 @@ a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,
 twq('config','rcjjn');
 </script>
 <!-- End X conversion tracking base code -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationEvent",
+  "name": "MakerSquare — AI for Lawyers & Legal Professionals, Cohort 2",
+  "description": "Build 3 real AI tools for your legal practice in 2 weeks. In-person program in Austin, TX for attorneys and legal professionals. No technical background required.",
+  "startDate": "2026-08-03",
+  "endDate": "2026-08-14",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+  "location": {
+    "@type": "Place",
+    "name": "MakerSquare Austin",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Austin",
+      "addressRegion": "TX",
+      "addressCountry": "US"
+    }
+  },
+  "organizer": {
+    "@type": "Organization",
+    "name": "MakerSquare",
+    "url": "https://www.makersquare.ai"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "3999",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2026-07-01",
+    "url": "https://www.makersquare.ai/enroll"
+  },
+  "teaches": ["AI for legal professionals", "legal document AI", "AI workflow automation", "no-code AI tools"],
+  "audience": {
+    "@type": "Audience",
+    "audienceType": "Attorneys, solo lawyers, in-house counsel, legal professionals"
+  },
+  "maximumAttendeeCapacity": 15
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do I need a technical background to attend MakerSquare?",
+      "acceptedAnswer": {"@type": "Answer", "text": "No. Nothing here requires coding. Legal professionals with zero technical background build working AI tools in two weeks."}
+    },
+    {
+      "@type": "Question",
+      "name": "Is this only for law firms?",
+      "acceptedAnswer": {"@type": "Answer", "text": "No — it's built for individual attorneys and legal professionals who want AI skills for their own work. Solo practitioners, in-house counsel, and legal ops professionals have all built here."}
+    },
+    {
+      "@type": "Question",
+      "name": "How much does the AI for lawyers program cost?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Tuition is $3,999. No income share agreements. Full refund if you don't leave with 3 real AI products."}
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -232,12 +299,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <div class="container">
     <div>
+      <p class="hero-enter hero-enter-d1" style="font-size:0.88rem;color:var(--text-secondary);font-style:italic;margin-bottom:var(--s3);max-width:520px;line-height:1.6;">The attorneys moving fastest on AI aren&rsquo;t the most technical. They&rsquo;re the ones who stopped waiting for permission to build.</p>
       <div class="hero-badge hero-enter hero-enter-d1">
         <div class="hero-badge-dot"></div>
-        For lawyers &amp; legal professionals &nbsp;&middot;&nbsp; Cohort 2 &middot; Aug 3 &ndash; Aug 14 &middot; Austin, TX
+        For lawyers &amp; legal professionals &nbsp;&middot;&nbsp; Cohort 2 &middot; Aug 3 &ndash; Aug 14 &middot; Austin, TX &nbsp;&middot;&nbsp; <strong style="color:#22c55e;">15 spots</strong>
       </div>
-      <h1 class="hero-enter hero-enter-d2">The AI skills lawyers actually need &mdash;<br><span class="text-gradient">built for your practice, not a lecture.</span></h1>
-      <p class="hero-sub hero-enter hero-enter-d3">Two weeks, in person in Austin. You don't study AI in the abstract &mdash; you build <strong style="color:var(--navy);">three working AI tools for the way you actually practice.</strong> No technical background needed.</p>
+      <h1 class="hero-enter hero-enter-d2">The AI skills your practice needs &mdash;<br><span class="text-gradient">built and shipped in 2 weeks, not studied.</span></h1>
+      <p class="hero-sub hero-enter hero-enter-d3">Every week you don&rsquo;t build, a competitor does. Two weeks in person in Austin &mdash; you don&rsquo;t study AI in the abstract, you build <strong style="color:var(--navy);">three working AI tools for the way you actually practice.</strong> No technical background needed. Your legal judgment runs everything &mdash; AI handles the first pass.</p>
       <p class="hero-enter hero-enter-d3" style="margin-top:1.5rem;font-size:0.9rem;color:var(--navy);font-weight:600;">Zero technical background required.</p>
       <div class="hero-actions hero-enter hero-enter-d4" style="margin-top:1.5rem;">
         <button type="button" class="btn btn-primary btn-lg btn-arrow" data-curriculum-trigger>Get the Curriculum &rarr;</button>
@@ -355,8 +423,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- ═══ 2 · THE PROGRAM (benefits) ═══ -->
 <section class="section">
   <div class="container">
-    <div class="section-label reveal">The Program</div>
-    <h2 class="reveal">Everything you need to go from<br><span class="text-accent">idea to working product.</span></h2>
+    <div class="section-label reveal">Why this works</div>
+    <h2 class="reveal">Why 2 focused weeks beats<br><span class="text-accent">every other option on the market.</span></h2>
     <div class="bento-grid" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr));">
       <div class="bento-card reveal reveal-d1">
         <div class="bento-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div>
@@ -380,6 +448,38 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <h2 style="font-family:var(--font-display);font-size:clamp(1.3rem,2.5vw,1.7rem);font-weight:800;color:var(--navy);letter-spacing:-0.02em;margin-bottom:var(--s3);line-height:1.3;">For the attorney who'd rather build than watch AI happen.</h2>
       <p style="font-size:1rem;color:var(--text-secondary);line-height:1.7;margin:0;">Solo and in-house attorneys, and legal professionals who want hands-on AI skills for their own work. You bring the legal expertise; we get you building in two weeks. <em style="color:var(--text-muted);">(Built for individual professionals — not a firm-wide program.)</em></p>
     </div>
+  </div>
+</section>
+
+
+<!-- ═══ BEFORE / AFTER ═══ -->
+<section style="padding:var(--s10) 0;background:var(--white);border-top:1px solid rgba(24,24,73,0.06);">
+  <div class="container">
+    <div class="section-label reveal" style="justify-content:center;">The shift</div>
+    <h2 class="reveal" style="text-align:center;">What 2 weeks actually changes<br><span class="text-accent">for your practice.</span></h2>
+    <div class="before-after-grid reveal" style="display:grid;grid-template-columns:1fr 1fr;gap:var(--s5);margin-top:var(--s8);max-width:900px;margin-left:auto;margin-right:auto;">
+      <div style="background:rgba(239,68,68,0.04);border:1px solid rgba(239,68,68,0.12);border-radius:var(--r-xl);padding:var(--s7);">
+        <div style="font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#ef4444;margin-bottom:var(--s5);">Before</div>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:var(--s4);">
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:0.9rem;color:var(--text-secondary);line-height:1.5;"><span style="color:#ef4444;flex-shrink:0;font-weight:700;">✕</span>3 hours to summarize a 400-page deposition</li>
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:0.9rem;color:var(--text-secondary);line-height:1.5;"><span style="color:#ef4444;flex-shrink:0;font-weight:700;">✕</span>Drafting the same intake form manually for every new client</li>
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:0.9rem;color:var(--text-secondary);line-height:1.5;"><span style="color:#ef4444;flex-shrink:0;font-weight:700;">✕</span>Watching 20 hours of AI courses that don&rsquo;t apply to legal work</li>
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:0.9rem;color:var(--text-secondary);line-height:1.5;"><span style="color:#ef4444;flex-shrink:0;font-weight:700;">✕</span>&ldquo;I should look into AI for my practice&rdquo; &mdash; for the 6th month</li>
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:0.9rem;color:var(--text-secondary);line-height:1.5;"><span style="color:#ef4444;flex-shrink:0;font-weight:700;">✕</span>Paying someone else to build tools that don&rsquo;t fit how you work</li>
+        </ul>
+      </div>
+      <div style="background:rgba(64,61,216,0.04);border:1px solid rgba(64,61,216,0.15);border-radius:var(--r-xl);padding:var(--s7);">
+        <div style="font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--indigo);margin-bottom:var(--s5);">After 2 weeks</div>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:var(--s4);">
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:0.9rem;color:var(--navy);line-height:1.5;font-weight:500;"><span style="color:#22c55e;flex-shrink:0;font-weight:700;">✓</span>AI drafts the first pass &mdash; you review, you sign off, you stay in control</li>
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:0.9rem;color:var(--navy);line-height:1.5;font-weight:500;"><span style="color:#22c55e;flex-shrink:0;font-weight:700;">✓</span>Intake, triage, and first-draft documents handled by an agent</li>
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:0.9rem;color:var(--navy);line-height:1.5;font-weight:500;"><span style="color:#22c55e;flex-shrink:0;font-weight:700;">✓</span>3 working AI tools built for your actual matters</li>
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:0.9rem;color:var(--navy);line-height:1.5;font-weight:500;"><span style="color:#22c55e;flex-shrink:0;font-weight:700;">✓</span>Done in an hour what used to take most of a day</li>
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:0.9rem;color:var(--navy);line-height:1.5;font-weight:500;"><span style="color:#22c55e;flex-shrink:0;font-weight:700;">✓</span>Your legal judgment still runs the case &mdash; AI does the first pass</li>
+        </ul>
+      </div>
+    </div>
+    <p class="reveal" style="text-align:center;margin-top:var(--s7);font-size:0.88rem;color:var(--text-muted);font-style:italic;">Two weeks in Austin. Built for the way you actually practice &mdash; not a generic demo.</p>
   </div>
 </section>
 
@@ -515,10 +615,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- ═══ INLINE CTA · 1 ═══ -->
 <section class="lp-cta-band">
   <div class="lp-cta-band-inner">
-    <h3>Ready to build something real?</h3>
-    <p>Small cohorts. No coding test. Takes about 2 minutes to enroll.</p>
-    <a href="enroll.html" target="_blank" rel="noopener" class="btn btn-primary btn-lg btn-arrow">Secure Your Spot </a>
-    <p style="margin-top:var(--s4);font-size:0.82rem;color:rgba(255,255,255,0.6);">&#10003; Leave with 3 real AI products &mdash; or a full refund.</p>
+    <h3>Cohort 2 starts Aug 3. 15 spots.</h3>
+    <p style="color:rgba(255,255,255,0.75);">You&rsquo;ve been thinking about this long enough.<br>Two weeks from now you could have 3 deployed AI tools built for your practice &mdash; or you could still be thinking about it.</p>
+    <button type="button" class="btn btn-primary btn-lg btn-arrow" data-curriculum-trigger>Get the Curriculum &rarr;</button>
+    <p style="margin-top:var(--s4);font-size:0.82rem;color:rgba(255,255,255,0.55);">$3,999 &nbsp;&middot;&nbsp; Leave with 3 real AI products or a full refund &nbsp;&middot;&nbsp; No coding test</p>
   </div>
 </section>
 
@@ -555,6 +655,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
+
+<!-- ═══ IS THIS FOR YOU? ═══ -->
+<section style="padding:var(--s10) 0;background:var(--white);border-top:1px solid rgba(24,24,73,0.06);">
+  <div class="container" style="max-width:900px;">
+    <h2 class="reveal" style="text-align:center;margin-bottom:var(--s8);">Be honest with yourself.<br><span class="text-accent">Is this you?</span></h2>
+    <div class="for-you-grid reveal" style="display:grid;grid-template-columns:1fr 1fr;gap:var(--s5);">
+      <div style="background:rgba(239,68,68,0.04);border:1px solid rgba(239,68,68,0.12);border-radius:var(--r-xl);padding:var(--s7);">
+        <div style="font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#ef4444;margin-bottom:var(--s5);">Don&rsquo;t come if...</div>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:var(--s4);">
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:0.9rem;color:var(--text-secondary);line-height:1.5;"><span style="color:#ef4444;flex-shrink:0;font-weight:700;">✕</span>You want a certificate to put on your LinkedIn</li>
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:0.9rem;color:var(--text-secondary);line-height:1.5;"><span style="color:#ef4444;flex-shrink:0;font-weight:700;">✕</span>You want to learn &ldquo;about&rdquo; AI without shipping anything</li>
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:0.9rem;color:var(--text-secondary);line-height:1.5;"><span style="color:#ef4444;flex-shrink:0;font-weight:700;">✕</span>You need 6 months of homework before you feel ready</li>
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:0.9rem;color:var(--text-secondary);line-height:1.5;"><span style="color:#ef4444;flex-shrink:0;font-weight:700;">✕</span>You expect AI to replace your legal judgment (it won&rsquo;t)</li>
+        </ul>
+      </div>
+      <div style="background:rgba(64,61,216,0.04);border:1px solid rgba(64,61,216,0.15);border-radius:var(--r-xl);padding:var(--s7);">
+        <div style="font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--indigo);margin-bottom:var(--s5);">Come if...</div>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:var(--s4);">
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:0.9rem;color:var(--navy);line-height:1.5;font-weight:500;"><span style="color:#22c55e;flex-shrink:0;font-weight:700;">✓</span>You want to walk out with 3 AI tools built for your practice</li>
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:0.9rem;color:var(--navy);line-height:1.5;font-weight:500;"><span style="color:#22c55e;flex-shrink:0;font-weight:700;">✓</span>Your legal expertise is the point &mdash; AI does the first pass</li>
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:0.9rem;color:var(--navy);line-height:1.5;font-weight:500;"><span style="color:#22c55e;flex-shrink:0;font-weight:700;">✓</span>2 focused weeks beats 20 hours of courses you&rsquo;ll never finish</li>
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:0.9rem;color:var(--navy);line-height:1.5;font-weight:500;"><span style="color:#22c55e;flex-shrink:0;font-weight:700;">✓</span>You&rsquo;re done waiting to build and ready to actually do it</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- ═══ 5 · ALL COVERED · pricing + housing ═══ -->
 <section class="section section--alt">

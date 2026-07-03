@@ -89,6 +89,10 @@ body.lp-modal-open { overflow: hidden; }
 .lp-inline-cta__text { flex: 1; min-width: 240px; }
 .lp-inline-cta__title { font-family: var(--font-display); font-size: 1.15rem; font-weight: 800; color: var(--navy); letter-spacing: -0.02em; margin-bottom: 4px; }
 .lp-inline-cta__sub { font-size: 0.9rem; color: var(--text-secondary); line-height: 1.55; }
+
+@media (max-width: 640px) {
+  .before-after-grid, .for-you-grid { grid-template-columns: 1fr !important; }
+}
 </style>
 <script>
     let hasLogged = false;
@@ -196,6 +200,70 @@ var zfutm_zfLead=new ZFLead();
 zfutm_zfLead.zfutm_ini();
 if(document.readyState=="complete"){zfutm_zfLead.zfutm_iframeSprt();zfutm_zfLead.zfutm_DHtmlSprt()}else{window.addEventListener('load',function(){zfutm_zfLead.zfutm_iframeSprt();zfutm_zfLead.zfutm_DHtmlSprt()},false)}
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationEvent",
+  "name": "MakerSquare — 2-Week AI Builder Program, Cohort 2",
+  "description": "Build 3 real AI products in 2 weeks. In-person program in Austin, TX for operators, founders, and professionals with no technical background.",
+  "startDate": "2026-08-03",
+  "endDate": "2026-08-14",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+  "location": {
+    "@type": "Place",
+    "name": "MakerSquare Austin",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Austin",
+      "addressRegion": "TX",
+      "addressCountry": "US"
+    }
+  },
+  "organizer": {
+    "@type": "Organization",
+    "name": "MakerSquare",
+    "url": "https://www.makersquare.ai"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "3999",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2026-07-01",
+    "url": "https://www.makersquare.ai/enroll"
+  },
+  "teaches": ["AI product development", "Claude AI", "agentic workflows", "no-code AI tools", "AI deployment"],
+  "audience": {
+    "@type": "Audience",
+    "audienceType": "Business professionals, founders, operators, non-technical professionals"
+  },
+  "maximumAttendeeCapacity": 15
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do I need to know how to code?",
+      "acceptedAnswer": {"@type": "Answer", "text": "No. We've had doctors, lawyers, marketers, and operators build exceptional AI products. Your domain expertise matters more than technical skills."}
+    },
+    {
+      "@type": "Question",
+      "name": "How much does the program cost?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Tuition is $3,999. No income share agreements."}
+    },
+    {
+      "@type": "Question",
+      "name": "What do I walk away with?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Three real AI products built for your actual role, a capstone presentation, and a cohort of serious builders who become your long-term network."}
+    }
+  ]
+}
+</script>
 <!-- X conversion tracking base code -->
 <script>
 !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
@@ -229,15 +297,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <div class="container">
     <div>
+      <p class="hero-enter hero-enter-d1" style="font-size:0.88rem;color:var(--text-secondary);font-style:italic;margin-bottom:var(--s3);max-width:520px;line-height:1.6;">Online AI courses have a 95% dropout rate. That's not a motivation problem — it's a format problem.</p>
       <div class="hero-badge hero-enter hero-enter-d1">
         <div class="hero-badge-dot"></div>
-        Cohort 1 &middot; July 6 &middot; Austin, TX
+        Cohort 2 &middot; Aug 3 &ndash; Aug 14 &middot; Austin, TX &nbsp;&middot;&nbsp; <strong style="color:#22c55e;">15 spots</strong>
       </div>
-      <h1 class="hero-enter hero-enter-d2">Two weeks in Austin.<br><span class="text-gradient">Three working AI tools. No coding required.</span></h1>
-      <p class="hero-sub hero-enter hero-enter-d3">2 weeks, in person, Austin TX. You won't work on generic exercises. You build AI tools for <strong style="color:var(--navy);">your actual role, your workflows, your specific problems.</strong> And you come back doing in 1 hour what used to take a week.</p>
+      <h1 class="hero-enter hero-enter-d2">Stop studying AI.<br><span class="text-gradient">Start building it — in 2 weeks.</span></h1>
+      <p class="hero-sub hero-enter hero-enter-d3">In person in Austin. You don't watch tutorials — <strong style="color:var(--navy);">you build three working AI products for your actual role, your workflows, your specific problems.</strong> You walk out doing in one afternoon what used to take a week of research and delegation.</p>
       <p class="hero-enter hero-enter-d3" style="margin-top:1.5rem;font-size:0.9rem;color:var(--navy);font-weight:600;">Zero technical background required.</p>
       <div class="hero-actions hero-enter hero-enter-d4" style="margin-top:1.5rem;">
-        <button type="button" class="btn btn-primary btn-lg btn-arrow" data-curriculum-trigger>Get the Curriculum</button>
+        <button type="button" class="btn btn-primary btn-lg btn-arrow" data-curriculum-trigger>Get the Curriculum &rarr;</button>
       </div>
       <p class="hero-enter hero-enter-d5" style="margin-top:0.75rem;font-size:0.82rem;color:var(--text-muted);">No coding test &nbsp;&middot;&nbsp; No interview &nbsp;&middot;&nbsp; Confirmed in 24 hrs</p>
       <p class="hero-enter hero-enter-d5" style="margin-top:0.4rem;font-size:0.82rem;">Already decided? <a href="enroll.html" target="_blank" rel="noopener" style="color:var(--sky);font-weight:700;">Enroll now &rarr;</a></p>
@@ -352,33 +421,59 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- ═══ 2 · THE PROGRAM (benefits) ═══ -->
 <section class="section">
   <div class="container">
-    <div class="section-label reveal">The Program</div>
-    <h2 class="reveal">Everything you need to go from<br><span class="text-accent">idea to working product.</span></h2>
+    <div class="section-label reveal">Why this works</div>
+    <h2 class="reveal">Why 2 focused weeks beats<br><span class="text-accent">6 months of online courses.</span></h2>
     <div class="bento-grid">
       <div class="bento-card reveal reveal-d1">
-        <div class="bento-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></div>
-        <h3>2 Weeks In Person, Monday to Friday</h3>
-        <p>9am to 3pm in Austin. <span class="bl">Ship 3 real products.</span> Public Demo Day on Day 10.</p>
+        <div class="bento-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></div>
+        <h3>In a room with 15 serious people</h3>
+        <p>14 people with real stakes, real domain expertise, and no tolerance for wasting two weeks. <span class="bl">That energy is not replicable online.</span></p>
       </div>
       <div class="bento-card reveal reveal-d2">
-        <div class="bento-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="8.5" cy="7" r="4"/><path d="M20 8v6m3-3h-6"/></svg></div>
-        <h3>No Coding Background Required</h3>
-        <p>Doctors, lawyers, marketers, and operators have all built here. <span class="bl">Your domain is the edge.</span></p>
+        <div class="bento-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+        <h3>You ship. Not exercises — real products.</h3>
+        <p>Every day ends with something built. By Day 10, <span class="bl">3 working AI products are deployed at public URLs</span> built for your actual work.</p>
       </div>
       <div class="bento-card reveal reveal-d3">
         <div class="bento-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
-        <h3>Real Tools. Real Deployment.</h3>
-        <p>Expert prompting, Claude Code, agentic workflows, voice AI. <span class="bl">No visual automation toys.</span></p>
-      </div>
-      <div class="bento-card reveal reveal-d4">
-        <div class="bento-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></div>
-        <h3>Demo Day with Austin's Tech Community</h3>
-        <p>Present your capstone in front of <span class="bl">Austin's tech community:</span> builders, operators, and investors. Real feedback first; connections and interest follow.</p>
+        <h3>Your domain expertise is the edge</h3>
+        <p>Doctors, lawyers, operators, and founders have all built here. <span class="bl">You don't need technical skills — you need to understand the problem.</span></p>
       </div>
     </div>
   </div>
 </section>
 
+
+<!-- ═══ BEFORE / AFTER ═══ -->
+<section style="padding:var(--s10) 0;background:var(--white);border-top:1px solid rgba(24,24,73,0.06);">
+  <div class="container">
+    <div class="section-label reveal" style="justify-content:center;">The shift</div>
+    <h2 class="reveal" style="text-align:center;">What actually changes<br><span class="text-accent">in 2 weeks.</span></h2>
+    <div class="before-after-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:var(--s5);margin-top:var(--s8);max-width:900px;margin-left:auto;margin-right:auto;">
+      <div style="background:rgba(239,68,68,0.04);border:1px solid rgba(239,68,68,0.12);border-radius:var(--r-xl);padding:var(--s7);">
+        <div style="font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#ef4444;margin-bottom:var(--s5);">Before</div>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:var(--s4);">
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:0.9rem;color:var(--text-secondary);line-height:1.5;"><span style="color:#ef4444;flex-shrink:0;font-weight:700;">✕</span>&ldquo;I need to figure out AI&rdquo; &mdash; for the 8th month in a row</li>
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:0.9rem;color:var(--text-secondary);line-height:1.5;"><span style="color:#ef4444;flex-shrink:0;font-weight:700;">✕</span>Paying consultants $300/hr to build tools you still can&rsquo;t touch</li>
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:0.9rem;color:var(--text-secondary);line-height:1.5;"><span style="color:#ef4444;flex-shrink:0;font-weight:700;">✕</span>20 hours of course videos. Retained maybe 15%.</li>
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:0.9rem;color:var(--text-secondary);line-height:1.5;"><span style="color:#ef4444;flex-shrink:0;font-weight:700;">✕</span>Generic exercises that don&rsquo;t apply to your actual work</li>
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:0.9rem;color:var(--text-secondary);line-height:1.5;"><span style="color:#ef4444;flex-shrink:0;font-weight:700;">✕</span>Still waiting to use AI in any meaningful way</li>
+        </ul>
+      </div>
+      <div style="background:rgba(64,61,216,0.04);border:1px solid rgba(64,61,216,0.15);border-radius:var(--r-xl);padding:var(--s7);">
+        <div style="font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--indigo);margin-bottom:var(--s5);">After 2 weeks</div>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:var(--s4);">
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:0.9rem;color:var(--navy);line-height:1.5;font-weight:500;"><span style="color:#22c55e;flex-shrink:0;font-weight:700;">✓</span>3 working AI products deployed at public URLs</li>
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:0.9rem;color:var(--navy);line-height:1.5;font-weight:500;"><span style="color:#22c55e;flex-shrink:0;font-weight:700;">✓</span>You built them &mdash; you own them, you can maintain them</li>
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:0.9rem;color:var(--navy);line-height:1.5;font-weight:500;"><span style="color:#22c55e;flex-shrink:0;font-weight:700;">✓</span>Done in 1 afternoon what used to take a full week</li>
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:0.9rem;color:var(--navy);line-height:1.5;font-weight:500;"><span style="color:#22c55e;flex-shrink:0;font-weight:700;">✓</span>Built for your specific role, your workflow, your problems</li>
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:0.9rem;color:var(--navy);line-height:1.5;font-weight:500;"><span style="color:#22c55e;flex-shrink:0;font-weight:700;">✓</span>15 serious builders in your corner — permanently</li>
+        </ul>
+      </div>
+    </div>
+    <p class="reveal" style="text-align:center;margin-top:var(--s7);font-size:0.88rem;color:var(--text-muted);font-style:italic;">This is what 2 weeks in a room looks like vs. 6 months of content you never finish.</p>
+  </div>
+</section>
 
 <!-- ═══ 3 · DELIVERABLES (build-card style with UI mockups) ═══ -->
 <section class="section section--alt">
@@ -511,10 +606,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- ═══ INLINE CTA · 1 ═══ -->
 <section class="lp-cta-band">
   <div class="lp-cta-band-inner">
-    <h3>Ready to build something real?</h3>
-    <p>Small cohorts. No coding test. Takes about 2 minutes to enroll.</p>
-    <a href="enroll.html" target="_blank" rel="noopener" class="btn btn-primary btn-lg btn-arrow">Secure Your Spot </a>
-    <p style="margin-top:var(--s4);font-size:0.82rem;color:rgba(255,255,255,0.6);">&#10003; Leave with 3 real AI products &mdash; or a full refund.</p>
+    <h3>Cohort 2 starts Aug 3. 15 spots.</h3>
+    <p style="color:rgba(255,255,255,0.75);">You&rsquo;ve been thinking about this long enough.<br>Two weeks from now you could have 3 deployed AI products &mdash; or you could still be thinking about it.</p>
+    <button type="button" class="btn btn-primary btn-lg btn-arrow" data-curriculum-trigger>Get the Curriculum &rarr;</button>
+    <p style="margin-top:var(--s4);font-size:0.82rem;color:rgba(255,255,255,0.55);">$3,999 &nbsp;&middot;&nbsp; Leave with 3 real AI products or a full refund &nbsp;&middot;&nbsp; No coding test</p>
   </div>
 </section>
 
@@ -552,25 +647,51 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </section>
 
 
+<!-- ═══ IS THIS FOR YOU? ═══ -->
+<section style="padding:var(--s10) 0;background:var(--white);border-top:1px solid rgba(24,24,73,0.06);">
+  <div class="container" style="max-width:900px;">
+    <h2 class="reveal" style="text-align:center;margin-bottom:var(--s8);">Be honest with yourself.<br><span class="text-accent">Is this you?</span></h2>
+    <div class="for-you-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:var(--s5);">
+      <div style="background:rgba(239,68,68,0.04);border:1px solid rgba(239,68,68,0.12);border-radius:var(--r-xl);padding:var(--s7);">
+        <div style="font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#ef4444;margin-bottom:var(--s5);">Don&rsquo;t come if...</div>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:var(--s4);">
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:0.9rem;color:var(--text-secondary);line-height:1.5;"><span style="color:#ef4444;flex-shrink:0;font-weight:700;">✕</span>You want a certificate to put on your LinkedIn</li>
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:0.9rem;color:var(--text-secondary);line-height:1.5;"><span style="color:#ef4444;flex-shrink:0;font-weight:700;">✕</span>You want to learn &ldquo;about&rdquo; AI without shipping anything</li>
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:0.9rem;color:var(--text-secondary);line-height:1.5;"><span style="color:#ef4444;flex-shrink:0;font-weight:700;">✕</span>You need 6 months of prep work to feel ready</li>
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:0.9rem;color:var(--text-secondary);line-height:1.5;"><span style="color:#ef4444;flex-shrink:0;font-weight:700;">✕</span>You&rsquo;re not prepared to spend 2 focused weeks building</li>
+        </ul>
+      </div>
+      <div style="background:rgba(64,61,216,0.04);border:1px solid rgba(64,61,216,0.15);border-radius:var(--r-xl);padding:var(--s7);">
+        <div style="font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--indigo);margin-bottom:var(--s5);">Come if...</div>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:var(--s4);">
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:0.9rem;color:var(--navy);line-height:1.5;font-weight:500;"><span style="color:#22c55e;flex-shrink:0;font-weight:700;">✓</span>You want to walk out with 3 deployed AI products</li>
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:0.9rem;color:var(--navy);line-height:1.5;font-weight:500;"><span style="color:#22c55e;flex-shrink:0;font-weight:700;">✓</span>You have real domain expertise and want to build on it</li>
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:0.9rem;color:var(--navy);line-height:1.5;font-weight:500;"><span style="color:#22c55e;flex-shrink:0;font-weight:700;">✓</span>2 focused weeks beats 6 months of content you won&rsquo;t finish</li>
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:0.9rem;color:var(--navy);line-height:1.5;font-weight:500;"><span style="color:#22c55e;flex-shrink:0;font-weight:700;">✓</span>You&rsquo;re done waiting and ready to actually build</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ═══ 5 · ALL COVERED · pricing + housing ═══ -->
 <section class="section section--alt">
   <div class="container">
     <div class="section-label reveal">What's included</div>
-    <h2 class="reveal">Curriculum, mentors, Demo Day.<br><span class="text-accent">All in. <span style="font-size:0.5em;color:var(--text-muted);text-decoration:line-through;font-weight:600;margin-right:0.2em;vertical-align:middle;">$5,999</span>$3,999.</span></h2>
+    <h2 class="reveal">Curriculum, mentors, Demo Day.<br><span class="text-accent">All in. $3,999.</span></h2>
 
     <div class="pricing-grid">
       <!-- Featured pricing card -->
       <div class="pricing-card pricing-card--featured reveal reveal-d1">
-        <div class="pricing-badge">Enrollment Open &middot; <span style="color:#22c55e;">Cohort 1 pricing</span></div>
-        <div class="pricing-tier">Cohort 1 &middot; July 6 &middot; Austin, TX</div>
-        <div style="font-size:0.78rem;font-weight:700;color:var(--indigo);margin-bottom:var(--s4);">Cohort 1 pricing &mdash; rate increases after the first cohort.</div>
-        <div class="pricing-price"><span style="font-size:0.5em;color:var(--text-muted);text-decoration:line-through;font-weight:600;margin-right:0.2em;vertical-align:middle;">$5,999</span>$3,999</div>
+        <div class="pricing-badge">Enrollment Open &middot; <span style="color:#22c55e;">Cohort 2 &middot; Aug 3&ndash;Aug 14</span></div>
+        <div class="pricing-tier">Cohort 2 &middot; Aug 3&ndash;Aug 14 &middot; Austin, TX</div>
+        <div class="pricing-price">$3,999</div>
         <div style="font-size:0.8rem;color:var(--text-muted);margin-top:var(--s2);margin-bottom:var(--s4);line-height:1.6;">An AI consultant charges ~$300/hr. Two weeks = $24,000 — and you still don't own the skill. One AI tool that saves your team 5 hrs/week is worth $13,000/year. <strong style="color:var(--navy);">You build three.</strong></div>
         <ul class="pricing-features">
           <li><strong>10-day live in-person program</strong> &middot; 9am&ndash;3pm <span style="float:right;font-size:0.75rem;color:var(--text-muted);font-weight:600;">~$5,000 value</span></li>
           <li>14 days of 24-hr async instructor support <span style="float:right;font-size:0.75rem;color:var(--text-muted);font-weight:600;">~$1,500 value</span></li>
           <li>Pre-cohort AI toolkit &amp; tool access <span style="float:right;font-size:0.75rem;color:var(--text-muted);font-weight:600;">$200 value</span></li>
-          <li>Demo Day &mdash; present live to Austin's tech community <span style="float:right;font-size:0.75rem;color:var(--text-muted);font-weight:600;">exclusive</span></li>
+          <li>Capstone presentation &mdash; final live demo on Day 10 <span style="float:right;font-size:0.75rem;color:var(--text-muted);font-weight:600;">exclusive</span></li>
           <li>Lifetime alumni network &amp; MakerSquare Slack <span style="float:right;font-size:0.75rem;color:var(--text-muted);font-weight:600;">included</span></li>
           <li>Certificate of completion &mdash; shareable on LinkedIn <span style="float:right;font-size:0.75rem;color:var(--text-muted);font-weight:600;">included</span></li>
         </ul>
@@ -642,9 +763,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <div class="faq-item reveal"><button class="faq-question">How long is the program and what's the schedule?<span class="faq-chevron">&#9660;</span></button><div class="faq-answer"><div class="faq-answer-inner">2 weeks in person in Austin, Monday to Friday from 9am to 3pm. Demo Day closes the program on the Friday evening of Week 2. Optional Saturday office hours during both weeks.</div></div></div>
 
-      <div class="faq-item reveal"><button class="faq-question">How much does it cost?<span class="faq-chevron">&#9660;</span></button><div class="faq-answer"><div class="faq-answer-inner">Tuition is $3,999. Payment plans are available. No income share agreements.</div></div></div>
+      <div class="faq-item reveal"><button class="faq-question">How much does it cost?<span class="faq-chevron">&#9660;</span></button><div class="faq-answer"><div class="faq-answer-inner">Tuition is $3,999. No income share agreements.</div></div></div>
 
-      <div class="faq-item reveal"><button class="faq-question">What do I walk away with?<span class="faq-chevron">&#9660;</span></button><div class="faq-answer"><div class="faq-answer-inner">Three real AI products, a Demo Day presentation in front of Austin's tech community, and a cohort of builders who become your long term network.</div></div></div>
+      <div class="faq-item reveal"><button class="faq-question">What do I walk away with?<span class="faq-chevron">&#9660;</span></button><div class="faq-answer"><div class="faq-answer-inner">Three real AI products built for your actual role, a capstone presentation, and a cohort of serious builders who become your long-term network.</div></div></div>
 
       <div class="faq-item reveal"><button class="faq-question">I'm coming from out of town. Is housing included?<span class="faq-chevron">&#9660;</span></button><div class="faq-answer"><div class="faq-answer-inner">No, housing is not included in tuition. Austin has plenty of short-term rental options near campus. Housing details are shared after enrollment.</div></div></div>
 
