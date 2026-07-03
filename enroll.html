@@ -271,7 +271,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <li><a href="about.html">About</a></li>
       <li style="white-space:nowrap;"><a href="use-cases.html">Use Cases</a></li>
       <li><a href="curriculum.html">Curriculum</a></li>
-      
+      <li><a href="workshops.html">Workshops</a></li>
       <li><a href="pricing.html">Pricing</a></li>
       <li><a href="blog/">Blog</a></li>
       <li><a href="enroll.html" class="nav-apply active">Enroll</a></li>
@@ -289,7 +289,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <li><a href="about.html">About</a></li>
     <li><a href="use-cases.html">Use Cases</a></li>
     <li><a href="curriculum.html">Curriculum</a></li>
-    
+    <li><a href="workshops.html">Workshops</a></li>
     <li><a href="pricing.html">Pricing</a></li>
     <li><a href="blog/">Blog</a></li>
     <li><a href="enroll.html">Enroll</a></li>
@@ -346,14 +346,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <div class="cohort-grid" id="cohort-grid">
-      <div class="cohort-card cohort-card--active reveal reveal-d1">
-        <div class="cohort-status cohort-status--open">Open Now</div>
+      <div class="cohort-card reveal reveal-d1">
+        <div class="cohort-status cohort-status--soon">Starts Jul 6</div>
         <div class="cohort-name">Cohort 1</div>
         <div class="cohort-dates">Jul 6 &ndash; Jul 17, 2026<br>Demo Day: Fri Jul 17 eve</div>
-        <a class="cohort-seats cohort-seats--apply" href="#form" data-cohort="Cohort 1 · Jul 6–17, 2026">Secure Your Spot &rarr;</a>
+        <div class="cohort-seats" style="color:var(--text-muted);font-size:0.78rem;font-weight:600;margin-top:var(--s3);">In session</div>
       </div>
-      <div class="cohort-card cohort-card--active reveal reveal-d2">
-        <div class="cohort-status cohort-status--open">Open Now</div>
+      <div class="cohort-card cohort-card--active reveal reveal-d2" style="border-color:var(--indigo);box-shadow:0 0 0 1px var(--indigo);">
+        <div class="cohort-status cohort-status--open">Open Now — Enrolling</div>
         <div class="cohort-name">Cohort 2</div>
         <div class="cohort-dates">Aug 3 &ndash; Aug 14, 2026<br>Demo Day: Fri Aug 14 eve</div>
         <a class="cohort-seats cohort-seats--apply" href="#form" data-cohort="Cohort 2 · Aug 3–14, 2026">Secure Your Spot &rarr;</a>
@@ -527,16 +527,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div style="margin-top:var(--s8);max-width:720px;margin-left:auto;margin-right:auto;">
 
       <!-- Cohort 1 -->
-      <div class="ta-item open reveal" data-ta>
+      <div class="ta-item reveal" data-ta>
         <div class="ta-header" onclick="this.parentElement.classList.toggle('open');var b=this.parentElement.querySelector('.ta-body');b.style.maxHeight=this.parentElement.classList.contains('open')?b.scrollHeight+'px':'0';">
           <div class="ta-header-info"><div class="ta-cohort-tag">Cohort 1</div><div class="ta-cohort-name">July 2026</div><div class="ta-cohort-range">Jul 6 &ndash; Jul 17 &middot; Demo Day Jul 17</div></div>
           <span class="ta-badge open">Open Now</span>
           <div class="ta-chevron">&#9660;</div>
         </div>
-        <div class="ta-body" style="max-height:500px;"><div class="ta-body-inner">
+        <div class="ta-body"><div class="ta-body-inner">
           <div class="tl">
-            <div class="tl-item tl-item--active"><div class="tl-dot"></div><div class="tl-date">Now &middot; Enrollment Open</div><div class="tl-desc">Secure your spot any time. Early enrollees get priority cohort placement.</div></div>
-            <div class="tl-item"><div class="tl-dot"></div><div class="tl-date">Jun 26 &middot; Enrollment Deadline</div><div class="tl-desc">Full tuition due.</div></div>
             <div class="tl-item tl-item--highlight"><div class="tl-dot"></div><div class="tl-date">Jul 6 &middot; Day 1</div></div>
             <div class="tl-item tl-item--highlight"><div class="tl-dot"></div><div class="tl-date">Jul 17 &middot; Demo Day</div><div class="tl-desc">Present your capstone to Austin's tech community.</div></div>
           </div>
@@ -544,16 +542,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
 
       <!-- Cohort 2 -->
-      <div class="ta-item reveal" data-ta>
+      <div class="ta-item open reveal" data-ta>
         <div class="ta-header" onclick="this.parentElement.classList.toggle('open');var b=this.parentElement.querySelector('.ta-body');b.style.maxHeight=this.parentElement.classList.contains('open')?b.scrollHeight+'px':'0';">
           <div class="ta-header-info"><div class="ta-cohort-tag">Cohort 2</div><div class="ta-cohort-name">August 2026</div><div class="ta-cohort-range">Aug 3 &ndash; Aug 14 &middot; Demo Day Aug 14</div></div>
           <span class="ta-badge open">Open Now</span>
           <div class="ta-chevron">&#9660;</div>
         </div>
-        <div class="ta-body"><div class="ta-body-inner">
+        <div class="ta-body" style="max-height:500px;"><div class="ta-body-inner">
           <div class="tl">
-            <div class="tl-item tl-item--active"><div class="tl-dot"></div><div class="tl-date">Now &middot; Enrollment Open</div></div>
-            <div class="tl-item"><div class="tl-dot"></div><div class="tl-date">Jul 20 &middot; Enrollment Deadline</div><div class="tl-desc">Full tuition due.</div></div>
+            <div class="tl-item tl-item--active"><div class="tl-dot"></div><div class="tl-date">Now &middot; Enrollment Open</div><div class="tl-desc">Secure your spot. Confirmation within 24 hours.</div></div>
+            <div class="tl-item"><div class="tl-dot"></div><div class="tl-date">Jul 20 &middot; Enrollment Deadline</div><div class="tl-desc">Full tuition due to lock in your spot.</div></div>
             <div class="tl-item tl-item--highlight"><div class="tl-dot"></div><div class="tl-date">Aug 3 &middot; Day 1</div></div>
             <div class="tl-item tl-item--highlight"><div class="tl-dot"></div><div class="tl-date">Aug 14 &middot; Demo Day</div></div>
           </div>
@@ -675,6 +673,37 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </section>
 
 
+<!-- WORKSHOPS CROSSSELL -->
+<section class="section section--dark" style="padding:var(--s10) 0;">
+  <div class="container">
+    <div style="max-width:620px;margin:0 auto;text-align:center;">
+      <div class="section-label reveal" style="justify-content:center;color:var(--sky);">Not ready for 2 weeks?</div>
+      <h2 class="reveal" style="color:var(--white);">Try a 3-day workshop first.</h2>
+      <p class="reveal" style="color:rgba(255,255,255,0.65);margin-top:var(--s3);font-size:0.95rem;line-height:1.7;">3-day in-person AI skill sprints in Austin. Focused, hands-on, small group. Sales, agents, ops &mdash; pick the one that fits your work right now. Workshop attendees get <strong style="color:var(--white);">$200 off</strong> the full program with code WORKSHOP200.</p>
+      <div class="reveal" style="display:flex;gap:var(--s6);justify-content:center;flex-wrap:wrap;margin:var(--s6) 0;">
+        <div style="text-align:center;">
+          <div style="font-size:1.5rem;font-weight:800;color:var(--sky);font-family:var(--font-display);">3 days</div>
+          <div style="font-size:0.72rem;color:rgba(255,255,255,0.45);margin-top:3px;text-transform:uppercase;letter-spacing:0.06em;">In-person, Austin TX</div>
+        </div>
+        <div style="width:1px;background:rgba(255,255,255,0.1);"></div>
+        <div style="text-align:center;">
+          <div style="font-size:1.5rem;font-weight:800;color:var(--sky);font-family:var(--font-display);">$999</div>
+          <div style="font-size:0.72rem;color:rgba(255,255,255,0.45);margin-top:3px;text-transform:uppercase;letter-spacing:0.06em;">Early bird pricing</div>
+        </div>
+        <div style="width:1px;background:rgba(255,255,255,0.1);"></div>
+        <div style="text-align:center;">
+          <div style="font-size:1.5rem;font-weight:800;color:var(--sky);font-family:var(--font-display);">3 topics</div>
+          <div style="font-size:0.72rem;color:rgba(255,255,255,0.45);margin-top:3px;text-transform:uppercase;letter-spacing:0.06em;">Sales · Agent · Ops</div>
+        </div>
+      </div>
+      <div class="reveal">
+        <a href="workshops.html" class="btn btn-primary btn-lg btn-arrow">See Upcoming Workshops </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <!-- WAITLIST MODAL -->
 <div id="wl-modal" class="wl-modal" role="dialog" aria-modal="true" aria-labelledby="wl-modal-title" aria-hidden="true">
   <div class="wl-modal__backdrop" data-wl-close></div>
@@ -709,6 +738,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li><a href="scholarship.html">Scholarship</a></li>
           <li><a href="faq.html">FAQ</a></li>
           <li><a href="demo-day.html">Demo Day</a></li>
+          <li><a href="workshops.html">Workshops</a></li>
         </ul>
       </div>
       <div>

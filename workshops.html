@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="facebook-domain-verification" content="fligau9appze71fwy7uaaw2v12bc4n" />
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -25,26 +26,150 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fustat:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.min.css?v=2">
+<style>
+/* ── Workshops page ── */
+
+/* Hero */
+.ws-hero { background: var(--navy); padding: var(--s12) 0 var(--s10); text-align: center; position: relative; overflow: hidden; }
+.ws-hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--indigo), var(--azure), var(--sky)); }
+.ws-hero h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); color: var(--white); margin-bottom: var(--s4); }
+.ws-hero .section-sub { color: rgba(255,255,255,0.65); max-width: 520px; margin: 0 auto var(--s7); font-size: 1rem; }
+
+/* Date chips in hero */
+.ws-date-row { display: flex; gap: var(--s3); justify-content: center; flex-wrap: wrap; margin-bottom: var(--s7); }
+.ws-date-chip { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: var(--r-lg); padding: var(--s4) var(--s5); text-align: left; min-width: 190px; transition: border-color 0.2s; }
+.ws-date-chip:hover { border-color: rgba(129,170,251,0.4); }
+.ws-dc-label { font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--sky); margin-bottom: 4px; }
+.ws-dc-date { font-size: 0.95rem; font-weight: 700; color: var(--white); margin-bottom: 2px; }
+.ws-dc-topic { font-size: 0.78rem; color: rgba(255,255,255,0.55); }
+.ws-dc-badge { display: inline-block; font-size: 0.62rem; font-weight: 700; background: #f59e0b; color: #000; padding: 2px 8px; border-radius: 10px; margin-top: 6px; }
+
+/* Proof bar */
+.ws-proof { background: var(--cream, #F5F4F0); border-top: 1px solid rgba(24,24,73,0.07); border-bottom: 1px solid rgba(24,24,73,0.07); padding: var(--s4) 0; }
+.ws-proof-inner { display: flex; gap: var(--s6); justify-content: center; flex-wrap: wrap; }
+.ws-proof-item { font-size: 0.82rem; color: var(--text-secondary); display: flex; align-items: center; gap: 8px; }
+.ws-proof-item strong { color: var(--navy); font-weight: 700; }
+.ws-proof-dot { width: 4px; height: 4px; background: var(--indigo); border-radius: 50%; flex-shrink: 0; }
+
+/* Workshop cards */
+.ws-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--s5); margin-top: var(--s8); }
+.ws-card { border: 1px solid rgba(24,24,73,0.07); border-radius: var(--r-xl); overflow: hidden; display: flex; flex-direction: column; transition: all 0.3s ease; }
+.ws-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: var(--ice); }
+.ws-card-header { background: var(--navy); padding: var(--s6) var(--s7) var(--s5); position: relative; overflow: hidden; }
+.ws-card-header::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, var(--indigo), var(--azure), var(--sky)); }
+.ws-card-tag { font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--sky); margin-bottom: var(--s2); }
+.ws-card-title { font-family: var(--font-display); font-size: 1.25rem; font-weight: 800; color: var(--white); line-height: 1.2; margin-bottom: var(--s2); letter-spacing: -0.01em; }
+.ws-card-meta { font-size: 0.75rem; color: rgba(255,255,255,0.5); }
+.ws-card-body { padding: var(--s5) var(--s7); background: var(--white); flex: 1; display: flex; flex-direction: column; }
+.ws-desc { font-size: 0.86rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: var(--s4); }
+.ws-tools { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: var(--s4); }
+.ws-tool { background: var(--cloud); color: var(--indigo); font-size: 0.7rem; font-weight: 600; padding: 3px 9px; border-radius: var(--r-sm); letter-spacing: 0.01em; }
+.ws-outcomes { list-style: none; display: flex; flex-direction: column; gap: 0; margin-bottom: var(--s4); flex: 1; }
+.ws-outcomes li { font-size: 0.82rem; color: var(--text-secondary); padding: 7px 0; border-bottom: 1px solid rgba(24,24,73,0.05); display: flex; gap: 10px; align-items: flex-start; line-height: 1.5; }
+.ws-outcomes li:last-child { border-bottom: none; }
+.ws-outcomes li::before { content: "✓"; color: var(--indigo); font-weight: 800; font-size: 0.75rem; flex-shrink: 0; margin-top: 1px; }
+.ws-card-footer { padding: var(--s4) var(--s7) var(--s5); background: var(--light-bg); border-top: 1px solid rgba(24,24,73,0.06); display: flex; justify-content: space-between; align-items: center; gap: var(--s3); }
+.ws-price-label { font-size: 0.65rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 2px; }
+.ws-price-amount { font-family: var(--font-display); font-size: 1.4rem; font-weight: 800; color: var(--navy); line-height: 1; }
+.ws-price-note { font-size: 0.68rem; color: var(--text-muted); margin-top: 3px; }
+
+/* What you get cards */
+.ws-get-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--s5); margin-top: var(--s8); }
+.ws-get-card { background: var(--white); border: 1px solid rgba(24,24,73,0.06); border-radius: var(--r-xl); padding: var(--s7); }
+.ws-get-num { font-family: var(--font-display); font-size: 2rem; font-weight: 800; color: var(--ice); line-height: 1; margin-bottom: var(--s3); }
+.ws-get-title { font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: var(--s2); }
+.ws-get-desc { font-size: 0.86rem; color: var(--text-secondary); line-height: 1.65; }
+
+/* Pricing */
+.ws-pricing-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s5); margin-top: var(--s8); align-items: start; }
+.ws-pricing-box { border-radius: var(--r-xl); overflow: hidden; border: 1px solid rgba(24,24,73,0.07); }
+.ws-pricing-box-head { padding: var(--s6) var(--s7); border-bottom: 1px solid rgba(24,24,73,0.06); }
+.ws-pricing-box-head h3 { font-family: var(--font-display); font-size: 1.1rem; font-weight: 800; color: var(--navy); margin-bottom: var(--s2); }
+.ws-pricing-box-head p { font-size: 0.82rem; color: var(--text-secondary); line-height: 1.6; }
+.ws-pricing-box-body { padding: var(--s5) var(--s7) var(--s6); background: var(--white); }
+.ws-tier { display: flex; justify-content: space-between; align-items: center; padding: var(--s4) 0; border-bottom: 1px solid rgba(24,24,73,0.05); }
+.ws-tier:last-child { border-bottom: none; }
+.ws-tier--highlight { background: var(--cloud); margin: 0 calc(-1 * var(--s7)); padding: var(--s4) var(--s7); border-left: 3px solid var(--indigo); border-bottom: 1px solid rgba(24,24,73,0.05); }
+.ws-tier--highlight .ws-tier-name { color: var(--indigo); }
+.ws-tier-name { font-size: 0.9rem; font-weight: 700; color: var(--navy); }
+.ws-tier-desc { font-size: 0.75rem; color: var(--text-muted); margin-top: 2px; }
+.ws-tier-price { font-family: var(--font-display); font-size: 1.2rem; font-weight: 800; color: var(--navy); text-align: right; white-space: nowrap; }
+.ws-tier-price small { font-size: 0.7rem; font-weight: 400; color: var(--text-muted); display: block; }
+.ws-pricing-note { font-size: 0.75rem; color: var(--text-muted); margin-top: var(--s4); line-height: 1.6; }
+.ws-pricing-note a { color: var(--indigo); }
+
+/* Dark pricing box */
+.ws-pricing-box--dark { background: var(--navy); border-color: var(--navy); }
+.ws-pricing-box--dark .ws-pricing-box-head { border-bottom-color: rgba(255,255,255,0.08); }
+.ws-pricing-box--dark .ws-pricing-box-head h3 { color: var(--white); }
+.ws-pricing-box--dark .ws-pricing-box-head p { color: var(--sky); }
+.ws-pricing-box--dark .ws-pricing-box-body { background: var(--navy); }
+.ws-pricing-box--dark .ws-tier { border-bottom-color: rgba(255,255,255,0.07); }
+.ws-pricing-box--dark .ws-tier-name { color: var(--white); }
+.ws-pricing-box--dark .ws-tier-desc { color: rgba(255,255,255,0.45); }
+.ws-pricing-box--dark .ws-tier-price { color: var(--white); }
+.ws-pricing-box--dark .ws-tier-price small { color: rgba(255,255,255,0.45); }
+.ws-pricing-box--dark .ws-tier--highlight { background: rgba(255,255,255,0.06); border-left-color: var(--sky); }
+.ws-pricing-box--dark .ws-tier--highlight .ws-tier-name { color: var(--sky); }
+.ws-pricing-box--dark .ws-pricing-note { color: rgba(255,255,255,0.4); }
+.ws-pricing-box--dark .ws-pricing-note a { color: var(--sky); }
+
+/* Private team banner */
+.ws-private { background: var(--navy); border-radius: var(--r-xl); padding: var(--s9) var(--s10); display: flex; justify-content: space-between; align-items: center; gap: var(--s8); flex-wrap: wrap; position: relative; overflow: hidden; margin-top: var(--s8); }
+.ws-private::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, var(--indigo), var(--azure), var(--sky)); }
+.ws-private h3 { font-family: var(--font-display); font-size: 1.6rem; font-weight: 800; color: var(--white); margin-bottom: var(--s3); letter-spacing: -0.02em; }
+.ws-private p { font-size: 0.9rem; color: rgba(255,255,255,0.65); line-height: 1.7; max-width: 460px; }
+.ws-private-details { display: flex; gap: var(--s6); margin-top: var(--s5); flex-wrap: wrap; }
+.ws-private-detail .ws-pd-label { font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; color: var(--sky); margin-bottom: 3px; }
+.ws-private-detail .ws-pd-value { font-size: 0.92rem; font-weight: 700; color: var(--white); }
+.ws-private-cta { text-align: center; flex-shrink: 0; }
+.ws-private-cta .ws-price-big { font-family: var(--font-display); font-size: 2rem; font-weight: 800; color: var(--white); line-height: 1; margin-bottom: 6px; }
+.ws-private-cta .ws-price-big small { font-size: 0.8rem; font-weight: 400; color: var(--sky); display: block; margin-top: 4px; }
+.ws-private-cta p { font-size: 0.82rem; color: rgba(255,255,255,0.5); margin: var(--s2) 0 var(--s4); }
+
+/* Cross-sell */
+.ws-crosssell { background: var(--cloud); border: 1px solid var(--ice); border-radius: var(--r-xl); padding: var(--s8); text-align: center; margin-top: var(--s8); }
+.ws-crosssell p { font-size: 0.95rem; color: var(--text-secondary); line-height: 1.7; max-width: 560px; margin: 0 auto var(--s5); }
+.ws-crosssell strong { color: var(--navy); }
+
+@media (max-width: 1024px) {
+  .ws-grid { grid-template-columns: 1fr; }
+  .ws-pricing-grid { grid-template-columns: 1fr; }
+  .ws-get-grid { grid-template-columns: 1fr 1fr; }
+  .ws-private { flex-direction: column; text-align: center; }
+  .ws-private p { max-width: 100%; }
+  .ws-private-details { justify-content: center; }
+}
+@media (max-width: 768px) {
+  .ws-date-row { flex-direction: column; align-items: center; }
+  .ws-date-chip { width: 100%; max-width: 320px; }
+  .ws-get-grid { grid-template-columns: 1fr; }
+  .ws-proof-inner { gap: var(--s3); }
+  .ws-proof-dot { display: none; }
+}
+</style>
+<!-- Zoho zf_gtm postMessage listener -->
 <script>
-    window.addEventListener('message', function(){
-        try {
-            var u = new URL(event.origin);
-            if (u.host === "forms.zohopublic.com") {
-                var evntData = event.data;
-                if(evntData && evntData.constructor == Object){
-                    var type = evntData.type;
-                    if(type && type == "zf_gtm"){
-                        var d = evntData.payload;
-                        if(Object.keys(d).length > 0){
-                            window.dataLayer = window.dataLayer || [];
-                            window.dataLayer.push({'event':d.e,'zf_category':d.c,'zf_page':d.p,'zf_field':d.f,'zf_action':d.a,'zf_formname':d.n,'zf_data':d.d});
-                        }
-                    }
-                }
-            }
-        } catch(e) {}
-    }, false);
+window.addEventListener('message', function(){
+  try {
+    var u = new URL(event.origin);
+    if (u.host === "forms.zohopublic.com") {
+      var evntData = event.data;
+      if(evntData && evntData.constructor == Object){
+        var type = evntData.type;
+        if(type && type == "zf_gtm"){
+          var d = evntData.payload;
+          if(Object.keys(d).length > 0){
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({'event':d.e,'zf_category':d.c,'zf_page':d.p,'zf_field':d.f,'zf_action':d.a,'zf_formname':d.n,'zf_data':d.d});
+          }
+        }
+      }
+    }
+  } catch(e) {}
+}, false);
 </script>
 <!-- Zoho UTM passthrough (modificado: incluye fbclid) -->
 <script type="text/javascript">
@@ -75,184 +200,16 @@ twq('config','rcjjn');
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.makersquare.ai/"},{"@type":"ListItem","position":2,"name":"Workshops","item":"https://www.makersquare.ai/workshops"}]}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Do I need a technical background to attend a MakerSquare workshop?","acceptedAnswer":{"@type":"Answer","text":"No. These workshops are designed for professionals who are experts in their field, not engineers. If you can use a spreadsheet, you can build in these workshops."}},{"@type":"Question","name":"How is a MakerSquare workshop different from online courses?","acceptedAnswer":{"@type":"Answer","text":"You're building with your actual data, your actual tools, and your actual problem — not a made-up exercise. And when you get stuck, a real instructor unblocks you in real time. Online courses don't do that."}},{"@type":"Question","name":"Can my company pay by invoice for a workshop?","acceptedAnswer":{"@type":"Answer","text":"Yes. Email marliis@makersquare.ai and we'll send a proposal and invoice within 24 hours. PO-based payment is supported."}},{"@type":"Question","name":"What is the refund policy for MakerSquare workshops?","acceptedAnswer":{"@type":"Answer","text":"Full refund up to 14 days before the workshop start date. 50% refund up to 48 hours before. No refund after the workshop begins."}},{"@type":"Question","name":"How is a 3-day workshop different from the MakerSquare 2-week program?","acceptedAnswer":{"@type":"Answer","text":"The 2-week program is a deep immersive — you build 3 full AI products, go from zero to shipping real software, and it's designed for people making a career shift. Workshops are focused skill sprints for working professionals who need specific capabilities now. Many workshop attendees go on to enroll in the full program."}},{"@type":"Question","name":"What if I can't commit to 3 full days?","acceptedAnswer":{"@type":"Answer","text":"Each day builds on the last — missing one means missing foundational work. If 3 consecutive days is a stretch, the private team format lets you break it into a custom schedule."}}]}
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Do I need a technical background to attend a MakerSquare workshop?","acceptedAnswer":{"@type":"Answer","text":"No. These workshops are designed for professionals who are experts in their field, not engineers. If you can use a spreadsheet, you can build in these workshops."}},{"@type":"Question","name":"How is a MakerSquare workshop different from online courses?","acceptedAnswer":{"@type":"Answer","text":"You're building with your actual data, your actual tools, and your actual problem — not a made-up exercise. And when you get stuck, a real instructor unblocks you in real time. Online courses don't do that."}},{"@type":"Question","name":"Can my company pay by invoice for a workshop?","acceptedAnswer":{"@type":"Answer","text":"Yes. Email marliis@makersquare.ai and we'll send a proposal and invoice within 24 hours. PO-based payment is supported."}},{"@type":"Question","name":"What is the refund policy for MakerSquare workshops?","acceptedAnswer":{"@type":"Answer","text":"Full refund up to 14 days before the workshop start date. 50% refund up to 48 hours before. No refund after the workshop begins."}},{"@type":"Question","name":"How is a 3-day workshop different from the MakerSquare 2-week program?","acceptedAnswer":{"@type":"Answer","text":"The 2-week program is a deep immersive — you build 3 full AI products, go from zero to shipping real software. Workshops are focused skill sprints for working professionals who need specific capabilities now. Many workshop attendees go on to enroll in the full program."}},{"@type":"Question","name":"What if I can't commit to 3 full days?","acceptedAnswer":{"@type":"Answer","text":"Each day builds on the last — missing one means missing foundational work. If 3 consecutive days is a stretch, the private team format lets you break it into a custom schedule."}}]}
 </script>
 <script type="application/ld+json">
 [
-{"@context":"https://schema.org","@type":"Event","name":"AI for Sales Teams — 3-Day Workshop","description":"Hands-on 3-day AI workshop for sales reps, AEs, SDRs, and managers in Austin TX. Build an AI-powered prospecting, outreach, and follow-up system using Clay, Instantly.ai, Fathom, Claude, and more.","startDate":"2026-07-29T09:00:00-05:00","endDate":"2026-07-31T17:00:00-05:00","eventStatus":"https://schema.org/EventScheduled","eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","location":{"@type":"Place","name":"MakerSquare","address":{"@type":"PostalAddress","addressLocality":"Austin","addressRegion":"TX","addressCountry":"US"}},"organizer":{"@type":"Organization","name":"MakerSquare","url":"https://www.makersquare.ai"},"offers":{"@type":"Offer","price":"999","priceCurrency":"USD","availability":"https://schema.org/InStock","validFrom":"2026-07-02","url":"https://www.makersquare.ai/workshops"},"image":"https://www.makersquare.ai/og-image.jpg"},
-{"@context":"https://schema.org","@type":"Event","name":"Build Your First AI Agent — 3-Day Workshop","description":"Hands-on 3-day workshop in Austin TX. Build a working AI agent using n8n, Claude API, Airtable, and Slack — no coding required. You pick the problem on Day 1 and demo a live solution on Day 3.","startDate":"2026-09-09T09:00:00-05:00","endDate":"2026-09-11T17:00:00-05:00","eventStatus":"https://schema.org/EventScheduled","eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","location":{"@type":"Place","name":"MakerSquare","address":{"@type":"PostalAddress","addressLocality":"Austin","addressRegion":"TX","addressCountry":"US"}},"organizer":{"@type":"Organization","name":"MakerSquare","url":"https://www.makersquare.ai"},"offers":{"@type":"Offer","price":"999","priceCurrency":"USD","availability":"https://schema.org/InStock","validFrom":"2026-07-02","url":"https://www.makersquare.ai/workshops"},"image":"https://www.makersquare.ai/og-image.jpg"},
-{"@context":"https://schema.org","@type":"Event","name":"AI for Operations & Productivity — 3-Day Workshop","description":"Hands-on 3-day AI workshop for ops managers, chiefs of staff, and business owners in Austin TX. Automate meeting summaries, status reports, document processing, and workflow triggers using Fathom, Claude, n8n, and Notion AI.","startDate":"2026-09-23T09:00:00-05:00","endDate":"2026-09-25T17:00:00-05:00","eventStatus":"https://schema.org/EventScheduled","eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","location":{"@type":"Place","name":"MakerSquare","address":{"@type":"PostalAddress","addressLocality":"Austin","addressRegion":"TX","addressCountry":"US"}},"organizer":{"@type":"Organization","name":"MakerSquare","url":"https://www.makersquare.ai"},"offers":{"@type":"Offer","price":"999","priceCurrency":"USD","availability":"https://schema.org/InStock","validFrom":"2026-07-02","url":"https://www.makersquare.ai/workshops"},"image":"https://www.makersquare.ai/og-image.jpg"}
+{"@context":"https://schema.org","@type":"Event","name":"AI for Sales Teams — 3-Day Workshop","description":"Hands-on 3-day AI workshop for sales reps, AEs, SDRs, and managers in Austin TX.","startDate":"2026-07-29T09:00:00-05:00","endDate":"2026-07-31T17:00:00-05:00","eventStatus":"https://schema.org/EventScheduled","eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","location":{"@type":"Place","name":"MakerSquare","address":{"@type":"PostalAddress","addressLocality":"Austin","addressRegion":"TX","addressCountry":"US"}},"organizer":{"@type":"Organization","name":"MakerSquare","url":"https://www.makersquare.ai"},"offers":{"@type":"Offer","price":"999","priceCurrency":"USD","availability":"https://schema.org/InStock","validFrom":"2026-07-02","url":"https://www.makersquare.ai/workshops"},"image":"https://www.makersquare.ai/og-image.jpg"},
+{"@context":"https://schema.org","@type":"Event","name":"Build Your First AI Agent — 3-Day Workshop","description":"Hands-on 3-day workshop in Austin TX. Build a working AI agent using n8n, Claude API, Airtable, and Slack — no coding required.","startDate":"2026-09-09T09:00:00-05:00","endDate":"2026-09-11T17:00:00-05:00","eventStatus":"https://schema.org/EventScheduled","eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","location":{"@type":"Place","name":"MakerSquare","address":{"@type":"PostalAddress","addressLocality":"Austin","addressRegion":"TX","addressCountry":"US"}},"organizer":{"@type":"Organization","name":"MakerSquare","url":"https://www.makersquare.ai"},"offers":{"@type":"Offer","price":"999","priceCurrency":"USD","availability":"https://schema.org/InStock","validFrom":"2026-07-02","url":"https://www.makersquare.ai/workshops"},"image":"https://www.makersquare.ai/og-image.jpg"},
+{"@context":"https://schema.org","@type":"Event","name":"AI for Operations & Productivity — 3-Day Workshop","description":"Hands-on 3-day AI workshop for ops managers, chiefs of staff, and business owners in Austin TX.","startDate":"2026-09-23T09:00:00-05:00","endDate":"2026-09-25T17:00:00-05:00","eventStatus":"https://schema.org/EventScheduled","eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","location":{"@type":"Place","name":"MakerSquare","address":{"@type":"PostalAddress","addressLocality":"Austin","addressRegion":"TX","addressCountry":"US"}},"organizer":{"@type":"Organization","name":"MakerSquare","url":"https://www.makersquare.ai"},"offers":{"@type":"Offer","price":"999","priceCurrency":"USD","availability":"https://schema.org/InStock","validFrom":"2026-07-02","url":"https://www.makersquare.ai/workshops"},"image":"https://www.makersquare.ai/og-image.jpg"}
 ]
 </script>
-<style>
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: 'Inter', sans-serif; background: #fff; color: #1a1a2e; }
-
-/* NAV */
-nav { background: #181849; padding: 0 40px; display: flex; align-items: center; justify-content: space-between; height: 60px; position: sticky; top: 0; z-index: 100; }
-.nav-logo { color: #fff; font-family: 'Fustat', sans-serif; font-size: 1.05rem; font-weight: 800; letter-spacing: -.02em; text-decoration: none; }
-.nav-logo span { color: #81AAFB; }
-.nav-links { display: flex; gap: 28px; align-items: center; }
-.nav-links a { color: #c5cef7; font-size: 0.85rem; text-decoration: none; font-weight: 500; }
-.nav-links a:hover { color: #fff; }
-.nav-links a.active { color: #fff; font-weight: 700; }
-.nav-apply { background: #403DD8; color: #fff !important; padding: 8px 18px; border-radius: 6px; font-weight: 700 !important; font-size: 0.82rem !important; }
-.nav-apply:hover { background: #3532bf !important; }
-
-/* HERO */
-.hero { background: #181849; color: #fff; padding: 80px 40px 72px; text-align: center; }
-.hero-tag { display: inline-block; background: rgba(64,61,216,0.4); border: 1px solid rgba(129,170,251,0.4); color: #81AAFB; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; padding: 5px 14px; border-radius: 20px; margin-bottom: 24px; }
-.hero h1 { font-family: 'Fustat', sans-serif; font-size: clamp(2rem, 5vw, 3rem); font-weight: 800; line-height: 1.1; letter-spacing: -.03em; max-width: 720px; margin: 0 auto 20px; }
-.hero h1 em { font-style: normal; color: #81AAFB; }
-.hero-sub { font-size: 1.05rem; color: #c5cef7; max-width: 540px; margin: 0 auto 36px; line-height: 1.65; }
-.hero-dates { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin-bottom: 36px; }
-.date-chip { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12); border-radius: 10px; padding: 14px 20px; text-align: left; min-width: 180px; }
-.dc-label { font-size: 0.67rem; font-weight: 700; text-transform: uppercase; letter-spacing: .07em; color: #81AAFB; margin-bottom: 4px; }
-.dc-date { font-size: 0.95rem; font-weight: 700; color: #fff; }
-.dc-topic { font-size: 0.75rem; color: #c5cef7; margin-top: 3px; }
-.dc-badge { display: inline-block; font-size: 0.62rem; font-weight: 700; background: #f59e0b; color: #000; padding: 2px 8px; border-radius: 10px; margin-top: 6px; }
-.hero-cta { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
-
-/* BUTTONS */
-.btn-primary { background: #403DD8; color: #fff; padding: 13px 26px; border-radius: 8px; font-weight: 700; font-size: 0.92rem; text-decoration: none; display: inline-block; }
-.btn-primary:hover { background: #3532bf; }
-.btn-outline { background: transparent; color: #fff; padding: 13px 26px; border-radius: 8px; font-weight: 700; font-size: 0.92rem; text-decoration: none; border: 1px solid rgba(255,255,255,0.3); display: inline-block; }
-.btn-outline:hover { border-color: rgba(255,255,255,0.6); }
-.btn-white { background: #fff; color: #181849; padding: 13px 26px; border-radius: 8px; font-weight: 700; font-size: 0.9rem; text-decoration: none; display: inline-block; }
-.btn-white:hover { background: #f0f0fd; }
-.btn-white-outline { background: transparent; color: #fff; padding: 12px 24px; border-radius: 8px; font-weight: 700; font-size: 0.88rem; text-decoration: none; border: 1px solid rgba(255,255,255,0.45); display: inline-block; }
-.btn-white-outline:hover { border-color: rgba(255,255,255,0.7); }
-
-/* PROOF BAR */
-.proof-bar { background: #f5f4f0; border-top: 1px solid #e8e7e0; border-bottom: 1px solid #e8e7e0; padding: 18px 40px; display: flex; gap: 36px; justify-content: center; flex-wrap: wrap; }
-.proof-item { font-size: 0.82rem; color: #555; display: flex; align-items: center; gap: 8px; }
-.proof-item strong { color: #181849; font-weight: 700; }
-.proof-dot { width: 4px; height: 4px; background: #403DD8; border-radius: 50%; flex-shrink: 0; }
-
-/* SECTIONS */
-.section-wrap { padding: 72px 40px; max-width: 1100px; margin: 0 auto; }
-.section-label { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .09em; color: #403DD8; margin-bottom: 10px; }
-h2 { font-family: 'Fustat', sans-serif; font-size: 1.85rem; font-weight: 800; color: #181849; margin-bottom: 8px; letter-spacing: -.02em; }
-.section-sub { font-size: 0.98rem; color: #666; margin-bottom: 40px; line-height: 1.6; }
-
-/* WORKSHOP CARDS */
-.ws-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
-.ws-card { border: 1px solid #e0e0ef; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; }
-.ws-card-header { background: #181849; padding: 28px 28px 22px; }
-.ws-card-tag { font-size: 0.67rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: #81AAFB; margin-bottom: 10px; }
-.ws-card-title { font-family: 'Fustat', sans-serif; font-size: 1.25rem; font-weight: 800; color: #fff; line-height: 1.2; margin-bottom: 8px; letter-spacing: -.01em; }
-.ws-card-meta { font-size: 0.78rem; color: #c5cef7; }
-.ws-card-body { padding: 24px 28px; background: #fff; flex: 1; }
-.ws-desc { font-size: 0.87rem; color: #444; line-height: 1.65; margin-bottom: 20px; }
-.outcome-list { list-style: none; margin-bottom: 20px; }
-.outcome-list li { font-size: 0.82rem; color: #333; padding: 7px 0; border-bottom: 1px solid #f0f0f5; display: flex; gap: 10px; align-items: flex-start; line-height: 1.5; }
-.outcome-list li:last-child { border-bottom: none; }
-.outcome-list li::before { content: "✓"; color: #403DD8; font-weight: 800; min-width: 14px; margin-top: 1px; }
-.tool-row { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 20px; }
-.tool-tag { background: #f0f0fd; color: #403DD8; font-size: 0.71rem; font-weight: 600; padding: 3px 9px; border-radius: 4px; }
-.ws-card-footer { padding: 16px 28px; background: #f7f7fb; border-top: 1px solid #e8e8f0; display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-top: auto; }
-.ws-price-from { font-size: 0.7rem; color: #888; margin-bottom: 2px; }
-.ws-price-amount { font-family: 'Fustat', sans-serif; font-size: 1.3rem; font-weight: 800; color: #181849; }
-.ws-price-note { font-size: 0.7rem; color: #888; margin-top: 1px; }
-.btn-card { background: #403DD8; color: #fff; padding: 10px 18px; border-radius: 7px; font-weight: 700; font-size: 0.82rem; text-decoration: none; white-space: nowrap; flex-shrink: 0; }
-.btn-card:hover { background: #3532bf; }
-
-/* WHAT YOU BUILD */
-.build-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-.build-card { background: #f5f4f0; border-radius: 12px; padding: 24px; }
-.build-num { font-family: 'Fustat', sans-serif; font-size: 1.5rem; font-weight: 800; color: #e0e0ef; margin-bottom: 10px; }
-.build-title { font-size: 0.92rem; font-weight: 700; color: #181849; margin-bottom: 6px; }
-.build-desc { font-size: 0.82rem; color: #555; line-height: 1.55; }
-
-/* PRICING */
-.pricing-outer { background: #f5f4f0; }
-.pricing-intro { text-align: center; margin-bottom: 48px; }
-.pricing-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start; }
-.pricing-box { background: #fff; border: 1px solid #e0e0ef; border-radius: 14px; overflow: hidden; }
-.pricing-box-head { padding: 24px 28px 18px; border-bottom: 1px solid #f0f0f5; }
-.pricing-box-head h3 { font-family: 'Fustat', sans-serif; font-size: 1rem; font-weight: 800; color: #181849; margin-bottom: 4px; }
-.pricing-box-head p { font-size: 0.8rem; color: #666; line-height: 1.5; }
-.pricing-box-body { padding: 20px 28px 24px; }
-.tier-row { display: flex; justify-content: space-between; align-items: center; padding: 14px 0; border-bottom: 1px solid #f0f0f5; }
-.tier-row:last-child { border-bottom: none; }
-.tier-name { font-size: 0.85rem; font-weight: 700; color: #181849; }
-.tier-desc { font-size: 0.72rem; color: #888; margin-top: 2px; }
-.tier-price { font-family: 'Fustat', sans-serif; font-size: 1.15rem; font-weight: 800; color: #181849; text-align: right; }
-.tier-price .per { font-size: 0.7rem; font-weight: 400; color: #888; display: block; }
-.tier-row.highlight { background: #f0f0fd; margin: 0 -28px; padding: 14px 28px; border-left: 3px solid #403DD8; }
-.tier-row.highlight .tier-name { color: #403DD8; }
-.pricing-box.dark { background: #181849; border-color: #181849; }
-.pricing-box.dark .pricing-box-head { border-bottom-color: rgba(255,255,255,0.08); }
-.pricing-box.dark .pricing-box-head h3 { color: #fff; }
-.pricing-box.dark .pricing-box-head p { color: #81AAFB; }
-.pricing-box.dark .tier-row { border-bottom-color: rgba(255,255,255,0.08); }
-.pricing-box.dark .tier-name { color: #fff; }
-.pricing-box.dark .tier-desc { color: #aaa; }
-.pricing-box.dark .tier-price { color: #fff; }
-.pricing-box.dark .tier-price .per { color: #aaa; }
-.pricing-box.dark .tier-row.highlight { background: rgba(255,255,255,0.06); margin: 0 -28px; padding: 14px 28px; border-left-color: #81AAFB; }
-.pricing-box.dark .tier-row.highlight .tier-name { color: #81AAFB; }
-.pricing-note-small { font-size: 0.75rem; color: #888; margin-top: 16px; line-height: 1.55; }
-.pricing-note-small a { color: #403DD8; }
-.pricing-cta { text-align: center; margin-top: 36px; }
-.pricing-cta p { font-size: 0.85rem; color: #666; margin-bottom: 14px; }
-
-/* PRIVATE TEAM */
-.private-banner { background: #181849; border-radius: 14px; padding: 48px; display: flex; justify-content: space-between; align-items: center; gap: 40px; flex-wrap: wrap; }
-.private-banner h2 { color: #fff; font-size: 1.6rem; margin-bottom: 10px; }
-.private-banner p { color: #c5cef7; font-size: 0.9rem; line-height: 1.65; max-width: 440px; }
-.private-details { display: flex; gap: 28px; margin-top: 24px; flex-wrap: wrap; }
-.private-detail .label { font-size: 0.67rem; font-weight: 700; text-transform: uppercase; letter-spacing: .07em; color: #81AAFB; margin-bottom: 3px; }
-.private-detail .value { font-size: 0.95rem; font-weight: 700; color: #fff; }
-.private-cta-box { text-align: center; flex-shrink: 0; }
-.price-big { font-family: 'Fustat', sans-serif; font-size: 2.2rem; font-weight: 800; color: #fff; line-height: 1; }
-.price-big .sub { font-size: 0.8rem; font-weight: 400; color: #81AAFB; display: block; margin-top: 6px; }
-.price-custom { font-size: 0.95rem; font-weight: 500; color: #c5cef7; margin-top: 12px; }
-
-/* FAQ */
-.faq-list { border-top: 1px solid #e0e0ef; }
-.faq-item { border-bottom: 1px solid #e0e0ef; padding: 22px 0; }
-.faq-q { font-size: 0.95rem; font-weight: 700; color: #181849; margin-bottom: 8px; }
-.faq-a { font-size: 0.85rem; color: #555; line-height: 1.65; }
-
-/* BOTTOM CTA */
-.bottom-cta { background: #403DD8; padding: 72px 40px; text-align: center; }
-.bottom-cta h2 { color: #fff; font-family: 'Fustat', sans-serif; font-size: 2rem; font-weight: 800; margin-bottom: 12px; letter-spacing: -.02em; }
-.bottom-cta p { color: rgba(255,255,255,0.8); font-size: 1rem; margin-bottom: 28px; line-height: 1.6; }
-.bottom-cta-links { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
-
-/* CROSS-SELL */
-.crosssell { background: #f5f4f0; border-top: 1px solid #e8e7e0; }
-.crosssell-inner { max-width: 680px; margin: 0 auto; padding: 48px 40px; text-align: center; }
-.crosssell-inner p { font-size: 0.9rem; color: #555; line-height: 1.65; margin-bottom: 16px; }
-.crosssell-inner strong { color: #181849; }
-
-/* FOOTER */
-footer { background: #181849; padding: 28px 40px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
-footer .logo { font-family: 'Fustat', sans-serif; color: #fff; font-weight: 800; font-size: 0.95rem; text-decoration: none; }
-footer .logo span { color: #81AAFB; }
-footer p { color: #666; font-size: 0.78rem; }
-footer a { color: #81AAFB; text-decoration: none; font-size: 0.78rem; }
-
-@media (max-width: 900px) {
-  .ws-grid { grid-template-columns: 1fr; }
-  .pricing-cols { grid-template-columns: 1fr; }
-  .build-grid { grid-template-columns: 1fr 1fr; }
-  .private-banner { flex-direction: column; text-align: center; }
-  .private-details { justify-content: center; }
-}
-@media (max-width: 600px) {
-  nav { padding: 0 20px; }
-  .nav-links { gap: 16px; }
-  .hero { padding: 60px 20px 52px; }
-  .section-wrap { padding: 52px 20px; }
-  .build-grid { grid-template-columns: 1fr; }
-  .private-banner { padding: 32px 24px; }
-  .bottom-cta { padding: 52px 20px; }
-  footer { padding: 24px 20px; }
-  .proof-bar { padding: 16px 20px; gap: 14px; }
-}
-</style>
+<script src="https://cdn.pagesense.io/js/makersquare/2d11a6657de44371ae8b77f2ef843ad4.js"></script>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -261,371 +218,449 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
 <!-- NAV -->
-<nav>
-  <a href="https://www.makersquare.ai" class="nav-logo">Maker<span>Square</span></a>
-  <div class="nav-links">
-    <a href="/curriculum">Program</a>
-    <a href="/workshops" class="active">Workshops</a>
-    <a href="/corporate">Corporate</a>
-    <a href="/about">About</a>
-    <a href="/enroll" class="nav-apply">Secure Your Spot</a>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo" style="align-items:center;"><img src="logo-light.png" alt="MakerSquare — School of Applied AI"><span class="nav-tagline" style="padding-left:4px;">School of Applied AI</span></a>
+    <ul class="nav-links">
+      <li><a href="about.html">About</a></li>
+      <li style="white-space:nowrap;"><a href="use-cases.html">Use Cases</a></li>
+      <li><a href="curriculum.html">Curriculum</a></li>
+      <li><a href="workshops.html" style="color:var(--white);font-weight:600;">Workshops</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="blog/">Blog</a></li>
+      <li><a href="enroll.html" class="nav-apply">Enroll</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="nav-social"><a href="https://www.linkedin.com/company/makersquare-ai" target="_blank" rel="noopener" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>Follow us</a></div>
+      <button class="nav-hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
   </div>
+</nav>
+<div class="mobile-menu">
+  <ul class="mobile-menu-links">
+    <li><a href="about.html">About</a></li>
+    <li><a href="use-cases.html">Use Cases</a></li>
+    <li><a href="curriculum.html">Curriculum</a></li>
+    <li><a href="workshops.html">Workshops</a></li>
+    <li><a href="pricing.html">Pricing</a></li>
+    <li><a href="blog/">Blog</a></li>
+    <li><a href="enroll.html">Enroll</a></li>
+  </ul>
+  <a href="workshop-register.html" class="btn btn-primary btn-block btn-lg" style="margin-top:24px;">Reserve a Seat</a>
+</div>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+  <ol>
+    <li class="sep">/</li>
+    <li class="current">Workshops</li>
+  </ol>
 </nav>
 
 
 <!-- HERO -->
-<div class="hero">
-  <div class="hero-tag">Austin TX &nbsp;·&nbsp; In-Person &nbsp;·&nbsp; 3-Day Intensives</div>
-  <h1>Build real AI skills<br>in <em>3 days.</em></h1>
-  <p class="hero-sub">Hands-on workshops for professionals who need AI to actually work for them — not another course to forget.</p>
+<div class="ws-hero">
+  <div class="container">
+    <div class="section-label reveal" style="justify-content:center;color:var(--sky);">Austin TX &nbsp;&middot;&nbsp; In-Person &nbsp;&middot;&nbsp; 3-Day Intensives</div>
+    <h1 class="reveal" style="font-size:clamp(2.2rem,5vw,3.4rem);color:var(--white);margin-bottom:var(--s4);">Build real AI skills<br><span style="color:var(--sky);">in 3 days.</span></h1>
+    <p class="reveal section-sub" style="color:rgba(255,255,255,0.65);max-width:520px;margin:0 auto var(--s7);font-size:1rem;">Hands-on workshops for professionals who need AI to actually work for them — not another course to forget about.</p>
 
-  <div class="hero-dates">
-    <div class="date-chip">
-      <div class="dc-label">Workshop 1</div>
-      <div class="dc-date">Jul 29 – 31, 2026</div>
-      <div class="dc-topic">AI for Sales Teams</div>
-      <div class="dc-badge">Early Bird — ends Jul 8</div>
+    <div class="ws-date-row reveal">
+      <div class="ws-date-chip">
+        <div class="ws-dc-label">Workshop 1</div>
+        <div class="ws-dc-date">Jul 29 – 31, 2026</div>
+        <div class="ws-dc-topic">AI for Sales Teams</div>
+        <div class="ws-dc-badge">Early Bird — ends Jul 8</div>
+      </div>
+      <div class="ws-date-chip">
+        <div class="ws-dc-label">Workshop 2</div>
+        <div class="ws-dc-date">Sep 9 – 11, 2026</div>
+        <div class="ws-dc-topic">Build Your First AI Agent</div>
+      </div>
+      <div class="ws-date-chip">
+        <div class="ws-dc-label">Workshop 3</div>
+        <div class="ws-dc-date">Sep 23 – 25, 2026</div>
+        <div class="ws-dc-topic">AI for Operations &amp; Productivity</div>
+      </div>
     </div>
-    <div class="date-chip">
-      <div class="dc-label">Workshop 2</div>
-      <div class="dc-date">Sep 9 – 11, 2026</div>
-      <div class="dc-topic">Build Your First AI Agent</div>
-    </div>
-    <div class="date-chip">
-      <div class="dc-label">Workshop 3</div>
-      <div class="dc-date">Sep 23 – 25, 2026</div>
-      <div class="dc-topic">AI for Operations &amp; Productivity</div>
-    </div>
-  </div>
 
-  <div class="hero-cta">
-    <a href="/workshop-register" class="btn-primary">Reserve a seat &rarr;</a>
-    <a href="#private" class="btn-outline">Private team training</a>
+    <div class="reveal" style="display:flex;gap:var(--s3);justify-content:center;flex-wrap:wrap;">
+      <a href="workshop-register.html" class="btn btn-primary btn-lg btn-arrow">Reserve a seat </a>
+      <a href="#private" class="btn btn-ghost btn-lg" style="color:rgba(255,255,255,0.8);border-color:rgba(255,255,255,0.2);">Private team training</a>
+    </div>
   </div>
 </div>
 
 
 <!-- PROOF BAR -->
-<div class="proof-bar">
-  <div class="proof-item"><strong>3 days</strong> in-person, Austin TX</div>
-  <div class="proof-dot"></div>
-  <div class="proof-item"><strong>Small cohort</strong> &mdash; intentionally limited</div>
-  <div class="proof-dot"></div>
-  <div class="proof-item">Same instructors as the <strong>2-week program</strong></div>
-  <div class="proof-dot"></div>
-  <div class="proof-item">You leave with something <strong>built and running</strong></div>
-  <div class="proof-dot"></div>
-  <div class="proof-item"><strong>No coding</strong> required</div>
+<div class="ws-proof">
+  <div class="container">
+    <div class="ws-proof-inner">
+      <div class="ws-proof-item"><strong>3 days</strong> in-person, Austin TX</div>
+      <div class="ws-proof-dot"></div>
+      <div class="ws-proof-item"><strong>Small cohort</strong> &mdash; intentionally limited</div>
+      <div class="ws-proof-dot"></div>
+      <div class="ws-proof-item">Same instructors as the <strong>2-week program</strong></div>
+      <div class="ws-proof-dot"></div>
+      <div class="ws-proof-item">You leave with something <strong>built and running</strong></div>
+      <div class="ws-proof-dot"></div>
+      <div class="ws-proof-item"><strong>No coding</strong> required</div>
+    </div>
+  </div>
 </div>
 
 
 <!-- WORKSHOPS -->
-<div class="section-wrap" id="workshops">
-  <div class="section-label">The workshops</div>
-  <h2>Three focused skill sprints</h2>
-  <p class="section-sub">Each one is standalone — pick the one that matches where you are right now.</p>
+<section class="section" id="workshops">
+  <div class="container">
+    <div class="section-label reveal">The workshops</div>
+    <h2 class="reveal">Three focused skill sprints.</h2>
+    <p class="section-sub reveal" style="max-width:560px;">Each one is standalone — pick the one that matches where you are right now. All three run in Austin, 9am–5pm.</p>
 
-  <div class="ws-grid">
+    <div class="ws-grid">
 
-    <!-- WS1 -->
-    <div class="ws-card">
-      <div class="ws-card-header">
-        <div class="ws-card-tag">Workshop 1 &nbsp;&middot;&nbsp; Jul 29–31, 2026</div>
-        <div class="ws-card-title">AI for Sales Teams</div>
-        <div class="ws-card-meta">Wed – Thu – Fri &nbsp;&middot;&nbsp; 9am–5pm &nbsp;&middot;&nbsp; Austin TX</div>
-      </div>
-      <div class="ws-card-body">
-        <p class="ws-desc">For sales reps, AEs, SDRs, and managers. You'll build an AI-powered prospecting, outreach, and follow-up system using tools your team already has access to — and leave with it running on your actual pipeline.</p>
-        <div class="tool-row">
-          <span class="tool-tag">Clay</span>
-          <span class="tool-tag">Apollo AI</span>
-          <span class="tool-tag">Instantly.ai</span>
-          <span class="tool-tag">Claude</span>
-          <span class="tool-tag">Fathom</span>
-          <span class="tool-tag">n8n</span>
-          <span class="tool-tag">Zapier</span>
-          <span class="tool-tag">HubSpot AI</span>
+      <!-- WS1: Sales -->
+      <div class="ws-card reveal reveal-d1">
+        <div class="ws-card-header">
+          <div class="ws-card-tag">Workshop 1 &nbsp;&middot;&nbsp; Jul 29–31, 2026</div>
+          <div class="ws-card-title">AI for Sales Teams</div>
+          <div class="ws-card-meta">Wed – Thu – Fri &nbsp;&middot;&nbsp; 9am–5pm &nbsp;&middot;&nbsp; Austin TX</div>
         </div>
-        <ul class="outcome-list">
-          <li>A working prospect list built in Clay with your real ICP — Day 1</li>
-          <li>Personalized cold email sequences at scale, without copy-paste</li>
-          <li>AI call prep and live role-play against a simulated prospect</li>
-          <li>Call notes and emails auto-logged to your CRM via Zapier</li>
-          <li>A full AI sales workflow demoed to the group on Day 3</li>
-        </ul>
-      </div>
-      <div class="ws-card-footer">
-        <div>
-          <div class="ws-price-from">Early bird until Jul 8</div>
-          <div class="ws-price-amount">$999</div>
-          <div class="ws-price-note">$1,199 from Jul 9</div>
+        <div class="ws-card-body">
+          <p class="ws-desc">For sales reps, AEs, SDRs, and managers. Build an AI-powered prospecting, outreach, and follow-up system using tools your team already has access to — and leave with it running on your actual pipeline.</p>
+          <div class="ws-tools">
+            <span class="ws-tool">Clay</span>
+            <span class="ws-tool">Apollo AI</span>
+            <span class="ws-tool">Instantly.ai</span>
+            <span class="ws-tool">Claude</span>
+            <span class="ws-tool">Fathom</span>
+            <span class="ws-tool">n8n</span>
+            <span class="ws-tool">HubSpot AI</span>
+          </div>
+          <ul class="ws-outcomes">
+            <li>A working prospect list built in Clay with your real ICP — Day 1</li>
+            <li>Personalized cold email sequences at scale, without copy-paste</li>
+            <li>AI call prep and live role-play against a simulated prospect</li>
+            <li>Call notes and emails auto-logged to your CRM</li>
+            <li>A full AI sales workflow demoed to the group on Day 3</li>
+          </ul>
         </div>
-        <a href="/workshop-register" class="btn-card">Reserve a seat &rarr;</a>
-      </div>
-    </div>
-
-    <!-- WS2 -->
-    <div class="ws-card">
-      <div class="ws-card-header">
-        <div class="ws-card-tag">Workshop 2 &nbsp;&middot;&nbsp; Sep 9–11, 2026</div>
-        <div class="ws-card-title">Build Your First AI Agent</div>
-        <div class="ws-card-meta">Tue – Wed – Thu &nbsp;&middot;&nbsp; 9am–5pm &nbsp;&middot;&nbsp; Austin TX</div>
-      </div>
-      <div class="ws-card-body">
-        <p class="ws-desc">For founders, operators, and product people who want AI doing real work for them. No coding required. You pick a problem from your own work on Day 1 and spend 3 days building an agent that solves it.</p>
-        <div class="tool-row">
-          <span class="tool-tag">n8n</span>
-          <span class="tool-tag">Claude API</span>
-          <span class="tool-tag">OpenAI</span>
-          <span class="tool-tag">Airtable</span>
-          <span class="tool-tag">Google Sheets</span>
-          <span class="tool-tag">Slack API</span>
-          <span class="tool-tag">Zapier</span>
-          <span class="tool-tag">Webhooks</span>
+        <div class="ws-card-footer">
+          <div>
+            <div class="ws-price-label">Early bird until Jul 8</div>
+            <div class="ws-price-amount">$999</div>
+            <div class="ws-price-note">$1,199 from Jul 9</div>
+          </div>
+          <a href="workshop-register.html" class="btn btn-primary btn-arrow">Reserve a seat </a>
         </div>
-        <ul class="outcome-list">
-          <li>Your first n8n workflow live by end of Day 1</li>
-          <li>An agent that reads and writes real data — Sheets, Airtable, Notion</li>
-          <li>Outputs to Slack, email, or docs — triggered automatically</li>
-          <li>Error handling so your agent doesn't silently break</li>
-          <li>A working agent solving your actual problem, demoed on Day 3</li>
-        </ul>
       </div>
-      <div class="ws-card-footer">
-        <div>
-          <div class="ws-price-from">Early bird until Aug 19</div>
-          <div class="ws-price-amount">$999</div>
-          <div class="ws-price-note">$1,199 from Aug 20</div>
+
+      <!-- WS2: Agent -->
+      <div class="ws-card reveal reveal-d2">
+        <div class="ws-card-header">
+          <div class="ws-card-tag">Workshop 2 &nbsp;&middot;&nbsp; Sep 9–11, 2026</div>
+          <div class="ws-card-title">Build Your First AI Agent</div>
+          <div class="ws-card-meta">Tue – Wed – Thu &nbsp;&middot;&nbsp; 9am–5pm &nbsp;&middot;&nbsp; Austin TX</div>
         </div>
-        <a href="/workshop-register" class="btn-card">Reserve a seat &rarr;</a>
-      </div>
-    </div>
-
-    <!-- WS3 -->
-    <div class="ws-card">
-      <div class="ws-card-header">
-        <div class="ws-card-tag">Workshop 3 &nbsp;&middot;&nbsp; Sep 23–25, 2026</div>
-        <div class="ws-card-title">AI for Operations &amp; Productivity</div>
-        <div class="ws-card-meta">Tue – Wed – Thu &nbsp;&middot;&nbsp; 9am–5pm &nbsp;&middot;&nbsp; Austin TX</div>
-      </div>
-      <div class="ws-card-body">
-        <p class="ws-desc">For ops managers, chiefs of staff, EAs, and business owners. Map your biggest recurring time drains on Day 1, then spend 3 days automating them — meeting summaries, status reports, document processing, and workflow triggers.</p>
-        <div class="tool-row">
-          <span class="tool-tag">Fathom</span>
-          <span class="tool-tag">Claude</span>
-          <span class="tool-tag">n8n</span>
-          <span class="tool-tag">Zapier</span>
-          <span class="tool-tag">Notion AI</span>
-          <span class="tool-tag">Google Sheets</span>
-          <span class="tool-tag">Slack Workflows</span>
+        <div class="ws-card-body">
+          <p class="ws-desc">For founders, operators, and product people who want AI doing real work for them. No coding required. You pick a problem from your own work on Day 1 and spend 3 days building an agent that solves it.</p>
+          <div class="ws-tools">
+            <span class="ws-tool">n8n</span>
+            <span class="ws-tool">Claude API</span>
+            <span class="ws-tool">OpenAI</span>
+            <span class="ws-tool">Airtable</span>
+            <span class="ws-tool">Google Sheets</span>
+            <span class="ws-tool">Slack API</span>
+            <span class="ws-tool">Zapier</span>
+          </div>
+          <ul class="ws-outcomes">
+            <li>Your first n8n workflow live by end of Day 1</li>
+            <li>An agent that reads and writes real data — Sheets, Airtable, Notion</li>
+            <li>Outputs to Slack, email, or docs — triggered automatically</li>
+            <li>Error handling so your agent doesn't silently break</li>
+            <li>A working agent solving your actual problem, demoed on Day 3</li>
+          </ul>
         </div>
-        <ul class="outcome-list">
-          <li>Auto-transcribed meeting summaries pushed to Notion/Slack — Day 1</li>
-          <li>A document processor that extracts structured data from any doc type</li>
-          <li>Weekly status reports that write themselves from live data</li>
-          <li>An internal knowledge base your team can query in Slack</li>
-          <li>A full ops automation system demoed live on Day 3</li>
-        </ul>
-      </div>
-      <div class="ws-card-footer">
-        <div>
-          <div class="ws-price-from">Early bird until Sep 2</div>
-          <div class="ws-price-amount">$999</div>
-          <div class="ws-price-note">$1,199 from Sep 3</div>
+        <div class="ws-card-footer">
+          <div>
+            <div class="ws-price-label">Early bird until Aug 19</div>
+            <div class="ws-price-amount">$999</div>
+            <div class="ws-price-note">$1,199 from Aug 20</div>
+          </div>
+          <a href="workshop-register.html" class="btn btn-primary btn-arrow">Reserve a seat </a>
         </div>
-        <a href="/workshop-register" class="btn-card">Reserve a seat &rarr;</a>
       </div>
-    </div>
 
-  </div>
-</div>
+      <!-- WS3: Ops -->
+      <div class="ws-card reveal reveal-d3">
+        <div class="ws-card-header">
+          <div class="ws-card-tag">Workshop 3 &nbsp;&middot;&nbsp; Sep 23–25, 2026</div>
+          <div class="ws-card-title">AI for Operations &amp; Productivity</div>
+          <div class="ws-card-meta">Tue – Wed – Thu &nbsp;&middot;&nbsp; 9am–5pm &nbsp;&middot;&nbsp; Austin TX</div>
+        </div>
+        <div class="ws-card-body">
+          <p class="ws-desc">For ops managers, chiefs of staff, EAs, and business owners. Map your biggest recurring time drains on Day 1, then spend 3 days automating them — meeting summaries, status reports, document processing, workflow triggers.</p>
+          <div class="ws-tools">
+            <span class="ws-tool">Fathom</span>
+            <span class="ws-tool">Claude</span>
+            <span class="ws-tool">n8n</span>
+            <span class="ws-tool">Zapier</span>
+            <span class="ws-tool">Notion AI</span>
+            <span class="ws-tool">Google Sheets</span>
+            <span class="ws-tool">Slack Workflows</span>
+          </div>
+          <ul class="ws-outcomes">
+            <li>Auto-transcribed meeting summaries pushed to Notion/Slack — Day 1</li>
+            <li>A document processor that extracts structured data from any file</li>
+            <li>Weekly status reports that write themselves from live data</li>
+            <li>An internal knowledge base your team can query in Slack</li>
+            <li>A full ops automation system demoed live on Day 3</li>
+          </ul>
+        </div>
+        <div class="ws-card-footer">
+          <div>
+            <div class="ws-price-label">Early bird until Sep 2</div>
+            <div class="ws-price-amount">$999</div>
+            <div class="ws-price-note">$1,199 from Sep 3</div>
+          </div>
+          <a href="workshop-register.html" class="btn btn-primary btn-arrow">Reserve a seat </a>
+        </div>
+      </div>
 
-
-<!-- WHAT YOU LEAVE WITH -->
-<div class="section-wrap" style="padding-top: 0">
-  <div class="section-label">What you get</div>
-  <h2>Not slides. Things that are running.</h2>
-  <p class="section-sub">Every session ends with something built. By Day 3 you have a real system — not a plan to build one later.</p>
-  <div class="build-grid">
-    <div class="build-card">
-      <div class="build-num">01</div>
-      <div class="build-title">A working system</div>
-      <div class="build-desc">You build with your actual data, your actual tools, your actual problem. Not a demo. Not a made-up exercise.</div>
-    </div>
-    <div class="build-card">
-      <div class="build-num">02</div>
-      <div class="build-title">Tools you'll keep using</div>
-      <div class="build-desc">Accounts set up. Workflows live. You leave knowing how to extend what you built — not just knowing that the tools exist.</div>
-    </div>
-    <div class="build-card">
-      <div class="build-num">03</div>
-      <div class="build-title">What to build next</div>
-      <div class="build-desc">Day 3 ends with a personal roadmap. Plus 30 days of Slack access if you get stuck after the workshop.</div>
     </div>
   </div>
-</div>
+</section>
+
+
+<!-- WHAT YOU GET -->
+<section class="section section--alt">
+  <div class="container">
+    <div style="text-align:center;">
+      <div class="section-label reveal" style="justify-content:center;">What you get</div>
+      <h2 class="reveal">Not slides. Things that are <span class="text-accent">running.</span></h2>
+      <p class="section-sub reveal" style="margin:var(--s3) auto 0;max-width:520px;">Every session ends with something built. By Day 3 you have a real system — not a plan to build one later.</p>
+    </div>
+
+    <div class="ws-get-grid">
+      <div class="ws-get-card reveal reveal-d1">
+        <div class="ws-get-num">01</div>
+        <div class="ws-get-title">A working system</div>
+        <div class="ws-get-desc">You build with your actual data, your actual tools, your actual problem. Not a demo. Not a made-up exercise. Something that runs when you leave the room.</div>
+      </div>
+      <div class="ws-get-card reveal reveal-d2">
+        <div class="ws-get-num">02</div>
+        <div class="ws-get-title">Tools you'll keep using</div>
+        <div class="ws-get-desc">Accounts set up. Workflows live. You leave knowing how to extend what you built — not just knowing that the tools exist. No "I'll figure it out later."</div>
+      </div>
+      <div class="ws-get-card reveal reveal-d3">
+        <div class="ws-get-num">03</div>
+        <div class="ws-get-title">A clear next step</div>
+        <div class="ws-get-desc">Day 3 ends with a personal roadmap of what to build next. Plus 30 days of Slack access to the instructor if you hit a wall after the workshop.</div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 <!-- PRICING -->
-<div class="pricing-outer" id="pricing">
-  <div class="section-wrap">
-    <div class="pricing-intro">
-      <div class="section-label">Pricing</div>
-      <h2>Simple. The earlier you book, the less you pay.</h2>
-      <p class="section-sub">Same seats, same experience for everyone. Price is based on when you register, not who you are.</p>
+<section class="section" id="pricing">
+  <div class="container">
+    <div style="text-align:center;">
+      <div class="section-label reveal" style="justify-content:center;">Pricing</div>
+      <h2 class="reveal">Simple. <span class="text-accent">Earlier is cheaper.</span></h2>
+      <p class="section-sub reveal" style="margin:var(--s3) auto 0;max-width:480px;">Same seats, same experience for everyone. Price is based on when you register, not who you are.</p>
     </div>
 
-    <div class="pricing-cols">
-      <div class="pricing-box">
-        <div class="pricing-box-head">
+    <div class="ws-pricing-grid">
+      <div class="ws-pricing-box">
+        <div class="ws-pricing-box-head" style="background:var(--white);">
           <h3>Workshop Seats</h3>
-          <p>Open to individuals and teams. Same price whether you're sending yourself or a colleague.</p>
+          <p>Open to individuals and teams. Same price whether you're sending yourself or a colleague. Buy multiple seats at the same tier — no special process needed.</p>
         </div>
-        <div class="pricing-box-body">
-          <div class="tier-row highlight">
+        <div class="ws-pricing-box-body">
+          <div class="ws-tier ws-tier--highlight">
             <div>
-              <div class="tier-name">Early Bird</div>
-              <div class="tier-desc">Until 3 weeks before start date</div>
+              <div class="ws-tier-name">Early Bird</div>
+              <div class="ws-tier-desc">Until 3 weeks before start date</div>
             </div>
-            <div class="tier-price">$999<span class="per">per person</span></div>
+            <div class="ws-tier-price">$999<small>per person</small></div>
           </div>
-          <div class="tier-row">
+          <div class="ws-tier">
             <div>
-              <div class="tier-name">Regular</div>
-              <div class="tier-desc">After early bird closes</div>
+              <div class="ws-tier-name">Regular</div>
+              <div class="ws-tier-desc">After early bird closes</div>
             </div>
-            <div class="tier-price">$1,199<span class="per">per person</span></div>
+            <div class="ws-tier-price">$1,199<small>per person</small></div>
           </div>
-          <p class="pricing-note-small">Bringing a few colleagues? Buy multiple seats at the same tier — no special process needed. Invoice available on request.</p>
+          <p class="ws-pricing-note">Invoice available on request. Email <a href="mailto:marliis@makersquare.ai">marliis@makersquare.ai</a> for PO-based payment.</p>
         </div>
       </div>
 
-      <div class="pricing-box dark">
-        <div class="pricing-box-head">
+      <div class="ws-pricing-box ws-pricing-box--dark">
+        <div class="ws-pricing-box-head">
           <h3>Private Team Session</h3>
-          <p>Your team only. Your dates. Content adapted to your tools and use cases.</p>
+          <p>Your team only. Your dates. Content adapted to your tools and use cases. Austin venue or on-site at your office.</p>
         </div>
-        <div class="pricing-box-body">
-          <div class="tier-row highlight">
+        <div class="ws-pricing-box-body">
+          <div class="ws-tier ws-tier--highlight">
             <div>
-              <div class="tier-name">Custom quote</div>
-              <div class="tier-desc">Based on team size and workshop topic</div>
+              <div class="ws-tier-name">Custom quote</div>
+              <div class="ws-tier-desc">Based on team size and workshop topic</div>
             </div>
-            <div class="tier-price" style="font-size:0.95rem;font-weight:600">Proposal in 24hrs<span class="per">invoice + PO friendly</span></div>
+            <div class="ws-tier-price" style="font-size:0.9rem;font-weight:600;">Proposal in 24hrs<small>invoice + PO friendly</small></div>
           </div>
-          <div class="tier-row">
+          <div class="ws-tier">
             <div>
-              <div class="tier-name">What's included</div>
-              <div class="tier-desc">Same 3-day curriculum &nbsp;&middot;&nbsp; adapted for your context &nbsp;&middot;&nbsp; you choose the dates &nbsp;&middot;&nbsp; Austin venue or on-site</div>
+              <div class="ws-tier-name">What's included</div>
+              <div class="ws-tier-desc">Same 3-day curriculum &nbsp;&middot;&nbsp; adapted for your context &nbsp;&middot;&nbsp; you choose the dates</div>
             </div>
           </div>
-          <p class="pricing-note-small" style="color:#aaa">Email <a href="mailto:marliis@makersquare.ai" style="color:#81AAFB">marliis@makersquare.ai</a> and we'll send a proposal within 24 hours.</p>
+          <p class="ws-pricing-note">Email <a href="mailto:marliis@makersquare.ai">marliis@makersquare.ai</a> — we'll send a proposal within 24 hours.</p>
         </div>
       </div>
     </div>
 
-    <div class="pricing-cta">
-      <p>Early bird seats for July 29–31 are open now.</p>
-      <a href="/workshop-register" class="btn-primary">Reserve your seat &rarr;</a>
+    <div style="text-align:center;margin-top:var(--s7);">
+      <p class="reveal" style="font-size:0.88rem;color:var(--text-muted);margin-bottom:var(--s4);">Early bird seats for July 29–31 are open now.</p>
+      <a href="workshop-register.html" class="btn btn-primary btn-lg btn-arrow reveal">Reserve your seat </a>
     </div>
   </div>
-</div>
+</section>
 
 
 <!-- PRIVATE TEAM -->
-<div class="section-wrap" id="private">
-  <div class="private-banner">
-    <div>
-      <h2>Training for your whole team?</h2>
-      <p>We run private sessions for companies who want their team trained together — same curriculum, tailored to your tools, your industry, and your specific use cases. You pick the dates.</p>
-      <div class="private-details">
-        <div class="private-detail">
-          <div class="label">Team size</div>
-          <div class="value">3–10 people</div>
-        </div>
-        <div class="private-detail">
-          <div class="label">Duration</div>
-          <div class="value">3 days</div>
-        </div>
-        <div class="private-detail">
-          <div class="label">Location</div>
-          <div class="value">Austin TX or on-site</div>
-        </div>
-        <div class="private-detail">
-          <div class="label">Scheduling</div>
-          <div class="value">You pick the dates</div>
+<section class="section section--alt" id="private">
+  <div class="container">
+    <div class="ws-private reveal">
+      <div>
+        <div class="section-label" style="color:var(--sky);margin-bottom:var(--s3);">Private team training</div>
+        <h3>Training for your whole team?</h3>
+        <p>We run private sessions for companies who want their team trained together — same curriculum, tailored to your tools, your industry, and your specific use cases. You pick the dates. You choose the topic.</p>
+        <div class="ws-private-details">
+          <div class="ws-private-detail">
+            <div class="ws-pd-label">Team size</div>
+            <div class="ws-pd-value">3–15 people</div>
+          </div>
+          <div class="ws-private-detail">
+            <div class="ws-pd-label">Duration</div>
+            <div class="ws-pd-value">3 days</div>
+          </div>
+          <div class="ws-private-detail">
+            <div class="ws-pd-label">Location</div>
+            <div class="ws-pd-value">Austin TX or on-site</div>
+          </div>
+          <div class="ws-private-detail">
+            <div class="ws-pd-label">Scheduling</div>
+            <div class="ws-pd-value">You pick the dates</div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="private-cta-box">
-      <div class="price-big">Custom<span class="sub">quote based on team size</span></div>
-      <div class="price-custom">Proposal within 24 hours</div>
-      <a href="mailto:marliis@makersquare.ai" class="btn-white" style="margin-top:20px">Get a proposal &rarr;</a>
+      <div class="ws-private-cta">
+        <div class="ws-price-big">Custom<small>quote based on team size</small></div>
+        <p>Proposal within 24 hours</p>
+        <a href="mailto:marliis@makersquare.ai" class="btn btn-primary btn-arrow">Get a proposal </a>
+      </div>
     </div>
   </div>
-</div>
+</section>
 
 
 <!-- FAQ -->
-<div class="section-wrap">
-  <div class="section-label">Questions</div>
-  <h2>What people ask before booking</h2>
-  <div class="faq-list" style="margin-top:28px">
-    <div class="faq-item">
-      <div class="faq-q">Do I need a technical background?</div>
-      <div class="faq-a">No. These workshops are designed for professionals who are experts in their field, not engineers. If you can use a spreadsheet, you can build in these workshops.</div>
+<section class="section">
+  <div class="container">
+    <div style="text-align:center;">
+      <div class="section-label reveal" style="justify-content:center;">FAQ</div>
+      <h2 class="reveal">Questions people ask <span class="text-accent">before booking.</span></h2>
     </div>
-    <div class="faq-item">
-      <div class="faq-q">How is this different from online courses or YouTube tutorials?</div>
-      <div class="faq-a">You're building with your actual data, your actual tools, and your actual problem — not a made-up exercise. And when you get stuck, a real instructor unblocks you in real time. Online courses don't do that.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q">What if I can't commit to 3 full days?</div>
-      <div class="faq-a">Each day builds on the last — missing one means missing foundational work. If 3 consecutive days is a stretch, the private team format lets you break it into a custom schedule.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q">Can my company pay by invoice?</div>
-      <div class="faq-a">Yes. Email marliis@makersquare.ai and we'll send a proposal and invoice within 24 hours. PO-based payment is supported.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q">What's the refund policy?</div>
-      <div class="faq-a">Full refund up to 14 days before the workshop start date. 50% refund up to 48 hours before. No refund after the workshop begins.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q">How is this different from MakerSquare's 2-week program?</div>
-      <div class="faq-a">The 2-week program is a deep immersive — you build 3 full AI products, go from zero to shipping real software, and it's designed for people making a career shift. Workshops are focused skill sprints for working professionals who need specific capabilities now. Many workshop attendees go on to enroll in the full program.</div>
+
+    <div class="faq-list" style="margin-top:var(--s7);max-width:740px;margin-left:auto;margin-right:auto;">
+      <div class="faq-item reveal"><button class="faq-question">Do I need a technical background?<span class="faq-chevron">&#9660;</span></button><div class="faq-answer"><div class="faq-answer-inner">No. These workshops are designed for professionals who are experts in their field, not engineers. If you can use a spreadsheet, you can build in these workshops.</div></div></div>
+      <div class="faq-item reveal"><button class="faq-question">How is this different from online courses or YouTube tutorials?<span class="faq-chevron">&#9660;</span></button><div class="faq-answer"><div class="faq-answer-inner">You're building with your actual data, your actual tools, and your actual problem — not a made-up exercise. And when you get stuck, a real instructor unblocks you in real time. Online courses don't do that.</div></div></div>
+      <div class="faq-item reveal"><button class="faq-question">How is this different from MakerSquare's 2-week program?<span class="faq-chevron">&#9660;</span></button><div class="faq-answer"><div class="faq-answer-inner">The 2-week program is a deep immersive — you build 3 full AI products, go from zero to shipping real software, and leave with a Demo Day presentation. Workshops are focused skill sprints for working professionals who need specific capabilities now. Many workshop attendees go on to enroll in the full program. Workshop alumni get $200 off with code WORKSHOP200.</div></div></div>
+      <div class="faq-item reveal"><button class="faq-question">What if I can't commit to 3 full days?<span class="faq-chevron">&#9660;</span></button><div class="faq-answer"><div class="faq-answer-inner">Each day builds on the last — missing one means missing foundational work. If 3 consecutive days is a stretch, the private team format lets you break it into a custom schedule.</div></div></div>
+      <div class="faq-item reveal"><button class="faq-question">Can my company pay by invoice?<span class="faq-chevron">&#9660;</span></button><div class="faq-answer"><div class="faq-answer-inner">Yes. Email <a href="mailto:marliis@makersquare.ai" style="color:var(--indigo);font-weight:600;">marliis@makersquare.ai</a> and we'll send a proposal and invoice within 24 hours. PO-based payment is supported.</div></div></div>
+      <div class="faq-item reveal"><button class="faq-question">What's the refund policy?<span class="faq-chevron">&#9660;</span></button><div class="faq-answer"><div class="faq-answer-inner">Full refund up to 14 days before the workshop start date. 50% refund up to 48 hours before. No refund after the workshop begins.</div></div></div>
     </div>
   </div>
-</div>
+</section>
 
 
 <!-- CROSS-SELL -->
-<div class="crosssell">
-  <div class="crosssell-inner">
-    <p><strong>Want to go deeper?</strong> The 2-week MakerSquare program is the full build — 3 complete AI products, shipped and presented at a public Demo Day. Workshop attendees get <strong>$200 off</strong> with code <strong>WORKSHOP200</strong>.</p>
-    <a href="/curriculum" class="btn-primary" style="font-size:0.88rem">See the 2-week program &rarr;</a>
+<section class="section section--alt">
+  <div class="container">
+    <div class="ws-crosssell reveal">
+      <div class="section-label" style="justify-content:center;margin-bottom:var(--s3);">Want to go deeper?</div>
+      <p>The <strong>2-week MakerSquare program</strong> is the full build — 3 complete AI products, shipped and presented at a public Demo Day in Austin. Workshop alumni get <strong>$200 off</strong> with code <strong>WORKSHOP200</strong>.</p>
+      <a href="curriculum.html" class="btn btn-primary btn-arrow">See the 2-week program </a>
+    </div>
   </div>
-</div>
+</section>
 
 
-<!-- BOTTOM CTA -->
-<div class="bottom-cta">
-  <h2>Ready to build something real?</h2>
-  <p>Early bird seats for July 29–31 are open now. Small cohort — they go fast.</p>
-  <div class="bottom-cta-links">
-    <a href="/workshop-register" class="btn-white">Reserve a seat &mdash; from $999</a>
-    <a href="mailto:marliis@makersquare.ai" class="btn-white-outline">Questions? Email us</a>
+<!-- FINAL CTA -->
+<section class="section section--dark" style="padding:var(--s12) 0;">
+  <div class="container" style="text-align:center;">
+    <div class="section-label reveal" style="justify-content:center;color:var(--sky);">Ready to build something real?</div>
+    <h2 class="reveal" style="color:var(--white);font-size:clamp(1.8rem,4vw,2.8rem);margin-bottom:var(--s4);">Early bird seats for<br><span style="color:var(--sky);">July 29–31 are open now.</span></h2>
+    <p class="reveal" style="color:rgba(255,255,255,0.6);max-width:440px;margin:0 auto var(--s7);font-size:0.95rem;line-height:1.7;">Small cohort — they go fast. 3 days, Austin TX, from $999.</p>
+    <div class="reveal" style="display:flex;gap:var(--s3);justify-content:center;flex-wrap:wrap;">
+      <a href="workshop-register.html" class="btn btn-primary btn-lg btn-arrow">Reserve a seat — from $999 </a>
+      <a href="mailto:marliis@makersquare.ai" class="btn btn-ghost btn-lg" style="color:rgba(255,255,255,0.75);border-color:rgba(255,255,255,0.2);">Questions? Email us</a>
+    </div>
   </div>
-</div>
+</section>
 
 
 <!-- FOOTER -->
-<footer>
-  <a href="https://www.makersquare.ai" class="logo">Maker<span>Square</span></a>
-  <p>Austin, TX &nbsp;&middot;&nbsp; In-person AI training for working professionals</p>
-  <a href="https://www.makersquare.ai">makersquare.ai</a>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo"><img src="logo-dark.png" alt="MakerSquare — School of Applied AI"></a><div class="footer-tagline">School of Applied AI</div>
+        <p>2-week in-person AI intensive in Austin, TX for operators, founders, and professionals.</p>
+        <a href="enroll.html" class="btn btn-primary btn-arrow" style="font-size:0.82rem;padding:10px 20px;">Secure Your Spot </a>
+      </div>
+      <div>
+        <div class="footer-col-title">Program</div>
+        <ul class="footer-col-links">
+          <li><a href="use-cases.html">Use Cases</a></li>
+          <li><a href="curriculum.html">Curriculum</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="enroll.html">Enroll</a></li>
+          <li><a href="scholarship.html">Scholarship</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="demo-day.html">Demo Day</a></li>
+          <li><a href="workshops.html">Workshops</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Company</div>
+        <ul class="footer-col-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="corporate.html">Corporate Training</a></li>
+          <li><a href="comparison.html">How We Compare</a></li>
+          <li><a href="alumni.html">Alumni</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Contact</div>
+        <a href="mailto:hello@makersquare.ai" class="footer-contact-email">hello@makersquare.ai</a>
+        <p style="font-size:0.82rem;color:rgba(255,255,255,0.4);">Austin, TX</p>
+        <div class="footer-social"><a href="https://www.linkedin.com/company/makersquare-ai" target="_blank" rel="noopener" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>Follow us on LinkedIn</a><a href="https://www.meetup.com/makersquare-ai/" target="_blank" rel="noopener" aria-label="Meetup"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="width:15px;height:15px;fill:currentColor;flex-shrink:0;"><path d="M19.24 0H4.76A4.76 4.76 0 000 4.76v14.48A4.76 4.76 0 004.76 24h14.48A4.76 4.76 0 0024 19.24V4.76A4.76 4.76 0 0019.24 0zM8.64 16.8c-.48.12-.97-.12-1.2-.56L5.28 11.6a1 1 0 011.8-.88l1.56 3.16 3.84-7.8a1 1 0 011.8.88l-4.2 8.52a1 1 0 01-.44.52zm9.12-1.12a1 1 0 01-1.32.48l-2.16-1.04-1.04 2.16a1 1 0 01-1.8-.88l1.32-2.72 2.72 1.32-.48-2.96a1 1 0 011.96-.32l.64 3.96h.16z"/></svg>Events</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">&copy; 2026 MakerSquare LLC. Austin, TX.</div>
+      <div class="footer-bottom-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </div>
+    </div>
+  </div>
 </footer>
 
+<script src="js/main.min.js"></script>
 <script type="text/javascript" src="https://forms.zoho.com/js/zf_gclid.js"></script>
+<script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script><script id="zsiqscript" src="https://salesiq.zohopublic.com/widget?wc=siq885ea214ffc25f4f452068cc9bc1cec4353b0ff61817b77233444928d383fe96" defer></script>
 </body>
 </html>
