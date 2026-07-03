@@ -254,6 +254,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <li><a href="enroll.html" class="nav-apply">Enroll</a></li>
     </ul>
     <div class="nav-right">
+      <button type="button" class="btn btn-ghost" data-lt-trigger style="white-space:nowrap;">Let's Talk</button>
       <a href="enroll.html" class="btn btn-primary btn-arrow" style="white-space:nowrap;">Secure Your Spot </a>
       <div class="nav-social"><a href="https://www.linkedin.com/company/makersquare-ai" target="_blank" rel="noopener" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>Follow us</a></div>
       <button class="nav-hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
@@ -271,6 +272,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <li><a href="enroll.html">Enroll</a></li>
   </ul>
   <a href="enroll.html" class="btn btn-primary btn-block btn-lg" style="margin-top:24px;">Secure Your Spot</a>
+  <button type="button" class="btn btn-ghost btn-block btn-lg" data-lt-trigger style="margin-top:12px;">Let's Talk</button>
 </div>
 
 <nav class="breadcrumbs" aria-label="Breadcrumb">
@@ -586,6 +588,114 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </footer>
 
+<!-- Let's Talk (book a call) modal -->
+<div id="lt-modal" class="cm-modal" role="dialog" aria-modal="true" aria-labelledby="lt-modal-title" aria-hidden="true">
+  <div class="cm-modal__backdrop" data-lt-close></div>
+  <div class="cm-modal__dialog">
+    <button type="button" class="cm-modal__close" aria-label="Close" data-lt-close>&times;</button>
+    <div class="cm-modal__head">
+      <h3 id="lt-modal-title">Let's talk</h3>
+      <p>Tell us a bit about what you're working on and pick a time that fits. It's a quick 15-minute call, no prep needed.</p>
+    </div>
+    <div class="cm-modal__body">
+      <div id="zf_div_bookcall"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var modal = document.getElementById('lt-modal');
+  if(!modal) return;
+  var iframeMounted = false;
+  var lastFocused = null;
+
+  function mountIframe(){
+    if(iframeMounted) return;
+    iframeMounted = true;
+    try{
+      var f = document.createElement('iframe');
+      var ifrmSrc = 'https://forms.zohopublic.com/makersquare/form/Bookyourcall/formperma/QhUmSj0eZVSD4t1kRDrV8BfgTOxUamerj-v7ZB2_K_w?zf_rszfm=1';
+      try{
+        if (typeof ZFAdvLead != 'undefined' && typeof zfutm_zfAdvLead != 'undefined') {
+          for (var i = 0; i < ZFAdvLead.utmPNameArr.length; i++) {
+            var utmPm = ZFAdvLead.utmPNameArr[i];
+            utmPm = (ZFAdvLead.isSameDomian && (ZFAdvLead.utmcustPNameArr.indexOf(utmPm) == -1)) ? 'zf_' + utmPm : utmPm;
+            var utmVal = zfutm_zfAdvLead.zfautm_gC_enc(ZFAdvLead.utmPNameArr[i]);
+            if (typeof utmVal !== 'undefined' && utmVal !== '') {
+              ifrmSrc += (ifrmSrc.indexOf('?') > 0 ? '&' : '?') + utmPm + '=' + utmVal;
+            }
+          }
+        }
+        if (typeof ZFLead !== 'undefined' && typeof zfutm_zfLead !== 'undefined') {
+          for (var j = 0; j < ZFLead.utmPNameArr.length; j++) {
+            var utmPm2 = ZFLead.utmPNameArr[j];
+            var utmVal2 = zfutm_zfLead.zfutm_gC_enc(ZFLead.utmPNameArr[j]);
+            if (typeof utmVal2 !== 'undefined' && utmVal2 !== '') {
+              ifrmSrc += (ifrmSrc.indexOf('?') > 0 ? '&' : '?') + utmPm2 + '=' + utmVal2;
+            }
+          }
+        }
+      }catch(e){}
+      f.src = ifrmSrc;
+      f.style.border = 'none';
+      f.style.height = '800px';
+      f.style.width = '100%';
+      f.style.maxWidth = '560px';
+      f.style.display = 'block';
+      f.style.transition = 'all 0.5s ease';
+      f.setAttribute('aria-label', "Let's talk - Book your 15min call");
+      var d = document.getElementById('zf_div_bookcall');
+      d.appendChild(f);
+      window.addEventListener('message', function(e){
+        var evntData = e.data;
+        if (evntData && evntData.constructor == String) {
+          var zf_ifrm_data = evntData.split('|');
+          if (zf_ifrm_data.length == 2 || zf_ifrm_data.length == 3) {
+            var zf_perma = zf_ifrm_data[0];
+            var zf_ifrm_ht_nw = (parseInt(zf_ifrm_data[1], 10) + 15) + 'px';
+            var iframe = document.getElementById('zf_div_bookcall').getElementsByTagName('iframe')[0];
+            if (iframe && (iframe.src).indexOf('formperma') > 0 && (iframe.src).indexOf(zf_perma) > 0) {
+              if (iframe.style.height != zf_ifrm_ht_nw) {
+                iframe.style.height = zf_ifrm_ht_nw;
+              }
+            }
+          }
+        }
+      }, false);
+    }catch(e){}
+  }
+
+  function openModal(trigger){
+    lastFocused = trigger || document.activeElement;
+    mountIframe();
+    modal.classList.add('open');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('cm-modal-open');
+    var closeBtn = modal.querySelector('.cm-modal__close');
+    if(closeBtn) closeBtn.focus();
+  }
+
+  function closeModal(){
+    modal.classList.remove('open');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('cm-modal-open');
+    if(lastFocused && lastFocused.focus) lastFocused.focus();
+  }
+
+  document.querySelectorAll('[data-lt-trigger]').forEach(function(btn){
+    btn.addEventListener('click', function(){ openModal(btn); });
+  });
+
+  modal.querySelectorAll('[data-lt-close]').forEach(function(el){
+    el.addEventListener('click', closeModal);
+  });
+
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && modal.classList.contains('open')) closeModal();
+  });
+})();
+</script>
 <script src="js/main.min.js"></script>
 <script>
 var galleryImages = [
