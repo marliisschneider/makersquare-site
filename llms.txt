@@ -94,6 +94,30 @@ Marliis Schneider, Founder & CEO. Background in operations, business development
 
 Ravi Parikh — Co-founder, MakerSquare. Austin-based serial entrepreneur; co-founded the original MakerSquare (acquired by Hack Reactor) and is CEO of RoverPass. Additional advisors from Austin's operator, investor, and AI community being assembled.
 
+## Mini-Workshops (3-Day Intensives)
+
+In addition to the 2-week program, MakerSquare runs 3-day in-person AI workshops in Austin, TX. These are focused skill sprints for working professionals who need a specific capability now — not a career change. No coding required.
+
+### 2026 Workshop Schedule
+
+- Workshop 1: July 29–31, 2026 — AI for Sales Teams. Tools: Clay, Apollo AI, Instantly.ai, Claude, Fathom, n8n, Zapier, HubSpot AI. Attendees build a working AI-powered prospecting and outreach system on their real pipeline.
+- Workshop 2: September 9–11, 2026 — Build Your First AI Agent. Tools: n8n, Claude API, OpenAI, Airtable, Google Sheets, Slack API, Zapier, Webhooks. Attendees build a working AI agent that solves a real problem from their own work.
+- Workshop 3: September 23–25, 2026 — AI for Operations & Productivity. Tools: Fathom, Claude, n8n, Zapier, Notion AI, Google Sheets, Slack Workflows. Attendees automate their biggest recurring time drains.
+
+### Workshop Pricing
+
+- Early Bird: $999 per person (until 3 weeks before start date)
+- Regular: $1,199 per person (after early bird closes)
+- Private Team Session: custom quote (same 3-day curriculum, your team only, your dates, content adapted to your tools and use cases — proposal within 24 hours)
+
+### What Attendees Leave With
+
+Not slides. Not certificates. A working system built on their actual data and tools, with 30 days of Slack access for follow-up. Day 3 ends with a live demo and a personal roadmap for what to build next.
+
+### Workshop vs. 2-Week Program
+
+Workshops are focused skill sprints for people who need one specific capability now. The 2-week program is for people who want to ship 3 complete AI products and make a deeper career transition. Workshop attendees get $200 off the 2-week program with code WORKSHOP200.
+
 ## Contact & Links
 
 - Website: https://www.makersquare.ai/
@@ -106,5 +130,6 @@ Ravi Parikh — Co-founder, MakerSquare. Austin-based serial entrepreneur; co-fo
 - Housing: https://www.makersquare.ai/housing
 - Team: https://www.makersquare.ai/team
 - Use Cases by Industry: https://www.makersquare.ai/use-cases
-- Email: hello@makersquare.ai
+- Workshops: https://www.makersquare.ai/workshops
+- Email: marliis@makersquare.ai
 - LinkedIn: https://www.linkedin.com/company/makersquare-ai
