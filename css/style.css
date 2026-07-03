@@ -433,3 +433,20 @@ h3 { font-size: 1.15rem; font-weight: 700; letter-spacing: -0.02em; }
 .nav-logo { flex-direction: column; align-items: center; justify-content: center; gap: 2px; }
 .nav-tagline { font-size: 0.52rem; font-weight: 700; letter-spacing: 0.045em; text-transform: uppercase; color: var(--text-secondary); line-height: 1; white-space: nowrap; }
 .footer-tagline { font-size: 0.64rem; font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase; color: rgba(255,255,255,0.5); margin: -4px 0 var(--s4); }
+
+/* Book-a-call / curriculum modal */
+.cm-modal { position: fixed; inset: 0; z-index: 9999; display: none; align-items: flex-start; justify-content: center; padding: var(--s5); overflow-y: auto; }
+.cm-modal.open { display: flex; }
+.cm-modal__backdrop { position: fixed; inset: 0; background: rgba(24,24,73,0.55); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); }
+.cm-modal__dialog { position: relative; background: var(--white); border-radius: var(--r-xl); width: 100%; max-width: 600px; padding: var(--s8) 0 var(--s4); box-shadow: 0 30px 80px rgba(24,24,73,0.25); margin: var(--s6) 0; overflow: hidden; }
+.cm-modal__close { position: absolute; top: var(--s4); right: var(--s4); width: 36px; height: 36px; border-radius: 50%; border: 1px solid rgba(24,24,73,0.08); background: var(--white); font-size: 1.4rem; line-height: 1; cursor: pointer; color: var(--text-muted); display: flex; align-items: center; justify-content: center; transition: all 0.2s; z-index: 2; }
+.cm-modal__close:hover { background: var(--light-bg); color: var(--navy); }
+.cm-modal__head { text-align: center; margin-bottom: var(--s5); padding: 0 var(--s5); }
+.cm-modal__head h3 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 800; color: var(--navy); margin-bottom: var(--s2); }
+.cm-modal__head p { font-size: 0.92rem; color: var(--text-secondary); line-height: 1.55; }
+.cm-modal__body { display: flex; justify-content: center; padding: 0 var(--s4); }
+body.cm-modal-open { overflow: hidden; }
+@media (max-width: 768px) {
+  .cm-modal { padding: 0; }
+  .cm-modal__dialog { border-radius: 0; min-height: 100vh; margin: 0; padding: var(--s7) 0 var(--s4); }
+}
