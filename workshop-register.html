@@ -237,15 +237,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="cards">
 
   <div class="card">
-    <div class="card-eyebrow">Jul 29–31, 2026 &middot; Austin TX</div>
-    <div class="card-title">AI for Sales Teams</div>
-    <div class="card-divider"></div>
-    <div class="card-price" id="ws1-price">$999</div>
-    <div class="card-tier" id="ws1-tier">Early bird &mdash; ends Jul 8</div>
-    <a class="card-btn" id="ws1-btn" href="#">Register Now &rarr;</a>
-  </div>
-
-  <div class="card">
     <div class="card-eyebrow">Sep 9–11, 2026 &middot; Austin TX</div>
     <div class="card-title">Build Your First AI Agent</div>
     <div class="card-divider"></div>
@@ -270,16 +261,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </p>
 
 <!-- ─── STRIPE PAYMENT LINKS ──────────────────────────────────────────────────
-  Replace each placeholder URL below with your real Stripe payment link.
-  Format: https://buy.stripe.com/XXXXX
-  6 links total — 2 tiers × 3 workshops.
-  Once filled in, this page needs no further changes — dates handle switching.
+  2 tiers × 2 workshops. Dates handle early-bird → regular switching — no
+  manual swaps needed. (WS1 "AI for Sales Teams" removed Jul 2026 — cancelled.)
 ──────────────────────────────────────────────────────────────────────────── -->
 <script>
-const WS1 = {
-  earlyBird: { ends: new Date('2026-07-08T23:59:59'), url: 'https://buy.stripe.com/5kQ8wOdFh7UBatffgJ6wE03', price: '$999',   tier: 'Early bird — ends Jul 8' },
-  regular:   {                                         url: 'https://buy.stripe.com/cNi00i6cP3ElgRD3y16wE04',   price: '$1,199', tier: 'Regular price' },
-};
 const WS2 = {
   earlyBird: { ends: new Date('2026-08-19T23:59:59'), url: 'https://buy.stripe.com/4gM8wOfNp6Qx0SF2tX6wE05', price: '$999',   tier: 'Early bird — ends Aug 19' },
   regular:   {                                         url: 'https://buy.stripe.com/8x26oG7gT8YF9pbc4x6wE06',   price: '$1,199', tier: 'Regular price' },
@@ -300,7 +285,6 @@ function apply(prefix, ws) {
   document.getElementById(prefix + '-tier').textContent  = a.tier;
 }
 
-apply('ws1', WS1);
 apply('ws2', WS2);
 apply('ws3', WS3);
 </script>

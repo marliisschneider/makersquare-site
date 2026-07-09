@@ -261,16 +261,17 @@ Pages marked `noindex` (like `demo-ppc.html`) are exempt from sitemap but still 
 - Deposit to hold seat: $500 (applied toward tuition)
 - Cohort size: 15 max
 - Location: Austin TX, 9am–5pm Mon–Fri
-- 2026 schedule: 8 cohorts, July–December. Cohort 1 starts July 6.
+- 2026 schedule: 5 cohorts (September cohort cancelled Jul 2026 — September is workshops month): C1 Jul 6–17 (in session), C2 Aug 3–14 (enrolling), C3 Oct 12–23, C4 Nov 9–20, C5 Nov 30–Dec 11.
 
 ### Mini-workshops (launched July 2026)
 3-day in-person AI skill sprints. Separate product — different page, different audience, different buyer.
 
 | # | Dates | Topic | Early Bird Closes |
 |---|---|---|---|
-| 1 | Jul 29–31, 2026 | AI for Sales Teams | Jul 8 |
 | 2 | Sep 9–11, 2026 | Build Your First AI Agent | Aug 19 |
 | 3 | Sep 23–25, 2026 | AI for Operations & Productivity | Sep 2 |
+
+(WS1 "AI for Sales Teams" Jul 29–31 was cancelled Jul 9, 2026 — zero registrations. Removed from the site; its 2 Stripe links are unused. Do not re-add without explicit instruction.)
 
 Pricing (date-based, same for everyone):
 - Early bird: $999 (until 3 weeks before start)
@@ -278,7 +279,10 @@ Pricing (date-based, same for everyone):
 
 Private team sessions: custom quote only — never publish a price. Internal guide: ~$950/person, min ~$4,000.
 
-Stripe: 2 payment links per workshop (6 total). `/workshop-register` uses JS date logic to auto-select — no manual swapping. Zoho form redirects to `/workshop-register` after submission. See Workshops-Strategy.md in Obsidian vault.
+Stripe: 2 payment links per workshop (4 live after WS1 removal). `/workshop-register` uses JS date logic to auto-select — no manual swapping. Zoho form redirects to `/workshop-register` after submission. See Workshops-Strategy.md in Obsidian vault.
+
+### Corporate training (elevated Jul 2026 — priority product)
+B2B is now a primary motion, not a footer link. "For Teams" is in the main nav sitewide → `/corporate`, which is the B2B hub with three offers in order: (1) private 3-day team workshop (entry offer, custom quote, proposal in 24 hrs), (2) custom company program (core offer, 8–20 people), (3) individual seats in a public cohort ($3,999). The homepage has a "Corporate AI Training" band above the workshops teaser. Never publish private-session pricing (internal guide: ~$950/person, min ~$4,000).
 
 **Cross-sell:** Workshop attendees get discount code `WORKSHOP200` ($200 off 2-week program). 2-week program FAQ links to workshops page.
 
