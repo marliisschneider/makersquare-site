@@ -75,15 +75,25 @@ twq('config','rcjjn');
 
 body {
   font-family: 'Inter', sans-serif;
-  background: #0B0B24;
+  background: radial-gradient(1200px 700px at 50% 20%, #1c1c55 0%, #0B0B24 55%, #07071a 100%);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 48px 24px;
-  gap: 20px;
+  padding: 48px 16px;
+  gap: 22px;
+  overflow-x: hidden;
 }
+body::before {
+  content: '';
+  position: fixed; inset: 0;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.035) 1px, transparent 1px);
+  background-size: 22px 22px;
+  pointer-events: none;
+}
+
+.cert-scale { transform-origin: top center; }
 
 /* ── CERTIFICATE SHELL ── */
 .cert {
@@ -93,16 +103,32 @@ body {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  border-radius: 6px;
   box-shadow:
-    0 0 0 1px rgba(64,61,216,0.4),
-    0 40px 120px rgba(0,0,0,0.75),
-    0 0 80px rgba(64,61,216,0.1);
+    0 0 0 1px rgba(64,61,216,0.5),
+    0 2px 0 rgba(129,170,251,0.25) inset,
+    0 50px 140px rgba(0,0,0,0.8),
+    0 0 120px rgba(64,61,216,0.16);
+  animation: certIn 0.9s cubic-bezier(0.22,1,0.36,1) both;
 }
+@keyframes certIn { from { opacity:0; transform: translateY(18px) scale(0.985); } }
+
+/* Holographic sheen sweep (screen only) */
+.cert::after {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(105deg, transparent 42%, rgba(255,255,255,0.16) 50%, rgba(129,170,251,0.1) 54%, transparent 62%);
+  transform: translateX(-130%);
+  animation: certSheen 7s ease-in-out infinite 1.2s;
+  pointer-events: none;
+  z-index: 60;
+}
+@keyframes certSheen { 0% { transform: translateX(-130%); } 34%, 100% { transform: translateX(130%); } }
 
 /* ── NAVY HEADER ── */
 .cert-header {
-  background: #181849;
-  height: 110px;
+  background: linear-gradient(180deg, #1d1d5c 0%, #181849 100%);
+  height: 112px;
   flex-shrink: 0;
   display: flex;
   align-items: center;
@@ -111,268 +137,124 @@ body {
   position: relative;
   overflow: hidden;
 }
-
-/* Dot texture */
 .cert-header::before {
   content: '';
-  position: absolute;
-  inset: 0;
-  background-image: radial-gradient(circle, rgba(255,255,255,0.04) 1px, transparent 1px);
-  background-size: 18px 18px;
+  position: absolute; inset: 0;
+  background-image: repeating-linear-gradient(115deg, rgba(255,255,255,0.025) 0 1px, transparent 1px 7px);
   pointer-events: none;
 }
-
-/* Central glow */
 .cert-header::after {
   content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  position: absolute; top: 50%; left: 50%;
   transform: translate(-50%, -50%);
-  width: 500px;
-  height: 160px;
-  background: radial-gradient(ellipse, rgba(64,61,216,0.18) 0%, transparent 70%);
+  width: 560px; height: 170px;
+  background: radial-gradient(ellipse, rgba(64,61,216,0.28) 0%, transparent 70%);
   pointer-events: none;
 }
 
-.cert-logo-area {
-  display: flex;
-  align-items: center;
-  position: relative;
-  z-index: 1;
-}
+.cert-logo-area { display: flex; align-items: center; position: relative; z-index: 1; }
+.cert-logo-area img { height: 30px; width: auto; }
+.cert-logo-divider { width: 1px; height: 26px; background: rgba(255,255,255,0.15); margin: 0 18px; }
+.cert-logo-sub { font-size: 9px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255,255,255,0.4); }
 
-.cert-logo-area img {
-  height: 30px;
-  width: auto;
-}
+.cert-header-center { position: absolute; left: 50%; transform: translateX(-50%); text-align: center; z-index: 1; }
+.cert-header-eyebrow { font-size: 7.5px; font-weight: 700; letter-spacing: 0.5em; text-transform: uppercase; color: #81AAFB; opacity: 0.85; margin-bottom: 7px; }
+.cert-header-title { font-family: 'Fustat', sans-serif; font-weight: 300; font-size: 18px; color: rgba(255,255,255,0.85); letter-spacing: 0.16em; }
+.cert-header-title strong { font-weight: 700; color: #fff; }
 
-.cert-logo-divider {
-  width: 1px;
-  height: 26px;
-  background: rgba(255,255,255,0.15);
-  margin: 0 18px;
-}
-
-.cert-logo-sub {
-  font-family: 'Inter', sans-serif;
-  font-size: 9px;
-  font-weight: 500;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.38);
-}
-
-.cert-header-center {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  z-index: 1;
-}
-
-.cert-header-eyebrow {
-  font-family: 'Inter', sans-serif;
-  font-size: 7.5px;
-  font-weight: 700;
-  letter-spacing: 0.45em;
-  text-transform: uppercase;
-  color: rgba(129,170,251,0.6);
-  margin-bottom: 6px;
-}
-
-.cert-header-title {
-  font-family: 'Fustat', sans-serif;
-  font-weight: 300;
-  font-size: 17px;
-  color: rgba(255,255,255,0.72);
-  letter-spacing: 0.14em;
-}
-
-.cert-header-right {
-  font-family: 'Inter', sans-serif;
-  font-size: 9px;
-  font-weight: 400;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.25);
-  text-align: right;
-  line-height: 2;
-  position: relative;
-  z-index: 1;
-}
+.cert-header-right { font-size: 8.5px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.3); text-align: right; line-height: 1.9; position: relative; z-index: 1; }
+.cert-header-right .cid { color: rgba(129,170,251,0.55); }
 
 /* Electric blue rule */
-.cert-rule {
-  height: 3px;
-  background: linear-gradient(90deg, transparent 0%, #403DD8 12%, #81AAFB 50%, #403DD8 88%, transparent 100%);
-  flex-shrink: 0;
-}
+.cert-rule { height: 3px; background: linear-gradient(90deg, transparent 0%, #403DD8 12%, #81AAFB 50%, #403DD8 88%, transparent 100%); flex-shrink: 0; }
 
 /* ── CREAM BODY ── */
 .cert-body {
   flex: 1;
   background: #FAFAF7;
-  background-image: radial-gradient(circle, rgba(24,24,73,0.045) 1px, transparent 1px);
+  background-image: radial-gradient(circle, rgba(24,24,73,0.05) 1px, transparent 1px);
   background-size: 22px 22px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 24px 80px 0;
+  padding: 26px 90px 0;
   text-align: center;
   position: relative;
   overflow: hidden;
 }
-
-/* Subtle blue glow arcs in upper corners of body */
 .cert-body::before {
   content: '';
-  position: absolute;
-  top: 0; right: 0;
-  width: 180px; height: 180px;
-  background: radial-gradient(ellipse at top right, rgba(64,61,216,0.06) 0%, transparent 70%);
+  position: absolute; top: -60px; right: -60px;
+  width: 320px; height: 320px;
+  border-radius: 50%;
+  border: 1px solid rgba(64,61,216,0.09);
+  box-shadow: 0 0 0 22px rgba(64,61,216,0.045), 0 0 0 46px rgba(64,61,216,0.025), 0 0 0 72px rgba(64,61,216,0.012);
   pointer-events: none;
 }
 .cert-body::after {
   content: '';
-  position: absolute;
-  bottom: 0; left: 0;
-  width: 180px; height: 180px;
-  background: radial-gradient(ellipse at bottom left, rgba(64,61,216,0.06) 0%, transparent 70%);
+  position: absolute; bottom: -70px; left: -70px;
+  width: 300px; height: 300px;
+  border-radius: 50%;
+  border: 1px solid rgba(64,61,216,0.09);
+  box-shadow: 0 0 0 22px rgba(64,61,216,0.045), 0 0 0 46px rgba(64,61,216,0.025);
   pointer-events: none;
 }
 
-/* Corner ornaments */
-.cc {
-  position: absolute;
-  width: 22px;
-  height: 22px;
+/* Engraved double frame */
+.cert-frame {
+  position: absolute; inset: 14px;
+  border: 1.5px solid rgba(64,61,216,0.35);
+  pointer-events: none;
   z-index: 5;
 }
-.cc-tl { top: 16px; left: 16px; border-top: 1.5px solid rgba(64,61,216,0.45); border-left: 1.5px solid rgba(64,61,216,0.45); }
-.cc-tr { top: 16px; right: 16px; border-top: 1.5px solid rgba(64,61,216,0.45); border-right: 1.5px solid rgba(64,61,216,0.45); }
-.cc-bl { bottom: 16px; left: 16px; border-bottom: 1.5px solid rgba(64,61,216,0.45); border-left: 1.5px solid rgba(64,61,216,0.45); }
-.cc-br { bottom: 16px; right: 16px; border-bottom: 1.5px solid rgba(64,61,216,0.45); border-right: 1.5px solid rgba(64,61,216,0.45); }
+.cert-frame::before {
+  content: '';
+  position: absolute; inset: 4px;
+  border: 0.75px solid rgba(24,24,73,0.18);
+}
+.cc { position: absolute; width: 26px; height: 26px; z-index: 6; }
+.cc::before { content: ''; position: absolute; width: 6px; height: 6px; border-radius: 50%; background: #403DD8; }
+.cc-tl { top: 8px; left: 8px; border-top: 2px solid #403DD8; border-left: 2px solid #403DD8; } .cc-tl::before { top: -4px; left: -4px; }
+.cc-tr { top: 8px; right: 8px; border-top: 2px solid #403DD8; border-right: 2px solid #403DD8; } .cc-tr::before { top: -4px; right: -4px; }
+.cc-bl { bottom: 8px; left: 8px; border-bottom: 2px solid #403DD8; border-left: 2px solid #403DD8; } .cc-bl::before { bottom: -4px; left: -4px; }
+.cc-br { bottom: 8px; right: 8px; border-bottom: 2px solid #403DD8; border-right: 2px solid #403DD8; } .cc-br::before { bottom: -4px; right: -4px; }
 
 /* Watermark */
-.cert-wm {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0.028;
-  pointer-events: none;
-  z-index: 0;
-}
+.cert-wm { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 0.03; pointer-events: none; z-index: 0; }
 
 /* ── BODY CONTENT ── */
-.cert-certifies {
-  font-family: 'Fustat', sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  color: rgba(24,24,73,0.5);
-  letter-spacing: 0.05em;
-  margin-bottom: 10px;
-  position: relative;
-  z-index: 1;
-}
+.cert-certifies { font-family: 'Inter', sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 0.34em; text-transform: uppercase; color: rgba(24,24,73,0.45); margin-bottom: 14px; position: relative; z-index: 1; }
 
 .cert-name {
   font-family: 'Fustat', sans-serif;
   font-weight: 800;
-  font-size: 88px;
-  color: #181849;
+  font-size: 92px;
   letter-spacing: -0.035em;
-  line-height: 0.88;
-  margin-bottom: 18px;
-  position: relative;
-  z-index: 1;
-}
-
-/* Decorative rule under name */
-.cert-divider {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  line-height: 0.9;
   margin-bottom: 20px;
   position: relative;
   z-index: 1;
-}
-.cdl { width: 64px; height: 2px; background: linear-gradient(90deg, transparent, #403DD8); border-radius: 1px; }
-.cdd { width: 5px; height: 5px; border-radius: 50%; background: #403DD8; flex-shrink: 0; }
-.cdr { width: 64px; height: 2px; background: linear-gradient(90deg, #403DD8, transparent); border-radius: 1px; }
-
-.cert-completed {
-  font-family: 'Inter', sans-serif;
-  font-size: 9.5px;
-  font-weight: 600;
-  letter-spacing: 0.32em;
-  text-transform: uppercase;
-  color: rgba(24,24,73,0.52);
-  margin-bottom: 10px;
-  position: relative;
-  z-index: 1;
+  background: linear-gradient(120deg, #181849 30%, #403DD8 85%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.6);
 }
 
-.cert-program {
-  font-family: 'Fustat', sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  color: #181849;
-  letter-spacing: -0.01em;
-  margin-bottom: 5px;
-  position: relative;
-  z-index: 1;
-}
+.cert-divider { display: flex; align-items: center; gap: 10px; margin-bottom: 22px; position: relative; z-index: 1; }
+.cdl { width: 84px; height: 2px; background: linear-gradient(90deg, transparent, #403DD8); border-radius: 1px; }
+.cdd { width: 6px; height: 6px; border-radius: 50%; background: #403DD8; flex-shrink: 0; box-shadow: 0 0 0 3px rgba(64,61,216,0.15); }
+.cdr { width: 84px; height: 2px; background: linear-gradient(90deg, #403DD8, transparent); border-radius: 1px; }
 
-.cert-school {
-  font-family: 'Inter', sans-serif;
-  font-size: 11px;
-  font-weight: 500;
-  color: #403DD8;
-  letter-spacing: 0.08em;
-  margin-bottom: 5px;
-  position: relative;
-  z-index: 1;
-}
+.cert-completed { font-size: 9.5px; font-weight: 600; letter-spacing: 0.32em; text-transform: uppercase; color: rgba(24,24,73,0.5); margin-bottom: 10px; position: relative; z-index: 1; }
+.cert-program { font-family: 'Fustat', sans-serif; font-weight: 800; font-size: 28px; color: #181849; letter-spacing: -0.01em; margin-bottom: 6px; position: relative; z-index: 1; }
+.cert-school { font-size: 11px; font-weight: 600; color: #403DD8; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 6px; position: relative; z-index: 1; }
+.cert-cohort { font-size: 12.5px; font-weight: 400; color: rgba(24,24,73,0.62); letter-spacing: 0.03em; position: relative; z-index: 1; }
 
-.cert-cohort {
-  font-family: 'Inter', sans-serif;
-  font-size: 12.5px;
-  font-weight: 400;
-  color: rgba(24,24,73,0.62);
-  letter-spacing: 0.03em;
-  position: relative;
-  z-index: 1;
-}
-
-/* Skills as pill tags */
-.cert-skills {
-  display: flex;
-  align-items: center;
-  gap: 7px;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 16px;
-  padding-top: 16px;
-  border-top: 1px solid rgba(24,24,73,0.09);
-  position: relative;
-  z-index: 1;
-}
-
-.cert-skill {
-  font-family: 'Inter', sans-serif;
-  font-size: 8.5px;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #181849;
-  padding: 4px 10px;
-  border: 0.75px solid rgba(24,24,73,0.18);
-  border-radius: 2px;
-  background: rgba(24,24,73,0.03);
-}
+.cert-skills { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; justify-content: center; margin-top: 18px; padding-top: 18px; border-top: 1px solid rgba(24,24,73,0.09); position: relative; z-index: 1; max-width: 640px; }
+.cert-skill { font-size: 8.5px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #403DD8; padding: 5px 12px; border: 1px solid rgba(64,61,216,0.28); border-radius: 999px; background: rgba(64,61,216,0.04); }
 
 /* ── FOOTER ── */
 .cert-footer {
@@ -381,127 +263,41 @@ body {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  padding: 16px 60px 30px;
+  padding: 14px 60px 26px;
   flex-shrink: 0;
-}
-
-.cert-sig-block {
-  text-align: left;
-  min-width: 200px;
-}
-
-.cert-sig-img {
-  height: 44px;
-  width: auto;
-  display: block;
-  object-fit: contain;
-  object-position: left bottom;
-  margin-bottom: 6px;
-}
-
-.cert-sig-line {
-  width: 190px;
-  height: 1px;
-  background: rgba(24,24,73,0.16);
-  margin-bottom: 8px;
-}
-
-.cert-sig-name {
-  font-family: 'Fustat', sans-serif;
-  font-weight: 700;
-  font-size: 12.5px;
-  color: #181849;
-  margin-bottom: 2px;
-}
-
-.cert-sig-title {
-  font-family: 'Inter', sans-serif;
-  font-size: 9.5px;
-  color: rgba(24,24,73,0.55);
-  letter-spacing: 0.02em;
-}
-
-.cert-seal {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 7px;
-}
-
-.cert-seal-ring {
-  width: 62px;
-  height: 62px;
-  border-radius: 50%;
-  border: 1.5px solid rgba(24,24,73,0.22);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: relative;
-  background: radial-gradient(circle, rgba(64,61,216,0.05), transparent 70%);
 }
+.cert-sig-block { text-align: left; min-width: 210px; }
+.cert-sig-img { height: 44px; width: auto; display: block; object-fit: contain; object-position: left bottom; margin-bottom: 6px; }
+.cert-sig-line { width: 190px; height: 1px; background: rgba(24,24,73,0.16); margin-bottom: 8px; }
+.cert-sig-name { font-family: 'Fustat', sans-serif; font-weight: 700; font-size: 12.5px; color: #181849; margin-bottom: 2px; }
+.cert-sig-title { font-size: 9.5px; color: rgba(24,24,73,0.55); letter-spacing: 0.02em; }
 
-.cert-seal-ring::before {
-  content: '';
-  position: absolute;
-  inset: 6px;
-  border-radius: 50%;
-  border: 0.75px solid rgba(64,61,216,0.2);
-}
+.cert-seal { display: flex; flex-direction: column; align-items: center; position: relative; top: -14px; }
+.cert-seal svg { filter: drop-shadow(0 6px 14px rgba(24,24,73,0.35)); }
+.cert-verify-id { margin-top: 7px; font-size: 8px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(24,24,73,0.42); }
 
-.cert-seal-text {
-  font-family: 'Inter', sans-serif;
-  font-size: 7.5px;
-  font-weight: 700;
-  letter-spacing: 0.28em;
-  text-transform: uppercase;
-  color: rgba(24,24,73,0.4);
-}
+.cert-date-block { text-align: right; min-width: 210px; }
+.cert-date-val { font-family: 'Fustat', sans-serif; font-weight: 700; font-size: 12.5px; color: #181849; margin-bottom: 2px; }
+.cert-date-lbl { font-size: 9.5px; color: rgba(24,24,73,0.55); letter-spacing: 0.02em; }
 
-.cert-date-block {
-  text-align: right;
-  min-width: 200px;
-}
+/* ── PAGE CHROME (screen only) ── */
+.cert-actions { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; justify-content: center; }
+.cert-btn { font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 700; padding: 11px 22px; border-radius: 999px; cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: transform 0.15s ease, box-shadow 0.15s ease; }
+.cert-btn:hover { transform: translateY(-1px); }
+.cert-btn--primary { background: #403DD8; color: #fff; border: none; box-shadow: 0 6px 20px rgba(64,61,216,0.4); }
+.cert-btn--ghost { background: transparent; color: rgba(255,255,255,0.85); border: 1.5px solid rgba(255,255,255,0.25); }
+.verify-bar { font-size: 11.5px; color: rgba(255,255,255,0.32); text-align: center; line-height: 1.8; }
+.verify-bar a { color: rgba(129,170,251,0.7); text-decoration: none; }
 
-.cert-date-val {
-  font-family: 'Fustat', sans-serif;
-  font-weight: 700;
-  font-size: 12.5px;
-  color: #181849;
-  margin-bottom: 2px;
-}
-
-.cert-date-lbl {
-  font-family: 'Inter', sans-serif;
-  font-size: 9.5px;
-  color: rgba(24,24,73,0.55);
-  letter-spacing: 0.02em;
-}
-
-/* Verify bar */
-.verify-bar {
-  font-family: 'Inter', sans-serif;
-  font-size: 11.5px;
-  color: rgba(255,255,255,0.28);
-  text-align: center;
-}
-
-.verify-bar a {
-  color: rgba(129,170,251,0.6);
-  text-decoration: none;
-}
+@media (prefers-reduced-motion: reduce) { .cert { animation: none; } .cert::after { animation: none; opacity: 0; } }
 
 @media print {
-  body {
-    background: none;
-    padding: 0;
-    margin: 0;
-    min-height: unset;
-    display: block;
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
-  }
-  .cert { width: 100vw; height: 100vh; box-shadow: none; }
-  .verify-bar { display: none; }
+  body { background: none; padding: 0; margin: 0; min-height: unset; display: block; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .cert-scale { transform: none !important; }
+  .cert { width: 100vw; height: 100vh; box-shadow: none; border-radius: 0; animation: none; }
+  .cert::after { display: none; }
+  .verify-bar, .cert-actions { display: none; }
 }
 </style>
 </head>
@@ -511,6 +307,7 @@ body {
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
+<div class="cert-scale" id="certScale">
 <div class="cert">
 
   <!-- Navy Header -->
@@ -521,10 +318,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <span class="cert-logo-sub">School of Applied AI</span>
     </div>
     <div class="cert-header-center">
-      <div class="cert-header-eyebrow">Official Document</div>
-      <div class="cert-header-title">Certificate of Completion</div>
+      <div class="cert-header-eyebrow">Official Credential</div>
+      <div class="cert-header-title">Certificate of <strong>Completion</strong></div>
     </div>
-    <div class="cert-header-right">Austin, Texas<br>makersquare.ai</div>
+    <div class="cert-header-right">Austin, Texas<br>makersquare.ai<br><span class="cid">MS-C1-2026-002</span></div>
   </div>
 
   <!-- Electric blue rule -->
@@ -532,22 +329,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <!-- Cream Body -->
   <div class="cert-body">
-
-    <!-- Corner ornaments -->
-    <div class="cc cc-tl"></div>
-    <div class="cc cc-tr"></div>
-    <div class="cc cc-bl"></div>
-    <div class="cc cc-br"></div>
+    <div class="cert-frame"></div>
+    <div class="cc cc-tl"></div><div class="cc cc-tr"></div><div class="cc cc-bl"></div><div class="cc cc-br"></div>
 
     <!-- Watermark -->
     <div class="cert-wm">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="380" height="380">
-        <polygon points="4,12 10,8 10,14 4,18" fill="#181849"/>
-        <polygon points="4,18 10,14 10,26 4,26" fill="#181849"/>
-        <polygon points="10,8 16,14 22,8 16,2" fill="#181849"/>
-        <polygon points="10,14 16,20 16,14 10,8" fill="#181849"/>
-        <polygon points="16,14 16,20 22,14 22,8" fill="#181849"/>
-        <polygon points="22,8 28,12 28,18 22,14" fill="#181849"/>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="400" height="400">
+        <polygon points="4,12 10,8 10,14 4,18" fill="#181849"/><polygon points="4,18 10,14 10,26 4,26" fill="#181849"/>
+        <polygon points="10,8 16,14 22,8 16,2" fill="#181849"/><polygon points="10,14 16,20 16,14 10,8" fill="#181849"/>
+        <polygon points="16,14 16,20 22,14 22,8" fill="#181849"/><polygon points="22,8 28,12 28,18 22,14" fill="#181849"/>
         <polygon points="22,14 28,18 28,26 22,26" fill="#181849"/>
       </svg>
     </div>
@@ -555,11 +345,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="cert-certifies">This is to certify that</div>
     <div class="cert-name">Cameron Dowd</div>
 
-    <div class="cert-divider">
-      <div class="cdl"></div>
-      <div class="cdd"></div>
-      <div class="cdr"></div>
-    </div>
+    <div class="cert-divider"><div class="cdl"></div><div class="cdd"></div><div class="cdr"></div></div>
 
     <div class="cert-completed">has successfully completed</div>
     <div class="cert-program">2-Week AI Intensive</div>
@@ -567,15 +353,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="cert-cohort">Cohort 1 &nbsp;&middot;&nbsp; July 6&ndash;17, 2026 &nbsp;&middot;&nbsp; Austin, TX</div>
 
     <div class="cert-skills">
-      <span class="cert-skill">Claude</span>
-      <span class="cert-skill">Cursor</span>
-      <span class="cert-skill">Supabase</span>
-      <span class="cert-skill">Vercel</span>
-      <span class="cert-skill">GitHub</span>
-      <span class="cert-skill">Prompt Engineering</span>
+      <span class="cert-skill">Claude</span><span class="cert-skill">Cursor</span><span class="cert-skill">Supabase</span>
+      <span class="cert-skill">Vercel</span><span class="cert-skill">GitHub</span><span class="cert-skill">Prompt Engineering</span>
       <span class="cert-skill">Agentic Workflows</span>
     </div>
-
   </div>
 
   <!-- Footer -->
@@ -587,18 +368,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="cert-sig-title">Founder &amp; CEO, MakerSquare</div>
     </div>
     <div class="cert-seal">
-      <div class="cert-seal-ring">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="30" height="30">
-          <polygon points="4,12 10,8 10,14 4,18" fill="#6580C8"/>
-          <polygon points="4,18 10,14 10,26 4,26" fill="#B8C9F2"/>
-          <polygon points="10,8 16,14 22,8 16,2" fill="#6580C8"/>
-          <polygon points="10,14 16,20 16,14 10,8" fill="#D4DFFB"/>
-          <polygon points="16,14 16,20 22,14 22,8" fill="#B8C9F2"/>
-          <polygon points="22,8 28,12 28,18 22,14" fill="#6580C8"/>
-          <polygon points="22,14 28,18 28,26 22,26" fill="#D4DFFB"/>
-        </svg>
-      </div>
-      <div class="cert-seal-text">Verified</div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="96" height="96">
+        <defs>
+          <radialGradient id="sealg" cx="35%" cy="28%" r="80%">
+            <stop offset="0%" stop-color="#5f5cee"/><stop offset="50%" stop-color="#403DD8"/><stop offset="100%" stop-color="#20205c"/>
+          </radialGradient>
+          <path id="sealtxt" d="M 50,50 m -31,0 a 31,31 0 1,1 62,0 a 31,31 0 1,1 -62,0"/>
+        </defs>
+        <polygon points="97.00,50.00 93.13,55.68 95.40,62.16 90.19,66.65 90.70,73.50 84.51,76.48 83.23,83.23 76.48,84.51 73.50,90.70 66.65,90.19 62.16,95.40 55.68,93.13 50.00,97.00 44.32,93.13 37.84,95.40 33.35,90.19 26.50,90.70 23.52,84.51 16.77,83.23 15.49,76.48 9.30,73.50 9.81,66.65 4.60,62.16 6.87,55.68 3.00,50.00 6.87,44.32 4.60,37.84 9.81,33.35 9.30,26.50 15.49,23.52 16.77,16.77 23.52,15.49 26.50,9.30 33.35,9.81 37.84,4.60 44.32,6.87 50.00,3.00 55.68,6.87 62.16,4.60 66.65,9.81 73.50,9.30 76.48,15.49 83.23,16.77 84.51,23.52 90.70,26.50 90.19,33.35 95.40,37.84 93.13,44.32" fill="url(#sealg)"/>
+        <circle cx="50" cy="50" r="39" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="0.8"/>
+        <circle cx="50" cy="50" r="24.5" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="0.6"/>
+        <text font-family="Inter, sans-serif" font-size="6.1" font-weight="700" letter-spacing="1.6" fill="rgba(255,255,255,0.75)">
+          <textPath href="#sealtxt">MAKERSQUARE &#8226; SCHOOL OF APPLIED AI &#8226; AUSTIN TX &#8226;</textPath>
+        </text>
+        <g transform="translate(50,51) scale(0.85) translate(-16,-15)">
+          <polygon points="4,12 10,8 10,14 4,18" fill="rgba(255,255,255,0.85)"/><polygon points="4,18 10,14 10,26 4,26" fill="rgba(255,255,255,0.65)"/>
+          <polygon points="10,8 16,14 22,8 16,2" fill="rgba(255,255,255,0.95)"/><polygon points="10,14 16,20 16,14 10,8" fill="rgba(255,255,255,0.75)"/>
+          <polygon points="16,14 16,20 22,14 22,8" fill="rgba(255,255,255,0.65)"/><polygon points="22,8 28,12 28,18 22,14" fill="rgba(255,255,255,0.85)"/>
+          <polygon points="22,14 28,18 28,26 22,26" fill="rgba(255,255,255,0.7)"/>
+        </g>
+      </svg>
+      <div class="cert-verify-id">Credential MS-C1-2026-002</div>
     </div>
     <div class="cert-date-block">
       <div class="cert-date-val">July 17, 2026</div>
@@ -607,10 +397,31 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 
 </div>
+</div>
+
+<div class="cert-actions">
+  <button type="button" class="cert-btn cert-btn--primary" onclick="window.print()">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+    Print / Save as PDF
+  </button>
+  <a class="cert-btn cert-btn--ghost" href="https://www.linkedin.com/profile/add?startTask=CERTIFICATION_NAME&name=2-Week%20AI%20Intensive%20%E2%80%94%20MakerSquare%20School%20of%20Applied%20AI&organizationName=MakerSquare&issueYear=2026&issueMonth=7&certUrl=https%3A//www.makersquare.ai/certificate/cameron-dowd&certId=MS-C1-2026-002" target="_blank" rel="noopener">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452z"/></svg>
+    Add to LinkedIn profile
+  </a>
+</div>
 
 <div class="verify-bar">
+  Credential MS-C1-2026-002 &nbsp;&middot;&nbsp; Verify at <a href="https://www.makersquare.ai/certificate/cameron-dowd">makersquare.ai/certificate/cameron-dowd</a><br>
   Issued by <a href="https://www.makersquare.ai">MakerSquare School of Applied AI</a> &nbsp;&middot;&nbsp; Austin, TX
 </div>
+
+<script>
+(function(){
+  var el = document.getElementById('certScale');
+  function fit(){ var s = Math.min(1, (window.innerWidth - 32) / 1050); el.style.transform = 'scale(' + s + ')'; el.style.marginBottom = s < 1 ? (-(1 - s) * 742) + 'px' : '0'; }
+  fit(); window.addEventListener('resize', fit);
+})();
+</script>
 
 <script type="text/javascript" src="https://forms.zoho.com/js/zf_gclid.js"></script>
 </body>
