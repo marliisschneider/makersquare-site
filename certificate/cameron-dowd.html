@@ -100,7 +100,7 @@ body {
 /* Top navy panel */
 .cert-top {
   background: #181849;
-  height: 310px;
+  height: 160px;
   flex-shrink: 0;
   position: relative;
   display: flex;
@@ -191,7 +191,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 28px 80px 0;
+  padding: 20px 80px 0;
   text-align: center;
   position: relative;
 }
@@ -202,6 +202,25 @@ body {
   height: 3px;
   background: linear-gradient(90deg, transparent 0%, #403DD8 20%, #81AAFB 50%, #403DD8 80%, transparent 100%);
   flex-shrink: 0;
+}
+
+.cert-certifies {
+  font-family: 'Fustat', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #aaa;
+  letter-spacing: 0.02em;
+  margin-bottom: 6px;
+}
+
+.cert-name {
+  font-family: 'Fustat', sans-serif;
+  font-weight: 800;
+  font-size: 74px;
+  color: #181849;
+  letter-spacing: -0.03em;
+  line-height: 0.9;
+  margin-bottom: 18px;
 }
 
 .cert-completed {
@@ -400,7 +419,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="cert-top-right">Austin, TX &nbsp;&middot;&nbsp; makersquare.ai</div>
     </div>
     <div class="cert-label">Certificate of Completion</div>
-    <div class="cert-name">Cameron Dowd</div>
   </div>
 
   <!-- Electric blue divider line -->
@@ -408,6 +426,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <!-- Bottom cream panel -->
   <div class="cert-bottom">
+    <div class="cert-certifies">This is to certify that</div>
+    <div class="cert-name">Cameron Dowd</div>
     <div class="cert-completed">has successfully completed</div>
     <div class="cert-program">2-Week AI Intensive</div>
     <div class="cert-school">MakerSquare School of Applied AI</div>
