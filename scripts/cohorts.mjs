@@ -35,6 +35,9 @@ const availabilityOf = (c) => (enrolling(c) ? 'InStock' : 'SoldOut');
 
 // the "next open" cohort drives the single-instance schema + homepage banner
 const nextOpen = data.cohorts.find(enrolling) || data.cohorts[data.cohorts.length - 1];
+// the soonest demo day (= a cohort's end date) not yet passed drives the homepage Event
+const nextDemo = data.cohorts.find((c) => asDate(c.end) >= today) || data.cohorts[data.cohorts.length - 1];
+const demoStart = prog.demoStartSuffix, demoEnd = prog.demoEndSuffix;
 
 // --- date formatting -------------------------------------------------------
 const short = (iso) => { const d = asDate(iso); return `${MONTHS[d.getUTCMonth()].slice(0,3)} ${d.getUTCDate()}`; };
@@ -111,12 +114,60 @@ for (const f of ['index.html', 'pricing.html', 'curriculum.html', 'scholarship.h
 // --- 2. enroll.html — full cohort array -----------------------------------
 edit('enroll.html', (src) => {
   const items = data.cohorts.filter(upcoming).map((c) =>
-    `    {"@type": "CourseInstance", "name": "${c.name}", "courseMode": "onsite", ` +
+    `    {"@type": "CourseInstance", "name": "${c.name}", "courseMode": "Onsite", ` +
     `"startDate": "${c.start}", "endDate": "${c.end}", "courseWorkload": "${prog.workload}", ` +
     `"offers": {"@type": "Offer", "price": "${prog.priceUSD}", "priceCurrency": "USD", ` +
     `"availability": "${SCHEMA[availabilityOf(c)]}"}}`
   ).join(',\n');
   return replaceBalanced(src, 'hasCourseInstance', `[\n${items}\n  ]`);
+});
+
+// --- 2b. demo-day.html — full Demo Day ItemList (demo day = cohort end date)
+function demoListItem(c, i) {
+  return `        {
+          "@type": "ListItem", "position": ${i + 1},
+          "item": {
+            "@type": "Event",
+            "name": "MakerSquare Demo Day — ${c.name}",
+            "startDate": "${c.end}${demoStart}",
+            "endDate": "${c.end}${demoEnd}",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+            "location": {"@type": "Place", "name": "MakerSquare Austin", "address": {"@type": "PostalAddress", "addressLocality": "${prog.locality}", "addressRegion": "${prog.region}", "addressCountry": "${prog.country}"}},
+            "organizer": {"@type": "EducationalOrganization", "name": "MakerSquare", "url": "https://www.makersquare.ai/"},
+            "performer": {"@type": "PerformingGroup", "name": "MakerSquare ${c.name} graduates"},
+            "image": ["${prog.ogImage}"],
+            "url": "${prog.demoUrl}",
+            "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "validFrom": "${c.start}", "name": "Free admission", "url": "${prog.demoUrl}"},
+            "description": "${c.name} graduates present their capstone AI products live to Austin's tech community, investors, and operators."
+          }
+        }`;
+}
+edit('demo-day.html', (src) => {
+  const items = data.cohorts.filter(upcoming).map(demoListItem).join(',\n');
+  return replaceBalanced(src, 'itemListElement', `[\n${items}\n      ]`);
+});
+
+// --- 2c. index.html homepage Event → next upcoming demo day ----------------
+edit('index.html', (src) => {
+  const t = src.indexOf('"@type": "Event"');
+  if (t === -1) return src;
+  const open = src.lastIndexOf('{', t);
+  let depth = 0, end = -1;
+  for (let j = open; j < src.length; j++) {
+    if (src[j] === '{') depth++;
+    else if (src[j] === '}') { depth--; if (depth === 0) { end = j; break; } }
+  }
+  if (end === -1) return src;
+  let b = src.slice(open, end + 1);
+  b = b.replace(/"name": "MakerSquare Demo Day[^"]*"/, `"name": "MakerSquare Demo Day — ${nextDemo.name}"`);
+  b = b.replace(/"startDate": "[^"]*"/, `"startDate": "${nextDemo.end}${demoStart}"`);
+  b = b.replace(/"endDate": "[^"]*"/, `"endDate": "${nextDemo.end}${demoEnd}"`);
+  if (!b.includes('"image"'))
+    b = b.replace(/(\n(\s*))"eventStatus":/, `$1"image": ["${prog.ogImage}"],$1"url": "${prog.demoUrl}",$1"performer": {"@type": "PerformingGroup", "name": "MakerSquare ${nextDemo.name} graduates"},$1"eventStatus":`);
+  if (!b.includes('"validFrom"'))
+    b = b.replace('"availability": "https://schema.org/InStock", "name": "Free admission"', `"availability": "https://schema.org/InStock", "validFrom": "${nextDemo.start}", "name": "Free admission"`);
+  return src.slice(0, open) + b + src.slice(end + 1);
 });
 
 // --- 3. visible banner markers --------------------------------------------

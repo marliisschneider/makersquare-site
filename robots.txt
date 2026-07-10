@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
-Disallow: /privacy.html
-Disallow: /terms.html
+Disallow: /privacy
+Disallow: /terms
 
 # Allow all major AI crawlers (GEO - Generative Engine Optimization)
 User-agent: GPTBot
