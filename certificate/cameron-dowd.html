@@ -76,7 +76,7 @@ twq('config','rcjjn');
 
 body {
   font-family: 'Inter', sans-serif;
-  background: #ECEAE3;
+  background: #08082A;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -89,50 +89,57 @@ body {
 .cert {
   width: 1050px;
   height: 742px;
-  background: #FAFAF7;
+  background: #0D0D3B;
+  background-image:
+    repeating-linear-gradient(-45deg, transparent, transparent 38px, rgba(64,61,216,0.07) 38px, rgba(64,61,216,0.07) 39px);
   position: relative;
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  box-shadow: 0 24px 80px rgba(24,24,73,0.16);
+  box-shadow: 0 0 0 1px rgba(64,61,216,0.4), 0 32px 100px rgba(8,8,42,0.8), 0 0 60px rgba(64,61,216,0.15);
 }
 
+/* Outer glow border */
 .cert::before {
   content: '';
   position: absolute;
-  inset: 14px;
-  border: 1.5px solid #81AAFB;
+  inset: 12px;
+  border: 1px solid rgba(129,170,251,0.25);
   pointer-events: none;
   z-index: 10;
 }
 
+/* Inner accent border */
 .cert::after {
   content: '';
   position: absolute;
-  inset: 20px;
-  border: 0.5px solid rgba(129,170,251,0.3);
+  inset: 16px;
+  border: 0.5px solid rgba(64,61,216,0.15);
   pointer-events: none;
   z-index: 10;
 }
 
 .corner {
   position: absolute;
-  width: 28px;
-  height: 28px;
+  width: 24px;
+  height: 24px;
   z-index: 11;
 }
-.corner-tl { top: 28px; left: 28px; border-top: 2px solid #403DD8; border-left: 2px solid #403DD8; }
-.corner-tr { top: 28px; right: 28px; border-top: 2px solid #403DD8; border-right: 2px solid #403DD8; }
-.corner-bl { bottom: 28px; left: 28px; border-bottom: 2px solid #403DD8; border-left: 2px solid #403DD8; }
-.corner-br { bottom: 28px; right: 28px; border-bottom: 2px solid #403DD8; border-right: 2px solid #403DD8; }
+.corner-tl { top: 24px; left: 24px; border-top: 1.5px solid #81AAFB; border-left: 1.5px solid #81AAFB; }
+.corner-tr { top: 24px; right: 24px; border-top: 1.5px solid #81AAFB; border-right: 1.5px solid #81AAFB; }
+.corner-bl { bottom: 24px; left: 24px; border-bottom: 1.5px solid #81AAFB; border-left: 1.5px solid #81AAFB; }
+.corner-br { bottom: 24px; right: 24px; border-bottom: 1.5px solid #81AAFB; border-right: 1.5px solid #81AAFB; }
 
+/* Top bar */
 .cert-header {
-  background: #181849;
-  padding: 30px 64px 26px;
+  padding: 28px 60px 22px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-shrink: 0;
+  border-bottom: 1px solid rgba(64,61,216,0.2);
+  position: relative;
+  z-index: 2;
 }
 
 .cert-wordmark {
@@ -141,32 +148,33 @@ body {
 }
 
 .cert-wordmark img {
-  height: 34px;
+  height: 30px;
   width: auto;
   display: block;
 }
 
 .cert-wordmark-sub {
   font-family: 'Inter', sans-serif;
-  font-size: 10.5px;
-  color: rgba(255,255,255,0.45);
-  letter-spacing: 0.1em;
+  font-size: 10px;
+  color: rgba(129,170,251,0.5);
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   padding-left: 14px;
-  border-left: 1px solid rgba(255,255,255,0.18);
+  border-left: 1px solid rgba(129,170,251,0.2);
   margin-left: 14px;
 }
 
 .cert-header-right {
   font-family: 'Inter', sans-serif;
-  font-size: 11px;
-  color: rgba(255,255,255,0.4);
-  letter-spacing: 0.1em;
+  font-size: 10px;
+  color: rgba(129,170,251,0.35);
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   text-align: right;
-  line-height: 1.7;
+  line-height: 1.8;
 }
 
+/* Body */
 .cert-body {
   flex: 1;
   display: flex;
@@ -176,6 +184,7 @@ body {
   padding: 0 80px;
   text-align: center;
   position: relative;
+  z-index: 2;
 }
 
 .cert-body::before {
@@ -184,9 +193,9 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 480px;
-  height: 480px;
-  background: radial-gradient(ellipse at center, rgba(64,61,216,0.04) 0%, transparent 70%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(ellipse at center, rgba(64,61,216,0.12) 0%, transparent 65%);
   pointer-events: none;
 }
 
@@ -194,128 +203,125 @@ body {
   font-family: 'Inter', sans-serif;
   font-size: 10px;
   font-weight: 500;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.28em;
   text-transform: uppercase;
-  color: #403DD8;
-  margin-bottom: 10px;
+  color: #81AAFB;
+  margin-bottom: 14px;
+  opacity: 0.7;
 }
 
 .cert-title {
   font-family: 'Fustat', sans-serif;
   font-weight: 300;
-  font-size: 36px;
-  color: #181849;
-  letter-spacing: -0.01em;
-  line-height: 1;
-  margin-bottom: 26px;
+  font-size: 22px;
+  color: rgba(255,255,255,0.45);
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
 }
 
 .cert-divider {
-  width: 56px;
-  height: 1.5px;
-  background: linear-gradient(90deg, transparent, #403DD8, transparent);
-  margin: 0 auto 24px;
-}
-
-.cert-certifies {
-  font-family: 'Inter', sans-serif;
-  font-size: 11px;
-  font-weight: 400;
-  color: #aaa;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  margin-bottom: 12px;
+  width: 280px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(64,61,216,0.5), rgba(129,170,251,0.6), rgba(64,61,216,0.5), transparent);
+  margin: 0 auto 18px;
 }
 
 .cert-name {
   font-family: 'Fustat', sans-serif;
   font-weight: 800;
-  font-size: 56px;
-  color: #181849;
-  letter-spacing: -0.02em;
-  line-height: 1;
-  margin-bottom: 20px;
+  font-size: 72px;
+  color: #FFFFFF;
+  letter-spacing: -0.025em;
+  line-height: 0.95;
+  margin-bottom: 22px;
+  text-shadow: 0 0 80px rgba(129,170,251,0.2);
 }
 
 .cert-completed {
   font-family: 'Inter', sans-serif;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 400;
-  color: #aaa;
-  letter-spacing: 0.1em;
+  color: rgba(129,170,251,0.5);
+  letter-spacing: 0.2em;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .cert-program {
   font-family: 'Fustat', sans-serif;
   font-weight: 700;
-  font-size: 22px;
-  color: #403DD8;
-  letter-spacing: 0.01em;
-  margin-bottom: 6px;
+  font-size: 20px;
+  color: #81AAFB;
+  letter-spacing: 0.02em;
+  margin-bottom: 5px;
 }
 
 .cert-cohort {
   font-family: 'Inter', sans-serif;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 400;
-  color: #777;
-  letter-spacing: 0.05em;
+  color: rgba(255,255,255,0.3);
+  letter-spacing: 0.08em;
 }
 
+.cert-skills {
+  font-family: 'Inter', sans-serif;
+  font-size: 9.5px;
+  color: rgba(129,170,251,0.35);
+  letter-spacing: 0.1em;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(64,61,216,0.2);
+}
+
+/* Footer */
 .cert-footer {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  padding: 0 80px 38px;
+  padding: 0 60px 32px;
   flex-shrink: 0;
+  position: relative;
+  z-index: 2;
+  border-top: 1px solid rgba(64,61,216,0.15);
+  padding-top: 18px;
 }
 
 .cert-sig-block {
   text-align: left;
-  min-width: 180px;
+  min-width: 200px;
+}
+
+.cert-sig-img {
+  height: 44px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+  object-position: left bottom;
+  margin-bottom: 6px;
+  filter: invert(1) brightness(0.55);
 }
 
 .cert-sig-line {
   width: 180px;
   height: 1px;
-  background: #D5D0C8;
-  margin-bottom: 8px;
+  background: rgba(129,170,251,0.2);
+  margin-bottom: 7px;
 }
 
 .cert-sig-name {
   font-family: 'Fustat', sans-serif;
   font-weight: 600;
-  font-size: 13px;
-  color: #181849;
+  font-size: 12px;
+  color: rgba(255,255,255,0.75);
   margin-bottom: 2px;
 }
 
 .cert-sig-title {
   font-family: 'Inter', sans-serif;
   font-size: 10px;
-  color: #aaa;
+  color: rgba(129,170,251,0.4);
   letter-spacing: 0.05em;
-}
-
-.cert-sig-img {
-  height: 48px;
-  width: auto;
-  display: block;
-  object-fit: contain;
-  object-position: left bottom;
-  margin-bottom: 6px;
-}
-
-.cert-skills {
-  font-family: 'Inter', sans-serif;
-  font-size: 10px;
-  color: #aaa;
-  letter-spacing: 0.08em;
-  margin-top: 16px;
-  padding-top: 14px;
-  border-top: 1px solid rgba(24,24,73,0.07);
 }
 
 .cert-center-seal {
@@ -326,10 +332,10 @@ body {
 }
 
 .cert-seal-ring {
-  width: 58px;
-  height: 58px;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
-  border: 2px solid #181849;
+  border: 1.5px solid rgba(129,170,251,0.35);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -341,65 +347,59 @@ body {
   position: absolute;
   inset: 4px;
   border-radius: 50%;
-  border: 0.75px solid rgba(64,61,216,0.25);
-}
-
-.cert-seal-inner {
-  font-family: 'Fustat', sans-serif;
-  font-weight: 800;
-  font-size: 14px;
-  color: #181849;
-  letter-spacing: -0.01em;
+  border: 0.5px solid rgba(64,61,216,0.3);
 }
 
 .cert-seal-text {
   font-family: 'Inter', sans-serif;
-  font-size: 9px;
-  color: #aaa;
-  letter-spacing: 0.14em;
+  font-size: 8px;
+  color: rgba(129,170,251,0.35);
+  letter-spacing: 0.18em;
   text-transform: uppercase;
 }
 
 .cert-date-block {
   text-align: right;
-  min-width: 180px;
+  min-width: 200px;
 }
 
 .cert-date-value {
   font-family: 'Fustat', sans-serif;
   font-weight: 600;
-  font-size: 13px;
-  color: #181849;
+  font-size: 12px;
+  color: rgba(255,255,255,0.75);
   margin-bottom: 2px;
 }
 
 .cert-date-label {
   font-family: 'Inter', sans-serif;
   font-size: 10px;
-  color: #aaa;
+  color: rgba(129,170,251,0.4);
   letter-spacing: 0.05em;
 }
 
 .verify-bar {
   font-family: 'Inter', sans-serif;
   font-size: 12px;
-  color: #666;
+  color: rgba(129,170,251,0.4);
   text-align: center;
 }
 
 .verify-bar a {
-  color: #403DD8;
+  color: #81AAFB;
   text-decoration: none;
   font-weight: 500;
 }
 
 @media print {
   body {
-    background: none;
+    background: #0D0D3B;
     padding: 0;
     margin: 0;
     min-height: unset;
     display: block;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
   .cert {
     width: 100vw;
@@ -422,14 +422,39 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="corner corner-bl"></div>
   <div class="corner corner-br"></div>
 
+  <!-- Large M watermark -->
+  <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);opacity:0.06;pointer-events:none;z-index:1;">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="520" height="520">
+      <polygon points="4,12 10,8 10,14 4,18" fill="#81AAFB"/>
+      <polygon points="4,18 10,14 10,26 4,26" fill="#81AAFB"/>
+      <polygon points="10,8 16,14 22,8 16,2" fill="#81AAFB"/>
+      <polygon points="10,14 16,20 16,14 10,8" fill="#ffffff"/>
+      <polygon points="16,14 16,20 22,14 22,8" fill="#81AAFB"/>
+      <polygon points="22,8 28,12 28,18 22,14" fill="#81AAFB"/>
+      <polygon points="22,14 28,18 28,26 22,26" fill="#ffffff"/>
+    </svg>
+  </div>
+
+  <!-- Corner arc top-right -->
+  <svg style="position:absolute;top:0;right:0;pointer-events:none;z-index:1;" width="200" height="200" viewBox="0 0 200 200" fill="none">
+    <circle cx="200" cy="0" r="100" stroke="#403DD8" stroke-width="0.75" stroke-opacity="0.25"/>
+    <circle cx="200" cy="0" r="140" stroke="#403DD8" stroke-width="0.5" stroke-opacity="0.15"/>
+    <circle cx="200" cy="0" r="180" stroke="#81AAFB" stroke-width="0.4" stroke-opacity="0.1"/>
+  </svg>
+  <!-- Corner arc bottom-left -->
+  <svg style="position:absolute;bottom:0;left:0;pointer-events:none;z-index:1;" width="200" height="200" viewBox="0 0 200 200" fill="none">
+    <circle cx="0" cy="200" r="100" stroke="#403DD8" stroke-width="0.75" stroke-opacity="0.25"/>
+    <circle cx="0" cy="200" r="140" stroke="#403DD8" stroke-width="0.5" stroke-opacity="0.15"/>
+    <circle cx="0" cy="200" r="180" stroke="#81AAFB" stroke-width="0.4" stroke-opacity="0.1"/>
+  </svg>
+
   <div class="cert-header">
     <div class="cert-wordmark">
       <img src="../logo-dark.png" alt="MakerSquare">
       <span class="cert-wordmark-sub">School of Applied AI</span>
     </div>
     <div class="cert-header-right">
-      Austin, Texas<br>
-      makersquare.ai
+      Austin, Texas &nbsp;&middot;&nbsp; makersquare.ai
     </div>
   </div>
 
