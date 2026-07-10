@@ -296,16 +296,83 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
       </div>
       <div class="page-hero-visual reveal">
-        <div style="background:var(--light-bg);border:1px solid rgba(24,24,73,0.06);border-radius:var(--r-xl);padding:var(--s6);position:relative;">
-          <div style="display:flex;gap:8px;margin-bottom:10px;">
-            <div style="flex:1;background:var(--white);border:1px solid rgba(24,24,73,0.06);border-radius:var(--r-sm);padding:10px;text-align:center;"><div style="font-family:var(--font-display);font-size:1.1rem;font-weight:800;color:var(--navy);">W1</div><div style="font-size:0.6rem;color:var(--text-muted);">Learn</div></div>
-            <div style="flex:1;background:var(--navy);border-radius:var(--r-sm);padding:10px;text-align:center;"><div style="font-family:var(--font-display);font-size:1.1rem;font-weight:800;color:var(--white);">W2</div><div style="font-size:0.6rem;color:var(--sky);">Build</div></div>
+        <div style="background:var(--light-bg);border:1px solid rgba(24,24,73,0.06);border-radius:var(--r-xl);padding:var(--s6) var(--s5);position:relative;overflow:hidden;" aria-label="Illustration: your team's busywork flows through your team plus Claude and comes out automated" role="img">
+
+          <div style="display:grid;grid-template-columns:1fr auto 1fr;gap:10px;align-items:center;min-height:150px;">
+            <!-- Inputs -->
+            <div style="display:flex;flex-direction:column;gap:8px;position:relative;">
+              <div class="mal-in mal-in-1" style="background:var(--white);border:1px solid rgba(24,24,73,0.1);border-radius:8px;padding:6px 10px;font-size:0.64rem;font-weight:700;color:var(--text-secondary);box-shadow:0 2px 6px rgba(24,24,73,0.06);white-space:nowrap;">&#128196; Stack of invoices</div>
+              <div class="mal-in mal-in-2" style="background:var(--white);border:1px solid rgba(24,24,73,0.1);border-radius:8px;padding:6px 10px;font-size:0.64rem;font-weight:700;color:var(--text-secondary);box-shadow:0 2px 6px rgba(24,24,73,0.06);white-space:nowrap;">&#128231; 42 unread emails</div>
+              <div class="mal-in mal-in-3" style="background:var(--white);border:1px solid rgba(24,24,73,0.1);border-radius:8px;padding:6px 10px;font-size:0.64rem;font-weight:700;color:var(--text-secondary);box-shadow:0 2px 6px rgba(24,24,73,0.06);white-space:nowrap;">&#127908; 1-hr call recording</div>
+            </div>
+
+            <!-- Machine -->
+            <div class="mal-machine" style="background:var(--navy);border-radius:12px;padding:14px 12px;text-align:center;position:relative;box-shadow:0 6px 20px rgba(24,24,73,0.25);">
+              <div style="position:absolute;top:0;left:0;right:0;height:3px;border-radius:12px 12px 0 0;background:linear-gradient(90deg,var(--indigo),var(--azure),var(--sky));"></div>
+              <div style="font-family:var(--font-display);font-size:0.72rem;font-weight:800;color:var(--white);line-height:1.3;">YOUR TEAM</div>
+              <div style="font-size:0.6rem;font-weight:700;color:var(--sky);margin:2px 0;">+</div>
+              <div style="font-family:var(--font-display);font-size:0.72rem;font-weight:800;color:var(--sky);">CLAUDE</div>
+              <div style="display:flex;gap:4px;justify-content:center;margin-top:8px;">
+                <span class="mal-proc" style="width:5px;height:5px;border-radius:50%;background:var(--sky);"></span>
+                <span class="mal-proc" style="width:5px;height:5px;border-radius:50%;background:var(--sky);animation-delay:.2s;"></span>
+                <span class="mal-proc" style="width:5px;height:5px;border-radius:50%;background:var(--sky);animation-delay:.4s;"></span>
+              </div>
+            </div>
+
+            <!-- Outputs -->
+            <div style="display:flex;flex-direction:column;gap:8px;">
+              <div class="mal-out mal-out-1" style="background:var(--white);border:1px solid rgba(34,197,94,0.35);border-radius:8px;padding:6px 10px;font-size:0.64rem;font-weight:700;color:var(--navy);box-shadow:0 2px 6px rgba(24,24,73,0.06);white-space:nowrap;"><span style="color:var(--green);">&#10003;</span> Books updated</div>
+              <div class="mal-out mal-out-2" style="background:var(--white);border:1px solid rgba(34,197,94,0.35);border-radius:8px;padding:6px 10px;font-size:0.64rem;font-weight:700;color:var(--navy);box-shadow:0 2px 6px rgba(24,24,73,0.06);white-space:nowrap;"><span style="color:var(--green);">&#10003;</span> Replies drafted</div>
+              <div class="mal-out mal-out-3" style="background:var(--white);border:1px solid rgba(34,197,94,0.35);border-radius:8px;padding:6px 10px;font-size:0.64rem;font-weight:700;color:var(--navy);box-shadow:0 2px 6px rgba(24,24,73,0.06);white-space:nowrap;"><span style="color:var(--green);">&#10003;</span> CRM logged</div>
+            </div>
           </div>
-          <div class="ms-people" style="display:flex;align-items:center;gap:6px;margin-bottom:8px;"><div style="width:20px;height:20px;border-radius:50%;background:var(--cloud);"></div><div style="width:20px;height:20px;border-radius:50%;background:var(--cloud);"></div><div style="width:20px;height:20px;border-radius:50%;background:var(--cloud);"></div><div style="width:20px;height:20px;border-radius:50%;background:var(--cloud);"></div><div style="font-size:0.6rem;color:var(--text-muted);margin-left:4px;">3-15 people</div></div>
-          <div class="ms-progress" style="height:6px;background:linear-gradient(90deg,var(--indigo),var(--green));border-radius:3px;margin-top:12px;"></div>
-          <div style="display:flex;justify-content:space-between;margin-top:4px;font-size:0.6rem;color:var(--text-muted);"><span>Start</span><span>Demo day <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="7"/><path d="M8.21 13.89L7 23l5-3 5 3-1.21-9.12"/></svg></span></div>
-          <div style="position:absolute;top:-10px;right:-10px;background:var(--white);border:1px solid rgba(24,24,73,0.06);border-radius:var(--r-sm);padding:5px 10px;box-shadow:var(--shadow-md);font-size:0.65rem;font-weight:700;color:var(--green);animation:float-1 4s ease-in-out infinite;">1 tool deployed</div>
+
+          <!-- Belt -->
+          <svg viewBox="0 0 400 10" style="width:100%;height:10px;margin-top:10px;" aria-hidden="true">
+            <line class="mal-belt" x1="0" y1="5" x2="400" y2="5" stroke="rgba(64,61,216,0.35)" stroke-width="2" stroke-dasharray="8 7"/>
+          </svg>
+
+          <!-- Counter -->
+          <div style="display:flex;justify-content:center;align-items:baseline;gap:6px;margin-top:8px;font-size:0.68rem;color:var(--text-muted);font-weight:600;">
+            Hours saved this week:
+            <span class="mal-count" style="position:relative;display:inline-block;width:2ch;height:1.1em;overflow:hidden;font-family:var(--font-display);font-weight:800;color:var(--green);font-size:0.9rem;">
+              <span>18</span><span>19</span><span>21</span><span>23</span>
+            </span>
+            <span style="color:var(--green);font-weight:800;">&#8593;</span>
+          </div>
+
+          <div style="position:absolute;top:-10px;right:-10px;background:var(--white);border:1px solid rgba(24,24,73,0.06);border-radius:var(--r-sm);padding:5px 10px;box-shadow:var(--shadow-md);font-size:0.65rem;font-weight:700;color:var(--green);animation:float-1 4s ease-in-out infinite;">Built by your team in 3 days</div>
         </div>
+
+        <style>
+        .mal-proc { display:inline-block; animation: malProc 1.2s ease-in-out infinite; }
+        .mal-belt { animation: malBelt 1s linear infinite; }
+        .mal-machine { animation: malMachine 8s ease-in-out infinite; }
+        .mal-count span { position:absolute; left:0; top:0; opacity:0; animation: malCount 8s infinite; }
+        .mal-count span:nth-child(1) { animation-delay:0s; }
+        .mal-count span:nth-child(2) { animation-delay:2s; }
+        .mal-count span:nth-child(3) { animation-delay:4s; }
+        .mal-count span:nth-child(4) { animation-delay:6s; }
+        @media (prefers-reduced-motion: no-preference) {
+          .mal-in { animation: malIn 8s ease-in-out infinite; }
+          .mal-in-2 { animation-delay:.5s; }
+          .mal-in-3 { animation-delay:1s; }
+          .mal-out { opacity:0; animation: malOut 8s cubic-bezier(0.34,1.56,0.64,1) infinite; }
+          .mal-out-2 { animation-delay:.6s; }
+          .mal-out-3 { animation-delay:1.2s; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+          .mal-out { opacity:1; }
+          .mal-count span:nth-child(4) { opacity:1; animation:none; }
+          .mal-count span:not(:nth-child(4)) { animation:none; }
+        }
+        @keyframes malIn { 0%,8% { transform:translateX(-14px); opacity:0; } 16%,38% { transform:translateX(0); opacity:1; } 46%,54% { transform:translateX(16px); opacity:0; } 55%,100% { transform:translateX(-14px); opacity:0; } }
+        @keyframes malOut { 0%,52% { opacity:0; transform:translateX(-12px) scale(.85); } 60%,92% { opacity:1; transform:translateX(0) scale(1); } 98%,100% { opacity:0; } }
+        @keyframes malProc { 0%,100% { opacity:.25; } 50% { opacity:1; } }
+        @keyframes malBelt { to { stroke-dashoffset:-15; } }
+        @keyframes malMachine { 0%,40% { box-shadow:0 6px 20px rgba(24,24,73,0.25); } 50%,60% { box-shadow:0 6px 26px rgba(64,61,216,0.5); } 70%,100% { box-shadow:0 6px 20px rgba(24,24,73,0.25); } }
+        @keyframes malCount { 0% { opacity:0; transform:translateY(100%); } 4%,22% { opacity:1; transform:translateY(0); } 26%,100% { opacity:0; transform:translateY(-100%); } }
+        </style>
       </div>
     </div>
 
