@@ -21,4 +21,16 @@ body.cm-modal-open { overflow: hidden; }
 
 /* Nav overflow fix: collapse to hamburger below 1100px (was 768) — full nav + 2 CTAs + social don't fit at laptop widths */
 .nav-links a{white-space:nowrap}
-@media (max-width:1280px){.nav-links{display:none}.nav .btn{display:none}.nav-social{display:none}.nav-hamburger{display:flex}}
+@media (max-width:960px){.nav-links{display:none}.nav .btn{display:none}.nav-social{display:none}.nav-hamburger{display:flex}}
+
+/* Grouped nav dropdowns */
+.nav-dd{position:relative}
+.nav-dd-toggle{display:inline-flex;align-items:center;gap:4px;background:none;border:0;cursor:pointer;font-family:inherit;font-size:0.8rem;font-weight:500;color:var(--text-secondary);padding:0;line-height:1.2}
+.nav-dd-toggle:hover{color:var(--navy)}
+.nav-dd-toggle svg{transition:transform .2s}
+.nav-dd:hover .nav-dd-toggle svg,.nav-dd:focus-within .nav-dd-toggle svg{transform:rotate(180deg)}
+.nav-dd::after{content:"";position:absolute;top:100%;left:-10px;right:-10px;height:14px}
+.nav-dd-menu{position:absolute;top:calc(100% + 12px);left:0;min-width:210px;display:none;flex-direction:column;gap:2px;background:var(--white);border:1px solid rgba(24,24,73,.08);border-radius:var(--r-md);box-shadow:0 14px 36px rgba(24,24,73,.14);padding:8px;z-index:1001}
+.nav-dd:hover .nav-dd-menu,.nav-dd:focus-within .nav-dd-menu{display:flex}
+.nav-dd-menu a{padding:9px 12px;border-radius:8px;font-size:.85rem;font-weight:500;color:var(--text-secondary);white-space:nowrap}
+.nav-dd-menu a:hover{background:var(--light-bg);color:var(--navy)}
