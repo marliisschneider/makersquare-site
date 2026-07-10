@@ -1,0 +1,18 @@
+{
+  "_comment": "SINGLE SOURCE OF TRUTH for cohort dates. Edit here, then run `node scripts/cohorts.mjs` (or `npm run cohorts`) to stamp dates into every page's schema + visible banner. Never hand-edit cohort dates in the HTML.",
+  "program": {
+    "priceUSD": "3999",
+    "workload": "P2W",
+    "locality": "Austin",
+    "region": "TX",
+    "country": "US",
+    "enrollUrl": "https://www.makersquare.ai/enroll"
+  },
+  "cohorts": [
+    { "id": 1, "name": "Cohort 1", "start": "2026-07-06", "end": "2026-07-17", "enrollClose": "2026-06-22" },
+    { "id": 2, "name": "Cohort 2", "start": "2026-08-03", "end": "2026-08-14", "enrollClose": "2026-07-20" },
+    { "id": 3, "name": "Cohort 3", "start": "2026-10-12", "end": "2026-10-23", "enrollClose": "2026-09-28" },
+    { "id": 4, "name": "Cohort 4", "start": "2026-11-09", "end": "2026-11-20", "enrollClose": "2026-10-26" },
+    { "id": 5, "name": "Cohort 5", "start": "2026-11-30", "end": "2026-12-11", "enrollClose": "2026-11-16" }
+  ]
+}
