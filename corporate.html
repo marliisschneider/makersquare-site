@@ -301,8 +301,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div style="flex:1;background:var(--white);border:1px solid rgba(24,24,73,0.06);border-radius:var(--r-sm);padding:10px;text-align:center;"><div style="font-family:var(--font-display);font-size:1.1rem;font-weight:800;color:var(--navy);">W1</div><div style="font-size:0.6rem;color:var(--text-muted);">Learn</div></div>
             <div style="flex:1;background:var(--navy);border-radius:var(--r-sm);padding:10px;text-align:center;"><div style="font-family:var(--font-display);font-size:1.1rem;font-weight:800;color:var(--white);">W2</div><div style="font-size:0.6rem;color:var(--sky);">Build</div></div>
           </div>
-          <div style="display:flex;align-items:center;gap:6px;margin-bottom:8px;"><div style="width:20px;height:20px;border-radius:50%;background:var(--cloud);"></div><div style="width:20px;height:20px;border-radius:50%;background:var(--cloud);"></div><div style="width:20px;height:20px;border-radius:50%;background:var(--cloud);"></div><div style="width:20px;height:20px;border-radius:50%;background:var(--cloud);"></div><div style="font-size:0.6rem;color:var(--text-muted);margin-left:4px;">3-15 people</div></div>
-          <div style="height:6px;background:linear-gradient(90deg,var(--indigo),var(--green));border-radius:3px;margin-top:12px;"></div>
+          <div class="ms-people" style="display:flex;align-items:center;gap:6px;margin-bottom:8px;"><div style="width:20px;height:20px;border-radius:50%;background:var(--cloud);"></div><div style="width:20px;height:20px;border-radius:50%;background:var(--cloud);"></div><div style="width:20px;height:20px;border-radius:50%;background:var(--cloud);"></div><div style="width:20px;height:20px;border-radius:50%;background:var(--cloud);"></div><div style="font-size:0.6rem;color:var(--text-muted);margin-left:4px;">3-15 people</div></div>
+          <div class="ms-progress" style="height:6px;background:linear-gradient(90deg,var(--indigo),var(--green));border-radius:3px;margin-top:12px;"></div>
           <div style="display:flex;justify-content:space-between;margin-top:4px;font-size:0.6rem;color:var(--text-muted);"><span>Start</span><span>Demo day <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="7"/><path d="M8.21 13.89L7 23l5-3 5 3-1.21-9.12"/></svg></span></div>
           <div style="position:absolute;top:-10px;right:-10px;background:var(--white);border:1px solid rgba(24,24,73,0.06);border-radius:var(--r-sm);padding:5px 10px;box-shadow:var(--shadow-md);font-size:0.65rem;font-weight:700;color:var(--green);animation:float-1 4s ease-in-out infinite;">1 tool deployed</div>
         </div>
@@ -316,6 +316,68 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="corp-stat reveal reveal-d4"><div class="corp-stat-num">Live demo</div><div class="corp-stat-label">Team presents the built tool</div></div>
     </div>
   </div>
+</section>
+
+
+<!-- WHAT YOUR TEAM WALKS OUT WITH -->
+<section class="section">
+  <div class="container">
+    <div style="text-align:center;">
+      <div class="section-label reveal" style="justify-content:center;">By team</div>
+      <h2 class="reveal">What would <span class="text-accent">your team</span> build?</h2>
+      <p class="section-sub reveal" style="margin:var(--s3) auto 0;max-width:560px;">Pick the team. That&#8217;s the training. Every example below is something a team builds during the program and leaves running on their own data.</p>
+    </div>
+
+    <div class="corp-team-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:var(--s5);margin-top:var(--s8);">
+
+      <div class="reveal" style="background:var(--white);border:1px solid rgba(24,24,73,0.06);border-radius:var(--r-xl);padding:var(--s7);">
+        <div style="font-size:0.65rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;color:var(--indigo);margin-bottom:var(--s3);">Sales team</div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:var(--s3);margin-bottom:var(--s4);">
+          <li style="font-size:0.88rem;color:var(--text-secondary);line-height:1.6;display:flex;gap:8px;"><span style="color:var(--indigo);font-weight:700;flex-shrink:0;">&#10003;</span><span>A prospect list that builds and enriches itself &mdash; Clay pulls your target companies, scores them by fit</span></li>
+          <li style="font-size:0.88rem;color:var(--text-secondary);line-height:1.6;display:flex;gap:8px;"><span style="color:var(--indigo);font-weight:700;flex-shrink:0;">&#10003;</span><span>Outreach personalized to each prospect &mdash; written by AI, sent and followed up automatically</span></li>
+          <li style="font-size:0.88rem;color:var(--text-secondary);line-height:1.6;display:flex;gap:8px;"><span style="color:var(--indigo);font-weight:700;flex-shrink:0;">&#10003;</span><span>Calls recorded, summarized, and logged to your CRM &mdash; reps never type notes again</span></li>
+        </ul>
+        <div style="font-size:0.8rem;font-weight:700;color:var(--green);">The recovered hours go back into selling.</div>
+      </div>
+
+      <div class="reveal reveal-d2" style="background:var(--white);border:1px solid rgba(24,24,73,0.06);border-radius:var(--r-xl);padding:var(--s7);">
+        <div style="font-size:0.65rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;color:var(--indigo);margin-bottom:var(--s3);">Marketing team</div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:var(--s3);margin-bottom:var(--s4);">
+          <li style="font-size:0.88rem;color:var(--text-secondary);line-height:1.6;display:flex;gap:8px;"><span style="color:var(--indigo);font-weight:700;flex-shrink:0;">&#10003;</span><span>One piece of content becomes a week of channel-ready posts &mdash; in your brand voice, not AI filler</span></li>
+          <li style="font-size:0.88rem;color:var(--text-secondary);line-height:1.6;display:flex;gap:8px;"><span style="color:var(--indigo);font-weight:700;flex-shrink:0;">&#10003;</span><span>Campaign reports that assemble themselves from live data &mdash; no more screenshot decks</span></li>
+          <li style="font-size:0.88rem;color:var(--text-secondary);line-height:1.6;display:flex;gap:8px;"><span style="color:var(--indigo);font-weight:700;flex-shrink:0;">&#10003;</span><span>Competitor and market monitoring digested into a Monday-morning brief</span></li>
+        </ul>
+        <div style="font-size:0.8rem;font-weight:700;color:var(--green);">More shipped campaigns, same headcount.</div>
+      </div>
+
+      <div class="reveal" style="background:var(--white);border:1px solid rgba(24,24,73,0.06);border-radius:var(--r-xl);padding:var(--s7);">
+        <div style="font-size:0.65rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;color:var(--indigo);margin-bottom:var(--s3);">Operations team</div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:var(--s3);margin-bottom:var(--s4);">
+          <li style="font-size:0.88rem;color:var(--text-secondary);line-height:1.6;display:flex;gap:8px;"><span style="color:var(--indigo);font-weight:700;flex-shrink:0;">&#10003;</span><span>Every meeting auto-summarized and filed to the right place in Notion or Slack</span></li>
+          <li style="font-size:0.88rem;color:var(--text-secondary);line-height:1.6;display:flex;gap:8px;"><span style="color:var(--indigo);font-weight:700;flex-shrink:0;">&#10003;</span><span>Weekly status reports that write themselves from your live project data</span></li>
+          <li style="font-size:0.88rem;color:var(--text-secondary);line-height:1.6;display:flex;gap:8px;"><span style="color:var(--indigo);font-weight:700;flex-shrink:0;">&#10003;</span><span>Documents &mdash; invoices, contracts, intake forms &mdash; read and extracted to structured data automatically</span></li>
+        </ul>
+        <div style="font-size:0.8rem;font-weight:700;color:var(--green);">The recurring time drains stop recurring.</div>
+      </div>
+
+      <div class="reveal reveal-d2" style="background:var(--white);border:1px solid rgba(24,24,73,0.06);border-radius:var(--r-xl);padding:var(--s7);">
+        <div style="font-size:0.65rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;color:var(--indigo);margin-bottom:var(--s3);">Finance &amp; admin</div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:var(--s3);margin-bottom:var(--s4);">
+          <li style="font-size:0.88rem;color:var(--text-secondary);line-height:1.6;display:flex;gap:8px;"><span style="color:var(--indigo);font-weight:700;flex-shrink:0;">&#10003;</span><span>Invoices and receipts processed into your books&#8217; format &mdash; no manual entry</span></li>
+          <li style="font-size:0.88rem;color:var(--text-secondary);line-height:1.6;display:flex;gap:8px;"><span style="color:var(--indigo);font-weight:700;flex-shrink:0;">&#10003;</span><span>Recurring reports drafted straight from your spreadsheets</span></li>
+          <li style="font-size:0.88rem;color:var(--text-secondary);line-height:1.6;display:flex;gap:8px;"><span style="color:var(--indigo);font-weight:700;flex-shrink:0;">&#10003;</span><span>Inbox triage that sorts, prioritizes, and drafts replies for review</span></li>
+        </ul>
+        <div style="font-size:0.8rem;font-weight:700;color:var(--green);">Month-end stops eating the first week of the next month.</div>
+      </div>
+
+    </div>
+
+    <div class="reveal" style="text-align:center;margin-top:var(--s6);">
+      <p style="font-size:0.88rem;color:var(--text-secondary);margin-bottom:var(--s4);">Different team? Customer service, recruiting, legal &mdash; if the work happens on a computer, there&#8217;s a version of this for it.</p>
+      <a href="#contact" class="btn btn-primary btn-arrow">Book a 15-min call &mdash; tell us about your team </a>
+    </div>
+  </div>
+  <style>@media(max-width:900px){.corp-team-grid{grid-template-columns:1fr!important;}}</style>
 </section>
 
 
@@ -687,6 +749,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script src="js/main.min.js"></script>
 <script type="text/javascript" src="https://forms.zoho.com/js/zf_gclid.js"> </script>
 <script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script><script id="zsiqscript" src="https://salesiq.zohopublic.com/widget?wc=siq885ea214ffc25f4f452068cc9bc1cec4353b0ff61817b77233444928d383fe96" defer></script>
+<style>
+/* Subtle brand motion on illustration panels — disabled for reduced-motion users */
+@media (prefers-reduced-motion: no-preference) {
+  .ms-live-dot { animation: msPulse 1.6s ease-in-out infinite; }
+  .ms-audience > div { animation: msBob 3.2s ease-in-out infinite; }
+  .ms-audience > div:nth-child(2n) { animation-delay: .4s; }
+  .ms-audience > div:nth-child(3n) { animation-delay: .8s; }
+  .ms-audience > div:nth-child(5n) { animation-delay: 1.2s; }
+  .ms-thumbs > div { animation: msFade 4.5s ease-in-out infinite; }
+  .ms-thumbs > div:nth-child(2) { animation-delay: 1.5s; }
+  .ms-thumbs > div:nth-child(3) { animation-delay: 3s; }
+  .ms-progress { animation: msGrow 2.2s cubic-bezier(0.22,1,0.36,1) both; transform-origin: left; }
+  .ms-people > div { animation: msBob 3.2s ease-in-out infinite; }
+  .ms-people > div:nth-child(2) { animation-delay: .5s; }
+  .ms-people > div:nth-child(3) { animation-delay: 1s; }
+  .ms-people > div:nth-child(4) { animation-delay: 1.5s; }
+}
+@keyframes msPulse { 0%,100% { opacity:1; box-shadow:0 0 0 0 rgba(34,197,94,.5); } 50% { opacity:.4; box-shadow:0 0 0 4px rgba(34,197,94,0); } }
+@keyframes msBob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-3px); } }
+@keyframes msFade { 0%,100% { opacity:.55; } 50% { opacity:1; } }
+@keyframes msGrow { from { transform: scaleX(0.06); } to { transform: scaleX(1); } }
+</style>
 </body>
 </html>
 
