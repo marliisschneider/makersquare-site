@@ -299,6 +299,25 @@ body {
   letter-spacing: 0.05em;
 }
 
+.cert-sig-img {
+  height: 48px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+  object-position: left bottom;
+  margin-bottom: 6px;
+}
+
+.cert-skills {
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  color: #aaa;
+  letter-spacing: 0.08em;
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(24,24,73,0.07);
+}
+
 .cert-center-seal {
   display: flex;
   flex-direction: column;
@@ -422,17 +441,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="cert-completed">has successfully completed</div>
     <div class="cert-program">2-Week AI Intensive</div>
     <div class="cert-cohort">Cohort 1 &nbsp;&middot;&nbsp; July 6&ndash;17, 2026 &nbsp;&middot;&nbsp; Austin, TX</div>
+    <div class="cert-skills">Claude &nbsp;&middot;&nbsp; Cursor &nbsp;&middot;&nbsp; Supabase &nbsp;&middot;&nbsp; Vercel &nbsp;&middot;&nbsp; GitHub &nbsp;&middot;&nbsp; Prompt Engineering &nbsp;&middot;&nbsp; Agentic Workflows</div>
   </div>
 
   <div class="cert-footer">
     <div class="cert-sig-block">
+      <img src="../images/signature-marliis.png" alt="" class="cert-sig-img" onerror="this.style.display='none'">
       <div class="cert-sig-line"></div>
       <div class="cert-sig-name">Marliis Schneider</div>
       <div class="cert-sig-title">Founder &amp; CEO, MakerSquare</div>
     </div>
     <div class="cert-center-seal">
       <div class="cert-seal-ring">
-        <div class="cert-seal-inner">MS</div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="28" height="28">
+          <polygon points="4,12 10,8 10,14 4,18" fill="#6580C8"/>
+          <polygon points="4,18 10,14 10,26 4,26" fill="#B8C9F2"/>
+          <polygon points="10,8 16,14 22,8 16,2" fill="#6580C8"/>
+          <polygon points="10,14 16,20 16,14 10,8" fill="#D4DFFB"/>
+          <polygon points="16,14 16,20 22,14 22,8" fill="#B8C9F2"/>
+          <polygon points="22,8 28,12 28,18 22,14" fill="#6580C8"/>
+          <polygon points="22,14 28,18 28,26 22,26" fill="#D4DFFB"/>
+        </svg>
       </div>
       <div class="cert-seal-text">Verified</div>
     </div>
