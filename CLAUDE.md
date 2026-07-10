@@ -282,7 +282,7 @@ Private team sessions: custom quote only — never publish a price. Internal gui
 Stripe: 2 payment links per workshop (4 live after WS1 removal). `/workshop-register` uses JS date logic to auto-select — no manual swapping. Zoho form redirects to `/workshop-register` after submission. See Workshops-Strategy.md in Obsidian vault.
 
 ### Corporate training (elevated Jul 2026 — priority product)
-B2B is now a primary motion, not a footer link. "For Teams" is in the main nav sitewide → `/corporate`, which is the B2B hub with three offers in order: (1) private 3-day team workshop (entry offer, custom quote, proposal in 24 hrs), (2) custom company program (core offer, 8–20 people), (3) individual seats in a public cohort ($3,999). The homepage has a "Corporate AI Training" band above the workshops teaser. Never publish private-session pricing (internal guide: ~$950/person, min ~$4,000).
+B2B is now a primary motion, not a footer link. "For Teams" is in the main nav sitewide → `/corporate`, which is the B2B hub with three offers in order: (1) private 3-day team workshop (entry offer, custom quote, proposal in 24 hrs), (2) custom company program (core offer, 3–15 people), (3) individual seats in a public cohort ($3,999). The homepage has a "Corporate AI Training" band above the workshops teaser. Never publish private-session pricing (internal guide: ~$950/person, min ~$4,000).
 
 **Cross-sell:** Workshop attendees get discount code `WORKSHOP200` ($200 off 2-week program). 2-week program FAQ links to workshops page.
 
