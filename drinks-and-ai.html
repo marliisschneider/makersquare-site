@@ -180,13 +180,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section class="ev-rsvp" id="rsvp">
   <div class="ev-rsvp-inner">
     <h2>Save your spot</h2>
-    <p class="ev-rsvp-sub">Free to attend — but space at Capital Factory is limited. Drop your info and we'll hold you a spot &amp; send the details.</p>
-    <form class="ev-form" onsubmit="return msRSVP(event)">
-      <input type="text" name="name" placeholder="First name" autocomplete="given-name">
-      <input type="email" name="email" placeholder="Email" required autocomplete="email">
-      <button type="submit" class="btn btn-primary btn-lg btn-arrow" style="justify-content:center;">Reserve my spot </button>
-    </form>
-    <div class="ev-fineprint">You'll be taken to Meetup to confirm your RSVP. Fri Jul 17 · 6–8pm · Capital Factory, Austin.</div>
+    <p class="ev-rsvp-sub">Free to attend — but space at Capital Factory is limited. RSVP on Meetup and we'll see you Friday.</p>
+    <a href="https://www.meetup.com/makersquare-ai/events/315514286/" onclick="window.dataLayer=window.dataLayer||[];dataLayer.push({event:'event_rsvp',event_name:'drinks_and_ai',cta:'footer'});" class="btn btn-primary btn-lg btn-arrow" style="display:inline-flex;">RSVP on Meetup </a>
+    <div class="ev-fineprint">Fri Jul 17 · 6–8pm · Capital Factory, 701 Brazos St, Austin.</div>
   </div>
 </section>
 
@@ -197,33 +193,5 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div></footer>
 
 <script type="text/javascript" src="https://forms.zoho.com/js/zf_gclid.js"> </script>
-<script>
-// RSVP handler: fires a GTM/dataLayer conversion event, optionally posts the lead
-// to a Zoho form, then sends the visitor to the Meetup RSVP page.
-// TO CAPTURE THE LEAD: set ZOHO_ACTION to your "Drinks & AI RSVP" Zoho form's
-// formperma POST url (Zoho form → Share → "Permalink"/"POST url"), and set the
-// Zoho field names below to match. Leave "" to just track + redirect.
-var ZOHO_ACTION = "";  // e.g. "https://forms.zohopublic.com/.../form/DrinksAIRSVP/formperma/XXXX/htmlRecords/submit"
-var MEETUP_URL  = "https://www.meetup.com/makersquare-ai/events/315514286/";
-function msRSVP(ev){
-  ev.preventDefault();
-  var form = ev.target;
-  var name = (form.querySelector('[name=name]')||{}).value || '';
-  var email = (form.querySelector('[name=email]')||{}).value || '';
-  // 1) Conversion event → GTM fires Meta Pixel / X / Google conversions off this
-  window.dataLayer = window.dataLayer || [];
-  window.dataLayer.push({event:'event_rsvp', event_name:'drinks_and_ai', lead_email:email});
-  var go = function(){ window.location.href = MEETUP_URL; };
-  // 2) Optional lead capture to Zoho, then redirect regardless
-  if (ZOHO_ACTION){
-    try {
-      var fd = new FormData(); fd.append('Name_First', name); fd.append('Email', email);
-      fetch(ZOHO_ACTION, {method:'POST', body:fd, mode:'no-cors'}).finally(go);
-      setTimeout(go, 1500);
-    } catch(e){ go(); }
-  } else { go(); }
-  return false;
-}
-</script>
 </body>
 </html>
