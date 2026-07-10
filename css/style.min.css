@@ -25,7 +25,7 @@ body.cm-modal-open { overflow: hidden; }
 
 /* Grouped nav dropdowns */
 .nav-dd{position:relative}
-.nav-dd-toggle{display:inline-flex;align-items:center;gap:4px;background:none;border:0;cursor:pointer;font-family:inherit;font-size:0.8rem;font-weight:500;color:var(--text-secondary);padding:0;line-height:1.2;white-space:nowrap}
+.nav-dd-toggle{display:inline-flex;align-items:center;gap:4px;background:none;border:0;cursor:pointer;font-family:inherit;font-size:0.9rem;letter-spacing:0.01em;font-weight:500;color:var(--text-secondary);padding:0;line-height:1.2;white-space:nowrap}
 .nav-dd-toggle:hover{color:var(--navy)}
 .nav-dd-toggle svg{transition:transform .2s}
 .nav-dd:hover .nav-dd-toggle svg,.nav-dd:focus-within .nav-dd-toggle svg{transform:rotate(180deg)}
