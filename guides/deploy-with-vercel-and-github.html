@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="facebook-domain-verification" content="fligau9appze71fwy7uaaw2v12bc4n" />
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MJTW9WQ3');</script>
+<!-- End Google Tag Manager -->
+<!-- Zoho UTM passthrough (modificado: incluye fbclid) -->
+<script>
+(function(){var p=new URLSearchParams(window.location.search);var keys=['utm_source','utm_medium','utm_campaign','utm_content','utm_term','fbclid'];var stored={};keys.forEach(function(k){if(p.get(k))stored[k]=p.get(k);});if(Object.keys(stored).length){try{sessionStorage.setItem('zf_utm',JSON.stringify(stored));}catch(e){}}})();
+</script>
+<!-- Zoho zf_gtm postMessage listener -->
+<script>
+window.addEventListener('message',function(e){if(e.data&&e.data.type=='zf_gtm'){window.dataLayer=window.dataLayer||[];window.dataLayer.push(e.data);}});
+</script>
+<!-- X conversion tracking base code -->
+<script>
+!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='https://static.ads-twitter.com/uwt.js',a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+twq('config','rcjjn');
+</script>
+<title>How to Deploy with Vercel and GitHub | MakerSquare Guides</title>
+<meta name="description" content="Connect GitHub to Vercel and get your project live in 10 minutes. Every push to GitHub automatically deploys — no manual upload, no FTP, no config files.">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/png" href="../favicon.png">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="canonical" href="https://www.makersquare.ai/guides/deploy-with-vercel-and-github">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.makersquare.ai/guides/deploy-with-vercel-and-github">
+<meta property="og:title" content="How to deploy with Vercel and GitHub in 10 minutes.">
+<meta property="og:description" content="Connect GitHub to Vercel and get your project live with a real URL — and automatic updates every time you push.">
+<meta property="og:image" content="https://www.makersquare.ai/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.min.css?v=8">
+<style>
+.guide-hero { padding: calc(var(--nav-height) + var(--s10)) 0 var(--s4); border-bottom: 1px solid rgba(24,24,73,0.06); }
+.guide-hero-inner { max-width: 760px; margin: 0 auto; }
+.guide-tag { display: inline-flex; align-items: center; gap: 8px; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--indigo); margin-bottom: var(--s4); }
+.guide-tag::before { content: ''; width: 7px; height: 7px; background: var(--indigo); border-radius: 2px; }
+.guide-title { font-size: clamp(1.8rem, 3.5vw, 2.6rem); font-weight: 800; color: var(--navy); line-height: 1.15; letter-spacing: -0.03em; margin-bottom: var(--s4); }
+.guide-meta { display: flex; align-items: center; gap: var(--s3); font-size: 0.82rem; color: var(--text-muted); flex-wrap: wrap; }
+.guide-meta-dot { width: 3px; height: 3px; border-radius: 50%; background: var(--text-muted); }
+.guide-body-wrap { padding: var(--s6) 0 var(--s10); }
+.guide-body { max-width: 760px; margin: 0 auto; }
+.guide-body p { font-size: 1rem; color: #2d2d4e; line-height: 1.85; margin-bottom: var(--s5); }
+.guide-body h2 { font-size: 1.2rem; font-weight: 700; color: var(--navy); letter-spacing: -0.02em; margin-top: var(--s9); margin-bottom: var(--s4); padding-top: var(--s7); border-top: 1px solid rgba(24,24,73,0.06); }
+.guide-body h2:first-of-type { border-top: none; padding-top: 0; margin-top: var(--s6); }
+.guide-body a { color: var(--indigo); text-decoration: none; border-bottom: 1px solid rgba(64,61,216,0.25); transition: border-color 0.2s; }
+.guide-body a:hover { border-bottom-color: var(--indigo); }
+.guide-body strong { color: var(--navy); font-weight: 700; }
+.step-block { display: flex; gap: var(--s5); margin-bottom: var(--s7); }
+.step-num { flex-shrink: 0; width: 32px; height: 32px; background: var(--indigo); border-radius: 50%; font-size: 0.82rem; font-weight: 800; color: var(--white); display: flex; align-items: center; justify-content: center; margin-top: 2px; font-family: var(--font-display); }
+.step-content { flex: 1; }
+.step-title { font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: var(--s2); line-height: 1.4; }
+.step-body { font-size: 0.95rem; color: #2d2d4e; line-height: 1.8; }
+.step-body p { margin-bottom: var(--s3); font-size: 0.95rem; }
+.code-block { background: #0f0f23; border-radius: var(--r-lg); padding: var(--s5) var(--s6); margin: var(--s4) 0; overflow-x: auto; }
+.code-block pre { font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace; font-size: 0.82rem; color: #e0e0f0; line-height: 1.7; margin: 0; white-space: pre; }
+.callout { background: rgba(64,61,216,0.04); border: 1px solid rgba(64,61,216,0.15); border-left: 3px solid var(--indigo); border-radius: 0 var(--r-md) var(--r-md) 0; padding: var(--s4) var(--s5); margin: var(--s5) 0; }
+.callout p { font-size: 0.9rem; color: #3a3a6e; line-height: 1.7; margin: 0; }
+.callout strong { color: var(--indigo); }
+.prereq-list { list-style: none; padding: 0; margin: var(--s4) 0 var(--s6); display: flex; flex-direction: column; gap: var(--s2); }
+.prereq-list li { font-size: 0.95rem; color: #2d2d4e; padding-left: 20px; position: relative; }
+.prereq-list li::before { content: '✓'; position: absolute; left: 0; color: var(--indigo); font-weight: 700; font-size: 0.85rem; }
+.guide-nav { display: flex; justify-content: space-between; align-items: center; padding-top: var(--s7); border-top: 1px solid rgba(24,24,73,0.06); margin-top: var(--s9); gap: var(--s4); flex-wrap: wrap; }
+.guide-nav-link { font-size: 0.85rem; font-weight: 600; color: var(--indigo); text-decoration: none; display: inline-flex; align-items: center; gap: 6px; border: none !important; }
+.guide-nav-link:hover { color: var(--navy); }
+.post-cta { background: var(--navy); border-radius: var(--r-xl); padding: var(--s8); margin-top: var(--s9); text-align: center; }
+.post-cta p { color: rgba(255,255,255,0.65); font-size: 0.95rem; line-height: 1.7; margin-bottom: var(--s5); max-width: 520px; margin-left: auto; margin-right: auto; }
+.post-cta-actions { display: flex; gap: var(--s3); justify-content: center; flex-wrap: wrap; }
+.post-back { margin-bottom: var(--s6); }
+.post-back a { font-size: 0.82rem; font-weight: 600; color: var(--text-muted); text-decoration: none; display: inline-flex; align-items: center; gap: 6px; transition: color 0.2s; border: none !important; }
+.post-back a:hover { color: var(--indigo); }
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJTW9WQ3"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<script src="https://forms.zoho.com/js/zf_gclid.js"></script>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo" style="align-items:center;"><img src="../logo-light.png" alt="MakerSquare — School of Applied AI"><span class="nav-tagline" style="padding-left:4px;">School of Applied AI</span></a>
+    <ul class="nav-links">
+      <li><a href="/about">About</a></li>
+      <li style="white-space:nowrap;"><a href="/use-cases">Use Cases</a></li>
+      <li><a href="/curriculum">Curriculum</a></li>
+      <li><a href="/corporate">For Teams</a></li>
+      <li><a href="/pricing">Pricing</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/enroll" class="nav-apply">Enroll</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="/enroll" class="btn btn-primary btn-arrow" style="white-space:nowrap;">Secure Your Spot </a>
+      <button class="nav-hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu">
+  <ul class="mobile-menu-links">
+    <li><a href="/about">About</a></li>
+    <li><a href="/use-cases">Use Cases</a></li>
+    <li><a href="/curriculum">Curriculum</a></li>
+    <li><a href="/corporate">For Teams</a></li>
+    <li><a href="/pricing">Pricing</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="/enroll">Enroll</a></li>
+  </ul>
+  <a href="/enroll" class="btn btn-primary btn-block btn-lg" style="margin-top:24px;">Secure Your Spot</a>
+</div>
+
+<!-- HERO -->
+<section class="guide-hero section">
+  <div class="container">
+    <div class="guide-hero-inner">
+      <div class="post-back"><a href="/guides">&#8592; Guides</a></div>
+      <div class="guide-tag">Deployment · Guide 2 of 3</div>
+      <h1 class="guide-title">How to deploy your project with Vercel and GitHub in 10 minutes.</h1>
+      <div class="guide-meta">
+        <span>MakerSquare</span>
+        <span class="guide-meta-dot"></span>
+        <span>8 min read</span>
+        <span class="guide-meta-dot"></span>
+        <span>Beginner</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GUIDE BODY -->
+<div class="guide-body-wrap">
+  <div class="container">
+    <div class="guide-body">
+
+      <p>A project that only runs on your laptop isn't a real project. It's a draft. The moment it has a URL that anyone in the world can visit, something changes — for you and for anyone you show it to.</p>
+
+      <p>Vercel is the fastest way to get there. It's free, it takes about 10 minutes to set up, and once it's connected to GitHub, every time you push code, your site updates automatically. No manual uploads. No FTP. No deployment pipeline to maintain.</p>
+
+      <p>Here's the full setup, from zero to live URL.</p>
+
+      <h2>What you need before you start</h2>
+
+      <ul class="prereq-list">
+        <li>A GitHub account (free at github.com)</li>
+        <li>A Vercel account (free at vercel.com — sign up with GitHub)</li>
+        <li>A project folder on your computer with at least one file in it</li>
+      </ul>
+
+      <p>If you don't have a GitHub repo for your project yet, that's step one. If you already do, skip ahead to step 3.</p>
+
+      <h2>Step by step</h2>
+
+      <div class="step-block">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <div class="step-title">Create a GitHub repo for your project</div>
+          <div class="step-body">
+            <p>Go to github.com, click the <strong>+</strong> icon in the top right, and select <strong>New repository</strong>. Give it a name. Leave it public or set it to private — Vercel works with both. Don't add a README or .gitignore yet if you already have local files.</p>
+            <p>GitHub will show you a set of commands. Copy the ones under "push an existing repository." They look like this:</p>
+            <div class="code-block"><pre>git remote add origin https://github.com/yourusername/your-repo.git
+git branch -M main
+git push -u origin main</pre></div>
+            <p>Paste and run those in your terminal from inside your project folder.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="step-block">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <div class="step-title">Confirm your files are on GitHub</div>
+          <div class="step-body">Refresh your GitHub repo page. You should see your project files listed there. If you do, you're ready for Vercel.</div>
+        </div>
+      </div>
+
+      <div class="step-block">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <div class="step-title">Import your project into Vercel</div>
+          <div class="step-body">
+            <p>Go to vercel.com and click <strong>Add New → Project</strong>. Vercel will ask to connect to GitHub — authorize it. Then you'll see a list of your GitHub repos. Find your project and click <strong>Import</strong>.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="step-block">
+        <div class="step-num">4</div>
+        <div class="step-content">
+          <div class="step-title">Configure the build settings</div>
+          <div class="step-body">
+            <p>For most projects, Vercel detects the framework automatically and sets everything correctly. If you're deploying a plain HTML site, select <strong>Other</strong> as the framework and leave the build settings blank. If you're using Next.js, React, or Astro, Vercel already knows what to do.</p>
+            <p>The only setting you might need to change: <strong>Root Directory</strong> — if your project files aren't in the top-level folder, tell Vercel where to look.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="step-block">
+        <div class="step-num">5</div>
+        <div class="step-content">
+          <div class="step-title">Click Deploy</div>
+          <div class="step-body">
+            <p>Vercel builds your project and gives you a live URL — something like <code style="background:rgba(64,61,216,0.08);padding:2px 6px;border-radius:4px;font-size:0.85em;">your-project.vercel.app</code>. This usually takes under 60 seconds.</p>
+            <p>Open the URL. Your project is live.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="callout">
+        <p><strong>From now on:</strong> every time you push to your GitHub <code style="background:rgba(64,61,216,0.08);padding:2px 6px;border-radius:4px;font-size:0.85em;">main</code> branch, Vercel automatically deploys the update. You don't have to do anything else. That's the loop — edit locally, push to GitHub, site updates in about 30 seconds.</p>
+      </div>
+
+      <h2>Adding a custom domain (optional)</h2>
+
+      <div class="step-block">
+        <div class="step-num">6</div>
+        <div class="step-content">
+          <div class="step-title">Connect your domain in Vercel</div>
+          <div class="step-body">
+            <p>In your Vercel project dashboard, go to <strong>Settings → Domains</strong>. Type in your domain name and click <strong>Add</strong>. Vercel will show you the DNS records you need to add — usually two: an A record pointing to Vercel's IP, and a CNAME for the www version.</p>
+            <p>Log into wherever you bought your domain (Namecheap, GoDaddy, Google Domains, etc.) and add those DNS records. DNS changes take anywhere from a few minutes to 48 hours to propagate — usually it's under an hour.</p>
+            <p>Once it propagates, Vercel automatically provisions an SSL certificate. Your site is live at your custom domain with HTTPS, for free.</p>
+          </div>
+        </div>
+      </div>
+
+      <h2>When something doesn't deploy</h2>
+
+      <p>If your deployment fails, Vercel shows you the build logs. The error is almost always one of three things: a missing dependency, a wrong build command, or a file that references something that doesn't exist in the repo.</p>
+
+      <p>Click on the failed deployment in your Vercel dashboard, scroll through the log, and find the first red line. That's usually where the problem is. Copy it and ask Claude — it'll tell you exactly what to fix.</p>
+
+      <div class="guide-nav">
+        <a href="/guides/how-to-set-up-claude-md" class="guide-nav-link" style="color:var(--text-muted);">&#8592; Previous: CLAUDE.md setup</a>
+        <a href="/guides/git-workflow-for-non-coders" class="guide-nav-link">Next: The git workflow &#8594;</a>
+      </div>
+
+      <!-- CTA -->
+      <div class="post-cta">
+        <p>In MakerSquare's program, students deploy their first project to a live URL on Day 2. By the end of week one, they've shipped three. The deploy loop becomes automatic fast.</p>
+        <div class="post-cta-actions">
+          <a href="https://www.makersquare.ai/curriculum" class="btn btn-arrow" style="background:var(--white);color:var(--navy);font-weight:700;">See the curriculum </a>
+          <a href="https://www.makersquare.ai/enroll" class="btn" style="background:transparent;color:rgba(255,255,255,0.65);border:1.5px solid rgba(255,255,255,0.2);">Secure Your Spot</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="footer-logo"><img src="../logo-dark.png" alt="MakerSquare — School of Applied AI"></a><div class="footer-tagline">School of Applied AI</div>
+        <p>2-week in-person AI intensive in Austin, TX for operators, founders, and professionals.</p>
+        <a href="/enroll" class="btn btn-primary btn-arrow" style="font-size:0.82rem;padding:10px 20px;">Secure Your Spot </a>
+      </div>
+      <div>
+        <div class="footer-col-title">Program</div>
+        <ul class="footer-col-links">
+          <li><a href="/use-cases">Use Cases</a></li>
+          <li><a href="/curriculum">Curriculum</a></li>
+          <li><a href="/pricing">Pricing</a></li>          <li><a href="/enroll">Enroll</a></li>
+          <li><a href="/scholarship">Scholarship</a></li>
+          <li><a href="/faq">FAQ</a></li>
+          <li><a href="/demo-day">Demo Day</a></li>
+          <li><a href="/workshops">Workshops</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Company</div>
+        <ul class="footer-col-links">
+          <li><a href="/about">About</a></li>
+          <li><a href="/team">Team</a></li>
+          <li><a href="/corporate">Corporate Training</a></li>
+          <li><a href="/comparison">How We Compare</a></li>
+          <li><a href="/alumni">Alumni</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Learn</div>
+        <ul class="footer-col-links">
+          <li><a href="/events">Events</a></li><li><a href="/blog">Blog</a></li>
+          <li><a href="https://ai-builder-brief.beehiiv.com" target="_blank" rel="noopener">Newsletter &mdash; AI Builder Brief</a></li>
+          <li><a href="/guides">Guides</a></li>
+          <li><a href="/quickstart">Claude Quickstart Guide</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Contact</div>
+        <a href="mailto:hello@makersquare.ai" class="footer-contact-email">hello@makersquare.ai</a>
+        <p style="font-size:0.82rem;color:rgba(255,255,255,0.4);">Austin, TX</p>
+        <div class="footer-social"><a href="https://www.linkedin.com/company/makersquare-ai" target="_blank" rel="noopener" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>Follow us on LinkedIn</a><a href="https://www.meetup.com/makersquare-ai/" target="_blank" rel="noopener" aria-label="Meetup"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="width:15px;height:15px;fill:currentColor;flex-shrink:0;"><path d="M19.24 0H4.76A4.76 4.76 0 000 4.76v14.48A4.76 4.76 0 004.76 24h14.48A4.76 4.76 0 0024 19.24V4.76A4.76 4.76 0 0019.24 0zM8.64 16.8c-.48.12-.97-.12-1.2-.56L5.28 11.6a1 1 0 011.8-.88l1.56 3.16 3.84-7.8a1 1 0 011.8.88l-4.2 8.52a1 1 0 01-.44.52zm9.12-1.12a1 1 0 01-1.32.48l-2.16-1.04-1.04 2.16a1 1 0 01-1.8-.88l1.32-2.72 2.72 1.32-.48-2.96a1 1 0 011.96-.32l.64 3.96h.16z"/></svg>Events</a></div>
+      </div>
+    </div>
+    <!-- ═══ FOOTER NEWSLETTER ═══ -->
+    <div style="border-top:1px solid rgba(255,255,255,0.08);padding:var(--s8) 0;margin-bottom:var(--s6);">
+      <div style="max-width:480px;">
+        <div style="font-size:0.75rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:var(--s3);">AI Builder Brief</div>
+        <div style="font-size:1.05rem;font-weight:700;color:var(--white);margin-bottom:6px;">Get AI Builder Brief free every Tuesday.</div>
+        <div style="font-size:0.85rem;color:rgba(255,255,255,0.5);margin-bottom:var(--s4);">Three AI stories that matter, one prompt to try this week.</div>
+        <a href="https://ai-builder-brief.beehiiv.com/subscribe?utm_source=website&utm_medium=site&utm_campaign=newsletter" target="_blank" rel="noopener" class="btn btn-primary btn-arrow">Subscribe free </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">&copy; 2026 MakerSquare LLC. Austin, TX.</div>
+      <div class="footer-bottom-links">
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.min.js"></script>
+</body>
+</html>

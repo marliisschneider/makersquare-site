@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="facebook-domain-verification" content="fligau9appze71fwy7uaaw2v12bc4n" />
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MJTW9WQ3');</script>
+<!-- End Google Tag Manager -->
+<!-- Zoho UTM passthrough (modificado: incluye fbclid) -->
+<script>
+(function(){var p=new URLSearchParams(window.location.search);var keys=['utm_source','utm_medium','utm_campaign','utm_content','utm_term','fbclid'];var stored={};keys.forEach(function(k){if(p.get(k))stored[k]=p.get(k);});if(Object.keys(stored).length){try{sessionStorage.setItem('zf_utm',JSON.stringify(stored));}catch(e){}}})();
+</script>
+<!-- Zoho zf_gtm postMessage listener -->
+<script>
+window.addEventListener('message',function(e){if(e.data&&e.data.type=='zf_gtm'){window.dataLayer=window.dataLayer||[];window.dataLayer.push(e.data);}});
+</script>
+<!-- X conversion tracking base code -->
+<script>
+!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='https://static.ads-twitter.com/uwt.js',a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+twq('config','rcjjn');
+</script>
+<title>How to Set Up a CLAUDE.md File | MakerSquare Guides</title>
+<meta name="description" content="A CLAUDE.md file gives Claude persistent memory about your project. Set it up once and stop re-explaining your codebase, preferences, and rules every session.">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/png" href="../favicon.png">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="canonical" href="https://www.makersquare.ai/guides/how-to-set-up-claude-md">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.makersquare.ai/guides/how-to-set-up-claude-md">
+<meta property="og:title" content="How to set up a CLAUDE.md file — and why it changes everything.">
+<meta property="og:description" content="A CLAUDE.md file gives Claude persistent memory about your project. Set it up once and stop re-explaining yourself every session.">
+<meta property="og:image" content="https://www.makersquare.ai/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.min.css?v=8">
+<style>
+.guide-hero { padding: calc(var(--nav-height) + var(--s10)) 0 var(--s4); border-bottom: 1px solid rgba(24,24,73,0.06); }
+.guide-hero-inner { max-width: 760px; margin: 0 auto; }
+.guide-tag { display: inline-flex; align-items: center; gap: 8px; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--indigo); margin-bottom: var(--s4); }
+.guide-tag::before { content: ''; width: 7px; height: 7px; background: var(--indigo); border-radius: 2px; }
+.guide-title { font-size: clamp(1.8rem, 3.5vw, 2.6rem); font-weight: 800; color: var(--navy); line-height: 1.15; letter-spacing: -0.03em; margin-bottom: var(--s4); }
+.guide-meta { display: flex; align-items: center; gap: var(--s3); font-size: 0.82rem; color: var(--text-muted); flex-wrap: wrap; }
+.guide-meta-dot { width: 3px; height: 3px; border-radius: 50%; background: var(--text-muted); }
+.guide-body-wrap { padding: var(--s6) 0 var(--s10); }
+.guide-body { max-width: 760px; margin: 0 auto; }
+.guide-body p { font-size: 1rem; color: #2d2d4e; line-height: 1.85; margin-bottom: var(--s5); }
+.guide-body h2 { font-size: 1.2rem; font-weight: 700; color: var(--navy); letter-spacing: -0.02em; margin-top: var(--s9); margin-bottom: var(--s4); padding-top: var(--s7); border-top: 1px solid rgba(24,24,73,0.06); }
+.guide-body h2:first-of-type { border-top: none; padding-top: 0; margin-top: var(--s6); }
+.guide-body a { color: var(--indigo); text-decoration: none; border-bottom: 1px solid rgba(64,61,216,0.25); transition: border-color 0.2s; }
+.guide-body a:hover { border-bottom-color: var(--indigo); }
+.guide-body strong { color: var(--navy); font-weight: 700; }
+.step-block { display: flex; gap: var(--s5); margin-bottom: var(--s6); }
+.step-num { flex-shrink: 0; width: 32px; height: 32px; background: var(--indigo); border-radius: 50%; font-size: 0.82rem; font-weight: 800; color: var(--white); display: flex; align-items: center; justify-content: center; margin-top: 2px; font-family: var(--font-display); }
+.step-content { flex: 1; }
+.step-title { font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: var(--s2); line-height: 1.4; }
+.step-body { font-size: 0.95rem; color: #2d2d4e; line-height: 1.8; }
+.step-body p { margin-bottom: var(--s3); font-size: 0.95rem; }
+.code-block { background: #0f0f23; border-radius: var(--r-lg); padding: var(--s5) var(--s6); margin: var(--s4) 0; overflow-x: auto; }
+.code-block pre { font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace; font-size: 0.82rem; color: #e0e0f0; line-height: 1.7; margin: 0; white-space: pre; }
+.code-block .comment { color: #6b7280; }
+.code-block .key { color: #81AAFB; }
+.code-block .val { color: #a5f3b0; }
+.callout { background: rgba(64,61,216,0.04); border: 1px solid rgba(64,61,216,0.15); border-left: 3px solid var(--indigo); border-radius: 0 var(--r-md) var(--r-md) 0; padding: var(--s4) var(--s5); margin: var(--s5) 0; }
+.callout p { font-size: 0.9rem; color: #3a3a6e; line-height: 1.7; margin: 0; }
+.callout strong { color: var(--indigo); }
+.guide-nav { display: flex; justify-content: space-between; align-items: center; padding-top: var(--s7); border-top: 1px solid rgba(24,24,73,0.06); margin-top: var(--s9); gap: var(--s4); flex-wrap: wrap; }
+.guide-nav-link { font-size: 0.85rem; font-weight: 600; color: var(--indigo); text-decoration: none; display: inline-flex; align-items: center; gap: 6px; border: none !important; }
+.guide-nav-link:hover { color: var(--navy); }
+.post-cta { background: var(--navy); border-radius: var(--r-xl); padding: var(--s8); margin-top: var(--s9); text-align: center; }
+.post-cta p { color: rgba(255,255,255,0.65); font-size: 0.95rem; line-height: 1.7; margin-bottom: var(--s5); max-width: 520px; margin-left: auto; margin-right: auto; }
+.post-cta-actions { display: flex; gap: var(--s3); justify-content: center; flex-wrap: wrap; }
+.post-back { margin-bottom: var(--s6); }
+.post-back a { font-size: 0.82rem; font-weight: 600; color: var(--text-muted); text-decoration: none; display: inline-flex; align-items: center; gap: 6px; transition: color 0.2s; border: none !important; }
+.post-back a:hover { color: var(--indigo); }
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJTW9WQ3"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<script src="https://forms.zoho.com/js/zf_gclid.js"></script>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo" style="align-items:center;"><img src="../logo-light.png" alt="MakerSquare — School of Applied AI"><span class="nav-tagline" style="padding-left:4px;">School of Applied AI</span></a>
+    <ul class="nav-links">
+      <li><a href="/about">About</a></li>
+      <li style="white-space:nowrap;"><a href="/use-cases">Use Cases</a></li>
+      <li><a href="/curriculum">Curriculum</a></li>
+      <li><a href="/corporate">For Teams</a></li>
+      <li><a href="/pricing">Pricing</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/enroll" class="nav-apply">Enroll</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="/enroll" class="btn btn-primary btn-arrow" style="white-space:nowrap;">Secure Your Spot </a>
+      <button class="nav-hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu">
+  <ul class="mobile-menu-links">
+    <li><a href="/about">About</a></li>
+    <li><a href="/use-cases">Use Cases</a></li>
+    <li><a href="/curriculum">Curriculum</a></li>
+    <li><a href="/corporate">For Teams</a></li>
+    <li><a href="/pricing">Pricing</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="/enroll">Enroll</a></li>
+  </ul>
+  <a href="/enroll" class="btn btn-primary btn-block btn-lg" style="margin-top:24px;">Secure Your Spot</a>
+</div>
+
+<!-- HERO -->
+<section class="guide-hero section">
+  <div class="container">
+    <div class="guide-hero-inner">
+      <div class="post-back"><a href="/guides">&#8592; Guides</a></div>
+      <div class="guide-tag">Dev Setup · Guide 1 of 3</div>
+      <h1 class="guide-title">How to set up a CLAUDE.md file — and why it changes everything.</h1>
+      <div class="guide-meta">
+        <span>MakerSquare</span>
+        <span class="guide-meta-dot"></span>
+        <span>5 min read</span>
+        <span class="guide-meta-dot"></span>
+        <span>Beginner</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GUIDE BODY -->
+<div class="guide-body-wrap">
+  <div class="container">
+    <div class="guide-body">
+
+      <p>Every time you open a new Claude Code session, Claude starts fresh. It doesn't know what project you're working on, what tech stack you're using, what conventions you follow, or what you've already decided. So you explain it again. And again.</p>
+
+      <p>A <strong>CLAUDE.md file</strong> fixes that. It's a plain text file that lives in your project folder and loads automatically every time Claude opens that project. Think of it as a standing briefing — context Claude always has, so you never have to re-explain it.</p>
+
+      <h2>What goes in a CLAUDE.md file</h2>
+
+      <p>There's no required format. It's a markdown file, so you can structure it however makes sense. The goal is to answer the questions Claude would otherwise have to ask — or guess wrong about.</p>
+
+      <p>A good CLAUDE.md typically covers:</p>
+
+      <div class="step-block">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <div class="step-title">What the project is</div>
+          <div class="step-body">One paragraph. What are you building, who is it for, what problem does it solve. This gives Claude the "why" behind every decision.</div>
+        </div>
+      </div>
+
+      <div class="step-block">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <div class="step-title">Your tech stack</div>
+          <div class="step-body">List the languages, frameworks, and tools you're using. Claude will match its suggestions to what you're actually working with instead of recommending something off-stack.</div>
+        </div>
+      </div>
+
+      <div class="step-block">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <div class="step-title">File structure and conventions</div>
+          <div class="step-body">Where do things live? What naming conventions do you use? This stops Claude from creating files in the wrong place or using inconsistent naming.</div>
+        </div>
+      </div>
+
+      <div class="step-block">
+        <div class="step-num">4</div>
+        <div class="step-content">
+          <div class="step-title">Rules and preferences</div>
+          <div class="step-body">Things you always want (or never want). "Never use sed on HTML files." "Always write a commit body, not just a subject line." "Don't add comments unless the logic is non-obvious." These are the instructions that save you from having to correct the same mistake twice.</div>
+        </div>
+      </div>
+
+      <div class="step-block">
+        <div class="step-num">5</div>
+        <div class="step-content">
+          <div class="step-title">External references</div>
+          <div class="step-body">Links to your design system, API docs, Notion pages, or any other resources Claude should know about when making decisions.</div>
+        </div>
+      </div>
+
+      <h2>How to create one</h2>
+
+      <div class="step-block">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <div class="step-title">Open your project folder in Claude Code</div>
+          <div class="step-body">Make sure you're in the root of your project — the top-level folder, not a subfolder.</div>
+        </div>
+      </div>
+
+      <div class="step-block">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <div class="step-title">Create the file</div>
+          <div class="step-body">
+            <p>In your terminal, run:</p>
+            <div class="code-block"><pre>touch CLAUDE.md</pre></div>
+            <p>Or just create a new file called <code style="background:rgba(64,61,216,0.08);padding:2px 6px;border-radius:4px;font-size:0.85em;">CLAUDE.md</code> in your project root using your editor or Finder.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="step-block">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <div class="step-title">Write your briefing</div>
+          <div class="step-body">
+            <p>Here's a simple template to start from:</p>
+            <div class="code-block"><pre><span class="key"># Project Name</span>
+
+<span class="comment">## What this is</span>
+One paragraph: what you're building, who it's for, what problem it solves.
+
+<span class="comment">## Tech stack</span>
+- Language: JavaScript / Python / etc.
+- Framework: Next.js / FastAPI / etc.
+- Database: Supabase / Postgres / etc.
+- Hosting: Vercel / Railway / etc.
+
+<span class="comment">## File structure</span>
+- /src — main source code
+- /public — static assets
+- /components — reusable UI components
+(adjust to match your actual structure)
+
+<span class="comment">## Conventions</span>
+- Files: kebab-case (e.g. user-profile.js)
+- Components: PascalCase (e.g. UserProfile.jsx)
+- CSS: BEM or utility-first (Tailwind)
+
+<span class="comment">## Rules</span>
+- Never use sed on HTML files — use the Edit tool or python3
+- Always write git commits with a subject AND body
+- Don't add comments unless the logic is non-obvious
+- Ask before adding new dependencies</pre></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="step-block">
+        <div class="step-num">4</div>
+        <div class="step-content">
+          <div class="step-title">Save it and start a new session</div>
+          <div class="step-body">Claude Code reads CLAUDE.md at the start of every session. Open a new session and ask Claude something about your project — you'll notice it already knows the context.</div>
+        </div>
+      </div>
+
+      <div class="callout">
+        <p><strong>Tip:</strong> Your CLAUDE.md should evolve with your project. Any time you make a decision that Claude keeps getting wrong — a naming convention, a file location preference, a rule about how to handle a certain pattern — add it to CLAUDE.md. That's how it gets better over time.</p>
+      </div>
+
+      <h2>What changes when you have one</h2>
+
+      <p>Without CLAUDE.md, every session starts cold. Claude doesn't know your stack, your conventions, or your rules. It makes reasonable guesses — but "reasonable" is different from "right for your project."</p>
+
+      <p>With CLAUDE.md, Claude behaves like someone who's been on your team for weeks. It knows your file structure and puts new files in the right place. It matches your naming conventions. It follows your rules without being reminded. It asks the right follow-up questions because it already knows the basics.</p>
+
+      <p>For a project you're actively building, this compounds fast. The hour you spend writing a good CLAUDE.md pays back across every session after that.</p>
+
+      <div class="guide-nav">
+        <a href="/guides" class="guide-nav-link" style="color:var(--text-muted);">&#8592; All guides</a>
+        <a href="/guides/deploy-with-vercel-and-github" class="guide-nav-link">Next: Deploy with Vercel and GitHub &#8594;</a>
+      </div>
+
+      <!-- CTA -->
+      <div class="post-cta">
+        <p>At MakerSquare, every student sets up their CLAUDE.md on Day 1 and refines it across the two weeks. It's one of the first things that makes the "AI as a collaborator" model actually click.</p>
+        <div class="post-cta-actions">
+          <a href="https://www.makersquare.ai/curriculum" class="btn btn-arrow" style="background:var(--white);color:var(--navy);font-weight:700;">See the curriculum </a>
+          <a href="https://www.makersquare.ai/enroll" class="btn" style="background:transparent;color:rgba(255,255,255,0.65);border:1.5px solid rgba(255,255,255,0.2);">Secure Your Spot</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="footer-logo"><img src="../logo-dark.png" alt="MakerSquare — School of Applied AI"></a><div class="footer-tagline">School of Applied AI</div>
+        <p>2-week in-person AI intensive in Austin, TX for operators, founders, and professionals.</p>
+        <a href="/enroll" class="btn btn-primary btn-arrow" style="font-size:0.82rem;padding:10px 20px;">Secure Your Spot </a>
+      </div>
+      <div>
+        <div class="footer-col-title">Program</div>
+        <ul class="footer-col-links">
+          <li><a href="/use-cases">Use Cases</a></li>
+          <li><a href="/curriculum">Curriculum</a></li>
+          <li><a href="/pricing">Pricing</a></li>          <li><a href="/enroll">Enroll</a></li>
+          <li><a href="/scholarship">Scholarship</a></li>
+          <li><a href="/faq">FAQ</a></li>
+          <li><a href="/demo-day">Demo Day</a></li>
+          <li><a href="/workshops">Workshops</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Company</div>
+        <ul class="footer-col-links">
+          <li><a href="/about">About</a></li>
+          <li><a href="/team">Team</a></li>
+          <li><a href="/corporate">Corporate Training</a></li>
+          <li><a href="/comparison">How We Compare</a></li>
+          <li><a href="/alumni">Alumni</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Learn</div>
+        <ul class="footer-col-links">
+          <li><a href="/events">Events</a></li><li><a href="/blog">Blog</a></li>
+          <li><a href="https://ai-builder-brief.beehiiv.com" target="_blank" rel="noopener">Newsletter &mdash; AI Builder Brief</a></li>
+          <li><a href="/guides">Guides</a></li>
+          <li><a href="/quickstart">Claude Quickstart Guide</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Contact</div>
+        <a href="mailto:hello@makersquare.ai" class="footer-contact-email">hello@makersquare.ai</a>
+        <p style="font-size:0.82rem;color:rgba(255,255,255,0.4);">Austin, TX</p>
+        <div class="footer-social"><a href="https://www.linkedin.com/company/makersquare-ai" target="_blank" rel="noopener" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>Follow us on LinkedIn</a><a href="https://www.meetup.com/makersquare-ai/" target="_blank" rel="noopener" aria-label="Meetup"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="width:15px;height:15px;fill:currentColor;flex-shrink:0;"><path d="M19.24 0H4.76A4.76 4.76 0 000 4.76v14.48A4.76 4.76 0 004.76 24h14.48A4.76 4.76 0 0024 19.24V4.76A4.76 4.76 0 0019.24 0zM8.64 16.8c-.48.12-.97-.12-1.2-.56L5.28 11.6a1 1 0 011.8-.88l1.56 3.16 3.84-7.8a1 1 0 011.8.88l-4.2 8.52a1 1 0 01-.44.52zm9.12-1.12a1 1 0 01-1.32.48l-2.16-1.04-1.04 2.16a1 1 0 01-1.8-.88l1.32-2.72 2.72 1.32-.48-2.96a1 1 0 011.96-.32l.64 3.96h.16z"/></svg>Events</a></div>
+      </div>
+    </div>
+    <!-- ═══ FOOTER NEWSLETTER ═══ -->
+    <div style="border-top:1px solid rgba(255,255,255,0.08);padding:var(--s8) 0;margin-bottom:var(--s6);">
+      <div style="max-width:480px;">
+        <div style="font-size:0.75rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:var(--s3);">AI Builder Brief</div>
+        <div style="font-size:1.05rem;font-weight:700;color:var(--white);margin-bottom:6px;">Get AI Builder Brief free every Tuesday.</div>
+        <div style="font-size:0.85rem;color:rgba(255,255,255,0.5);margin-bottom:var(--s4);">Three AI stories that matter, one prompt to try this week.</div>
+        <a href="https://ai-builder-brief.beehiiv.com/subscribe?utm_source=website&utm_medium=site&utm_campaign=newsletter" target="_blank" rel="noopener" class="btn btn-primary btn-arrow">Subscribe free </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">&copy; 2026 MakerSquare LLC. Austin, TX.</div>
+      <div class="footer-bottom-links">
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.min.js"></script>
+</body>
+</html>

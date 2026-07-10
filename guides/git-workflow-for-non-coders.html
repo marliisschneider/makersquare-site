@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="facebook-domain-verification" content="fligau9appze71fwy7uaaw2v12bc4n" />
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MJTW9WQ3');</script>
+<!-- End Google Tag Manager -->
+<!-- Zoho UTM passthrough (modificado: incluye fbclid) -->
+<script>
+(function(){var p=new URLSearchParams(window.location.search);var keys=['utm_source','utm_medium','utm_campaign','utm_content','utm_term','fbclid'];var stored={};keys.forEach(function(k){if(p.get(k))stored[k]=p.get(k);});if(Object.keys(stored).length){try{sessionStorage.setItem('zf_utm',JSON.stringify(stored));}catch(e){}}})();
+</script>
+<!-- Zoho zf_gtm postMessage listener -->
+<script>
+window.addEventListener('message',function(e){if(e.data&&e.data.type=='zf_gtm'){window.dataLayer=window.dataLayer||[];window.dataLayer.push(e.data);}});
+</script>
+<!-- X conversion tracking base code -->
+<script>
+!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='https://static.ads-twitter.com/uwt.js',a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+twq('config','rcjjn');
+</script>
+<title>The Git Workflow for Non-Coders: Add, Commit, Push | MakerSquare Guides</title>
+<meta name="description" content="Three commands — git add, git commit, git push. That's the whole loop. Here's what each one does, why it matters, and how to run it without thinking about it.">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/png" href="../favicon.png">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="canonical" href="https://www.makersquare.ai/guides/git-workflow-for-non-coders">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.makersquare.ai/guides/git-workflow-for-non-coders">
+<meta property="og:title" content="The git workflow every non-coder needs: add, commit, push.">
+<meta property="og:description" content="Three commands. That's the whole loop. Here's what they do, why they matter, and how to use them without thinking about it.">
+<meta property="og:image" content="https://www.makersquare.ai/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.min.css?v=8">
+<style>
+.guide-hero { padding: calc(var(--nav-height) + var(--s10)) 0 var(--s4); border-bottom: 1px solid rgba(24,24,73,0.06); }
+.guide-hero-inner { max-width: 760px; margin: 0 auto; }
+.guide-tag { display: inline-flex; align-items: center; gap: 8px; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--indigo); margin-bottom: var(--s4); }
+.guide-tag::before { content: ''; width: 7px; height: 7px; background: var(--indigo); border-radius: 2px; }
+.guide-title { font-size: clamp(1.8rem, 3.5vw, 2.6rem); font-weight: 800; color: var(--navy); line-height: 1.15; letter-spacing: -0.03em; margin-bottom: var(--s4); }
+.guide-meta { display: flex; align-items: center; gap: var(--s3); font-size: 0.82rem; color: var(--text-muted); flex-wrap: wrap; }
+.guide-meta-dot { width: 3px; height: 3px; border-radius: 50%; background: var(--text-muted); }
+.guide-body-wrap { padding: var(--s6) 0 var(--s10); }
+.guide-body { max-width: 760px; margin: 0 auto; }
+.guide-body p { font-size: 1rem; color: #2d2d4e; line-height: 1.85; margin-bottom: var(--s5); }
+.guide-body h2 { font-size: 1.2rem; font-weight: 700; color: var(--navy); letter-spacing: -0.02em; margin-top: var(--s9); margin-bottom: var(--s4); padding-top: var(--s7); border-top: 1px solid rgba(24,24,73,0.06); }
+.guide-body h2:first-of-type { border-top: none; padding-top: 0; margin-top: var(--s6); }
+.guide-body a { color: var(--indigo); text-decoration: none; border-bottom: 1px solid rgba(64,61,216,0.25); transition: border-color 0.2s; }
+.guide-body a:hover { border-bottom-color: var(--indigo); }
+.guide-body strong { color: var(--navy); font-weight: 700; }
+.command-card { border: 1px solid rgba(24,24,73,0.08); border-radius: var(--r-xl); overflow: hidden; margin-bottom: var(--s6); }
+.command-card-header { background: var(--navy); padding: var(--s4) var(--s6); display: flex; align-items: center; gap: var(--s4); }
+.command-label { font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace; font-size: 1rem; font-weight: 700; color: #81AAFB; }
+.command-card-body { padding: var(--s5) var(--s6); }
+.command-what { font-size: 0.95rem; color: #2d2d4e; line-height: 1.7; margin-bottom: var(--s3); }
+.command-analogy { font-size: 0.88rem; color: var(--text-secondary); line-height: 1.65; font-style: italic; padding: var(--s3) var(--s4); background: rgba(64,61,216,0.04); border-radius: var(--r-md); }
+.code-block { background: #0f0f23; border-radius: var(--r-lg); padding: var(--s5) var(--s6); margin: var(--s4) 0; overflow-x: auto; }
+.code-block pre { font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace; font-size: 0.82rem; color: #e0e0f0; line-height: 1.7; margin: 0; white-space: pre; }
+.code-block .comment { color: #6b7280; }
+.callout { background: rgba(64,61,216,0.04); border: 1px solid rgba(64,61,216,0.15); border-left: 3px solid var(--indigo); border-radius: 0 var(--r-md) var(--r-md) 0; padding: var(--s4) var(--s5); margin: var(--s5) 0; }
+.callout p { font-size: 0.9rem; color: #3a3a6e; line-height: 1.7; margin: 0; }
+.callout strong { color: var(--indigo); }
+.quick-ref { background: var(--navy); border-radius: var(--r-xl); padding: var(--s6) var(--s7); margin: var(--s8) 0; }
+.quick-ref-label { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--sky); margin-bottom: var(--s4); }
+.quick-ref-title { font-size: 1rem; font-weight: 700; color: var(--white); margin-bottom: var(--s5); }
+.quick-ref pre { font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace; font-size: 0.88rem; color: #a5f3b0; line-height: 2; margin: 0; }
+.quick-ref .comment { color: rgba(129,170,251,0.6); }
+.guide-nav { display: flex; justify-content: space-between; align-items: center; padding-top: var(--s7); border-top: 1px solid rgba(24,24,73,0.06); margin-top: var(--s9); gap: var(--s4); flex-wrap: wrap; }
+.guide-nav-link { font-size: 0.85rem; font-weight: 600; color: var(--indigo); text-decoration: none; display: inline-flex; align-items: center; gap: 6px; border: none !important; }
+.guide-nav-link:hover { color: var(--navy); }
+.post-cta { background: var(--navy); border-radius: var(--r-xl); padding: var(--s8); margin-top: var(--s9); text-align: center; }
+.post-cta p { color: rgba(255,255,255,0.65); font-size: 0.95rem; line-height: 1.7; margin-bottom: var(--s5); max-width: 520px; margin-left: auto; margin-right: auto; }
+.post-cta-actions { display: flex; gap: var(--s3); justify-content: center; flex-wrap: wrap; }
+.post-back { margin-bottom: var(--s6); }
+.post-back a { font-size: 0.82rem; font-weight: 600; color: var(--text-muted); text-decoration: none; display: inline-flex; align-items: center; gap: 6px; transition: color 0.2s; border: none !important; }
+.post-back a:hover { color: var(--indigo); }
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJTW9WQ3"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<script src="https://forms.zoho.com/js/zf_gclid.js"></script>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo" style="align-items:center;"><img src="../logo-light.png" alt="MakerSquare — School of Applied AI"><span class="nav-tagline" style="padding-left:4px;">School of Applied AI</span></a>
+    <ul class="nav-links">
+      <li><a href="/about">About</a></li>
+      <li style="white-space:nowrap;"><a href="/use-cases">Use Cases</a></li>
+      <li><a href="/curriculum">Curriculum</a></li>
+      <li><a href="/corporate">For Teams</a></li>
+      <li><a href="/pricing">Pricing</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/enroll" class="nav-apply">Enroll</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="/enroll" class="btn btn-primary btn-arrow" style="white-space:nowrap;">Secure Your Spot </a>
+      <button class="nav-hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu">
+  <ul class="mobile-menu-links">
+    <li><a href="/about">About</a></li>
+    <li><a href="/use-cases">Use Cases</a></li>
+    <li><a href="/curriculum">Curriculum</a></li>
+    <li><a href="/corporate">For Teams</a></li>
+    <li><a href="/pricing">Pricing</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="/enroll">Enroll</a></li>
+  </ul>
+  <a href="/enroll" class="btn btn-primary btn-block btn-lg" style="margin-top:24px;">Secure Your Spot</a>
+</div>
+
+<!-- HERO -->
+<section class="guide-hero section">
+  <div class="container">
+    <div class="guide-hero-inner">
+      <div class="post-back"><a href="/guides">&#8592; Guides</a></div>
+      <div class="guide-tag">Version Control · Guide 3 of 3</div>
+      <h1 class="guide-title">The git workflow every non-coder needs: add, commit, push.</h1>
+      <div class="guide-meta">
+        <span>MakerSquare</span>
+        <span class="guide-meta-dot"></span>
+        <span>6 min read</span>
+        <span class="guide-meta-dot"></span>
+        <span>Beginner</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GUIDE BODY -->
+<div class="guide-body-wrap">
+  <div class="container">
+    <div class="guide-body">
+
+      <p>Git is version control — a system that tracks every change you make to your code, lets you go back to any previous version, and lets multiple people work on the same project without overwriting each other.</p>
+
+      <p>The part most people actually use every day is three commands: <strong>git add</strong>, <strong>git commit</strong>, and <strong>git push</strong>. That's the loop. Once it's automatic, you stop thinking about it — you just do it.</p>
+
+      <h2>The three commands</h2>
+
+      <div class="command-card">
+        <div class="command-card-header">
+          <div class="command-label">git add .</div>
+        </div>
+        <div class="command-card-body">
+          <p class="command-what"><strong>What it does:</strong> Stages all the files you've changed — tells git "I want to include these changes in my next save."</p>
+          <p class="command-analogy">Think of it like putting papers in an envelope. You're selecting what goes in before you seal it.</p>
+          <p class="command-what" style="margin-top:var(--s3);margin-bottom:0;">The <code style="background:rgba(64,61,216,0.08);padding:2px 6px;border-radius:4px;font-size:0.85em;">.</code> means "everything I changed in this folder." You can also add specific files: <code style="background:rgba(64,61,216,0.08);padding:2px 6px;border-radius:4px;font-size:0.85em;">git add index.html</code></p>
+        </div>
+      </div>
+
+      <div class="command-card">
+        <div class="command-card-header">
+          <div class="command-label">git commit -m "your message"</div>
+        </div>
+        <div class="command-card-body">
+          <p class="command-what"><strong>What it does:</strong> Saves a snapshot of your staged changes with a description. This is the actual record in your project's history.</p>
+          <p class="command-analogy">Think of it like sealing the envelope and writing on the front what's inside. The message is what you'll read later when you're trying to remember what you changed.</p>
+          <p class="command-what" style="margin-top:var(--s3);margin-bottom:0;">Write commit messages that describe <em>what changed and why</em>, not just "update" or "fix." Future you — and Claude — will thank you.</p>
+        </div>
+      </div>
+
+      <div class="command-card">
+        <div class="command-card-header">
+          <div class="command-label">git push</div>
+        </div>
+        <div class="command-card-body">
+          <p class="command-what"><strong>What it does:</strong> Uploads your committed changes to GitHub. This is what makes them visible to the world, to your collaborators, and to Vercel (which then auto-deploys).</p>
+          <p class="command-analogy">Think of it like mailing the envelope. Until you push, your commits only exist on your computer.</p>
+        </div>
+      </div>
+
+      <h2>Running the loop</h2>
+
+      <p>Every time you finish a meaningful chunk of work — added a feature, fixed a bug, updated copy — run the three commands in order:</p>
+
+      <div class="code-block"><pre>git add .
+git commit -m "Add contact form to homepage"
+git push</pre></div>
+
+      <p>That's it. Your changes are saved, recorded, and live on GitHub. If you've connected Vercel, your site updates automatically in the next 30 seconds.</p>
+
+      <div class="callout">
+        <p><strong>How often should you commit?</strong> More often than you think. A commit is not a "done" marker — it's a checkpoint. Think: "If I had to undo the last 20 minutes of work, would that hurt?" If yes, commit now. Most people working with AI-assisted code commit every 15–30 minutes.</p>
+      </div>
+
+      <h2>Checking what you've changed</h2>
+
+      <p>Before running <code style="background:rgba(64,61,216,0.08);padding:2px 6px;border-radius:4px;font-size:0.85em;">git add</code>, it's useful to see exactly what changed:</p>
+
+      <div class="code-block"><pre><span class="comment"># See which files changed</span>
+git status
+
+<span class="comment"># See the exact lines that changed</span>
+git diff</pre></div>
+
+      <p><code style="background:rgba(64,61,216,0.08);padding:2px 6px;border-radius:4px;font-size:0.85em;">git status</code> lists every modified file. <code style="background:rgba(64,61,216,0.08);padding:2px 6px;border-radius:4px;font-size:0.85em;">git diff</code> shows the before/after for each line. You don't need to use these every time — but they're useful when you want to double-check before committing.</p>
+
+      <h2>The full quick-reference</h2>
+
+      <div class="quick-ref">
+        <div class="quick-ref-label">Quick reference</div>
+        <div class="quick-ref-title">The complete everyday loop</div>
+        <pre><span class="comment"># 1. Check what changed (optional but useful)</span>
+git status
+
+<span class="comment"># 2. Stage everything</span>
+git add .
+
+<span class="comment"># 3. Save a snapshot with a description</span>
+git commit -m "Describe what you changed and why"
+
+<span class="comment"># 4. Upload to GitHub (+ auto-deploy via Vercel)</span>
+git push</pre>
+      </div>
+
+      <h2>When you make a mistake</h2>
+
+      <p>If you committed something you didn't mean to — wrong file, bad message, broken code — don't panic. The point of git is that nothing is permanent.</p>
+
+      <p>The easiest fix: just make the correction, add it, and commit again. Most mistakes are easier to fix by moving forward than by trying to undo. If you need to undo a specific commit, ask Claude — give it the context and it will tell you exactly what to run.</p>
+
+      <div class="guide-nav">
+        <a href="/guides/deploy-with-vercel-and-github" class="guide-nav-link" style="color:var(--text-muted);">&#8592; Previous: Deploy with Vercel</a>
+        <a href="/guides" class="guide-nav-link">All guides &#8594;</a>
+      </div>
+
+      <!-- CTA -->
+      <div class="post-cta">
+        <p>The git loop is one of the first things MakerSquare students learn — and within a day, it becomes as automatic as saving a document. By the end of the program, students have committed hundreds of times across three deployed projects.</p>
+        <div class="post-cta-actions">
+          <a href="https://www.makersquare.ai/curriculum" class="btn btn-arrow" style="background:var(--white);color:var(--navy);font-weight:700;">See the curriculum </a>
+          <a href="https://www.makersquare.ai/enroll" class="btn" style="background:transparent;color:rgba(255,255,255,0.65);border:1.5px solid rgba(255,255,255,0.2);">Secure Your Spot</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="footer-logo"><img src="../logo-dark.png" alt="MakerSquare — School of Applied AI"></a><div class="footer-tagline">School of Applied AI</div>
+        <p>2-week in-person AI intensive in Austin, TX for operators, founders, and professionals.</p>
+        <a href="/enroll" class="btn btn-primary btn-arrow" style="font-size:0.82rem;padding:10px 20px;">Secure Your Spot </a>
+      </div>
+      <div>
+        <div class="footer-col-title">Program</div>
+        <ul class="footer-col-links">
+          <li><a href="/use-cases">Use Cases</a></li>
+          <li><a href="/curriculum">Curriculum</a></li>
+          <li><a href="/pricing">Pricing</a></li>          <li><a href="/enroll">Enroll</a></li>
+          <li><a href="/scholarship">Scholarship</a></li>
+          <li><a href="/faq">FAQ</a></li>
+          <li><a href="/demo-day">Demo Day</a></li>
+          <li><a href="/workshops">Workshops</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Company</div>
+        <ul class="footer-col-links">
+          <li><a href="/about">About</a></li>
+          <li><a href="/team">Team</a></li>
+          <li><a href="/corporate">Corporate Training</a></li>
+          <li><a href="/comparison">How We Compare</a></li>
+          <li><a href="/alumni">Alumni</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Learn</div>
+        <ul class="footer-col-links">
+          <li><a href="/events">Events</a></li><li><a href="/blog">Blog</a></li>
+          <li><a href="https://ai-builder-brief.beehiiv.com" target="_blank" rel="noopener">Newsletter &mdash; AI Builder Brief</a></li>
+          <li><a href="/guides">Guides</a></li>
+          <li><a href="/quickstart">Claude Quickstart Guide</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Contact</div>
+        <a href="mailto:hello@makersquare.ai" class="footer-contact-email">hello@makersquare.ai</a>
+        <p style="font-size:0.82rem;color:rgba(255,255,255,0.4);">Austin, TX</p>
+        <div class="footer-social"><a href="https://www.linkedin.com/company/makersquare-ai" target="_blank" rel="noopener" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>Follow us on LinkedIn</a><a href="https://www.meetup.com/makersquare-ai/" target="_blank" rel="noopener" aria-label="Meetup"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="width:15px;height:15px;fill:currentColor;flex-shrink:0;"><path d="M19.24 0H4.76A4.76 4.76 0 000 4.76v14.48A4.76 4.76 0 004.76 24h14.48A4.76 4.76 0 0024 19.24V4.76A4.76 4.76 0 0019.24 0zM8.64 16.8c-.48.12-.97-.12-1.2-.56L5.28 11.6a1 1 0 011.8-.88l1.56 3.16 3.84-7.8a1 1 0 011.8.88l-4.2 8.52a1 1 0 01-.44.52zm9.12-1.12a1 1 0 01-1.32.48l-2.16-1.04-1.04 2.16a1 1 0 01-1.8-.88l1.32-2.72 2.72 1.32-.48-2.96a1 1 0 011.96-.32l.64 3.96h.16z"/></svg>Events</a></div>
+      </div>
+    </div>
+    <!-- ═══ FOOTER NEWSLETTER ═══ -->
+    <div style="border-top:1px solid rgba(255,255,255,0.08);padding:var(--s8) 0;margin-bottom:var(--s6);">
+      <div style="max-width:480px;">
+        <div style="font-size:0.75rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:var(--s3);">AI Builder Brief</div>
+        <div style="font-size:1.05rem;font-weight:700;color:var(--white);margin-bottom:6px;">Get AI Builder Brief free every Tuesday.</div>
+        <div style="font-size:0.85rem;color:rgba(255,255,255,0.5);margin-bottom:var(--s4);">Three AI stories that matter, one prompt to try this week.</div>
+        <a href="https://ai-builder-brief.beehiiv.com/subscribe?utm_source=website&utm_medium=site&utm_campaign=newsletter" target="_blank" rel="noopener" class="btn btn-primary btn-arrow">Subscribe free </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">&copy; 2026 MakerSquare LLC. Austin, TX.</div>
+      <div class="footer-bottom-links">
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.min.js"></script>
+</body>
+</html>

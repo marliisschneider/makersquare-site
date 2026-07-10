@@ -97,6 +97,30 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.makersquare.ai/guides</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.makersquare.ai/guides/how-to-set-up-claude-md</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.makersquare.ai/guides/deploy-with-vercel-and-github</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.makersquare.ai/guides/git-workflow-for-non-coders</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.makersquare.ai/blog</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
