@@ -24,17 +24,17 @@ window.addEventListener('message',function(e){if(e.data&&e.data.type=='zf_gtm'){
 !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='https://static.ads-twitter.com/uwt.js',a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
 twq('config','rcjjn');
 </script>
-<title>How to Set Up a CLAUDE.md File | MakerSquare Guides</title>
-<meta name="description" content="A CLAUDE.md file gives Claude persistent memory about your project. Set it up once and stop re-explaining your codebase, preferences, and rules every session.">
+<title>How to Use Cursor as a Non-Coder | MakerSquare Guides</title>
+<meta name="description" content="Cursor is a code editor built around AI. Here's how to open it, navigate the interface, and start building — even if you've never written code before.">
 <meta name="robots" content="index, follow">
 <link rel="icon" type="image/png" href="../favicon.png">
 <link rel="icon" type="image/svg+xml" href="../favicon.svg">
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
-<link rel="canonical" href="https://www.makersquare.ai/guides/how-to-set-up-claude-md">
+<link rel="canonical" href="https://www.makersquare.ai/guides/how-to-use-cursor-as-a-non-coder">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://www.makersquare.ai/guides/how-to-set-up-claude-md">
-<meta property="og:title" content="How to set up a CLAUDE.md file — and why it changes everything.">
-<meta property="og:description" content="A CLAUDE.md file gives Claude persistent memory about your project. Set it up once and stop re-explaining yourself every session.">
+<meta property="og:url" content="https://www.makersquare.ai/guides/how-to-use-cursor-as-a-non-coder">
+<meta property="og:title" content="How to use Cursor as a non-coder">
+<meta property="og:description" content="Cursor is a code editor built around AI. Here's how to navigate it and start building — even if you've never written code before.">
 <meta property="og:image" content="https://www.makersquare.ai/og-image.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -71,6 +71,12 @@ twq('config','rcjjn');
 .callout { background: rgba(64,61,216,0.04); border: 1px solid rgba(64,61,216,0.15); border-left: 3px solid var(--indigo); border-radius: 0 var(--r-md) var(--r-md) 0; padding: var(--s4) var(--s5); margin: var(--s5) 0; }
 .callout p { font-size: 0.9rem; color: #3a3a6e; line-height: 1.7; margin: 0; }
 .callout strong { color: var(--indigo); }
+.mode-card { border: 1px solid rgba(24,24,73,0.1); border-radius: var(--r-lg); padding: var(--s5); margin-bottom: var(--s4); }
+.mode-card-header { display: flex; align-items: center; gap: var(--s3); margin-bottom: var(--s3); }
+.mode-badge { display: inline-block; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 3px 10px; border-radius: 20px; background: var(--navy); color: var(--white); }
+.mode-shortcut { font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace; font-size: 0.78rem; background: rgba(24,24,73,0.06); padding: 2px 8px; border-radius: 6px; color: var(--navy); font-weight: 600; }
+.mode-title { font-size: 0.95rem; font-weight: 700; color: var(--navy); }
+.mode-desc { font-size: 0.88rem; color: #2d2d4e; line-height: 1.7; }
 .guide-nav { display: flex; justify-content: space-between; align-items: center; padding-top: var(--s7); border-top: 1px solid rgba(24,24,73,0.06); margin-top: var(--s9); gap: var(--s4); flex-wrap: wrap; }
 .guide-nav-link { font-size: 0.85rem; font-weight: 600; color: var(--indigo); text-decoration: none; display: inline-flex; align-items: center; gap: 6px; border: none !important; }
 .guide-nav-link:hover { color: var(--navy); }
@@ -127,12 +133,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <div class="guide-hero-inner">
       <div class="post-back"><a href="/guides">&#8592; Guides</a></div>
-      <div class="guide-tag">Dev Setup · Guide 1 of 3</div>
-      <h1 class="guide-title">How to set up a CLAUDE.md file — and why it changes everything.</h1>
+      <div class="guide-tag">Dev Tools · Guide 5 of 6</div>
+      <h1 class="guide-title">How to use Cursor for the first time — as a non-coder.</h1>
       <div class="guide-meta">
         <span>MakerSquare</span>
         <span class="guide-meta-dot"></span>
-        <span>5 min read</span>
+        <span>8 min read</span>
         <span class="guide-meta-dot"></span>
         <span>Beginner</span>
       </div>
@@ -145,74 +151,129 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <div class="guide-body">
 
-      <p>Every time you open a new Claude Code session, Claude starts fresh. It doesn't know what project you're working on, what tech stack you're using, what conventions you follow, or what you've already decided. So you explain it again. And again.</p>
+      <p>Cursor is a code editor — the thing you open to write, read, and edit code. What makes it different from every other code editor is that it has AI built in at every level. You can ask it questions, describe what you want to build, and have it write or change code for you, in context, without copy-pasting from a chat window.</p>
 
-      <p>A <strong>CLAUDE.md file</strong> fixes that. It's a plain text file that lives in your project folder and loads automatically every time Claude opens that project. Think of it as a standing briefing — context Claude always has, so you never have to re-explain it.</p>
+      <p>If you've never opened a code editor before, it can feel disorienting at first. This guide walks you through exactly what you're looking at and how to get something done in your first session.</p>
 
-      <h2>What goes in a CLAUDE.md file</h2>
-
-      <p>There's no required format. It's a markdown file, so you can structure it however makes sense. The goal is to answer the questions Claude would otherwise have to ask — or guess wrong about.</p>
-
-      <p>A good CLAUDE.md typically covers:</p>
+      <h2>Step 1: Download and install Cursor</h2>
 
       <div class="step-block">
         <div class="step-num">1</div>
         <div class="step-content">
-          <div class="step-title">What the project is</div>
-          <div class="step-body">One paragraph. What are you building, who is it for, what problem does it solve. This gives Claude the "why" behind every decision.</div>
+          <div class="step-title">Go to cursor.com and download Cursor</div>
+          <div class="step-body">It's available for Mac, Windows, and Linux. The free plan is enough to start. Download and open the installer.</div>
         </div>
       </div>
 
       <div class="step-block">
         <div class="step-num">2</div>
         <div class="step-content">
-          <div class="step-title">Your tech stack</div>
-          <div class="step-body">List the languages, frameworks, and tools you're using. Claude will match its suggestions to what you're actually working with instead of recommending something off-stack.</div>
+          <div class="step-title">Sign in with GitHub or Google</div>
+          <div class="step-body">On first launch, Cursor will ask you to sign in. Use GitHub or Google — whichever you have. If you don't have either, create a free GitHub account first. You'll need it anyway for deploying projects.</div>
         </div>
       </div>
 
       <div class="step-block">
         <div class="step-num">3</div>
         <div class="step-content">
-          <div class="step-title">File structure and conventions</div>
-          <div class="step-body">Where do things live? What naming conventions do you use? This stops Claude from creating files in the wrong place or using inconsistent naming.</div>
+          <div class="step-title">Open a project folder</div>
+          <div class="step-body">
+            <p>Click <strong>Open Folder</strong> (or File → Open Folder on Windows) and navigate to the folder that contains your project. If you don't have a project yet, create a new empty folder anywhere on your computer and open that.</p>
+            <p>Cursor always works at the folder level — not individual files. The folder you open is your workspace.</p>
+          </div>
         </div>
       </div>
 
-      <div class="step-block">
-        <div class="step-num">4</div>
-        <div class="step-content">
-          <div class="step-title">Rules and preferences</div>
-          <div class="step-body">Things you always want (or never want). "Never use sed on HTML files." "Always write a commit body, not just a subject line." "Don't add comments unless the logic is non-obvious." These are the instructions that save you from having to correct the same mistake twice.</div>
-        </div>
-      </div>
+      <h2>Step 2: Understand what you're looking at</h2>
 
-      <div class="step-block">
-        <div class="step-num">5</div>
-        <div class="step-content">
-          <div class="step-title">External references</div>
-          <div class="step-body">Links to your design system, API docs, Notion pages, or any other resources Claude should know about when making decisions.</div>
-        </div>
-      </div>
-
-      <h2>How to create one</h2>
+      <p>When you open a folder in Cursor, you'll see three main areas:</p>
 
       <div class="step-block">
         <div class="step-num">1</div>
         <div class="step-content">
-          <div class="step-title">Open your project folder in Claude Code</div>
-          <div class="step-body">Make sure you're in the root of your project — the top-level folder, not a subfolder.</div>
+          <div class="step-title">The file tree (left sidebar)</div>
+          <div class="step-body">This shows all the files and folders in your project. Click any file to open it in the editor. This is how you navigate your project — not by opening files one at a time from Finder, but by keeping them all visible in one panel.</div>
         </div>
       </div>
 
       <div class="step-block">
         <div class="step-num">2</div>
         <div class="step-content">
-          <div class="step-title">Create the file</div>
+          <div class="step-title">The editor (center)</div>
+          <div class="step-body">This is where your files open when you click them. You can have multiple files open in tabs, like a browser. The code or text in the file lives here. You can edit it directly, or let Cursor edit it for you.</div>
+        </div>
+      </div>
+
+      <div class="step-block">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <div class="step-title">The AI chat panel (right side or bottom)</div>
+          <div class="step-body">This is where you talk to Cursor. Open it with <code style="background:rgba(64,61,216,0.08);padding:2px 6px;border-radius:4px;font-size:0.85em;">Cmd+L</code> (Mac) or <code style="background:rgba(64,61,216,0.08);padding:2px 6px;border-radius:4px;font-size:0.85em;">Ctrl+L</code> (Windows). Ask questions about your code, ask it to build something, ask it to explain what a file does — the AI has full context about everything in your project folder.</div>
+        </div>
+      </div>
+
+      <h2>Step 3: The three modes — know which to use</h2>
+
+      <p>Cursor has three main ways to interact with the AI. Using the right one for the right task saves a lot of confusion.</p>
+
+      <div class="mode-card">
+        <div class="mode-card-header">
+          <span class="mode-badge">Tab</span>
+          <span class="mode-shortcut">Tab key</span>
+        </div>
+        <div class="mode-title" style="margin-bottom:6px;">Autocomplete as you type</div>
+        <div class="mode-desc">As you type in the editor, Cursor predicts what comes next and shows a greyed-out suggestion. Press Tab to accept it. This is the passive mode — you're writing, it's assisting. Great for filling in boilerplate, completing a pattern you started, or writing repetitive code.</div>
+      </div>
+
+      <div class="mode-card">
+        <div class="mode-card-header">
+          <span class="mode-badge">Chat</span>
+          <span class="mode-shortcut">Cmd+L / Ctrl+L</span>
+        </div>
+        <div class="mode-title" style="margin-bottom:6px;">Ask questions, get explanations</div>
+        <div class="mode-desc">Opens the AI chat panel. Use this to ask what a piece of code does, debug an error, understand how something works, or get suggestions without immediately changing your file. The AI can see your open files and your whole project. It will write code in the chat — you can then copy it in, or tell it to apply the change.</div>
+      </div>
+
+      <div class="mode-card">
+        <div class="mode-card-header">
+          <span class="mode-badge">Composer</span>
+          <span class="mode-shortcut">Cmd+I / Ctrl+I</span>
+        </div>
+        <div class="mode-title" style="margin-bottom:6px;">Build features, change multiple files</div>
+        <div class="mode-desc">This is the most powerful mode. Describe what you want to build — in plain language — and Cursor will make the changes across as many files as needed. It shows you exactly what it changed (a diff view) before applying anything. You review and accept or reject each change. Use this for anything that touches more than one file, or any time you want Cursor to do a meaningful chunk of work.</div>
+      </div>
+
+      <div class="callout">
+        <p><strong>Which to use as a beginner:</strong> Start with Chat (Cmd+L) for understanding, and Composer (Cmd+I) for building. Tab autocomplete kicks in automatically — just let it happen and press Tab when the suggestion looks right.</p>
+      </div>
+
+      <h2>Step 4: Your first real task</h2>
+
+      <p>Here's the pattern that works for almost every task when you're new to this.</p>
+
+      <div class="step-block">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <div class="step-title">Open Composer (Cmd+I)</div>
+          <div class="step-body">This is your main building mode. Start here when you want Cursor to create or change something in your project.</div>
+        </div>
+      </div>
+
+      <div class="step-block">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <div class="step-title">Describe what you want — specifically</div>
           <div class="step-body">
-            <p>In your terminal, run:</p>
-            <div class="code-block"><pre>touch CLAUDE.md</pre></div>
-            <p>Or just create a new file called <code style="background:rgba(64,61,216,0.08);padding:2px 6px;border-radius:4px;font-size:0.85em;">CLAUDE.md</code> in your project root using your editor or Finder.</p>
+            <p>The more specific you are, the better the output. The same principles from <a href="/guides/how-to-write-prompts-that-work">writing good prompts</a> apply here.</p>
+            <div class="code-block"><pre><span class="comment"># Too vague</span>
+<span class="val">Add a contact form to my site.</span>
+
+<span class="comment"># Better</span>
+<span class="val">Add a contact form to index.html. The form should have
+three fields: name, email, and message. Add a Submit button.
+Style it to match the navy and white color scheme already
+used on the page. Don't add any backend logic — just the HTML
+and CSS for the form itself.</span></pre></div>
           </div>
         </div>
       </div>
@@ -220,36 +281,46 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="step-block">
         <div class="step-num">3</div>
         <div class="step-content">
-          <div class="step-title">Write your briefing</div>
+          <div class="step-title">Review the diff before accepting</div>
+          <div class="step-body">Cursor shows you exactly what it wants to change — green lines are additions, red lines are removals. Read through it before clicking Accept. You don't need to understand every line, but you should understand what was added and what was removed at a high level.</div>
+        </div>
+      </div>
+
+      <div class="step-block">
+        <div class="step-num">4</div>
+        <div class="step-content">
+          <div class="step-title">Accept, then check the result</div>
+          <div class="step-body">Click Accept All. Then open your file (or refresh your browser if you're previewing a website) and see if the change looks right. If it doesn't — describe what's wrong in plain English and ask Cursor to fix it.</div>
+        </div>
+      </div>
+
+      <h2>Common mistakes beginners make</h2>
+
+      <div class="step-block">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <div class="step-title">Accepting changes without reading them</div>
+          <div class="step-body">Cursor sometimes removes code it thinks is redundant — but that code may have been doing something important. Get in the habit of scrolling through the diff, even quickly, before you accept.</div>
+        </div>
+      </div>
+
+      <div class="step-block">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <div class="step-title">Describing what you want without saying what you don't want</div>
+          <div class="step-body">If you ask Cursor to add a feature, it may restructure surrounding code in ways you didn't expect. Adding "don't change anything else" or "only touch this specific section" often prevents unexpected side effects.</div>
+        </div>
+      </div>
+
+      <div class="step-block">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <div class="step-title">Not committing before making big changes</div>
           <div class="step-body">
-            <p>Here's a simple template to start from:</p>
-            <div class="code-block"><pre><span class="key"># Project Name</span>
-
-<span class="comment">## What this is</span>
-One paragraph: what you're building, who it's for, what problem it solves.
-
-<span class="comment">## Tech stack</span>
-- Language: JavaScript / Python / etc.
-- Framework: Next.js / FastAPI / etc.
-- Database: Supabase / Postgres / etc.
-- Hosting: Vercel / Railway / etc.
-
-<span class="comment">## File structure</span>
-- /src — main source code
-- /public — static assets
-- /components — reusable UI components
-(adjust to match your actual structure)
-
-<span class="comment">## Conventions</span>
-- Files: kebab-case (e.g. user-profile.js)
-- Components: PascalCase (e.g. UserProfile.jsx)
-- CSS: BEM or utility-first (Tailwind)
-
-<span class="comment">## Rules</span>
-- Never use sed on HTML files — use the Edit tool or python3
-- Always write git commits with a subject AND body
-- Don't add comments unless the logic is non-obvious
-- Ask before adding new dependencies</pre></div>
+            <p>Before you ask Cursor to make a significant change, commit your current state with git. That way, if something goes wrong, you can always get back to where you were.</p>
+            <div class="code-block"><pre><span class="comment"># In the Cursor terminal (Ctrl+`) before a big change</span>
+<span class="val">git add -p
+git commit -m "Working state before refactor"</span></pre></div>
           </div>
         </div>
       </div>
@@ -257,31 +328,23 @@ One paragraph: what you're building, who it's for, what problem it solves.
       <div class="step-block">
         <div class="step-num">4</div>
         <div class="step-content">
-          <div class="step-title">Save it and start a new session</div>
-          <div class="step-body">Claude Code reads CLAUDE.md at the start of every session. Open a new session and ask Claude something about your project — you'll notice it already knows the context.</div>
+          <div class="step-title">Trying to understand every line</div>
+          <div class="step-body">You don't need to. You need to understand what the code does and whether it did what you asked. Reading code at that level comes with time. For now, focus on the behavior, not the implementation.</div>
         </div>
       </div>
 
       <div class="callout">
-        <p><strong>Tip:</strong> Your CLAUDE.md should evolve with your project. Any time you make a decision that Claude keeps getting wrong — a naming convention, a file location preference, a rule about how to handle a certain pattern — add it to CLAUDE.md. That's how it gets better over time.</p>
+        <p><strong>One keyboard shortcut to memorize:</strong> <code style="background:rgba(64,61,216,0.08);padding:2px 6px;border-radius:4px;font-size:0.85em;">Ctrl+`</code> (backtick) opens the integrated terminal. This is where you run git commands, install packages, and start dev servers — all without leaving Cursor.</p>
       </div>
 
-      <h2>What changes when you have one</h2>
-
-      <p>Without CLAUDE.md, every session starts cold. Claude doesn't know your stack, your conventions, or your rules. It makes reasonable guesses — but "reasonable" is different from "right for your project."</p>
-
-      <p>With CLAUDE.md, Claude behaves like someone who's been on your team for weeks. It knows your file structure and puts new files in the right place. It matches your naming conventions. It follows your rules without being reminded. It asks the right follow-up questions because it already knows the basics.</p>
-
-      <p>For a project you're actively building, this compounds fast. The hour you spend writing a good CLAUDE.md pays back across every session after that.</p>
-
       <div class="guide-nav">
-        <a href="/guides" class="guide-nav-link" style="color:var(--text-muted);">&#8592; All guides</a>
-        <a href="/guides/deploy-with-vercel-and-github" class="guide-nav-link">Next: Deploy with Vercel and GitHub &#8594;</a>
+        <a href="/guides/how-to-write-prompts-that-work" class="guide-nav-link">&#8592; Previous: How to write prompts that work</a>
+        <a href="/guides/how-to-set-up-supabase" class="guide-nav-link">Next: How to set up Supabase &#8594;</a>
       </div>
 
       <!-- CTA -->
       <div class="post-cta">
-        <p>At MakerSquare, every student sets up their CLAUDE.md on Day 1 and refines it across the two weeks. It's one of the first things that makes the "AI as a collaborator" model actually click.</p>
+        <p>Cursor is the primary coding environment in MakerSquare's 2-week program. Every student uses it from Day 1 to build their actual project — with a real database, real users, real deployment.</p>
         <div class="post-cta-actions">
           <a href="https://www.makersquare.ai/curriculum" class="btn btn-arrow" style="background:var(--white);color:var(--navy);font-weight:700;">See the curriculum </a>
           <a href="https://www.makersquare.ai/enroll" class="btn" style="background:transparent;color:rgba(255,255,255,0.65);border:1.5px solid rgba(255,255,255,0.2);">Secure Your Spot</a>
@@ -298,7 +361,7 @@ One paragraph: what you're building, who it's for, what problem it solves.
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="/" class="footer-logo"><img src="../logo-dark.png" alt="MakerSquare — School of Applied AI"></a><div class="footer-tagline">School of Applied AI</div>
-        <p>In-person AI training in Austin, TX &mdash; 2-week intensive, 3-day workshops, and private team programs.</p>
+        <p>2-week in-person AI intensive in Austin, TX for operators, founders, and professionals.</p>
         <a href="/enroll" class="btn btn-primary btn-arrow" style="font-size:0.82rem;padding:10px 20px;">Secure Your Spot </a>
       </div>
       <div>
@@ -328,7 +391,7 @@ One paragraph: what you're building, who it's for, what problem it solves.
         <ul class="footer-col-links">
           <li><a href="/events">Events</a></li><li><a href="/blog">Blog</a></li>
           <li><a href="https://ai-builder-brief.beehiiv.com" target="_blank" rel="noopener">Newsletter &mdash; AI Builder Brief</a></li>
-          <li><a href="/guides">Guides</a></li>
+          <li><a href="/guides" class="active">Guides</a></li>
           <li><a href="/quickstart">Claude Quickstart Guide</a></li>
         </ul>
       </div>

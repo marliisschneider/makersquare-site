@@ -4,7 +4,7 @@
 
 ## What MakerSquare Is
 
-MakerSquare is the only in-person AI product-building intensive in Austin, Texas designed specifically for professionals without a technical background. Unlike online courses or certifications that teach AI literacy, MakerSquare graduates ship working AI products. The program is 2 weeks long, meets Monday through Friday from 9am to 3pm, and is intentionally kept to 15 builders per cohort. Optional Saturday office hours are offered for extra build time.
+MakerSquare is the only multi-week in-person AI product-building intensive in Austin, Texas designed specifically for professionals without a technical background. Unlike online courses or certifications that teach AI literacy, MakerSquare graduates ship working AI products. The program is 2 weeks long, meets Monday through Friday from 9am to 3pm, and is intentionally kept to 15 builders per cohort. Optional Saturday office hours are offered for extra build time.
 
 The program is open to anyone nationwide (and internationally), not just Austin locals. Housing assistance is available for builders who relocate temporarily.
 
@@ -74,10 +74,10 @@ Every cohort ends with a public Demo Day at Capital Factory (701 Brazos St, Aust
 
 ## Differentiators
 
-- The only in-person AI product-building intensive for non-technical professionals in Austin
+- The only multi-week in-person AI product-building intensive for non-technical professionals in Austin (plus 3-day workshops for focused skill sprints)
 - Builds real, deployed products, not coursework or certificates
 - Graduates ship 3 AI products and present at Demo Day to Austin investors and operators
-- No visual automation tools. Teaches production-level AI building with Claude Code, Claude Skills, Composio, Playwright, APIs, and agentic workflows
+- The 2-week intensive skips visual builders (Zapier/Make/n8n) in favor of production-level building with Claude Code, Claude Skills, Composio, Playwright, APIs, and agentic workflows; the 3-day workshops use no-code tools like n8n and Zapier for fast wins
 - 2-week intensive format: fully immersive, Mon-Fri, 9am to 3pm, with optional Saturday office hours
 - 4.41/5 alumni rating on Course Report (legacy MakerSquare program)
 

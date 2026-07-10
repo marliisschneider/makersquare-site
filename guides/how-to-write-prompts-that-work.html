@@ -24,17 +24,17 @@ window.addEventListener('message',function(e){if(e.data&&e.data.type=='zf_gtm'){
 !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='https://static.ads-twitter.com/uwt.js',a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
 twq('config','rcjjn');
 </script>
-<title>How to Set Up a CLAUDE.md File | MakerSquare Guides</title>
-<meta name="description" content="A CLAUDE.md file gives Claude persistent memory about your project. Set it up once and stop re-explaining your codebase, preferences, and rules every session.">
+<title>How to Write Prompts That Actually Get Results | MakerSquare Guides</title>
+<meta name="description" content="Most AI prompts fail for the same three reasons. Learn the anatomy of a prompt that actually works — role, context, task, and format — with before-and-after examples.">
 <meta name="robots" content="index, follow">
 <link rel="icon" type="image/png" href="../favicon.png">
 <link rel="icon" type="image/svg+xml" href="../favicon.svg">
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
-<link rel="canonical" href="https://www.makersquare.ai/guides/how-to-set-up-claude-md">
+<link rel="canonical" href="https://www.makersquare.ai/guides/how-to-write-prompts-that-work">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://www.makersquare.ai/guides/how-to-set-up-claude-md">
-<meta property="og:title" content="How to set up a CLAUDE.md file — and why it changes everything.">
-<meta property="og:description" content="A CLAUDE.md file gives Claude persistent memory about your project. Set it up once and stop re-explaining yourself every session.">
+<meta property="og:url" content="https://www.makersquare.ai/guides/how-to-write-prompts-that-work">
+<meta property="og:title" content="How to write prompts that actually get results">
+<meta property="og:description" content="Most AI prompts fail for the same three reasons. Learn the anatomy of a good prompt with before-and-after examples.">
 <meta property="og:image" content="https://www.makersquare.ai/og-image.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -71,6 +71,13 @@ twq('config','rcjjn');
 .callout { background: rgba(64,61,216,0.04); border: 1px solid rgba(64,61,216,0.15); border-left: 3px solid var(--indigo); border-radius: 0 var(--r-md) var(--r-md) 0; padding: var(--s4) var(--s5); margin: var(--s5) 0; }
 .callout p { font-size: 0.9rem; color: #3a3a6e; line-height: 1.7; margin: 0; }
 .callout strong { color: var(--indigo); }
+.prompt-example { border-radius: var(--r-lg); padding: var(--s5) var(--s6); margin: var(--s4) 0; }
+.prompt-bad { background: rgba(220,50,50,0.05); border: 1px solid rgba(220,50,50,0.15); border-left: 3px solid #dc3232; }
+.prompt-good { background: rgba(34,197,94,0.05); border: 1px solid rgba(34,197,94,0.2); border-left: 3px solid #22c55e; }
+.prompt-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: var(--s3); }
+.prompt-bad .prompt-label { color: #dc3232; }
+.prompt-good .prompt-label { color: #16a34a; }
+.prompt-text { font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace; font-size: 0.85rem; color: #2d2d4e; line-height: 1.7; }
 .guide-nav { display: flex; justify-content: space-between; align-items: center; padding-top: var(--s7); border-top: 1px solid rgba(24,24,73,0.06); margin-top: var(--s9); gap: var(--s4); flex-wrap: wrap; }
 .guide-nav-link { font-size: 0.85rem; font-weight: 600; color: var(--indigo); text-decoration: none; display: inline-flex; align-items: center; gap: 6px; border: none !important; }
 .guide-nav-link:hover { color: var(--navy); }
@@ -127,12 +134,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <div class="guide-hero-inner">
       <div class="post-back"><a href="/guides">&#8592; Guides</a></div>
-      <div class="guide-tag">Dev Setup · Guide 1 of 3</div>
-      <h1 class="guide-title">How to set up a CLAUDE.md file — and why it changes everything.</h1>
+      <div class="guide-tag">AI Prompting · Guide 4 of 6</div>
+      <h1 class="guide-title">How to write prompts that actually get results.</h1>
       <div class="guide-meta">
         <span>MakerSquare</span>
         <span class="guide-meta-dot"></span>
-        <span>5 min read</span>
+        <span>7 min read</span>
         <span class="guide-meta-dot"></span>
         <span>Beginner</span>
       </div>
@@ -145,74 +152,60 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <div class="guide-body">
 
-      <p>Every time you open a new Claude Code session, Claude starts fresh. It doesn't know what project you're working on, what tech stack you're using, what conventions you follow, or what you've already decided. So you explain it again. And again.</p>
+      <p>Most people's first instinct with AI is to type something like "write me a marketing email" and see what comes out. The output is usually fine. Technically correct, nothing obviously wrong — and totally generic. You rewrite most of it anyway.</p>
 
-      <p>A <strong>CLAUDE.md file</strong> fixes that. It's a plain text file that lives in your project folder and loads automatically every time Claude opens that project. Think of it as a standing briefing — context Claude always has, so you never have to re-explain it.</p>
+      <p>The problem isn't the AI. It's that you gave it almost nothing to work with. A vague prompt produces a vague output. The fix isn't a new tool or a different model — it's understanding what a good prompt actually contains.</p>
 
-      <h2>What goes in a CLAUDE.md file</h2>
+      <h2>Why most prompts don't work</h2>
 
-      <p>There's no required format. It's a markdown file, so you can structure it however makes sense. The goal is to answer the questions Claude would otherwise have to ask — or guess wrong about.</p>
-
-      <p>A good CLAUDE.md typically covers:</p>
+      <p>Bad prompts fail for three predictable reasons:</p>
 
       <div class="step-block">
         <div class="step-num">1</div>
         <div class="step-content">
-          <div class="step-title">What the project is</div>
-          <div class="step-body">One paragraph. What are you building, who is it for, what problem does it solve. This gives Claude the "why" behind every decision.</div>
+          <div class="step-title">No context</div>
+          <div class="step-body">The AI doesn't know who you are, what you're building, who the reader is, or what constraints you're working under. It fills in the blanks with generic defaults.</div>
         </div>
       </div>
 
       <div class="step-block">
         <div class="step-num">2</div>
         <div class="step-content">
-          <div class="step-title">Your tech stack</div>
-          <div class="step-body">List the languages, frameworks, and tools you're using. Claude will match its suggestions to what you're actually working with instead of recommending something off-stack.</div>
+          <div class="step-title">No output format</div>
+          <div class="step-body">You didn't say what you wanted: a list, a paragraph, a table, a short answer, a long answer, bullet points, a JSON object. The AI picks something. It's often not what you needed.</div>
         </div>
       </div>
 
       <div class="step-block">
         <div class="step-num">3</div>
         <div class="step-content">
-          <div class="step-title">File structure and conventions</div>
-          <div class="step-body">Where do things live? What naming conventions do you use? This stops Claude from creating files in the wrong place or using inconsistent naming.</div>
+          <div class="step-title">No constraints</div>
+          <div class="step-body">Length, tone, audience, what to avoid, what not to make up — without these, the AI optimizes for "looks complete" instead of "actually useful."</div>
         </div>
       </div>
 
-      <div class="step-block">
-        <div class="step-num">4</div>
-        <div class="step-content">
-          <div class="step-title">Rules and preferences</div>
-          <div class="step-body">Things you always want (or never want). "Never use sed on HTML files." "Always write a commit body, not just a subject line." "Don't add comments unless the logic is non-obvious." These are the instructions that save you from having to correct the same mistake twice.</div>
-        </div>
-      </div>
+      <h2>The anatomy of a prompt that works</h2>
 
-      <div class="step-block">
-        <div class="step-num">5</div>
-        <div class="step-content">
-          <div class="step-title">External references</div>
-          <div class="step-body">Links to your design system, API docs, Notion pages, or any other resources Claude should know about when making decisions.</div>
-        </div>
-      </div>
-
-      <h2>How to create one</h2>
+      <p>A reliable prompt has four parts. You don't always need all four — but knowing them helps you diagnose what's missing when the output misses the mark.</p>
 
       <div class="step-block">
         <div class="step-num">1</div>
         <div class="step-content">
-          <div class="step-title">Open your project folder in Claude Code</div>
-          <div class="step-body">Make sure you're in the root of your project — the top-level folder, not a subfolder.</div>
+          <div class="step-title">Role (optional but powerful)</div>
+          <div class="step-body">
+            <p>Tell the AI what perspective to take. "You are a senior product manager reviewing this feature brief." "You are a direct, skeptical editor." This shifts the entire framing of the response.</p>
+            <p>You don't always need this — but when the tone or expertise level of the output matters, it's the fastest lever you have.</p>
+          </div>
         </div>
       </div>
 
       <div class="step-block">
         <div class="step-num">2</div>
         <div class="step-content">
-          <div class="step-title">Create the file</div>
+          <div class="step-title">Context</div>
           <div class="step-body">
-            <p>In your terminal, run:</p>
-            <div class="code-block"><pre>touch CLAUDE.md</pre></div>
-            <p>Or just create a new file called <code style="background:rgba(64,61,216,0.08);padding:2px 6px;border-radius:4px;font-size:0.85em;">CLAUDE.md</code> in your project root using your editor or Finder.</p>
+            <p>What's the situation? Who are you? Who is the reader? What are you trying to accomplish? What has already been decided?</p>
+            <p>This is the part most people skip. It's also the part that does most of the work. The AI can't invent context you didn't give it — it can only guess, and guessing is how you get generic output.</p>
           </div>
         </div>
       </div>
@@ -220,68 +213,123 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="step-block">
         <div class="step-num">3</div>
         <div class="step-content">
-          <div class="step-title">Write your briefing</div>
-          <div class="step-body">
-            <p>Here's a simple template to start from:</p>
-            <div class="code-block"><pre><span class="key"># Project Name</span>
-
-<span class="comment">## What this is</span>
-One paragraph: what you're building, who it's for, what problem it solves.
-
-<span class="comment">## Tech stack</span>
-- Language: JavaScript / Python / etc.
-- Framework: Next.js / FastAPI / etc.
-- Database: Supabase / Postgres / etc.
-- Hosting: Vercel / Railway / etc.
-
-<span class="comment">## File structure</span>
-- /src — main source code
-- /public — static assets
-- /components — reusable UI components
-(adjust to match your actual structure)
-
-<span class="comment">## Conventions</span>
-- Files: kebab-case (e.g. user-profile.js)
-- Components: PascalCase (e.g. UserProfile.jsx)
-- CSS: BEM or utility-first (Tailwind)
-
-<span class="comment">## Rules</span>
-- Never use sed on HTML files — use the Edit tool or python3
-- Always write git commits with a subject AND body
-- Don't add comments unless the logic is non-obvious
-- Ask before adding new dependencies</pre></div>
-          </div>
+          <div class="step-title">Task</div>
+          <div class="step-body">State what you want done. Be specific. "Write a 3-paragraph email" is better than "write an email." "List the three biggest risks" is better than "tell me about the risks."</div>
         </div>
       </div>
 
       <div class="step-block">
         <div class="step-num">4</div>
         <div class="step-content">
-          <div class="step-title">Save it and start a new session</div>
-          <div class="step-body">Claude Code reads CLAUDE.md at the start of every session. Open a new session and ask Claude something about your project — you'll notice it already knows the context.</div>
+          <div class="step-title">Format</div>
+          <div class="step-body">
+            <p>Tell the AI what to return. Bullet points, a numbered list, a table, a short paragraph, a JSON object, a markdown file, a 50-word summary. If the format matters for how you'll use the output, say so explicitly.</p>
+          </div>
         </div>
       </div>
+
+      <h2>Before and after</h2>
+
+      <p>Here's what this looks like in practice. Same goal, two different prompts.</p>
+
+      <div class="prompt-example prompt-bad">
+        <div class="prompt-label">Before</div>
+        <div class="prompt-text">Write me a LinkedIn post about our AI bootcamp.</div>
+      </div>
+
+      <div class="prompt-example prompt-good">
+        <div class="prompt-label">After</div>
+        <div class="prompt-text">You are helping me write a LinkedIn post for MakerSquare, a 2-week in-person AI program in Austin for operators and founders who want to build real AI tools — not just learn about AI.
+
+My audience on LinkedIn is mid-career professionals, founders, and people who work in operations, marketing, or sales. They're curious about AI but don't know how to make it practical.
+
+Write a post that leads with a specific observation about why most AI training doesn't stick (something concrete, not generic). Then briefly explain what we do differently. End with a question or soft CTA.
+
+Tone: direct, warm, no hype. Short paragraphs. No hashtag spam. Under 200 words.</div>
+      </div>
+
+      <p>The second prompt takes 30 seconds longer to write. The output takes 30 seconds to edit instead of 10 minutes.</p>
+
+      <h2>Giving Claude context about your project</h2>
+
+      <p>If you're using Claude for a specific project — building an app, writing content for a company, analyzing a dataset — you'll be repeating the same context in every prompt. That gets tedious fast.</p>
+
+      <p>The solution is a <a href="/guides/how-to-set-up-claude-md">CLAUDE.md file</a> in your project folder. Claude reads it automatically at the start of every session. You write the context once; it's always there.</p>
 
       <div class="callout">
-        <p><strong>Tip:</strong> Your CLAUDE.md should evolve with your project. Any time you make a decision that Claude keeps getting wrong — a naming convention, a file location preference, a rule about how to handle a certain pattern — add it to CLAUDE.md. That's how it gets better over time.</p>
+        <p><strong>Rule of thumb:</strong> If you're pasting the same paragraph of context into every prompt, put it in CLAUDE.md instead. If you're writing a one-off prompt for a task you'll never repeat, include the context inline.</p>
       </div>
 
-      <h2>What changes when you have one</h2>
+      <h2>How to iterate when the output is wrong</h2>
 
-      <p>Without CLAUDE.md, every session starts cold. Claude doesn't know your stack, your conventions, or your rules. It makes reasonable guesses — but "reasonable" is different from "right for your project."</p>
+      <p>The first output is rarely the final output. Iteration is the skill — knowing how to redirect without starting over.</p>
 
-      <p>With CLAUDE.md, Claude behaves like someone who's been on your team for weeks. It knows your file structure and puts new files in the right place. It matches your naming conventions. It follows your rules without being reminded. It asks the right follow-up questions because it already knows the basics.</p>
+      <div class="step-block">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <div class="step-title">Say what was wrong specifically</div>
+          <div class="step-body">
+            <p>"Make it better" gives the AI almost no signal. "Make it shorter" or "the tone is too formal — make it sound like I'm talking to a colleague" gives it something to work with.</p>
+            <div class="prompt-example prompt-bad" style="margin-top:var(--s3);">
+              <div class="prompt-label">Vague</div>
+              <div class="prompt-text">This isn't quite right. Can you try again?</div>
+            </div>
+            <div class="prompt-example prompt-good" style="margin-top:var(--s3);">
+              <div class="prompt-label">Specific</div>
+              <div class="prompt-text">The opening is too generic — it sounds like a press release. Rewrite just the first paragraph to start with the concrete problem, not a broad statement about AI.</div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-      <p>For a project you're actively building, this compounds fast. The hour you spend writing a good CLAUDE.md pays back across every session after that.</p>
+      <div class="step-block">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <div class="step-title">Ask clarifying questions back</div>
+          <div class="step-body">If the AI's output is ambiguous or went in an unexpected direction, ask it to explain its reasoning before asking it to redo the work. "Why did you structure it this way?" often reveals a misunderstanding you can quickly correct.</div>
+        </div>
+      </div>
+
+      <div class="step-block">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <div class="step-title">Show an example of what you want</div>
+          <div class="step-body">If you have something that worked well before — a past email, a post you liked, a format that hit the right note — paste it in. "Write something like this, but for X audience and Y topic" is one of the most reliable prompts there is.</div>
+        </div>
+      </div>
+
+      <h2>A quick-reference template</h2>
+
+      <p>Copy this and fill in the blanks whenever you're starting a new task.</p>
+
+      <div class="code-block"><pre><span class="comment"># Context</span>
+<span class="val">I am [who you are]. I'm working on [what the project is].
+The audience for this is [who they are and what they care about].</span>
+
+<span class="comment"># Task</span>
+<span class="val">[What you want done — specific action verb, not "help me with"]</span>
+
+<span class="comment"># Constraints</span>
+<span class="val">- Tone: [direct / warm / formal / casual / etc.]
+- Length: [under 200 words / 3 paragraphs / a list of 5 / etc.]
+- Avoid: [jargon / clichés / specific phrases you don't like]
+- Don't make up: [statistics / quotes / names / etc.]</span>
+
+<span class="comment"># Format</span>
+<span class="val">[Bullet list / numbered steps / a single paragraph / markdown / JSON / etc.]</span></pre></div>
+
+      <div class="callout">
+        <p><strong>One more thing:</strong> Claude will tell you if your prompt is unclear or if it needs more information to do the task well. If you get a response that asks clarifying questions — that's a good sign. Answer them. The next output will be substantially better.</p>
+      </div>
 
       <div class="guide-nav">
-        <a href="/guides" class="guide-nav-link" style="color:var(--text-muted);">&#8592; All guides</a>
-        <a href="/guides/deploy-with-vercel-and-github" class="guide-nav-link">Next: Deploy with Vercel and GitHub &#8594;</a>
+        <a href="/guides/git-workflow-for-non-coders" class="guide-nav-link">&#8592; Previous: Git workflow for non-coders</a>
+        <a href="/guides/how-to-use-cursor-as-a-non-coder" class="guide-nav-link">Next: How to use Cursor &#8594;</a>
       </div>
 
       <!-- CTA -->
       <div class="post-cta">
-        <p>At MakerSquare, every student sets up their CLAUDE.md on Day 1 and refines it across the two weeks. It's one of the first things that makes the "AI as a collaborator" model actually click.</p>
+        <p>At MakerSquare, we spend Day 1 building the mental model for how to talk to AI so it produces useful work, not generic output. It's the foundation everything else builds on.</p>
         <div class="post-cta-actions">
           <a href="https://www.makersquare.ai/curriculum" class="btn btn-arrow" style="background:var(--white);color:var(--navy);font-weight:700;">See the curriculum </a>
           <a href="https://www.makersquare.ai/enroll" class="btn" style="background:transparent;color:rgba(255,255,255,0.65);border:1.5px solid rgba(255,255,255,0.2);">Secure Your Spot</a>
@@ -328,7 +376,7 @@ One paragraph: what you're building, who it's for, what problem it solves.
         <ul class="footer-col-links">
           <li><a href="/events">Events</a></li><li><a href="/blog">Blog</a></li>
           <li><a href="https://ai-builder-brief.beehiiv.com" target="_blank" rel="noopener">Newsletter &mdash; AI Builder Brief</a></li>
-          <li><a href="/guides">Guides</a></li>
+          <li><a href="/guides" class="active">Guides</a></li>
           <li><a href="/quickstart">Claude Quickstart Guide</a></li>
         </ul>
       </div>
