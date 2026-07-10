@@ -12,7 +12,10 @@
       "source": "/apply",
       "destination": "/enroll",
       "permanent": true
-    }
+    },
+    { "source": "/blog/why-your-ai-pilot-failed", "destination": "/blog/why-your-companys-ai-training-isnt-working", "permanent": true },
+    { "source": "/blog/how-to-get-your-team-to-actually-use-ai", "destination": "/blog/ai-adoption-strategy-non-technical-teams", "permanent": true },
+    { "source": "/blog/how-to-measure-ai-impact-at-work", "destination": "/blog/how-to-get-roi-from-ai-at-work", "permanent": true }
   ],
   "headers": [
     {
