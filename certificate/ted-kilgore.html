@@ -71,212 +71,318 @@ twq('config','rcjjn');
 <!-- End X conversion tracking base code -->
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
-
 @page { size: A4 landscape; margin: 0; }
 
 body {
   font-family: 'Inter', sans-serif;
-  background: #08082A;
+  background: #0B0B24;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 40px 24px;
+  padding: 48px 24px;
   gap: 20px;
 }
 
+/* ── CERTIFICATE SHELL ── */
 .cert {
   width: 1050px;
   height: 742px;
-  background: #FAFAF7;
   position: relative;
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  box-shadow: 0 24px 80px rgba(24,24,73,0.18);
+  box-shadow:
+    0 0 0 1px rgba(64,61,216,0.4),
+    0 40px 120px rgba(0,0,0,0.75),
+    0 0 80px rgba(64,61,216,0.1);
 }
 
-/* Top navy panel */
-.cert-top {
+/* ── NAVY HEADER ── */
+.cert-header {
   background: #181849;
-  height: 160px;
+  height: 110px;
   flex-shrink: 0;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-/* M mark ghost in top panel */
-.cert-top::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpolygon points='4,12 10,8 10,14 4,18' fill='%23ffffff'/%3E%3Cpolygon points='4,18 10,14 10,26 4,26' fill='%23ffffff'/%3E%3Cpolygon points='10,8 16,14 22,8 16,2' fill='%23ffffff'/%3E%3Cpolygon points='10,14 16,20 16,14 10,8' fill='%23ffffff'/%3E%3Cpolygon points='16,14 16,20 22,14 22,8' fill='%23ffffff'/%3E%3Cpolygon points='22,8 28,12 28,18 22,14' fill='%23ffffff'/%3E%3Cpolygon points='22,14 28,18 28,26 22,26' fill='%23ffffff'/%3E%3C/svg%3E") center/480px 480px no-repeat;
-  opacity: 0.03;
-  pointer-events: none;
-}
-
-.cert-top-meta {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
   padding: 0 60px;
-  position: absolute;
-  top: 28px;
+  position: relative;
+  overflow: hidden;
 }
 
-.cert-wordmark {
+/* Dot texture */
+.cert-header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.04) 1px, transparent 1px);
+  background-size: 18px 18px;
+  pointer-events: none;
+}
+
+/* Central glow */
+.cert-header::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 160px;
+  background: radial-gradient(ellipse, rgba(64,61,216,0.18) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.cert-logo-area {
   display: flex;
   align-items: center;
+  position: relative;
+  z-index: 1;
 }
 
-.cert-wordmark img {
-  height: 28px;
+.cert-logo-area img {
+  height: 30px;
   width: auto;
-  display: block;
 }
 
-.cert-wordmark-sub {
-  font-family: 'Inter', sans-serif;
-  font-size: 9.5px;
-  color: rgba(255,255,255,0.35);
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  padding-left: 14px;
-  border-left: 1px solid rgba(255,255,255,0.12);
-  margin-left: 14px;
+.cert-logo-divider {
+  width: 1px;
+  height: 26px;
+  background: rgba(255,255,255,0.15);
+  margin: 0 18px;
 }
 
-.cert-top-right {
+.cert-logo-sub {
   font-family: 'Inter', sans-serif;
-  font-size: 9.5px;
-  color: rgba(255,255,255,0.3);
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-}
-
-.cert-label {
-  font-family: 'Inter', sans-serif;
-  font-size: 9.5px;
+  font-size: 9px;
   font-weight: 500;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: rgba(129,170,251,0.7);
-  margin-bottom: 12px;
-  position: relative;
-  z-index: 1;
+  color: rgba(255,255,255,0.38);
 }
 
-.cert-name {
-  font-family: 'Fustat', sans-serif;
-  font-weight: 800;
-  font-size: 80px;
-  color: #FFFFFF;
-  letter-spacing: -0.03em;
-  line-height: 0.9;
-  position: relative;
-  z-index: 1;
+.cert-header-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
+  z-index: 1;
 }
 
-/* Bottom cream panel */
-.cert-bottom {
+.cert-header-eyebrow {
+  font-family: 'Inter', sans-serif;
+  font-size: 7.5px;
+  font-weight: 700;
+  letter-spacing: 0.45em;
+  text-transform: uppercase;
+  color: rgba(129,170,251,0.6);
+  margin-bottom: 6px;
+}
+
+.cert-header-title {
+  font-family: 'Fustat', sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+  color: rgba(255,255,255,0.72);
+  letter-spacing: 0.14em;
+}
+
+.cert-header-right {
+  font-family: 'Inter', sans-serif;
+  font-size: 9px;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.25);
+  text-align: right;
+  line-height: 2;
+  position: relative;
+  z-index: 1;
+}
+
+/* Electric blue rule */
+.cert-rule {
+  height: 3px;
+  background: linear-gradient(90deg, transparent 0%, #403DD8 12%, #81AAFB 50%, #403DD8 88%, transparent 100%);
+  flex-shrink: 0;
+}
+
+/* ── CREAM BODY ── */
+.cert-body {
   flex: 1;
+  background: #FAFAF7;
+  background-image: radial-gradient(circle, rgba(24,24,73,0.045) 1px, transparent 1px);
+  background-size: 22px 22px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px 80px 0;
+  padding: 24px 80px 0;
   text-align: center;
   position: relative;
+  overflow: hidden;
 }
 
-/* Divider between panels */
-.cert-panel-divider {
-  width: 100%;
-  height: 3px;
-  background: linear-gradient(90deg, transparent 0%, #403DD8 20%, #81AAFB 50%, #403DD8 80%, transparent 100%);
-  flex-shrink: 0;
+/* Subtle blue glow arcs in upper corners of body */
+.cert-body::before {
+  content: '';
+  position: absolute;
+  top: 0; right: 0;
+  width: 180px; height: 180px;
+  background: radial-gradient(ellipse at top right, rgba(64,61,216,0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+.cert-body::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0;
+  width: 180px; height: 180px;
+  background: radial-gradient(ellipse at bottom left, rgba(64,61,216,0.06) 0%, transparent 70%);
+  pointer-events: none;
 }
 
+/* Corner ornaments */
+.cc {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  z-index: 5;
+}
+.cc-tl { top: 16px; left: 16px; border-top: 1.5px solid rgba(64,61,216,0.45); border-left: 1.5px solid rgba(64,61,216,0.45); }
+.cc-tr { top: 16px; right: 16px; border-top: 1.5px solid rgba(64,61,216,0.45); border-right: 1.5px solid rgba(64,61,216,0.45); }
+.cc-bl { bottom: 16px; left: 16px; border-bottom: 1.5px solid rgba(64,61,216,0.45); border-left: 1.5px solid rgba(64,61,216,0.45); }
+.cc-br { bottom: 16px; right: 16px; border-bottom: 1.5px solid rgba(64,61,216,0.45); border-right: 1.5px solid rgba(64,61,216,0.45); }
+
+/* Watermark */
+.cert-wm {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.028;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ── BODY CONTENT ── */
 .cert-certifies {
   font-family: 'Fustat', sans-serif;
   font-weight: 300;
-  font-size: 18px;
-  color: #aaa;
-  letter-spacing: 0.02em;
-  margin-bottom: 6px;
+  font-size: 16px;
+  color: rgba(24,24,73,0.5);
+  letter-spacing: 0.05em;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 1;
 }
 
 .cert-name {
   font-family: 'Fustat', sans-serif;
   font-weight: 800;
-  font-size: 74px;
+  font-size: 88px;
   color: #181849;
-  letter-spacing: -0.03em;
-  line-height: 0.9;
+  letter-spacing: -0.035em;
+  line-height: 0.88;
   margin-bottom: 18px;
+  position: relative;
+  z-index: 1;
 }
+
+/* Decorative rule under name */
+.cert-divider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+.cdl { width: 64px; height: 2px; background: linear-gradient(90deg, transparent, #403DD8); border-radius: 1px; }
+.cdd { width: 5px; height: 5px; border-radius: 50%; background: #403DD8; flex-shrink: 0; }
+.cdr { width: 64px; height: 2px; background: linear-gradient(90deg, #403DD8, transparent); border-radius: 1px; }
 
 .cert-completed {
   font-family: 'Inter', sans-serif;
-  font-size: 10px;
-  font-weight: 400;
-  color: #999;
-  letter-spacing: 0.2em;
+  font-size: 9.5px;
+  font-weight: 600;
+  letter-spacing: 0.32em;
   text-transform: uppercase;
-  margin-bottom: 6px;
+  color: rgba(24,24,73,0.52);
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 1;
 }
 
 .cert-program {
   font-family: 'Fustat', sans-serif;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 26px;
   color: #181849;
-  letter-spacing: 0.01em;
-  margin-bottom: 4px;
+  letter-spacing: -0.01em;
+  margin-bottom: 5px;
+  position: relative;
+  z-index: 1;
 }
 
 .cert-school {
   font-family: 'Inter', sans-serif;
   font-size: 11px;
+  font-weight: 500;
   color: #403DD8;
-  letter-spacing: 0.06em;
-  margin-bottom: 4px;
+  letter-spacing: 0.08em;
+  margin-bottom: 5px;
+  position: relative;
+  z-index: 1;
 }
 
 .cert-cohort {
   font-family: 'Inter', sans-serif;
-  font-size: 12px;
+  font-size: 12.5px;
   font-weight: 400;
-  color: #aaa;
-  letter-spacing: 0.06em;
+  color: rgba(24,24,73,0.62);
+  letter-spacing: 0.03em;
+  position: relative;
+  z-index: 1;
 }
 
+/* Skills as pill tags */
 .cert-skills {
-  font-family: 'Inter', sans-serif;
-  font-size: 9.5px;
-  color: #bbb;
-  letter-spacing: 0.1em;
-  margin-top: 12px;
-  padding-top: 12px;
-  border-top: 1px solid rgba(24,24,73,0.08);
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(24,24,73,0.09);
+  position: relative;
+  z-index: 1;
 }
 
-/* Footer */
+.cert-skill {
+  font-family: 'Inter', sans-serif;
+  font-size: 8.5px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #181849;
+  padding: 4px 10px;
+  border: 0.75px solid rgba(24,24,73,0.18);
+  border-radius: 2px;
+  background: rgba(24,24,73,0.03);
+}
+
+/* ── FOOTER ── */
 .cert-footer {
+  background: #FAFAF7;
+  border-top: 1px solid rgba(24,24,73,0.08);
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  padding: 16px 60px 28px;
+  padding: 16px 60px 30px;
   flex-shrink: 0;
-  border-top: 1px solid rgba(24,24,73,0.07);
-  margin-top: 20px;
 }
 
 .cert-sig-block {
@@ -290,63 +396,65 @@ body {
   display: block;
   object-fit: contain;
   object-position: left bottom;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
 
 .cert-sig-line {
-  width: 180px;
+  width: 190px;
   height: 1px;
-  background: rgba(24,24,73,0.15);
-  margin-bottom: 7px;
+  background: rgba(24,24,73,0.16);
+  margin-bottom: 8px;
 }
 
 .cert-sig-name {
   font-family: 'Fustat', sans-serif;
-  font-weight: 600;
-  font-size: 12px;
+  font-weight: 700;
+  font-size: 12.5px;
   color: #181849;
   margin-bottom: 2px;
 }
 
 .cert-sig-title {
   font-family: 'Inter', sans-serif;
-  font-size: 10px;
-  color: #aaa;
-  letter-spacing: 0.05em;
+  font-size: 9.5px;
+  color: rgba(24,24,73,0.55);
+  letter-spacing: 0.02em;
 }
 
-.cert-center-seal {
+.cert-seal {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5px;
+  gap: 7px;
 }
 
 .cert-seal-ring {
-  width: 52px;
-  height: 52px;
+  width: 62px;
+  height: 62px;
   border-radius: 50%;
-  border: 1.5px solid #181849;
+  border: 1.5px solid rgba(24,24,73,0.22);
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  background: radial-gradient(circle, rgba(64,61,216,0.05), transparent 70%);
 }
 
 .cert-seal-ring::before {
   content: '';
   position: absolute;
-  inset: 4px;
+  inset: 6px;
   border-radius: 50%;
-  border: 0.5px solid rgba(64,61,216,0.25);
+  border: 0.75px solid rgba(64,61,216,0.2);
 }
 
 .cert-seal-text {
   font-family: 'Inter', sans-serif;
-  font-size: 8px;
-  color: #aaa;
-  letter-spacing: 0.18em;
+  font-size: 7.5px;
+  font-weight: 700;
+  letter-spacing: 0.28em;
   text-transform: uppercase;
+  color: rgba(24,24,73,0.4);
 }
 
 .cert-date-block {
@@ -354,32 +462,32 @@ body {
   min-width: 200px;
 }
 
-.cert-date-value {
+.cert-date-val {
   font-family: 'Fustat', sans-serif;
-  font-weight: 600;
-  font-size: 12px;
+  font-weight: 700;
+  font-size: 12.5px;
   color: #181849;
   margin-bottom: 2px;
 }
 
-.cert-date-label {
+.cert-date-lbl {
   font-family: 'Inter', sans-serif;
-  font-size: 10px;
-  color: #aaa;
-  letter-spacing: 0.05em;
+  font-size: 9.5px;
+  color: rgba(24,24,73,0.55);
+  letter-spacing: 0.02em;
 }
 
+/* Verify bar */
 .verify-bar {
   font-family: 'Inter', sans-serif;
-  font-size: 12px;
-  color: #888;
+  font-size: 11.5px;
+  color: rgba(255,255,255,0.28);
   text-align: center;
 }
 
 .verify-bar a {
-  color: #403DD8;
+  color: rgba(129,170,251,0.6);
   text-decoration: none;
-  font-weight: 500;
 }
 
 @media print {
@@ -392,11 +500,7 @@ body {
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
-  .cert {
-    width: 100vw;
-    height: 100vh;
-    box-shadow: none;
-  }
+  .cert { width: 100vw; height: 100vh; box-shadow: none; }
   .verify-bar { display: none; }
 }
 </style>
@@ -409,32 +513,72 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <div class="cert">
 
-  <!-- Top navy panel -->
-  <div class="cert-top">
-    <div class="cert-top-meta">
-      <div class="cert-wordmark">
-        <img src="../logo-dark.png" alt="MakerSquare">
-        <span class="cert-wordmark-sub">School of Applied AI</span>
-      </div>
-      <div class="cert-top-right">Austin, TX &nbsp;&middot;&nbsp; makersquare.ai</div>
+  <!-- Navy Header -->
+  <div class="cert-header">
+    <div class="cert-logo-area">
+      <img src="../logo-dark.png" alt="MakerSquare">
+      <div class="cert-logo-divider"></div>
+      <span class="cert-logo-sub">School of Applied AI</span>
     </div>
-    <div class="cert-label">Certificate of Completion</div>
+    <div class="cert-header-center">
+      <div class="cert-header-eyebrow">Official Document</div>
+      <div class="cert-header-title">Certificate of Completion</div>
+    </div>
+    <div class="cert-header-right">Austin, Texas<br>makersquare.ai</div>
   </div>
 
-  <!-- Electric blue divider line -->
-  <div class="cert-panel-divider"></div>
+  <!-- Electric blue rule -->
+  <div class="cert-rule"></div>
 
-  <!-- Bottom cream panel -->
-  <div class="cert-bottom">
+  <!-- Cream Body -->
+  <div class="cert-body">
+
+    <!-- Corner ornaments -->
+    <div class="cc cc-tl"></div>
+    <div class="cc cc-tr"></div>
+    <div class="cc cc-bl"></div>
+    <div class="cc cc-br"></div>
+
+    <!-- Watermark -->
+    <div class="cert-wm">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="380" height="380">
+        <polygon points="4,12 10,8 10,14 4,18" fill="#181849"/>
+        <polygon points="4,18 10,14 10,26 4,26" fill="#181849"/>
+        <polygon points="10,8 16,14 22,8 16,2" fill="#181849"/>
+        <polygon points="10,14 16,20 16,14 10,8" fill="#181849"/>
+        <polygon points="16,14 16,20 22,14 22,8" fill="#181849"/>
+        <polygon points="22,8 28,12 28,18 22,14" fill="#181849"/>
+        <polygon points="22,14 28,18 28,26 22,26" fill="#181849"/>
+      </svg>
+    </div>
+
     <div class="cert-certifies">This is to certify that</div>
     <div class="cert-name">Ted Kilgore</div>
+
+    <div class="cert-divider">
+      <div class="cdl"></div>
+      <div class="cdd"></div>
+      <div class="cdr"></div>
+    </div>
+
     <div class="cert-completed">has successfully completed</div>
     <div class="cert-program">2-Week AI Intensive</div>
     <div class="cert-school">MakerSquare School of Applied AI</div>
     <div class="cert-cohort">Cohort 1 &nbsp;&middot;&nbsp; July 6&ndash;17, 2026 &nbsp;&middot;&nbsp; Austin, TX</div>
-    <div class="cert-skills">Claude &nbsp;&middot;&nbsp; Cursor &nbsp;&middot;&nbsp; Supabase &nbsp;&middot;&nbsp; Vercel &nbsp;&middot;&nbsp; GitHub &nbsp;&middot;&nbsp; Prompt Engineering &nbsp;&middot;&nbsp; Agentic Workflows</div>
+
+    <div class="cert-skills">
+      <span class="cert-skill">Claude</span>
+      <span class="cert-skill">Cursor</span>
+      <span class="cert-skill">Supabase</span>
+      <span class="cert-skill">Vercel</span>
+      <span class="cert-skill">GitHub</span>
+      <span class="cert-skill">Prompt Engineering</span>
+      <span class="cert-skill">Agentic Workflows</span>
+    </div>
+
   </div>
 
+  <!-- Footer -->
   <div class="cert-footer">
     <div class="cert-sig-block">
       <img src="../images/signature-marliis.png" alt="" class="cert-sig-img" onerror="this.style.display='none'">
@@ -442,9 +586,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="cert-sig-name">Marliis Schneider</div>
       <div class="cert-sig-title">Founder &amp; CEO, MakerSquare</div>
     </div>
-    <div class="cert-center-seal">
+    <div class="cert-seal">
       <div class="cert-seal-ring">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="28" height="28">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="30" height="30">
           <polygon points="4,12 10,8 10,14 4,18" fill="#6580C8"/>
           <polygon points="4,18 10,14 10,26 4,26" fill="#B8C9F2"/>
           <polygon points="10,8 16,14 22,8 16,2" fill="#6580C8"/>
@@ -457,10 +601,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="cert-seal-text">Verified</div>
     </div>
     <div class="cert-date-block">
-      <div class="cert-date-value">July 17, 2026</div>
-      <div class="cert-date-label">Date Issued</div>
+      <div class="cert-date-val">July 17, 2026</div>
+      <div class="cert-date-lbl">Date Issued</div>
     </div>
   </div>
+
 </div>
 
 <div class="verify-bar">
