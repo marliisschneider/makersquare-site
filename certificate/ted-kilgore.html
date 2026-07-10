@@ -90,8 +90,6 @@ body {
   width: 1050px;
   height: 742px;
   background: #0D0D3B;
-  background-image:
-    repeating-linear-gradient(-45deg, transparent, transparent 38px, rgba(64,61,216,0.07) 38px, rgba(64,61,216,0.07) 39px);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -422,30 +420,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="corner corner-bl"></div>
   <div class="corner corner-br"></div>
 
-  <!-- Large M watermark -->
-  <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);opacity:0.06;pointer-events:none;z-index:1;">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="520" height="520">
-      <polygon points="4,12 10,8 10,14 4,18" fill="#81AAFB"/>
-      <polygon points="4,18 10,14 10,26 4,26" fill="#81AAFB"/>
-      <polygon points="10,8 16,14 22,8 16,2" fill="#81AAFB"/>
+  <!-- M watermark — very faint -->
+  <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);opacity:0.018;pointer-events:none;z-index:1;">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="560" height="560">
+      <polygon points="4,12 10,8 10,14 4,18" fill="#ffffff"/>
+      <polygon points="4,18 10,14 10,26 4,26" fill="#ffffff"/>
+      <polygon points="10,8 16,14 22,8 16,2" fill="#ffffff"/>
       <polygon points="10,14 16,20 16,14 10,8" fill="#ffffff"/>
-      <polygon points="16,14 16,20 22,14 22,8" fill="#81AAFB"/>
-      <polygon points="22,8 28,12 28,18 22,14" fill="#81AAFB"/>
+      <polygon points="16,14 16,20 22,14 22,8" fill="#ffffff"/>
+      <polygon points="22,8 28,12 28,18 22,14" fill="#ffffff"/>
       <polygon points="22,14 28,18 28,26 22,26" fill="#ffffff"/>
     </svg>
   </div>
 
   <!-- Corner arc top-right -->
   <svg style="position:absolute;top:0;right:0;pointer-events:none;z-index:1;" width="200" height="200" viewBox="0 0 200 200" fill="none">
-    <circle cx="200" cy="0" r="100" stroke="#403DD8" stroke-width="0.75" stroke-opacity="0.25"/>
-    <circle cx="200" cy="0" r="140" stroke="#403DD8" stroke-width="0.5" stroke-opacity="0.15"/>
-    <circle cx="200" cy="0" r="180" stroke="#81AAFB" stroke-width="0.4" stroke-opacity="0.1"/>
+    <circle cx="200" cy="0" r="100" stroke="#ffffff" stroke-width="0.5" stroke-opacity="0.06"/>
+    <circle cx="200" cy="0" r="150" stroke="#ffffff" stroke-width="0.4" stroke-opacity="0.04"/>
   </svg>
   <!-- Corner arc bottom-left -->
   <svg style="position:absolute;bottom:0;left:0;pointer-events:none;z-index:1;" width="200" height="200" viewBox="0 0 200 200" fill="none">
-    <circle cx="0" cy="200" r="100" stroke="#403DD8" stroke-width="0.75" stroke-opacity="0.25"/>
-    <circle cx="0" cy="200" r="140" stroke="#403DD8" stroke-width="0.5" stroke-opacity="0.15"/>
-    <circle cx="0" cy="200" r="180" stroke="#81AAFB" stroke-width="0.4" stroke-opacity="0.1"/>
+    <circle cx="0" cy="200" r="100" stroke="#ffffff" stroke-width="0.5" stroke-opacity="0.06"/>
+    <circle cx="0" cy="200" r="150" stroke="#ffffff" stroke-width="0.4" stroke-opacity="0.04"/>
   </svg>
 
   <div class="cert-header">
