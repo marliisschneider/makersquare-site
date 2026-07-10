@@ -24,17 +24,17 @@ window.addEventListener('message',function(e){if(e.data&&e.data.type=='zf_gtm'){
 !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='https://static.ads-twitter.com/uwt.js',a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
 twq('config','rcjjn');
 </script>
-<title>How to Set Up a CLAUDE.md File | MakerSquare Guides</title>
-<meta name="description" content="A CLAUDE.md file gives Claude persistent memory about your project. Set it up once and stop re-explaining your codebase, preferences, and rules every session.">
+<title>How to Set Up a Supabase Project From Scratch | MakerSquare Guides</title>
+<meta name="description" content="Supabase gives you a real Postgres database with a visual editor, instant APIs, and no SQL required to start. Here's how to set up your first project in under 15 minutes.">
 <meta name="robots" content="index, follow">
 <link rel="icon" type="image/png" href="../favicon.png">
 <link rel="icon" type="image/svg+xml" href="../favicon.svg">
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
-<link rel="canonical" href="https://www.makersquare.ai/guides/how-to-set-up-claude-md">
+<link rel="canonical" href="https://www.makersquare.ai/guides/how-to-set-up-supabase">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://www.makersquare.ai/guides/how-to-set-up-claude-md">
-<meta property="og:title" content="How to set up a CLAUDE.md file — and why it changes everything.">
-<meta property="og:description" content="A CLAUDE.md file gives Claude persistent memory about your project. Set it up once and stop re-explaining yourself every session.">
+<meta property="og:url" content="https://www.makersquare.ai/guides/how-to-set-up-supabase">
+<meta property="og:title" content="How to set up a Supabase project from scratch">
+<meta property="og:description" content="A real database, a visual editor, and instant APIs — no SQL required to start. Set up your first Supabase project in 15 minutes.">
 <meta property="og:image" content="https://www.makersquare.ai/og-image.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -71,6 +71,9 @@ twq('config','rcjjn');
 .callout { background: rgba(64,61,216,0.04); border: 1px solid rgba(64,61,216,0.15); border-left: 3px solid var(--indigo); border-radius: 0 var(--r-md) var(--r-md) 0; padding: var(--s4) var(--s5); margin: var(--s5) 0; }
 .callout p { font-size: 0.9rem; color: #3a3a6e; line-height: 1.7; margin: 0; }
 .callout strong { color: var(--indigo); }
+.callout-warn { background: rgba(234,179,8,0.06); border: 1px solid rgba(234,179,8,0.2); border-left: 3px solid #ca8a04; border-radius: 0 var(--r-md) var(--r-md) 0; padding: var(--s4) var(--s5); margin: var(--s5) 0; }
+.callout-warn p { font-size: 0.9rem; color: #713f12; line-height: 1.7; margin: 0; }
+.callout-warn strong { color: #92400e; }
 .guide-nav { display: flex; justify-content: space-between; align-items: center; padding-top: var(--s7); border-top: 1px solid rgba(24,24,73,0.06); margin-top: var(--s9); gap: var(--s4); flex-wrap: wrap; }
 .guide-nav-link { font-size: 0.85rem; font-weight: 600; color: var(--indigo); text-decoration: none; display: inline-flex; align-items: center; gap: 6px; border: none !important; }
 .guide-nav-link:hover { color: var(--navy); }
@@ -127,12 +130,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <div class="guide-hero-inner">
       <div class="post-back"><a href="/guides">&#8592; Guides</a></div>
-      <div class="guide-tag">Dev Setup · Guide 1 of 6</div>
-      <h1 class="guide-title">How to set up a CLAUDE.md file — and why it changes everything.</h1>
+      <div class="guide-tag">Database · Guide 6 of 6</div>
+      <h1 class="guide-title">How to set up a Supabase project from scratch.</h1>
       <div class="guide-meta">
         <span>MakerSquare</span>
         <span class="guide-meta-dot"></span>
-        <span>5 min read</span>
+        <span>9 min read</span>
         <span class="guide-meta-dot"></span>
         <span>Beginner</span>
       </div>
@@ -145,74 +148,88 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <div class="guide-body">
 
-      <p>Every time you open a new Claude Code session, Claude starts fresh. It doesn't know what project you're working on, what tech stack you're using, what conventions you follow, or what you've already decided. So you explain it again. And again.</p>
+      <p>Every app that does something useful stores data. A list of leads. A table of submitted forms. User profiles. Inventory. Whatever it is — it lives in a database, and at some point you have to set one up.</p>
 
-      <p>A <strong>CLAUDE.md file</strong> fixes that. It's a plain text file that lives in your project folder and loads automatically every time Claude opens that project. Think of it as a standing briefing — context Claude always has, so you never have to re-explain it.</p>
+      <p>Supabase is the fastest path from "I need a database" to "I have a working database." It gives you a real Postgres database, a visual table editor (so you don't have to write SQL to start), and auto-generated APIs so your app can read and write data with a few lines of code. The free tier is enough to build and ship a real project.</p>
 
-      <h2>What goes in a CLAUDE.md file</h2>
+      <p>This guide gets you from zero to a connected database you can actually use.</p>
 
-      <p>There's no required format. It's a markdown file, so you can structure it however makes sense. The goal is to answer the questions Claude would otherwise have to ask — or guess wrong about.</p>
+      <h2>What Supabase actually is</h2>
 
-      <p>A good CLAUDE.md typically covers:</p>
+      <p>Supabase is hosted Postgres. Postgres is the most widely used open-source relational database — it stores data in tables, rows, and columns, exactly like a spreadsheet but with real query power and data integrity.</p>
+
+      <p>What Supabase adds on top of Postgres:</p>
 
       <div class="step-block">
         <div class="step-num">1</div>
         <div class="step-content">
-          <div class="step-title">What the project is</div>
-          <div class="step-body">One paragraph. What are you building, who is it for, what problem does it solve. This gives Claude the "why" behind every decision.</div>
+          <div class="step-title">A visual table editor</div>
+          <div class="step-body">You can create tables, add columns, and insert rows through a point-and-click UI — no SQL required to start. It looks and works roughly like Airtable.</div>
         </div>
       </div>
 
       <div class="step-block">
         <div class="step-num">2</div>
         <div class="step-content">
-          <div class="step-title">Your tech stack</div>
-          <div class="step-body">List the languages, frameworks, and tools you're using. Claude will match its suggestions to what you're actually working with instead of recommending something off-stack.</div>
+          <div class="step-title">Auto-generated REST and GraphQL APIs</div>
+          <div class="step-body">Every table you create automatically becomes accessible via an API. Your app can fetch, insert, update, and delete rows using Supabase's JavaScript client library — no backend code required.</div>
         </div>
       </div>
 
       <div class="step-block">
         <div class="step-num">3</div>
         <div class="step-content">
-          <div class="step-title">File structure and conventions</div>
-          <div class="step-body">Where do things live? What naming conventions do you use? This stops Claude from creating files in the wrong place or using inconsistent naming.</div>
+          <div class="step-title">Built-in auth, storage, and realtime</div>
+          <div class="step-body">You don't need these to start, but they're there when you do. User authentication, file storage, and live data subscriptions are all first-party features.</div>
         </div>
       </div>
 
-      <div class="step-block">
-        <div class="step-num">4</div>
-        <div class="step-content">
-          <div class="step-title">Rules and preferences</div>
-          <div class="step-body">Things you always want (or never want). "Never use sed on HTML files." "Always write a commit body, not just a subject line." "Don't add comments unless the logic is non-obvious." These are the instructions that save you from having to correct the same mistake twice.</div>
-        </div>
-      </div>
-
-      <div class="step-block">
-        <div class="step-num">5</div>
-        <div class="step-content">
-          <div class="step-title">External references</div>
-          <div class="step-body">Links to your design system, API docs, Notion pages, or any other resources Claude should know about when making decisions.</div>
-        </div>
-      </div>
-
-      <h2>How to create one</h2>
+      <h2>Step 1: Create your Supabase account and project</h2>
 
       <div class="step-block">
         <div class="step-num">1</div>
         <div class="step-content">
-          <div class="step-title">Open your project folder in Claude Code</div>
-          <div class="step-body">Make sure you're in the root of your project — the top-level folder, not a subfolder.</div>
+          <div class="step-title">Go to supabase.com and sign up</div>
+          <div class="step-body">Sign up with GitHub (recommended — you'll use GitHub for everything anyway). The free plan includes 2 projects and 500MB of database storage. More than enough to build with.</div>
         </div>
       </div>
 
       <div class="step-block">
         <div class="step-num">2</div>
         <div class="step-content">
-          <div class="step-title">Create the file</div>
+          <div class="step-title">Create a new project</div>
           <div class="step-body">
-            <p>In your terminal, run:</p>
-            <div class="code-block"><pre>touch CLAUDE.md</pre></div>
-            <p>Or just create a new file called <code style="background:rgba(64,61,216,0.08);padding:2px 6px;border-radius:4px;font-size:0.85em;">CLAUDE.md</code> in your project root using your editor or Finder.</p>
+            <p>From the dashboard, click <strong>New Project</strong>. You'll need to:</p>
+            <p>— Give it a name (your app name is fine)<br>
+            — Set a database password (use the generated one and save it somewhere — you won't need it often, but you'll want it when you do)<br>
+            — Choose a region (pick the one closest to your users, or closest to you for development)</p>
+            <p>Click Create project. It takes about 30 seconds to provision.</p>
+          </div>
+        </div>
+      </div>
+
+      <h2>Step 2: Create your first table</h2>
+
+      <p>Once your project is ready, you'll land on the dashboard. The main navigation is on the left. Click <strong>Table Editor</strong>.</p>
+
+      <div class="step-block">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <div class="step-title">Click "New Table"</div>
+          <div class="step-body">Give it a name that describes what it holds. Use lowercase and underscores — convention in Postgres is <code style="background:rgba(64,61,216,0.08);padding:2px 6px;border-radius:4px;font-size:0.85em;">leads</code> not <code style="background:rgba(64,61,216,0.08);padding:2px 6px;border-radius:4px;font-size:0.85em;">Leads</code> or <code style="background:rgba(64,61,216,0.08);padding:2px 6px;border-radius:4px;font-size:0.85em;">LeadsTable</code>.</div>
+        </div>
+      </div>
+
+      <div class="step-block">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <div class="step-title">Add columns</div>
+          <div class="step-body">
+            <p>Supabase automatically adds an <code style="background:rgba(64,61,216,0.08);padding:2px 6px;border-radius:4px;font-size:0.85em;">id</code> column (unique identifier, auto-generated) and a <code style="background:rgba(64,61,216,0.08);padding:2px 6px;border-radius:4px;font-size:0.85em;">created_at</code> column (timestamp). You just need to add your actual data fields.</p>
+            <p>Click <strong>Add Column</strong> for each field you need. For each column, you'll set:</p>
+            <p>— <strong>Name:</strong> what the field is called (e.g. <code style="background:rgba(64,61,216,0.08);padding:2px 6px;border-radius:4px;font-size:0.85em;">email</code>, <code style="background:rgba(64,61,216,0.08);padding:2px 6px;border-radius:4px;font-size:0.85em;">name</code>, <code style="background:rgba(64,61,216,0.08);padding:2px 6px;border-radius:4px;font-size:0.85em;">message</code>)<br>
+            — <strong>Type:</strong> text for strings, int8 for whole numbers, bool for true/false, timestamptz for dates/times<br>
+            — <strong>Default value and nullable:</strong> leave defaults unless you know what you need</p>
           </div>
         </div>
       </div>
@@ -220,68 +237,150 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="step-block">
         <div class="step-num">3</div>
         <div class="step-content">
-          <div class="step-title">Write your briefing</div>
-          <div class="step-body">
-            <p>Here's a simple template to start from:</p>
-            <div class="code-block"><pre><span class="key"># Project Name</span>
-
-<span class="comment">## What this is</span>
-One paragraph: what you're building, who it's for, what problem it solves.
-
-<span class="comment">## Tech stack</span>
-- Language: JavaScript / Python / etc.
-- Framework: Next.js / FastAPI / etc.
-- Database: Supabase / Postgres / etc.
-- Hosting: Vercel / Railway / etc.
-
-<span class="comment">## File structure</span>
-- /src — main source code
-- /public — static assets
-- /components — reusable UI components
-(adjust to match your actual structure)
-
-<span class="comment">## Conventions</span>
-- Files: kebab-case (e.g. user-profile.js)
-- Components: PascalCase (e.g. UserProfile.jsx)
-- CSS: BEM or utility-first (Tailwind)
-
-<span class="comment">## Rules</span>
-- Never use sed on HTML files — use the Edit tool or python3
-- Always write git commits with a subject AND body
-- Don't add comments unless the logic is non-obvious
-- Ask before adding new dependencies</pre></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="step-block">
-        <div class="step-num">4</div>
-        <div class="step-content">
-          <div class="step-title">Save it and start a new session</div>
-          <div class="step-body">Claude Code reads CLAUDE.md at the start of every session. Open a new session and ask Claude something about your project — you'll notice it already knows the context.</div>
+          <div class="step-title">Click Save</div>
+          <div class="step-body">Your table now exists in the database. You can immediately add rows in the UI by clicking the table name in the left sidebar, then clicking <strong>Insert row</strong>.</div>
         </div>
       </div>
 
       <div class="callout">
-        <p><strong>Tip:</strong> Your CLAUDE.md should evolve with your project. Any time you make a decision that Claude keeps getting wrong — a naming convention, a file location preference, a rule about how to handle a certain pattern — add it to CLAUDE.md. That's how it gets better over time.</p>
+        <p><strong>A useful mental model:</strong> a Supabase table is a spreadsheet where each column has a fixed type. You can add columns later, but you can't easily change a column's type without migrating data. Think through your columns before you start inserting real data.</p>
       </div>
 
-      <h2>What changes when you have one</h2>
+      <h2>Step 3: Get your API keys</h2>
 
-      <p>Without CLAUDE.md, every session starts cold. Claude doesn't know your stack, your conventions, or your rules. It makes reasonable guesses — but "reasonable" is different from "right for your project."</p>
+      <p>To connect your app to the database, you need two values: the <strong>Project URL</strong> and the <strong>anon key</strong>. These go into your code (or your environment variables) and tell the Supabase client where to connect and how to authenticate.</p>
 
-      <p>With CLAUDE.md, Claude behaves like someone who's been on your team for weeks. It knows your file structure and puts new files in the right place. It matches your naming conventions. It follows your rules without being reminded. It asks the right follow-up questions because it already knows the basics.</p>
+      <div class="step-block">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <div class="step-title">Go to Project Settings → API</div>
+          <div class="step-body">In the left sidebar, click the gear icon (Settings) at the bottom, then click <strong>API</strong>.</div>
+        </div>
+      </div>
 
-      <p>For a project you're actively building, this compounds fast. The hour you spend writing a good CLAUDE.md pays back across every session after that.</p>
+      <div class="step-block">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <div class="step-title">Copy the Project URL and anon key</div>
+          <div class="step-body">
+            <p>The <strong>Project URL</strong> looks like <code style="background:rgba(64,61,216,0.08);padding:2px 6px;border-radius:4px;font-size:0.85em;">https://abcdefgh.supabase.co</code>. The <strong>anon key</strong> is a long JWT string. Copy both.</p>
+            <p>The <strong>service_role key</strong> on the same page is different — it bypasses all security rules and gives full database access. Never put this in client-side code or commit it to GitHub.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="callout-warn">
+        <p><strong>Keep these out of git.</strong> Add them to a <code style="background:rgba(234,179,8,0.1);padding:2px 6px;border-radius:4px;font-size:0.85em;">.env</code> file (and add <code style="background:rgba(234,179,8,0.1);padding:2px 6px;border-radius:4px;font-size:0.85em;">.env</code> to your <code style="background:rgba(234,179,8,0.1);padding:2px 6px;border-radius:4px;font-size:0.85em;">.gitignore</code>). The anon key is safe to use in the browser, but your service_role key gives full admin access — treat it like a password.</p>
+      </div>
+
+      <h2>Step 4: Connect from your code</h2>
+
+      <p>Install the Supabase JavaScript client in your project:</p>
+
+      <div class="code-block"><pre><span class="comment"># In your terminal (Cursor's integrated terminal works fine)</span>
+<span class="val">npm install @supabase/supabase-js</span></pre></div>
+
+      <p>Then create a Supabase client in your code:</p>
+
+      <div class="code-block"><pre><span class="comment">// supabase.js (or db.js — put this in its own file)</span>
+<span class="key">import</span> { createClient } <span class="key">from</span> <span class="val">'@supabase/supabase-js'</span>
+
+<span class="key">const</span> supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
+<span class="key">const</span> supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
+
+<span class="key">export const</span> supabase = createClient(supabaseUrl, supabaseKey)</pre></div>
+
+      <p>Now you can use this client anywhere in your app to read or write data:</p>
+
+      <div class="code-block"><pre><span class="comment">// Fetch all rows from a table</span>
+<span class="key">const</span> { data, error } = <span class="key">await</span> supabase
+  .from(<span class="val">'leads'</span>)
+  .select(<span class="val">'*'</span>)
+
+<span class="comment">// Insert a new row</span>
+<span class="key">const</span> { data, error } = <span class="key">await</span> supabase
+  .from(<span class="val">'leads'</span>)
+  .insert({ name: <span class="val">'Jane Smith'</span>, email: <span class="val">'jane@example.com'</span> })</pre></div>
+
+      <div class="callout">
+        <p><strong>Tip:</strong> If you're using Cursor to write the code that connects to Supabase, paste in your table schema (column names and types) in the prompt. Cursor will write the correct insert/select code without guessing at your field names.</p>
+      </div>
+
+      <h2>Step 5: Turn on Row Level Security</h2>
+
+      <p>By default, Supabase tables are open to anyone who has your anon key. That's fine during development — but before you put a project in front of real users, you want to enable Row Level Security (RLS).</p>
+
+      <div class="step-block">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <div class="step-title">Go to Authentication → Policies (or Table Editor → your table)</div>
+          <div class="step-body">In the table editor, click the shield icon next to your table name, or navigate to Authentication → Policies in the left sidebar.</div>
+        </div>
+      </div>
+
+      <div class="step-block">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <div class="step-title">Toggle "Enable RLS" on</div>
+          <div class="step-body">Once RLS is on, all access to the table is blocked by default until you create explicit policies. This is the safe-by-default state you want.</div>
+        </div>
+      </div>
+
+      <div class="step-block">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <div class="step-title">Create a policy that allows what you need</div>
+          <div class="step-body">
+            <p>The most common policy for a contact form or lead capture table: allow anonymous INSERT (anyone can submit), but allow SELECT only for authenticated users (so only you can read submissions).</p>
+            <p>Supabase has policy templates for the most common patterns — you don't need to write the SQL from scratch.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="callout-warn">
+        <p><strong>Common beginner mistake:</strong> turning on RLS and then wondering why your app stopped working. RLS blocks everything until you add policies. If something breaks after enabling RLS, it means you need to add a policy that explicitly allows that operation.</p>
+      </div>
+
+      <h2>What you can build with this</h2>
+
+      <p>With a Supabase project set up and connected to your app, you now have the database layer for almost anything:</p>
+
+      <div class="step-block">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <div class="step-title">Contact / lead capture forms</div>
+          <div class="step-body">Form submits → insert row to Supabase → you see it in the table editor. No backend server required.</div>
+        </div>
+      </div>
+
+      <div class="step-block">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <div class="step-title">Simple CRMs and trackers</div>
+          <div class="step-body">Build a table of leads, clients, tasks, or anything else. Query and display it in your app. Filter by status, sort by date — the Supabase client handles all of it.</div>
+        </div>
+      </div>
+
+      <div class="step-block">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <div class="step-title">User-specific data (with auth)</div>
+          <div class="step-body">Once you add Supabase Auth, every row can be tied to a user ID. Each user only sees their own data. This is the pattern behind most SaaS apps.</div>
+        </div>
+      </div>
+
+      <div class="callout">
+        <p><strong>Next step after this guide:</strong> If you've got data in Supabase and a project in Cursor, the next thing to figure out is deployment — getting it live so other people can actually use it. The <a href="/guides/deploy-with-vercel-and-github">Vercel + GitHub deployment guide</a> covers exactly that.</p>
+      </div>
 
       <div class="guide-nav">
-        <a href="/guides" class="guide-nav-link" style="color:var(--text-muted);">&#8592; All guides</a>
-        <a href="/guides/deploy-with-vercel-and-github" class="guide-nav-link">Next: Deploy with Vercel and GitHub &#8594;</a>
+        <a href="/guides/how-to-use-cursor-as-a-non-coder" class="guide-nav-link">&#8592; Previous: How to use Cursor</a>
+        <a href="/guides" class="guide-nav-link" style="color:var(--text-muted);">All guides &#8594;</a>
       </div>
 
       <!-- CTA -->
       <div class="post-cta">
-        <p>At MakerSquare, every student sets up their CLAUDE.md on Day 1 and refines it across the two weeks. It's one of the first things that makes the "AI as a collaborator" model actually click.</p>
+        <p>On Day 4 of MakerSquare, every student sets up Supabase as the database for their main project. By end of day, they have live data connected to a real app — built, not simulated.</p>
         <div class="post-cta-actions">
           <a href="https://www.makersquare.ai/curriculum" class="btn btn-arrow" style="background:var(--white);color:var(--navy);font-weight:700;">See the curriculum </a>
           <a href="https://www.makersquare.ai/enroll" class="btn" style="background:transparent;color:rgba(255,255,255,0.65);border:1.5px solid rgba(255,255,255,0.2);">Secure Your Spot</a>
@@ -298,7 +397,7 @@ One paragraph: what you're building, who it's for, what problem it solves.
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="/" class="footer-logo"><img src="../logo-dark.png" alt="MakerSquare — School of Applied AI"></a><div class="footer-tagline">School of Applied AI</div>
-        <p>In-person AI training in Austin, TX &mdash; 2-week intensive, 3-day workshops, and private team programs.</p>
+        <p>2-week in-person AI intensive in Austin, TX for operators, founders, and professionals.</p>
         <a href="/enroll" class="btn btn-primary btn-arrow" style="font-size:0.82rem;padding:10px 20px;">Secure Your Spot </a>
       </div>
       <div>
@@ -328,7 +427,7 @@ One paragraph: what you're building, who it's for, what problem it solves.
         <ul class="footer-col-links">
           <li><a href="/events">Events</a></li><li><a href="/blog">Blog</a></li>
           <li><a href="https://ai-builder-brief.beehiiv.com" target="_blank" rel="noopener">Newsletter &mdash; AI Builder Brief</a></li>
-          <li><a href="/guides">Guides</a></li>
+          <li><a href="/guides" class="active">Guides</a></li>
           <li><a href="/quickstart">Claude Quickstart Guide</a></li>
         </ul>
       </div>
