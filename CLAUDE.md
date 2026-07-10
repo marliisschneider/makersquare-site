@@ -260,7 +260,7 @@ Pages marked `noindex` (like `demo-ppc.html`) are exempt from sitemap but still 
 - Price: $3,999 full pay / $4,199 split pay ($2,100 + $2,099) / $3,499 scholarship
 - Deposit to hold seat: $500 (applied toward tuition)
 - Cohort size: 15 max
-- Location: Austin TX, 9am–5pm Mon–Fri
+- Location: Austin TX, 9am–3pm Mon–Fri (optional Saturday office hours)
 - 2026 schedule: 5 cohorts (September cohort cancelled Jul 2026 — September is workshops month): C1 Jul 6–17 (in session), C2 Aug 3–14 (enrolling), C3 Oct 12–23, C4 Nov 9–20, C5 Nov 30–Dec 11.
 
 ### Mini-workshops (launched July 2026)

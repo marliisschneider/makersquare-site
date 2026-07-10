@@ -241,18 +241,34 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a href="/team">Team</a>
           <a href="/alumni">Alumni</a>
           <a href="/comparison">How We Compare</a>
+          <a href="/blog">Blog</a>
         </div>
       </li>
-      <li><a href="blog/">Blog</a></li>
-      <li><a href="/enroll" class="nav-apply">Enroll</a></li>
     </ul>
     <div class="nav-right">
-      <button type="button" class="btn btn-ghost" data-lt-trigger style="white-space:nowrap;">Let's Talk</button>
+      <button type="button" class="btn btn-ghost" data-lt-trigger style="white-space:nowrap;">Book a Call</button>
       <a href="/enroll" class="btn btn-primary btn-arrow" style="white-space:nowrap;">Secure Your Spot </a>
       <button class="nav-hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
     </div>
   </div>
 </nav>
+<div class="mobile-menu">
+  <ul class="mobile-menu-links">
+    <li><a href="/about">About</a></li>
+    <li><a href="/use-cases">Use Cases</a></li>
+    <li><a href="/curriculum">Curriculum</a></li>
+    <li><a href="/workshops">Workshops</a></li>
+    <li><a href="/corporate">For Teams</a></li>
+    <li><a href="/pricing">Pricing</a></li>
+    <li><a href="/events">Events</a></li><li><a href="/blog">Blog</a></li>
+        <li><a href="/team">Team</a></li>
+    <li><a href="/alumni">Alumni</a></li>
+    <li><a href="/comparison">How We Compare</a></li>
+    <li><a href="/enroll">Enroll</a></li>
+  </ul>
+  <a href="/enroll" class="btn btn-primary btn-block btn-lg" style="margin-top:24px;">Secure Your Spot</a>
+  <button type="button" class="btn btn-ghost btn-block btn-lg" data-lt-trigger style="margin-top:12px;">Book a Call</button>
+</div>
 
 <main class="error-page">
   <div class="error-inner">
@@ -287,13 +303,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </footer>
 
-<!-- Let's Talk (book a call) modal -->
+<!-- Book a Call modal -->
 <div id="lt-modal" class="cm-modal" role="dialog" aria-modal="true" aria-labelledby="lt-modal-title" aria-hidden="true">
   <div class="cm-modal__backdrop" data-lt-close></div>
   <div class="cm-modal__dialog">
     <button type="button" class="cm-modal__close" aria-label="Close" data-lt-close>&times;</button>
     <div class="cm-modal__head">
-      <h3 id="lt-modal-title">Let's talk</h3>
+      <h3 id="lt-modal-title">Book your 15-min call</h3>
       <p>Tell us a bit about what you're working on and pick a time that fits. It's a quick 15-minute call, no prep needed.</p>
     </div>
     <div class="cm-modal__body">
@@ -343,7 +359,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       f.style.maxWidth = '560px';
       f.style.display = 'block';
       f.style.transition = 'all 0.5s ease';
-      f.setAttribute('aria-label', "Let's talk - Book your 15min call");
+      f.setAttribute('aria-label', 'Book a Call - 15 minutes');
       var d = document.getElementById('zf_div_bookcall');
       d.appendChild(f);
       window.addEventListener('message', function(e){

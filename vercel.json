@@ -4,7 +4,12 @@
   "redirects": [
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "makersquare.ai" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "makersquare.ai"
+        }
+      ],
       "destination": "https://www.makersquare.ai/:path*",
       "permanent": true
     },
@@ -13,50 +18,100 @@
       "destination": "/enroll",
       "permanent": true
     },
-    { "source": "/blog/why-your-ai-pilot-failed", "destination": "/blog/why-your-companys-ai-training-isnt-working", "permanent": true },
-    { "source": "/blog/how-to-get-your-team-to-actually-use-ai", "destination": "/blog/ai-adoption-strategy-non-technical-teams", "permanent": true },
-    { "source": "/blog/how-to-measure-ai-impact-at-work", "destination": "/blog/how-to-get-roi-from-ai-at-work", "permanent": true }
+    {
+      "source": "/blog/why-your-ai-pilot-failed",
+      "destination": "/blog/why-your-companys-ai-training-isnt-working",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-get-your-team-to-actually-use-ai",
+      "destination": "/blog/ai-adoption-strategy-non-technical-teams",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-measure-ai-impact-at-work",
+      "destination": "/blog/how-to-get-roi-from-ai-at-work",
+      "permanent": true
+    },
+    {
+      "source": "/demo-night",
+      "destination": "/events",
+      "permanent": true
+    }
   ],
   "headers": [
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "Strict-Transport-Security", "value": "max-age=63072000; includeSubDomains; preload" },
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "X-Frame-Options", "value": "DENY" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
-        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=(), interest-cohort=()" },
-        { "key": "Content-Security-Policy-Report-Only", "value": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://forms.zoho.com https://salesiq.zohopublic.com https://*.zoho.com https://*.zohocdn.com https://cdn.pagesense.io https://www.googletagmanager.com https://www.google-analytics.com https://ssl.google-analytics.com https://static.ads-twitter.com https://analytics.twitter.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://*.zohocdn.com; font-src 'self' data: https://fonts.gstatic.com https://*.zohocdn.com; img-src 'self' data: https:; connect-src 'self' https://*.zoho.com https://*.zohocdn.com https://salesiq.zohopublic.com https://cdn.pagesense.io https://*.pagesense.io https://www.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com https://*.g.doubleclick.net https://analytics.twitter.com wss://*.zoho.com; frame-src 'self' https://forms.zohopublic.com https://*.zoho.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://forms.zohopublic.com https://*.zoho.com; object-src 'none'; upgrade-insecure-requests" }
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=63072000; includeSubDomains; preload"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=(), interest-cohort=()"
+        },
+        {
+          "key": "Content-Security-Policy-Report-Only",
+          "value": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://forms.zoho.com https://salesiq.zohopublic.com https://*.zoho.com https://*.zohocdn.com https://cdn.pagesense.io https://www.googletagmanager.com https://www.google-analytics.com https://ssl.google-analytics.com https://static.ads-twitter.com https://analytics.twitter.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://*.zohocdn.com; font-src 'self' data: https://fonts.gstatic.com https://*.zohocdn.com; img-src 'self' data: https:; connect-src 'self' https://*.zoho.com https://*.zohocdn.com https://salesiq.zohopublic.com https://cdn.pagesense.io https://*.pagesense.io https://www.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com https://*.g.doubleclick.net https://analytics.twitter.com wss://*.zoho.com; frame-src 'self' https://forms.zohopublic.com https://*.zoho.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://forms.zohopublic.com https://*.zoho.com; object-src 'none'; upgrade-insecure-requests"
+        }
       ]
     },
     {
       "source": "/css/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
       ]
     },
     {
       "source": "/js/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
       ]
     },
     {
       "source": "/(.*).jpg",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
       ]
     },
     {
       "source": "/(.*).png",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
       ]
     },
     {
       "source": "/(.*).svg",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
       ]
     }
   ]
