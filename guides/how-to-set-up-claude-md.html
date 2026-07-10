@@ -145,74 +145,128 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <div class="guide-body">
 
-      <p>Every time you open a new Claude Code session, Claude starts fresh. It doesn't know what project you're working on, what tech stack you're using, what conventions you follow, or what you've already decided. So you explain it again. And again.</p>
+      <p>Every time you open a new Claude Code session, Claude starts fresh. It doesn't know what you're working on, what you've already decided, how you like to work, or what "good" looks like for your project. So you explain it again. And it makes the same assumptions it made last time.</p>
 
-      <p>A <strong>CLAUDE.md file</strong> fixes that. It's a plain text file that lives in your project folder and loads automatically every time Claude opens that project. Think of it as a standing briefing — context Claude always has, so you never have to re-explain it.</p>
+      <p>A <strong>CLAUDE.md file</strong> fixes that. It's a plain text file that lives in your project folder and loads automatically at the start of every session. Claude reads it before anything else. Think of it as a standing briefing — the things Claude should always know, so you never have to repeat them.</p>
 
-      <h2>What goes in a CLAUDE.md file</h2>
+      <p>You don't need to be technical to write one. It's just text. The goal is to answer the questions Claude would otherwise guess wrong about — and to tell it exactly how you want it to behave.</p>
 
-      <p>There's no required format. It's a markdown file, so you can structure it however makes sense. The goal is to answer the questions Claude would otherwise have to ask — or guess wrong about.</p>
+      <h2>The most important thing to put in it: behavior rules</h2>
 
-      <p>A good CLAUDE.md typically covers:</p>
+      <p>Most people skip this. They give Claude context about their project and forget to say anything about how they want to be worked with. Then they wonder why Claude just agrees with everything, never pushes back, and adds complexity they didn't ask for.</p>
+
+      <p>The behavior section is where you turn Claude from a yes-machine into an actual thinking partner. Here's what a good one looks like:</p>
+
+      <div class="code-block"><pre><span class="comment">## How we work together</span>
+
+<span class="val">- Before starting any significant task, ask one hard question
+  or flag one real risk. Don't just execute.
+- Always suggest at least one alternative approach before
+  doing it my way. Even if mine seems fine.
+- If my idea has a flaw, say so directly — don't bury it or
+  go along with it to be agreeable.
+- Don't add features, complexity, or polish I didn't ask for.
+- When something isn't clear, ask. Don't guess and then
+  build the wrong thing.
+- Push back on bad ideas. I'd rather be challenged now than
+  undo work later.
+- Keep responses short unless I ask for depth.</span></pre></div>
+
+      <div class="callout">
+        <p><strong>Why this matters:</strong> Claude's default is to be helpful and agreeable. That sounds good — but it means it will often do exactly what you asked even when what you asked was wrong. These rules override that default and make it a better collaborator.</p>
+      </div>
+
+      <h2>What else goes in it</h2>
 
       <div class="step-block">
         <div class="step-num">1</div>
         <div class="step-content">
-          <div class="step-title">What the project is</div>
-          <div class="step-body">One paragraph. What are you building, who is it for, what problem does it solve. This gives Claude the "why" behind every decision.</div>
+          <div class="step-title">What you're working on</div>
+          <div class="step-body">Two or three sentences. What the project is, who it's for, what it's trying to do. This is the "why" behind every decision — without it, Claude optimises for generic instead of right.</div>
         </div>
       </div>
 
       <div class="step-block">
         <div class="step-num">2</div>
         <div class="step-content">
-          <div class="step-title">Your tech stack</div>
-          <div class="step-body">List the languages, frameworks, and tools you're using. Claude will match its suggestions to what you're actually working with instead of recommending something off-stack.</div>
+          <div class="step-title">Who you are</div>
+          <div class="step-body">Tell Claude your background and what you're not. "I'm not a developer." "I know marketing but I'm new to building." "I understand the business well but don't know anything about databases." This changes how Claude explains things, what it assumes you know, and how it talks to you.</div>
         </div>
       </div>
 
       <div class="step-block">
         <div class="step-num">3</div>
         <div class="step-content">
-          <div class="step-title">File structure and conventions</div>
-          <div class="step-body">Where do things live? What naming conventions do you use? This stops Claude from creating files in the wrong place or using inconsistent naming.</div>
+          <div class="step-title">Decisions already made</div>
+          <div class="step-body">Things you've already figured out that Claude shouldn't revisit or second-guess. The tools you're using, design decisions, things that are off the table. This stops Claude from repeatedly suggesting alternatives you've already ruled out.</div>
         </div>
       </div>
 
       <div class="step-block">
         <div class="step-num">4</div>
         <div class="step-content">
-          <div class="step-title">Rules and preferences</div>
-          <div class="step-body">Things you always want (or never want). "Never use sed on HTML files." "Always write a commit body, not just a subject line." "Don't add comments unless the logic is non-obvious." These are the instructions that save you from having to correct the same mistake twice.</div>
+          <div class="step-title">Hard rules</div>
+          <div class="step-body">Things Claude should never do, no matter what. Not preferences — actual rules. "Never change the pricing without telling me." "Always ask before deleting anything." "Don't touch the homepage layout." These are the guardrails that prevent the expensive mistakes.</div>
         </div>
       </div>
 
-      <div class="step-block">
-        <div class="step-num">5</div>
-        <div class="step-content">
-          <div class="step-title">External references</div>
-          <div class="step-body">Links to your design system, API docs, Notion pages, or any other resources Claude should know about when making decisions.</div>
-        </div>
-      </div>
+      <h2>A template you can copy and fill in</h2>
 
-      <h2>How to create one</h2>
+      <p>This works for any project — doesn't matter if you're building a website, a workflow, a content system, or anything else.</p>
+
+      <div class="code-block"><pre><span class="key"># [Project name]</span>
+
+<span class="comment">## What this is</span>
+<span class="val">[2-3 sentences: what you're building, who it's for,
+what problem it solves]</span>
+
+<span class="comment">## Who I am</span>
+<span class="val">[Your background. Be honest about what you don't know.
+E.g. "I'm a marketer building my first app. Not a developer.
+I understand the business and the audience well."]</span>
+
+<span class="comment">## How we work together</span>
+<span class="val">- Before starting any significant task, ask one hard question
+  or flag one real risk. Don't just execute.
+- Always suggest at least one alternative before doing it my way.
+- If my idea has a flaw, say so directly.
+- Don't add features or complexity I didn't ask for.
+- When something isn't clear, ask — don't guess.
+- Push back on bad ideas. I'd rather be challenged than undo work.
+- Keep responses concise unless I ask for more.</span>
+
+<span class="comment">## Decisions already made</span>
+<span class="val">- I'm using [tool or approach] — don't suggest changing it
+- The design/structure is [X] — not up for debate
+- [Any other settled decisions]</span>
+
+<span class="comment">## Hard rules</span>
+<span class="val">- Never [X] without asking first
+- Always [Y] when doing [Z]
+- Don't touch [specific thing] unless I explicitly say so</span>
+
+<span class="comment">## Context and references</span>
+<span class="val">[Anything else Claude should know: links to docs, important
+background, key constraints, who else is involved]</span></pre></div>
+
+      <h2>How to create the file</h2>
 
       <div class="step-block">
         <div class="step-num">1</div>
         <div class="step-content">
           <div class="step-title">Open your project folder in Claude Code</div>
-          <div class="step-body">Make sure you're in the root of your project — the top-level folder, not a subfolder.</div>
+          <div class="step-body">Make sure you're at the top level of your project — the main folder, not a subfolder inside it.</div>
         </div>
       </div>
 
       <div class="step-block">
         <div class="step-num">2</div>
         <div class="step-content">
-          <div class="step-title">Create the file</div>
+          <div class="step-title">Ask Claude to create the file for you</div>
           <div class="step-body">
-            <p>In your terminal, run:</p>
+            <p>Just say: <em>"Create a CLAUDE.md file in this folder."</em> Claude will create it. Then paste in the template above and fill it out.</p>
+            <p>Or if you're comfortable in the terminal:</p>
             <div class="code-block"><pre>touch CLAUDE.md</pre></div>
-            <p>Or just create a new file called <code style="background:rgba(64,61,216,0.08);padding:2px 6px;border-radius:4px;font-size:0.85em;">CLAUDE.md</code> in your project root using your editor or Finder.</p>
           </div>
         </div>
       </div>
@@ -220,59 +274,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="step-block">
         <div class="step-num">3</div>
         <div class="step-content">
-          <div class="step-title">Write your briefing</div>
-          <div class="step-body">
-            <p>Here's a simple template to start from:</p>
-            <div class="code-block"><pre><span class="key"># Project Name</span>
-
-<span class="comment">## What this is</span>
-One paragraph: what you're building, who it's for, what problem it solves.
-
-<span class="comment">## Tech stack</span>
-- Language: JavaScript / Python / etc.
-- Framework: Next.js / FastAPI / etc.
-- Database: Supabase / Postgres / etc.
-- Hosting: Vercel / Railway / etc.
-
-<span class="comment">## File structure</span>
-- /src — main source code
-- /public — static assets
-- /components — reusable UI components
-(adjust to match your actual structure)
-
-<span class="comment">## Conventions</span>
-- Files: kebab-case (e.g. user-profile.js)
-- Components: PascalCase (e.g. UserProfile.jsx)
-- CSS: BEM or utility-first (Tailwind)
-
-<span class="comment">## Rules</span>
-- Never use sed on HTML files — use the Edit tool or python3
-- Always write git commits with a subject AND body
-- Don't add comments unless the logic is non-obvious
-- Ask before adding new dependencies</pre></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="step-block">
-        <div class="step-num">4</div>
-        <div class="step-content">
-          <div class="step-title">Save it and start a new session</div>
-          <div class="step-body">Claude Code reads CLAUDE.md at the start of every session. Open a new session and ask Claude something about your project — you'll notice it already knows the context.</div>
+          <div class="step-title">Fill it out — then start a new session</div>
+          <div class="step-body">Claude reads CLAUDE.md at the start of every new session. Once you've filled it out, close the current session, reopen it, and ask Claude something about your project. You'll notice immediately that it already has context.</div>
         </div>
       </div>
 
       <div class="callout">
-        <p><strong>Tip:</strong> Your CLAUDE.md should evolve with your project. Any time you make a decision that Claude keeps getting wrong — a naming convention, a file location preference, a rule about how to handle a certain pattern — add it to CLAUDE.md. That's how it gets better over time.</p>
+        <p><strong>Keep it alive.</strong> Every time Claude does something you didn't want — makes an assumption, skips a step, ignores a preference — add a rule to CLAUDE.md so it doesn't happen again. That's how it gets sharper over time. Think of it as training a new hire: the more specific you are about how you work, the less you have to correct.</p>
       </div>
 
-      <h2>What changes when you have one</h2>
+      <h2>What changes</h2>
 
-      <p>Without CLAUDE.md, every session starts cold. Claude doesn't know your stack, your conventions, or your rules. It makes reasonable guesses — but "reasonable" is different from "right for your project."</p>
+      <p>Without CLAUDE.md, every session starts cold. Claude doesn't know your situation, your constraints, or your preferences. It gives you the generic version of everything — technically correct, but not shaped to you.</p>
 
-      <p>With CLAUDE.md, Claude behaves like someone who's been on your team for weeks. It knows your file structure and puts new files in the right place. It matches your naming conventions. It follows your rules without being reminded. It asks the right follow-up questions because it already knows the basics.</p>
+      <p>With a good CLAUDE.md, it behaves like someone who's been working with you for weeks. It knows what you're building and why. It follows your rules without being reminded. And — if you wrote your behavior section well — it actually challenges you instead of just going along with whatever you say.</p>
 
-      <p>For a project you're actively building, this compounds fast. The hour you spend writing a good CLAUDE.md pays back across every session after that.</p>
+      <p>That last part is the one most people don't expect. A Claude that pushes back is a much more useful collaborator than a Claude that agrees.</p>
 
       <div class="guide-nav">
         <a href="/guides" class="guide-nav-link" style="color:var(--text-muted);">&#8592; All guides</a>
