@@ -383,6 +383,79 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 <!-- WHAT'S INCLUDED -->
+<!-- ═══ ROI CALCULATOR ═══ -->
+<section class="section">
+  <div class="container">
+    <div style="text-align:center;">
+      <div class="section-label reveal" style="justify-content:center;">Do the math yourself</div>
+      <h2 class="reveal">Your numbers. <span class="text-accent">Your ROI.</span></h2>
+      <p class="section-sub reveal" style="margin:var(--s3) auto 0;max-width:520px;">No made-up value stack. Plug in what your time is worth and how much of your week goes to repetitive work &mdash; the math does the rest.</p>
+    </div>
+
+    <div class="reveal" style="max-width:720px;margin:var(--s8) auto 0;background:var(--white);border:1px solid rgba(24,24,73,0.08);border-radius:var(--r-xl);padding:clamp(var(--s6),4vw,var(--s8));box-shadow:0 4px 24px rgba(24,24,73,0.06);">
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--s7);" class="roi-inputs">
+        <div>
+          <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:var(--s3);">
+            <label for="roiRate" style="font-size:0.82rem;font-weight:700;color:var(--navy);">What&#8217;s an hour of your time worth?</label>
+            <span style="font-family:var(--font-display);font-size:1.1rem;font-weight:800;color:var(--indigo);">$<span id="roiRateVal">75</span></span>
+          </div>
+          <input type="range" id="roiRate" min="25" max="300" step="5" value="75" style="width:100%;accent-color:var(--indigo);">
+          <div style="display:flex;justify-content:space-between;font-size:0.68rem;color:var(--text-muted);margin-top:4px;"><span>$25</span><span>$300</span></div>
+        </div>
+        <div>
+          <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:var(--s3);">
+            <label for="roiHours" style="font-size:0.82rem;font-weight:700;color:var(--navy);">Hours of repetitive work per week?</label>
+            <span style="font-family:var(--font-display);font-size:1.1rem;font-weight:800;color:var(--indigo);"><span id="roiHoursVal">8</span> hrs</span>
+          </div>
+          <input type="range" id="roiHours" min="2" max="25" step="1" value="8" style="width:100%;accent-color:var(--indigo);">
+          <div style="display:flex;justify-content:space-between;font-size:0.68rem;color:var(--text-muted);margin-top:4px;"><span>2</span><span>25</span></div>
+        </div>
+      </div>
+
+      <div style="margin-top:var(--s7);padding-top:var(--s6);border-top:1px solid rgba(24,24,73,0.08);display:grid;grid-template-columns:1fr 1fr 1fr;gap:var(--s4);text-align:center;" class="roi-outputs">
+        <div>
+          <div style="font-family:var(--font-display);font-size:clamp(1.3rem,3vw,1.8rem);font-weight:800;color:var(--navy);" id="roiCost">$28,800</div>
+          <div style="font-size:0.72rem;color:var(--text-muted);line-height:1.5;margin-top:4px;">what that busywork costs you per year</div>
+        </div>
+        <div>
+          <div style="font-family:var(--font-display);font-size:clamp(1.3rem,3vw,1.8rem);font-weight:800;color:var(--green);" id="roiSave">$14,400</div>
+          <div style="font-size:0.72rem;color:var(--text-muted);line-height:1.5;margin-top:4px;">yearly savings if what you build automates just half of it</div>
+        </div>
+        <div>
+          <div style="font-family:var(--font-display);font-size:clamp(1.3rem,3vw,1.8rem);font-weight:800;color:var(--indigo);" id="roiPayback">~14 weeks</div>
+          <div style="font-size:0.72rem;color:var(--text-muted);line-height:1.5;margin-top:4px;">until $3,999 tuition pays for itself</div>
+        </div>
+      </div>
+
+      <div style="margin-top:var(--s6);text-align:center;">
+        <button type="button" class="btn btn-primary btn-arrow" data-lt-trigger>Book a 15-min call </button>
+        <div style="font-size:0.72rem;color:var(--text-muted);margin-top:var(--s3);">You build 3 tools in the program &mdash; this math assumes just one works.</div>
+      </div>
+    </div>
+  </div>
+  <style>@media(max-width:720px){.roi-inputs{grid-template-columns:1fr!important;}.roi-outputs{grid-template-columns:1fr!important;gap:var(--s5)!important;}}</style>
+  <script>
+  (function(){
+    var rate = document.getElementById('roiRate'), hours = document.getElementById('roiHours');
+    function fmt(n){ return '$' + Math.round(n).toLocaleString('en-US'); }
+    function calc(){
+      var r = +rate.value, h = +hours.value;
+      document.getElementById('roiRateVal').textContent = r;
+      document.getElementById('roiHoursVal').textContent = h;
+      var yearly = r * h * 48;           // 48 working weeks
+      var save = yearly / 2;             // assume automating half
+      var weeks = Math.max(1, Math.ceil(3999 / (save / 48)));
+      document.getElementById('roiCost').textContent = fmt(yearly);
+      document.getElementById('roiSave').textContent = fmt(save);
+      document.getElementById('roiPayback').textContent = weeks > 52 ? Math.round(weeks/4.3) + ' months' : '~' + weeks + ' weeks';
+    }
+    rate.addEventListener('input', calc); hours.addEventListener('input', calc); calc();
+  })();
+  </script>
+</section>
+
+
 <section class="section">
   <div class="container">
     <div style="text-align:center;">
