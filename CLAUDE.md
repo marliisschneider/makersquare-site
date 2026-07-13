@@ -210,7 +210,7 @@ The program moved from admissions → open enrollment. Never use the old languag
 | Reserve Your Seat | Secure Your Spot |
 | Apply Now | Secure Your Spot |
 
-The primary CTA everywhere on the site is **"Secure Your Spot"** — this is non-negotiable. Do not change it to anything else without explicit instruction.
+**CTA hierarchy (Jul 13, 2026, per Marliis + advisor voice memo):** ONE primary CTA sitewide — **"Book a Call"** (opens the lt-modal booking form). Secondary is **"Enroll"** (quiet ghost/link to /enroll). "Secure Your Spot" is retired from navs/sections; use it only on the /enroll form itself if at all. Do not add competing CTAs — the founder closes on calls. Corporate page may use the contextual "Talk to Our Training Team". NEVER label the call CTA "Talk to Admissions" — "admissions" is banned language (see table above) and contradicts the "No interview / open enrollment" copy sitewide. Workshops keep self-serve "Reserve" ($999 product).
 
 ---
 
