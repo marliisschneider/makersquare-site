@@ -25,14 +25,14 @@ Over 2 weeks (10 teaching days), students build and deploy 3 AI products:
 ## Curriculum Overview
 
 - Pre-work: 3 self-paced steps (set up accounts, run your first expert-level conversation with Claude, define your capstone problem)
-- Week 1: Build. How models work, talking to Claude like an expert, Warp + GitHub + Obsidian, PRD writing, build and deploy a website with Lovable + Vercel, Supabase and Claude Skills. Product 1 ships Friday.
+- Week 1: Build. How models work, talking to Claude like an expert, Warp + GitHub + Obsidian, PRD writing, build and deploy a website with Claude Code + Vercel, Supabase and Claude Skills. Product 1 ships Friday.
 - Week 2: Automate + Ship. Sales automation with Composio, Playwright browser control, voice AI with Whisper + ElevenLabs, Claude Code + CodeRabbit agentic workflows, advanced tools. Demo Day Friday.
 
 No visual automation tools (Zapier, Make, n8n). Production-level skills: expert prompting, Claude Skills, agentic workflows, browser control, voice AI, real deployment.
 
 ## Tools & Tech Stack
 
-Claude, Claude Code, ChatGPT, OpenRouter, Warp Terminal, GitHub, Vercel, Supabase, Lovable, Composio, Playwright, CodeRabbit, Obsidian, Splashtop, ElevenLabs, Whisper
+Claude, Claude Code, ChatGPT, Warp Terminal, GitHub, Vercel, Supabase, Composio, Playwright, CodeRabbit, Obsidian, Splashtop, ElevenLabs, Whisper
 
 ## Part-Time Format (Coming Soon)
 
