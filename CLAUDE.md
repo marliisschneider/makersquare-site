@@ -24,7 +24,7 @@ The goal is to be a thinking partner, not an order-taker. Marliis wants to be pu
 
 ## Who Marliis is
 
-**Marliis Schneider** — Founder & CEO of MakerSquare. She built this from scratch. Not a career marketer or developer — an operator and builder who moves fast, sets direction, and delegates execution to her team (Aaron Shonk runs program ops, Julia Viana handles marketing/PPC/email). Marliis approves strategy and copy; she doesn't run the tools.
+**Marliis Schneider** — Founder & CEO of MakerSquare. She built this from scratch. Not a career marketer or developer — an operator and builder who moves fast, sets direction, and delegates execution to her team. Marliis approves strategy and copy; she doesn't run the tools.
 
 She uses Claude as a strategic co-pilot and execution partner — not just a task executor. She expects Claude to hold context, catch problems before they become problems, and push back when something doesn't make sense. She doesn't want hand-holding or excessive caveats. She wants things done well, fast, and right.
 
@@ -122,7 +122,7 @@ Confirm before doing:
 - Changes to public-facing CTAs or enrollment language
 - Adding or removing pages from the site
 - New Stripe links or payment flows
-- Anything that affects Julia's or Aaron's workflows
+- Anything that affects the team's workflows
 
 ---
 
@@ -210,7 +210,7 @@ The program moved from admissions → open enrollment. Never use the old languag
 | Reserve Your Seat | Secure Your Spot |
 | Apply Now | Secure Your Spot |
 
-**CTA hierarchy (Jul 13, 2026, per Marliis + advisor voice memo):** ONE primary CTA sitewide — **"Book a Call"** (opens the lt-modal booking form). Secondary is **"Enroll"** (quiet ghost/link to /enroll). "Secure Your Spot" is retired from navs/sections; use it only on the /enroll form itself if at all. Do not add competing CTAs — the founder closes on calls. Corporate page may use the contextual "Talk to Our Training Team". NEVER label the call CTA "Talk to Admissions" — "admissions" is banned language (see table above) and contradicts the "No interview / open enrollment" copy sitewide. Workshops keep self-serve "Reserve" ($999 product).
+**CTA hierarchy (Jul 13, 2026, per Marliis + advisor voice memo):** ONE primary CTA sitewide — **"Schedule an info call"** (opens the lt-modal booking form; relabeled from "Book a Call" Jul 2026 per Ravi — same modal/mechanism, softer wording). Secondary is **"Enroll"** (quiet ghost/link to /enroll). "Secure Your Spot" is retired from navs/sections; use it only on the /enroll form itself if at all. Do not add competing CTAs — the founder closes on calls. Corporate page may use the contextual "Talk to Our Training Team". NEVER label the call CTA "Talk to Admissions" — "admissions" is banned language (see table above) and contradicts the "No interview / open enrollment" copy sitewide. Consumer workshops were pulled from site nav/home/footer Jul 2026 (page + Stripe links retained but unlinked); corporate/team workshops remain on /corporate (custom quote).
 
 ---
 
@@ -264,6 +264,8 @@ Pages marked `noindex` (like `demo-ppc.html`) are exempt from sitemap but still 
 - 2026 schedule: 5 cohorts (September cohort cancelled Jul 2026 — September is workshops month): C1 Jul 6–17 (in session), C2 Aug 3–14 (enrolling), C3 Oct 12–23, C4 Nov 9–20, C5 Nov 30–Dec 11.
 
 ### Mini-workshops (launched July 2026)
+**Jul 2026 update (Ravi):** consumer workshops were removed from the site nav, homepage, and footer — they diluted the individual funnel. The `/workshops` page and Stripe links still exist (unlinked, reversible), and **corporate/team workshops remain a live offering on `/corporate`**. Detail below retained for reference.
+
 3-day in-person AI skill sprints. Separate product — different page, different audience, different buyer.
 
 | # | Dates | Topic | Early Bird Closes |
