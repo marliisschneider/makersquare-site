@@ -6,6 +6,12 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+<url>
+    <loc>https://www.makersquare.ai/immersive</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
   <url>
     <loc>https://www.makersquare.ai/use-cases</loc>
     <lastmod>2026-06-08</lastmod>
@@ -38,12 +44,6 @@
   </url>
   <url>
     <loc>https://www.makersquare.ai/comparison</loc>
-    <lastmod>2026-06-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.makersquare.ai/pricing</loc>
     <lastmod>2026-06-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
