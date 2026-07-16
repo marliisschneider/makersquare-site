@@ -13,10 +13,40 @@
     "demoEndSuffix": "T21:00:00-05:00"
   },
   "cohorts": [
-    { "id": 1, "name": "Cohort 1", "start": "2026-07-06", "end": "2026-07-17", "enrollClose": "2026-06-22" },
-    { "id": 2, "name": "Cohort 2", "start": "2026-08-03", "end": "2026-08-14", "enrollClose": "2026-07-20" },
-    { "id": 3, "name": "Cohort 3", "start": "2026-10-12", "end": "2026-10-23", "enrollClose": "2026-09-28" },
-    { "id": 4, "name": "Cohort 4", "start": "2026-11-09", "end": "2026-11-20", "enrollClose": "2026-10-26" },
-    { "id": 5, "name": "Cohort 5", "start": "2026-11-30", "end": "2026-12-11", "enrollClose": "2026-11-16" }
+    {
+      "id": 1,
+      "name": "Cohort 1",
+      "start": "2026-07-06",
+      "end": "2026-07-17",
+      "enrollClose": "2026-06-22"
+    },
+    {
+      "id": 2,
+      "name": "Cohort 2",
+      "start": "2026-08-03",
+      "end": "2026-08-14",
+      "enrollClose": "2026-07-27"
+    },
+    {
+      "id": 3,
+      "name": "Cohort 3",
+      "start": "2026-10-12",
+      "end": "2026-10-23",
+      "enrollClose": "2026-09-28"
+    },
+    {
+      "id": 4,
+      "name": "Cohort 4",
+      "start": "2026-11-09",
+      "end": "2026-11-20",
+      "enrollClose": "2026-10-26"
+    },
+    {
+      "id": 5,
+      "name": "Cohort 5",
+      "start": "2026-11-30",
+      "end": "2026-12-11",
+      "enrollClose": "2026-11-16"
+    }
   ]
 }
