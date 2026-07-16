@@ -11,6 +11,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-MJTW9WQ3');</script>
 <!-- End Google Tag Manager -->
+<!-- Zoho UTM passthrough (modificado: incluye fbclid) -->
+<script>
+(function(){var p=new URLSearchParams(window.location.search);var keys=['utm_source','utm_medium','utm_campaign','utm_content','utm_term','fbclid'];var stored={};keys.forEach(function(k){if(p.get(k))stored[k]=p.get(k);});if(Object.keys(stored).length){try{sessionStorage.setItem('zf_utm',JSON.stringify(stored));}catch(e){}}})();
+</script>
+<!-- Zoho zf_gtm postMessage listener -->
+<script>
+window.addEventListener('message',function(e){if(e.data&&e.data.type=='zf_gtm'){window.dataLayer=window.dataLayer||[];window.dataLayer.push(e.data);}});
+</script>
+<!-- X conversion tracking base code -->
+<script>
+!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='https://static.ads-twitter.com/uwt.js',a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+twq('config','rcjjn');
+</script>
 <title>AI Bootcamp vs. Online Course: Which One Works | MakerSquare</title>
 <meta name="description" content="Most professionals who start an online AI course never finish. Research on completion rates, outcomes, and what in-person training delivers differently.">
 <meta name="robots" content="index, follow">
@@ -193,6 +206,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJTW9WQ3"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+
+<script src="https://forms.zoho.com/js/zf_gclid.js"></script>
 
 <!-- NAV -->
 <nav class="nav">
