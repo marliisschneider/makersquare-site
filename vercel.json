@@ -19,11 +19,6 @@
       "permanent": true
     },
     {
-      "source": "/housing",
-      "destination": "/",
-      "permanent": true
-    },
-    {
       "source": "/apply",
       "destination": "/enroll",
       "permanent": true
