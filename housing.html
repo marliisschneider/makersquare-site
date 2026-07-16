@@ -29,6 +29,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="twitter:image" content="https://www.makersquare.ai/og-image.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://forms.zoho.com">
+<link rel="preconnect" href="https://cdn.pagesense.io">
+<link rel="preconnect" href="https://salesiq.zohopublic.com">
 <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.min.css?v=8">
 
@@ -747,8 +750,8 @@ function closeLightboxOutside(e) { if (e.target === document.getElementById('lig
 function shiftLightbox(d) { lbIdx = (lbIdx + d + galleryImages.length) % galleryImages.length; var img = document.getElementById('lightboxImg'); img.src = galleryImages[lbIdx].src; img.alt = galleryImages[lbIdx].alt; }
 document.addEventListener('keydown', function(e) { if (!document.getElementById('lightbox').classList.contains('open')) return; if (e.key === 'Escape') closeLightbox(); if (e.key === 'ArrowLeft') shiftLightbox(-1); if (e.key === 'ArrowRight') shiftLightbox(1); });
 </script>
-<script type="text/javascript" src="https://forms.zoho.com/js/zf_gclid.js"> </script>
-<script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script><script id="zsiqscript" src="https://salesiq.zohopublic.com/widget?wc=siq885ea214ffc25f4f452068cc9bc1cec4353b0ff61817b77233444928d383fe96" defer></script>
+<script type="text/javascript" src="https://forms.zoho.com/js/zf_gclid.js" defer> </script>
+<script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script><script src="/js/siq-lazy.js" defer></script>
 </body>
 </html>
 
