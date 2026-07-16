@@ -34,3 +34,8 @@ body.cm-modal-open { overflow: hidden; }
 .nav-dd:hover .nav-dd-menu,.nav-dd:focus-within .nav-dd-menu{display:flex}
 .nav-dd-menu a{padding:9px 12px;border-radius:8px;font-size:.85rem;font-weight:500;color:var(--text-secondary);white-space:nowrap}
 .nav-dd-menu a:hover{background:var(--light-bg);color:var(--navy)}.nav-links{gap:var(--s4)}.nav-right{gap:var(--s2)}.nav .btn{padding:10px 16px;font-size:0.8rem}.nav-social a{padding:5px 11px}
+
+/* MOBILE UX FIXES (fix/mobile-ux) — appended block, mirrors end of style.css. 48px hamburger tap target; corporate <=768 overflow (hero grid + .aios-grid); enroll mobile hero CTA */
+.nav-hamburger{min-width:48px;min-height:48px;align-items:center;justify-content:center}
+.hero-cta-mobile{display:none}
+@media (max-width:768px){.page-hero-grid>*{min-width:0}.page-hero-visual{max-width:100%}.page-hero-grid h1{overflow-wrap:break-word}.mal-in,.mal-out{white-space:normal!important}.aios-grid{grid-template-columns:1fr!important}.hero-cta-mobile{display:block;margin-top:var(--s5)}}
