@@ -471,3 +471,25 @@ body.cm-modal-open { overflow: hidden; }
 .nav-right{gap:var(--s2)}
 .nav .btn{padding:10px 16px;font-size:0.8rem}
 .nav-social a{padding:5px 11px}
+
+/* ══════════════════════════════════════════════════════════════════════════════
+   MOBILE UX FIXES (branch fix/mobile-ux) — APPENDED SECTION, keep as a block.
+   Mirrored in style.min.css (pages load the .min file).
+   1) .nav-hamburger — tap target was 34x28; enforce >=48x48 (icon spans unchanged)
+   2) corporate.html <=768px — horizontal overflow: hero grid column was forced to
+      380px by .page-hero-visual max-width + nowrap illustration pills (clipped H1),
+      and the inline 3-col .aios-grid card row overflowed to 457px
+   3) enroll.html — mobile-only hero CTA (.hero-cta-mobile); hidden on desktop
+      because desktop nav already shows the CTAs
+   ══════════════════════════════════════════════════════════════════════════════ */
+.nav-hamburger { min-width: 48px; min-height: 48px; align-items: center; justify-content: center; }
+.hero-cta-mobile { display: none; }
+@media (max-width: 768px) {
+  .page-hero-grid > * { min-width: 0; }
+  .page-hero-visual { max-width: 100%; }
+  .page-hero-grid h1 { overflow-wrap: break-word; }
+  .mal-in, .mal-out { white-space: normal !important; }
+  .aios-grid { grid-template-columns: 1fr !important; }
+  .hero-cta-mobile { display: block; margin-top: var(--s5); }
+}
+/* ── end mobile UX fixes ── */
