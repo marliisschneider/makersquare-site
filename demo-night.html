@@ -114,6 +114,8 @@ twq('config','rcjjn');
   .dn-what-grid { grid-template-columns: 1fr; }
   .dn-nav-inner .btn { display: none; }
   .dn-cta-code { flex-direction: column; gap: 4px; }
+  .dn-hero-split { flex-direction: column !important; text-align: center !important; }
+  .dn-hero-split .dn-eyebrow { margin-left: auto; margin-right: auto; }
 }
 </style>
 </head>
@@ -138,33 +140,38 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- ═══ HERO ═══ -->
 <section class="dn-hero">
-  <div class="dn-hero-inner">
-    <div class="dn-eyebrow"><span class="dn-eyebrow-dot"></span>For tonight's attendees only</div>
-    <h1>You saw it tonight.<br>Here's your window to join.</h1>
-    <p class="dn-hero-sub">$1,000 off for demo night attendees. Use code <strong style="color:var(--navy);">DEMONIGHT</strong> at checkout. Offer expires Sunday, July 19 at midnight.</p>
+  <div class="dn-hero-inner dn-hero-split" style="display:flex;align-items:center;gap:var(--s10);max-width:960px;text-align:left;">
+    <!-- Left: all content -->
+    <div style="flex:1;min-width:0;">
+      <div class="dn-eyebrow"><span class="dn-eyebrow-dot"></span>For tonight's attendees only</div>
+      <h1>You saw it tonight.<br>Here's your window to join.</h1>
+      <p class="dn-hero-sub">$1,000 off for demo night attendees. Use code <strong style="color:var(--navy);">DEMONIGHT</strong> at checkout. Offer expires Sunday, July 19 at midnight.</p>
 
-    <div class="dn-price-row">
-      <span class="dn-price-old">$3,999</span>
-      <span class="dn-price-new">$2,999</span>
-      <span class="dn-price-badge">Save $1,000</span>
-    </div>
-
-    <div>
-      <div class="dn-code-box" onclick="copyCode(this)" title="Click to copy">
-        <div>
-          <div class="dn-code-box-label">Your promo code</div>
-          <div class="dn-code-box-code">DEMONIGHT</div>
-        </div>
-        <div class="dn-code-box-copy">Click to copy</div>
+      <div class="dn-price-row">
+        <span class="dn-price-old">$3,999</span>
+        <span class="dn-price-new">$2,999</span>
+        <span class="dn-price-badge">Save $1,000</span>
       </div>
+
+      <div>
+        <div class="dn-code-box" onclick="copyCode(this)" title="Click to copy">
+          <div>
+            <div class="dn-code-box-label">Your promo code</div>
+            <div class="dn-code-box-code">DEMONIGHT</div>
+          </div>
+          <div class="dn-code-box-copy">Click to copy</div>
+        </div>
+      </div>
+
+      <a href="/enroll" class="btn btn-primary btn-lg btn-arrow" style="display:inline-flex;margin-top:var(--s5);">Enroll Now — $2,999 </a>
+      <div style="margin-top:var(--s3);font-size:0.78rem;color:var(--text-muted);">Confirmed within 24 hrs &nbsp;&middot;&nbsp; Cohort 2 starts August 3</div>
     </div>
 
-    <a href="/enroll" class="btn btn-primary btn-lg btn-arrow" style="display:inline-flex;">Enroll Now — $2,999 </a>
-    <div style="margin-top:var(--s3);font-size:0.78rem;color:var(--text-muted);">Confirmed within 24 hrs &nbsp;&middot;&nbsp; Cohort 2 starts August 3</div>
-
-    <div style="margin-top:var(--s8);display:inline-flex;flex-direction:column;align-items:center;gap:var(--s3);">
-      <img src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=https://www.makersquare.ai/demo-night&color=181849&bgcolor=F5F4F0" alt="QR code — makersquare.ai/demo-night" width="160" height="160" style="border-radius:12px;border:6px solid var(--white);box-shadow:0 4px 20px rgba(24,24,73,0.12);">
-      <div style="font-size:0.75rem;font-weight:600;color:var(--text-muted);letter-spacing:0.04em;">Scan to open on your phone</div>
+    <!-- Right: QR code -->
+    <div style="flex-shrink:0;display:flex;flex-direction:column;align-items:center;gap:var(--s3);">
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://www.makersquare.ai/demo-night&color=181849&bgcolor=F5F4F0" alt="QR code — makersquare.ai/demo-night" width="200" height="200" style="border-radius:16px;border:8px solid var(--white);box-shadow:0 4px 24px rgba(24,24,73,0.14);">
+      <div style="font-size:0.78rem;font-weight:700;color:var(--text-muted);letter-spacing:0.03em;text-align:center;">Scan to open on your phone</div>
+      <div style="font-size:0.68rem;color:var(--text-muted);opacity:0.7;">makersquare.ai/demo-night</div>
     </div>
   </div>
 </section>
