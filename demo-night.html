@@ -48,19 +48,19 @@ twq('config','rcjjn');
 .dn-nav-inner { display: flex; align-items: center; justify-content: space-between; width: 100%; max-width: var(--max-width); margin: 0 auto; }
 .dn-nav-logo img { height: 40px; width: auto; display: block; }
 
-.dn-hero { padding: var(--s12) 0 var(--s10); background: var(--light-bg); text-align: center; position: relative; overflow: hidden; }
+.dn-hero { padding: var(--s8) 0; background: var(--light-bg); text-align: center; position: relative; overflow: hidden; display: flex; align-items: center; min-height: calc(100vh - 116px); }
 .dn-hero::before { content: ''; position: absolute; inset: 0; background-image: radial-gradient(rgba(64,61,216,0.05) 1px, transparent 1px); background-size: 28px 28px; pointer-events: none; }
-.dn-hero-inner { position: relative; z-index: 1; max-width: 720px; margin: 0 auto; padding: 0 var(--s7); }
-.dn-eyebrow { display: inline-flex; align-items: center; gap: 8px; background: rgba(64,61,216,0.08); border: 1px solid rgba(64,61,216,0.15); border-radius: var(--r-full); padding: 6px 16px; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--indigo); margin-bottom: var(--s6); }
+.dn-hero-inner { position: relative; z-index: 1; max-width: 1040px; width: 100%; margin: 0 auto; padding: 0 var(--s7); }
+.dn-eyebrow { display: inline-flex; align-items: center; gap: 8px; background: rgba(64,61,216,0.08); border: 1px solid rgba(64,61,216,0.15); border-radius: var(--r-full); padding: 6px 16px; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--indigo); margin-bottom: var(--s4); }
 .dn-eyebrow-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--green); box-shadow: 0 0 6px rgba(34,197,94,0.6); }
-.dn-hero h1 { font-size: clamp(2rem, 4.5vw, 3.2rem); color: var(--navy); letter-spacing: -0.03em; line-height: 1.15; margin-bottom: var(--s4); }
-.dn-hero-sub { font-size: 1.1rem; color: var(--text-secondary); line-height: 1.7; max-width: 560px; margin: 0 auto var(--s7); }
-.dn-price-row { display: inline-flex; align-items: baseline; gap: 12px; margin-bottom: var(--s6); }
-.dn-price-old { font-family: var(--font-display); font-size: 1.4rem; font-weight: 700; color: var(--text-muted); text-decoration: line-through; }
-.dn-price-new { font-family: var(--font-display); font-size: 2.8rem; font-weight: 800; color: var(--indigo); letter-spacing: -0.04em; }
+.dn-hero h1 { font-size: clamp(1.8rem, 3vw, 2.8rem); color: var(--navy); letter-spacing: -0.03em; line-height: 1.15; margin-bottom: var(--s3); }
+.dn-hero-sub { font-size: 1rem; color: var(--text-secondary); line-height: 1.65; max-width: 520px; margin: 0 0 var(--s5); }
+.dn-price-row { display: inline-flex; align-items: baseline; gap: 12px; margin-bottom: var(--s4); }
+.dn-price-old { font-family: var(--font-display); font-size: 1.3rem; font-weight: 700; color: var(--text-muted); text-decoration: line-through; }
+.dn-price-new { font-family: var(--font-display); font-size: 2.6rem; font-weight: 800; color: var(--indigo); letter-spacing: -0.04em; }
 .dn-price-badge { background: rgba(34,197,94,0.1); border: 1px solid var(--green-border); border-radius: var(--r-full); padding: 4px 12px; font-size: 0.75rem; font-weight: 700; color: var(--green); }
 
-.dn-code-box { display: inline-flex; align-items: center; gap: var(--s3); background: var(--white); border: 2px dashed var(--indigo); border-radius: var(--r-md); padding: 12px 20px; margin-bottom: var(--s7); cursor: pointer; transition: all 0.2s; }
+.dn-code-box { display: inline-flex; align-items: center; gap: var(--s3); background: var(--white); border: 2px dashed var(--indigo); border-radius: var(--r-md); padding: 12px 20px; margin-bottom: var(--s5); cursor: pointer; transition: all 0.2s; }
 .dn-code-box:hover { background: var(--cloud); }
 .dn-code-box-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted); }
 .dn-code-box-code { font-family: var(--font-display); font-size: 1.1rem; font-weight: 800; color: var(--indigo); letter-spacing: 0.04em; }
@@ -167,7 +167,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- ═══ HERO ═══ -->
 <section class="dn-hero">
-  <div class="dn-hero-inner dn-hero-split" style="display:flex;align-items:center;gap:var(--s10);max-width:960px;text-align:left;">
+  <div class="dn-hero-inner dn-hero-split" style="display:flex;align-items:flex-start;gap:var(--s10);text-align:left;">
     <!-- Left: all content -->
     <div style="flex:1;min-width:0;">
       <div class="dn-eyebrow"><span class="dn-eyebrow-dot"></span>For tonight's attendees only</div>
@@ -195,8 +195,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <!-- Right: QR code -->
-    <div style="flex-shrink:0;">
-      <div class="dn-qr-card">
+    <div style="flex-shrink:0;align-self:stretch;display:flex;align-items:center;">
+      <div class="dn-qr-card" style="height:100%;justify-content:center;">
         <div style="display:flex;align-items:center;gap:7px;">
           <span class="dn-qr-live-dot"></span>
           <span style="font-size:0.65rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:var(--indigo);">Scan to claim your spot</span>
