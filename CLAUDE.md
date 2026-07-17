@@ -158,7 +158,7 @@ This site relies on a set of marketing / lead-attribution scripts. They are crit
 
 ### Public pages (the list)
 
-`404.html`, `about.html`, `alumni.html`, `apply.html`, `comparison.html`, `corporate.html`, `curriculum.html`, `demo-day.html`, `demo-ppc.html`, `enroll.html`, `faq.html`, `housing.html`, `index.html`, `immersive.html`, `pricing.html`, `privacy.html`, `quickstart.html`, `quickstart-download.html`, `scholarship.html`, `team.html`, `terms.html`, `use-cases.html`, `workshop-register.html`, `workshops.html`
+`404.html`, `about.html`, `alumni.html`, `apply.html`, `comparison.html`, `corporate.html`, `curriculum.html`, `demo-day.html`, `demo-ppc.html`, `employers.html`, `enroll.html`, `faq.html`, `housing.html`, `index.html`, `immersive.html`, `pricing.html`, `privacy.html`, `quickstart.html`, `quickstart-download.html`, `scholarship.html`, `team.html`, `terms.html`, `use-cases.html`, `workshop-register.html`, `workshops.html`
 
 `HANDOFF.html` is an internal handoff doc, not a deployed page — exempt from these rules.
 
@@ -301,6 +301,7 @@ B2B is now a primary motion, not a footer link. "For Teams" is in the main nav s
 | `curriculum.html` | `/curriculum` | Week-by-week program breakdown |
 | `pricing.html` | `/pricing` | Standalone page RETIRED Jul 2026 — `/pricing` 301-redirects to `/immersive` (pricing now a section there). File kept, unlinked. |
 | `corporate.html` | `/corporate` | B2B — companies sending teams |
+| `employers.html` | `/employers` | For employers/recruiters — hire AI-fluent grads; routes to Demo Day + intro call. Honesty guardrail: NOT a placement program, not everyone is job-hunting. |
 | `team.html` | `/team` | Team + advisors |
 | `housing.html` | `/housing` | Info for out-of-town attendees |
 | `scholarship.html` | `/scholarship` | $500 discount for vets/first responders/educators |
