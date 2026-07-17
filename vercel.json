@@ -37,11 +37,6 @@
       "source": "/blog/how-to-measure-ai-impact-at-work",
       "destination": "/blog/how-to-get-roi-from-ai-at-work",
       "permanent": true
-    },
-    {
-      "source": "/demo-night",
-      "destination": "/events",
-      "permanent": true
     }
   ],
   "headers": [
