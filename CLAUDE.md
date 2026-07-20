@@ -301,7 +301,7 @@ B2B is now a primary motion, not a footer link. "For Teams" is in the main nav s
 | `curriculum.html` | `/curriculum` | Week-by-week program breakdown |
 | `pricing.html` | `/pricing` | Standalone page RETIRED Jul 2026 — `/pricing` 301-redirects to `/immersive` (pricing now a section there). File kept, unlinked. |
 | `corporate.html` | `/corporate` | B2B — companies sending teams |
-| `employers.html` | `/employers` | For employers/recruiters — hire AI-fluent grads; routes to Demo Day + intro call. Honesty guardrail: NOT a placement program, not everyone is job-hunting. |
+| `employers.html` | `/employers` | For employers/recruiters — hire AI-fluent grads; routes to Demo Day + an INLINE hiring form (`#hiring-form`). Honesty guardrail: NOT a placement program, not everyone is job-hunting. **Form is the shared "Bookyourcall" Zoho form (reused)** — to make it hiring-specific, duplicate that form in Zoho Forms UI, add fields (Company / What you're hiring for / Headcount), and swap the `formperma` URL in the `#zf_div_hiring` mount script. |
 | `team.html` | `/team` | Team + advisors |
 | `housing.html` | `/housing` | Info for out-of-town attendees |
 | `scholarship.html` | `/scholarship` | $500 discount for vets/first responders/educators |

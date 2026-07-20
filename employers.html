@@ -213,7 +213,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p class="section-sub reveal" style="max-width:600px;">MakerSquare builders aren't prompt dabblers. They're operators and domain experts who spent two weeks shipping real AI products — agents, automations, working tools with real data. Some are actively looking for roles. All of them are worth meeting. The best place to see them: live, on stage, at Demo Day.</p>
         <div class="reveal" style="display:flex;gap:var(--s3);flex-wrap:wrap;margin-top:var(--s6);">
           <a href="/demo-day" class="btn btn-primary btn-lg btn-arrow">See them at Demo Day </a>
-          <button type="button" class="btn btn-ghost btn-lg" data-lt-trigger>Talk to us about hiring</button>
+          <a href="#hiring-form" class="btn btn-ghost btn-lg">Talk to us about hiring</a>
         </div>
         <p class="reveal" style="margin-top:var(--s4);font-size:0.82rem;color:var(--text-muted);">Austin, TX &nbsp;&middot;&nbsp; New cohort graduates every few weeks</p>
       </div>
@@ -340,7 +340,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="emp-step-num">02</div>
         <h3>Tell us who you're hiring</h3>
         <p>Looking for a specific profile — an AI-fluent ops lead, a marketer who builds, a domain expert who ships? Tell us and we'll make warm intros to grads who fit and are open to it.</p>
-        <button type="button" class="btn btn-ghost btn-sm" data-lt-trigger style="font-size:0.8rem;">Talk to our team →</button>
+        <a href="#hiring-form" class="btn btn-ghost btn-sm" style="font-size:0.8rem;">Talk to our team →</a>
       </div>
       <div class="emp-step reveal reveal-d3">
         <div class="emp-step-num">03</div>
@@ -352,8 +352,31 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
+<!-- HIRING FORM -->
+<section class="section" id="hiring-form">
+  <div class="container">
+    <div class="page-hero-grid">
+      <div>
+        <div class="section-label reveal">Schedule a chat</div>
+        <h2 class="reveal">Tell us who<br><span class="text-accent">you're hiring.</span></h2>
+        <p class="section-sub reveal" style="max-width:500px;">Grab a time to talk with our team about the role you're filling and the kind of AI-fluent person you want in it. We'll tell you honestly whether we have grads who fit and are open to it — and get you an invite to the next Demo Day so you can see the work live.</p>
+        <ul style="list-style:none;margin-top:var(--s6);display:flex;flex-direction:column;gap:12px;">
+          <li style="font-size:0.9rem;color:var(--text-secondary);display:flex;gap:10px;align-items:flex-start;"><span style="color:var(--indigo);font-weight:700;">→</span> A quick call — tell us the profile, we point you to the right people</li>
+          <li style="font-size:0.9rem;color:var(--text-secondary);display:flex;gap:10px;align-items:flex-start;"><span style="color:var(--indigo);font-weight:700;">→</span> No fee, no exclusivity — just warm intros where there's a fit</li>
+          <li style="font-size:0.9rem;color:var(--text-secondary);display:flex;gap:10px;align-items:flex-start;"><span style="color:var(--indigo);font-weight:700;">→</span> Prefer email? <a href="mailto:hello@makersquare.ai?subject=Hiring%20MakerSquare%20talent" style="color:var(--indigo);font-weight:600;">hello@makersquare.ai</a></li>
+        </ul>
+      </div>
+      <div class="reveal">
+        <div style="background:var(--white);border:1px solid rgba(24,24,73,0.08);border-radius:var(--r-xl);padding:var(--s5);box-shadow:0 4px 24px rgba(24,24,73,0.06);">
+          <div id="zf_div_hiring"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- CTA -->
-<section class="section">
+<section class="section section--alt">
   <div class="container">
     <div style="background:var(--navy);border-radius:var(--r-xl);padding:var(--s10);text-align:center;position:relative;overflow:hidden;">
       <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--indigo),var(--azure),var(--sky));"></div>
@@ -361,8 +384,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <h2 class="reveal" style="color:var(--white);">Come see what they build.<br><span style="color:var(--sky);">Then meet the builders.</span></h2>
       <p class="reveal" style="color:rgba(255,255,255,0.6);max-width:520px;margin:var(--s3) auto var(--s6);">Start with the next Demo Day, or tell us who you're trying to hire and we'll point you to the right people.</p>
       <div class="reveal" style="display:flex;gap:var(--s3);justify-content:center;flex-wrap:wrap;">
-        <a href="/demo-day" class="btn btn-primary btn-lg btn-arrow">See the next Demo Day </a>
-        <a href="mailto:hello@makersquare.ai?subject=Hiring%20MakerSquare%20talent" class="btn btn-ghost btn-lg" style="color:rgba(255,255,255,0.7);border-color:rgba(255,255,255,0.15);">Email us about hiring</a>
+        <a href="#hiring-form" class="btn btn-primary btn-lg btn-arrow">Schedule a hiring chat </a>
+        <a href="/demo-day" class="btn btn-ghost btn-lg" style="color:rgba(255,255,255,0.7);border-color:rgba(255,255,255,0.15);">See the next Demo Day</a>
       </div>
       <p class="reveal" style="margin-top:var(--s4);font-size:0.78rem;color:rgba(255,255,255,0.35);">Free to attend Demo Day &nbsp;&middot;&nbsp; Austin, TX &nbsp;&middot;&nbsp; hello@makersquare.ai</p>
     </div>
@@ -542,6 +565,61 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   document.addEventListener('keydown', function(e){
     if(e.key === 'Escape' && modal.classList.contains('open')) closeModal();
   });
+})();
+</script>
+
+<!-- Inline hiring form (Zoho) — mounts on load into #zf_div_hiring -->
+<script>
+(function(){
+  var host = document.getElementById('zf_div_hiring');
+  if(!host) return;
+  var mounted = false;
+  function mount(){
+    if(mounted) return;
+    mounted = true;
+    try{
+      var f = document.createElement('iframe');
+      // NOTE: reuses the "Book your call" form. Swap this formperma URL for a
+      // dedicated hiring form once it exists in Zoho Forms (see repo CLAUDE.md).
+      var ifrmSrc = 'https://forms.zohopublic.com/makersquare/form/Bookyourcall/formperma/QhUmSj0eZVSD4t1kRDrV8BfgTOxUamerj-v7ZB2_K_w?zf_rszfm=1';
+      try{
+        if (typeof ZFLead !== 'undefined' && typeof zfutm_zfLead !== 'undefined') {
+          for (var j = 0; j < ZFLead.utmPNameArr.length; j++) {
+            var utmPm = ZFLead.utmPNameArr[j];
+            var utmVal = zfutm_zfLead.zfutm_gC_enc(ZFLead.utmPNameArr[j]);
+            if (typeof utmVal !== 'undefined' && utmVal !== '') {
+              ifrmSrc += (ifrmSrc.indexOf('?') > 0 ? '&' : '?') + utmPm + '=' + utmVal;
+            }
+          }
+        }
+      }catch(e){}
+      f.src = ifrmSrc;
+      f.style.border = 'none';
+      f.style.width = '100%';
+      f.style.maxWidth = '560px';
+      f.style.height = '800px';
+      f.style.display = 'block';
+      f.style.transition = 'all 0.5s ease';
+      f.setAttribute('aria-label', 'Talk to us about hiring — schedule a call');
+      host.appendChild(f);
+      window.addEventListener('message', function(e){
+        var d = e.data;
+        if (d && d.constructor == String) {
+          var parts = d.split('|');
+          if (parts.length == 2 || parts.length == 3) {
+            var perma = parts[0];
+            var newH = (parseInt(parts[1], 10) + 15) + 'px';
+            var ifr = host.getElementsByTagName('iframe')[0];
+            if (ifr && (ifr.src).indexOf('formperma') > 0 && (ifr.src).indexOf(perma) > 0) {
+              if (ifr.style.height != newH) ifr.style.height = newH;
+            }
+          }
+        }
+      }, false);
+    }catch(e){}
+  }
+  if(document.readyState === 'complete' || document.readyState === 'interactive'){ mount(); }
+  else { document.addEventListener('DOMContentLoaded', mount); }
 })();
 </script>
 <script src="js/main.min.js"></script>
