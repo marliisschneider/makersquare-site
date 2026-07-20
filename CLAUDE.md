@@ -126,7 +126,7 @@ Pages marked `noindex` (like `demo-ppc.html`) are exempt from sitemap but still 
 - Price: $3,999 full pay / $3,499 scholarship
 - Full payment at enrollment — no deposit, no split pay
 - Location: Austin TX, 9am–3pm Mon–Fri (optional Saturday office hours)
-- 2026 schedule: C1 Jul 6–17 (completed), C2 Aug 3–14 (enrolling), C3 Oct 12–23, C4 Nov 9–20, C5 Nov 30–Dec 11. September cohort cancelled — September is workshops month.
+- 2026 schedule: C1 Jul 6–17 (completed), C2 Aug 3–14 (enrolling), C3 Oct 12–23, C4 Nov 30–Dec 11. September cohort cancelled — September is workshops month. Nov 9–20 cohort dropped.
 
 ### Mini-workshops
 3-day in-person AI skill sprints. Consumer workshops removed from site nav/home/footer Jul 2026 (page + Stripe links retained, unlinked). Corporate/team workshops remain live on `/corporate`.
