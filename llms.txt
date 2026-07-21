@@ -57,8 +57,7 @@ A 4-week part-time format (Fridays plus weekends) is planned as a separate track
 - Cohort 1: July 6 to July 17, 2026 (Demo Day Fri July 17 evening) — 15 seats. In session.
 - Cohort 2: August 3 to August 14, 2026 (Demo Day Fri August 14 evening) — 15 seats. Enrolling now.
 - Cohort 3: October 12 to October 23, 2026 (Demo Day Fri October 23 evening) — 15 seats
-- Cohort 4: November 9 to November 20, 2026 (Demo Day Fri November 20 evening) — 15 seats
-- Cohort 5: November 30 to December 11, 2026 (Demo Day Fri December 11 evening) — 15 seats. Ends before Christmas.
+- Cohort 4: November 30 to December 11, 2026 (Demo Day Fri December 11 evening) — 15 seats. Ends before Christmas.
 
 No cohort runs in September — that month is dedicated to 3-day workshops (Build Your First AI Agent, Sep 9–11; AI for Operations & Productivity, Sep 23–25).
 
