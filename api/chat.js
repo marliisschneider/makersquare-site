@@ -23,7 +23,7 @@ async function getFacts(origin) {
     fetch(`${origin}/llms.txt`).then(r => r.ok ? r.text() : ''),
     fetch(`${origin}/faq`).then(r => r.ok ? r.text() : '').catch(() => ''),
   ]);
-  if (!llms) throw new Error('facts unavailable');
+  if (!llms) { const err = new Error('facts unavailable'); err.code = 'facts_fetch'; throw err; }
   const faqText = faq ? `\n\n=== FULL FAQ (published answers) ===\n${stripHtml(faq).slice(0, 18000)}` : '';
   factsCache = { text: llms + faqText, at: now };
   return factsCache.text;
@@ -68,12 +68,13 @@ export default async function handler(req, res) {
         messages,
       }),
     });
-    if (!r.ok) throw new Error(`upstream ${r.status}`);
+    if (!r.ok) { const err = new Error(`upstream ${r.status}`); err.code = 'api_' + r.status; throw err; }
     const data = await r.json();
     const text = (data.content || []).filter(b => b.type === 'text').map(b => b.text).join('');
     return res.status(200).json({ reply: text || "I'm not sure — the fastest way to get that answered is a quick 15-minute call." });
   } catch (e) {
     console.error('chat error:', e && e.message);
-    return res.status(200).json({ reply: "I'm having trouble right now. The fastest way to get answers is booking a 15-minute call — the button is right below." });
+    const code = (e && e.code) || (String(e && e.message).includes('Headers') ? 'key_format' : 'unknown');
+    return res.status(200).json({ reply: "I'm having trouble right now. The fastest way to get answers is booking a 15-minute call — the button is right below.", code });
   }
 }
