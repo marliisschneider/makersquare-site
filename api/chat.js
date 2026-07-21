@@ -5,12 +5,27 @@
 let factsCache = { text: null, at: 0 };
 const FACTS_TTL_MS = 10 * 60 * 1000;
 
+function stripHtml(html) {
+  return html
+    .replace(/<script[\s\S]*?<\/script>/gi, ' ')
+    .replace(/<style[\s\S]*?<\/style>/gi, ' ')
+    .replace(/<[^>]+>/g, '\n')
+    .replace(/&amp;/g, '&').replace(/&mdash;/g, '—').replace(/&ndash;/g, '–')
+    .replace(/&middot;/g, '·').replace(/&#8217;|&rsquo;/g, "'").replace(/&ldquo;|&rdquo;/g, '"')
+    .replace(/&nbsp;/g, ' ').replace(/&rarr;/g, '→')
+    .split('\n').map(l => l.trim()).filter(l => l.length > 2).join('\n');
+}
+
 async function getFacts(origin) {
   const now = Date.now();
   if (factsCache.text && now - factsCache.at < FACTS_TTL_MS) return factsCache.text;
-  const res = await fetch(`${origin}/llms.txt`);
-  if (!res.ok) throw new Error('facts unavailable');
-  factsCache = { text: await res.text(), at: now };
+  const [llms, faq] = await Promise.all([
+    fetch(`${origin}/llms.txt`).then(r => r.ok ? r.text() : ''),
+    fetch(`${origin}/faq`).then(r => r.ok ? r.text() : '').catch(() => ''),
+  ]);
+  if (!llms) throw new Error('facts unavailable');
+  const faqText = faq ? `\n\n=== FULL FAQ (published answers) ===\n${stripHtml(faq).slice(0, 18000)}` : '';
+  factsCache = { text: llms + faqText, at: now };
   return factsCache.text;
 }
 
