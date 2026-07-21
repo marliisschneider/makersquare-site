@@ -38,7 +38,7 @@ export default async function handler(req, res) {
         messages: [{ role: 'user', content: input.trim() }],
       }),
     });
-    if (!r.ok) throw new Error('upstream ' + r.status);
+    if (!r.ok) { const err = new Error('upstream ' + r.status); err.code = 'api_' + r.status; throw err; }
     const data = await r.json();
     let text = (data.content || []).filter(b => b.type === 'text').map(b => b.text).join('').trim();
     text = text.replace(/^```(json)?/i, '').replace(/```$/, '').trim();
@@ -49,6 +49,7 @@ export default async function handler(req, res) {
     return res.status(200).json({ result: parsed });
   } catch (e) {
     console.error('ideas error:', e && e.message);
-    return res.status(200).json({ error: 'unavailable' });
+    const code = (e && e.code) || (e instanceof SyntaxError || String(e && e.message).includes('json') ? 'parse' : 'unknown');
+    return res.status(200).json({ error: 'unavailable', code });
   }
 }
