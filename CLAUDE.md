@@ -180,3 +180,8 @@ B2B is a primary motion. "For Teams" in main nav → `/corporate`: (1) private 3
 
 Obsidian vault (strategy docs, workshop plans, email copy): `/Users/marliisschneider/Desktop/makersquare-brain/`
 - `Marketing/Workshops-Strategy.md` — canonical workshop reference
+
+
+## Site assistant (chatbot)
+
+`/api/chat` (Vercel serverless) answers visitor questions with Claude Haiku, grounded STRICTLY on the live `/llms.txt` — so keeping llms.txt accurate keeps the bot accurate; there is no second facts file. Widget: `js/ms-chat.js`, included on all indexable pages. It cannot quote prices/dates not present in llms.txt and funnels uncertainty + buying intent to Book a Call. Requires `ANTHROPIC_API_KEY` env var in Vercel (Settings → Environment Variables) — without it the bot returns a graceful book-a-call fallback. Widget pushes `msc_chat_open` to dataLayer for GTM.
