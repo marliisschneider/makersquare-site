@@ -54,7 +54,7 @@
     ['Price', 'How much does the 2-week program cost?'],
     ['Next dates', 'When does the next cohort start and when does enrollment close?'],
     ['For my team', 'Do you offer AI training for company teams?'],
-    ['Workshops', 'What 3-day workshops are coming up?'],
+    ['What will I build?', 'What do students actually build during the program?'],
     ['No coding?', 'Do I need a coding background to join?']
   ];
 
@@ -137,7 +137,7 @@
   document.getElementById('msc-bubble').addEventListener('click', function () {
     var open = panel.classList.toggle('open');
     if (open && !msgs.children.length)
-      typewriter(row('bot'), 'Hi! Ask me anything about MakerSquare — the 2-week program, team training, workshops, pricing, dates. Or tap a question below.');
+      typewriter(row('bot'), 'Hi! Ask me anything about MakerSquare — the 2-week program, team training, pricing, dates. Or tap a question below.');
     if (open) input.focus();
     if (window.dataLayer) window.dataLayer.push({ event: 'msc_chat_open' });
   });
