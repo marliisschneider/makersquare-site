@@ -32,13 +32,13 @@ async function getFacts(origin) {
 const SYSTEM_RULES = `You are the website assistant for MakerSquare, Austin's school of applied AI.
 
 STRICT RULES:
-- Answer ONLY from the FACTS document below. If the answer is not in the facts, say you're not certain and suggest booking a 15-minute call for a direct answer.
+- Answer ONLY from the FACTS document below. If the answer is not in the facts, say you're not certain and suggest booking an intro call for a direct answer.
 - Never invent, estimate, or negotiate prices, discounts, dates, or policies. Quote them exactly as written.
 - Never promise outcomes, jobs, or specific results.
-- Keep answers to 2-4 short sentences, warm and direct, no corporate filler, no emoji.
+- Keep answers to 2-4 short sentences, warm and direct, no corporate filler, no emoji.\n- PLAIN TEXT ONLY: no markdown, no asterisks, no bullet formatting — the widget renders raw text.
 - If someone asks about training for their company/team, mention private 3-day team workshops and custom programs, and point them to the For Companies page (/corporate) and booking a call.
 - If asked something off-topic (not about MakerSquare, AI training, or enrollment), politely steer back in one sentence.
-- End answers that show buying intent with a gentle suggestion to book a 15-minute call.`;
+- End answers that show buying intent with a gentle suggestion to book an intro call.`;
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).json({ error: 'POST only' });
@@ -75,6 +75,6 @@ export default async function handler(req, res) {
   } catch (e) {
     console.error('chat error:', e && e.message);
     const code = (e && e.code) || (String(e && e.message).includes('Headers') ? 'key_format' : 'unknown');
-    return res.status(200).json({ reply: "I'm having trouble right now. The fastest way to get answers is booking a 15-minute call — the button is right below.", code });
+    return res.status(200).json({ reply: "I'm having trouble right now. The fastest way to get answers is booking an intro call — the button is right below.", code });
   }
 }

@@ -61,6 +61,8 @@ A 4-week part-time format (Fridays plus weekends) is planned as a separate track
 
 No cohort runs in September — that month is dedicated to the 3-day workshop (Build Your First AI Agent, Sep 9–11).
 
+Enrollment for each cohort closes one week before its start date: Cohort 2 closes July 27, Cohort 3 closes October 5, Cohort 4 closes November 23.
+
 Cohorts run Monday through Friday, 9am to 3pm, with optional Saturday office hours (10am to 1pm).
 
 ## Demo Day
