@@ -184,3 +184,5 @@ Obsidian vault (strategy docs, workshop plans, email copy): `/Users/marliisschne
 ## Site assistant (chatbot)
 
 `/api/chat` (Vercel serverless) answers visitor questions with Claude Haiku, grounded STRICTLY on the live `/llms.txt` — so keeping llms.txt accurate keeps the bot accurate; there is no second facts file. Widget: `js/ms-chat.js`, included on all indexable pages. It cannot quote prices/dates not present in llms.txt and funnels uncertainty + buying intent to Book a Call. Requires `ANTHROPIC_API_KEY` env var in Vercel (Settings → Environment Variables) — without it the bot returns a graceful book-a-call fallback. Widget pushes `msc_chat_open` to dataLayer for GTM.
+
+`/api/ideas` powers the "What would you build?" generator (homepage, mode=individual) and the instant 3-day team sketch (/corporate, mode=team) via `js/ms-ideas.js` and `[data-ms-ideas]` mount points. Same ANTHROPIC_API_KEY; strict-JSON prompts; both push `ms_ideas_submit` to dataLayer.
