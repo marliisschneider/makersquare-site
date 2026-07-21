@@ -232,7 +232,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <div class="header">
   <h1>One more step.</h1>
-  <p>Choose your workshop below to complete your registration.</p>
+  <p>Complete your registration below.</p>
 </div>
 
 <div class="cards">
@@ -244,15 +244,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="card-price" id="ws2-price">$999</div>
     <div class="card-tier" id="ws2-tier">Early bird &mdash; ends Aug 19</div>
     <a class="card-btn" id="ws2-btn" href="#">Register Now &rarr;</a>
-  </div>
-
-  <div class="card">
-    <div class="card-eyebrow">Sep 23–25, 2026 &middot; Austin TX</div>
-    <div class="card-title">AI for Operations &amp; Productivity</div>
-    <div class="card-divider"></div>
-    <div class="card-price" id="ws3-price">$999</div>
-    <div class="card-tier" id="ws3-tier">Early bird &mdash; ends Sep 2</div>
-    <a class="card-btn" id="ws3-btn" href="#">Register Now &rarr;</a>
   </div>
 
 </div>
@@ -270,10 +261,6 @@ const WS2 = {
   earlyBird: { ends: new Date('2026-08-19T23:59:59'), url: 'https://buy.stripe.com/4gM8wOfNp6Qx0SF2tX6wE05', price: '$999',   tier: 'Early bird — ends Aug 19' },
   regular:   {                                         url: 'https://buy.stripe.com/8x26oG7gT8YF9pbc4x6wE06',   price: '$1,199', tier: 'Regular price' },
 };
-const WS3 = {
-  earlyBird: { ends: new Date('2026-09-02T23:59:59'), url: 'https://buy.stripe.com/14AfZg58Lfn36cZgkN6wE07', price: '$999',   tier: 'Early bird — ends Sep 2' },
-  regular:   {                                         url: 'https://buy.stripe.com/9B64gycBd0s91WJb0t6wE08',   price: '$1,199', tier: 'Regular price' },
-};
 
 function activeLink(ws) {
   return new Date() < ws.earlyBird.ends ? ws.earlyBird : ws.regular;
@@ -287,7 +274,6 @@ function apply(prefix, ws) {
 }
 
 apply('ws2', WS2);
-apply('ws3', WS3);
 </script>
 <script type="text/javascript" src="https://forms.zoho.com/js/zf_gclid.js" defer></script>
 </body>

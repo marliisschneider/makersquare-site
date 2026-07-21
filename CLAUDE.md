@@ -134,7 +134,6 @@ Pages marked `noindex` (like `demo-ppc.html`) are exempt from sitemap but still 
 | # | Dates | Topic | Early Bird Closes |
 |---|---|---|---|
 | 2 | Sep 9–11, 2026 | Build Your First AI Agent | Aug 19 |
-| 3 | Sep 23–25, 2026 | AI for Operations & Productivity | Sep 2 |
 
 Pricing: Early bird $999 / Regular $1,199. Private team sessions: custom quote only — never publish a price (~$950/person internally, min ~$4,000).
 

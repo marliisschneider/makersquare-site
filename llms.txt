@@ -59,7 +59,7 @@ A 4-week part-time format (Fridays plus weekends) is planned as a separate track
 - Cohort 3: October 12 to October 23, 2026 (Demo Day Fri October 23 evening) — 15 seats
 - Cohort 4: November 30 to December 11, 2026 (Demo Day Fri December 11 evening) — 15 seats. Ends before Christmas.
 
-No cohort runs in September — that month is dedicated to 3-day workshops (Build Your First AI Agent, Sep 9–11; AI for Operations & Productivity, Sep 23–25).
+No cohort runs in September — that month is dedicated to the 3-day workshop (Build Your First AI Agent, Sep 9–11).
 
 Cohorts run Monday through Friday, 9am to 3pm, with optional Saturday office hours (10am to 1pm).
 
@@ -99,7 +99,6 @@ In addition to the 2-week program, MakerSquare runs 3-day in-person AI workshops
 ### 2026 Workshop Schedule
 
 - Build Your First AI Agent: September 9–11, 2026. Tools: n8n, Claude API, OpenAI, Airtable, Google Sheets, Slack API, Zapier, Webhooks. Attendees build a working AI agent that solves a real problem from their own work.
-- AI for Operations & Productivity: September 23–25, 2026. Tools: Fathom, Claude, n8n, Zapier, Notion AI, Google Sheets, Slack Workflows. Attendees automate their biggest recurring time drains.
 
 ### Workshop Pricing
 
