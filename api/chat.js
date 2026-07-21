@@ -73,6 +73,7 @@ export default async function handler(req, res) {
     const text = (data.content || []).filter(b => b.type === 'text').map(b => b.text).join('');
     return res.status(200).json({ reply: text || "I'm not sure — the fastest way to get that answered is a quick 15-minute call." });
   } catch (e) {
-    return res.status(200).json({ reply: "I'm having trouble right now. The fastest way to get answers is booking a 15-minute call — the button is right below." });
+    console.error('chat error:', e && e.message);
+    return res.status(200).json({ reply: "I'm having trouble right now. The fastest way to get answers is booking a 15-minute call — the button is right below.", debug: String(e && e.message).slice(0, 120) });
   }
 }
