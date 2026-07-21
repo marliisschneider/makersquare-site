@@ -4,6 +4,8 @@ Read this before editing any HTML file in this repo. General working preferences
 
 **Do NOT `git push` (as of Jul 20, 2026).** Commit locally with proper messages, then tell Marliis what's queued — she reviews and makes the final push herself. Pushes auto-deploy to production.
 
+**Exception: `~/makersquare-blog-auto-publish.sh`.** The scheduled blog-publishing automation still pushes automatically, on purpose — it's narrow (only ever touches `blog/` and `sitemap.xml`), deterministic (pulls from a pre-written, pre-reviewed draft on a pre-approved editorial schedule), and never touches any other page. That's a different risk profile from an interactive session editing arbitrary files, which is what this rule is guarding against. If you're an interactive session (human or AI) making ad hoc edits — anywhere, including to blog files — the no-push rule applies to you. If you're that specific script running on its own schedule, it doesn't.
+
 ---
 
 ## Tracking scripts must stay on every public page
