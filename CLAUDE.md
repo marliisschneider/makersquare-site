@@ -2,6 +2,8 @@
 
 Read this before editing any HTML file in this repo. General working preferences (voice, git commits, session ritual, etc.) are in the global `~/.claude/CLAUDE.md`.
 
+**Do NOT `git push` (as of Jul 20, 2026).** Commit locally with proper messages, then tell Marliis what's queued — she reviews and makes the final push herself. Pushes auto-deploy to production.
+
 ---
 
 ## Tracking scripts must stay on every public page
