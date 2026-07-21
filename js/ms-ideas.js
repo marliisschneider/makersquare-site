@@ -24,6 +24,7 @@
   + '.mi-day span{font-size:.87rem;color:#33334f;line-height:1.6}'
   + '.mi-outcome{background:linear-gradient(135deg,#181849,#23237a);border-radius:16px;padding:18px 20px;color:#fff}'
   + '.mi-outcome b{color:#81AAFB}'
+  + '.mi-outcome span{color:rgba(255,255,255,.92)}'
   + '.mi-cta{text-align:center;margin-top:22px}'
   + '.mi-err{text-align:center;color:#6b6b8f;font-size:.88rem;margin-top:16px}'
   + '@media(max-width:820px){.mi-cards{grid-template-columns:1fr}}';
