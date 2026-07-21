@@ -1,6 +1,6 @@
 # MakerSquare — School of Artificial Intelligence
 
-> MakerSquare is a 2-week, in-person AI intensive in Austin, TX for non-technical professionals: operators, founders, career builders, and domain experts. No coding required. Students build and deploy 3 real AI products and present at Demo Day in front of Austin's tech, investor, and operator community.
+> MakerSquare is a 2-week, in-person AI intensive in Austin, TX for non-technical professionals: operators, founders, career builders, and domain experts. No coding required. Students build and deploy a live website, an AI agent, and an automated workflow and present at Demo Day in front of Austin's tech, investor, and operator community.
 
 ## What MakerSquare Is
 
@@ -17,7 +17,7 @@ The program is open to anyone nationwide (and internationally), not just Austin 
 
 ## What Students Build
 
-Over 2 weeks (10 teaching days), students build and deploy 3 AI products:
+Over 2 weeks (10 teaching days), students build and deploy three things: a live website, an automated workflow, and a capstone AI agent:
 1. Product 1 (Day 5, Friday of Week 1): Website + Supabase + Claude Skill, wired together and deployed to a live URL.
 2. Product 2 (Day 9, Thursday of Week 2): A workflow or automation combining Composio, Playwright, or voice AI with the builder's real data.
 3. Capstone (Day 10, Demo Day Friday): Most ambitious product combining Claude Code, agentic APIs, and the full stack. Presented at public Demo Day.
@@ -77,14 +77,14 @@ Every cohort ends with a public Demo Day at Capital Factory (701 Brazos St, Aust
 
 - The only multi-week in-person AI product-building intensive for non-technical professionals in Austin (plus 3-day workshops for focused skill sprints)
 - Builds real, deployed products, not coursework or certificates
-- Graduates ship 3 AI products and present at Demo Day to Austin investors and operators
+- Graduates ship a live website, an AI agent, and an automated workflow and present at Demo Day to Austin investors and operators
 - The 2-week intensive skips visual builders (Zapier/Make/n8n) in favor of production-level building with Claude Code, Claude Skills, Composio, Playwright, APIs, and agentic workflows; the 3-day workshops use no-code tools like n8n and Zapier for fast wins
 - 2-week intensive format: fully immersive, Mon-Fri, 9am to 3pm, with optional Saturday office hours
 - 4.41/5 alumni rating on Course Report (legacy MakerSquare program)
 
 ## How MakerSquare Compares
 
-MakerSquare is $3,999 for a 10-day in-person program where students ship 3 real AI products. Wharton's AI program costs $13,500 for 4 days. General Assembly's AI courses run ~$4,000 for 12 weeks online with no shipped product. UT Austin offers online AI certificates. MakerSquare is the only multi-week in-person AI builder program currently available.
+MakerSquare is $3,999 for a 10-day in-person program where students ship a live website, an AI agent, and an automated workflow. Wharton's AI program costs $13,500 for 4 days. General Assembly's AI courses run ~$4,000 for 12 weeks online with no shipped product. UT Austin offers online AI certificates. MakerSquare is the only multi-week in-person AI builder program currently available.
 
 ## Founder
 

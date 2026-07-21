@@ -33,7 +33,7 @@ export default async function handler(req, res) {
       },
       body: JSON.stringify({
         model: 'claude-sonnet-5',
-        max_tokens: 600,
+        max_tokens: 900,
         system: PROMPTS[mode],
         messages: [{ role: 'user', content: input.trim() }],
       }),
@@ -42,7 +42,10 @@ export default async function handler(req, res) {
     const data = await r.json();
     let text = (data.content || []).filter(b => b.type === 'text').map(b => b.text).join('').trim();
     text = text.replace(/^```(json)?/i, '').replace(/```$/, '').trim();
-    const parsed = JSON.parse(text);
+    const first = Math.min(...['{', '['].map(c => { const i = text.indexOf(c); return i === -1 ? Infinity : i; }));
+    const last = Math.max(text.lastIndexOf('}'), text.lastIndexOf(']'));
+    if (first === Infinity || last <= first) throw new Error('no json');
+    const parsed = JSON.parse(text.slice(first, last + 1));
     return res.status(200).json({ result: parsed });
   } catch (e) {
     console.error('ideas error:', e && e.message);
