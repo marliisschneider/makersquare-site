@@ -76,12 +76,12 @@
 
   var foot = document.getElementById('msc-foot');
   if (document.getElementById('lt-modal')) {
-    foot.innerHTML = '<button type="button">Prefer a human? Book a 15-min call &rarr;</button>';
+    foot.innerHTML = '<button type="button">Prefer a human? Book an intro call &rarr;</button>';
     foot.firstChild.addEventListener('click', function () {
       var t = document.querySelector('[data-lt-trigger]'); if (t) t.click();
     });
   } else {
-    foot.innerHTML = '<a href="/corporate#contact">Prefer a human? Book a 15-min call &rarr;</a>';
+    foot.innerHTML = '<a href="/corporate#contact">Prefer a human? Book an intro call &rarr;</a>';
   }
 
   var chipRow = document.getElementById('msc-chips');
