@@ -58,7 +58,7 @@ export default async function handler(req, res) {
       method: 'POST',
       headers: {
         'content-type': 'application/json',
-        'x-api-key': process.env.ANTHROPIC_API_KEY,
+        'x-api-key': (process.env.ANTHROPIC_API_KEY || '').trim(),
         'anthropic-version': '2023-06-01',
       },
       body: JSON.stringify({
@@ -74,6 +74,6 @@ export default async function handler(req, res) {
     return res.status(200).json({ reply: text || "I'm not sure — the fastest way to get that answered is a quick 15-minute call." });
   } catch (e) {
     console.error('chat error:', e && e.message);
-    return res.status(200).json({ reply: "I'm having trouble right now. The fastest way to get answers is booking a 15-minute call — the button is right below.", debug: String(e && e.message).slice(0, 120) });
+    return res.status(200).json({ reply: "I'm having trouble right now. The fastest way to get answers is booking a 15-minute call — the button is right below." });
   }
 }
