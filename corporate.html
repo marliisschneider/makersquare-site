@@ -461,29 +461,141 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div data-ms-ideas="team"></div>
     </div>
 
-    <div class="corp-quotes" style="display:grid;grid-template-columns:1fr 1fr;gap:var(--s5);max-width:920px;margin:var(--s8) auto var(--s6);">
-      <figure class="reveal" style="margin:0;background:var(--white);border:1px solid rgba(24,24,73,0.08);border-radius:var(--r-xl);padding:var(--s7);box-shadow:0 4px 20px rgba(24,24,73,0.06);">
-        <blockquote style="margin:0;font-size:0.95rem;color:var(--navy);line-height:1.7;">&ldquo;Business owners and operators &mdash; if they need to delegate anything, they&#8217;re the first ones who&#8217;d get the most out of it.&rdquo;</blockquote>
-        <figcaption style="display:flex;align-items:center;gap:10px;margin-top:var(--s4);">
-          <img src="images/cohort1/avatar-cameron.jpg?v=2" alt="Cameron Dowd" style="width:40px;height:40px;border-radius:50%;object-fit:cover;flex-shrink:0;">
-          <span style="font-size:0.8rem;color:var(--text-secondary);"><strong style="color:var(--navy);">Cameron Dowd</strong> &middot; Cohort 1 graduate</span>
-        </figcaption>
-      </figure>
-      <figure class="reveal reveal-d2" style="margin:0;background:var(--white);border:1px solid rgba(24,24,73,0.08);border-radius:var(--r-xl);padding:var(--s7);box-shadow:0 4px 20px rgba(24,24,73,0.06);">
-        <blockquote style="margin:0;font-size:0.95rem;color:var(--navy);line-height:1.7;">&ldquo;Each of us entered the first day with our own unique product to build step by step &mdash; we weren&#8217;t learning a generic one-size-fits-all solution.&rdquo;</blockquote>
-        <figcaption style="display:flex;align-items:center;gap:10px;margin-top:var(--s4);">
-          <img src="images/cohort1/avatar-ted.jpg?v=2" alt="Ted Kilgore" style="width:40px;height:40px;border-radius:50%;object-fit:cover;flex-shrink:0;">
-          <span style="font-size:0.8rem;color:var(--text-secondary);"><strong style="color:var(--navy);">Ted Kilgore</strong> &middot; Cohort 1 graduate, on LinkedIn</span>
-        </figcaption>
-      </figure>
-    </div>
-    <div class="reveal" style="text-align:center;margin-top:var(--s6);">
+        <div class="reveal" style="text-align:center;margin-top:var(--s6);">
       <p style="font-size:0.88rem;color:var(--text-secondary);margin-bottom:var(--s4);">Different team? Customer service, recruiting, legal &mdash; if the work happens on a computer, there&#8217;s a version of this for it.</p>
       <a href="#contact" class="btn btn-primary btn-arrow">Talk to Our Training Team &mdash; tell us about yours </a>
     </div>
   </div>
-  <style>@media(max-width:900px){.corp-team-grid{grid-template-columns:1fr!important;}.corp-quotes{grid-template-columns:1fr!important;}}</style>
+  <style>@media(max-width:900px){.corp-team-grid{grid-template-columns:1fr!important;}}</style>
 </section>
+
+<!-- ═══ COHORT 1 — PROOF (CORPORATE) ═══ -->
+<section id="testimonials" style="position:relative;overflow:hidden;padding:var(--s6) 0;background:radial-gradient(circle,rgba(255,255,255,0.035) 1px,transparent 1px) 0 0/18px 18px,linear-gradient(180deg,#1d1d5c,#181849);">
+  <div class="t-hair" style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--indigo),#5a8ff0,var(--sky));"></div>
+  <div class="t-aur t-aur1"></div><div class="t-aur t-aur2"></div>
+  <style>
+  #testimonials .t-hair{background:linear-gradient(90deg,var(--indigo),#5a8ff0,var(--sky),#5a8ff0,var(--indigo))!important;background-size:200% 100%!important;animation:tqSweep 7s linear infinite;}
+  @keyframes tqSweep{to{background-position:200% 0;}}
+  #testimonials .t-aur{position:absolute;width:460px;height:460px;border-radius:50%;pointer-events:none;filter:blur(90px);}
+  #testimonials .t-aur1{background:radial-gradient(circle,rgba(64,61,216,0.5),transparent 65%);top:-140px;right:-100px;animation:tqFloatA 16s ease-in-out infinite alternate;}
+  #testimonials .t-aur2{background:radial-gradient(circle,rgba(129,170,251,0.35),transparent 65%);bottom:-160px;left:-120px;animation:tqFloatB 20s ease-in-out infinite alternate;}
+  @keyframes tqFloatA{to{transform:translate(-70px,50px) scale(1.15);}}
+  @keyframes tqFloatB{to{transform:translate(80px,-60px) scale(1.12);}}
+  #testimonials .tq-card{transition:opacity 0.7s cubic-bezier(0.16,1,0.3,1),transform 0.35s ease,box-shadow 0.35s ease,border-color 0.35s ease;}
+  #testimonials .tq-card:hover{transform:translateY(-6px);box-shadow:0 28px 64px rgba(8,8,35,0.55);}
+  #testimonials figcaption img{animation:tqRing 3.6s ease-in-out infinite;}
+  @keyframes tqRing{0%,100%{box-shadow:0 0 0 2px rgba(129,170,251,0.5);}50%{box-shadow:0 0 0 2px rgba(129,170,251,0.95),0 0 20px rgba(129,170,251,0.5);}}
+  #testimonials .t-live{animation:tqLive 2.2s ease-in-out infinite;}
+  @keyframes tqLive{50%{box-shadow:0 0 14px rgba(34,197,94,1);transform:scale(1.25);}}
+  #testimonials .tq-cta{background:linear-gradient(120deg,rgba(64,61,216,0.5),rgba(129,170,251,0.18),rgba(64,61,216,0.5))!important;background-size:220% 220%!important;animation:tqCta 9s ease infinite;}
+  @keyframes tqCta{0%,100%{background-position:0% 50%;}50%{background-position:100% 50%;}}
+  #testimonials .c1-strip figure{overflow:hidden;}
+  #testimonials .c1-strip img{transition:transform 5s cubic-bezier(0.16,1,0.3,1);}
+  #testimonials .c1-strip figure:hover img{transform:scale(1.08);}
+  @media (prefers-reduced-motion:reduce){#testimonials .t-hair,#testimonials .t-aur1,#testimonials .t-aur2,#testimonials figcaption img,#testimonials .t-live,#testimonials .tq-cta{animation:none!important;}}
+  </style>
+  <div class="container" style="position:relative;">
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:var(--s4);flex-wrap:wrap;margin-bottom:var(--s4);">
+      <div>
+        <div style="font-size:0.65rem;font-weight:800;text-transform:uppercase;letter-spacing:0.12em;color:var(--sky);margin-bottom:6px;">Proof from Cohort 1</div>
+        <h2 style="color:var(--white);font-family:var(--font-display);font-size:clamp(1.3rem,2.6vw,1.8rem);font-weight:800;letter-spacing:-0.02em;margin:0;">Operators, in their words.</h2>
+      </div>
+      <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.06);border:1px solid rgba(129,170,251,0.25);border-radius:999px;padding:8px 16px;font-size:0.78rem;font-weight:600;color:rgba(255,255,255,0.75);">
+        <span class="t-live" style="width:8px;height:8px;border-radius:50%;background:#22c55e;display:inline-block;box-shadow:0 0 8px rgba(34,197,94,0.7);"></span>
+        Graduated July 17, 2026 &middot; Austin, TX
+      </div>
+    </div>
+
+    <div class="tnavy-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:var(--s4);align-items:stretch;">
+      <figure class="reveal tq-card" style="margin:0;background:#fff;border:none;box-shadow:0 18px 44px rgba(8,8,35,0.42);border-radius:var(--r-xl);padding:var(--s5);display:flex;flex-direction:column;">
+        <blockquote style="margin:0;font-size:0.95rem;color:var(--navy);line-height:1.6;flex:1;">&ldquo;<span style="color:var(--indigo);font-weight:700;">Business owners and operators</span> &mdash; if they need to delegate anything, <span style="color:var(--indigo);font-weight:700;">they&#8217;re the first ones who&#8217;d get the most out of it.</span>&rdquo;</blockquote>
+        <figcaption style="display:flex;align-items:center;gap:10px;margin-top:var(--s3);padding-top:var(--s3);border-top:1px solid rgba(24,24,73,0.12);">
+          <img src="images/cohort1/avatar-cameron.jpg?v=2" alt="Cameron Dowd" style="width:40px;height:40px;border-radius:50%;object-fit:cover;flex-shrink:0;box-shadow:0 0 0 2px rgba(129,170,251,0.4);">
+          <span style="font-size:0.78rem;color:rgba(24,24,73,0.62);"><strong style="color:var(--navy);">Cameron Dowd</strong> &middot; SaaS account executive</span>
+        </figcaption>
+      </figure>
+      <figure class="reveal reveal-d2 tq-card" style="margin:0;background:#fff;border:none;box-shadow:0 18px 44px rgba(8,8,35,0.42);border-radius:var(--r-xl);padding:var(--s5);display:flex;flex-direction:column;">
+        <blockquote style="margin:0;font-size:0.95rem;color:var(--navy);line-height:1.6;flex:1;">&ldquo;Each of us entered the first day with <span style="color:var(--indigo);font-weight:700;">our own unique product to build step by step</span> &mdash; we weren&#8217;t learning a <span style="color:var(--indigo);font-weight:700;">generic one-size-fits-all solution.</span>&rdquo;</blockquote>
+        <figcaption style="display:flex;align-items:center;gap:10px;margin-top:var(--s3);padding-top:var(--s3);border-top:1px solid rgba(24,24,73,0.12);flex-wrap:wrap;">
+          <img src="images/cohort1/avatar-ted.jpg?v=2" alt="Ted Kilgore" style="width:40px;height:40px;border-radius:50%;object-fit:cover;flex-shrink:0;box-shadow:0 0 0 2px rgba(129,170,251,0.5);">
+          <span style="font-size:0.78rem;color:rgba(24,24,73,0.62);"><strong style="color:var(--navy);">Ted Kilgore</strong> &middot; Executive Leadership Consultant, The HT Group</span>
+          <span style="margin-left:auto;display:inline-flex;align-items:center;gap:6px;background:rgba(64,61,216,0.07);border:1px solid rgba(64,61,216,0.28);border-radius:999px;padding:5px 12px;font-size:0.68rem;font-weight:700;color:var(--indigo);white-space:nowrap;"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452z"/></svg>Posted on LinkedIn</span>
+        </figcaption>
+      </figure>
+    </div>
+
+    <div class="reveal reveal-d3 tq-cta" style="background:linear-gradient(135deg,rgba(64,61,216,0.35),rgba(129,170,251,0.15));border:1px solid rgba(129,170,251,0.3);border-radius:var(--r-xl);padding:var(--s4) var(--s5);display:flex;align-items:center;justify-content:space-between;gap:var(--s4);flex-wrap:wrap;margin-top:var(--s4);">
+      <div style="font-size:0.88rem;color:rgba(255,255,255,0.85);font-weight:600;">They came as individuals. Your whole team can come together.</div>
+      <a href="#contact" class="btn btn-primary btn-arrow" style="white-space:nowrap;font-size:0.85rem;">Talk to Our Training Team</a>
+    </div>
+
+    <div class="c1-marquee reveal" style="margin-top:var(--s3);overflow:hidden;position:relative;">
+      <div class="c1-track">
+      <figure>
+        <img src="images/cohort1/c1-1067.jpg" alt="Ted presenting his finished product to a packed room on Cohort 1 Demo Day, July 17" loading="lazy">
+        <figcaption>Demo Day, July 17 &mdash; Ted presenting what he built</figcaption>
+      </figure>
+      <figure>
+        <img src="images/cohort1/c1-0959.jpg" alt="Two Cohort 1 builders at the whiteboard, one wearing the MakerSquare AI Builder shirt" loading="lazy">
+        <figcaption>AI Builders &mdash; the shirt isn&#8217;t aspirational</figcaption>
+      </figure>
+      <figure>
+        <img src="images/cohort1/c1-1050.jpg" alt="Cameron demoing the product he built on the big screen at Cohort 1 Demo Day" loading="lazy">
+        <figcaption>Cameron demoing his build &mdash; Demo Day, July 17</figcaption>
+      </figure>
+      <figure>
+        <img src="images/cohort1/c1-0953.jpg" alt="Whiteboard session on Day 4 covering Supabase keys and row level security" loading="lazy">
+        <figcaption>Supabase keys and row-level security, Day 4</figcaption>
+      </figure>
+      <figure>
+        <img src="images/events/demo-night-0984.jpg" alt="Full room at MakerSquare Demo Night in Austin watching live presentations" loading="lazy">
+        <figcaption>Demo Night in Austin draws a full house</figcaption>
+      </figure>
+      <figure>
+        <img src="images/cohort1/c1-0950.jpg" alt="Cohort 1 student presenting the product he built and deployed on the classroom screen" loading="lazy">
+        <figcaption>Week 1: presenting a product that&#8217;s already live</figcaption>
+      </figure>
+      <figure aria-hidden="true">
+        <img src="images/cohort1/c1-1067.jpg" alt="" loading="lazy">
+        <figcaption>Demo Day, July 17 &mdash; Ted presenting what he built</figcaption>
+      </figure>
+      <figure aria-hidden="true">
+        <img src="images/cohort1/c1-0959.jpg" alt="" loading="lazy">
+        <figcaption>AI Builders &mdash; the shirt isn&#8217;t aspirational</figcaption>
+      </figure>
+      <figure aria-hidden="true">
+        <img src="images/cohort1/c1-1050.jpg" alt="" loading="lazy">
+        <figcaption>Cameron demoing his build &mdash; Demo Day, July 17</figcaption>
+      </figure>
+      <figure aria-hidden="true">
+        <img src="images/cohort1/c1-0953.jpg" alt="" loading="lazy">
+        <figcaption>Supabase keys and row-level security, Day 4</figcaption>
+      </figure>
+      <figure aria-hidden="true">
+        <img src="images/events/demo-night-0984.jpg" alt="" loading="lazy">
+        <figcaption>Demo Night in Austin draws a full house</figcaption>
+      </figure>
+      <figure aria-hidden="true">
+        <img src="images/cohort1/c1-0950.jpg" alt="" loading="lazy">
+        <figcaption>Week 1: presenting a product that&#8217;s already live</figcaption>
+      </figure>
+      </div>
+    </div>
+    <style>
+    .c1-track{display:flex;width:max-content;animation:c1Roll 48s linear infinite;}
+    .c1-marquee:hover .c1-track{animation-play-state:paused;}
+    @keyframes c1Roll{to{transform:translateX(-50%);}}
+    .c1-track figure{margin:0 var(--s4) 0 0;border-radius:var(--r-xl);overflow:hidden;box-shadow:0 4px 20px rgba(24,24,73,0.1);flex:0 0 300px;background:rgba(255,255,255,0.05);}
+    .c1-track img{width:100%;height:170px;object-fit:cover;display:block;transition:transform 5s cubic-bezier(0.16,1,0.3,1);}
+    .c1-track figure:hover img{transform:scale(1.08);}
+    .c1-track figcaption{font-size:0.72rem;padding:8px 12px;background:rgba(255,255,255,0.07);color:rgba(255,255,255,0.6);}
+    @media(prefers-reduced-motion:reduce){.c1-track{animation:none;}.c1-marquee{overflow-x:auto;}}
+    @media(max-width:880px){.c1-track figure{flex-basis:250px;}.c1-track img{height:150px;}}
+    </style>
+  </div>
+  <style>@media(max-width:880px){.tnavy-grid{grid-template-columns:1fr!important;}}</style>
+</section>
+
 
 
 <!-- TWO OPTIONS -->
