@@ -59,7 +59,7 @@ A 4-week part-time format (Fridays plus weekends) is planned as a separate track
 - Cohort 3: October 12 to October 23, 2026 (Demo Day Fri October 23 evening) — 15 seats
 - Cohort 4: November 30 to December 11, 2026 (Demo Day Fri December 11 evening) — 15 seats. Ends before Christmas.
 
-No cohort runs in September — that month is dedicated to the 3-day workshop (Build Your First AI Agent, Sep 9–11).
+No cohort runs in September.
 
 Enrollment for each cohort closes one week before its start date: Cohort 2 closes July 27, Cohort 3 closes October 5, Cohort 4 closes November 23.
 
@@ -75,10 +75,10 @@ Every cohort ends with a public Demo Day at Capital Factory (701 Brazos St, Aust
 
 ## Differentiators
 
-- The only multi-week in-person AI product-building intensive for non-technical professionals in Austin (plus 3-day workshops for focused skill sprints)
+- The only multi-week in-person AI product-building intensive for non-technical professionals in Austin
 - Builds real, deployed products, not coursework or certificates
 - Graduates ship a live website, an AI agent, and an automated workflow and present at Demo Day to Austin investors and operators
-- The 2-week intensive skips visual builders (Zapier/Make/n8n) in favor of production-level building with Claude Code, Claude Skills, Composio, Playwright, APIs, and agentic workflows; the 3-day workshops use no-code tools like n8n and Zapier for fast wins
+- The 2-week intensive skips visual builders (Zapier/Make/n8n) in favor of production-level building with Claude Code, Claude Skills, Composio, Playwright, APIs, and agentic workflows
 - 2-week intensive format: fully immersive, Mon-Fri, 9am to 3pm, with optional Saturday office hours
 - 4.41/5 alumni rating on Course Report (legacy MakerSquare program)
 
@@ -94,28 +94,6 @@ Marliis Schneider, Founder & CEO. Background in operations, business development
 
 Ravi Parikh — Co-founder, MakerSquare. Austin-based serial entrepreneur; co-founded the original MakerSquare (acquired by Hack Reactor) and is CEO of RoverPass. Additional advisors from Austin's operator, investor, and AI community being assembled.
 
-## Mini-Workshops (3-Day Intensives)
-
-In addition to the 2-week program, MakerSquare runs 3-day in-person AI workshops in Austin, TX. These are focused skill sprints for working professionals who need a specific capability now — not a career change. No coding required.
-
-### 2026 Workshop Schedule
-
-- Build Your First AI Agent: September 9–11, 2026. Tools: n8n, Claude API, OpenAI, Airtable, Google Sheets, Slack API, Zapier, Webhooks. Attendees build a working AI agent that solves a real problem from their own work.
-
-### Workshop Pricing
-
-- Early Bird: $999 per person (until 3 weeks before start date)
-- Regular: $1,199 per person (after early bird closes)
-- Private Team Session: custom quote (same 3-day curriculum, your team only, your dates, content adapted to your tools and use cases — proposal within 24 hours)
-
-### What Attendees Leave With
-
-Not slides. Not certificates. A working system built on their actual data and tools, with 30 days of Slack access for follow-up. Day 3 ends with a live demo and a personal roadmap for what to build next.
-
-### Workshop vs. 2-Week Program
-
-Workshops are focused skill sprints for people who need one specific capability now. The 2-week program is for people who want to ship 3 complete AI products and make a deeper career transition. Workshop attendees get $200 off the 2-week program with code WORKSHOP200.
-
 ## Contact & Links
 
 - Website: https://www.makersquare.ai/
@@ -128,6 +106,5 @@ Workshops are focused skill sprints for people who need one specific capability 
 - Housing: https://www.makersquare.ai/housing
 - Team: https://www.makersquare.ai/team
 - Use Cases by Industry: https://www.makersquare.ai/use-cases
-- Workshops: https://www.makersquare.ai/workshops
 - Email: hello@makersquare.ai
 - LinkedIn: https://www.linkedin.com/company/makersquare-ai
