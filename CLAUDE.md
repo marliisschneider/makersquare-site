@@ -90,7 +90,7 @@ The program moved from admissions → open enrollment. Never use the old languag
 
 - **`css/style.min.css` is minified — do not edit it directly.** Override with inline `style=""` attributes on elements when needed.
 - **`nav-apply` class must stay as-is.** The nav "Enroll" button uses class `nav-apply` (not `nav-enroll`) — renaming it breaks nav styling.
-- **3-column grid:** Default CSS has `repeat(2,...)`. For 3-column step grids, override inline: `style="grid-template-columns:repeat(3,minmax(0,360px));"`
+- **3-column grid:** Default CSS has `repeat(2,...)`. For 3-column grids, override inline with `style="grid-template-columns:repeat(auto-fit,minmax(250px,1fr));"` — NEVER a fixed `repeat(3,...)` inline: inline styles beat the stylesheet's mobile media queries, so a fixed 3-column inline grid stays 3-across on phones (bug fixed sitewide Jul 24, 2026). auto-fit collapses to 2/1 columns on its own.
 - **Step card badges:** Cards use `flex-direction:column` with `margin-top:auto` on `.step-time` badge for bottom-alignment. Don't remove this.
 
 ---
