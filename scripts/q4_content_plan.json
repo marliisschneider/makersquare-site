@@ -1,0 +1,317 @@
+[
+  {
+    "date": "2026-09-14",
+    "date_disp": "September 14, 2026",
+    "keyword": "AI for SEO",
+    "volume": 8100,
+    "slug": "ai-for-seo"
+  },
+  {
+    "date": "2026-09-16",
+    "date_disp": "September 16, 2026",
+    "keyword": "AI for accountants",
+    "volume": 6600,
+    "slug": "ai-for-accountants"
+  },
+  {
+    "date": "2026-09-18",
+    "date_disp": "September 18, 2026",
+    "keyword": "How to make money with AI (realistically)",
+    "volume": 6600,
+    "slug": "how-to-make-money-with-ai"
+  },
+  {
+    "date": "2026-09-21",
+    "date_disp": "September 21, 2026",
+    "keyword": "AI for teachers",
+    "volume": 4400,
+    "slug": "ai-for-teachers"
+  },
+  {
+    "date": "2026-09-23",
+    "date_disp": "September 23, 2026",
+    "keyword": "AI for retail",
+    "volume": 3600,
+    "slug": "ai-for-retail"
+  },
+  {
+    "date": "2026-09-25",
+    "date_disp": "September 25, 2026",
+    "keyword": "AI for product managers",
+    "volume": 3600,
+    "slug": "ai-for-product-managers"
+  },
+  {
+    "date": "2026-09-28",
+    "date_disp": "September 28, 2026",
+    "keyword": "How to build an AI agent",
+    "volume": 2900,
+    "slug": "how-to-build-an-ai-agent"
+  },
+  {
+    "date": "2026-09-30",
+    "date_disp": "September 30, 2026",
+    "keyword": "AI for small business",
+    "volume": 1900,
+    "slug": "ai-for-small-business"
+  },
+  {
+    "date": "2026-10-02",
+    "date_disp": "October 2, 2026",
+    "keyword": "AI for lead generation",
+    "volume": 1600,
+    "slug": "ai-for-lead-generation"
+  },
+  {
+    "date": "2026-10-05",
+    "date_disp": "October 5, 2026",
+    "keyword": "AI for presentations",
+    "volume": 1600,
+    "slug": "ai-for-presentations"
+  },
+  {
+    "date": "2026-10-07",
+    "date_disp": "October 7, 2026",
+    "keyword": "AI for inventory management",
+    "volume": 1300,
+    "slug": "ai-for-inventory-management"
+  },
+  {
+    "date": "2026-10-09",
+    "date_disp": "October 9, 2026",
+    "keyword": "AI for scheduling",
+    "volume": 1300,
+    "slug": "ai-for-scheduling"
+  },
+  {
+    "date": "2026-10-12",
+    "date_disp": "October 12, 2026",
+    "keyword": "AI prompt examples",
+    "volume": 1300,
+    "slug": "ai-prompt-examples"
+  },
+  {
+    "date": "2026-10-14",
+    "date_disp": "October 14, 2026",
+    "keyword": "AI business ideas",
+    "volume": 1000,
+    "slug": "ai-business-ideas"
+  },
+  {
+    "date": "2026-10-16",
+    "date_disp": "October 16, 2026",
+    "keyword": "AI for nonprofits",
+    "volume": 880,
+    "slug": "ai-for-nonprofits"
+  },
+  {
+    "date": "2026-10-19",
+    "date_disp": "October 19, 2026",
+    "keyword": "AI for market research",
+    "volume": 880,
+    "slug": "ai-for-market-research"
+  },
+  {
+    "date": "2026-10-21",
+    "date_disp": "October 21, 2026",
+    "keyword": "AI tools for productivity",
+    "volume": 880,
+    "slug": "ai-tools-for-productivity"
+  },
+  {
+    "date": "2026-10-23",
+    "date_disp": "October 23, 2026",
+    "keyword": "AI for architects",
+    "volume": 720,
+    "slug": "ai-for-architects"
+  },
+  {
+    "date": "2026-10-26",
+    "date_disp": "October 26, 2026",
+    "keyword": "AI for doctors",
+    "volume": 720,
+    "slug": "ai-for-doctors"
+  },
+  {
+    "date": "2026-10-28",
+    "date_disp": "October 28, 2026",
+    "keyword": "AI for therapists",
+    "volume": 480,
+    "slug": "ai-for-therapists"
+  },
+  {
+    "date": "2026-10-30",
+    "date_disp": "October 30, 2026",
+    "keyword": "How to build a website with AI",
+    "volume": 480,
+    "slug": "how-to-build-a-website-with-ai"
+  },
+  {
+    "date": "2026-11-02",
+    "date_disp": "November 2, 2026",
+    "keyword": "AI for engineers",
+    "volume": 390,
+    "slug": "ai-for-engineers"
+  },
+  {
+    "date": "2026-11-04",
+    "date_disp": "November 4, 2026",
+    "keyword": "AI for writers",
+    "volume": 390,
+    "slug": "ai-for-writers"
+  },
+  {
+    "date": "2026-11-06",
+    "date_disp": "November 6, 2026",
+    "keyword": "AI for property managers",
+    "volume": 320,
+    "slug": "ai-for-property-managers"
+  },
+  {
+    "date": "2026-11-09",
+    "date_disp": "November 9, 2026",
+    "keyword": "AI for nurses",
+    "volume": 210,
+    "slug": "ai-for-nurses"
+  },
+  {
+    "date": "2026-11-11",
+    "date_disp": "November 11, 2026",
+    "keyword": "AI for financial advisors",
+    "volume": 210,
+    "slug": "ai-for-financial-advisors"
+  },
+  {
+    "date": "2026-11-13",
+    "date_disp": "November 13, 2026",
+    "keyword": "AI for note taking",
+    "volume": 210,
+    "slug": "ai-for-note-taking"
+  },
+  {
+    "date": "2026-11-16",
+    "date_disp": "November 16, 2026",
+    "keyword": "How to start an AI business",
+    "volume": 210,
+    "slug": "how-to-start-an-ai-business"
+  },
+  {
+    "date": "2026-11-18",
+    "date_disp": "November 18, 2026",
+    "keyword": "AI for insurance agents",
+    "volume": 170,
+    "slug": "ai-for-insurance-agents"
+  },
+  {
+    "date": "2026-11-20",
+    "date_disp": "November 20, 2026",
+    "keyword": "AI for dentists",
+    "volume": 170,
+    "slug": "ai-for-dentists"
+  },
+  {
+    "date": "2026-11-23",
+    "date_disp": "November 23, 2026",
+    "keyword": "AI for real estate investors",
+    "volume": 170,
+    "slug": "ai-for-real-estate-investors"
+  },
+  {
+    "date": "2026-11-25",
+    "date_disp": "November 25, 2026",
+    "keyword": "Free AI tools for business",
+    "volume": 170,
+    "slug": "free-ai-tools-for-business"
+  },
+  {
+    "date": "2026-11-30",
+    "date_disp": "November 30, 2026",
+    "keyword": "AI for photographers",
+    "volume": 140,
+    "slug": "ai-for-photographers"
+  },
+  {
+    "date": "2026-12-02",
+    "date_disp": "December 2, 2026",
+    "keyword": "AI for interior designers",
+    "volume": 140,
+    "slug": "ai-for-interior-designers"
+  },
+  {
+    "date": "2026-12-04",
+    "date_disp": "December 4, 2026",
+    "keyword": "AI for grant writing",
+    "volume": 140,
+    "slug": "ai-for-grant-writing"
+  },
+  {
+    "date": "2026-12-07",
+    "date_disp": "December 7, 2026",
+    "keyword": "AI for email management",
+    "volume": 140,
+    "slug": "ai-for-email-management"
+  },
+  {
+    "date": "2026-12-09",
+    "date_disp": "December 9, 2026",
+    "keyword": "AI for contractors",
+    "volume": 110,
+    "slug": "ai-for-contractors"
+  },
+  {
+    "date": "2026-12-11",
+    "date_disp": "December 11, 2026",
+    "keyword": "AI for executive assistants",
+    "volume": 110,
+    "slug": "ai-for-executive-assistants"
+  },
+  {
+    "date": "2026-12-14",
+    "date_disp": "December 14, 2026",
+    "keyword": "AI tools for entrepreneurs",
+    "volume": 110,
+    "slug": "ai-tools-for-entrepreneurs"
+  },
+  {
+    "date": "2026-12-16",
+    "date_disp": "December 16, 2026",
+    "keyword": "AI for graphic designers",
+    "volume": 70,
+    "slug": "ai-for-graphic-designers"
+  },
+  {
+    "date": "2026-12-18",
+    "date_disp": "December 18, 2026",
+    "keyword": "AI for podcasters",
+    "volume": 70,
+    "slug": "ai-for-podcasters"
+  },
+  {
+    "date": "2026-12-21",
+    "date_disp": "December 21, 2026",
+    "keyword": "AI for pharmacists",
+    "volume": 70,
+    "slug": "ai-for-pharmacists"
+  },
+  {
+    "date": "2026-12-23",
+    "date_disp": "December 23, 2026",
+    "keyword": "AI for veterinarians",
+    "volume": 50,
+    "slug": "ai-for-veterinarians"
+  },
+  {
+    "date": "2026-12-28",
+    "date_disp": "December 28, 2026",
+    "keyword": "AI for social media managers",
+    "volume": 50,
+    "slug": "ai-for-social-media-managers"
+  },
+  {
+    "date": "2026-12-30",
+    "date_disp": "December 30, 2026",
+    "keyword": "AI for proposal writing",
+    "volume": 50,
+    "slug": "ai-for-proposal-writing"
+  }
+]

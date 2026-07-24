@@ -1,0 +1,554 @@
+[
+  {
+    "keyword": "ai for seo",
+    "search_volume": 8100,
+    "competition": "MEDIUM",
+    "cpc": 45.04
+  },
+  {
+    "keyword": "ai for accountants",
+    "search_volume": 6600,
+    "competition": "MEDIUM",
+    "cpc": 30.52
+  },
+  {
+    "keyword": "how to make money with ai",
+    "search_volume": 6600,
+    "competition": "MEDIUM",
+    "cpc": 7.06
+  },
+  {
+    "keyword": "ai for teachers",
+    "search_volume": 4400,
+    "competition": "MEDIUM",
+    "cpc": 4.3
+  },
+  {
+    "keyword": "ai for retail",
+    "search_volume": 3600,
+    "competition": "LOW",
+    "cpc": 9.56
+  },
+  {
+    "keyword": "ai for product managers",
+    "search_volume": 3600,
+    "competition": "MEDIUM",
+    "cpc": 10.49
+  },
+  {
+    "keyword": "ai for project management",
+    "search_volume": 3600,
+    "competition": "MEDIUM",
+    "cpc": 19.33
+  },
+  {
+    "keyword": "how to build an ai agent",
+    "search_volume": 2900,
+    "competition": "MEDIUM",
+    "cpc": 18.09
+  },
+  {
+    "keyword": "ai for small business",
+    "search_volume": 1900,
+    "competition": "LOW",
+    "cpc": 24.7
+  },
+  {
+    "keyword": "ai for lead generation",
+    "search_volume": 1600,
+    "competition": "MEDIUM",
+    "cpc": 44.14
+  },
+  {
+    "keyword": "ai for presentations",
+    "search_volume": 1600,
+    "competition": "HIGH",
+    "cpc": 9.95
+  },
+  {
+    "keyword": "ai for inventory management",
+    "search_volume": 1300,
+    "competition": "MEDIUM",
+    "cpc": 31.19
+  },
+  {
+    "keyword": "ai for scheduling",
+    "search_volume": 1300,
+    "competition": "MEDIUM",
+    "cpc": 35.4
+  },
+  {
+    "keyword": "ai prompt examples",
+    "search_volume": 1300,
+    "competition": "LOW",
+    "cpc": 4.17
+  },
+  {
+    "keyword": "ai business ideas",
+    "search_volume": 1000,
+    "competition": "MEDIUM",
+    "cpc": 8.09
+  },
+  {
+    "keyword": "ai for nonprofits",
+    "search_volume": 880,
+    "competition": "LOW",
+    "cpc": 21.07
+  },
+  {
+    "keyword": "ai for market research",
+    "search_volume": 880,
+    "competition": "LOW",
+    "cpc": 26.47
+  },
+  {
+    "keyword": "ai for customer support",
+    "search_volume": 880,
+    "competition": "MEDIUM",
+    "cpc": 158.38
+  },
+  {
+    "keyword": "ai tools for productivity",
+    "search_volume": 880,
+    "competition": "LOW",
+    "cpc": 21.5
+  },
+  {
+    "keyword": "ai for architects",
+    "search_volume": 720,
+    "competition": "MEDIUM",
+    "cpc": 6.95
+  },
+  {
+    "keyword": "ai for doctors",
+    "search_volume": 720,
+    "competition": "HIGH",
+    "cpc": 6.96
+  },
+  {
+    "keyword": "ai side hustle",
+    "search_volume": 720,
+    "competition": "MEDIUM",
+    "cpc": 3.71
+  },
+  {
+    "keyword": "ai for therapists",
+    "search_volume": 480,
+    "competition": "MEDIUM",
+    "cpc": 15.62
+  },
+  {
+    "keyword": "how to build a website with ai",
+    "search_volume": 480,
+    "competition": "HIGH",
+    "cpc": 30.13
+  },
+  {
+    "keyword": "ai for engineers",
+    "search_volume": 390,
+    "competition": "MEDIUM",
+    "cpc": 12.69
+  },
+  {
+    "keyword": "ai for writers",
+    "search_volume": 390,
+    "competition": "MEDIUM",
+    "cpc": 12.35
+  },
+  {
+    "keyword": "ai for property managers",
+    "search_volume": 320,
+    "competition": "LOW",
+    "cpc": 111.32
+  },
+  {
+    "keyword": "ai for nurses",
+    "search_volume": 210,
+    "competition": "MEDIUM",
+    "cpc": 17.4
+  },
+  {
+    "keyword": "ai for financial advisors",
+    "search_volume": 210,
+    "competition": "MEDIUM",
+    "cpc": 23.82
+  },
+  {
+    "keyword": "ai for attorneys",
+    "search_volume": 210,
+    "competition": "MEDIUM",
+    "cpc": 69.83
+  },
+  {
+    "keyword": "ai for note taking",
+    "search_volume": 210,
+    "competition": "MEDIUM",
+    "cpc": 13.13
+  },
+  {
+    "keyword": "how to build an ai chatbot",
+    "search_volume": 210,
+    "competition": "MEDIUM",
+    "cpc": 16.14
+  },
+  {
+    "keyword": "how to start an ai business",
+    "search_volume": 210,
+    "competition": "MEDIUM",
+    "cpc": 10.67
+  },
+  {
+    "keyword": "best ai tools 2026",
+    "search_volume": 210,
+    "competition": "LOW",
+    "cpc": 10.2
+  },
+  {
+    "keyword": "ai for insurance agents",
+    "search_volume": 170,
+    "competition": "MEDIUM",
+    "cpc": 58.86
+  },
+  {
+    "keyword": "ai for dentists",
+    "search_volume": 170,
+    "competition": "HIGH",
+    "cpc": 31.39
+  },
+  {
+    "keyword": "ai for real estate investors",
+    "search_volume": 170,
+    "competition": "LOW",
+    "cpc": 10.66
+  },
+  {
+    "keyword": "ai for physicians",
+    "search_volume": 170,
+    "competition": "HIGH",
+    "cpc": 12.52
+  },
+  {
+    "keyword": "ai for bookkeepers",
+    "search_volume": 170,
+    "competition": "MEDIUM",
+    "cpc": 27.71
+  },
+  {
+    "keyword": "ai for realtors",
+    "search_volume": 170,
+    "competition": "MEDIUM",
+    "cpc": 15.25
+  },
+  {
+    "keyword": "ai for bookkeeping",
+    "search_volume": 170,
+    "competition": "MEDIUM",
+    "cpc": 27.71
+  },
+  {
+    "keyword": "free ai tools for business",
+    "search_volume": 170,
+    "competition": "MEDIUM",
+    "cpc": 18.47
+  },
+  {
+    "keyword": "ai for photographers",
+    "search_volume": 140,
+    "competition": "MEDIUM",
+    "cpc": 9.38
+  },
+  {
+    "keyword": "ai for interior designers",
+    "search_volume": 140,
+    "competition": "MEDIUM",
+    "cpc": 5.25
+  },
+  {
+    "keyword": "ai for grant writing",
+    "search_volume": 140,
+    "competition": "MEDIUM",
+    "cpc": 16.63
+  },
+  {
+    "keyword": "ai for meeting notes",
+    "search_volume": 140,
+    "competition": "MEDIUM",
+    "cpc": 10.66
+  },
+  {
+    "keyword": "ai for email management",
+    "search_volume": 140,
+    "competition": "MEDIUM",
+    "cpc": 29.28
+  },
+  {
+    "keyword": "ai for contractors",
+    "search_volume": 110,
+    "competition": "LOW",
+    "cpc": 35.09
+  },
+  {
+    "keyword": "ai for executive assistants",
+    "search_volume": 110,
+    "competition": "MEDIUM",
+    "cpc": 12.22
+  },
+  {
+    "keyword": "ai tools for entrepreneurs",
+    "search_volume": 110,
+    "competition": "LOW",
+    "cpc": 59.24
+  },
+  {
+    "keyword": "ai tools for startups",
+    "search_volume": 110,
+    "competition": "LOW",
+    "cpc": null
+  },
+  {
+    "keyword": "ai for hiring",
+    "search_volume": 90,
+    "competition": "MEDIUM",
+    "cpc": 20.91
+  },
+  {
+    "keyword": "ai for graphic designers",
+    "search_volume": 70,
+    "competition": "MEDIUM",
+    "cpc": 8.45
+  },
+  {
+    "keyword": "ai for copywriters",
+    "search_volume": 70,
+    "competition": "MEDIUM",
+    "cpc": 18.89
+  },
+  {
+    "keyword": "ai for podcasters",
+    "search_volume": 70,
+    "competition": "HIGH",
+    "cpc": 15.67
+  },
+  {
+    "keyword": "ai for pharmacists",
+    "search_volume": 70,
+    "competition": "HIGH",
+    "cpc": 13.34
+  },
+  {
+    "keyword": "ai for recruiters",
+    "search_volume": 50,
+    "competition": "MEDIUM",
+    "cpc": 35.37
+  },
+  {
+    "keyword": "ai for veterinarians",
+    "search_volume": 50,
+    "competition": "HIGH",
+    "cpc": 11.96
+  },
+  {
+    "keyword": "ai for social media managers",
+    "search_volume": 50,
+    "competition": "MEDIUM",
+    "cpc": 40.37
+  },
+  {
+    "keyword": "ai for administrative assistants",
+    "search_volume": 50,
+    "competition": "HIGH",
+    "cpc": 13.85
+  },
+  {
+    "keyword": "ai for proposal writing",
+    "search_volume": 50,
+    "competition": "MEDIUM",
+    "cpc": 37.58
+  },
+  {
+    "keyword": "ai for data entry",
+    "search_volume": 50,
+    "competition": "HIGH",
+    "cpc": 25.84
+  },
+  {
+    "keyword": "how to use ai for small business",
+    "search_volume": 50,
+    "competition": "MEDIUM",
+    "cpc": 3.87
+  },
+  {
+    "keyword": "how to use ai to write emails",
+    "search_volume": 50,
+    "competition": "MEDIUM",
+    "cpc": 10.33
+  },
+  {
+    "keyword": "how to use chatgpt for business",
+    "search_volume": 50,
+    "competition": "LOW",
+    "cpc": 30.06
+  },
+  {
+    "keyword": "how to use ai for productivity",
+    "search_volume": 50,
+    "competition": "MEDIUM",
+    "cpc": 2.63
+  },
+  {
+    "keyword": "ai for solopreneurs",
+    "search_volume": 40,
+    "competition": "MEDIUM",
+    "cpc": 5.6
+  },
+  {
+    "keyword": "ai for reports",
+    "search_volume": 40,
+    "competition": "MEDIUM",
+    "cpc": 80.72
+  },
+  {
+    "keyword": "ai for agencies",
+    "search_volume": 30,
+    "competition": "LOW",
+    "cpc": 9.26
+  },
+  {
+    "keyword": "ai for mortgage brokers",
+    "search_volume": 30,
+    "competition": "MEDIUM",
+    "cpc": 24.79
+  },
+  {
+    "keyword": "ai for competitive analysis",
+    "search_volume": 30,
+    "competition": "LOW",
+    "cpc": null
+  },
+  {
+    "keyword": "ai for onboarding",
+    "search_volume": 30,
+    "competition": "MEDIUM",
+    "cpc": 132.09
+  },
+  {
+    "keyword": "ai for social media content",
+    "search_volume": 30,
+    "competition": "HIGH",
+    "cpc": 39.24
+  },
+  {
+    "keyword": "ai for blog writing",
+    "search_volume": 30,
+    "competition": "LOW",
+    "cpc": 14.44
+  },
+  {
+    "keyword": "how to automate tasks with ai",
+    "search_volume": 30,
+    "competition": "LOW",
+    "cpc": 37.75
+  },
+  {
+    "keyword": "ai automation ideas",
+    "search_volume": 30,
+    "competition": "MEDIUM",
+    "cpc": 4.36
+  },
+  {
+    "keyword": "ai for event planners",
+    "search_volume": 20,
+    "competition": "MEDIUM",
+    "cpc": 31.66
+  },
+  {
+    "keyword": "ai for personal trainers",
+    "search_volume": 20,
+    "competition": "MEDIUM",
+    "cpc": 10.92
+  },
+  {
+    "keyword": "ai for founders",
+    "search_volume": 20,
+    "competition": "MEDIUM",
+    "cpc": 10.79
+  },
+  {
+    "keyword": "ai for invoicing",
+    "search_volume": 20,
+    "competition": "HIGH",
+    "cpc": 79.45
+  },
+  {
+    "keyword": "ai for calendar management",
+    "search_volume": 20,
+    "competition": "MEDIUM",
+    "cpc": 68.18
+  },
+  {
+    "keyword": "ai for virtual assistants",
+    "search_volume": 10,
+    "competition": "HIGH",
+    "cpc": null
+  },
+  {
+    "keyword": "ai for analysts",
+    "search_volume": 10,
+    "competition": "MEDIUM",
+    "cpc": null
+  },
+  {
+    "keyword": "how to write a business plan with ai",
+    "search_volume": 10,
+    "competition": "HIGH",
+    "cpc": 17.7
+  },
+  {
+    "keyword": "how to do market research with ai",
+    "search_volume": 10,
+    "competition": "MEDIUM",
+    "cpc": 69.34
+  },
+  {
+    "keyword": "ai use cases for business",
+    "search_volume": 10,
+    "competition": "MEDIUM",
+    "cpc": 19.08
+  },
+  {
+    "keyword": "ai for restaurant owners",
+    "search_volume": 0,
+    "competition": null,
+    "cpc": null
+  },
+  {
+    "keyword": "ai for saas founders",
+    "search_volume": 0,
+    "competition": null,
+    "cpc": null
+  },
+  {
+    "keyword": "ai for teachers and educators",
+    "search_volume": 0,
+    "competition": null,
+    "cpc": null
+  },
+  {
+    "keyword": "ai for hr managers",
+    "search_volume": 0,
+    "competition": null,
+    "cpc": null
+  },
+  {
+    "keyword": "ai for office managers",
+    "search_volume": 0,
+    "competition": null,
+    "cpc": null
+  },
+  {
+    "keyword": "ai for cold email",
+    "search_volume": 0,
+    "competition": null,
+    "cpc": null
+  }
+]
