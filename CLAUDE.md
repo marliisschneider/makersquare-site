@@ -134,14 +134,12 @@ Pages marked `noindex` (like `demo-ppc.html`) are exempt from sitemap but still 
 - Location: Austin TX, 9am–3pm Mon–Fri (optional Saturday office hours)
 - 2026 schedule: C1 Jul 6–17 (completed), C2 Aug 3–14 (enrolling), C3 Oct 12–23, C4 Nov 30–Dec 11. September cohort cancelled — September is workshops month. Nov 9–20 cohort dropped.
 
-### Mini-workshops
-3-day in-person AI skill sprints. Consumer workshops removed from site nav/home/footer Jul 2026 (page + Stripe links retained, unlinked). Corporate/team workshops remain live on `/corporate`.
+### Mini-workshops — DORMANT (hidden sitewide Jul 24, 2026)
+Consumer workshops are fully hidden: no nav/dropdown/footer links anywhere, `/workshops` is noindex and out of sitemap.xml, the enroll cross-sell section and WORKSHOP200 code are removed, and llms.txt carries no workshop facts (so the chatbot doesn't offer them). Pages + Stripe links retained unlinked for later revival — do NOT delete them, and do NOT re-add workshop links or mentions without Marliis's explicit go.
 
-| # | Dates | Topic | Early Bird Closes |
-|---|---|---|---|
-| 2 | Sep 9–11, 2026 | Build Your First AI Agent | Aug 19 |
+**What stays live:** B2B private 3-day team workshops on `/corporate` (custom quote only — never publish a price; ~$950/person internally, min ~$4,000). That's a corporate offer, not consumer workshop marketing.
 
-Pricing: Early bird $999 / Regular $1,199. Private team sessions: custom quote only — never publish a price (~$950/person internally, min ~$4,000).
+Reference (for revival): Sep 9–11 "Build Your First AI Agent", Early bird $999 (closes Aug 19) / Regular $1,199.
 
 ### Corporate training (priority product)
 B2B is a primary motion. "For Teams" in main nav → `/corporate`: (1) private 3-day team workshop (entry offer, custom quote), (2) custom company program (core offer), (3) individual seats ($3,999). Never publish private-session pricing.
