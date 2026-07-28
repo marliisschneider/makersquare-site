@@ -49,6 +49,8 @@ const TOKENS = {
   startShort: short(nextOpen.start),
   startLong: long(nextOpen.start),
   enrollCloseShort: monthDay(nextOpen.enrollClose),
+  endShort: short(nextOpen.end),
+  startLong2: long(nextOpen.start),
 };
 
 // --- helpers ---------------------------------------------------------------
@@ -171,7 +173,7 @@ edit('index.html', (src) => {
 });
 
 // --- 3. visible banner markers --------------------------------------------
-for (const f of ['index.html', 'immersive.html']) {
+for (const f of ['index.html', 'immersive.html', 'demo-ppc.html', 'demo-ppc-legal.html', 'demo-ppc-pm.html', 'corporate.html']) {
   edit(f, (src) =>
     src.replace(/(<!--COHORT:(\w+)-->)([\s\S]*?)(<!--\/-->)/g, (m, openTag, tok, _inner, closeTag) =>
       TOKENS[tok] !== undefined ? `${openTag}${TOKENS[tok]}${closeTag}` : m)

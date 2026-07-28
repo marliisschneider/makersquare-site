@@ -139,9 +139,8 @@ body.wl-modal-open { overflow: hidden; }
   "provider": {"@type": "EducationalOrganization", "name": "MakerSquare", "url": "https://www.makersquare.ai/"},
   "url": "https://www.makersquare.ai/enroll",
   "hasCourseInstance": [
-    {"@type": "CourseInstance", "name": "Cohort 2", "courseMode": "Onsite", "startDate": "2026-08-03", "endDate": "2026-08-14", "courseWorkload": "P2W", "offers": {"@type": "Offer", "price": "3999", "priceCurrency": "USD", "availability": "https://schema.org/InStock"}},
-    {"@type": "CourseInstance", "name": "Cohort 3", "courseMode": "Onsite", "startDate": "2026-10-12", "endDate": "2026-10-23", "courseWorkload": "P2W", "offers": {"@type": "Offer", "price": "3999", "priceCurrency": "USD", "availability": "https://schema.org/InStock"}},
-    {"@type": "CourseInstance", "name": "Cohort 4", "courseMode": "Onsite", "startDate": "2026-11-30", "endDate": "2026-12-11", "courseWorkload": "P2W", "offers": {"@type": "Offer", "price": "3999", "priceCurrency": "USD", "availability": "https://schema.org/InStock"}}
+    {"@type": "CourseInstance", "name": "Cohort 2", "courseMode": "Onsite", "startDate": "2026-08-03", "endDate": "2026-08-14", "courseWorkload": "P2W", "offers": {"@type": "Offer", "price": "3999", "priceCurrency": "USD", "availability": "https://schema.org/SoldOut"}},
+    {"@type": "CourseInstance", "name": "Cohort 3", "courseMode": "Onsite", "startDate": "2026-11-09", "endDate": "2026-11-20", "courseWorkload": "P2W", "offers": {"@type": "Offer", "price": "3999", "priceCurrency": "USD", "availability": "https://schema.org/InStock"}}
   ]
 }
 </script>
@@ -369,30 +368,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div class="cohort-grid" id="cohort-grid">
       <div class="cohort-card reveal reveal-d1">
-        <div class="cohort-status cohort-status--soon">In Session</div>
+        <div class="cohort-status cohort-status--soon">Completed</div>
         <div class="cohort-name">Cohort 1</div>
         <div class="cohort-dates">Jul 6 &ndash; Jul 17, 2026<br>Demo Day: Fri Jul 17 eve</div>
-        <div class="cohort-seats" style="color:var(--text-muted);font-size:0.78rem;font-weight:600;margin-top:var(--s3);">In session</div>
+        <div class="cohort-seats" style="color:var(--text-muted);font-size:0.78rem;font-weight:600;margin-top:var(--s3);">Graduated July 17</div>
       </div>
-      <div class="cohort-card cohort-card--active reveal reveal-d2" style="border-color:var(--indigo);box-shadow:0 0 0 1px var(--indigo);">
-        <div class="cohort-status cohort-status--open">Open Now — Enrolling</div>
+      <div class="cohort-card reveal reveal-d2">
+        <div class="cohort-status cohort-status--soon">Enrollment Closed</div>
         <div class="cohort-name">Cohort 2</div>
         <div class="cohort-dates">Aug 3 &ndash; Aug 14, 2026<br>Demo Day: Fri Aug 14 eve</div>
-        <a class="cohort-seats cohort-seats--apply" href="#form" data-cohort="Cohort 2 · Aug 3–14, 2026">Secure Your Spot &rarr;</a>
+        <div class="cohort-seats" style="color:var(--text-muted);font-size:0.78rem;font-weight:600;margin-top:var(--s3);">Closed July 27 &middot; Starts Aug 3</div>
       </div>
-      <div class="cohort-card cohort-card--coming-soon reveal reveal-d3" role="button" tabindex="0" aria-label="Get the curriculum and updates for Cohort 3">
-        <div class="cohort-status cohort-status--early">Coming Soon</div>
+      <div class="cohort-card cohort-card--active reveal reveal-d3" style="border-color:var(--indigo);box-shadow:0 0 0 1px var(--indigo);">
+        <div class="cohort-status cohort-status--open">Open Now &mdash; Enrolling</div>
         <div class="cohort-name">Cohort 3</div>
-        <div class="cohort-dates">Oct 12 &ndash; Oct 23, 2026<br>Demo Day: Fri Oct 23 eve</div>
-        <div class="cohort-seats">15 spots available</div>
-        <span class="cohort-cta">Get the curriculum &rarr;</span>
-      </div>
-      <div class="cohort-card cohort-card--coming-soon reveal reveal-d4" role="button" tabindex="0" aria-label="Get the curriculum and updates for Cohort 4">
-        <div class="cohort-status cohort-status--early">Coming Soon</div>
-        <div class="cohort-name">Cohort 4</div>
-        <div class="cohort-dates">Nov 30 &ndash; Dec 11, 2026<br>Demo Day: Fri Dec 11 eve</div>
-        <div class="cohort-seats">15 spots available</div>
-        <span class="cohort-cta">Get the curriculum &rarr;</span>
+        <div class="cohort-dates">Nov 9 &ndash; Nov 20, 2026<br>Demo Day: Fri Nov 20 eve</div>
+        <a class="cohort-seats cohort-seats--apply" href="#form" data-cohort="Cohort 3 · Nov 9–20, 2026">Secure Your Spot &rarr;</a>
       </div>
     </div>
   </div>
@@ -623,15 +614,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
 
       <!-- Cohort 2 -->
-      <div class="ta-item open reveal" data-ta>
+      <div class="ta-item reveal" data-ta>
         <div class="ta-header" onclick="this.parentElement.classList.toggle('open');var b=this.parentElement.querySelector('.ta-body');b.style.maxHeight=this.parentElement.classList.contains('open')?b.scrollHeight+'px':'0';">
           <div class="ta-header-info"><div class="ta-cohort-tag">Cohort 2</div><div class="ta-cohort-name">August 2026</div><div class="ta-cohort-range">Aug 3 &ndash; Aug 14 &middot; Demo Day Aug 14</div></div>
-          <span class="ta-badge open">Open Now</span>
+          <span class="ta-badge coming">Closed</span>
           <div class="ta-chevron">&#9660;</div>
         </div>
-        <div class="ta-body" style="max-height:500px;"><div class="ta-body-inner">
+        <div class="ta-body"><div class="ta-body-inner">
           <div class="tl">
-            <div class="tl-item tl-item--active"><div class="tl-dot"></div><div class="tl-date">Now &middot; Enrollment Open</div><div class="tl-desc">Secure your spot. Confirmation within 24 hours.</div></div>
+            <div class="tl-item"><div class="tl-dot"></div><div class="tl-date">Jul 27 &middot; Enrollment Closed</div><div class="tl-desc">Next open cohort: November.</div></div>
             <div class="tl-item"><div class="tl-dot"></div><div class="tl-date">Jul 27 &middot; Enrollment Deadline</div><div class="tl-desc">Full tuition due to lock in your spot.</div></div>
             <div class="tl-item tl-item--highlight"><div class="tl-dot"></div><div class="tl-date">Aug 3 &middot; Day 1</div></div>
             <div class="tl-item tl-item--highlight"><div class="tl-dot"></div><div class="tl-date">Aug 14 &middot; Demo Day</div></div>
@@ -639,34 +630,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div></div>
       </div>
 
-      <!-- Cohort 3 -->
-      <div class="ta-item reveal" data-ta>
+      <!-- Cohort 3 — November -->
+      <div class="ta-item open reveal" data-ta>
         <div class="ta-header" onclick="this.parentElement.classList.toggle('open');var b=this.parentElement.querySelector('.ta-body');b.style.maxHeight=this.parentElement.classList.contains('open')?b.scrollHeight+'px':'0';">
-          <div class="ta-header-info"><div class="ta-cohort-tag">Cohort 3</div><div class="ta-cohort-name">October 2026</div><div class="ta-cohort-range">Oct 12 &ndash; Oct 23 &middot; Demo Day Oct 23</div></div>
-          <span class="ta-badge coming">Coming Soon</span>
+          <div class="ta-header-info"><div class="ta-cohort-tag">Cohort 3</div><div class="ta-cohort-name">November 2026</div><div class="ta-cohort-range">Nov 9 &ndash; Nov 20 &middot; Demo Day Nov 20</div></div>
+          <span class="ta-badge open">Open Now</span>
           <div class="ta-chevron">&#9660;</div>
         </div>
-        <div class="ta-body"><div class="ta-body-inner">
+        <div class="ta-body" style="max-height:500px;"><div class="ta-body-inner">
           <div class="tl">
-            <div class="tl-item"><div class="tl-dot"></div><div class="tl-date">Oct 5 &middot; Enrollment Deadline</div><div class="tl-desc">Full tuition due.</div></div>
-            <div class="tl-item tl-item--highlight"><div class="tl-dot"></div><div class="tl-date">Oct 12 &middot; Day 1</div></div>
-            <div class="tl-item tl-item--highlight"><div class="tl-dot"></div><div class="tl-date">Oct 23 &middot; Demo Day</div></div>
-          </div>
-        </div></div>
-      </div>
-
-      <!-- Cohort 4 -->
-      <div class="ta-item reveal" data-ta>
-        <div class="ta-header" onclick="this.parentElement.classList.toggle('open');var b=this.parentElement.querySelector('.ta-body');b.style.maxHeight=this.parentElement.classList.contains('open')?b.scrollHeight+'px':'0';">
-          <div class="ta-header-info"><div class="ta-cohort-tag">Cohort 4</div><div class="ta-cohort-name">November / December 2026</div><div class="ta-cohort-range">Nov 30 &ndash; Dec 11 &middot; Demo Day Dec 11</div></div>
-          <span class="ta-badge coming">Coming Soon</span>
-          <div class="ta-chevron">&#9660;</div>
-        </div>
-        <div class="ta-body"><div class="ta-body-inner">
-          <div class="tl">
-            <div class="tl-item"><div class="tl-dot"></div><div class="tl-date">Nov 23 &middot; Enrollment Deadline</div><div class="tl-desc">Full tuition due.</div></div>
-            <div class="tl-item tl-item--highlight"><div class="tl-dot"></div><div class="tl-date">Nov 30 &middot; Day 1</div><div class="tl-desc">Starts after Thanksgiving break. Ends well before Christmas.</div></div>
-            <div class="tl-item tl-item--highlight"><div class="tl-dot"></div><div class="tl-date">Dec 11 &middot; Demo Day</div></div>
+            <div class="tl-item tl-item--active"><div class="tl-dot"></div><div class="tl-date">Now &middot; Enrollment Open</div><div class="tl-desc">Secure your spot. Confirmation within 24 hours.</div></div>
+            <div class="tl-item"><div class="tl-dot"></div><div class="tl-date">Nov 2 &middot; Enrollment Deadline</div><div class="tl-desc">Full tuition due.</div></div>
+            <div class="tl-item tl-item--highlight"><div class="tl-dot"></div><div class="tl-date">Nov 9 &middot; Day 1</div><div class="tl-desc">Wraps before Thanksgiving week.</div></div>
+            <div class="tl-item tl-item--highlight"><div class="tl-dot"></div><div class="tl-date">Nov 20 &middot; Demo Day</div></div>
           </div>
         </div></div>
       </div>
