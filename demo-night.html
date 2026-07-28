@@ -17,7 +17,97 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
 <!-- Zoho zf_gtm postMessage listener -->
 <script>
-window.addEventListener('message',function(e){if(e.data&&e.data.type=='zf_gtm'){window.dataLayer=window.dataLayer||[];window.dataLayer.push(e.data);}});
+    let hasLogged = false;
+    window.addEventListener('message', function (){
+        try {
+            var debugMode = false;
+            var u = new URL(event.origin);
+            if (u.host === "forms.zohopublic.com") {
+
+                var evntData = event.data;
+                if(debugMode) {
+                    if(!hasLogged) {
+                        console.log("%cForms - Post Message Debugging", "border-width: 2px; border-style: dashed; padding: 20px;");
+                        hasLogged = true;
+                    }
+                    console.log("%cEvent received :: Event Data : ", "background-color: rgb(175 193 239); color: #2908fa", evntData);
+                }
+                if( evntData && evntData.constructor == Object ){
+                    var type = evntData.type;
+                    if(type && type == "zf_gtm"){
+                        var zf_payload_data = evntData.payload;
+                        if(Object.keys(zf_payload_data).length > 0){
+                            var n = zf_payload_data.n;
+                            var e = zf_payload_data.e;
+                            var p = zf_payload_data.p;
+                            var f = zf_payload_data.f;
+                            var a = zf_payload_data.a;
+                            var c = zf_payload_data.c;
+                            var d = zf_payload_data.d;
+
+                            if(debugMode) {
+                                console.log("Event : " + e + " :: Form : " + n + " :: Page : " + p + " :: Field : " + f);
+                            }
+
+                            window.dataLayer = window.dataLayer || [];
+                            window.dataLayer.push({
+                                    'event': e,
+                                    'zf_category' : c,
+                                    'zf_page' : p,
+                                    'zf_field' : f,
+                                    'zf_action' : a,
+                                    'zf_formname' : n,
+                                    'zf_data' : d
+                            });
+
+                            if(debugMode) {
+                                console.log("Event " + e + " fired successfully");
+                            }
+
+                            switch(e) {
+                                case "zf_submitform":
+                                            (function(){
+                                              var nl = document.getElementById('cm-newsletter');
+                                              if(nl) { nl.style.display = 'block'; }
+                                              var head = document.querySelector('#cm-modal .cm-modal__head');
+                                              if(head) { head.style.display = 'none'; }
+                                            })();
+                                            break;
+
+                                case "zf_onclickfield":
+
+                                            // Field Click event Listener
+                                            break;
+
+                                case "zf_pageview":
+
+                                            // Field Click event Listener
+                                            break;
+
+                                case "zf_saveform":
+
+                                            // Save form event Listener
+                                            break;
+
+                                case "zf_reviewform":
+
+                                            // Review form event Listener
+                                            break;
+
+                                case "zf_formview":
+
+                                            // Form view event Listener
+                                            break;
+                            }
+
+                        }
+                    }
+                }
+            }
+        } catch(error) {
+
+        }
+    }, false);
 </script>
 <!-- X conversion tracking base code -->
 <script>
