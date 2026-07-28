@@ -132,7 +132,7 @@ Pages marked `noindex` (like `demo-ppc.html`) are exempt from sitemap but still 
 - Price: $3,999 full pay / $3,499 scholarship
 - Full payment at enrollment — no deposit, no split pay
 - Location: Austin TX, 9am–3pm Mon–Fri (optional Saturday office hours)
-- 2026 schedule: C1 Jul 6–17 (completed), C2 Aug 3–14 (enrolling), C3 Oct 12–23, C4 Nov 30–Dec 11. September cohort cancelled — September is workshops month. Nov 9–20 cohort dropped.
+- 2026 schedule (as of Jul 28): C1 Jul 6–17 (completed), C2 Aug 3–14 (enrollment closed Jul 27), **C3 Nov 9–20 (the only remaining open cohort; enrollment closes Nov 2)**. October cohort cancelled Jul 28 (no instructor availability); the former Nov 30–Dec 11 cohort was moved up to Nov 9–20. No cohorts in September or October. Dates live in cohorts.json — edit there and run `node scripts/cohorts.mjs`, never hand-edit dates in HTML.
 
 ### Mini-workshops — DORMANT (hidden sitewide Jul 24, 2026)
 Consumer workshops are fully hidden: no nav/dropdown/footer links anywhere, `/workshops` is noindex and out of sitemap.xml, the enroll cross-sell section and WORKSHOP200 code are removed, and llms.txt carries no workshop facts (so the chatbot doesn't offer them). Pages + Stripe links retained unlinked for later revival — do NOT delete them, and do NOT re-add workshop links or mentions without Marliis's explicit go.
