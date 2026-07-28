@@ -42,7 +42,7 @@ This site relies on a set of marketing / lead-attribution scripts. They are crit
 
 ### Public pages (the list)
 
-`404.html`, `about.html`, `alumni.html`, `apply.html`, `comparison.html`, `corporate.html`, `curriculum.html`, `demo-day.html`, `demo-night.html`, `demo-ppc.html`, `enroll.html`, `faq.html`, `housing.html`, `index.html`, `immersive.html`, `pricing.html`, `privacy.html`, `quickstart.html`, `quickstart-download.html`, `scholarship.html`, `team.html`, `terms.html`, `use-cases.html`, `workshop-register.html`, `workshops.html`
+`404.html`, `about.html`, `alumni.html`, `apply.html`, `case-study-roverpass.html`, `comparison.html`, `corporate.html`, `curriculum.html`, `demo-day.html`, `demo-night.html`, `demo-ppc.html`, `enroll.html`, `faq.html`, `housing.html`, `index.html`, `immersive.html`, `pricing.html`, `privacy.html`, `quickstart.html`, `quickstart-download.html`, `scholarship.html`, `team.html`, `terms.html`, `use-cases.html`, `workshop-register.html`, `workshops.html`
 
 `HANDOFF.html` is an internal handoff doc — exempt from these rules.
 
