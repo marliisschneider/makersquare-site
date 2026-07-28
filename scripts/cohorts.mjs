@@ -173,7 +173,7 @@ edit('index.html', (src) => {
 });
 
 // --- 3. visible banner markers --------------------------------------------
-for (const f of ['index.html', 'immersive.html', 'demo-ppc.html', 'demo-ppc-legal.html', 'demo-ppc-pm.html', 'corporate.html']) {
+for (const f of ['index.html', 'immersive.html', 'demo-ppc.html', 'demo-ppc-legal.html', 'demo-ppc-pm.html', 'corporate.html', 'ai-training-austin.html']) {
   edit(f, (src) =>
     src.replace(/(<!--COHORT:(\w+)-->)([\s\S]*?)(<!--\/-->)/g, (m, openTag, tok, _inner, closeTag) =>
       TOKENS[tok] !== undefined ? `${openTag}${TOKENS[tok]}${closeTag}` : m)
