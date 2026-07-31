@@ -21,3 +21,16 @@ striking-distance opportunities (ranking pos 4–15 with impressions but no clic
 
 Until `GSC_SA_KEY` is set, the report job runs and simply skips (no failure).
 The digest appears under the Friday run's **Summary** in the Actions tab.
+
+---
+
+## Slack delivery (weekly report → #seo)
+The Friday report posts to Slack if a webhook secret is set.
+
+**Setup (~3 min):**
+1. Go to **api.slack.com/apps → Create New App → From scratch** (name e.g. "MakerSquare SEO", pick your workspace).
+2. **Incoming Webhooks → toggle On → Add New Webhook to Workspace →** select channel **#seo** → Allow.
+3. Copy the webhook URL (`https://hooks.slack.com/services/...`).
+4. **GitHub repo → Settings → Secrets and variables → Actions → New secret** → name **`SLACK_WEBHOOK`** → paste the URL.
+
+Once both `GSC_SA_KEY` and `SLACK_WEBHOOK` are set, every Friday the digest lands in **#seo** automatically. If `SLACK_WEBHOOK` is unset, the report just prints to the Actions summary.

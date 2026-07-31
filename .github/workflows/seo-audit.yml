@@ -30,6 +30,7 @@ jobs:
       - name: Weekly Search Console report
         env:
           GSC_SA_KEY: ${{ secrets.GSC_SA_KEY }}
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
         run: |
           set -o pipefail
           python3 scripts/gsc-report.py | tee gsc.txt
