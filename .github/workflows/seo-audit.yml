@@ -17,7 +17,13 @@ jobs:
           python3 scripts/seo-audit.py | tee audit.txt
       - name: Report to job summary
         if: always()
-        run: { echo '## SEO audit'; echo '```'; cat audit.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+        run: |
+          {
+            echo '## SEO audit'
+            echo '```'
+            cat audit.txt
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
 
   gsc-report:              # weekly Search Console digest (needs the GSC_SA_KEY secret)
     if: github.event_name != 'pull_request'
@@ -36,4 +42,10 @@ jobs:
           python3 scripts/gsc-report.py | tee gsc.txt
       - name: Report to job summary
         if: always()
-        run: { echo '## Search Console — weekly'; echo '```'; cat gsc.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+        run: |
+          {
+            echo '## Search Console — weekly'
+            echo '```'
+            cat gsc.txt
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
