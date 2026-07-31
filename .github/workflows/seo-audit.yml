@@ -4,7 +4,7 @@ on:
   pull_request:            # guardrail: block a PR that introduces an SEO error
   schedule:
     - cron: '0 14 * * 5'   # Fridays ~9am CT
-  workflow_dispatch:
+  workflow_dispatch:        # manual run button / gh workflow run
 
 jobs:
   audit:                   # runs on every event (repo scan, no credentials)
