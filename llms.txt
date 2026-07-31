@@ -56,11 +56,21 @@ A 4-week part-time format (Fridays plus weekends) is planned as a separate track
 
 - Cohort 1: July 6 to July 17, 2026 — completed. Graduates: see testimonials on the site.
 - Cohort 2: August 3 to August 14, 2026 (Demo Day Fri August 14 evening) — enrollment closed July 27.
-- Cohort 3: November 9 to November 20, 2026 (Demo Day Fri November 20 evening) — 15 seats. Enrolling now. Wraps before Thanksgiving week.
+- Cohort 3: January 11 to January 22, 2027 (Demo Day Fri January 22 evening) — 15 seats. Enrolling now. Start the year building.
 
-No cohort runs in September or October.
+No 2-week cohorts run in fall 2026 — September through November is workshop season (3-day intensives) plus private team training.
 
-Enrollment for each cohort closes one week before its start date: Cohort 3 enrollment closes November 2, 2026.
+## Fall 2026 Workshops (3-Day Intensives)
+
+MakerSquare runs 3-day in-person AI workshops in Austin, TX, led by co-founder Ravi Parikh. Wed-Fri, 9am-5pm. No coding required. Pricing: $999 early bird (until 3 weeks before) / $1,199 regular. Workshop attendees get $200 off the January 2-week program.
+
+- Build Your First AI Agent: September 9-11, 2026 (early bird ends August 19) — build a working AI agent with Claude Code, the Claude API, and Composio, deployed on a schedule
+- Automate Your Ops with AI: October 14-16, 2026 (early bird ends September 23) — automate recurring ops work: reports, document extraction, inbox and meeting notes, on your real accounts
+- Build Your First App with AI: November 4-6, 2026 (early bird ends October 14) — from idea to a live, deployed app with a real database, using Claude Code, Lovable, Supabase, and Vercel (vibe coding with production tools)
+
+Workshops page: https://www.makersquare.ai/workshops
+
+Enrollment for each cohort closes one week before its start date: Cohort 3 enrollment closes January 4, 2027.
 
 Cohorts run Monday through Friday, 9am to 3pm, with optional Saturday office hours (10am to 1pm).
 
@@ -101,6 +111,7 @@ Ravi Parikh — Co-founder, MakerSquare. Austin-based serial entrepreneur; co-fo
 - Tuition: https://www.makersquare.ai/pricing
 - Comparison: https://www.makersquare.ai/comparison
 - Corporate Training: https://www.makersquare.ai/corporate
+- Workshops (fall 2026 lineup): https://www.makersquare.ai/workshops
 - Case Study (RoverPass AI ops command center): https://www.makersquare.ai/case-study-roverpass
 - AI Training in Austin (individuals + teams): https://www.makersquare.ai/ai-training-austin
 - Train Your Team vs. Hire an AI Consultant: https://www.makersquare.ai/ai-training-vs-consultants
