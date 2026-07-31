@@ -661,7 +661,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <div class="reveal" style="margin-top:var(--s8);">
-      <svg viewBox="0 0 600 500" role="img" aria-label="The AiOS Model" style="width:100%;max-width:540px;height:auto;display:block;margin:0 auto;">
+      <svg id="aios-svg" viewBox="0 0 600 500" role="img" aria-label="The AiOS Model" style="width:100%;max-width:540px;height:auto;display:block;margin:0 auto;">
         <line x1="300" y1="250" x2="300" y2="80" stroke="rgba(24,24,73,0.16)" stroke-width="2"/>
         <line x1="300" y1="250" x2="447" y2="165" stroke="rgba(24,24,73,0.16)" stroke-width="2"/>
         <line x1="300" y1="250" x2="447" y2="335" stroke="rgba(24,24,73,0.16)" stroke-width="2"/>
@@ -674,9 +674,37 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <g><rect x="372" y="140" width="150" height="50" rx="25" fill="#ffffff" stroke="rgba(24,24,73,0.14)" stroke-width="1.5"/><text x="447" y="166" fill="#181849" font-family="Inter,sans-serif" font-weight="600" font-size="16" text-anchor="middle" dominant-baseline="central">The Base</text></g>
         <g><rect x="372" y="310" width="150" height="50" rx="25" fill="#ffffff" stroke="rgba(24,24,73,0.14)" stroke-width="1.5"/><text x="447" y="336" fill="#181849" font-family="Inter,sans-serif" font-weight="600" font-size="16" text-anchor="middle" dominant-baseline="central">Connections</text></g>
         <g><rect x="225" y="395" width="150" height="50" rx="25" fill="#ffffff" stroke="rgba(24,24,73,0.14)" stroke-width="1.5"/><text x="300" y="421" fill="#181849" font-family="Inter,sans-serif" font-weight="600" font-size="16" text-anchor="middle" dominant-baseline="central">Agents</text></g>
-        <g><rect x="78" y="310" width="150" height="50" rx="25" fill="#E9E8FB" stroke="#403DD8" stroke-width="2.5"/><text x="153" y="336" fill="#403DD8" font-family="Inter,sans-serif" font-weight="700" font-size="16" text-anchor="middle" dominant-baseline="central">Operators</text></g>
+        <g><rect x="78" y="310" width="150" height="50" rx="25" fill="#ffffff" stroke="rgba(24,24,73,0.14)" stroke-width="1.5"/><text x="153" y="336" fill="#181849" font-family="Inter,sans-serif" font-weight="600" font-size="16" text-anchor="middle" dominant-baseline="central">Operators</text></g>
         <g><rect x="78" y="140" width="150" height="50" rx="25" fill="#ffffff" stroke="rgba(24,24,73,0.14)" stroke-width="1.5"/><text x="153" y="166" fill="#181849" font-family="Inter,sans-serif" font-weight="600" font-size="16" text-anchor="middle" dominant-baseline="central">Rhythm</text></g>
       </svg>
+      <style>
+      #aios-svg line{transition:stroke .5s ease,stroke-width .5s ease;}
+      #aios-svg g rect{transition:fill .5s ease,stroke .5s ease,stroke-width .5s ease;}
+      #aios-svg g text{transition:fill .5s ease;}
+      #aios-svg line.aios-on{stroke:#403DD8;stroke-width:3;}
+      #aios-svg g.aios-on rect{fill:#E9E8FB;stroke:#403DD8;stroke-width:2.5;}
+      #aios-svg g.aios-on text{fill:#403DD8;}
+      #aios-svg circle{animation:aiosPulse 2.8s ease-in-out infinite;}
+      @keyframes aiosPulse{50%{stroke-width:5;filter:drop-shadow(0 0 10px rgba(64,61,216,0.45));}}
+      @media(prefers-reduced-motion:reduce){#aios-svg circle{animation:none;}}
+      </style>
+      <script>
+      (function(){
+        var svg=document.getElementById('aios-svg');if(!svg)return;
+        var lines=svg.querySelectorAll('line'),nodes=svg.querySelectorAll('g');
+        if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+          if(nodes[4]){nodes[4].classList.add('aios-on');}if(lines[4]){lines[4].classList.add('aios-on');}return;
+        }
+        var i=0;
+        setInterval(function(){
+          lines.forEach(function(l){l.classList.remove('aios-on');});
+          nodes.forEach(function(n){n.classList.remove('aios-on');});
+          if(lines[i])lines[i].classList.add('aios-on');
+          if(nodes[i])nodes[i].classList.add('aios-on');
+          i=(i+1)%nodes.length;
+        },1400);
+      })();
+      </script>
       <p class="reveal" style="text-align:center;font-family:var(--font-display);font-size:1.05rem;font-weight:700;color:var(--navy);max-width:44ch;margin:var(--s5) auto 0;">Get all six strong, and your firm runs on AI &mdash; not around it.</p>
     </div>
 
