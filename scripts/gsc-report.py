@@ -10,7 +10,7 @@ The service account must be added as a user on the Search Console property.
 Gracefully no-ops if GSC_SA_KEY is unset (so CI doesn't fail before setup).
 Run: python3 scripts/gsc-report.py
 """
-import os, json, sys, datetime
+import os, json, sys, datetime, re
 
 KEY = os.environ.get("GSC_SA_KEY", "").strip()
 if not KEY:
@@ -79,4 +79,19 @@ if opp:
 else:
     out.append("- none this week")
 
-print("\n".join(out))
+report = "\n".join(out)
+print(report)
+
+# optional Slack delivery — set env SLACK_WEBHOOK (a GitHub secret)
+hook = os.environ.get("SLACK_WEBHOOK", "").strip()
+if hook:
+    import urllib.request
+    txt = re.sub(r"^# (.+)$", r"*\1*", report, flags=re.M)
+    txt = re.sub(r"\*\*(.+?)\*\*", r"*\1*", txt)
+    try:
+        urllib.request.urlopen(urllib.request.Request(
+            hook, data=json.dumps({"text": txt}).encode(),
+            headers={"Content-Type": "application/json"}), timeout=15)
+        print("\n(posted to Slack)")
+    except Exception as e:
+        print(f"\n(Slack post failed: {e})")
