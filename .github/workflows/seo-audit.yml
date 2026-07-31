@@ -1,0 +1,21 @@
+name: SEO audit
+
+on:
+  pull_request:            # block a PR that introduces an SEO error (e.g. copy-pasted social tags)
+  schedule:
+    - cron: '0 14 * * 5'   # Fridays ~9am CT — weekly health report
+  workflow_dispatch:        # run on demand
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run SEO audit
+        run: |
+          set -o pipefail
+          python3 scripts/seo-audit.py | tee audit.txt
+      - name: Write report to job summary
+        if: always()
+        run: |
+          { echo '## SEO audit'; echo '```'; cat audit.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
