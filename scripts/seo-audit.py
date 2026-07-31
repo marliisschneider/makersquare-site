@@ -80,4 +80,9 @@ print(f"🔴 {len(errors)} error(s):")
 for p, m in errors: print(f"  {p}: {m}")
 print(f"\n🟡 {len(warns)} warning(s):")
 for p, m in warns: print(f"  {p}: {m}")
-sys.exit(1 if errors else 0)
+
+# Fail the build only when reviewing a pull request — that's where the guardrail
+# blocks a bad merge. On the weekly cron / manual runs there's no PR to block, so
+# report the errors but exit 0 (a red X + failure email during leave is just noise).
+is_pr = os.environ.get("GITHUB_EVENT_NAME") == "pull_request"
+sys.exit(1 if (errors and is_pr) else 0)
