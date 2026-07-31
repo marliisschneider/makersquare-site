@@ -139,9 +139,9 @@ Consumer workshops are back on the site: nav + More dropdown restored, /workshop
 
 | # | Dates | Topic | Early Bird Closes |
 |---|---|---|---|
-| WS-Sep | Sep 9–11, 2026 (Wed–Fri) | Build Your First AI Agent | Aug 19 |
-| WS-Oct | Oct 14–16, 2026 (Wed–Fri) | Automate Your Ops with AI | Sep 23 |
-| WS-Nov | Nov 4–6, 2026 (Wed–Fri) | Build Your First App with AI (vibe coding) | Oct 14 |
+| WS-Sep | Sep 11–13, 2026 (Fri–Sun) | Build Your First AI Agent | Aug 19 |
+| WS-Oct | Oct 16–18, 2026 (Fri–Sun) | Automate Your Ops with AI | Sep 23 |
+| WS-Nov | Nov 6–8, 2026 (Fri–Sun) | Build Your First App with AI (vibe coding) | Oct 14 |
 
 Pricing: Early bird $999 / Regular $1,199. Attendees get $200 off the January 2-week program (code WORKSHOP200). Private team sessions: custom quote only — never publish a price (~$950/person internally, min ~$4,000). **Stripe: payment links exist only for the Sep workshop (workshop-register auto-switches EB→regular by date). Oct + Nov use the Zoho interest form until Marliis creates their Stripe links.** Still true: no workshops on the enrollment page.
 
