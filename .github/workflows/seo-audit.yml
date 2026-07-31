@@ -1,0 +1,38 @@
+name: SEO
+
+on:
+  pull_request:            # guardrail: block a PR that introduces an SEO error
+  schedule:
+    - cron: '0 14 * * 5'   # Fridays ~9am CT
+  workflow_dispatch:
+
+jobs:
+  audit:                   # runs on every event (repo scan, no credentials)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run SEO audit
+        run: |
+          set -o pipefail
+          python3 scripts/seo-audit.py | tee audit.txt
+      - name: Report to job summary
+        if: always()
+        run: { echo '## SEO audit'; echo '```'; cat audit.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+
+  gsc-report:              # weekly Search Console digest (needs the GSC_SA_KEY secret)
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - run: pip install --quiet google-api-python-client google-auth
+      - name: Weekly Search Console report
+        env:
+          GSC_SA_KEY: ${{ secrets.GSC_SA_KEY }}
+        run: |
+          set -o pipefail
+          python3 scripts/gsc-report.py | tee gsc.txt
+      - name: Report to job summary
+        if: always()
+        run: { echo '## Search Console — weekly'; echo '```'; cat gsc.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
