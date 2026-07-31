@@ -62,7 +62,7 @@ No 2-week cohorts run in fall 2026 — September through November is workshop se
 
 ## Fall 2026 Workshops (3-Day Intensives)
 
-MakerSquare runs 3-day in-person AI workshops in Austin, TX, led by a MakerSquare co-founder. Wed-Fri, 9am-5pm. No coding required. Pricing: $999 early bird (until 3 weeks before) / $1,199 regular. Workshop attendees get $200 off the January 2-week program.
+MakerSquare runs 3-day in-person AI workshops in Austin, TX, led by a MakerSquare co-founder. Wed-Fri, 9am-4pm. No coding required. Pricing: $999 early bird (until 3 weeks before) / $1,199 regular. Workshop attendees get $200 off the January 2-week program.
 
 - Build Your First AI Agent: September 9-11, 2026 (early bird ends August 19) — build a working AI agent with Claude Code, the Claude API, and Composio, deployed on a schedule
 - Automate Your Ops with AI: October 14-16, 2026 (early bird ends September 23) — automate recurring ops work: reports, document extraction, inbox and meeting notes, on your real accounts
