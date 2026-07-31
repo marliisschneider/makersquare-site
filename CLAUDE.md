@@ -132,14 +132,18 @@ Pages marked `noindex` (like `demo-ppc.html`) are exempt from sitemap but still 
 - Price: $3,999 full pay / $3,499 scholarship
 - Full payment at enrollment — no deposit, no split pay
 - Location: Austin TX, 9am–3pm Mon–Fri (optional Saturday office hours)
-- 2026 schedule (as of Jul 28): C1 Jul 6–17 (completed), C2 Aug 3–14 (enrollment closed Jul 27), **C3 Nov 9–20 (the only remaining open cohort; enrollment closes Nov 2)**. October cohort cancelled Jul 28 (no instructor availability); the former Nov 30–Dec 11 cohort was moved up to Nov 9–20. No cohorts in September or October. Dates live in cohorts.json — edit there and run `node scripts/cohorts.mjs`, never hand-edit dates in HTML.
+- Schedule (as of Jul 31): C1 Jul 6–17 (completed), C2 Aug 3–14 (enrollment closed Jul 27), **C3 Jan 11–22, 2027 (the only open cohort; enrollment closes Jan 4)**. November cohort cancelled Jul 31 — Marliis can't teach after August (maternity leave ~mid-Sept); fall 2026 is 3-day workshops (Ravi solo) + private team training. Dates live in cohorts.json — edit there and run `node scripts/cohorts.mjs`, never hand-edit dates in HTML.
 
-### Mini-workshops — DORMANT (hidden sitewide Jul 24, 2026)
-Consumer workshops are fully hidden: no nav/dropdown/footer links anywhere, `/workshops` is noindex and out of sitemap.xml, the enroll cross-sell section and WORKSHOP200 code are removed, and llms.txt carries no workshop facts (so the chatbot doesn't offer them). Pages + Stripe links retained unlinked for later revival — do NOT delete them, and do NOT re-add workshop links or mentions without Marliis's explicit go.
+### Mini-workshops — ACTIVE again (revived Jul 31, 2026)
+Consumer workshops are back on the site: nav + More dropdown restored, /workshops indexed and in sitemap.xml, llms.txt carries the schedule. Led by Ravi (Marliis on maternity leave from ~mid-Sept). **Stack language rule: the workshops teach the Claude stack (Claude Code, Claude API, Composio, GitHub Actions) — NEVER the old n8n/Zapier/Airtable agenda** (customer-facing curriculum: Obsidian `Curriculum/3-Day-Workshop-Curriculum-Public.md`).
 
-**What stays live:** B2B private 3-day team workshops on `/corporate` (custom quote only — never publish a price; ~$950/person internally, min ~$4,000). That's a corporate offer, not consumer workshop marketing.
+| # | Dates | Topic | Early Bird Closes |
+|---|---|---|---|
+| WS-Sep | Sep 9–11, 2026 (Wed–Fri) | Build Your First AI Agent | Aug 19 |
+| WS-Oct | Oct 14–16, 2026 (Wed–Fri) | Automate Your Ops with AI | Sep 23 |
+| WS-Nov | Nov 4–6, 2026 (Wed–Fri) | AI for Sales Teams | Oct 14 |
 
-Reference (for revival): Sep 9–11 "Build Your First AI Agent", Early bird $999 (closes Aug 19) / Regular $1,199.
+Pricing: Early bird $999 / Regular $1,199. Attendees get $200 off the January 2-week program (code WORKSHOP200). Private team sessions: custom quote only — never publish a price (~$950/person internally, min ~$4,000). **Stripe: payment links exist only for the Sep workshop (workshop-register auto-switches EB→regular by date). Oct + Nov use the Zoho interest form until Marliis creates their Stripe links.** Still true: no workshops on the enrollment page.
 
 ### Corporate training (priority product)
 B2B is a primary motion. "For Teams" in main nav → `/corporate`: (1) private 3-day team workshop (entry offer, custom quote), (2) custom company program (core offer), (3) individual seats ($3,999). Never publish private-session pricing.
