@@ -66,7 +66,7 @@ MakerSquare runs 3-day in-person AI workshops in Austin, TX, led by co-founder R
 
 - Build Your First AI Agent: September 9-11, 2026 (early bird ends August 19) — build a working AI agent with Claude Code, the Claude API, and Composio, deployed on a schedule
 - Automate Your Ops with AI: October 14-16, 2026 (early bird ends September 23) — automate recurring ops work: reports, document extraction, inbox and meeting notes, on your real accounts
-- AI for Sales Teams: November 4-6, 2026 (early bird ends October 14) — self-enriching prospect lists with Clay, AI-personalized outreach, calls summarized and logged to the CRM
+- Build Your First App with AI: November 4-6, 2026 (early bird ends October 14) — from idea to a live, deployed app with a real database, using Claude Code, Lovable, Supabase, and Vercel (vibe coding with production tools)
 
 Workshops page: https://www.makersquare.ai/workshops
 
