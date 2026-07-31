@@ -56,10 +56,11 @@ for p, d in info.items():
     # length warnings (truncate in SERPs)
     if d['title'] and len(d['title']) > 60: warns.append((p, f"title {len(d['title'])} chars (>60, truncates)"))
     if d['desc'] and len(d['desc']) > 160:  warns.append((p, f"meta description {len(d['desc'])} chars (>160, truncates)"))
-    # og/twitter title drift (both present but share almost nothing)
+    # og/twitter title drift — near-zero overlap = one is copy-pasted from another page (bug)
     if d['ogt'] and d['twt']:
         ov = len(toks(d['ogt']) & toks(d['twt'])) / max(1, len(toks(d['ogt']) | toks(d['twt'])))
-        if ov < 0.34: warns.append((p, "og:title and twitter:title differ a lot"))
+        if ov < 0.15:   errors.append((p, f"og:title and twitter:title are unrelated (one is likely copied): og=\"{d['ogt']}\" / tw=\"{d['twt']}\""))
+        elif ov < 0.40: warns.append((p, "og:title and twitter:title differ (double-check they match the page)"))
 
 # sitemap sanity
 if os.path.exists('sitemap.xml'):
