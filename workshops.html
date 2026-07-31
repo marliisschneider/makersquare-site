@@ -389,7 +389,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <div class="section-label reveal">Fall 2026 lineup</div>
     <h2 class="reveal">Three days. <span class="text-accent">Leave with it running.</span></h2>
-    <p class="section-sub reveal" style="max-width:520px;">Hands-on, small group, led by MakerSquare co-founder Ravi Parikh. Every workshop ends with a working system built on your own work &mdash; demoed live on Day 3.</p>
+    <p class="section-sub reveal" style="max-width:520px;">Hands-on, small group, led by a MakerSquare co-founder. Every workshop ends with a working system built on your own work &mdash; demoed live on Day 3.</p>
 
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:var(--s5);margin-top:var(--s8);" class="ws-two-grid">
 
@@ -481,27 +481,49 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <style>@media(max-width:768px){.ws-two-grid{grid-template-columns:1fr!important;}}</style>
 </section>
 
-<!-- CURRICULUM — DAY BY DAY (September flagship) -->
+<!-- CURRICULUM — TABBED, DAY BY DAY -->
 <section id="ws-days" style="position:relative;overflow:hidden;padding:var(--s8) 0;background:radial-gradient(circle,rgba(255,255,255,0.035) 1px,transparent 1px) 0 0/18px 18px,linear-gradient(180deg,#1d1d5c,#181849);">
   <div class="wsd-hair" style="position:absolute;top:0;left:0;right:0;height:3px;"></div>
+  <div class="wsd-aur wsd-aur1"></div><div class="wsd-aur wsd-aur2"></div>
   <style>
   #ws-days .wsd-hair{background:linear-gradient(90deg,#f59e0b,var(--indigo),var(--sky),var(--indigo),#f59e0b);background-size:200% 100%;animation:wsdSweep 7s linear infinite;}
   @keyframes wsdSweep{to{background-position:200% 0;}}
+  #ws-days .wsd-aur{position:absolute;width:440px;height:440px;border-radius:50%;pointer-events:none;filter:blur(90px);}
+  #ws-days .wsd-aur1{background:radial-gradient(circle,rgba(64,61,216,0.4),transparent 65%);top:-140px;right:-100px;animation:wsdFA 17s ease-in-out infinite alternate;}
+  #ws-days .wsd-aur2{background:radial-gradient(circle,rgba(245,158,11,0.22),transparent 65%);bottom:-160px;left:-120px;animation:wsdFB 21s ease-in-out infinite alternate;}
+  @keyframes wsdFA{to{transform:translate(-70px,50px) scale(1.15);}}
+  @keyframes wsdFB{to{transform:translate(80px,-60px) scale(1.1);}}
+  #ws-days .wsd-tabs{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:var(--s6);}
+  #ws-days .wsd-tab{cursor:pointer;border:1px solid rgba(129,170,251,0.3);background:rgba(255,255,255,0.05);color:rgba(255,255,255,0.75);border-radius:999px;padding:10px 20px;font-family:var(--font-display);font-weight:700;font-size:0.85rem;transition:all .3s ease;display:inline-flex;align-items:center;gap:8px;}
+  #ws-days .wsd-tab:hover{border-color:rgba(129,170,251,0.6);color:#fff;transform:translateY(-2px);}
+  #ws-days .wsd-tab.on{background:linear-gradient(135deg,var(--indigo),#5a8ff0);border-color:transparent;color:#fff;box-shadow:0 8px 24px rgba(64,61,216,0.45);}
+  #ws-days .wsd-tab .tdot{width:7px;height:7px;border-radius:50%;background:#f59e0b;box-shadow:0 0 8px rgba(245,158,11,0.8);animation:wsdLive 2.2s ease-in-out infinite;}
+  @keyframes wsdLive{50%{box-shadow:0 0 14px rgba(245,158,11,1);transform:scale(1.3);}}
+  #ws-days .wsd-panel{display:none;}
+  #ws-days .wsd-panel.on{display:block;animation:wsdIn .45s cubic-bezier(0.16,1,0.3,1);}
+  @keyframes wsdIn{from{opacity:0;transform:translateY(14px);}to{opacity:1;transform:translateY(0);}}
   #ws-days .wsd-card{background:rgba(255,255,255,0.05);border:1px solid rgba(129,170,251,0.22);border-radius:var(--r-xl);padding:var(--s6);transition:transform .35s ease,border-color .35s ease,box-shadow .35s ease;}
   #ws-days .wsd-card:hover{transform:translateY(-6px);border-color:rgba(129,170,251,0.55);box-shadow:0 16px 44px rgba(8,8,35,0.5);}
   #ws-days .wsd-num{font-family:var(--font-display);font-size:2.6rem;font-weight:800;color:rgba(129,170,251,0.28);line-height:1;}
   #ws-days .wsd-li{font-size:0.85rem;color:rgba(255,255,255,0.72);line-height:1.6;display:flex;gap:8px;}
   #ws-days .wsd-li span:first-child{color:#fbbf24;font-weight:700;flex-shrink:0;}
-  @media(prefers-reduced-motion:reduce){#ws-days .wsd-hair{animation:none!important;}}
+  @media(prefers-reduced-motion:reduce){#ws-days .wsd-hair,#ws-days .wsd-aur1,#ws-days .wsd-aur2,#ws-days .tdot{animation:none!important;}#ws-days .wsd-panel.on{animation:none;}}
   </style>
   <div class="container" style="position:relative;">
     <div style="text-align:center;margin-bottom:var(--s6);">
-      <div style="font-size:0.65rem;font-weight:800;text-transform:uppercase;letter-spacing:0.12em;color:#fbbf24;margin-bottom:6px;">Inside the September workshop</div>
-      <h2 style="color:var(--white);font-family:var(--font-display);font-size:clamp(1.5rem,3vw,2.1rem);font-weight:800;letter-spacing:-0.02em;margin:0;">Three days, hour by hour.<br><span style="color:var(--sky);">Something running by 5pm each day.</span></h2>
+      <div style="font-size:0.65rem;font-weight:800;text-transform:uppercase;letter-spacing:0.12em;color:#fbbf24;margin-bottom:6px;">Inside the workshops</div>
+      <h2 style="color:var(--white);font-family:var(--font-display);font-size:clamp(1.5rem,3vw,2.1rem);font-weight:800;letter-spacing:-0.02em;margin:0;">Pick a workshop.<br><span style="color:var(--sky);">See exactly what your three days look like.</span></h2>
     </div>
 
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:var(--s4);">
-      <div class="reveal wsd-card">
+    <div class="wsd-tabs" role="tablist">
+      <button type="button" class="wsd-tab on" data-p="sep" role="tab"><span class="tdot"></span>Sep &middot; AI Agent</button>
+      <button type="button" class="wsd-tab" data-p="oct" role="tab">Oct &middot; Ops Automation</button>
+      <button type="button" class="wsd-tab" data-p="nov" role="tab">Nov &middot; Your First App</button>
+    </div>
+
+    <div class="wsd-panel on" id="wsd-p-sep">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:var(--s4);">
+      <div class="wsd-card">
         <div class="wsd-num">01</div>
         <div style="font-family:var(--font-display);font-size:1.05rem;font-weight:800;color:#fff;margin-top:var(--s2);">Your first agent &mdash; deployed by 5pm</div>
         <ul style="list-style:none;display:flex;flex-direction:column;gap:var(--s3);margin-top:var(--s4);">
@@ -512,7 +534,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li class="wsd-li"><span>&#10003;</span><span>Break it on purpose &mdash; and learn to read why an agent decided badly</span></li>
         </ul>
       </div>
-      <div class="reveal reveal-d2 wsd-card">
+      <div class="wsd-card">
         <div class="wsd-num">02</div>
         <div style="font-family:var(--font-display);font-size:1.05rem;font-weight:800;color:#fff;margin-top:var(--s2);">Your agent, on your real work</div>
         <ul style="list-style:none;display:flex;flex-direction:column;gap:var(--s3);margin-top:var(--s4);">
@@ -523,7 +545,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li class="wsd-li"><span>&#10003;</span><span>Memory between runs &mdash; so it never sends you the same thing twice</span></li>
         </ul>
       </div>
-      <div class="reveal reveal-d3 wsd-card">
+      <div class="wsd-card">
         <div class="wsd-num">03</div>
         <div style="font-family:var(--font-display);font-size:1.05rem;font-weight:800;color:#fff;margin-top:var(--s2);">Make it a product. Ship it.</div>
         <ul style="list-style:none;display:flex;flex-direction:column;gap:var(--s3);margin-top:var(--s4);">
@@ -534,9 +556,86 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li class="wsd-li"><span>&#10003;</span><span>Demo it live to the room &mdash; and explain the loop in your own words</span></li>
         </ul>
       </div>
+      </div>
     </div>
-    <p style="text-align:center;font-size:0.85rem;color:rgba(255,255,255,0.55);margin-top:var(--s5);">October and November follow the same shape &mdash; Day 1 foundations with a first win deployed, Day 2 on your real work, Day 3 ship and demo &mdash; each built around its own topic.</p>
+    <div class="wsd-panel" id="wsd-p-oct">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:var(--s4);">
+      <div class="wsd-card">
+        <div class="wsd-num">01</div>
+        <div style="font-family:var(--font-display);font-size:1.05rem;font-weight:800;color:#fff;margin-top:var(--s2);">Foundations &mdash; and your first automation live</div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:var(--s3);margin-top:var(--s4);">
+          <li class="wsd-li"><span>&#10003;</span><span>Where AI genuinely saves ops time &mdash; and the traps that waste it</span></li>
+          <li class="wsd-li"><span>&#10003;</span><span>Your stack, set up together: Claude connected to the tools you already use</span></li>
+          <li class="wsd-li"><span>&#10003;</span><span>Map the week&#8217;s recurring work and pick your highest-leverage target</span></li>
+          <li class="wsd-li"><span>&#10003;</span><span>Build your first automation on it &mdash; running before you leave</span></li>
+          <li class="wsd-li"><span>&#10003;</span><span>The judgment: automation vs. agent vs. just a better prompt</span></li>
+        </ul>
+      </div>
+      <div class="wsd-card">
+        <div class="wsd-num">02</div>
+        <div style="font-family:var(--font-display);font-size:1.05rem;font-weight:800;color:#fff;margin-top:var(--s2);">Your workflows, on your real accounts</div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:var(--s3);margin-top:var(--s4);">
+          <li class="wsd-li"><span>&#10003;</span><span>Documents &mdash; invoices, forms, transcripts &mdash; read and extracted to structured data</span></li>
+          <li class="wsd-li"><span>&#10003;</span><span>A report that assembles itself from your live sources</span></li>
+          <li class="wsd-li"><span>&#10003;</span><span>Inbox and meeting notes: triaged, summarized, filed where they belong</span></li>
+          <li class="wsd-li"><span>&#10003;</span><span>Spot-checks, so you can trust what it produces before it acts alone</span></li>
+          <li class="wsd-li"><span>&#10003;</span><span>Safe access: least privilege, drafts before sends</span></li>
+        </ul>
+      </div>
+      <div class="wsd-card">
+        <div class="wsd-num">03</div>
+        <div style="font-family:var(--font-display);font-size:1.05rem;font-weight:800;color:#fff;margin-top:var(--s2);">Make it run without you</div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:var(--s3);margin-top:var(--s4);">
+          <li class="wsd-li"><span>&#10003;</span><span>Schedules and triggers &mdash; the work happens whether you&#8217;re there or not</span></li>
+          <li class="wsd-li"><span>&#10003;</span><span>Sensible behavior when inputs are messy or missing</span></li>
+          <li class="wsd-li"><span>&#10003;</span><span>What it costs to run &mdash; real numbers</span></li>
+          <li class="wsd-li"><span>&#10003;</span><span>A runbook for every automation you built</span></li>
+          <li class="wsd-li"><span>&#10003;</span><span>Demo the full system live to the room</span></li>
+        </ul>
+      </div>
+      </div>
+    </div>
+    <div class="wsd-panel" id="wsd-p-nov">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:var(--s4);">
+      <div class="wsd-card">
+        <div class="wsd-num">01</div>
+        <div style="font-family:var(--font-display);font-size:1.05rem;font-weight:800;color:#fff;margin-top:var(--s2);">Idea to live on the internet</div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:var(--s3);margin-top:var(--s4);">
+          <li class="wsd-li"><span>&#10003;</span><span>Describe what you want &mdash; the vibe-coding skill, with production tools, not toys</span></li>
+          <li class="wsd-li"><span>&#10003;</span><span>Build the app&#8217;s face with Claude Code and Lovable</span></li>
+          <li class="wsd-li"><span>&#10003;</span><span>Deployed to a real URL on Vercel before you leave</span></li>
+          <li class="wsd-li"><span>&#10003;</span><span>Your product decisions: what it does, who it&#8217;s for, what&#8217;s v1</span></li>
+          <li class="wsd-li"><span>&#10003;</span><span>The habit that matters: never accept fifty lines you can&#8217;t read</span></li>
+        </ul>
+      </div>
+      <div class="wsd-card">
+        <div class="wsd-num">02</div>
+        <div style="font-family:var(--font-display);font-size:1.05rem;font-weight:800;color:#fff;margin-top:var(--s2);">A real database behind it</div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:var(--s3);margin-top:var(--s4);">
+          <li class="wsd-li"><span>&#10003;</span><span>Supabase: real tables for your real product</span></li>
+          <li class="wsd-li"><span>&#10003;</span><span>Live forms writing real rows &mdash; sign-ups, orders, submissions</span></li>
+          <li class="wsd-li"><span>&#10003;</span><span>The safety rules that keep your data yours</span></li>
+          <li class="wsd-li"><span>&#10003;</span><span>Auth basics: who can see what</span></li>
+          <li class="wsd-li"><span>&#10003;</span><span>Build, run, check &mdash; one piece at a time, on your own product</span></li>
+        </ul>
+      </div>
+      <div class="wsd-card">
+        <div class="wsd-num">03</div>
+        <div style="font-family:var(--font-display);font-size:1.05rem;font-weight:800;color:#fff;margin-top:var(--s2);">Polish it. Ship it. Own it.</div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:var(--s3);margin-top:var(--s4);">
+          <li class="wsd-li"><span>&#10003;</span><span>From working to product: edge cases, empty states, the details users notice</span></li>
+          <li class="wsd-li"><span>&#10003;</span><span>Your own domain, connected</span></li>
+          <li class="wsd-li"><span>&#10003;</span><span>What it costs to run and grow &mdash; real numbers</span></li>
+          <li class="wsd-li"><span>&#10003;</span><span>How to keep shipping after you leave &mdash; the skill compounds</span></li>
+          <li class="wsd-li"><span>&#10003;</span><span>Demo your live app to the room</span></li>
+        </ul>
+      </div>
+      </div>
+    </div>
+
+    <p style="text-align:center;font-size:0.85rem;color:rgba(255,255,255,0.55);margin-top:var(--s5);">Every day ends with something running &mdash; and Day 3 always ends with you demoing it live to the room.</p>
   </div>
+  <script>document.querySelectorAll('#ws-days .wsd-tab').forEach(function(b){b.addEventListener('click',function(){document.querySelectorAll('#ws-days .wsd-tab').forEach(function(x){x.classList.remove('on');});document.querySelectorAll('#ws-days .wsd-panel').forEach(function(x){x.classList.remove('on');});b.classList.add('on');document.getElementById('wsd-p-'+b.dataset.p).classList.add('on');});});</script>
 </section>
 
 <!-- LOCATION & LOGISTICS -->
