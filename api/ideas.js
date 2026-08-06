@@ -3,7 +3,7 @@
 // mode "team": instant sketch of a private 3-day workshop agenda.
 // Requires ANTHROPIC_API_KEY (shared with /api/chat).
 
-const STACK = 'Claude, Claude Code, Claude Skills, Supabase, Vercel, Lovable, Composio, Playwright, Whisper, ElevenLabs, GitHub';
+const STACK = 'Claude, Claude Code, Claude Skills, Supabase, Vercel, Composio, Playwright, Whisper, ElevenLabs, GitHub';
 
 const PROMPTS = {
   individual: `You suggest what a specific person could build during MakerSquare's 2-week in-person AI program in Austin. Students are non-technical professionals; they ship real deployed tools using: ${STACK}.
