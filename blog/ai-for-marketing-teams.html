@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="facebook-domain-verification" content="fligau9appze71fwy7uaaw2v12bc4n" />
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MJTW9WQ3');</script>
+<!-- End Google Tag Manager -->
+<!-- Zoho UTM passthrough (modificado: incluye fbclid) -->
+<script>
+(function(){
+  var p=new URLSearchParams(window.location.search);
+  var keys=['utm_source','utm_medium','utm_campaign','utm_content','utm_term','fbclid','gclid'];
+  var stored={};
+  keys.forEach(function(k){if(p.get(k))stored[k]=p.get(k);});
+  if(Object.keys(stored).length){sessionStorage.setItem('zf_utm',JSON.stringify(stored));}
+})();
+</script>
+<!-- Zoho zf_gtm postMessage listener -->
+<script>
+window.addEventListener('message',function(e){
+  if(e.data&&e.data.type=='zf_gtm'){
+    window.dataLayer=window.dataLayer||[];
+    window.dataLayer.push(e.data.payload||e.data);
+  }
+},false);
+</script>
+<!-- X conversion tracking base code -->
+<script>
+!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='https://static.ads-twitter.com/uwt.js',
+a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+twq('config','rcjjn');
+</script>
+<title>AI Tools for Marketing Teams: Beyond Using ChatGPT | MakerSquare</title>
+<meta name="description" content="AI tools for marketing teams have matured well past ChatGPT prompts. Learn how marketing teams are building custom workflows for content, campaigns, and performance analysis — without a developer.">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/png" href="../favicon.png">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="canonical" href="https://www.makersquare.ai/blog/ai-for-marketing-teams">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.makersquare.ai/blog/ai-for-marketing-teams">
+<meta property="og:title" content="AI for marketing teams: beyond using ChatGPT">
+<meta property="og:description" content="AI tools for marketing teams have matured well past ChatGPT prompts. Here's what marketing teams are actually building — custom workflows for content, campaigns, and analysis.">
+<meta property="og:image" content="https://www.makersquare.ai/images/blog/ai-for-marketing-teams-og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.min.css?v=9">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "AI for marketing teams: beyond using ChatGPT",
+  "description": "AI tools for marketing teams have matured well past ChatGPT prompts. Learn how marketing teams are building custom workflows for content, campaigns, and performance analysis without a developer.",
+  "author": {"@type": "Person", "name": "Marliis Schneider", "url": "https://www.makersquare.ai/about"},
+  "publisher": {"@type": "Organization", "name": "MakerSquare", "url": "https://www.makersquare.ai"},
+  "datePublished": "2026-08-08",
+  "url": "https://www.makersquare.ai/blog/ai-for-marketing-teams",
+  "keywords": "ai tools for marketing teams, ai marketing automation, ai for marketing, marketing ai workflows"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are the best AI tools for marketing teams?",
+      "acceptedAnswer": {"@type": "Answer", "text": "The most useful AI tools for marketing teams in 2026 are Claude and ChatGPT for content creation and strategy synthesis, Perplexity for competitive research, Make or Zapier for multi-step automation workflows, and Midjourney or DALL-E for creative assets. The best stack depends on your specific bottlenecks — start by identifying your 3 most time-consuming recurring tasks before choosing tools."}
+    },
+    {
+      "@type": "Question",
+      "name": "How can marketing teams use AI beyond ChatGPT?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Moving beyond basic ChatGPT use means building custom workflows rather than one-off prompts. This includes: custom Claude Projects trained on your brand voice, automated content pipelines that pull from your analytics and generate briefs, competitive monitoring workflows, and campaign performance synthesis tools. The goal is making AI a reliable system, not a tool you consult occasionally."}
+    },
+    {
+      "@type": "Question",
+      "name": "How does AI help small marketing teams compete with larger ones?",
+      "acceptedAnswer": {"@type": "Answer", "text": "AI gives small marketing teams leverage on production — the ability to create more content, run more tests, and analyze more data than their headcount would suggest. A 2-person marketing team with strong AI workflows can produce the output of a 5-person team without AI. The constraint shifts from production capacity to strategic judgment, which is where small teams can win anyway."}
+    },
+    {
+      "@type": "Question",
+      "name": "Can AI replace marketing team members?",
+      "acceptedAnswer": {"@type": "Answer", "text": "AI doesn't replace marketing professionals — it replaces the production-heavy, repetitive parts of their jobs. The strategic, creative, and relational parts of marketing remain human. What changes is how much time those humans spend on execution versus judgment. Teams that integrate AI well tend to be more productive and better at strategy, not smaller."}
+    }
+  ]
+}
+</script>
+
+<style>
+.post-hero {
+  padding: calc(var(--nav-height) + var(--s10)) 0 var(--s4);
+  border-bottom: 1px solid rgba(24,24,73,0.06);
+}
+.post-hero-inner { max-width: 760px; margin: 0 auto; }
+.post-hero-img { margin-top: var(--s7); border-radius: var(--r-xl); overflow: hidden; max-height: 420px; }
+.post-hero-img img { width: 100%; height: 100%; object-fit: cover; }
+.post-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--indigo);
+  margin-bottom: var(--s4);
+}
+.post-tag::before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  background: var(--indigo);
+  border-radius: 2px;
+}
+.post-title {
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 800;
+  color: var(--navy);
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  margin-bottom: var(--s5);
+}
+.post-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--s3);
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  flex-wrap: wrap;
+}
+.post-meta-dot { width: 3px; height: 3px; border-radius: 50%; background: var(--text-muted); }
+.post-body-wrap { padding: var(--s6) 0 var(--s10); }
+.post-body { max-width: 760px; margin: 0 auto; }
+.takeaways-box {
+  background: rgba(64,61,216,0.04);
+  border: 1px solid rgba(64,61,216,0.12);
+  border-radius: var(--r-lg);
+  padding: var(--s5) var(--s6);
+  margin-bottom: var(--s8);
+}
+.takeaways-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--indigo);
+  margin-bottom: var(--s3);
+}
+.takeaways-list { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.takeaways-list li {
+  font-size: 0.9rem;
+  color: var(--navy);
+  line-height: 1.65;
+  padding-left: 16px;
+  position: relative;
+}
+.takeaways-list li::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  background: var(--indigo);
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 9px;
+}
+.post-body p { font-size: 1rem; color: #2d2d4e; line-height: 1.85; margin-bottom: var(--s5); }
+.post-body h2 { font-size: 1.2rem; font-weight: 700; color: var(--navy); letter-spacing: -0.02em; margin-top: var(--s8); margin-bottom: var(--s4); }
+.post-body h3 { font-size: 1rem; font-weight: 700; color: var(--navy); margin-top: var(--s6); margin-bottom: var(--s3); }
+.post-body a { color: var(--indigo); text-decoration: none; border-bottom: 1px solid rgba(64,61,216,0.25); transition: border-color 0.2s; }
+.post-body a:hover { border-bottom-color: var(--indigo); }
+.post-body strong { color: var(--navy); font-weight: 700; }
+.faq-section { margin-top: var(--s9); padding-top: var(--s7); border-top: 1px solid rgba(24,24,73,0.06); }
+.faq-label { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--indigo); margin-bottom: var(--s6); }
+.faq-item { margin-bottom: var(--s6); }
+.faq-item:last-child { margin-bottom: 0; }
+.faq-q { font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: var(--s2); line-height: 1.4; }
+.faq-a { font-size: 0.95rem; color: var(--text-secondary); line-height: 1.75; }
+.post-cta { background: var(--navy); border-radius: var(--r-xl); padding: var(--s8); margin-top: var(--s9); text-align: center; }
+.post-cta p { color: rgba(255,255,255,0.65); font-size: 0.95rem; line-height: 1.7; margin-bottom: var(--s5); max-width: 520px; margin-left: auto; margin-right: auto; }
+.post-cta-actions { display: flex; gap: var(--s3); justify-content: center; flex-wrap: wrap; }
+.post-cta-actions .btn { transition: all 0.25s ease; }
+.post-cta-actions .btn:first-child:hover { background: var(--ice) !important; color: var(--navy) !important; }
+.post-cta-actions .btn:last-child:hover { background: rgba(255,255,255,0.1) !important; color: var(--white) !important; border-color: rgba(255,255,255,0.4) !important; }
+.sources-section { margin-top: var(--s9); padding-top: var(--s7); border-top: 1px solid rgba(24,24,73,0.06); }
+.sources-label { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--indigo); margin-bottom: var(--s5); }
+.source-item { display: flex; gap: var(--s4); align-items: flex-start; padding: var(--s3) 0; border-bottom: 1px solid rgba(24,24,73,0.06); }
+.source-item:last-child { border-bottom: none; }
+.source-num { flex-shrink: 0; width: 22px; height: 22px; background: var(--cloud); border-radius: 50%; font-size: 0.7rem; font-weight: 700; color: var(--indigo); display: flex; align-items: center; justify-content: center; margin-top: 2px; }
+.source-name { font-size: 0.875rem; font-weight: 600; color: var(--navy); margin-bottom: 2px; }
+.source-name a { color: var(--indigo); text-decoration: none; border: none; }
+.source-name a:hover { text-decoration: underline; }
+.source-detail { font-size: 0.78rem; color: var(--text-muted); }
+.post-back { margin-bottom: var(--s6); }
+.post-back a { font-size: 0.82rem; font-weight: 600; color: var(--text-muted); text-decoration: none; display: inline-flex; align-items: center; gap: 6px; transition: color 0.2s; border: none !important; }
+.post-back a:hover { color: var(--indigo); }
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJTW9WQ3"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo" style="align-items:center;"><img src="../logo-light.png" alt="MakerSquare — School of Applied AI"><span class="nav-tagline" style="padding-left:4px;">School of Applied AI</span></a>
+    <ul class="nav-links">
+      <li><a href="/about">About</a></li>
+      <li style="white-space:nowrap;"><a href="/use-cases">Use Cases</a></li>
+      <li><a href="/curriculum">Curriculum</a></li>
+      <li><a href="/corporate">For Companies</a></li>
+      <li><a href="/pricing">Pricing</a></li>
+      <li><a href="/blog" class="active">Blog</a></li>
+      <li><a href="/enroll" class="nav-apply">Enroll</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="/enroll" class="btn btn-primary btn-arrow" style="white-space:nowrap;">Secure Your Spot </a>
+      <button class="nav-hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu">
+  <ul class="mobile-menu-links">
+    <li><a href="/about">About</a></li>
+    <li><a href="/use-cases">Use Cases</a></li>
+    <li><a href="/curriculum">Curriculum</a></li>
+    <li><a href="/corporate">For Companies</a></li>
+    <li><a href="/pricing">Pricing</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="/enroll">Enroll</a></li>
+  </ul>
+  <a href="/enroll" class="btn btn-primary btn-block btn-lg" style="margin-top:24px;">Secure Your Spot</a>
+</div>
+
+<!-- POST HERO -->
+<section class="post-hero section">
+  <div class="container">
+    <div class="post-hero-inner">
+      <div class="post-back"><a href="/blog">&#8592; Blog</a></div>
+      <div class="post-tag">AI at Work</div>
+      <h1 class="post-title">AI for marketing teams: beyond using ChatGPT</h1>
+      <div class="post-meta">
+        <span>Marliis Schneider</span>
+        <span class="post-meta-dot"></span>
+        <span>August 8, 2026</span>
+        <span class="post-meta-dot"></span>
+        <span>5 min read</span>
+      </div>
+      <div class="post-hero-img">
+        <img src="../images/blog/ai-for-marketing-teams-og.png" alt="AI for marketing teams: beyond using ChatGPT">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POST BODY -->
+<div class="post-body-wrap">
+  <div class="container">
+    <div class="post-body">
+
+      <div class="takeaways-box">
+        <div class="takeaways-label">Key takeaways</div>
+        <ul class="takeaways-list">
+          <li>AI tools for marketing teams have moved well past basic ChatGPT prompts — the next level is custom workflows that run automatically and are trained on your specific brand voice.</li>
+          <li>The biggest gap between marketing teams using AI well and using it poorly is whether they've built systems or just habits.</li>
+          <li>Content production, competitive research, and performance analysis are the three highest-ROI starting points for marketing AI adoption.</li>
+          <li>A 2-person marketing team with strong AI workflows can produce the output of a 5-person team — the constraint shifts from production to strategy.</li>
+        </ul>
+      </div>
+
+      <p>Most marketing teams are using AI. Almost all of them are using it the same way: ask ChatGPT for a first draft, edit it, publish it. That's useful. It's also the floor, not the ceiling.</p>
+
+      <p><strong>The marketing teams pulling ahead of their competitors have moved from using AI tools to building AI workflows</strong> — custom systems that automate recurring tasks, maintain brand consistency across channels, and surface insights from data without manual analysis. The difference is the difference between having a capable assistant you occasionally ask for help and having a system that does a significant portion of your recurring production work automatically.</p>
+
+      <h2>The three places AI tools for marketing teams deliver the most leverage</h2>
+
+      <p>Content production is the obvious starting point, but most teams stop at "AI writes a draft, human edits it." The teams doing this well have gone further: they've built Claude Projects — persistent AI setups that have read your brand guidelines, past top-performing content, audience personas, and product positioning. When you ask for a first draft, it comes back in your voice, with your messaging, requiring a fraction of the editing time. This isn't magic; it's configuration. But most teams haven't done it.</p>
+
+      <p>According to <a href="https://www.hubspot.com/state-of-marketing" target="_blank" rel="noopener">HubSpot's State of Marketing 2025</a>, 74% of marketers say AI has changed how they work, but only 34% say they've integrated it into a consistent workflow. The gap between "I use AI sometimes" and "AI is part of how my team works every day" is exactly where leverage lives.</p>
+
+      <p>Competitive research is the second area. Tracking what competitors are doing — their content, their messaging shifts, their ad creative, their product positioning — is important and time-consuming. AI can compress this dramatically. A weekly competitive intelligence brief that used to take half a day can be produced in 20 minutes with the right research workflow: pull the latest content from 5 competitor sites, synthesize the themes, flag anything new. Perplexity and Claude are both good at this when given specific instructions and a consistent structure.</p>
+
+      <p>Performance analysis is the third, and it's where most marketing AI use is most underdeveloped. Marketing generates enormous amounts of data. Most teams analyze it manually or not at all. AI can synthesize campaign performance data — what performed, what didn't, what patterns across channels — and produce actionable analysis in plain language. The constraint is usually data access, not AI capability.</p>
+
+      <h2>What "building a workflow" actually means for marketing teams</h2>
+
+      <p>The word "workflow" can feel abstract. Here's what it looks like in practice for a marketing team that has moved beyond basic AI prompting.</p>
+
+      <p>A content marketing team I know has a Monday morning brief that runs automatically. It pulls the past week's analytics data, checks RSS feeds for industry news and competitor content, and generates a structured brief with: this week's highest-performing content (and what worked about it), relevant industry news their audience cares about, and 5 content ideas for the week. The whole thing takes 4 minutes to run and 10 minutes to review. What it replaced was 90 minutes of manual research every Monday.</p>
+
+      <p>This is built with Make — a no-code automation tool — connected to their analytics platform, a few RSS feeds, and Claude for the synthesis step. No code. No developer. Two days to build. The ROI paid back in the first week.</p>
+
+      <p>A <a href="https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/ai-powered-marketing-and-sales-reach-new-heights-with-generative-ai" target="_blank" rel="noopener">McKinsey analysis of AI in marketing</a> found that teams integrating AI into workflows — as opposed to using it for one-off tasks — see 20–30% improvement in campaign performance and 40–60% reduction in content production time. The difference is systematic integration, not occasional use.</p>
+
+      <h2>The non-obvious problem: brand voice drift</h2>
+
+      <p>Here's something most marketing AI content doesn't mention: the biggest quality problem with AI-generated marketing content isn't accuracy, it's homogenization. When every company uses the same AI tools with default settings, everything starts to sound the same. The same sentence structures, the same phrasing patterns, the same vague enthusiasm.</p>
+
+      <p>The solution is investing in the setup. Claude Projects, custom instructions, examples of your best past writing, your brand voice guidelines — these inputs determine whether AI-assisted content sounds like you or like everyone else. Teams that spend two hours configuring their AI setup properly produce dramatically better content than teams that just open a new chat every time. This is the non-obvious insight: the quality of your AI output is mostly a function of the quality of your input configuration, not the model itself.</p>
+
+      <h2>What this means for marketing teams ready to go further</h2>
+
+      <p>If your team is using AI for drafts but hasn't built any persistent workflows, the next move is to identify your 3 most time-consuming weekly tasks and build a simple automation around one of them. Start with Monday morning research or weekly performance reporting. Build one workflow, run it for a month, then build the next.</p>
+
+      <p>MakerSquare is a 2-week in-person AI builder program in Austin, TX — built for operators, founders, and professionals who want to build real AI tools, not just use them. Marketing professionals who go through the program leave with working content pipelines, research automations, and analysis tools. See the full <a href="https://www.makersquare.ai/curriculum">curriculum at makersquare.ai/curriculum</a>.</p>
+
+      <!-- FAQ -->
+      <div class="faq-section">
+        <div class="faq-label">Frequently asked questions</div>
+        <div class="faq-item">
+          <div class="faq-q">What are the best AI tools for marketing teams?</div>
+          <div class="faq-a">The most useful AI tools for marketing teams in 2026 are Claude and ChatGPT for content creation and strategy synthesis, Perplexity for competitive research, Make or Zapier for multi-step automation workflows, and Midjourney or DALL-E for creative assets. The best stack depends on your specific bottlenecks — start by identifying your 3 most time-consuming recurring tasks before choosing tools.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">How can marketing teams use AI beyond ChatGPT?</div>
+          <div class="faq-a">Moving beyond basic ChatGPT use means building custom workflows rather than one-off prompts. This includes: custom Claude Projects trained on your brand voice, automated content pipelines that pull from your analytics and generate briefs, competitive monitoring workflows, and campaign performance synthesis tools. The goal is making AI a reliable system, not a tool you consult occasionally.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">How does AI help small marketing teams compete with larger ones?</div>
+          <div class="faq-a">AI gives small marketing teams leverage on production — the ability to create more content, run more tests, and analyze more data than their headcount would suggest. A 2-person marketing team with strong AI workflows can produce the output of a 5-person team without AI. The constraint shifts from production capacity to strategic judgment, which is where small teams can win anyway.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Can AI replace marketing team members?</div>
+          <div class="faq-a">AI doesn't replace marketing professionals — it replaces the production-heavy, repetitive parts of their jobs. The strategic, creative, and relational parts of marketing remain human. What changes is how much time those humans spend on execution versus judgment. Teams that integrate AI well tend to be more productive and better at strategy, not smaller.</div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="post-cta">
+        <p>Marketing professionals at MakerSquare leave with working content pipelines and automation workflows — not just new prompts. Two weeks, in person in Austin, with a system you can deploy on day one back at work.</p>
+        <div class="post-cta-actions">
+          <a href="https://www.makersquare.ai/curriculum" class="btn btn-arrow" style="background:var(--white);color:var(--navy);font-weight:700;">Download the curriculum </a>
+          <a href="https://ai-builder-brief.beehiiv.com/" target="_blank" rel="noopener" class="btn" style="background:transparent;color:rgba(255,255,255,0.65);border:1.5px solid rgba(255,255,255,0.2);">Join the AI Builder Brief</a>
+        </div>
+      </div>
+
+      <!-- Sources -->
+      <div class="sources-section">
+        <div class="sources-label">Sources</div>
+        <div class="source-item">
+          <div class="source-num">1</div>
+          <div>
+            <div class="source-name"><a href="https://www.hubspot.com/state-of-marketing" target="_blank" rel="noopener">State of Marketing 2025</a></div>
+            <div class="source-detail">HubSpot · 2025 · 74% of marketers say AI changed how they work; only 34% have integrated it into consistent workflows</div>
+          </div>
+        </div>
+        <div class="source-item">
+          <div class="source-num">2</div>
+          <div>
+            <div class="source-name"><a href="https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/ai-powered-marketing-and-sales-reach-new-heights-with-generative-ai" target="_blank" rel="noopener">AI-Powered Marketing and Sales Reach New Heights with Generative AI</a></div>
+            <div class="source-detail">McKinsey &amp; Company · 2024 · 20–30% campaign performance improvement and 40–60% content production time reduction with systematic AI integration</div>
+          </div>
+        </div>
+        <div class="source-item">
+          <div class="source-num">3</div>
+          <div>
+            <div class="source-name"><a href="https://www.bcg.com/publications/2025/ai-at-work-momentum-builds-but-gaps-remain" target="_blank" rel="noopener">AI at Work 2025: Momentum Builds, but Gaps Remain</a></div>
+            <div class="source-detail">BCG · 2025 · AI adoption gap between organizations using AI systematically vs. occasionally widens every quarter</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="footer-logo"><img src="../logo-dark.png" alt="MakerSquare — School of Applied AI"></a><div class="footer-tagline">School of Applied AI</div>
+        <p>In-person AI training in Austin, TX &mdash; 2-week intensive, 3-day workshops, and private team programs.</p>
+        <a href="/enroll" class="btn btn-primary btn-arrow" style="font-size:0.82rem;padding:10px 20px;">Enroll </a>
+      </div>
+      <div>
+        <div class="footer-col-title">Program</div>
+        <ul class="footer-col-links">
+          <li><a href="/use-cases">Use Cases</a></li>
+          <li><a href="/curriculum">Curriculum</a></li>
+          <li><a href="/pricing">Pricing</a></li>
+          <li><a href="/enroll">Enroll</a></li>
+          <li><a href="/scholarship">Scholarship</a></li>
+          <li><a href="/faq">FAQ</a></li>
+          <li><a href="/demo-day">Demo Day</a></li>
+          <li><a href="/workshops">Workshops</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Company</div>
+        <ul class="footer-col-links">
+          <li><a href="/about">About</a></li>
+          <li><a href="/team">Team</a></li>
+          <li><a href="/corporate">Corporate Training</a></li>
+          <li><a href="/comparison">How We Compare</a></li>
+          <li><a href="/alumni">Alumni</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Learn</div>
+        <ul class="footer-col-links">
+          <li><a href="/events">Events</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="https://ai-builder-brief.beehiiv.com" target="_blank" rel="noopener">Newsletter &mdash; AI Builder Brief</a></li>
+          <li><a href="/guides">Guides</a></li>
+          <li><a href="/quickstart">Claude Quickstart Guide</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Contact</div>
+        <a href="mailto:hello@makersquare.ai" class="footer-contact-email">hello@makersquare.ai</a>
+        <p style="font-size:0.82rem;color:rgba(255,255,255,0.4);">Austin, TX</p>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/company/makersquare-ai" target="_blank" rel="noopener" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>Follow us on LinkedIn</a>
+          <a href="https://www.meetup.com/makersquare-ai/" target="_blank" rel="noopener" aria-label="Meetup"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="width:15px;height:15px;fill:currentColor;flex-shrink:0;"><path d="M19.24 0H4.76A4.76 4.76 0 000 4.76v14.48A4.76 4.76 0 004.76 24h14.48A4.76 4.76 0 0024 19.24V4.76A4.76 4.76 0 0019.24 0zM8.64 16.8c-.48.12-.97-.12-1.2-.56L5.28 11.6a1 1 0 011.8-.88l1.56 3.16 3.84-7.8a1 1 0 011.8.88l-4.2 8.52a1 1 0 01-.44.52zm9.12-1.12a1 1 0 01-1.32.48l-2.16-1.04-1.04 2.16a1 1 0 01-1.8-.88l1.32-2.72 2.72 1.32-.48-2.96a1 1 0 011.96-.32l.64 3.96h.16z"/></svg>Events</a>
+        </div>
+      </div>
+    </div>
+    <div style="border-top:1px solid rgba(255,255,255,0.08);padding:var(--s8) 0;margin-bottom:var(--s6);">
+      <div style="max-width:480px;">
+        <div style="font-size:0.75rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:var(--s3);">AI Builder Brief</div>
+        <div style="font-size:1.05rem;font-weight:700;color:var(--white);margin-bottom:6px;">Get AI Builder Brief free every Tuesday.</div>
+        <div style="font-size:0.85rem;color:rgba(255,255,255,0.5);margin-bottom:var(--s4);">Three AI stories that matter, one prompt to try this week.</div>
+        <a href="https://ai-builder-brief.beehiiv.com/subscribe?utm_source=website&utm_medium=site&utm_campaign=newsletter" target="_blank" rel="noopener" class="btn btn-primary btn-arrow">Subscribe free </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">&copy; 2026 MakerSquare LLC. Austin, TX.</div>
+      <div class="footer-bottom-links">
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.min.js"></script>
+<script src="https://forms.zoho.com/js/zf_gclid.js"></script>
+</body>
+</html>
