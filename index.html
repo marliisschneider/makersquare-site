@@ -260,7 +260,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
 <!-- SEP WORKSHOP ANNOUNCEMENT BAR -->
-<a href="/workshops" id="ws-bar" style="display:block;text-decoration:none;background:linear-gradient(90deg,#181849,#403DD8,#181849);background-size:200% 100%;animation:wsbarSweep 8s linear infinite;color:#fff;text-align:center;padding:9px 16px;font-size:0.82rem;font-weight:600;position:relative;z-index:60;">
+<a href="/workshops" id="ws-bar" style="position:fixed;top:0;left:0;right:0;height:38px;display:flex;align-items:center;justify-content:center;text-decoration:none;background:linear-gradient(90deg,#181849,#403DD8,#181849);background-size:200% 100%;animation:wsbarSweep 8s linear infinite;color:#fff;text-align:center;padding:0 16px;font-size:0.82rem;font-weight:600;z-index:1001;overflow:hidden;white-space:nowrap;">
   <span style="display:inline-flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:center;">
     <span style="width:7px;height:7px;border-radius:50%;background:#fbbf24;box-shadow:0 0 8px rgba(245,158,11,0.9);display:inline-block;"></span>
     <strong style="color:#fbbf24;">Build Your First AI Agent</strong> &middot; Sep 11&ndash;13, a weekend in Austin &middot; <span id="ws-bar-cd">early bird ends Aug 21</span>
@@ -271,7 +271,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script>(function(){var el=document.getElementById('ws-bar-cd');if(!el)return;var end=new Date('2026-08-21T23:59:59-05:00');function t(){var d=end-Date.now();if(d<=0){el.textContent='early bird ends today';return;}var days=Math.floor(d/864e5);el.textContent='early bird ends in '+days+' day'+(days===1?'':'s')+' \u00B7 $999';setTimeout(t,3600000);}t();})();</script>
 
 <!-- NAV -->
-<nav class="nav">
+<nav class="nav" style="top:38px;">
   <div class="nav-inner">
     <a href="/" class="nav-logo" style="align-items:center;"><img src="logo-light.png" alt="MakerSquare — School of Applied AI" width="1158" height="300"><span class="nav-tagline" style="padding-left:4px;">School of Applied AI</span></a>
     <ul class="nav-links">
@@ -318,7 +318,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 <!-- ═══ HERO ═══ -->
-<section class="hero" style="min-height:auto;padding:calc(var(--nav-height) + var(--s7)) 0 var(--s10);">
+<section class="hero" style="min-height:auto;padding:calc(var(--nav-height) + 38px + var(--s7)) 0 var(--s10);">
   <div class="hero-glow"></div>
   <div class="hero-glow-2"></div>
   <div class="hero-dots"></div>
