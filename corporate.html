@@ -888,6 +888,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="section-label reveal" style="justify-content:center;">Get started</div>
       <h2 class="reveal">Tell us about <span class="text-accent">your team.</span></h2>
       <p class="reveal" style="font-size:0.9rem;color:var(--text-secondary);margin-top:var(--s2);margin-bottom:var(--s6);">We respond within one business day. If it sounds like a fit, we schedule a 45-minute discovery call. No pitch deck, no demo. Just a conversation about where AI could make the biggest difference for your team right now.</p>
+      <p class="reveal" style="font-size:0.9rem;color:var(--text-muted);margin-top:calc(-1 * var(--s4));margin-bottom:var(--s6);">Prefer to talk it through now? <button type="button" data-lt-trigger style="background:none;border:none;padding:0;color:#403DD8;font-weight:600;font-size:0.9rem;cursor:pointer;text-decoration:underline;">Book a 15-minute call &rarr;</button></p>
 
       <!-- FORM PLACEHOLDER -->
       <div id="zf_div_kYTFNWAyd-_QE2cD3XdNwC1mJe5sVVaavC45od_tmt0"></div>
@@ -1004,6 +1005,114 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </style>
 <script defer src="/js/ms-chat.js?v=6"></script>
 <script defer src="/js/ms-ideas.js?v=2"></script>
+
+<!-- Book-a-call modal (ported for B2B: call option alongside the form) -->
+<div id="lt-modal" class="cm-modal" role="dialog" aria-modal="true" aria-labelledby="lt-modal-title" aria-hidden="true">
+  <div class="cm-modal__backdrop" data-lt-close></div>
+  <div class="cm-modal__dialog">
+    <button type="button" class="cm-modal__close" aria-label="Close" data-lt-close>&times;</button>
+    <div class="cm-modal__head">
+      <h3 id="lt-modal-title">Book your call</h3>
+      <p>Grab a time that works and tell us about your goals. It's a relaxed intro call with our team — we walk you through the program and help you figure out if it's the right fit. No prep needed.</p>
+    </div>
+    <div class="cm-modal__body">
+      <div id="zf_div_bookcall"></div>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  var modal = document.getElementById('lt-modal');
+  if(!modal) return;
+  var iframeMounted = false;
+  var lastFocused = null;
+
+  function mountIframe(){
+    if(iframeMounted) return;
+    iframeMounted = true;
+    try{
+      var f = document.createElement('iframe');
+      var ifrmSrc = 'https://forms.zohopublic.com/makersquare/form/Bookyourcall/formperma/QhUmSj0eZVSD4t1kRDrV8BfgTOxUamerj-v7ZB2_K_w?zf_rszfm=1';
+      try{
+        if (typeof ZFAdvLead != 'undefined' && typeof zfutm_zfAdvLead != 'undefined') {
+          for (var i = 0; i < ZFAdvLead.utmPNameArr.length; i++) {
+            var utmPm = ZFAdvLead.utmPNameArr[i];
+            utmPm = (ZFAdvLead.isSameDomian && (ZFAdvLead.utmcustPNameArr.indexOf(utmPm) == -1)) ? 'zf_' + utmPm : utmPm;
+            var utmVal = zfutm_zfAdvLead.zfautm_gC_enc(ZFAdvLead.utmPNameArr[i]);
+            if (typeof utmVal !== 'undefined' && utmVal !== '') {
+              ifrmSrc += (ifrmSrc.indexOf('?') > 0 ? '&' : '?') + utmPm + '=' + utmVal;
+            }
+          }
+        }
+        if (typeof ZFLead !== 'undefined' && typeof zfutm_zfLead !== 'undefined') {
+          for (var j = 0; j < ZFLead.utmPNameArr.length; j++) {
+            var utmPm2 = ZFLead.utmPNameArr[j];
+            var utmVal2 = zfutm_zfLead.zfutm_gC_enc(ZFLead.utmPNameArr[j]);
+            if (typeof utmVal2 !== 'undefined' && utmVal2 !== '') {
+              ifrmSrc += (ifrmSrc.indexOf('?') > 0 ? '&' : '?') + utmPm2 + '=' + utmVal2;
+            }
+          }
+        }
+      }catch(e){}
+      f.src = ifrmSrc;
+      f.style.border = 'none';
+      f.style.height = '640px';
+      f.style.width = '100%';
+      f.style.maxWidth = '560px';
+      f.style.display = 'block';
+      f.style.transition = 'all 0.5s ease';
+      f.setAttribute('aria-label', 'Schedule An Intro Call - 45 minutes');
+      var d = document.getElementById('zf_div_bookcall');
+      d.appendChild(f);
+      window.addEventListener('message', function(e){
+        var evntData = e.data;
+        if (evntData && evntData.constructor == String) {
+          var zf_ifrm_data = evntData.split('|');
+          if (zf_ifrm_data.length == 2 || zf_ifrm_data.length == 3) {
+            var zf_perma = zf_ifrm_data[0];
+            var zf_ifrm_ht_nw = (parseInt(zf_ifrm_data[1], 10) + 15) + 'px';
+            var iframe = document.getElementById('zf_div_bookcall').getElementsByTagName('iframe')[0];
+            if (iframe && (iframe.src).indexOf('formperma') > 0 && (iframe.src).indexOf(zf_perma) > 0) {
+              if (iframe.style.height != zf_ifrm_ht_nw) {
+                iframe.style.height = zf_ifrm_ht_nw;
+              }
+            }
+          }
+        }
+      }, false);
+    }catch(e){}
+  }
+
+  function openModal(trigger){
+    lastFocused = trigger || document.activeElement;
+    mountIframe();
+    modal.classList.add('open');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('cm-modal-open');
+    var closeBtn = modal.querySelector('.cm-modal__close');
+    if(closeBtn) closeBtn.focus();
+  }
+
+  function closeModal(){
+    modal.classList.remove('open');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('cm-modal-open');
+    if(lastFocused && lastFocused.focus) lastFocused.focus();
+  }
+
+  document.querySelectorAll('[data-lt-trigger]').forEach(function(btn){
+    btn.addEventListener('click', function(){ openModal(btn); });
+  });
+
+  modal.querySelectorAll('[data-lt-close]').forEach(function(el){
+    el.addEventListener('click', closeModal);
+  });
+
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && modal.classList.contains('open')) closeModal();
+  });
+})();
+</script>
 </body>
 </html>
 
