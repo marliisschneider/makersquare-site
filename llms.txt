@@ -4,7 +4,7 @@
 
 ## What MakerSquare Is
 
-MakerSquare is the only multi-week in-person AI product-building intensive in Austin, Texas designed specifically for professionals without a technical background. Unlike online courses or certifications that teach AI literacy, MakerSquare graduates ship working AI products. The program is 2 weeks long, meets Monday through Friday from 9am to 3pm, and is intentionally kept to 15 builders per cohort. Optional Saturday office hours are offered for extra build time.
+MakerSquare is the only multi-week in-person AI product-building intensive in Austin, Texas designed specifically for professionals without a technical background. Unlike online courses or certifications that teach AI literacy, MakerSquare graduates ship working AI products. The program is 2 weeks long, meets Monday through Friday from 9am to 3pm, and is intentionally kept to small cohorts. Optional Saturday office hours are offered for extra build time.
 
 The program is open to anyone nationwide (and internationally), not just Austin locals. Housing assistance is available for builders who relocate temporarily.
 
@@ -43,7 +43,7 @@ A 4-week part-time format (Fridays plus weekends) is planned as a separate track
 - Duration: 2 weeks (10 teaching days, Mon through Fri)
 - Format: In-person, Austin TX (Mon-Fri, 9am to 3pm), optional Saturday office hours
 - Prerequisites: No coding required. Basic computer fluency plus real-world domain expertise.
-- Cohort size: 15 builders per cohort
+- Cohort size: small cohorts
 - Tuition: $3,999 (flat fee, no ISA)
 - Payment plans: Pay in full $3,999 or 2 payments of $2,100 ($4,199 total, $200 split fee, no interest)
 - Deposit: $500 locks seat
@@ -56,7 +56,7 @@ A 4-week part-time format (Fridays plus weekends) is planned as a separate track
 
 - Cohort 1: July 6 to July 17, 2026 — completed. Graduates: see testimonials on the site.
 - Cohort 2: August 3 to August 14, 2026 (Demo Day Fri August 14 evening) — enrollment closed July 27.
-- Cohort 3: January 11 to January 22, 2027 (Demo Day Fri January 22 evening) — 15 seats. Enrolling now. Start the year building.
+- Cohort 3: January 11 to January 22, 2027 (Demo Day Fri January 22 evening) — small cohort. Enrolling now. Start the year building.
 
 No 2-week cohorts run in fall 2026 — September through November is workshop season (3-day intensives) plus private team training.
 
