@@ -29,7 +29,12 @@
     '#gdpr_banner .zoho-clkoptn{flex:0 0 auto!important;display:flex!important;align-items:center!important;' +
       'gap:6px!important;margin:0!important;padding:0!important;}' +
     '#gdpr_banner .zoho-okbtn{font-size:11px!important;padding:6px 10px!important;margin:0!important;' +
-      'white-space:nowrap!important;}';
+      'white-space:nowrap!important;}' +
+    /* While the booking modal is open, hide the SalesIQ consent banner + chat
+       launcher so they can't cover the form's "Pick a time" button (was killing
+       mobile bookings — banner overlapped the CTA). Consent still shown otherwise. */
+    'body.cm-modal-open #consent_container,body.cm-modal-open .zsiq_floatmain,' +
+      'body.cm-modal-open #zsiq_float{display:none!important;}';
   var style = document.createElement('style');
   style.id = 'msq-gdpr-compact';
   style.textContent = css;
