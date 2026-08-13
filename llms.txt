@@ -50,6 +50,8 @@ A 4-week part-time format (Fridays plus weekends) is planned as a separate track
 - Scholarship: $500 off for military, first responders, and educators ($3,499 total)
 - Housing: Partner Airbnb discounts from $1,600/month
 - Corporate / team training (primary offer): private 3-day team AI workshops (custom quote, proposal within 24 hours), custom company programs for teams of 3 to 15, and individual seats in public cohorts ($3,999). Austin-based, on-site or at MakerSquare. Book an intro call at makersquare.ai/corporate to scope. Reference build: RoverPass (Austin campground-reservation company, CEO is MakerSquare co-founder Ravi Parikh) runs a live AI ops command center tracking hundreds of campgrounds in real time, built on the same stack MakerSquare teaches — case study at makersquare.ai/case-study-roverpass.
+- [Case Study (Cameron Dowd — sales AE built an AI prospecting tool)](https://www.makersquare.ai/case-study-cameron-dowd)
+- [Case Study (Ted Kilgore — job seeker built an AI company-matcher)](https://www.makersquare.ai/case-study-ted-kilgore)
 - Alumni subscription: $199/month (optional, first month free)
 
 ## 2026 Cohort Calendar (2-Week Intensive)
@@ -105,19 +107,21 @@ Ravi Parikh — Co-founder, MakerSquare. Austin-based serial entrepreneur; co-fo
 
 ## Contact & Links
 
-- Website: https://www.makersquare.ai/
-- Enroll: https://www.makersquare.ai/enroll
-- Curriculum: https://www.makersquare.ai/curriculum
-- Tuition: https://www.makersquare.ai/pricing
-- Comparison: https://www.makersquare.ai/comparison
-- Corporate Training: https://www.makersquare.ai/corporate
-- Workshops (fall 2026 lineup): https://www.makersquare.ai/workshops
-- Case Study (RoverPass AI ops command center): https://www.makersquare.ai/case-study-roverpass
-- AI Training in Austin (individuals + teams): https://www.makersquare.ai/ai-training-austin
-- Train Your Team vs. Hire an AI Consultant: https://www.makersquare.ai/ai-training-vs-consultants
-- Scholarship: https://www.makersquare.ai/scholarship
-- Housing: https://www.makersquare.ai/housing
-- Team: https://www.makersquare.ai/team
-- Use Cases by Industry: https://www.makersquare.ai/use-cases
-- Email: hello@makersquare.ai
-- LinkedIn: https://www.linkedin.com/company/makersquare-ai
+- [Website](https://www.makersquare.ai/)
+- [Enroll](https://www.makersquare.ai/enroll)
+- [Curriculum](https://www.makersquare.ai/curriculum)
+- [Tuition](https://www.makersquare.ai/pricing)
+- [Comparison](https://www.makersquare.ai/comparison)
+- [Corporate Training](https://www.makersquare.ai/corporate)
+- [Workshops (fall 2026 lineup)](https://www.makersquare.ai/workshops)
+- [Case Study (RoverPass AI ops command center)](https://www.makersquare.ai/case-study-roverpass)
+- [Case Study (Cameron Dowd — sales AE built an AI prospecting tool)](https://www.makersquare.ai/case-study-cameron-dowd)
+- [Case Study (Ted Kilgore — job seeker built an AI company-matcher)](https://www.makersquare.ai/case-study-ted-kilgore)
+- [AI Training in Austin (individuals + teams)](https://www.makersquare.ai/ai-training-austin)
+- [Train Your Team vs. Hire an AI Consultant](https://www.makersquare.ai/ai-training-vs-consultants)
+- [Scholarship](https://www.makersquare.ai/scholarship)
+- [Housing](https://www.makersquare.ai/housing)
+- [Team](https://www.makersquare.ai/team)
+- [Use Cases by Industry](https://www.makersquare.ai/use-cases)
+- [Email](mailto:hello@makersquare.ai)
+- [LinkedIn](https://www.linkedin.com/company/makersquare-ai)
