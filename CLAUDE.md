@@ -18,7 +18,7 @@ This site relies on a set of marketing / lead-attribution scripts. They are crit
 
 **In `<head>`:**
 
-1. **Google Tag Manager** — `GTM-MJTW9WQ3` inline snippet (look for `<!-- Google Tag Manager -->`)
+1. **Google Tag Manager** — `GTM-MJTW9WQ3`, **delayed-load** (Aug 2026): the loader initializes `dataLayer` immediately but defers the gtm.js request until first user interaction or 3.5s, to keep third-party tags off the mobile critical path. Do NOT revert to the eager `(function(w,d,s,l,i)...` snippet — it tanks mobile performance. dataLayer still queues events so nothing is lost.
 2. **Zoho `zf_gtm` postMessage listener** — pushes form events into `dataLayer` (look for `type == "zf_gtm"`)
 3. **Zoho `ZFLead` UTM + `fbclid` passthrough** — header reads `<!-- Zoho UTM passthrough (modificado: incluye fbclid) -->`
 4. **X (Twitter) conversion pixel** — header reads `<!-- X conversion tracking base code -->`, calls `twq('config','rcjjn')`
