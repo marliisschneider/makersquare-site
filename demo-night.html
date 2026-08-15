@@ -222,9 +222,20 @@
   .dn-what-grid { grid-template-columns: 1fr; }
   .dn-nav-inner .btn { display: none; }
   .dn-cta-code { flex-direction: column; gap: 4px; }
-  .dn-hero-split { flex-direction: column !important; text-align: center !important; }
-  .dn-hero-split .dn-eyebrow { margin-left: auto; margin-right: auto; }
-  .dn-qr-card { width: 100%; max-width: 240px; }
+  .dn-hero { min-height: auto; align-items: flex-start; padding: var(--s7) 0; }
+  .dn-hero-split { flex-direction: column; text-align: left; gap: var(--s5); }
+  .dn-hero-split .dn-eyebrow { margin-left: 0; margin-right: auto; }
+  .dn-offer-grid { grid-template-columns: 1fr !important; }
+  .dn-qr-card { width: 100%; max-width: 260px; margin: var(--s4) auto 0; }
+  #dn-ws .dnws-grid { grid-template-columns: 1fr !important; }
+  .dn-hero h1 { font-size: clamp(1.5rem, 7vw, 2rem); }
+  #dn-ws h2, .dn-section h2, .dn-cta h2 { font-size: clamp(1.6rem, 7vw, 2.1rem); }
+  body { overflow-x: hidden; }
+  .dn-hero .dn-hero-left { max-width: calc(100vw - 40px) !important; width: calc(100vw - 40px) !important; }
+  .dn-hero .dn-hero-left > * { max-width: 100% !important; }
+}
+@media (max-width: 900px) {
+  .dn-offer-grid { grid-template-columns: 1fr 1fr; }
 }
 </style>
 </head>
@@ -249,14 +260,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- ═══ HERO ═══ -->
 <section class="dn-hero">
-  <div class="dn-hero-inner dn-hero-split" style="display:flex;align-items:center;gap:var(--s7);text-align:left;">
+  <div class="dn-hero-inner dn-hero-split" style="display:flex;align-items:stretch;gap:var(--s7);text-align:left;">
     <!-- Left: all content -->
-    <div style="flex:1;min-width:0;">
+    <div class="dn-hero-left" style="flex:1;min-width:0;">
       <div class="dn-eyebrow"><span class="dn-eyebrow-dot"></span>For tonight's attendees only</div>
       <h1 style="font-size:clamp(1.6rem,3.6vw,2.6rem);line-height:1.05;margin:var(--s3) 0 0;">You saw it tonight. <span style="color:var(--indigo);">Claim your $150 off.</span></h1>
       <p class="dn-hero-sub" style="margin-top:var(--s2);font-size:0.95rem;">For tonight&#8217;s attendees — use code <strong style="color:var(--navy);">DEMO150</strong> at checkout. Expires <strong>Fri, Aug 21</strong>.</p>
 
-      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s3);margin-top:var(--s4);">
+      <div class="dn-offer-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s3);margin-top:var(--s4);">
         <a href="/workshop-register" style="text-decoration:none;color:inherit;background:var(--white);border:1px solid rgba(24,24,73,0.1);border-radius:var(--r-lg);padding:var(--s4);display:flex;flex-direction:column;box-shadow:0 4px 20px rgba(24,24,73,0.06);">
         <div style="font-size:0.62rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;color:var(--indigo);">Next up &middot; Sep 11&ndash;13</div>
         <div style="font-family:var(--font-display);font-size:1rem;font-weight:800;color:var(--navy);margin-top:5px;line-height:1.15;">Build Your First AI Agent</div>
