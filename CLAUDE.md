@@ -18,7 +18,13 @@ This site relies on a set of marketing / lead-attribution scripts. They are crit
 
 **In `<head>`:**
 
-1. **Google Tag Manager** — `GTM-MJTW9WQ3`, **delayed-load** (Aug 2026): the loader initializes `dataLayer` immediately but defers the gtm.js request until first user interaction or 3.5s, to keep third-party tags off the mobile critical path. Do NOT revert to the eager `(function(w,d,s,l,i)...` snippet — it tanks mobile performance. dataLayer still queues events so nothing is lost.
+1. **Google Tag Manager** — `GTM-MJTW9WQ3`, **delayed-load**. The loader creates `dataLayer` and pushes `gtm.start` immediately, but defers the `gtm.js` **request** until first user interaction (`scroll`, `mousemove`, `mousedown`, `touchstart`, `keydown`, `click`) or 3500ms, whichever comes first. `dataLayer` still queues, so pushes that happen before GTM loads — Zoho `zf_gtm` form events, `msc_chat_open`, `ms_ideas_submit` — are all replayed when it arrives. Identified by the `<!-- Google Tag Manager (delayed-load) -->` comment.
+
+   ⚠️ **Do NOT revert to the eager `(function(w,d,s,l,i)...j.src=...` one-liner.** It puts 344KB of JS (`gtm.js` 155KB + `gtag/js` 189KB) on the mobile critical path. Measured Aug 20 2026: with the eager loader, blog posts ran mobile LCP 5.3–6.3s while the homepage — whose LCP element is text, not an image — sat at 2.9s. Blog perf score was 63.
+
+   **History, so this doesn't regress again.** This doc claimed delayed-load had shipped in Aug 2026, but it had not: all 87 pages were still running the eager snippet as of Aug 20 2026, when it was actually implemented and rolled out. If you are reading this and the greps below fail, someone reverted it — find out why before re-landing, because the tradeoff is real: sessions that bounce in under 3.5s with zero interaction are not measured.
+
+   **Known tradeoff.** Bounced sessions shorter than 3.5s with no interaction go unmeasured. That was accepted deliberately (Ravi, Aug 20 2026) to get blog Core Web Vitals passing. If ad measurement fidelity matters more than CWV for a given campaign, lower the 3500ms or revert — but do it knowingly, and update this section.
 2. **Zoho `zf_gtm` postMessage listener** — pushes form events into `dataLayer` (look for `type == "zf_gtm"`)
 3. **Zoho `ZFLead` UTM + `fbclid` passthrough** — header reads `<!-- Zoho UTM passthrough (modificado: incluye fbclid) -->`
 4. ~~**X (Twitter) conversion pixel**~~ — REMOVED Aug 2026 (ads paused; it hurt mobile perf + best-practices with no ads running). Re-add the `twq(.config.,.rcjjn.)` snippet if X ads resume.
@@ -56,7 +62,13 @@ grep -L "ns.html?id=GTM-MJTW9WQ3" *.html | grep -v HANDOFF
 grep -L "zf_gclid.js" *.html | grep -v HANDOFF
 grep -L "modificado: incluye fbclid" *.html | grep -v HANDOFF
 grep -L 'type == "zf_gtm"' *.html | grep -v HANDOFF
-grep -L "twq('config','rcjjn')" *.html | grep -v HANDOFF
+```
+
+Plus these two, to catch a delayed-GTM regression. The first should print nothing; the second should print nothing (no page may carry the eager loader):
+
+```bash
+grep -L "Google Tag Manager (delayed-load)" *.html blog/*.html guides/*.html | grep -v HANDOFF
+grep -rl "j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window" . --include='*.html'
 ```
 
 ---
