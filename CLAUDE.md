@@ -98,6 +98,26 @@ The program moved from admissions → open enrollment. Never use the old languag
 
 ---
 
+## Images
+
+**On-page `<img src>` uses `.webp`. `og:image` and JSON-LD `image` stay `.png`/`.jpg`.**
+
+That split is deliberate. WebP cut the blog hero art 58% (median 45KB to 21KB), but social and
+AI scrapers are less reliable with WebP than browsers are, so the crawler-facing tags keep the
+original raster. Both files live in the repo; neither is dead.
+
+- Blog/guide art: `images/**/foo-og.png` is the source of truth. Generate the sibling with
+  `cwebp -q 82 -m 6 images/blog/foo-og.png -o images/blog/foo-og.webp`, then point the on-page
+  `<img src>` at the `.webp` and leave `og:image` + JSON-LD `image` on the `.png`.
+- **New posts:** the auto-publish script writes `<img src="...-og.png">`. That still works, it is
+  just slower. Run the cwebp step and swap the `src` when you next touch the post.
+- Logos: `logo-light.webp` / `logo-dark.webp` are **348x90** (2x the largest render, 174x45), and
+  the `width`/`height` attributes must say `348`/`90`. The 1158x300 `logo-dark.png` is kept
+  because the JSON-LD publisher logo declares those exact dimensions — do not resize that file.
+- Every `<img>` needs `width` + `height` (CLS), the hero needs `fetchpriority="high"` (it is the
+  LCP element), and everything below the fold needs `loading="lazy"`.
+- JPEGs are capped at 1200px on the long edge, quality 78, progressive. Nothing above that ships.
+
 ## CSS rules — do not break these
 
 - **`css/style.min.css` is minified — do not edit it directly.** Override with inline `style=""` attributes on elements when needed.
