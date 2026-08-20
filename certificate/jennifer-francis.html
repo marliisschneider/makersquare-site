@@ -4,8 +4,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-MJTW9WQ3');</script>
+<!-- Google Tag Manager (delayed-load) -->
+<!-- dataLayer is created and gtm.start pushed IMMEDIATELY so queued events are never lost.
+     Only the gtm.js request is deferred: it fires on first user interaction, or after 3500ms,
+     whichever comes first. Do NOT revert to the eager loader - it puts 344KB of JS on the
+     mobile critical path and was measured pushing blog LCP to 6.3s. -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+var done=false,t=null,evts=['scroll','mousemove','mousedown','touchstart','keydown','click'],opts={passive:true,capture:true};
+function load(){if(done)return;done=true;if(t)w.clearTimeout(t);
+for(var k=0;k<evts.length;k++){w.removeEventListener(evts[k],load,opts);}
+var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);}
+for(var k=0;k<evts.length;k++){w.addEventListener(evts[k],load,opts);}
+t=w.setTimeout(load,3500);})(window,document,'script','dataLayer','GTM-MJTW9WQ3');</script>
 <!-- End Google Tag Manager -->
 <title>Certificate of Completion — Jennifer Francis | MakerSquare</title>
 <link rel="icon" type="image/png" href="../favicon.png">
