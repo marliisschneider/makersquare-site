@@ -18,6 +18,14 @@ j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNo
 for(var k=0;k<evts.length;k++){w.addEventListener(evts[k],load,opts);}
 t=w.setTimeout(load,3500);})(window,document,'script','dataLayer','GTM-MJTW9WQ3');</script>
 <!-- End Google Tag Manager -->
+<!-- Zoho UTM passthrough (modificado: incluye fbclid) -->
+<script>
+(function(){var p=new URLSearchParams(window.location.search);var keys=['utm_source','utm_medium','utm_campaign','utm_content','utm_term','fbclid'];var stored={};keys.forEach(function(k){if(p.get(k))stored[k]=p.get(k);});if(Object.keys(stored).length){try{sessionStorage.setItem('zf_utm',JSON.stringify(stored));}catch(e){}}})();
+</script>
+<!-- Zoho zf_gtm postMessage listener -->
+<script>
+window.addEventListener('message',function(e){if(e.data&&e.data.type=='zf_gtm'){window.dataLayer=window.dataLayer||[];window.dataLayer.push(e.data);}});
+</script>
 <title>The Real Cost of Waiting to Build AI Skills | MakerSquare</title>
 <meta name="description" content="Hiring in AI-exposed roles slowed 14% in a year. 53% of employers cannot find graduates with the right AI skills. What the data shows.">
 <meta name="robots" content="index, follow">
@@ -326,6 +334,8 @@ t=w.setTimeout(load,3500);})(window,document,'script','dataLayer','GTM-MJTW9WQ3'
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJTW9WQ3"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+
+<script src="https://forms.zoho.com/js/zf_gclid.js"></script>
 
 <!-- NAV -->
 <nav class="nav">
