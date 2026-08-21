@@ -136,6 +136,33 @@ The program moved from admissions → open enrollment. Never use the old languag
 
 ---
 
+## The blog auto-publisher writes from a stale template
+
+`makersquare-ops-bot` publishes one post a day, straight to `main`, from a template that lives outside
+this repo. It is not kept in step with the site, so each new post arrives missing whatever changed since
+the template was last touched. This is the single largest source of rot in `blog/`.
+
+Measured on 2026-08-21: one auto-published post reintroduced the eager GTM loader (in a line-wrapped form
+that a fixed-string grep misses), the retired X pixel, 3 `/pricing` redirect links, three unsized images,
+a PNG hero, no `BreadcrumbList`, no Keep-reading block, and an Article node missing `image` and
+`dateModified`. Four of the eight posts still carrying the X pixel in Aug 2026 were its output.
+
+**Two guards now exist. Neither replaces fixing the template.**
+
+1. `scripts/conventions-check.py` — fails on any regression of the conventions in this file. Wired into
+   CI, and the workflow now triggers `on: push` to `main` as well as `pull_request`, because the bot never
+   opens a PR so `pull_request` alone never saw its commits. Errors are things that are clean today and
+   must stay clean; the known unsized-image backlog on top-level pages warns instead of blocking, so the
+   gate stays trustworthy.
+2. `scripts/normalize-post.py <post.html>` — brings a post up to convention: delayed GTM, X-pixel removal,
+   `/pricing` rewrite, footer Austin link, webp hero with dims and `fetchpriority`, `BreadcrumbList`,
+   Article `image`/`dateModified`, and a Keep-reading block. Idempotent. It inserts a hub-only
+   Keep-reading block, so **add the three cluster siblings by hand** — the script cannot know which
+   cluster a new post belongs to.
+
+**When a post lands and CI goes red:** run `normalize-post.py` on it, add the cluster links, add its
+`.webp` card to `blog/index.html`, and add inbound links from 2-3 sibling posts so it is not an orphan.
+
 ## Images
 
 **On-page `<img src>` uses `.webp`. `og:image` and JSON-LD `image` stay `.png`/`.jpg`.**
