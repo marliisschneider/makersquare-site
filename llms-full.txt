@@ -15,7 +15,7 @@ Contact: hello@makersquare.ai · https://www.makersquare.ai/
 
 <!-- https://www.makersquare.ai/ -->
 
-# MakerSquare — School of Applied AI | AI Bootcamp in Austin TX
+# MakerSquare — 2-Week AI Bootcamp in Austin, TX
 
 > In-person AI builder program in Austin, TX for operators, founders, and professionals. Build real AI products in 2 weeks. No coding required.
 
@@ -284,9 +284,9 @@ One sentence about your work — and Claude sketches three tools you could reali
 
 <!-- https://www.makersquare.ai/immersive -->
 
-# 2-Week AI Bootcamp for Non-Technical Professionals | MakerSquare
+# 2-Week AI Bootcamp for Non-Technical Professionals
 
-> The MakerSquare Immersive: 2 weeks in person at Capital Factory in Austin, TX. Ship 3 working AI products by Demo Day — no coding background. $3,999, small cohorts.
+> Two weeks in person at Capital Factory in Austin, TX. Ship 3 working AI products by Demo Day, no coding background needed. $3,999, small cohorts.
 
 Cohort 3 · Jan 11 · Austin, TX
 
@@ -537,7 +537,7 @@ $5,999, discounted to $3,999
 **Guaranteed:** leave with a live website, a working AI agent, and an automated workflow — or a full refund.
 
 Schedule An Intro Call
-Pay in full · or 2 payments of $2,100 · $500 scholarship for vets, first responders & educators
+Pay in full · $500 scholarship for vets, first responders & educators
 
 Housing & travel not included — [out-of-town options from ~$1,600/mo](/housing)
 
@@ -1114,7 +1114,7 @@ From Cohort 1
 
 <!-- https://www.makersquare.ai/workshops -->
 
-# AI Workshops in Austin, TX — 3-Day Intensives, Fall 2026 | MakerSquare
+# AI Workshops in Austin, TX — 3-Day Intensives, Fall 2026
 
 > 3-day in-person AI workshops in Austin, TX. Hands-on skill sprints for operators, ops teams, and builders. Small cohorts. No coding required. From $999.
 
@@ -1621,6 +1621,8 @@ What if I can’t commit to 3 full days? Each day builds on the last — missing
 Can my company pay by invoice? Yes. Email [hello@makersquare.ai](mailto:hello@makersquare.ai) and we’ll send a proposal and invoice within 24 hours. PO-based payment is supported.
 
 What’s the refund policy? Full refund up to 14 days before the workshop start date. 50% refund up to 48 hours before. No refund after the workshop begins.
+
+Is this a vibe coding bootcamp? The November workshop is, in the sense people usually mean it — you describe what you want and an AI writes the code. The difference from most vibe coding you have seen is that you leave with the app actually deployed at a real URL, on a real database, using the tools engineers use: Claude Code, Supabase and Vercel. Three days, no coding background required. It is a workshop rather than a bootcamp: 3 days, not weeks. If you want the longer version, that is the [2-week program](/immersive).
 
 Want to go deeper?
 
@@ -2318,7 +2320,7 @@ We'll send the full **2-week curriculum** and notify you when new cohort dates o
 
 # Scholarships | MakerSquare AI Program
 
-> MakerSquare offers scholarships for people who were laid off and for those who have served their community — military, first responders, and educators. Apply for up to $4,000 free.
+> MakerSquare offers scholarships for people who were laid off and for those who have served — military, first responders, and educators.
 
 Limited · 3 spots available
 
@@ -2434,7 +2436,7 @@ Details
 
 ✓ $500 off the $3,999 standard tuition, bringing it to **$3,499**
 
-✓ Available on all payment plan options (discount applies to total)
+✓ Applied to your total tuition, before employer reimbursement
 
 ✓ Stackable with employer reimbursement
 
@@ -2466,7 +2468,7 @@ I'm retired. Do I still qualify? Yes. The scholarship applies to both active and
 
 I'm not sure if I qualify. Should I still apply? Yes. Submit the form anyway. We'd rather err on the side of including people. We'll let you know within 2 business days.
 
-Does the discount work with payment plans? Yes. The $500 discount is applied to your total tuition ($3,499), then you can split that across payments.
+How and when do I pay the discounted tuition? The $500 discount comes off the $3,999 standard tuition, so you pay $3,499 in full at enrollment, in one charge via Stripe. There is no deposit and no split-payment option.
 
 Can my employer also pay? Yes. The scholarship is stackable with employer reimbursement. Your employer covers the discounted tuition, not the original amount.
 
@@ -2688,7 +2690,7 @@ Or enroll first and we'll walk you through housing options after you secure your
 
 <!-- https://www.makersquare.ai/faq -->
 
-# FAQ | MakerSquare AI Bootcamp Austin — Every Question Answered
+# FAQ | MakerSquare AI Bootcamp in Austin, TX
 
 > Every question about MakerSquare answered: cost, curriculum, schedule, Demo Day, refunds, and housing. 2-week in-person AI bootcamp in Austin, TX.
 
@@ -2866,9 +2868,9 @@ Schedule An Intro Call
 
 <!-- https://www.makersquare.ai/comparison -->
 
-# MakerSquare vs. Wharton, General Assembly & AI Bootcamps (2026)
+# MakerSquare vs. Wharton, General Assembly & More (2026)
 
-> Honest comparison of MakerSquare vs. Wharton AI ($13,500), UT Austin, General Assembly, Section, and Maven. Price, format, what you ship, and which program is right for you.
+> Honest comparison of MakerSquare vs. Wharton AI ($13,500), UT Austin, General Assembly, Section, and Maven: price, format, and what you ship.
 
 2026 Comparison
 
@@ -2878,20 +2880,20 @@ There are more AI training programs launching every month. This page gives you a
 
 **MakerSquare is the only multi-week in-person AI builder program currently available.** Every other multi-week program is online, evenings, or async — lecture decks and video calls, not building. If you want immersive, in-person, and long enough to actually change how you work — there is currently one option.
 
-| | Wharton AI Generative AI for Business | UT Austin AI & ML / Exec Ed | General Assembly AI/ML Part-Time | Section / Maven Live Online Cohorts | MakerSquare Austin, TX · In-Person |
-| --- | --- | --- | --- | --- | --- |
-| Price | $13,500 | $2,800–$5,000+ | ~$4,000 | $500–$2,000 | $3,999 |
-| Format | In-person, Philadelphia | Online (async + live) | Part-time, online evenings | Live online evenings / weekends | In-person, Austin TX |
-| Duration | 4 consecutive days | 9–12 weeks | ~12 weeks | 4–6 weeks | 2 weeks |
-| Schedule | 4 full weekdays | Evenings & async, self-paced | Mon + Thu evenings, 6–9pm | Evenings or weekend seminars | Mon–Fri, 9am–3pm |
-| What you ship | No deployed products | Certificate, no live product | Portfolio project, varies | 1 project, may not be live | a live website, a working AI agent, and an automated workflow — deployed |
-| Hands-on building | Strategy & theory focused | Some labs, mostly theory | Mixed — lectures + exercises | Mixed, depends on course | Hands-on from Day 1 |
-| No coding required | Business audience, minimal code | Python basics often required | Programming prerequisites vary | Varies by course | Never. Domain expertise is the edge. |
-| Cohort size | Executive group, ~20–40 | Online, varies widely | Online, ~20–50 | Online, ~20–80 | 15 people, in the room |
-| Curriculum freshness | Updated periodically | Updated by semester | Updated infrequently | Fixed per cohort | Updated every cohort |
-| Public Demo Day | No | No | No | No | Yes — Austin tech community |
-| Austin tech network | No | No | No | No | In-person, builders & operators |
-| Money-back guarantee | No | No | No | No | Full refund if your website, agent & workflow don’t ship |
+| | Wharton AI Generative AI for Business | UT Austin AI & ML / Exec Ed | General Assembly AI/ML Part-Time | Section / Maven Live Online Cohorts | GetSmarter University short courses | MakerSquare Austin, TX · In-Person |
+| --- | --- | --- | --- | --- | --- | --- |
+| Price | $13,500 | $2,800–$5,000+ | ~$4,000 | $500–$2,000 | $2,711–$2,800+ varies by university | $3,999 |
+| Format | In-person, Philadelphia | Online (async + live) | Part-time, online evenings | Live online evenings / weekends | Online, part-time | In-person, Austin TX |
+| Duration | 4 consecutive days | 9–12 weeks | ~12 weeks | 4–6 weeks | 6–12 weeks | 2 weeks |
+| Schedule | 4 full weekdays | Evenings & async, self-paced | Mon + Thu evenings, 6–9pm | Evenings or weekend seminars | Weekly modules, own pace | Mon–Fri, 9am–3pm |
+| What you ship | No deployed products | Certificate, no live product | Portfolio project, varies | 1 project, may not be live | Certificate, no live product | a live website, a working AI agent, and an automated workflow — deployed |
+| Hands-on building | Strategy & theory focused | Some labs, mostly theory | Mixed — lectures + exercises | Mixed, depends on course | Case studies & assignments | Hands-on from Day 1 |
+| No coding required | Business audience, minimal code | Python basics often required | Programming prerequisites vary | Varies by course | Varies by course | Never. Domain expertise is the edge. |
+| Cohort size | Executive group, ~20–40 | Online, varies widely | Online, ~20–50 | Online, ~20–80 | Online, varies widely | 15 people, in the room |
+| Curriculum freshness | Updated periodically | Updated by semester | Updated infrequently | Fixed per cohort | Updated by intake | Updated every cohort |
+| Public Demo Day | No | No | No | No | No | Yes — Austin tech community |
+| Austin tech network | No | No | No | No | No | In-person, builders & operators |
+| Money-back guarantee | No | No | No | No | No | Full refund if your website, agent & workflow don’t ship |
 
 Prices and formats reflect publicly available information as of mid-2026. Verify current pricing directly with each provider.
 
@@ -2985,6 +2987,34 @@ MakerSquare — best for
 
 Bottom line: same price, completely different format. General Assembly is right if you need to fit learning around your life. MakerSquare is right if you're willing to step away from your life for 2 weeks to change it. The completion rate and shipped-product outcomes are very different between evening programs and immersive ones — that's the honest trade-off.
 
+### MakerSquare vs. GetSmarter University Short Courses
+
+GetSmarter is not a school. It is a delivery platform owned by 2U that partners with universities — MIT, Oxford, Cambridge, LSE and others — to run their online short courses. So “a GetSmarter course” always means a specific university’s course delivered on GetSmarter’s platform, which is why the name shows up next to institutions that otherwise have nothing to do with each other. Courses run 6 to 12 weeks online, part-time, with weekly modules and real deadlines, and you finish with a certificate from the partner university. Pricing depends entirely on which university: MIT’s 6-week digital business strategy course runs about $2,800, Oxford’s executive leadership programme about $2,711.
+
+The comparison with MakerSquare is unusually clean, because the two are not trying to do the same thing. GetSmarter sells you a university credential earned online around your job. MakerSquare sells you two weeks in a room in Austin and three deployed products. If a hiring manager or a promotion committee needs to see an institution’s name, GetSmarter delivers something we cannot. If you need something running on your own data by month end, a certificate does not do that.
+
+GetSmarter — best for
+
+- A credential with a recognised university name on it
+
+- Learning part-time without taking leave or travelling
+
+- Structured deadlines rather than pure self-paced video
+
+- Anyone outside Austin who wants institutional weight
+
+MakerSquare — best for
+
+- Leaving with deployed products rather than a certificate
+
+- People who want the tools built on their own real work
+
+- Non-technical builders who do not want prerequisites
+
+- Anyone who has finished an online course and still cannot build
+
+Bottom line: pick GetSmarter if the credential is the point — it is the cheaper way to get a university name attached to your AI education, and the deadlines make it more likely you finish than a self-paced course. Pick MakerSquare if what you actually need is a working tool. On the question people search for most, Wharton versus GetSmarter: Wharton is roughly five times the price for four in-person days and an executive-education brand, while GetSmarter is weeks of structured online work for a partner university’s certificate. Neither ends with you having built anything that runs.
+
 ### MakerSquare vs. Section, Maven & Live Online AI Courses
 
 Section (formerly Section4) and Maven both offer cohort-based live online AI courses — typically 4–6 weeks, evening or weekend sessions, at $500–$2,000. These are among the better online options: live instruction, peer accountability, and structured cohorts rather than pure self-paced video. Section focuses on business leaders; Maven hosts courses from independent instructors across a range of AI topics.
@@ -3042,9 +3072,9 @@ No coding test · No interview · Confirmed in 24 hrs
 
 <!-- https://www.makersquare.ai/use-cases -->
 
-# AI Use Cases by Industry — What Business Teams Automate | MakerSquare Austin
+# AI Use Cases by Industry: What Business Teams Automate
 
-> See what professionals from every industry build at MakerSquare. Real AI tools for legal, healthcare, finance, real estate, marketing, and more. No coding required.
+> See what professionals from every industry build at MakerSquare: AI tools for legal, healthcare, finance, real estate, and marketing. No coding.
 
 Built by industry experts, not engineers
 
@@ -3496,9 +3526,9 @@ Next cohort: July 6, 2026 · Austin, TX · small cohorts · $3,999
 
 <!-- https://www.makersquare.ai/about -->
 
-# About MakerSquare | In-Person AI Builder Program in Austin TX
+# About MakerSquare | In-Person AI Program in Austin, TX
 
-> MakerSquare was built to close the gap between people who talk about AI and people who build with it. Founded by Marliis Schneider in Austin, TX. The story behind the program.
+> MakerSquare closes the gap between people who talk about AI and people who build with it. Founded by Marliis Schneider in Austin, TX.
 
 Our story
 
@@ -3637,7 +3667,7 @@ Schedule An Intro Call
 
 # Our Team | MakerSquare AI Bootcamp Austin
 
-> Meet the operators, builders, and advisors behind MakerSquare in Austin, TX. Built by people with real world experience in startups, tech, and business operations.
+> Meet the operators, builders, and advisors behind MakerSquare in Austin, TX — people with real experience in startups, tech, and operations.
 
 Team
 
@@ -3758,9 +3788,9 @@ Apply to join us as a mentor, guest speaker, Demo Day judge, investor, or hiring
 
 <!-- https://www.makersquare.ai/demo-day -->
 
-# Demo Day | MakerSquare AI Bootcamp Austin — Public AI Product Showcase
+# Demo Day: Public AI Product Showcase in Austin, TX
 
-> Every MakerSquare cohort closes with a public Demo Day in Austin, TX. Builders present live AI products to investors, operators, and Austin
+> Every MakerSquare cohort closes with a public Demo Day in Austin, TX. Builders present live AI products to investors and operators. Free to attend.
 
 4 cohorts in 2026.
 
@@ -3905,7 +3935,7 @@ No coding test · No interview · Confirmed in 24 hrs
 
 # Alumni | MakerSquare AI Bootcamp — What Builders Go On to Do
 
-> MakerSquare alumni have built real AI products and taken them back to their industries. Cohort 1 graduates July 2026. See what operators, founders, and professionals build and do next.
+> MakerSquare alumni build real AI products and take them back to their industries. See what operators, founders, and professionals do next.
 
 Alumni
 
@@ -4183,9 +4213,9 @@ Tell us what you’re weighing. If a consultant is genuinely your better option,
 
 <!-- https://www.makersquare.ai/case-study-cameron-dowd -->
 
-# Case Study: A Sales AE Built His Own AI Prospecting Tool | MakerSquare
+# Case Study: A Sales AE Built His Own AI Prospecting Tool
 
-> Cameron Dowd, a SaaS account executive with no coding background, built and deployed an AI tool that researches accounts and drafts personalized outreach into Gmail - in the MakerSquare 2-week program.
+> Cameron Dowd, a SaaS account executive with no coding background, built an AI tool that researches accounts and drafts outreach into Gmail.
 
 Case study · Sales
 
@@ -4281,9 +4311,9 @@ We train your team to build it themselves — a private 3-day workshop or a cust
 
 <!-- https://www.makersquare.ai/case-study-ted-kilgore -->
 
-# Case Study: A Job Seeker Built an AI Tool to Target the Right Companies | MakerSquare
+# Case Study: A Job Seeker Built an AI Company-Matcher
 
-> Ted Kilgore, a job seeker with no technical background, built and deployed JobFit - an AI tool that ranks best-fit companies from a resume - in the MakerSquare 2-week program.
+> Ted Kilgore, a job seeker with no technical background, built and deployed JobFit — an AI tool that ranks best-fit companies from a resume.
 
 Case study · Career
 
@@ -4438,7 +4468,7 @@ Offer expires Friday, August 21 at midnight · $150 off with DEMO150
 
 <!-- https://www.makersquare.ai/drinks-and-ai -->
 
-# Drinks & AI — Free Demo Night + Austin Builder Networking | MakerSquare
+# Drinks & AI: Free Demo Night + Austin Builder Meetup
 
 > Free drinks, live AI demos by non-coders, and Austin
 
@@ -4576,7 +4606,7 @@ July 10, 2026
 
 5 min read
 
-![The 10 AI tools every knowledge worker needs in 2026.](../images/blog/10-ai-tools-every-knowledge-worker-needs-2026-og.png)
+![The 10 AI tools every knowledge worker needs in 2026.](../images/blog/10-ai-tools-every-knowledge-worker-needs-2026-og.webp)
 
 Key takeaways
 
@@ -4640,6 +4670,16 @@ Is it worth paying for AI tools or are free versions enough?
 
 For professionals using AI on real work, paid versions of Claude, Perplexity, and Cursor typically pay for themselves within a few weeks. The free tiers are useful for evaluating tools, but they impose rate limits and context restrictions that become friction at the point where the tools start being genuinely useful.
 
+Keep reading
+
+- [Claude vs. ChatGPT vs. Gemini: which AI should you actually use at work?](/blog/claude-vs-chatgpt-vs-gemini-for-work-2026)
+
+- [How to use Claude for business: a practical guide](/blog/how-to-use-claude-for-business)
+
+- [What is Cursor AI — and can someone with no coding background actually use it?](/blog/what-is-cursor-ai-beginners-guide)
+
+- [All MakerSquare build guides](/guides)
+
 MakerSquare's two-week program teaches all of the tools on this list — in the context of real projects, with the structure that turns tool access into actual skill. See what students build and how the curriculum is structured.
 
 [Get the curriculum](https://www.makersquare.ai/curriculum)
@@ -4673,11 +4713,205 @@ Reading this for your team? We run private AI training for Austin companies — 
 
 ---
 
+<!-- https://www.makersquare.ai/blog/agentic-ai-courses-2026 -->
+
+# Agentic AI Courses in 2026: An Honest Comparison
+
+> Agentic AI courses split into four types that barely compete. What each one leaves you with, the prerequisite trap, and how to pick in ten minutes.
+
+- [About](/about)
+
+- [Use Cases](/use-cases)
+
+- [Curriculum](/curriculum)
+
+- [For Companies](/corporate)
+
+- [Pricing](/immersive)
+
+- [Blog](/blog)
+
+- [Enroll](/enroll)
+
+[Secure Your Spot](/enroll)
+
+[← Blog](/blog)
+
+AI Skills
+
+## Agentic AI courses in 2026: an honest comparison.
+
+Marliis Schneider
+
+August 20, 2026
+
+7 min read
+
+![Agentic AI courses in 2026: an honest comparison.](../images/blog/agentic-ai-courses-2026-og.webp)
+
+Key takeaways
+
+- “Agentic AI course” now describes four products that barely compete with each other: university certificates, cloud-vendor training paths, marketplace video courses, and in-person build programs.
+
+- The question that separates them is not the syllabus. It is what you have running when you finish. Most produce a certificate. Few produce a deployed agent.
+
+- Microsoft and IBM publish genuinely free agentic AI material. If a paid course only teaches concepts, that free material is your benchmark for whether the price is doing anything.
+
+- Prerequisites are the trap. Several courses labelled for beginners assume you already write Python, and say so only once you are inside.
+
+Search for “agentic AI course” and the first page hands you Johns Hopkins, Carnegie Mellon, MIT, Google, Microsoft, Udemy, Udacity and Coursera in one list. They are priced from zero to five figures. They are not alternatives to each other, and nothing on that page tells you which one matches what you are trying to do.
+
+Here is the sorting logic we use when people ask us this, including the cases where the answer is not us.
+
+### “Agentic AI course” describes four different products
+
+**University certificate programs.** The [Johns Hopkins agentic AI certificate](https://online.lifelonglearning.jhu.edu/jhu-certificate-program-agentic-ai), [Carnegie Mellon’s program](https://execonline.cs.cmu.edu/agentic-ai-program) and [MIT’s Applied Agentic AI for Organizational Transformation](https://professionalprograms.mit.edu/online-program-agentic-ai-organizational-transformation/) sit here. You are buying a credential with a recognisable name on it, delivered online over several weeks, usually built around cases and frameworks rather than shipping software.
+
+**Cloud-vendor training paths.** [Microsoft Learn](https://learn.microsoft.com/en-us/training/paths/gh-developing-agentic-systems-1) and [Google Skills](https://www.skills.google/paths/3273) teach agents inside their own stack. These are accurate, current, and free or near-free. They are also, reasonably, about their platform.
+
+**Marketplace video courses.** [Udemy](https://www.udemy.com/course/the-complete-agentic-ai-engineering-course/), [Udacity](https://www.udacity.com/course/agentic-ai--nd900), [Coursera](https://www.coursera.org/courses?query=agentic%20ai), [DeepLearning.AI](https://www.deeplearning.ai/courses/agentic-ai). Deep, self-paced, cheap relative to the universities. Completion is the problem, not content.
+
+**In-person build programs.** A cohort in a room for a fixed stretch, building on your own work. Far fewer of these exist because they do not scale. MakerSquare is one; we are in Austin.
+
+### What each type actually leaves you with
+
+| Type | Assumes you code? | What you have at the end | Credential |
+| --- | --- | --- | --- |
+| University certificate | Sometimes | Frameworks, case analysis, a plan | Yes, and it carries weight |
+| Cloud-vendor path | Usually yes | Working knowledge of one platform | Badge |
+| Marketplace video course | Often yes, stated late | Notes, sample repos, unfinished projects | Certificate of completion |
+| In-person build program | No | A deployed agent doing your real work | Usually none |
+
+That last column is the honest trade. If you need the credential for a promotion case or a procurement process, the universities win and nothing else is close. If you need something running by month end, a certificate does not help you.
+
+### The prerequisite trap
+
+This is where most non-technical people lose money. A course can be genuinely introductory about *agents* and still assume you are fluent in Python, virtual environments and API keys. The listing says beginner. It means beginner to agents, not beginner to programming.
+
+Before paying, find the actual first exercise. If it opens a terminal or a notebook and starts with `pip install`, you now know what the course really requires. That is not a knock on the course. It is a mismatch you can detect in two minutes.
+
+The related question is worth separating too: [using AI and building with AI are different skills](/blog/using-ai-vs-building-with-ai), and a lot of course titles blur them deliberately.
+
+### What a certificate in agentic AI is worth
+
+Two things, and it is worth being precise about which you are buying.
+
+A university certificate is a signal to other people: a hiring manager, a promotion committee, a client. It travels. It is also the expensive option, and it is generally not evidence that you can build anything.
+
+A completion certificate from a video marketplace is a signal to nobody. That is not cynicism, it is just how they are read. Buy those courses for the content if the content is good, and ignore the certificate.
+
+Neither is the same as a working agent you can open in a meeting. If that is what you actually want, optimise for it directly rather than hoping it falls out of a syllabus.
+
+### How to choose in about ten minutes
+
+Answer three questions in order.
+
+**Do you need a credential with a name on it?** If yes, stop here and pick the university program you can afford. Nothing else substitutes.
+
+**Can you already write code?** If yes, the free Microsoft and Google paths plus a marketplace course will get you a long way for very little, and you should start there before spending real money.
+
+**If no to both** — you cannot code, and you want something running rather than a certificate — then self-paced video is the format that fails you most often, and the thing to look for is a program with a deadline, a room, and a requirement that you ship. That is the category we built MakerSquare for, and if Austin does not work for you, the criterion still holds: find the one that makes you deploy something.
+
+If you want the same comparison across general AI programs rather than agent-specific ones, we keep one at [best AI courses and bootcamps in 2026](/blog/best-ai-courses-bootcamps-2026), and a direct [MakerSquare vs. Wharton, UT Austin and General Assembly breakdown](/comparison).
+
+Frequently asked questions
+
+Which course is best for agentic AI?
+
+There is no single best one, because “agentic AI course” covers four different products. If you need a recognised credential, a university certificate from Johns Hopkins, Carnegie Mellon or MIT is the only category that delivers it. If you already write code, the free Microsoft Learn and Google Skills paths cover the ground cheaply. If you cannot code and want something actually running at the end, look for an in-person program with a deadline and a shipping requirement, because self-paced video is the format that fails that goal most often.
+
+How do I learn agentic AI?
+
+Start by checking whether the material assumes programming. Free official paths from Microsoft and IBM teach the concepts well, so use those as your benchmark before paying for anything. Then build one small agent against your own real work rather than a tutorial dataset — the gap between following a walkthrough and shipping something that runs on your data is where most of the learning actually is.
+
+How can I become certified in agentic AI?
+
+Certification comes from university executive-education programs — Johns Hopkins, Carnegie Mellon and MIT all run agentic AI certificates online over several weeks. Cloud vendors issue badges for their own platforms. Completion certificates from video marketplaces are a different thing and are generally not read as credentials by hiring managers, so buy those courses for the content rather than the certificate.
+
+Where do I learn agentic AI?
+
+Free and official: Microsoft Learn, Google Skills and IBM’s Cognitive Class. Paid and self-paced: DeepLearning.AI, Udemy, Udacity, Coursera. Credentialed: Johns Hopkins, Carnegie Mellon, MIT. In person and build-focused: a small number of cohort programs, including MakerSquare in Austin. Pick the row that matches whether you need a credential, a skill or a shipped product.
+
+Keep reading
+
+- [Best AI Courses and Bootcamps in 2026 (Honest Comparison)](/blog/best-ai-courses-bootcamps-2026)
+
+- [In-person AI program vs. online course: which actually changes your career?](/blog/ai-bootcamp-vs-online-course)
+
+- [What do you actually learn at an AI bootcamp? A week-by-week breakdown.](/blog/what-do-you-learn-at-an-ai-bootcamp)
+
+- [The 2-week AI bootcamp in Austin](/immersive)
+
+- [AI for content creators: beyond writing the first draft](/blog/ai-for-content-creators-2026)
+
+- [AI for sales teams: what top performers are building now](/blog/ai-for-sales-teams)
+
+- [AI for marketing teams: beyond using ChatGPT](/blog/ai-for-marketing-teams)
+
+- [See AI use cases by industry](/use-cases)
+
+MakerSquare is a 2-week in-person AI builder program in Austin, TX for operators, founders, and professionals - the people who understand their business well enough to build with AI, not just use it. See what two weeks of hands-on building looks like.
+
+[Get the curriculum](https://www.makersquare.ai/curriculum?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_ai-for-seo_curriculum_20260914)
+[Sign up for the newsletter](https://ai-builder-brief.beehiiv.com/?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_ai-for-seo_newsletter_20260914)
+
+Sources
+
+1
+
+[DeepLearning.AI — Agentic AI](https://www.deeplearning.ai/courses/agentic-ai)
+
+Self-paced course platform
+
+2
+
+[Johns Hopkins — Agentic AI Certificate Program](https://online.lifelonglearning.jhu.edu/jhu-certificate-program-agentic-ai)
+
+University certificate, online
+
+3
+
+[Carnegie Mellon — Agentic AI Program](https://execonline.cs.cmu.edu/agentic-ai-program)
+
+University executive education
+
+4
+
+[MIT — Applied Agentic AI for Organizational Transformation](https://professionalprograms.mit.edu/online-program-agentic-ai-organizational-transformation/)
+
+University professional program
+
+5
+
+[Microsoft Learn — Developing in Agentic AI Systems](https://learn.microsoft.com/en-us/training/paths/gh-developing-agentic-systems-1)
+
+Free vendor training path
+
+6
+
+[Google Skills — Agentic AI on Google Cloud](https://www.skills.google/paths/3273)
+
+Vendor training path
+
+7
+
+[IBM Cognitive Class — Introduction to Agentic AI](https://cognitiveclass.ai/courses/introduction-to-agentic-ai)
+
+Free introductory course
+
+8
+
+[Udacity — Agentic AI Nanodegree](https://www.udacity.com/course/agentic-ai--nd900)
+
+Paid self-paced program
+
+---
+
 <!-- https://www.makersquare.ai/blog/ai-adoption-strategy-non-technical-teams -->
 
-# AI Adoption Strategy for Non-Technical Teams: What Works | MakerSquare
+# AI Adoption Strategy for Non-Technical Teams: What Works
 
-> AI adoption strategy for non-technical teams — what the research shows actually works, which approaches consistently fail, and how to build a rollout that sticks past the first 30 days.
+> What actually works for AI adoption on non-technical teams, which approaches keep failing, and how to build a rollout that survives 30 days.
 
 [← Blog](/blog)
 
@@ -4691,7 +4925,7 @@ July 8, 2026
 
 5 min read
 
-![AI adoption strategy for non-technical teams: what works.](../images/blog/ai-adoption-nontechnical-og.png)
+![AI adoption strategy for non-technical teams: what works.](../images/blog/ai-adoption-nontechnical-og.webp)
 
 Key takeaways
 
@@ -4759,6 +4993,16 @@ How long does it take for a non-technical team to become proficient with AI?
 
 BCG research establishes five or more hours of structured, applied AI practice as the threshold for regular adoption. For non-technical teams specifically, reaching that threshold through deliberate practice on real work tasks typically takes four to eight weeks of consistent use — not the two or three sessions that most corporate rollouts provide.
 
+Keep reading
+
+- [The real cost of hiring an AI developer vs. training your team.](/blog/hiring-ai-developer-vs-training-team-cost)
+
+- [How to pitch AI training to your manager and actually get the budget approved.](/blog/how-to-pitch-ai-training-to-your-manager)
+
+- [The companies getting real returns from AI have something in common. It's not the software.](/blog/how-to-get-roi-from-ai-at-work)
+
+- [Private AI training for your team](/corporate)
+
 MakerSquare is a 2-week in-person AI builder program in Austin, TX — designed specifically for non-technical operators, founders, and professionals. See exactly what the program covers and what students build.
 
 [Get the curriculum](https://www.makersquare.ai/curriculum)
@@ -4794,9 +5038,9 @@ Reading this for your team? We run private AI training for Austin companies — 
 
 <!-- https://www.makersquare.ai/blog/ai-automation-for-non-engineers -->
 
-# AI Automation for Non-Engineers: What's Actually Possible | MakerSquare
+# AI Automation for Non-Engineers: What's Actually Possible
 
-> AI automation for non-engineers has moved far beyond simple chatbots. Here
+> AI automation has moved past chatbots. An honest look at the multi-step workflows and custom tools you can build without writing code.
 
 - [About](/about)
 
@@ -4806,7 +5050,7 @@ Reading this for your team? We run private AI training for Austin companies — 
 
 - [For Companies](/corporate)
 
-- [Pricing](/pricing)
+- [Pricing](/immersive)
 
 - [Blog](/blog)
 
@@ -4826,7 +5070,7 @@ August 18, 2026
 
 5 min read
 
-![AI automation for non-engineers: what](../images/blog/ai-automation-non-engineers-og.png)
+![AI automation for non-engineers: what](../images/blog/ai-automation-non-engineers-og.webp)
 
 Key takeaways
 
@@ -4894,6 +5138,20 @@ What's the difference between AI automation and regular automation?
 
 Traditional automation (like Zapier's basic workflows) moves data from one place to another in a fixed pattern. AI automation adds intelligence — the ability to interpret, synthesize, write, and make judgment calls within defined parameters. This means AI automation can handle unstructured inputs (an email, a voice memo, a meeting transcript) and produce structured, usable outputs, rather than just routing structured data between systems.
 
+Keep reading
+
+- [The 10 AI tools every knowledge worker needs in 2026.](/blog/10-ai-tools-every-knowledge-worker-needs-2026)
+
+- [Claude vs. ChatGPT vs. Gemini: which AI should you actually use at work?](/blog/claude-vs-chatgpt-vs-gemini-for-work-2026)
+
+- [How to use Claude for business: a practical guide](/blog/how-to-use-claude-for-business)
+
+- [All MakerSquare build guides](/guides)
+
+- [Learn Claude Code Without a Coding Background](/blog/learn-claude-code-without-coding)
+
+- [How to build a custom AI workflow in a weekend](/blog/build-custom-ai-workflow-weekend)
+
 MakerSquare takes non-engineers from zero to working AI automations in 2 weeks — in person, in Austin. Download the curriculum to see exactly what gets built.
 
 [Download the curriculum](https://www.makersquare.ai/curriculum)
@@ -4939,7 +5197,7 @@ June 25, 2026
 
 5 min read
 
-![In-person AI program vs. online course: which actually changes your career?](../images/blog/ai-bootcamp-vs-course-og.png)
+![In-person AI program vs. online course: which actually changes your career?](../images/blog/ai-bootcamp-vs-course-og.webp)
 
 Key takeaways
 
@@ -5021,6 +5279,18 @@ What is the difference between an AI bootcamp and an online AI course?
 
 Online courses are self-paced and asynchronous, with no built-in accountability and high dropout rates. In-person AI intensives are cohort-based, scheduled, and project-driven. The key difference is not content but structure: who you build with, whether you ship something real, and whether you are held to a timeline.
 
+Keep reading
+
+- [What do you actually learn at an AI bootcamp? A week-by-week breakdown.](/blog/what-do-you-learn-at-an-ai-bootcamp)
+
+- [The best AI courses and bootcamps in 2026: an honest comparison.](/blog/best-ai-courses-bootcamps-2026)
+
+- [Why in-person AI learning produces better outcomes than self-paced: what the research shows.](/blog/in-person-ai-learning-vs-self-paced-research)
+
+- [The 2-week AI bootcamp in Austin](/immersive)
+
+- [Agentic AI Courses in 2026: An Honest Comparison](/blog/agentic-ai-courses-2026)
+
 You already know the online version didn't stick. MakerSquare is two weeks, in person, in Austin. You leave with something built around your actual work — not a course completion certificate, but a tool that's already running. The curriculum shows exactly what that looks like.
 
 [Get the curriculum](https://www.makersquare.ai/curriculum?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_ai-bootcamp-vs-online-course_curriculum_2026-06-25)
@@ -5064,7 +5334,7 @@ Reading this for your team? We run private AI training for Austin companies — 
 
 # AI for Accountants: What's Changing in 2026 | MakerSquare
 
-> AI for accountants in 2026 is automating the busywork - reconciliation, categorization, close - and freeing CPAs for advisory work. Here
+> AI is automating accounting busywork — reconciliation, categorization, close — and freeing CPAs for advisory work. What is real and what to do.
 
 - [About](/about)
 
@@ -5074,7 +5344,7 @@ Reading this for your team? We run private AI training for Austin companies — 
 
 - [For Companies](/corporate)
 
-- [Pricing](/pricing)
+- [Pricing](/immersive)
 
 - [Blog](/blog)
 
@@ -5094,7 +5364,7 @@ August 20, 2026
 
 6 min read
 
-![AI for Accountants: What](../images/blog/ai-for-accountants-og.png)
+![AI for Accountants: What](../images/blog/ai-for-accountants-og.webp)
 
 Key takeaways
 
@@ -5154,6 +5424,14 @@ Is AI-assisted accounting accurate enough to trust?
 
 AI is reliable for rule-based work (categorization, reconciliation against known rules) but still needs professional review for judgment calls and anomalies. The winning pattern is AI for the repetitive layer plus a human review pass - which is exactly where accountants' expertise now adds the most value.
 
+Keep reading
+
+- [AI for accounting and bookkeeping: what non-accountants need to know](/blog/ai-for-accounting-and-bookkeeping)
+
+- [AI for finance teams: what to automate first](/blog/ai-for-finance-teams)
+
+- [See AI use cases by industry](/use-cases)
+
 MakerSquare is a 2-week in-person AI builder program in Austin, TX for operators, founders, and professionals who want to build real AI tools around their own work - not just use them. See what two weeks of hands-on building looks like.
 
 [Get the curriculum](https://www.makersquare.ai/curriculum?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_ai-for-accountants_curriculum_20260916)
@@ -5183,7 +5461,7 @@ Ledge · 2026 · Thomson Reuters estimate of 240 hours saved per CPA; 7.5-day fa
 
 <!-- https://www.makersquare.ai/blog/ai-for-accounting-and-bookkeeping -->
 
-# AI for Accounting and Bookkeeping: What Non-Accountants Need to Know | MakerSquare
+# AI for Accounting and Bookkeeping: A Non-Accountant's Guide
 
 > AI for accounting is automating bookkeeping, reconciliation, and reporting. Here
 
@@ -5199,7 +5477,7 @@ August 9, 2026
 
 5 min read
 
-![AI for accounting and bookkeeping: what non-accountants need to know](../images/blog/ai-accounting-bookkeeping-og.png)
+![AI for accounting and bookkeeping: what non-accountants need to know](../images/blog/ai-accounting-bookkeeping-og.webp)
 
 If you run a business and your accounting feels like a quarterly ordeal rather than a real-time view of your finances, AI for accounting is worth understanding. The technology isn't new — QuickBooks has been automating categorization for years — but the sophistication has increased significantly, and the tools accessible to small and mid-size businesses without dedicated finance teams have caught up with what enterprise software has offered for a decade.
 
@@ -5309,6 +5587,14 @@ What AI accounting tools are best for small businesses?
 
 For most small businesses: QuickBooks with AI features enabled, or Xero with its automation and app integrations. For businesses with complex AP, Stampli or BILL (formerly Bill.com) AI layers are worth the additional cost. For very small businesses or freelancers, Wave (free) or FreshBooks with AI-assisted categorization is sufficient.
 
+Keep reading
+
+- [AI for finance teams: what to automate first](/blog/ai-for-finance-teams)
+
+- [AI for Accountants: What's Changing in 2026](/blog/ai-for-accountants)
+
+- [See AI use cases by industry](/use-cases)
+
 MakerSquare is an in-person AI builder program in Austin, TX. Two weeks. Hands-on. Real outcomes. No coding background required.
 
 [Download the curriculum](https://www.makersquare.ai/curriculum)
@@ -5338,9 +5624,9 @@ deloitte.com
 
 <!-- https://www.makersquare.ai/blog/ai-for-business-owners-non-technical -->
 
-# AI for Business Owners: Where to Start If You're Not Technical | MakerSquare
+# AI for Business Owners: Where to Start If Non-Technical
 
-> AI for business owners doesn
+> AI for business owners takes no technical skill. Where to start, what to automate first, and which tools actually matter for a small business.
 
 [← Blog](/blog)
 
@@ -5354,7 +5640,7 @@ August 3, 2026
 
 5 min read
 
-![AI for business owners: where to start if you](../images/blog/ai-for-business-owners-og.png)
+![AI for business owners: where to start if you](../images/blog/ai-for-business-owners-og.webp)
 
 Key takeaways
 
@@ -5430,6 +5716,16 @@ How much does it cost for a small business to use AI tools?
 
 The core AI tools for small businesses are surprisingly affordable. Claude Pro is $20/month. ChatGPT Plus is $20/month. Zapier's starter plan starts at $20/month. For most small businesses, getting started with AI tools costs $40–60/month — less than a few hours of contractor time. The ROI typically shows up within the first month if you're using the tools on the right tasks.
 
+Keep reading
+
+- [AI tools for consultants: what's actually worth learning](/blog/ai-tools-for-consultants)
+
+- [AI for freelancers: the tools that actually move the needle](/blog/ai-for-freelancers-and-consultants)
+
+- [AI for e-commerce: what's actually working in 2026.](/blog/ai-for-ecommerce-2026)
+
+- [See AI use cases by industry](/use-cases)
+
 Ready to build AI into how your business actually runs? Download the MakerSquare curriculum to see how operators and founders are building real AI systems in two weeks.
 
 [Download the curriculum](https://www.makersquare.ai/curriculum)
@@ -5459,9 +5755,9 @@ McKinsey Global Institute · 2023 · Productivity potential and task-level impac
 
 <!-- https://www.makersquare.ai/blog/ai-for-content-creators-2026 -->
 
-# AI for Content Creators: Beyond Writing the First Draft | MakerSquare
+# AI for Content Creators: Beyond Writing the First Draft
 
-> AI for content creators in 2026 — how to use AI for research, repurposing, SEO, and strategy, not just drafting, so you spend more time on the creative work that actually matters.
+> How to use AI for research, repurposing, SEO, and strategy — not just drafting — so you spend more time on the creative work that matters.
 
 [← Blog](/blog)
 
@@ -5475,7 +5771,7 @@ July 31, 2026
 
 5 min read
 
-![AI for content creators: beyond writing the first draft](../images/blog/ai-for-content-creators-og.png)
+![AI for content creators: beyond writing the first draft](../images/blog/ai-for-content-creators-og.webp)
 
 Key takeaways
 
@@ -5541,6 +5837,16 @@ How do content creators use AI for repurposing?
 
 The most common repurposing workflow: take a long-form piece (blog post, podcast, YouTube video transcript) and ask AI to extract a LinkedIn post, three Twitter threads, a newsletter intro, and five short-form video hooks from the same material. What used to take 3–4 hours of additional work now takes 30 minutes of AI-assisted extraction and editing. Repurposing ROI is often higher than creating new content.
 
+Keep reading
+
+- [AI for sales teams: what top performers are building now](/blog/ai-for-sales-teams)
+
+- [AI for marketing teams: beyond using ChatGPT](/blog/ai-for-marketing-teams)
+
+- [AI for SEO: What Actually Works in 2026](/blog/ai-for-seo)
+
+- [See AI use cases by industry](/use-cases)
+
 Join the AI Builder Brief — a weekly newsletter on practical AI tools and workflows for professionals who create, build, and operate.
 
 [Get the curriculum](https://www.makersquare.ai/curriculum)
@@ -5570,7 +5876,7 @@ Search Engine Land · 2025 · Analysis of Google algorithm updates targeting low
 
 <!-- https://www.makersquare.ai/blog/ai-for-ecommerce-2026 -->
 
-# AI for E-Commerce: What's Actually Working in 2026 | MakerSquare
+# AI for E-Commerce: What's Actually Working in 2026
 
 > AI for e-commerce in 2026: real data on what
 
@@ -5586,7 +5892,7 @@ July 20, 2026
 
 5 min read
 
-![AI for e-commerce: what](../images/blog/ai-ecommerce-2026-og.png)
+![AI for e-commerce: what](../images/blog/ai-ecommerce-2026-og.webp)
 
 Key takeaways
 
@@ -5646,6 +5952,16 @@ What's the biggest reason AI projects fail for small e-commerce businesses?
 
 Stopping at the pilot stage. Roughly two-thirds of companies that experiment with generative AI never scale it into a real, ongoing part of the business — often because the first attempt was a generic tool that was never connected to real store and customer data.
 
+Keep reading
+
+- [AI for business owners: where to start if you're not technical](/blog/ai-for-business-owners-non-technical)
+
+- [AI tools for consultants: what's actually worth learning](/blog/ai-tools-for-consultants)
+
+- [AI for freelancers: the tools that actually move the needle](/blog/ai-for-freelancers-and-consultants)
+
+- [See AI use cases by industry](/use-cases)
+
 MakerSquare runs an in-person, hands-on AI builder program in Austin — plus corporate cohorts and private team training. Store owners and teams leave having built a real tool connected to their own business data, not a demo that gets abandoned in a month.
 
 [Get the curriculum](https://www.makersquare.ai/curriculum?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_ai-for-ecommerce-2026_curriculum_20260720)
@@ -5683,7 +5999,7 @@ Reading this for your team? We run private AI training for Austin companies — 
 
 # AI for Finance Teams: What to Automate First | MakerSquare
 
-> AI for finance teams — a practical guide to the tasks worth automating first, what to avoid, and how non-technical finance professionals can build real efficiency gains without writing code.
+> A practical guide to the finance tasks worth automating first, what to avoid, and how non-technical finance pros build real efficiency gains.
 
 [← Blog](/blog)
 
@@ -5697,7 +6013,7 @@ August 4, 2026
 
 5 min read
 
-![AI for finance teams: what to automate first](../images/blog/ai-for-finance-teams-og.png)
+![AI for finance teams: what to automate first](../images/blog/ai-for-finance-teams-og.webp)
 
 Key takeaways
 
@@ -5763,6 +6079,14 @@ What are the risks of AI in finance?
 
 The main risks are accuracy errors in outputs that get used without review, data privacy concerns when uploading sensitive financial data to third-party AI tools, and over-reliance on AI-generated projections that lack proper assumptions documentation. All three are manageable with clear protocols: always review outputs, use tools with enterprise data agreements, and document AI-generated assumptions explicitly.
 
+Keep reading
+
+- [AI for Accountants: What's Changing in 2026](/blog/ai-for-accountants)
+
+- [AI for accounting and bookkeeping: what non-accountants need to know](/blog/ai-for-accounting-and-bookkeeping)
+
+- [See AI use cases by industry](/use-cases)
+
 Join the weekly AI Builder Brief — a short, practical newsletter on building AI workflows for non-technical professionals. Finance, ops, HR, and more.
 
 [Get the curriculum](https://www.makersquare.ai/curriculum)
@@ -5792,9 +6116,9 @@ PwC · 2025 · Analysis of AI adoption patterns in corporate finance functions
 
 <!-- https://www.makersquare.ai/blog/ai-for-freelancers-and-consultants -->
 
-# AI for Freelancers: The Tools That Actually Move the Needle | MakerSquare
+# AI for Freelancers: Tools That Actually Move the Needle
 
-> AI for freelancers — which tools actually increase your output and rates, how to use AI for proposals, client communication, and delivery, and what most freelancers get wrong about AI.
+> Which AI tools actually raise your output and your rates, how to use them for proposals and delivery, and what most freelancers get wrong.
 
 [← Blog](/blog)
 
@@ -5808,7 +6132,7 @@ August 5, 2026
 
 5 min read
 
-![AI for freelancers: the tools that actually move the needle](../images/blog/ai-for-freelancers-og.png)
+![AI for freelancers: the tools that actually move the needle](../images/blog/ai-for-freelancers-og.webp)
 
 Key takeaways
 
@@ -5874,6 +6198,16 @@ Will AI replace freelancers?
 
 AI is replacing specific tasks, not freelancers as a category. Commoditized writing, basic design work, and templated research are all under pressure from AI tools. But freelancers who offer judgment, relationships, specialized expertise, and original thinking are not replaceable — and many are using AI to deliver more of that value per hour, which increases their rates rather than threatening them.
 
+Keep reading
+
+- [AI for e-commerce: what's actually working in 2026.](/blog/ai-for-ecommerce-2026)
+
+- [AI for business owners: where to start if you're not technical](/blog/ai-for-business-owners-non-technical)
+
+- [AI tools for consultants: what's actually worth learning](/blog/ai-tools-for-consultants)
+
+- [See AI use cases by industry](/use-cases)
+
 Join the AI Builder Brief — a weekly newsletter on practical AI tools and workflows for independent professionals, operators, and founders.
 
 [Get the curriculum](https://www.makersquare.ai/curriculum)
@@ -5903,9 +6237,9 @@ Fiverr Business · 2025 · Survey of freelancer AI tool adoption and productivit
 
 <!-- https://www.makersquare.ai/blog/ai-for-healthcare-professionals-2026 -->
 
-# AI for Healthcare Professionals: A Practical 2026 Guide | MakerSquare
+# AI for Healthcare Professionals: A Practical 2026 Guide
 
-> AI for healthcare professionals in 2026 — what
+> What is clinically useful, what is hype, and how doctors, nurses, and administrators start using AI to save time without compromising care.
 
 [← Blog](/blog)
 
@@ -5919,7 +6253,7 @@ July 28, 2026
 
 5 min read
 
-![AI for healthcare professionals: a practical 2026 guide](../images/blog/ai-for-healthcare-professionals-og.png)
+![AI for healthcare professionals: a practical 2026 guide](../images/blog/ai-for-healthcare-professionals-og.webp)
 
 Key takeaways
 
@@ -5985,6 +6319,14 @@ Can AI help with prior authorization in healthcare?
 
 Yes — prior authorization is one of the highest-burden administrative tasks in healthcare, and AI tools can significantly speed up the process by auto-populating authorization requests with relevant clinical criteria, flagging likely denial triggers before submission, and tracking authorization status across payers. Several health systems report reducing prior auth processing time by 30–40% with AI assist tools.
 
+Keep reading
+
+- [AI for real estate agents: tools that actually save time](/blog/ai-for-real-estate-agents)
+
+- [AI tools for lawyers: what's changed in 2026](/blog/ai-tools-for-lawyers-2026)
+
+- [See AI use cases by industry](/use-cases)
+
 The AI Builder Brief covers practical AI tools and workflows for professionals across industries — including healthcare. Weekly, short, and worth reading.
 
 [Get the curriculum](https://www.makersquare.ai/curriculum)
@@ -6020,9 +6362,9 @@ Reading this for your team? We run private AI training for Austin companies — 
 
 <!-- https://www.makersquare.ai/blog/ai-for-marketing-teams -->
 
-# AI Tools for Marketing Teams: Beyond Using ChatGPT | MakerSquare
+# AI Tools for Marketing Teams: Beyond Using ChatGPT
 
-> AI tools for marketing teams have matured well past ChatGPT prompts. Learn how marketing teams are building custom workflows for content, campaigns, and performance analysis — without a developer.
+> AI for marketing has matured past ChatGPT prompts. How teams build custom workflows for content, campaigns, and analysis without a developer.
 
 [← Blog](/blog)
 
@@ -6036,7 +6378,7 @@ August 8, 2026
 
 5 min read
 
-![AI for marketing teams: beyond using ChatGPT](../images/blog/ai-for-marketing-teams-og.png)
+![AI for marketing teams: beyond using ChatGPT](../images/blog/ai-for-marketing-teams-og.webp)
 
 Key takeaways
 
@@ -6102,6 +6444,16 @@ Can AI replace marketing team members?
 
 AI doesn't replace marketing professionals — it replaces the production-heavy, repetitive parts of their jobs. The strategic, creative, and relational parts of marketing remain human. What changes is how much time those humans spend on execution versus judgment. Teams that integrate AI well tend to be more productive and better at strategy, not smaller.
 
+Keep reading
+
+- [AI for SEO: What Actually Works in 2026](/blog/ai-for-seo)
+
+- [AI for content creators: beyond writing the first draft](/blog/ai-for-content-creators-2026)
+
+- [AI for sales teams: what top performers are building now](/blog/ai-for-sales-teams)
+
+- [See AI use cases by industry](/use-cases)
+
 Marketing professionals at MakerSquare leave with working content pipelines and automation workflows — not just new prompts. Two weeks, in person in Austin, with a system you can deploy on day one back at work.
 
 [Download the curriculum](https://www.makersquare.ai/curriculum)
@@ -6131,9 +6483,9 @@ BCG · 2025 · AI adoption gap between organizations using AI systematically vs.
 
 <!-- https://www.makersquare.ai/blog/ai-for-operations-professionals -->
 
-# AI for Operations Professionals: Automate What's Slowing You Down | MakerSquare
+# AI for Operations: Automate What's Slowing You Down
 
-> AI for operations professionals is no longer optional. Learn which processes to automate first, what tools actually work, and how ops teams are cutting hours off their week without a single line of code.
+> Which processes to automate first, which tools actually work, and how ops teams cut hours off their week without writing a line of code.
 
 - [About](/about)
 
@@ -6143,7 +6495,7 @@ BCG · 2025 · AI adoption gap between organizations using AI systematically vs.
 
 - [For Companies](/corporate)
 
-- [Pricing](/pricing)
+- [Pricing](/immersive)
 
 - [Blog](/blog)
 
@@ -6163,7 +6515,7 @@ August 17, 2026
 
 5 min read
 
-![AI for operations professionals: automate what](../images/blog/ai-for-operations-professionals-og.png)
+![AI for operations professionals: automate what](../images/blog/ai-for-operations-professionals-og.webp)
 
 Key takeaways
 
@@ -6239,6 +6591,16 @@ What should I automate first in operations?
 
 Automate tasks that are high frequency, low creativity, and have a predictable output structure. Top candidates: weekly status reports, vendor follow-up emails, meeting notes and action item extraction, SOP drafting from process notes, and ticket/issue triage. Avoid automating tasks that require nuanced judgment, sensitive stakeholder relationships, or where errors have serious downstream consequences.
 
+Keep reading
+
+- [AI for project managers: automate the admin, focus on the work.](/blog/ai-for-project-managers)
+
+- [AI workflows for small teams: what's worth automating first](/blog/ai-workflows-for-small-teams)
+
+- [See AI use cases by industry](/use-cases)
+
+- [Case study: an AI ops system inside a real business](/case-study-roverpass)
+
 MakerSquare runs 2-week in-person AI cohorts in Austin, TX for operators and professionals who want to build real workflows — not just learn about AI. Download the curriculum to see exactly what you'd build.
 
 [Download the curriculum](https://www.makersquare.ai/curriculum)
@@ -6284,7 +6646,7 @@ July 20, 2026
 
 5 min read
 
-![AI for project managers: automate the admin, focus on the work.](../images/blog/ai-for-project-managers-og.png)
+![AI for project managers: automate the admin, focus on the work.](../images/blog/ai-for-project-managers-og.webp)
 
 Key takeaways
 
@@ -6344,6 +6706,14 @@ Is AI going to replace project managers?
 
 No. AI handles the administrative layer — summaries, drafts, status collection, scheduling. Defining what success looks like, managing stakeholders, and making judgment calls when a project goes sideways still requires a person. The job is shifting toward less admin and more judgment, not disappearing.
 
+Keep reading
+
+- [AI workflows for small teams: what's worth automating first](/blog/ai-workflows-for-small-teams)
+
+- [AI for operations professionals: automate what's slowing you down](/blog/ai-for-operations-professionals)
+
+- [See AI use cases by industry](/use-cases)
+
 MakerSquare runs an in-person, hands-on AI builder program in Austin — plus corporate cohorts and private team training. Project managers leave having built a real tool around their own projects, not a slide deck of AI tips.
 
 [Get the curriculum](https://www.makersquare.ai/curriculum?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_ai-for-project-managers_curriculum_20260720)
@@ -6379,9 +6749,9 @@ Reading this for your team? We run private AI training for Austin companies — 
 
 <!-- https://www.makersquare.ai/blog/ai-for-real-estate-agents -->
 
-# AI for Real Estate Agents: Tools That Actually Save Time | MakerSquare
+# AI for Real Estate Agents: Tools That Actually Save Time
 
-> AI for real estate agents — which tools genuinely save time on listings, client communication, market research, and transaction management, and which ones to skip.
+> Which AI tools genuinely save time on listings, client communication, market research, and transaction management — and which ones to skip.
 
 [← Blog](/blog)
 
@@ -6395,7 +6765,7 @@ July 21, 2026
 
 5 min read
 
-![AI for real estate agents: tools that actually save time](../images/blog/ai-for-real-estate-og.png)
+![AI for real estate agents: tools that actually save time](../images/blog/ai-for-real-estate-og.webp)
 
 Key takeaways
 
@@ -6461,6 +6831,14 @@ Is AI useful for real estate market analysis?
 
 AI is useful as a research assistant for market analysis — synthesizing comp data, generating CMA narrative, and identifying market trends from multiple data sources. It works best when combined with accurate MLS data. AI cannot access real-time MLS data on its own, so the workflow is typically: pull the data manually, then use AI to analyze and communicate it faster.
 
+Keep reading
+
+- [AI tools for lawyers: what's changed in 2026](/blog/ai-tools-for-lawyers-2026)
+
+- [AI for healthcare professionals: a practical 2026 guide](/blog/ai-for-healthcare-professionals-2026)
+
+- [See AI use cases by industry](/use-cases)
+
 Download the full MakerSquare curriculum to see exactly what two weeks of applied AI building looks like — including workflows for real estate, operations, and client-facing roles.
 
 [Get the curriculum](https://www.makersquare.ai/curriculum)
@@ -6512,7 +6890,7 @@ July 30, 2026
 
 5 min read
 
-![AI for sales teams: what top performers are building now](../images/blog/ai-for-sales-teams-og.png)
+![AI for sales teams: what top performers are building now](../images/blog/ai-for-sales-teams-og.webp)
 
 Key takeaways
 
@@ -6578,6 +6956,18 @@ What should sales teams automate with AI first?
 
 The highest-ROI starting points for AI in sales are: pre-call account research briefs, post-call summary and next-step extraction, follow-up email drafts, and objection response preparation. These are high-frequency, time-consuming tasks that follow predictable patterns — exactly what AI handles best.
 
+Keep reading
+
+- [AI for marketing teams: beyond using ChatGPT](/blog/ai-for-marketing-teams)
+
+- [AI for SEO: What Actually Works in 2026](/blog/ai-for-seo)
+
+- [AI for content creators: beyond writing the first draft](/blog/ai-for-content-creators-2026)
+
+- [See AI use cases by industry](/use-cases)
+
+- [Case study: a sales AE built his own AI prospecting tool](/case-study-cameron-dowd)
+
 Sales professionals who leave MakerSquare have built their own pre-call research tools, post-call workflow automations, and outreach systems. Two weeks, in person, with a working tool by the end.
 
 [Download the curriculum](https://www.makersquare.ai/curriculum)
@@ -6619,7 +7009,7 @@ McKinsey & Company · 2024 · AI adoption in sales and marketing driving measura
 
 - [For Companies](/corporate)
 
-- [Pricing](/pricing)
+- [Pricing](/immersive)
 
 - [Blog](/blog)
 
@@ -6639,7 +7029,7 @@ August 13, 2026
 
 6 min read
 
-![AI for SEO: What Actually Works in 2026](../images/blog/ai-for-seo-og.png)
+![AI for SEO: What Actually Works in 2026](../images/blog/ai-for-seo-og.webp)
 
 Key takeaways
 
@@ -6701,6 +7091,16 @@ Can a small business do AI SEO without an agency?
 
 Yes. The highest-value AI-for-SEO work in 2026 - answering real customer questions clearly, structuring content for AI extraction, and demonstrating real expertise - is exactly what a knowledgeable operator can do with AI tools directly, in plain language. Agencies can help at scale, but the core work no longer requires one.
 
+Keep reading
+
+- [AI for content creators: beyond writing the first draft](/blog/ai-for-content-creators-2026)
+
+- [AI for sales teams: what top performers are building now](/blog/ai-for-sales-teams)
+
+- [AI for marketing teams: beyond using ChatGPT](/blog/ai-for-marketing-teams)
+
+- [See AI use cases by industry](/use-cases)
+
 MakerSquare is a 2-week in-person AI builder program in Austin, TX for operators, founders, and professionals - the people who understand their business well enough to build with AI, not just use it. See what two weeks of hands-on building looks like.
 
 [Get the curriculum](https://www.makersquare.ai/curriculum?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_ai-for-seo_curriculum_20260914)
@@ -6730,7 +7130,7 @@ Socioapt · 2026 · Data on AI citation, entity-based optimization, and brand vi
 
 <!-- https://www.makersquare.ai/blog/ai-tools-for-consultants -->
 
-# AI Tools for Consultants: What's Actually Worth Learning | MakerSquare
+# AI Tools for Consultants: What's Actually Worth Learning
 
 > Not every AI tool is worth a consultant
 
@@ -6746,7 +7146,7 @@ July 27, 2026
 
 5 min read
 
-![AI tools for consultants: what](../images/blog/ai-tools-for-consultants-og.png)
+![AI tools for consultants: what](../images/blog/ai-tools-for-consultants-og.webp)
 
 Key takeaways
 
@@ -6822,6 +7222,18 @@ How do I start using AI in my consulting practice?
 
 Start with one high-frequency task — a deliverable you produce every week or every engagement. Apply an AI tool to that task specifically. Evaluate the output, edit it, use it with a client, and iterate. Once that workflow is stable, add a second. Consultants who try to implement AI across their entire practice at once usually end up using none of it consistently.
 
+Keep reading
+
+- [AI for freelancers: the tools that actually move the needle](/blog/ai-for-freelancers-and-consultants)
+
+- [AI for e-commerce: what's actually working in 2026.](/blog/ai-for-ecommerce-2026)
+
+- [AI for business owners: where to start if you're not technical](/blog/ai-for-business-owners-non-technical)
+
+- [See AI use cases by industry](/use-cases)
+
+- [Case study: a sales AE built his own AI prospecting tool](/case-study-cameron-dowd)
+
 Want to see exactly how consultants are building AI workflows for their practices? Download the MakerSquare curriculum — it covers the tools, the workflows, and the hands-on projects in detail.
 
 [Download the curriculum](https://www.makersquare.ai/curriculum)
@@ -6859,7 +7271,7 @@ Reading this for your team? We run private AI training for Austin companies — 
 
 # AI Tools for Lawyers: What's Changed in 2026 | MakerSquare
 
-> AI tools for lawyers have changed dramatically in 2026. Here
+> AI tools for lawyers changed sharply in 2026. What is actually used in practice, what shifted this year, and where the real risks sit.
 
 [← Blog](/blog)
 
@@ -6873,7 +7285,7 @@ July 23, 2026
 
 6 min read
 
-![AI tools for lawyers: what](../images/blog/ai-tools-for-lawyers-2026-og.png)
+![AI tools for lawyers: what](../images/blog/ai-tools-for-lawyers-2026-og.webp)
 
 Key takeaways
 
@@ -6947,6 +7359,14 @@ Will AI replace lawyers?
 
 AI is replacing specific tasks within legal work — particularly document review, basic research, and standard contract drafting — but not the judgment, advocacy, and client relationship work that defines high-value legal practice. The lawyers most at risk are those doing commoditized work at associate rates without demonstrating the judgment layer that AI can't replicate.
 
+Keep reading
+
+- [AI for healthcare professionals: a practical 2026 guide](/blog/ai-for-healthcare-professionals-2026)
+
+- [AI for real estate agents: tools that actually save time](/blog/ai-for-real-estate-agents)
+
+- [See AI use cases by industry](/use-cases)
+
 Want to build a working AI workflow for your legal practice? Download the MakerSquare curriculum — it covers the tools, prompting frameworks, and hands-on projects that turn AI fluency into a real practice advantage.
 
 [Download the curriculum](https://www.makersquare.ai/curriculum)
@@ -6982,9 +7402,9 @@ Reading this for your team? We run private AI training for Austin companies — 
 
 <!-- https://www.makersquare.ai/blog/ai-training-austin-texas -->
 
-# AI Training in Austin, Texas for Small Businesses | MakerSquare
+# AI Training in Austin, Texas for Small Businesses
 
-> Looking for AI training in Austin, Texas? Here
+> What small and mid-sized Austin businesses actually need to close the gap between using AI and getting real results from it in 2026.
 
 [← Blog](/blog)
 
@@ -6998,7 +7418,7 @@ July 20, 2026
 
 5 min read
 
-![AI training in Austin, Texas: what small businesses actually need.](../images/blog/ai-training-austin-og.png)
+![AI training in Austin, Texas: what small businesses actually need.](../images/blog/ai-training-austin-og.webp)
 
 Key takeaways
 
@@ -7058,6 +7478,12 @@ How long does it take to train a small business team on AI?
 
 A structured, hands-on program can build real capability in 3 days to 2 weeks, depending on depth. Compare that to the 7–12 months it typically takes to hire and ramp up a dedicated AI developer — training an existing team is dramatically faster.
 
+Keep reading
+
+- [Austin's AI moment: what the city's tech shift means for professionals here.](/blog/austin-ai-jobs-skills-2026)
+
+- [In-person AI training in Austin, TX](/ai-training-austin)
+
 MakerSquare runs an in-person, hands-on AI builder program in Austin — plus corporate cohorts and private team training sized for small and mid-sized businesses. Teams leave with real, deployed AI tools built around their actual business, not a seminar's worth of notes.
 
 [Get the curriculum](https://www.makersquare.ai/curriculum?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_ai-training-austin-texas_curriculum_20260720)
@@ -7093,9 +7519,9 @@ Reading this for your team? We run private AI training for Austin companies — 
 
 <!-- https://www.makersquare.ai/blog/ai-workflows-for-small-teams -->
 
-# AI Workflows for Small Teams: What's Worth Automating First | MakerSquare
+# AI Workflows for Small Teams: What to Automate First
 
-> AI workflows for small teams can return 10+ hours per person per week — but only when you start with the right tasks. Here
+> AI workflows can return 10+ hours per person per week, but only if you start with the right tasks. A framework for what to automate first.
 
 - [About](/about)
 
@@ -7105,7 +7531,7 @@ Reading this for your team? We run private AI training for Austin companies — 
 
 - [For Companies](/corporate)
 
-- [Pricing](/pricing)
+- [Pricing](/immersive)
 
 - [Blog](/blog)
 
@@ -7125,7 +7551,7 @@ August 19, 2026
 
 5 min read
 
-![AI workflows for small teams: what](../images/blog/ai-workflows-small-teams-og.png)
+![AI workflows for small teams: what](../images/blog/ai-workflows-small-teams-og.webp)
 
 Key takeaways
 
@@ -7199,6 +7625,16 @@ How do small teams build AI workflows without a technical team?
 
 Small teams without technical staff can build effective AI workflows using Make or Zapier (for automation), Claude Projects or ChatGPT (for the AI intelligence layer), and Airtable or Notion (for data storage). None of these require coding. The learning curve is 2–4 weeks to build your first reliable workflow. After that, each subsequent workflow builds faster on what you've already learned.
 
+Keep reading
+
+- [AI for operations professionals: automate what's slowing you down](/blog/ai-for-operations-professionals)
+
+- [AI for project managers: automate the admin, focus on the work.](/blog/ai-for-project-managers)
+
+- [See AI use cases by industry](/use-cases)
+
+- [Case study: an AI ops system inside a real business](/case-study-roverpass)
+
 Small team leads at MakerSquare leave with 3–5 working AI workflows built for their specific business — in person, over 2 weeks, with no technical background required. Download the curriculum to see what you'd build.
 
 [Download the curriculum](https://www.makersquare.ai/curriculum)
@@ -7228,7 +7664,7 @@ Deloitte · 2025 · Teams building 3–5 focused automations first show 40% high
 
 <!-- https://www.makersquare.ai/blog/austin-ai-jobs-skills-2026 -->
 
-# Austin AI Jobs & Skills in 2026: What's Changed | MakerSquare
+# Austin AI Jobs & Skills in 2026: What's Changed
 
 > Austin
 
@@ -7244,7 +7680,7 @@ July 24, 2026
 
 5 min read
 
-![Austin](../images/blog/austin-ai-jobs-skills-2026-og.png)
+![Austin](../images/blog/austin-ai-jobs-skills-2026-og.webp)
 
 Key takeaways
 
@@ -7306,6 +7742,14 @@ Related reading
 - [The non-technical AI skills that matter in 2026](/blog/non-technical-ai-skills-2026)
 - [Cursor AI for non-coders: what it is & how to start](/blog/what-is-cursor-ai-beginners-guide)
 
+Keep reading
+
+- [AI training in Austin, Texas: what small businesses actually need.](/blog/ai-training-austin-texas)
+
+- [In-person AI training in Austin, TX](/ai-training-austin)
+
+- [Case study: a job seeker built an AI company-matcher](/case-study-ted-kilgore)
+
 MakerSquare's cohorts bring together Austin founders, operators, and professionals who are serious about building with AI — not just learning about it. If you're in Austin and trying to get ahead of where this is going, the curriculum is a good place to see what that actually looks like.
 
 [Get the curriculum](https://www.makersquare.ai/curriculum?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_austin-ai-jobs-skills-2026_curriculum_20260728)
@@ -7347,9 +7791,9 @@ Reading this for your team? We run private AI training for Austin companies — 
 
 <!-- https://www.makersquare.ai/blog/best-ai-courses-bootcamps-2026 -->
 
-# Best AI Courses and Bootcamps in 2026 (Honest Comparison) | MakerSquare
+# Best AI Courses and Bootcamps in 2026 (Honest Comparison)
 
-> A practical comparison of the top AI courses and bootcamps in 2026 — organized by format, cost, and what you actually get out of them. No affiliate links, no paid placements.
+> A practical comparison of the top AI courses and bootcamps in 2026 by format, cost, and what you get. No affiliate links, no paid placements.
 
 - [About](/about)
 
@@ -7359,7 +7803,7 @@ Reading this for your team? We run private AI training for Austin companies — 
 
 - [For Companies](/corporate)
 
-- [Pricing](/pricing)
+- [Pricing](/immersive)
 
 - [Blog](/blog)
 
@@ -7379,7 +7823,7 @@ August 15, 2026
 
 5 min read
 
-![The best AI courses and bootcamps in 2026: an honest comparison.](../images/blog/best-ai-courses-bootcamps-2026-og.jpg)
+![The best AI courses and bootcamps in 2026: an honest comparison.](../images/blog/best-ai-courses-bootcamps-2026-og.webp)
 
 Key takeaways
 
@@ -7445,6 +7889,18 @@ Can I learn AI skills for free?
 
 You can learn about AI for free. DeepLearning.AI, fast.ai, and Coursera offer genuinely good content at no cost. The research on completion rates and skill transfer suggests that most learners who try this approach develop familiarity rather than capability. If the goal is capability — changed workflow, built tools, reliable applied skill — the free self-paced format rarely gets there.
 
+Keep reading
+
+- [Why in-person AI learning produces better outcomes than self-paced: what the research shows.](/blog/in-person-ai-learning-vs-self-paced-research)
+
+- [How to learn AI without knowing how to code](/blog/how-to-learn-ai-without-coding)
+
+- [Non-technical AI skills: what actually matters in 2026](/blog/non-technical-ai-skills-2026)
+
+- [The 2-week AI bootcamp in Austin](/immersive)
+
+- [Agentic AI Courses in 2026: An Honest Comparison](/blog/agentic-ai-courses-2026)
+
 MakerSquare is the in-person option for professionals who want to build with AI rather than study it. Two weeks, in Austin, $3,999, with a project shipped by the end. The curriculum is available to review — it's the most transparent description of what you'll actually do, day by day.
 
 [Get the curriculum](https://www.makersquare.ai/curriculum?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_best-ai-courses-bootcamps-2026_curriculum_20260804)
@@ -7478,6 +7934,149 @@ Jordan, K. · IRRODL · 2015
 
 ---
 
+<!-- https://www.makersquare.ai/blog/build-custom-ai-workflow-weekend -->
+
+# How to Build a Custom AI Workflow in a Weekend | MakerSquare
+
+> You can build a custom AI workflow without coding in a weekend — if you start with the right problem and the right tools. Here
+
+- [About](/about)
+
+- [Use Cases](/use-cases)
+
+- [Curriculum](/curriculum)
+
+- [For Companies](/corporate)
+
+- [Pricing](/immersive)
+
+- [Blog](/blog)
+
+- [Enroll](/enroll)
+
+[Secure Your Spot](/enroll)
+
+[← Blog](/blog)
+
+Build with AI
+
+## How to build a custom AI workflow in a weekend
+
+Marliis Schneider
+
+August 21, 2026
+
+6 min read
+
+![How to build a custom AI workflow in a weekend](../images/blog/build-ai-workflow-weekend-og.webp)
+
+Key takeaways
+
+- Building a custom AI workflow without coding in a weekend is realistic — if you stay narrow. One input type, one output format, one problem.
+
+- The most common failure mode is scope creep on day one: trying to solve multiple problems at once and ending the weekend with nothing working.
+
+- The build order matters: problem definition first, AI configuration second, automation connection third, testing and iteration last.
+
+- A workflow that handles 70% of cases reliably is more valuable than a perfect workflow that never ships. Build, run, refine.
+
+The idea of building a custom AI workflow in a weekend sounds aspirational. But people are doing it regularly — and not just technically sophisticated people. Operators, marketers, consultants, and business owners are building real, working automations in 2 days that save them hours every week thereafter.
+
+**The key to building a custom AI workflow without coding in a weekend is to start with a problem so narrow that you can define the inputs and outputs in one sentence.** If you can't do that, the problem is too big for a weekend build. Once you can, the rest is execution.
+
+### Day 1: Problem definition and AI configuration (Saturday)
+
+Saturday morning should not involve opening any tools. It should involve writing down, as precisely as possible, what you're building.
+
+The problem definition template: "Every [frequency], I take [specific input] and produce [specific output] in [format]. Currently this takes [time]. I want AI to do [specific part] so I can spend [time] instead."
+
+A concrete example: "Every Monday, I take the previous week's project notes (in a Google Doc) and produce a 1-page status update (in a specific format) for my client. Currently this takes 2 hours. I want AI to draft the status update from the notes so I spend 20 minutes reviewing and sending instead."
+
+Once you have that sentence, you know: what the AI needs as input (the Google Doc), what it needs to produce (the formatted status update), and what it doesn't need to do (the review and send — that stays with you). That clarity makes everything else faster.
+
+Saturday afternoon: build the AI configuration. In Claude Projects, create a new Project for this specific use case. Write a system prompt that: explains the task in detail, specifies the exact output format (with an example), lists any constraints (what to include, what to never include), and provides 2–3 examples of past outputs that represent the quality and format you want. Spend 2–3 hours here. Test with real inputs. Iterate the prompt until the output is consistently 80% of the way to what you'd produce yourself. According to [Anthropic's research on Claude's reasoning capabilities](https://www.anthropic.com/news/claude-3-5-sonnet), prompt quality accounts for the majority of variance in output quality for structured professional tasks.
+
+### Day 2: Automation and testing (Sunday)
+
+Sunday is for connecting the AI to your other tools and testing with real data.
+
+Start with Make or Zapier. The workflow you're building has three parts: a trigger (something that starts the workflow automatically), the AI processing step (sends input to Claude, receives output), and an output action (saves or sends the result somewhere).
+
+For the status report example: trigger is "new Google Doc in a specific folder," processing is "send doc content to Claude with the system prompt," output is "save the result to a Notion page and send a Slack notification to review." That's three steps in Make. Each one has a visual interface. None require coding.
+
+Sunday afternoon: test with 5–10 real inputs. Don't test with hypotheticals — use actual past examples of the task you're automating. For each output, note: what was good, what was wrong, and what instruction change would fix the problem. After 5 test runs, you'll see patterns. Update the system prompt to fix the most common issues. Run 5 more tests. If the output is consistently usable with minor review, the workflow is ready to deploy.
+
+A [Zapier survey of automation builders](https://zapier.com/blog/state-of-automation/) found that the most successful first automations were those where the builder had already done the task manually many times — not because of technical familiarity, but because they had a clear mental model of what good output looked like and could evaluate AI output accurately. This is why building for your own problems first is the fastest path to something that works.
+
+### What to do when it doesn't work
+
+The most common weekend build failure is a prompt that produces inconsistent output — sometimes great, sometimes off. The fix is almost always more specificity in the system prompt. Vague instructions produce variable output. Specific instructions produce consistent output.
+
+If the output is consistently wrong in the same way, the prompt has a gap — something important you're not specifying. If it's randomly wrong, the prompt is too vague about format or scope. If it's right but slow, that's a Make/Zapier configuration issue, not an AI issue.
+
+The other common failure is scope creep — trying to build too much in one weekend and ending with nothing working. If you hit Sunday afternoon and the workflow isn't producing usable output, cut features. Remove the automation step and just test the AI configuration manually. A manually-triggered Claude workflow is still enormously valuable — you can automate later once you know the AI layer works.
+
+### What this means for builders who want to go further
+
+One working weekend build changes your relationship with AI tools. You understand what's possible, you have a template for future builds, and you have real evidence of how much time it saves. Every subsequent build is faster.
+
+MakerSquare is a 2-week in-person AI builder program in Austin, TX — built for operators, founders, and professionals who want to build real AI tools, not just use them. Participants spend 2 weeks doing exactly this — building, testing, and deploying — with real feedback and a working tool by the end. See the [curriculum at makersquare.ai/curriculum](https://www.makersquare.ai/curriculum).
+
+Frequently asked questions
+
+How do I build a custom AI workflow without coding?
+
+To build a custom AI workflow without coding: (1) Identify a specific, high-frequency task with a predictable output structure. (2) Design the workflow on paper first — what are the inputs, steps, and output format? (3) Configure the AI layer (Claude Projects or a custom GPT) with detailed instructions and examples. (4) Connect it to your other tools using Make or Zapier. (5) Test with real inputs, refine the prompt, and run it for two weeks before deciding if it works.
+
+Can I really build an AI workflow in a weekend?
+
+Yes, for a focused, well-defined workflow. A realistic weekend build includes: Friday evening for problem definition and tool selection, Saturday for building the AI configuration and testing with real inputs, Sunday for connecting automation and refining based on output quality. The key constraint is starting narrow — one input type, one output format. Teams that try to build too much in a weekend end up with nothing working by Monday.
+
+What tools do I need to build a custom AI workflow?
+
+The minimum toolkit for a weekend AI workflow build: Claude (for the AI intelligence layer), Make or Zapier (for automation and tool connections), and whatever tool your input data already lives in (Notion, Airtable, Google Sheets, email). You don't need specialized software. The simplest possible combination that solves your specific problem is almost always the right choice for a first build.
+
+What is the most common mistake when building an AI workflow?
+
+The most common mistake is treating the first build as the final build. Good AI workflows are iterated, not designed perfectly upfront. Build a minimal version that works for 70% of cases, run it for two weeks, and refine based on real failures. The teams that try to design everything perfectly before building anything end up spending weeks planning and shipping nothing.
+
+Keep reading
+
+- [AI automation for non-engineers: what's actually possible](/blog/ai-automation-for-non-engineers)
+
+- [How to build an AI tool for your business without coding](/blog/how-to-build-ai-tool-without-coding)
+
+- [Learn Claude Code Without a Coding Background](/blog/learn-claude-code-without-coding)
+
+- [All MakerSquare build guides](/guides)
+
+MakerSquare participants spend 2 weeks building, testing, and deploying AI workflows for their specific business problems — in person, with real feedback. Join the AI Builder Brief for weekly practical guides on what to build next.
+
+[Download the curriculum](https://www.makersquare.ai/curriculum)
+[Join the AI Builder Brief](https://ai-builder-brief.beehiiv.com/)
+
+Sources
+
+1
+
+[Claude 3.5 Sonnet — Research and Capabilities](https://www.anthropic.com/news/claude-3-5-sonnet)
+
+Anthropic · 2025 · Prompt quality accounts for majority of variance in output quality for structured professional tasks
+
+2
+
+[State of Automation 2025](https://zapier.com/blog/state-of-automation/)
+
+Zapier · 2025 · Builders with existing manual familiarity with a task produce better first AI automations than those automating unfamiliar tasks
+
+3
+
+[Gartner Top 10 Strategic Technology Trends for 2025](https://www.gartner.com/en/articles/gartner-top-10-strategic-technology-trends-for-2025)
+
+Gartner · 2025 · Low-code/no-code AI development platforms among the top 10 strategic technology investments for 2025
+
+---
+
 <!-- https://www.makersquare.ai/blog/claude-vs-chatgpt-vs-gemini-for-work-2026 -->
 
 # Claude vs. ChatGPT vs. Gemini for Work (2026) | MakerSquare
@@ -7496,7 +8095,7 @@ July 14, 2026
 
 4 min read
 
-![Claude vs. ChatGPT vs. Gemini: which AI should you actually use at work?](../images/blog/claude-vs-chatgpt-vs-gemini-for-work-2026-og.png)
+![Claude vs. ChatGPT vs. Gemini: which AI should you actually use at work?](../images/blog/claude-vs-chatgpt-vs-gemini-for-work-2026-og.webp)
 
 Key takeaways
 
@@ -7560,6 +8159,16 @@ Which AI should I use for writing at work?
 
 Claude for longer pieces, documents, and anything where consistency of voice matters. ChatGPT for quick drafts and tasks where speed matters more than quality. Both produce useful first drafts — the difference becomes more visible on complex, longer-form work where Claude's reasoning across context is more reliable.
 
+Keep reading
+
+- [How to use Claude for business: a practical guide](/blog/how-to-use-claude-for-business)
+
+- [What is Cursor AI — and can someone with no coding background actually use it?](/blog/what-is-cursor-ai-beginners-guide)
+
+- [How to write better AI prompts: a guide for non-technical professionals](/blog/how-to-write-better-ai-prompts)
+
+- [All MakerSquare build guides](/guides)
+
 MakerSquare's curriculum teaches Claude, ChatGPT, and Cursor in context — which means learning what each is actually for, not just how to use them in the abstract. Two weeks of hands-on work with all three produces the judgment that benchmarks can't measure.
 
 [Get the curriculum](https://www.makersquare.ai/curriculum?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_claude-vs-chatgpt-vs-gemini-for-work-2026_curriculum_20260714)
@@ -7597,7 +8206,7 @@ Reading this for your team? We run private AI training for Austin companies — 
 
 # Hire an AI Developer vs. Train Your Team: The Cost
 
-> The build-vs-buy AI talent decision, with real numbers: what hiring an AI developer vs. training your existing team actually costs in 2026.
+> The build-vs-buy AI talent decision with real numbers: what hiring an AI developer versus training your existing team actually costs in 2026.
 
 [← Blog](/blog)
 
@@ -7611,7 +8220,7 @@ July 18, 2026
 
 4 min read
 
-![The real cost of hiring an AI developer vs. training your team.](../images/blog/hiring-ai-developer-vs-training-team-cost-og.png)
+![The real cost of hiring an AI developer vs. training your team.](../images/blog/hiring-ai-developer-vs-training-team-cost-og.webp)
 
 Key takeaways
 
@@ -7669,6 +8278,16 @@ What AI skills should I train my team in?
 
 Focus on applied skills with the tools your business will actually use: prompting, building with Cursor, connecting AI tools to your existing data, and evaluating AI outputs critically. The goal is judgment — knowing when AI adds value, how to direct it, and how to verify results — not theoretical AI knowledge.
 
+Keep reading
+
+- [How to pitch AI training to your manager and actually get the budget approved.](/blog/how-to-pitch-ai-training-to-your-manager)
+
+- [The companies getting real returns from AI have something in common. It's not the software.](/blog/how-to-get-roi-from-ai-at-work)
+
+- [How to train employees on AI — without hiring engineers.](/blog/how-to-train-employees-on-ai)
+
+- [Private AI training for your team](/corporate)
+
 MakerSquare runs corporate cohorts for teams of 4 to 15 — a structured two-week intensive that builds genuine AI capability in existing employees. The cost per person is a fraction of a single hire, and the output is a team that knows how to build with AI around your specific business context.
 
 [Get the curriculum](https://www.makersquare.ai/curriculum?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_hiring-ai-developer-vs-training-team-cost_curriculum_20260724)
@@ -7710,9 +8329,9 @@ Reading this for your team? We run private AI training for Austin companies — 
 
 <!-- https://www.makersquare.ai/blog/how-to-build-ai-tool-without-coding -->
 
-# How to Build an AI Tool for Your Business Without Coding | MakerSquare
+# How to Build an AI Tool for Your Business Without Coding
 
-> You can build an AI tool for your business without coding. Here
+> A practical guide to picking the right problem, choosing the right tools, and shipping an AI tool that works — no engineers required.
 
 [← Blog](/blog)
 
@@ -7726,7 +8345,7 @@ August 12, 2026
 
 6 min read
 
-![How to build an AI tool for your business without coding](../images/blog/build-ai-tool-without-coding-og.png)
+![How to build an AI tool for your business without coding](../images/blog/build-ai-tool-without-coding-og.webp)
 
 Key takeaways
 
@@ -7794,6 +8413,18 @@ What tools do I need to build an AI tool without coding?
 
 The core toolkit for no-code AI building: Claude or ChatGPT (for the AI intelligence layer), Make or Zapier (for automation and connecting tools), Airtable or Notion (for structured data), and optionally Bubble or Softr for a user interface. Start with the simplest combination that solves your specific problem. You can add complexity later — starting simple is the fastest path to something that works.
 
+Keep reading
+
+- [AI automation for non-engineers: what's actually possible](/blog/ai-automation-for-non-engineers)
+
+- [The 10 AI tools every knowledge worker needs in 2026.](/blog/10-ai-tools-every-knowledge-worker-needs-2026)
+
+- [Claude vs. ChatGPT vs. Gemini: which AI should you actually use at work?](/blog/claude-vs-chatgpt-vs-gemini-for-work-2026)
+
+- [All MakerSquare build guides](/guides)
+
+- [How to build a custom AI workflow in a weekend](/blog/build-custom-ai-workflow-weekend)
+
 At MakerSquare, every participant builds a working AI tool for their specific business problem — from scratch, without code, over 2 weeks. Download the curriculum to see exactly what gets built.
 
 [Download the curriculum](https://www.makersquare.ai/curriculum)
@@ -7839,7 +8470,7 @@ June 5, 2026
 
 4 min read
 
-![The companies getting real returns from AI have something in common](../images/blog/ai-roi-og.png)
+![The companies getting real returns from AI have something in common](../images/blog/ai-roi-og.webp)
 
 Key takeaways
 
@@ -7895,6 +8526,16 @@ Does AI training matter for non-technical employees?
 
 Yes. BCG and Anthropic research both identify managers, operators, and knowledge workers as among the biggest beneficiaries of AI training. The skills that drive results — judgment, context, knowing when and how to use AI effectively — are professional skills, not technical ones.
 
+Keep reading
+
+- [How to train employees on AI — without hiring engineers.](/blog/how-to-train-employees-on-ai)
+
+- [Why your company's AI training isn't working.](/blog/why-your-companys-ai-training-isnt-working)
+
+- [AI adoption strategy for non-technical teams: what works.](/blog/ai-adoption-strategy-non-technical-teams)
+
+- [Private AI training for your team](/corporate)
+
 MakerSquare is built around exactly this gap — in-person AI training for operators, founders, and managers who need to actually get good at using these tools.
 
 [Get the curriculum](https://www.makersquare.ai/curriculum?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_how-to-get-roi-from-ai-at-work_curriculum_2026-06-05)
@@ -7942,9 +8583,9 @@ Reading this for your team? We run private AI training for Austin companies — 
 
 <!-- https://www.makersquare.ai/blog/how-to-learn-ai-without-coding -->
 
-# How to Learn AI Without Coding: A Practical Guide (2026) | MakerSquare
+# How to Learn AI Without Coding: A Practical Guide (2026)
 
-> You don
+> You do not need to code to learn AI. The path non-technical professionals are using now, and the skills that actually matter at work.
 
 [← Blog](/blog)
 
@@ -7958,7 +8599,7 @@ August 10, 2026
 
 5 min read
 
-![How to learn AI without knowing how to code](../images/blog/how-to-learn-ai-without-coding-og.png)
+![How to learn AI without knowing how to code](../images/blog/how-to-learn-ai-without-coding-og.webp)
 
 Key takeaways
 
@@ -8042,6 +8683,16 @@ Related reading
 - [The non-technical AI skills that matter in 2026](/blog/non-technical-ai-skills-2026)
 - [Using AI vs. building with AI](/blog/using-ai-vs-building-with-ai)
 
+Keep reading
+
+- [Non-technical AI skills: what actually matters in 2026](/blog/non-technical-ai-skills-2026)
+
+- [The difference between using AI and building with AI.](/blog/using-ai-vs-building-with-ai)
+
+- [What another year without AI skills actually costs.](/blog/what-another-year-without-ai-skills-actually-costs)
+
+- [The 2-week AI bootcamp in Austin](/immersive)
+
 MakerSquare is a 2-week in-person AI builder program for non-technical operators and professionals. No coding required — just a real problem you want to solve. See exactly what the program covers.
 
 [Download the curriculum](https://www.makersquare.ai/curriculum)
@@ -8071,9 +8722,9 @@ BCG · 2025 · Five or more hours of structured, applied AI practice is the adop
 
 <!-- https://www.makersquare.ai/blog/how-to-pitch-ai-training-to-your-manager -->
 
-# How to Pitch AI Training to Your Manager (And Get Budget Approved) | MakerSquare
+# How to Pitch AI Training to Your Manager and Get Budget
 
-> Most AI training requests get rejected because they
+> Most AI training requests get rejected because they are framed wrong. How to build a case your manager says yes to, with the ROI framing.
 
 - [About](/about)
 
@@ -8083,7 +8734,7 @@ BCG · 2025 · Five or more hours of structured, applied AI practice is the adop
 
 - [For Companies](/corporate)
 
-- [Pricing](/pricing)
+- [Pricing](/immersive)
 
 - [Blog](/blog)
 
@@ -8103,7 +8754,7 @@ August 14, 2026
 
 4 min read
 
-![How to pitch AI training to your manager and actually get the budget approved.](../images/blog/how-to-pitch-ai-training-to-your-manager-og.jpg)
+![How to pitch AI training to your manager and actually get the budget approved.](../images/blog/how-to-pitch-ai-training-to-your-manager-og.webp)
 
 Key takeaways
 
@@ -8164,6 +8815,16 @@ Two options: self-fund (at $3,999, MakerSquare is significantly cheaper than mos
 How do I justify the time away for an in-person AI bootcamp?
 
 Two weeks is short relative to the outcome — two weeks to produce three deployed AI tools and a materially changed workflow. Compare it to the time spent on annual company training events, industry conferences, or onboarding new team members. The time investment is specific and bounded, which makes it easier to approve than an open-ended learning commitment.
+
+Keep reading
+
+- [The companies getting real returns from AI have something in common. It's not the software.](/blog/how-to-get-roi-from-ai-at-work)
+
+- [How to train employees on AI — without hiring engineers.](/blog/how-to-train-employees-on-ai)
+
+- [Why your company's AI training isn't working.](/blog/why-your-companys-ai-training-isnt-working)
+
+- [Private AI training for your team](/corporate)
 
 MakerSquare can provide supporting materials for your proposal on request — including curriculum details, outcome data, and a program overview formatted for manager review. Reach out directly if that would help your case.
 
@@ -8250,6 +8911,18 @@ RoverPass, an Austin reservation company, runs a live AI ops command center that
 
 Run this diagnostic in your next leadership meeting: ask each team lead, “what does your team do every week that a smart intern could do with perfect instructions?” Write the answers down. That list — not a vendor pitch — is your AI roadmap. Then give one team the skills to work through it. In person, hands-on, on your real workflows — [that’s exactly what we build with Austin companies](/corporate), and your team leaves with the first items on that list already running.
 
+Keep reading
+
+- [Why your company's AI training isn't working.](/blog/why-your-companys-ai-training-isnt-working)
+
+- [AI adoption strategy for non-technical teams: what works.](/blog/ai-adoption-strategy-non-technical-teams)
+
+- [The real cost of hiring an AI developer vs. training your team.](/blog/hiring-ai-developer-vs-training-team-cost)
+
+- [Private AI training for your team](/corporate)
+
+- [Case study: an AI ops system inside a real business](/case-study-roverpass)
+
 For companies
 
 Reading this for your team? We run private AI training for Austin companies — your tools, your workflows, working automation by day three.
@@ -8260,9 +8933,9 @@ Reading this for your team? We run private AI training for Austin companies — 
 
 <!-- https://www.makersquare.ai/blog/how-to-use-claude-for-business -->
 
-# How to Use Claude for Business: A Practical Guide | MakerSquare
+# How to Use Claude for Business: A Practical Guide
 
-> Learning how to use Claude for business goes beyond basic prompting. This practical guide covers Projects, system prompts, document workflows, and how to get consistent, high-quality output for real business tasks.
+> Beyond basic prompting: Projects, system prompts, document workflows, and how to get consistent output from Claude for real business tasks.
 
 [← Blog](/blog)
 
@@ -8276,7 +8949,7 @@ August 7, 2026
 
 5 min read
 
-![How to use Claude for business: a practical guide](../images/blog/how-to-use-claude-business-og.png)
+![How to use Claude for business: a practical guide](../images/blog/how-to-use-claude-business-og.webp)
 
 Key takeaways
 
@@ -8340,6 +9013,18 @@ What is Claude Projects and how do I use it for business?
 
 Claude Projects is a feature that lets you create a persistent AI workspace with custom instructions, uploaded documents, and memory of past conversations. For business use, this means you can create a Project for each major use case — client proposals, internal comms, research synthesis — with specific instructions and relevant context pre-loaded. Every conversation in that Project starts with that context, eliminating repetitive setup and producing more consistent output.
 
+Keep reading
+
+- [What is Cursor AI — and can someone with no coding background actually use it?](/blog/what-is-cursor-ai-beginners-guide)
+
+- [How to write better AI prompts: a guide for non-technical professionals](/blog/how-to-write-better-ai-prompts)
+
+- [How to build an AI tool for your business without coding](/blog/how-to-build-ai-tool-without-coding)
+
+- [All MakerSquare build guides](/guides)
+
+- [Learn Claude Code Without a Coding Background](/blog/learn-claude-code-without-coding)
+
 Claude is the primary AI tool in MakerSquare's curriculum. Participants spend 2 weeks learning to use it at depth — not just chat, but Projects, automation integrations, and custom workflows for their specific business needs.
 
 [Download the curriculum](https://www.makersquare.ai/curriculum)
@@ -8385,7 +9070,7 @@ July 29, 2026
 
 5 min read
 
-![How to write better AI prompts: a guide for non-technical professionals](../images/blog/how-to-write-better-ai-prompts-og.png)
+![How to write better AI prompts: a guide for non-technical professionals](../images/blog/how-to-write-better-ai-prompts-og.webp)
 
 Key takeaways
 
@@ -8459,6 +9144,16 @@ Do I need to learn prompt engineering to use AI effectively at work?
 
 No — prompt engineering as a formal discipline is more relevant for developers building AI products. What professionals need is prompt fluency: the practical habit of giving AI enough context, being specific about the output format, and iterating when the first result isn't quite right. That's a learnable skill that improves with practice, not a technical specialization.
 
+Keep reading
+
+- [How to build an AI tool for your business without coding](/blog/how-to-build-ai-tool-without-coding)
+
+- [AI automation for non-engineers: what's actually possible](/blog/ai-automation-for-non-engineers)
+
+- [The 10 AI tools every knowledge worker needs in 2026.](/blog/10-ai-tools-every-knowledge-worker-needs-2026)
+
+- [All MakerSquare build guides](/guides)
+
 Prompt fluency is one of the first things we cover in the MakerSquare program. Download the curriculum to see the full two-week arc — from prompting basics to building your own AI tools.
 
 [Get the curriculum](https://www.makersquare.ai/curriculum)
@@ -8488,9 +9183,9 @@ OpenAI · 2025 · Research-backed guidance on prompt structure and context-setti
 
 <!-- https://www.makersquare.ai/blog/in-person-ai-learning-vs-self-paced-research -->
 
-# In-Person vs. Self-Paced AI Learning: What the Research Shows | MakerSquare
+# In-Person vs. Self-Paced AI Learning: The Research
 
-> Online AI courses have completion rates under 6%. In-person programs produce measurably higher skill transfer. Here
+> Online AI courses have completion rates under 6%. The learning science behind why format matters as much as content for skill transfer.
 
 - [About](/about)
 
@@ -8500,7 +9195,7 @@ OpenAI · 2025 · Research-backed guidance on prompt structure and context-setti
 
 - [For Companies](/corporate)
 
-- [Pricing](/pricing)
+- [Pricing](/immersive)
 
 - [Blog](/blog)
 
@@ -8520,7 +9215,7 @@ August 16, 2026
 
 5 min read
 
-![Why in-person AI learning produces better outcomes than self-paced: what the research shows.](../images/blog/in-person-ai-learning-vs-self-paced-research-og.jpg)
+![Why in-person AI learning produces better outcomes than self-paced: what the research shows.](../images/blog/in-person-ai-learning-vs-self-paced-research-og.webp)
 
 Key takeaways
 
@@ -8580,6 +9275,16 @@ How long does an in-person AI bootcamp take?
 
 MakerSquare is two weeks, full-time, in person in Austin. That compression is part of the design: two weeks of daily applied practice produces more skill transfer than the same hours distributed across months of self-paced learning, because it creates the spaced repetition and accountability mechanisms that distributed learning lacks.
 
+Keep reading
+
+- [How to learn AI without knowing how to code](/blog/how-to-learn-ai-without-coding)
+
+- [Non-technical AI skills: what actually matters in 2026](/blog/non-technical-ai-skills-2026)
+
+- [The difference between using AI and building with AI.](/blog/using-ai-vs-building-with-ai)
+
+- [The 2-week AI bootcamp in Austin](/immersive)
+
 MakerSquare is built around the learning science described in this post: two weeks of daily applied practice, immediate feedback from instructors, and a cohort of peers working on the same problems. The curriculum reflects that structure — it's available to review.
 
 [Get the curriculum](https://www.makersquare.ai/curriculum?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_in-person-ai-learning-vs-self-paced-research_curriculum_20260807)
@@ -8623,7 +9328,7 @@ Cepeda et al. · Psychological Science · 2008
 
 # The 5 Jobs Most at Risk From AI in 2026 | MakerSquare
 
-> AI isn
+> AI is eliminating specific tasks, not whole jobs. The 5 roles facing the most pressure, and what staying ahead of it actually requires.
 
 [← Blog](/blog)
 
@@ -8637,7 +9342,7 @@ July 8, 2026
 
 4 min read
 
-![The 5 jobs most at risk from AI — and what to actually do about it.](../images/blog/jobs-most-at-risk-from-ai-2026-og.png)
+![The 5 jobs most at risk from AI — and what to actually do about it.](../images/blog/jobs-most-at-risk-from-ai-2026-og.webp)
 
 Key takeaways
 
@@ -8695,6 +9400,20 @@ Is it too late to learn AI skills if I'm mid-career?
 
 No. The Pearson 2026 data found that 53% of employers can't find candidates with the AI skills they need — which means the bar for being AI-ready is not yet high. Mid-career professionals with domain expertise and AI capability are exactly what organizations struggling to fill this gap are looking for.
 
+Keep reading
+
+- [In-person AI program vs. online course: which actually changes your career?](/blog/ai-bootcamp-vs-online-course)
+
+- [What do you actually learn at an AI bootcamp? A week-by-week breakdown.](/blog/what-do-you-learn-at-an-ai-bootcamp)
+
+- [The best AI courses and bootcamps in 2026: an honest comparison.](/blog/best-ai-courses-bootcamps-2026)
+
+- [The 2-week AI bootcamp in Austin](/immersive)
+
+- [Case study: a sales AE built his own AI prospecting tool](/case-study-cameron-dowd)
+
+- [Case study: a job seeker built an AI company-matcher](/case-study-ted-kilgore)
+
 MakerSquare is built specifically for the professionals in these categories — founders, operators, managers, and knowledge workers who need to develop genuine AI capability without a technical background. The two-week program is structured to actually move that skill threshold.
 
 [Get the curriculum](https://www.makersquare.ai/curriculum?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_jobs-most-at-risk-from-ai-2026_curriculum_20260717)
@@ -8734,11 +9453,184 @@ Reading this for your team? We run private AI training for Austin companies — 
 
 ---
 
+<!-- https://www.makersquare.ai/blog/learn-claude-code-without-coding -->
+
+# Learn Claude Code Without a Coding Background
+
+> Anthropic
+
+- [About](/about)
+
+- [Use Cases](/use-cases)
+
+- [Curriculum](/curriculum)
+
+- [For Companies](/corporate)
+
+- [Pricing](/immersive)
+
+- [Blog](/blog)
+
+- [Enroll](/enroll)
+
+[Secure Your Spot](/enroll)
+
+[← Blog](/blog)
+
+Build with AI
+
+## Learn Claude Code without a coding background.
+
+Marliis Schneider
+
+August 20, 2026
+
+5 min read
+
+![Learn Claude Code without a coding background.](../images/blog/learn-claude-code-without-coding-og.webp)
+
+Key takeaways
+
+- Anthropic’s own courses are free and are the correct starting point. Most paid Claude Code courses are repackaging them.
+
+- The thing that stalls non-coders is not Claude Code. It is the terminal. Solve that first and the rest is unusually gentle.
+
+- Claude Code is not a chat window. It reads and edits files on your computer, which is exactly why it is useful and why it feels unfamiliar for the first hour.
+
+- Learn it in the order the work happens: terminal, one real repository, one small change, then agents. Skipping to agents is the common mistake.
+
+Almost everything written about learning Claude Code assumes you are a software engineer picking up a new tool. If you are an operator, a founder or a domain expert with no coding background, that framing hides the only question you actually have: can I use this, and in what order do I learn it?
+
+Yes, and here is the order.
+
+### Start with the free official courses, because they are the good ones
+
+Anthropic publishes its own training and does not charge for it. [Claude Code 101](https://anthropic.skilljar.com/claude-code-101) and [Claude Code in Action](https://anthropic.skilljar.com/claude-code-in-action) are both on their learning platform, with the full catalogue at [claude.com/resources/courses](https://claude.com/resources/courses) and broader material at [anthropic.com/learn](https://www.anthropic.com/learn).
+
+There is also a [freeCodeCamp full course](https://www.freecodecamp.org/news/claude-code-full-course/) that is free and thorough.
+
+We are telling you to go do free things first on purpose. A paid Claude Code course is worth money when it adds a deadline, a person to ask, or your own project as the assignment. It is not worth money for the material alone, because the material is already free and comes from the people who build the tool.
+
+### Claude Code is not a chat box, and that is the part to get straight
+
+When people say Claude, they usually mean the chat interface: you type, it answers, you copy the answer somewhere. Claude Code is different in one specific way. It runs on your machine, in a terminal, inside a folder of files — and it can read those files and change them.
+
+That is the whole shift. You stop copying output around and start pointing at work. “Read this spreadsheet export and write me a script that flags duplicates” is a sentence that produces a file on your computer, not a block of text you have to do something with.
+
+Nothing about that requires you to write code. It requires you to be specific about what you want, which is a skill you already have if you have ever briefed a contractor.
+
+### The terminal is the actual obstacle
+
+In our cohorts, this is where non-technical builders stall, and it is almost never conceptual. It is that a black window with a blinking cursor gives no affordances and no undo button, and nobody has ever shown them the four commands that make it navigable.
+
+Spend an hour on the terminal before you spend a minute on agents. You need to be able to see where you are, move between folders, list what is in one, and open the current folder in a normal window. Four things. After that Claude Code will do the rest of the driving, and you will stop feeling like you are guessing.
+
+Our [git workflow guide for non-coders](/guides/git-workflow-for-non-coders) covers the adjacent piece — saving work so you can undo it — which is what makes experimenting feel safe rather than reckless.
+
+### The order to learn it in
+
+**One.** The terminal. Four commands. One hour, once.
+
+**Two.** One real folder of your own work. Not a tutorial repository — something you actually care about, even if it is a directory of CSV exports.
+
+**Three.** One small change you would otherwise have done by hand. Rename files by a rule. Pull three columns out of a messy export. Something you can verify is correct by looking at it.
+
+**Four.** A [CLAUDE.md file](/guides/how-to-set-up-claude-md), so it stops forgetting how your project works between sessions. This is the step that changes Claude Code from impressive to genuinely useful, and it is the one most tutorials leave out.
+
+**Five.** Now agents. Something that runs without you starting it. This is the interesting part and it is fifth for a reason — everything above is what makes it not collapse.
+
+### Where a paid program earns its price
+
+Three situations, in our experience.
+
+You have tried the free material twice and not finished it. That is a structure problem and more material will not fix it.
+
+You have a specific thing you need built and no one to ask when it breaks at step three. The debugging conversation is the product.
+
+You need it to stick in a team rather than in one person, which is [where most corporate AI training fails](/blog/why-your-companys-ai-training-isnt-working).
+
+Otherwise, start free. If you get through Claude Code 101 and want a room, a deadline and your own project as the assignment, that is what [our two-week program](/immersive) is, and the November [three-day workshop](/workshops) is a shorter version of the same idea.
+
+Frequently asked questions
+
+Is there a course on Claude Code?
+
+Yes, and Anthropic publishes its own for free. Claude Code 101 and Claude Code in Action are both on Anthropic’s learning platform, with the full catalogue at claude.com/resources/courses. freeCodeCamp also publishes a free full course. Paid options exist on Udemy, Coursera, LinkedIn Learning and Pluralsight, but start with the official free material first.
+
+Is there a free course in Claude Code?
+
+Several. Anthropic’s Claude Code 101 and Claude Code in Action are free, as is the freeCodeCamp full course. Between them they cover more than most paid courses, because most paid Claude Code courses are repackaging the same material. Pay for a course when it adds a deadline, someone to ask when you get stuck, or your own project as the assignment — not for the content alone.
+
+What is the best course for learning Claude Code?
+
+For a non-technical learner, the best sequence is Anthropic’s free Claude Code 101 followed immediately by using it on one real folder of your own work. The reason to prefer that over a longer paid course is that Claude Code is a tool you learn by pointing it at something you care about. Courses that use a sample repository skip the part that actually builds the skill.
+
+What is the best way to learn Claude Code?
+
+In this order: spend one hour on basic terminal navigation, open one real folder of your own work, make one small change you would otherwise have done by hand, add a CLAUDE.md file so it remembers how your project works, and only then build agents. Most people try to start at agents, and the earlier steps are what stop that from collapsing.
+
+Keep reading
+
+- [Cursor AI for Non-Coders: A Beginner's Tutorial (2026)](/blog/what-is-cursor-ai-beginners-guide)
+
+- [How to use Claude for business: a practical guide](/blog/how-to-use-claude-for-business)
+
+- [AI automation for non-engineers: what's actually possible](/blog/ai-automation-for-non-engineers)
+
+- [All MakerSquare build guides](/guides)
+
+- [AI for content creators: beyond writing the first draft](/blog/ai-for-content-creators-2026)
+
+- [AI for sales teams: what top performers are building now](/blog/ai-for-sales-teams)
+
+- [AI for marketing teams: beyond using ChatGPT](/blog/ai-for-marketing-teams)
+
+- [See AI use cases by industry](/use-cases)
+
+MakerSquare is a 2-week in-person AI builder program in Austin, TX for operators, founders, and professionals - the people who understand their business well enough to build with AI, not just use it. See what two weeks of hands-on building looks like.
+
+[Get the curriculum](https://www.makersquare.ai/curriculum?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_ai-for-seo_curriculum_20260914)
+[Sign up for the newsletter](https://ai-builder-brief.beehiiv.com/?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_ai-for-seo_newsletter_20260914)
+
+Sources
+
+1
+
+[Anthropic — Claude Code 101](https://anthropic.skilljar.com/claude-code-101)
+
+Official free course
+
+2
+
+[Anthropic — Claude Code in Action](https://anthropic.skilljar.com/claude-code-in-action)
+
+Official free course
+
+3
+
+[Anthropic — Course catalogue](https://claude.com/resources/courses)
+
+All official courses
+
+4
+
+[Anthropic — Learning resources and guides](https://www.anthropic.com/learn)
+
+Official documentation and guides
+
+5
+
+[freeCodeCamp — Claude Code Full Course](https://www.freecodecamp.org/news/claude-code-full-course/)
+
+Free full-length course
+
+---
+
 <!-- https://www.makersquare.ai/blog/non-technical-ai-skills-2026 -->
 
-# Non-Technical AI Skills: What Actually Matters in 2026 | MakerSquare
+# Non-Technical AI Skills: What Actually Matters in 2026
 
-> Non-technical AI skills in 2026 aren
+> The AI skills that matter are not prompting — they are judgment, workflow design, and knowing when to trust the output. What separates them.
 
 [← Blog](/blog)
 
@@ -8752,7 +9644,7 @@ August 11, 2026
 
 5 min read
 
-![Non-technical AI skills: what actually matters in 2026](../images/blog/non-technical-ai-skills-og.png)
+![Non-technical AI skills: what actually matters in 2026](../images/blog/non-technical-ai-skills-og.webp)
 
 Key takeaways
 
@@ -8816,6 +9708,18 @@ What is the difference between using AI and having AI skills?
 
 Using AI means occasionally prompting a chatbot for help with a task. Having AI skills means being able to identify which problems AI can solve reliably, design workflows that apply AI to those problems consistently, evaluate output quality, and build on what works. The second set of skills is what actually changes how you work — and what employers are starting to differentiate on.
 
+Keep reading
+
+- [The difference between using AI and building with AI.](/blog/using-ai-vs-building-with-ai)
+
+- [What another year without AI skills actually costs.](/blog/what-another-year-without-ai-skills-actually-costs)
+
+- [The 5 jobs most at risk from AI — and what to actually do about it.](/blog/jobs-most-at-risk-from-ai-2026)
+
+- [The 2-week AI bootcamp in Austin](/immersive)
+
+- [Case study: a job seeker built an AI company-matcher](/case-study-ted-kilgore)
+
 The non-technical AI skills that compound — output evaluation, task decomposition, workflow design — are built through practice, not reading. MakerSquare is where that practice happens, in person, over two weeks.
 
 [Download the curriculum](https://www.makersquare.ai/curriculum)
@@ -8845,9 +9749,9 @@ McKinsey Global Institute · 2023 · Knowledge worker productivity as the primar
 
 <!-- https://www.makersquare.ai/blog/using-ai-vs-building-with-ai -->
 
-# The Difference Between Using AI and Building With AI | MakerSquare
+# The Difference Between Using AI and Building With AI
 
-> Using AI vs building with AI — two very different skill levels with very different outcomes. Here
+> Using AI and building with AI are different skill levels with different outcomes. The distinction that separates users from people pulling ahead.
 
 [← Blog](/blog)
 
@@ -8861,7 +9765,7 @@ July 8, 2026
 
 5 min read
 
-![The difference between using AI and building with AI.](../images/blog/using-vs-building-ai-og.png)
+![The difference between using AI and building with AI.](../images/blog/using-vs-building-ai-og.webp)
 
 Key takeaways
 
@@ -8927,6 +9831,16 @@ Why does building with AI produce better outcomes than just using it?
 
 When you use AI, you get a one-time output. When you build with AI, you create a system that produces outputs repeatedly without additional effort. A builder who automates a 3-hour weekly research process has reclaimed those 3 hours permanently. A user who does the same research manually with AI assistance each week saves maybe 30 minutes each time. The compounding difference is enormous over time.
 
+Keep reading
+
+- [What another year without AI skills actually costs.](/blog/what-another-year-without-ai-skills-actually-costs)
+
+- [The 5 jobs most at risk from AI — and what to actually do about it.](/blog/jobs-most-at-risk-from-ai-2026)
+
+- [In-person AI program vs. online course: which actually changes your career?](/blog/ai-bootcamp-vs-online-course)
+
+- [The 2-week AI bootcamp in Austin](/immersive)
+
 MakerSquare is built around the builder mindset — 2 weeks in person in Austin, and you leave with deployed AI tools. See what students build and how the program is structured.
 
 [Get the curriculum](https://www.makersquare.ai/curriculum)
@@ -8964,7 +9878,7 @@ Reading this for your team? We run private AI training for Austin companies — 
 
 # The Real Cost of Waiting to Build AI Skills | MakerSquare
 
-> Hiring in AI-exposed roles slowed 14% in one year. 53% of employers can
+> Hiring in AI-exposed roles slowed 14% in a year. 53% of employers cannot find graduates with the right AI skills. What the data shows.
 
 [← Blog](/blog)
 
@@ -8978,7 +9892,7 @@ June 18, 2026
 
 4 min read
 
-![What another year without AI skills actually costs](../images/blog/ai-skills-cost-og.png)
+![What another year without AI skills actually costs](../images/blog/ai-skills-cost-og.webp)
 
 Key takeaways
 
@@ -9038,6 +9952,16 @@ What AI skills do employers actually want?
 
 Pearson found 53% of employers can't find graduates who are genuinely AI-ready. Not people who list tools on a resume, but people who apply AI reliably to real work. The differentiating skills are practical: research, writing, analysis, and decision-making faster, not just knowing which tools exist.
 
+Keep reading
+
+- [The 5 jobs most at risk from AI — and what to actually do about it.](/blog/jobs-most-at-risk-from-ai-2026)
+
+- [In-person AI program vs. online course: which actually changes your career?](/blog/ai-bootcamp-vs-online-course)
+
+- [What do you actually learn at an AI bootcamp? A week-by-week breakdown.](/blog/what-do-you-learn-at-an-ai-bootcamp)
+
+- [The 2-week AI bootcamp in Austin](/immersive)
+
 The window where AI skills are a differentiator is closing. Once most professionals have basic AI capability, having it won't stand out. Not having it will. MakerSquare is two weeks, in person, in Austin.
 
 [Get the curriculum](https://www.makersquare.ai/curriculum?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_what-another-year-without-ai-skills-actually-costs_curriculum_2026-06-18)
@@ -9073,9 +9997,9 @@ Reading this for your team? We run private AI training for Austin companies — 
 
 <!-- https://www.makersquare.ai/blog/what-do-you-learn-at-an-ai-bootcamp -->
 
-# What Do You Learn at an AI Bootcamp? (Week-by-Week) | MakerSquare
+# What Do You Learn at an AI Bootcamp? (Week-by-Week)
 
-> Most AI bootcamps are vague about what you actually learn. Here
+> Most AI bootcamps are vague about what you learn. A transparent week-by-week breakdown of what MakerSquare students build and leave with.
 
 [← Blog](/blog)
 
@@ -9089,7 +10013,7 @@ July 17, 2026
 
 5 min read
 
-![What do you actually learn at an AI bootcamp? A week-by-week breakdown.](../images/blog/what-do-you-learn-at-an-ai-bootcamp-og.png)
+![What do you actually learn at an AI bootcamp? A week-by-week breakdown.](../images/blog/what-do-you-learn-at-an-ai-bootcamp-og.webp)
 
 Key takeaways
 
@@ -9155,6 +10079,18 @@ What do you build at an AI bootcamp?
 
 Students build real, working AI tools: a Day 5 project demonstrating core AI integration, a capstone project built around their specific business or role, and typically one additional tool that solves a problem that comes up during the sprint. All projects are functional and deployed — not prototypes.
 
+Keep reading
+
+- [The best AI courses and bootcamps in 2026: an honest comparison.](/blog/best-ai-courses-bootcamps-2026)
+
+- [Why in-person AI learning produces better outcomes than self-paced: what the research shows.](/blog/in-person-ai-learning-vs-self-paced-research)
+
+- [How to learn AI without knowing how to code](/blog/how-to-learn-ai-without-coding)
+
+- [The 2-week AI bootcamp in Austin](/immersive)
+
+- [Agentic AI Courses in 2026: An Honest Comparison](/blog/agentic-ai-courses-2026)
+
 The full MakerSquare curriculum is available to review — it covers what's taught on each day, how the capstone project is scoped, and what the Demo Day format looks like. If you're deciding whether this is the right program for your goals, that's the right place to start.
 
 [Get the curriculum](https://www.makersquare.ai/curriculum?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_what-do-you-learn-at-an-ai-bootcamp_curriculum_20260721)
@@ -9190,9 +10126,9 @@ Reading this for your team? We run private AI training for Austin companies — 
 
 <!-- https://www.makersquare.ai/blog/what-is-cursor-ai-beginners-guide -->
 
-# Cursor AI for Non-Coders: What It Is & How to Start (2026) | MakerSquare
+# Cursor AI for Non-Coders: A Beginner's Tutorial (2026)
 
-> Cursor is the AI code editor letting people with no coding background build real software. Here
+> Cursor is the AI code editor letting people with no coding background build real software. What it does, how it works, and how to start.
 
 [← Blog](/blog)
 
@@ -9206,7 +10142,7 @@ July 10, 2026
 
 4 min read
 
-![What is Cursor AI — and can someone with no coding background actually use it?](../images/blog/what-is-cursor-ai-beginners-guide-og.png)
+![What is Cursor AI — and can someone with no coding background actually use it?](../images/blog/what-is-cursor-ai-beginners-guide-og.webp)
 
 Key takeaways
 
@@ -9274,6 +10210,18 @@ Related reading
 - [How to build an AI tool without coding](/blog/how-to-build-ai-tool-without-coding)
 - [Using AI vs. building with AI](/blog/using-ai-vs-building-with-ai)
 
+Keep reading
+
+- [How to write better AI prompts: a guide for non-technical professionals](/blog/how-to-write-better-ai-prompts)
+
+- [How to build an AI tool for your business without coding](/blog/how-to-build-ai-tool-without-coding)
+
+- [AI automation for non-engineers: what's actually possible](/blog/ai-automation-for-non-engineers)
+
+- [All MakerSquare build guides](/guides)
+
+- [Learn Claude Code Without a Coding Background](/blog/learn-claude-code-without-coding)
+
 Cursor is one of the core tools in the MakerSquare curriculum. We teach it to students with zero coding background and they build real, deployed projects with it. The curriculum explains what Day 1 through Day 10 actually looks like.
 
 [Get the curriculum](https://www.makersquare.ai/curriculum?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_what-is-cursor-ai-beginners-guide_curriculum_20260710)
@@ -9311,7 +10259,7 @@ Reading this for your team? We run private AI training for Austin companies — 
 
 # Why Your Company's AI Training Isn't Working | MakerSquare
 
-> Most companies have done AI training. Almost none of it stuck. Here
+> Most companies have done AI training and almost none of it stuck. The structural reason corporate upskilling fails, and what works instead.
 
 [← Blog](/blog)
 
@@ -9325,7 +10273,7 @@ July 3, 2026
 
 4 min read
 
-![Why your company](../images/blog/corporate-ai-training-og.png)
+![Why your company](../images/blog/corporate-ai-training-og.webp)
 
 Key takeaways
 
@@ -9408,6 +10356,16 @@ Awareness training explains what AI is, what tools exist, and why it matters. Sk
 What should companies look for in an AI training program?
 
 Look for programs that require employees to build or produce something using AI — not just watch demonstrations. The outcome of effective AI training is a changed workflow, not a certificate. Programs should exceed five hours of applied practice, include accountability mechanisms, and be specific enough to the employee's actual job tasks to be immediately applicable.
+
+Keep reading
+
+- [AI adoption strategy for non-technical teams: what works.](/blog/ai-adoption-strategy-non-technical-teams)
+
+- [The real cost of hiring an AI developer vs. training your team.](/blog/hiring-ai-developer-vs-training-team-cost)
+
+- [How to pitch AI training to your manager and actually get the budget approved.](/blog/how-to-pitch-ai-training-to-your-manager)
+
+- [Private AI training for your team](/corporate)
 
 MakerSquare runs corporate AI cohorts for teams of 4 to 15. Two weeks, in person in Austin, with a project shipped by the end. If you're evaluating AI training options for your organization, the curriculum outlines exactly what the program covers and how it's structured — or reach out directly to talk through whether it's the right fit.
 

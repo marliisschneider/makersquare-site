@@ -1,10 +1,13 @@
 // /api/markdown — Markdown content negotiation for AI agents.
 //
-// vercel.json rewrites any page request carrying `Accept: text/markdown` here.
+// vercel.json redirects any page request carrying `Accept: text/markdown` here.
 // Browsers (Accept: text/html,...) never match, so the HTML site is untouched.
 // We fetch our own static HTML and convert it, which keeps one source of truth.
 
-import { htmlToMarkdown } from './_html-to-markdown.mjs';
+// Default-import interop: works whether Vercel bundles this file as CJS or ESM.
+import converter from '../lib/html-to-markdown.cjs';
+
+const { htmlToMarkdown } = converter;
 
 const MAX_HTML_BYTES = 2_000_000;
 
