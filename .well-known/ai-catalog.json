@@ -8,7 +8,7 @@
   },
   "entries": [
     {
-      "id": "urn:air:makersquare.ai:content:llms-txt",
+      "identifier": "urn:air:makersquare.ai:content:llms-txt",
       "displayName": "MakerSquare site overview (llms.txt)",
       "description": "Condensed, agent-readable summary of MakerSquare: what the program is, who it is for, what students build, pricing, cohort and workshop dates, location, and enrollment.",
       "type": "text/markdown",
@@ -21,7 +21,7 @@
       ]
     },
     {
-      "id": "urn:air:makersquare.ai:content:llms-full-txt",
+      "identifier": "urn:air:makersquare.ai:content:llms-full-txt",
       "displayName": "MakerSquare full site content (llms-full.txt)",
       "description": "Full markdown text of every public MakerSquare page in one document: program details, curriculum, FAQ, comparisons with other AI programs, corporate training, and case studies.",
       "type": "text/markdown",
@@ -34,7 +34,7 @@
       ]
     },
     {
-      "id": "urn:air:makersquare.ai:content:sitemap",
+      "identifier": "urn:air:makersquare.ai:content:sitemap",
       "displayName": "MakerSquare sitemap",
       "description": "XML sitemap listing every indexable page on makersquare.ai. Any page can also be fetched as markdown by sending the Accept: text/markdown request header.",
       "type": "application/xml",
@@ -46,7 +46,7 @@
       ]
     },
     {
-      "id": "urn:air:makersquare.ai:content:markdown-negotiation",
+      "identifier": "urn:air:makersquare.ai:content:markdown-negotiation",
       "displayName": "Markdown content negotiation",
       "description": "Every page on makersquare.ai returns clean markdown instead of HTML when the request carries the Accept: text/markdown header. Useful for reading a specific page without parsing markup.",
       "type": "text/markdown",
