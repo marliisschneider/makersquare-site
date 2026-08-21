@@ -350,4 +350,10 @@
     <loc>https://www.makersquare.ai/blog/learn-claude-code-without-coding</loc>
     <lastmod>2026-08-20</lastmod>
   </url>
+  <url>
+    <loc>https://www.makersquare.ai/blog/build-custom-ai-workflow-weekend</loc>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
