@@ -4719,22 +4719,6 @@ Reading this for your team? We run private AI training for Austin companies — 
 
 > Agentic AI courses split into four types that barely compete. What each one leaves you with, the prerequisite trap, and how to pick in ten minutes.
 
-- [About](/about)
-
-- [Use Cases](/use-cases)
-
-- [Curriculum](/curriculum)
-
-- [For Companies](/corporate)
-
-- [Pricing](/immersive)
-
-- [Blog](/blog)
-
-- [Enroll](/enroll)
-
-[Secure Your Spot](/enroll)
-
 [← Blog](/blog)
 
 AI Skills
@@ -5042,22 +5026,6 @@ Reading this for your team? We run private AI training for Austin companies — 
 
 > AI automation has moved past chatbots. An honest look at the multi-step workflows and custom tools you can build without writing code.
 
-- [About](/about)
-
-- [Use Cases](/use-cases)
-
-- [Curriculum](/curriculum)
-
-- [For Companies](/corporate)
-
-- [Pricing](/immersive)
-
-- [Blog](/blog)
-
-- [Enroll](/enroll)
-
-[Secure Your Spot](/enroll)
-
 [← Blog](/blog)
 
 Build with AI
@@ -5335,22 +5303,6 @@ Reading this for your team? We run private AI training for Austin companies — 
 # AI for Accountants: What's Changing in 2026 | MakerSquare
 
 > AI is automating accounting busywork — reconciliation, categorization, close — and freeing CPAs for advisory work. What is real and what to do.
-
-- [About](/about)
-
-- [Use Cases](/use-cases)
-
-- [Curriculum](/curriculum)
-
-- [For Companies](/corporate)
-
-- [Pricing](/immersive)
-
-- [Blog](/blog)
-
-- [Enroll](/enroll)
-
-[Secure Your Spot](/enroll)
 
 [← Blog](/blog)
 
@@ -6487,22 +6439,6 @@ BCG · 2025 · AI adoption gap between organizations using AI systematically vs.
 
 > Which processes to automate first, which tools actually work, and how ops teams cut hours off their week without writing a line of code.
 
-- [About](/about)
-
-- [Use Cases](/use-cases)
-
-- [Curriculum](/curriculum)
-
-- [For Companies](/corporate)
-
-- [Pricing](/immersive)
-
-- [Blog](/blog)
-
-- [Enroll](/enroll)
-
-[Secure Your Spot](/enroll)
-
 [← Blog](/blog)
 
 AI at Work
@@ -7000,22 +6936,6 @@ McKinsey & Company · 2024 · AI adoption in sales and marketing driving measura
 # AI for SEO: What Actually Works in 2026 | MakerSquare
 
 > AI for SEO in 2026 isn
-
-- [About](/about)
-
-- [Use Cases](/use-cases)
-
-- [Curriculum](/curriculum)
-
-- [For Companies](/corporate)
-
-- [Pricing](/immersive)
-
-- [Blog](/blog)
-
-- [Enroll](/enroll)
-
-[Secure Your Spot](/enroll)
 
 [← Blog](/blog)
 
@@ -7523,22 +7443,6 @@ Reading this for your team? We run private AI training for Austin companies — 
 
 > AI workflows can return 10+ hours per person per week, but only if you start with the right tasks. A framework for what to automate first.
 
-- [About](/about)
-
-- [Use Cases](/use-cases)
-
-- [Curriculum](/curriculum)
-
-- [For Companies](/corporate)
-
-- [Pricing](/immersive)
-
-- [Blog](/blog)
-
-- [Enroll](/enroll)
-
-[Secure Your Spot](/enroll)
-
 [← Blog](/blog)
 
 AI at Work
@@ -7795,22 +7699,6 @@ Reading this for your team? We run private AI training for Austin companies — 
 
 > A practical comparison of the top AI courses and bootcamps in 2026 by format, cost, and what you get. No affiliate links, no paid placements.
 
-- [About](/about)
-
-- [Use Cases](/use-cases)
-
-- [Curriculum](/curriculum)
-
-- [For Companies](/corporate)
-
-- [Pricing](/immersive)
-
-- [Blog](/blog)
-
-- [Enroll](/enroll)
-
-[Secure Your Spot](/enroll)
-
 [← Blog](/blog)
 
 AI at Work
@@ -7939,22 +7827,6 @@ Jordan, K. · IRRODL · 2015
 # How to Build a Custom AI Workflow in a Weekend | MakerSquare
 
 > You can build a custom AI workflow without coding in a weekend — if you start with the right problem and the right tools. Here
-
-- [About](/about)
-
-- [Use Cases](/use-cases)
-
-- [Curriculum](/curriculum)
-
-- [For Companies](/corporate)
-
-- [Pricing](/immersive)
-
-- [Blog](/blog)
-
-- [Enroll](/enroll)
-
-[Secure Your Spot](/enroll)
 
 [← Blog](/blog)
 
@@ -8726,22 +8598,6 @@ BCG · 2025 · Five or more hours of structured, applied AI practice is the adop
 
 > Most AI training requests get rejected because they are framed wrong. How to build a case your manager says yes to, with the ROI framing.
 
-- [About](/about)
-
-- [Use Cases](/use-cases)
-
-- [Curriculum](/curriculum)
-
-- [For Companies](/corporate)
-
-- [Pricing](/immersive)
-
-- [Blog](/blog)
-
-- [Enroll](/enroll)
-
-[Secure Your Spot](/enroll)
-
 [← Blog](/blog)
 
 AI at Work
@@ -9187,22 +9043,6 @@ OpenAI · 2025 · Research-backed guidance on prompt structure and context-setti
 
 > Online AI courses have completion rates under 6%. The learning science behind why format matters as much as content for skill transfer.
 
-- [About](/about)
-
-- [Use Cases](/use-cases)
-
-- [Curriculum](/curriculum)
-
-- [For Companies](/corporate)
-
-- [Pricing](/immersive)
-
-- [Blog](/blog)
-
-- [Enroll](/enroll)
-
-[Secure Your Spot](/enroll)
-
 [← Blog](/blog)
 
 AI at Work
@@ -9321,6 +9161,223 @@ Pearson · 2026
 [Spacing effects in learning: A temporal ridgeline of optimal retention](https://journals.sagepub.com/doi/10.1111/j.1467-9280.2008.02209.x)
 
 Cepeda et al. · Psychological Science · 2008
+
+---
+
+<!-- https://www.makersquare.ai/blog/is-your-website-agent-ready -->
+
+# Is Your Website Agent-Ready? What Actually Matters
+
+> We scanned makersquare.ai on Cloudflare’s agent-readiness tool and scored 20/100. Four fixes are worth making on any site. Twelve checks are not. How to tell them apart.
+
+[← Blog](/blog)
+
+Build with AI
+
+## Our site scored 20 out of 100 on agent-readiness. Here’s what I actually fixed.
+
+Marliis Schneider
+
+August 21, 2026
+
+7 min read
+
+![Our site scored 20 out of 100 on agent-readiness. Here’s what I actually fixed.](../images/blog/is-your-website-agent-ready-og.webp)
+
+Key takeaways
+
+- Agent-readiness scanners grade you against roughly twenty emerging standards. Most of them are written for software with an API, not for a website.
+
+- Four fixes are worth making on almost any site: content signals in robots.txt, an llms.txt, markdown for agents, and a discovery catalog. Call it an hour of work.
+
+- The rest (MCP server cards, OAuth discovery, WebMCP, agent skills indexes, the payment protocols) only mean something if an agent can *call* something you run. Skipping them is the right call.
+
+- The scanner never checked our llms.txt. The file that most affects how ChatGPT and Claude describe us isn’t on the scorecard at all.
+
+I run a school that teaches people to build with AI. Last week I ran our own website through [Cloudflare’s agent-readiness scanner](https://isitagentready.com).
+
+Twenty out of a hundred. Level 1: Basic Web Presence.
+
+My first instinct was to fix everything by Friday. That instinct was wrong, and working out why turned into the most useful thing I’ve learned about this all year.
+
+### What these scanners check
+
+The tool runs about twenty checks across five groups: discoverability, content, bot access control, API/auth/MCP discovery, and agentic commerce.
+
+We passed three: robots.txt, sitemap.xml, and rules for the major AI crawlers. We failed everything else. No markdown negotiation. No Link headers. No API catalog. No OAuth discovery metadata. No MCP server card. No agent skills index. No WebMCP. No payment protocol.
+
+That reads like a report card. Then I went through what the failed checks were each asking for.
+
+### Most of the rubric isn’t written for your website
+
+Eight of the twenty checks assume you have an API for agents to call. An [MCP](https://modelcontextprotocol.io) server card describes a server. OAuth discovery metadata describes how to get a token for your protected endpoints. WebMCP exposes your site’s *actions*, like add-to-cart or book-the-slot, as tools an agent can invoke. An agent skills index publishes skills you’ve authored.
+
+We have a marketing site and a Stripe checkout. There’s no server for an agent to connect to, no protected API to get a token for, no cart to add to. An MCP server card for a server that doesn’t exist is a lie in JSON.
+
+Four more checks cover agentic commerce: x402, the Machine Payment Protocol, Universal Commerce Protocol, ACP. The scanner was straight with us there. It found no e-commerce signals and marked those informational, excluded from the score.
+
+So of twenty checks, eight are aspirational, four don’t apply, and one is a check most sites misread. **Web Bot Auth** is how a company that *operates* a crawler proves its bot is really its bot. It’s published by the people sending requests, not the people receiving them. We don’t run a crawler, so there’s nothing for us to publish.
+
+That leaves seven checks that genuinely apply to a normal website. That’s the real denominator.
+
+### The four things worth doing on any site
+
+#### 1. Content signals in robots.txt
+
+Two years ago robots.txt could say one thing: crawl this, don’t crawl that. [Content Signals](https://contentsignals.org) splits that into three questions, because they’re genuinely different.
+
+```
+User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+```
+
+`search=yes` means index us and link to us. `ai-input=yes` means use our pages to answer someone’s question and cite us. `ai-train=no` means don’t use our content to train model weights.
+
+Those are three different answers for us. Being cited in an AI answer is how people find MakerSquare now. Having our copy absorbed into a training set does nothing for us. Before Content Signals there was no way to say one and not the other.
+
+One thing to watch: robots.txt groups don’t inherit. If a bot matches a named `User-agent: GPTBot` group, it ignores the `User-agent: *` group completely. Put the signal only in `*` and every crawler you named by hand, the ones you care most about, never sees it. Repeat it in every group.
+
+#### 2. llms.txt, the one the scanner never checked
+
+We’ve had an [llms.txt](https://llmstxt.org) for months. It’s a plain markdown summary at the root of the domain: what we are, who it’s for, what students build, prices, dates, how to enroll. When Claude or ChatGPT gets asked about MakerSquare, that file does more work than anything else on the site.
+
+The scanner never looked for it. Not once, in twenty checks.
+
+A score is a proxy. A useful one, but still a proxy, and this is the clearest evidence of it I’ve seen.
+
+We also added `llms-full.txt`, the complete text of every public page in one document, for agents that want everything rather than the summary. Ours is 68 pages. I generate it with a script rather than maintaining it by hand, because a stale llms-full.txt is worse than none.
+
+#### 3. Markdown for agents
+
+This is the one with real value beyond the scorecard.
+
+When an agent fetches your page, it gets HTML: nav, footer, cookie banner, inline styles, three analytics scripts, and somewhere in the middle, your content. It burns tokens on markup and sometimes gets the content wrong.
+
+Content negotiation fixes that. A normal browser sends `Accept: text/html` and gets your page exactly as it always was. An agent sends `Accept: text/markdown` and gets clean markdown of the same page. One URL, one source of truth, two representations.
+
+If you’re on [Cloudflare this is a toggle](https://developers.cloudflare.com/ai-crawl-control/features/markdown-conversion/). We’re on Vercel, so it’s a small function that fetches the page and converts it.
+
+Two things I got wrong, in case you’re doing this yourself.
+
+The first cost me a deploy. On Vercel, [rewrites are evaluated after the filesystem](https://vercel.com/docs/project-configuration#rewrites), which is why they work as SPA fallbacks. So a rewrite pointed at your markdown handler never fires for a page that exists as a static file. It has to be a `redirect`, which is checked first. Then you need a guard so the agent’s followed request doesn’t re-enter the same rule and loop.
+
+The second one is funnier. My converter stripped ` ` elements as chrome. Our FAQ page is an accordion, and every question lives inside a button. I generated a beautiful markdown FAQ containing thirty-two answers and no questions. Whatever you build, read the output before you ship it.
+
+#### 4. A discovery catalog
+
+Last one, and it’s ten minutes. A JSON file at `/.well-known/ai-catalog.json` listing what you offer an agent. In our case that’s the llms.txt, the llms-full.txt, the sitemap, and a note that any page can be fetched as markdown. Each entry gets a few example questions it can answer, so registries can index it semantically.
+
+Then advertise it, in the HTTP `Link` header on every page and with an `Agentmap:` line in robots.txt. A file nothing points at is a file nobody finds.
+
+### How to sort the next standard that shows up
+
+More of these are coming. The question I use:
+
+**Does this describe content I already publish, or a service I’d have to run?**
+
+Content signals, llms.txt, markdown negotiation, a discovery catalog. Those describe things that already exist. You’re labelling reality. Cheap, honest, no maintenance.
+
+MCP server cards, OAuth metadata, WebMCP, skills indexes, payment protocols. Those describe a service. Implementing them means building and running that service, forever. That’s a product decision with a roadmap and an on-call rotation attached. Treating it as a checkbox is how you end up with a manifest pointing at an endpoint that 404s.
+
+If that doesn’t settle it, ask who the standard is for: people receiving requests, or people sending them. That’s the one that catches Web Bot Auth.
+
+### Where we landed
+
+We made the four changes. Our score roughly doubled, and it won’t reach 100, because reaching 100 means running an MCP server we have no reason to run.
+
+What we got out of it: agents can read our pages cleanly, our content preferences are stated in machine-readable terms instead of assumed, and one file tells an agent everything we offer it.
+
+If you’ve got an hour and no llms.txt, start there. It won’t move your score by a single point.
+
+Frequently asked questions
+
+What does “agent-ready” actually mean?
+
+That an AI agent can find your site, read it without wading through markup, understand what you offer, and know what you permit. Being *callable* by agents, through APIs, MCP servers, or machine payments, is a separate thing, and most websites don’t need it.
+
+Do I need an MCP server for my website?
+
+Almost certainly not. MCP is for exposing tools and data an agent can invoke. If you have a marketing site, a blog, or a brochure site, you have content, not tools. An MCP server card pointing at nothing scores you a point and helps no one.
+
+Is llms.txt worth it if the scanners don’t check for it?
+
+Yes, and it’s the clearest example of why a score isn’t the goal. llms.txt is what an AI assistant reads to describe your business. Scanners check emerging standards. llms.txt is already doing the work.
+
+Will blocking AI training hurt my search visibility?
+
+No, and that’s the point of separating the signals. `ai-train=no` with `search=yes, ai-input=yes` says don’t train on our content, but do index us and do cite us in answers. Those used to be a single yes-or-no. They aren’t anymore.
+
+Keep reading
+
+- [AI for SEO: What Actually Works in 2026](/blog/ai-for-seo)
+
+- [How to use Claude for business: a practical guide](/blog/how-to-use-claude-for-business)
+
+- [The difference between using AI and building with AI.](/blog/using-ai-vs-building-with-ai)
+
+- [AI for content creators: beyond writing the first draft](/blog/ai-for-content-creators-2026)
+
+- [AI for sales teams: what top performers are building now](/blog/ai-for-sales-teams)
+
+- [AI for marketing teams: beyond using ChatGPT](/blog/ai-for-marketing-teams)
+
+- [See AI use cases by industry](/use-cases)
+
+MakerSquare is a 2-week in-person AI builder program in Austin, TX for operators, founders, and professionals - the people who understand their business well enough to build with AI, not just use it. See what two weeks of hands-on building looks like.
+
+[Get the curriculum](https://www.makersquare.ai/curriculum?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_ai-for-seo_curriculum_20260914)
+[Sign up for the newsletter](https://ai-builder-brief.beehiiv.com/?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_ai-for-seo_newsletter_20260914)
+
+Sources
+
+1
+
+[Cloudflare — Is Your Site Agent-Ready?](https://isitagentready.com)
+
+Agent-readiness scanner used for this audit
+
+2
+
+[Content Signals](https://contentsignals.org)
+
+robots.txt directives for search, ai-input and ai-train
+
+3
+
+[llmstxt.org](https://llmstxt.org)
+
+The llms.txt proposal
+
+4
+
+[Agentic Resource Discovery — AI Catalog spec](https://agenticresourcediscovery.org/ai_catalog_spec/)
+
+Schema for /.well-known/ai-catalog.json
+
+5
+
+[Cloudflare Docs — Markdown conversion](https://developers.cloudflare.com/ai-crawl-control/features/markdown-conversion/)
+
+Markdown content negotiation for agents
+
+6
+
+[RFC 8288 — Web Linking](https://www.rfc-editor.org/rfc/rfc8288.html)
+
+The Link header format
+
+7
+
+[Model Context Protocol](https://modelcontextprotocol.io)
+
+Specification for MCP servers and clients
+
+8
+
+[Vercel — Project configuration](https://vercel.com/docs/project-configuration#rewrites)
+
+Redirect and rewrite evaluation order
 
 ---
 
@@ -9458,22 +9515,6 @@ Reading this for your team? We run private AI training for Austin companies — 
 # Learn Claude Code Without a Coding Background
 
 > Anthropic
-
-- [About](/about)
-
-- [Use Cases](/use-cases)
-
-- [Curriculum](/curriculum)
-
-- [For Companies](/corporate)
-
-- [Pricing](/immersive)
-
-- [Blog](/blog)
-
-- [Enroll](/enroll)
-
-[Secure Your Spot](/enroll)
 
 [← Blog](/blog)
 

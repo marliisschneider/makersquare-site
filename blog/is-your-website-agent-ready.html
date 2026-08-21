@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="facebook-domain-verification" content="fligau9appze71fwy7uaaw2v12bc4n" />
+<!-- Google Tag Manager (delayed-load) -->
+<!-- dataLayer is created and gtm.start pushed IMMEDIATELY so queued events are never lost.
+     Only the gtm.js request is deferred: it fires on first user interaction, or after 3500ms,
+     whichever comes first. Do NOT revert to the eager loader - it puts 344KB of JS on the
+     mobile critical path and was measured pushing blog LCP to 6.3s. -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+var done=false,t=null,evts=['scroll','mousemove','mousedown','touchstart','keydown','click'],opts={passive:true,capture:true};
+function load(){if(done)return;done=true;if(t)w.clearTimeout(t);
+for(var k=0;k<evts.length;k++){w.removeEventListener(evts[k],load,opts);}
+var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);}
+for(var k=0;k<evts.length;k++){w.addEventListener(evts[k],load,opts);}
+t=w.setTimeout(load,3500);})(window,document,'script','dataLayer','GTM-MJTW9WQ3');</script>
+<!-- End Google Tag Manager -->
+<!-- Zoho UTM passthrough (modificado: incluye fbclid) -->
+<script>
+(function(){var p=new URLSearchParams(window.location.search);var keys=['utm_source','utm_medium','utm_campaign','utm_content','utm_term','fbclid'];var stored={};keys.forEach(function(k){if(p.get(k))stored[k]=p.get(k);});if(Object.keys(stored).length){try{sessionStorage.setItem('zf_utm',JSON.stringify(stored));}catch(e){}}})();
+</script>
+<!-- Zoho zf_gtm postMessage listener -->
+<script>
+window.addEventListener('message',function(e){if(e.data&&e.data.type=='zf_gtm'){window.dataLayer=window.dataLayer||[];window.dataLayer.push(e.data);}});
+</script>
+<title>Is Your Website Agent-Ready? What Actually Matters</title>
+<meta name="description" content="We scanned makersquare.ai on Cloudflare’s agent-readiness tool and scored 20/100. Four fixes are worth making on any site. Twelve checks are not. How to tell them apart.">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/png" href="../favicon.png">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="canonical" href="https://www.makersquare.ai/blog/is-your-website-agent-ready">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.makersquare.ai/blog/is-your-website-agent-ready">
+<meta property="og:title" content="Is Your Website Agent-Ready? What Actually Matters">
+<meta property="og:description" content="We scanned makersquare.ai on Cloudflare’s agent-readiness tool and scored 20/100. Four fixes are worth making on any site. Twelve checks are not. How to tell them apart.">
+<meta property="og:image" content="https://www.makersquare.ai/images/blog/is-your-website-agent-ready-og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.min.css?v=11">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Our site scored 20 out of 100 on agent-readiness. Here’s what I actually fixed.",
+  "alternativeHeadline": "Is Your Website Agent-Ready? What Actually Matters",
+  "description": "We scanned makersquare.ai on Cloudflare’s agent-readiness tool and scored 20/100. Four fixes are worth making on any site. Twelve checks are not. How to tell them apart.",
+  "author": {
+    "@type": "Person",
+    "name": "Marliis Schneider",
+    "url": "https://www.makersquare.ai/about"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "MakerSquare",
+    "url": "https://www.makersquare.ai",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.makersquare.ai/logo-dark.png",
+      "width": 1158,
+      "height": 300
+    }
+  },
+  "datePublished": "2026-08-21",
+  "dateModified": "2026-08-21",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.makersquare.ai/blog/is-your-website-agent-ready"
+  },
+  "url": "https://www.makersquare.ai/blog/is-your-website-agent-ready",
+  "image": "https://www.makersquare.ai/images/blog/is-your-website-agent-ready-og.png",
+  "keywords": "agent ready website, llms.txt, content signals robots.txt, markdown for agents, ai agent seo, agentic resource discovery"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does “agent-ready” actually mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "That an AI agent can find your site, read it without wading through markup, understand what you offer, and know what you permit. Being callable by agents, through APIs, MCP servers, or machine payments, is a separate thing, and most websites don’t need it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need an MCP server for my website?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Almost certainly not. MCP is for exposing tools and data an agent can invoke. If you have a marketing site, a blog, or a brochure site, you have content, not tools. An MCP server card pointing at nothing scores you a point and helps no one."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is llms.txt worth it if the scanners don’t check for it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, and it’s the clearest example of why a score isn’t the goal. llms.txt is what an AI assistant reads to describe your business. Scanners check emerging standards. llms.txt is already doing the work."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will blocking AI training hurt my search visibility?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, and that’s the point of separating the signals. ai-train=no with search=yes, ai-input=yes says don’t train on our content, but do index us and do cite us in answers. Those used to be a single yes-or-no. They aren’t anymore."
+      }
+    }
+  ],
+  "name": "Is Your Website Agent-Ready? FAQ"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.makersquare.ai/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.makersquare.ai/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Is Your Website Agent-Ready? What Actually Matters",
+      "item": "https://www.makersquare.ai/blog/is-your-website-agent-ready"
+    }
+  ]
+}
+</script>
+<style>
+.post-hero { padding: calc(var(--nav-height) + var(--s10)) 0 var(--s4); border-bottom: 1px solid rgba(24,24,73,0.06); }
+.post-hero-inner { max-width: 760px; margin: 0 auto; }
+.post-tag { display: inline-flex; align-items: center; gap: 8px; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--indigo); margin-bottom: var(--s4); }
+.post-tag::before { content: ''; width: 7px; height: 7px; background: var(--indigo); border-radius: 2px; }
+.post-title { font-size: clamp(1.8rem, 3.5vw, 2.6rem); font-weight: 800; color: var(--navy); line-height: 1.15; letter-spacing: -0.03em; margin-bottom: var(--s5); }
+.post-meta { display: flex; align-items: center; gap: var(--s3); font-size: 0.82rem; color: var(--text-muted); flex-wrap: wrap; }
+.post-meta-dot { width: 3px; height: 3px; border-radius: 50%; background: var(--text-muted); }
+.post-body-wrap { padding: var(--s6) 0 var(--s10); }
+.post-body { max-width: 760px; margin: 0 auto; }
+.takeaways-box { background: rgba(64,61,216,0.04); border: 1px solid rgba(64,61,216,0.12); border-radius: var(--r-lg); padding: var(--s5) var(--s6); margin-bottom: var(--s8); }
+.takeaways-label { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--indigo); margin-bottom: var(--s3); }
+.takeaways-list { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.takeaways-list li { font-size: 0.9rem; color: var(--navy); line-height: 1.65; padding-left: 16px; position: relative; }
+.takeaways-list li::before { content: ''; width: 5px; height: 5px; background: var(--indigo); border-radius: 50%; position: absolute; left: 0; top: 9px; }
+.post-body p { font-size: 1rem; color: #2d2d4e; line-height: 1.85; margin-bottom: var(--s5); }
+.post-body h2 { font-size: 1.2rem; font-weight: 700; color: var(--navy); letter-spacing: -0.02em; margin-top: var(--s8); margin-bottom: var(--s4); }
+.post-body a { color: var(--indigo); text-decoration: none; border-bottom: 1px solid rgba(64,61,216,0.25); transition: border-color 0.2s; }
+.post-body a:hover { border-bottom-color: var(--indigo); }
+.post-body strong { color: var(--navy); font-weight: 700; }
+.faq-section { margin-top: var(--s9); padding-top: var(--s7); border-top: 1px solid rgba(24,24,73,0.06); }
+.faq-label { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--indigo); margin-bottom: var(--s6); }
+.faq-item { margin-bottom: var(--s6); }
+.faq-item:last-child { margin-bottom: 0; }
+.faq-q { font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: var(--s2); line-height: 1.4; }
+.faq-a { font-size: 0.95rem; color: var(--text-secondary); line-height: 1.75; }
+.post-cta { background: var(--navy); border-radius: var(--r-xl); padding: var(--s8); margin-top: var(--s9); text-align: center; }
+.post-cta p { color: rgba(255,255,255,0.65); font-size: 0.95rem; line-height: 1.7; margin-bottom: var(--s5); max-width: 520px; margin-left: auto; margin-right: auto; }
+.post-cta-actions { display: flex; gap: var(--s3); justify-content: center; flex-wrap: wrap; }
+.post-cta-actions .btn { transition: all 0.25s ease; }
+.sources-section { margin-top: var(--s9); padding-top: var(--s7); border-top: 1px solid rgba(24,24,73,0.06); }
+.sources-label { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--indigo); margin-bottom: var(--s5); }
+.source-item { display: flex; gap: var(--s4); align-items: flex-start; padding: var(--s3) 0; border-bottom: 1px solid rgba(24,24,73,0.06); }
+.source-item:last-child { border-bottom: none; }
+.source-num { flex-shrink: 0; width: 22px; height: 22px; background: var(--cloud); border-radius: 50%; font-size: 0.7rem; font-weight: 700; color: var(--indigo); display: flex; align-items: center; justify-content: center; margin-top: 2px; }
+.source-name { font-size: 0.875rem; font-weight: 600; color: var(--navy); margin-bottom: 2px; }
+.source-name a { color: var(--indigo); text-decoration: none; border: none; }
+.source-name a:hover { text-decoration: underline; }
+.source-detail { font-size: 0.78rem; color: var(--text-muted); }
+.post-back { margin-bottom: var(--s6); }
+.post-back a { font-size: 0.82rem; font-weight: 600; color: var(--text-muted); text-decoration: none; display: inline-flex; align-items: center; gap: 6px; transition: color 0.2s; border: none !important; }
+.post-back a:hover { color: var(--indigo); }
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJTW9WQ3"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<script src="https://forms.zoho.com/js/zf_gclid.js"></script>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo" style="align-items:center;"><img src="../logo-light.webp" alt="MakerSquare — School of Applied AI" width="348" height="90"><span class="nav-tagline" style="padding-left:4px;">School of Applied AI</span></a>
+    <ul class="nav-links">
+      <li><a href="/about">About</a></li>
+      <li style="white-space:nowrap;"><a href="/use-cases">Use Cases</a></li>
+      <li><a href="/curriculum">Curriculum</a></li>
+      <li><a href="/corporate">For Companies</a></li>
+      <li><a href="/immersive">Pricing</a></li>
+      <li><a href="/blog" class="active">Blog</a></li>
+      <li><a href="/enroll" class="nav-apply">Enroll</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="/enroll" class="btn btn-primary btn-arrow" style="white-space:nowrap;">Secure Your Spot </a>
+      <button class="nav-hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu">
+  <ul class="mobile-menu-links">
+    <li><a href="/about">About</a></li>
+    <li><a href="/use-cases">Use Cases</a></li>
+    <li><a href="/curriculum">Curriculum</a></li>
+    <li><a href="/corporate">For Companies</a></li>
+    <li><a href="/immersive">Pricing</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="/enroll">Enroll</a></li>
+  </ul>
+  <a href="/enroll" class="btn btn-primary btn-block btn-lg" style="margin-top:24px;">Secure Your Spot</a>
+</div>
+
+<section class="post-hero section">
+  <div class="container">
+    <div class="post-hero-inner">
+      <div class="post-back"><a href="/blog">&#8592; Blog</a></div>
+      <div class="post-tag">Build with AI</div>
+      <h1 class="post-title">Our site scored 20 out of 100 on agent-readiness. Here&rsquo;s what I actually fixed.</h1>
+      <div class="post-meta">
+        <span>Marliis Schneider</span>
+        <span class="post-meta-dot"></span>
+        <span>August 21, 2026</span>
+        <span class="post-meta-dot"></span>
+        <span>7 min read</span>
+      </div>
+      <div class="post-hero-img">
+        <img src="../images/blog/is-your-website-agent-ready-og.webp" alt="Our site scored 20 out of 100 on agent-readiness. Here&rsquo;s what I actually fixed." width="1200" height="630" fetchpriority="high" decoding="async">
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="post-body-wrap">
+  <div class="container">
+    <div class="post-body">
+
+      <div class="takeaways-box">
+        <div class="takeaways-label">Key takeaways</div>
+        <ul class="takeaways-list">
+          <li>Agent-readiness scanners grade you against roughly twenty emerging standards. Most of them are written for software with an API, not for a website.</li>
+          <li>Four fixes are worth making on almost any site: content signals in robots.txt, an llms.txt, markdown for agents, and a discovery catalog. Call it an hour of work.</li>
+          <li>The rest (MCP server cards, OAuth discovery, WebMCP, agent skills indexes, the payment protocols) only mean something if an agent can <em>call</em> something you run. Skipping them is the right call.</li>
+          <li>The scanner never checked our llms.txt. The file that most affects how ChatGPT and Claude describe us isn&rsquo;t on the scorecard at all.</li>
+        </ul>
+      </div>
+
+      <p>I run a school that teaches people to build with AI. Last week I ran our own website through <a href="https://isitagentready.com" target="_blank" rel="noopener">Cloudflare&rsquo;s agent-readiness scanner</a>.</p>
+
+      <p>Twenty out of a hundred. Level 1: Basic Web Presence.</p>
+
+      <p>My first instinct was to fix everything by Friday. That instinct was wrong, and working out why turned into the most useful thing I&rsquo;ve learned about this all year.</p>
+
+      <h2>What these scanners check</h2>
+
+      <p>The tool runs about twenty checks across five groups: discoverability, content, bot access control, API/auth/MCP discovery, and agentic commerce.</p>
+
+      <p>We passed three: robots.txt, sitemap.xml, and rules for the major AI crawlers. We failed everything else. No markdown negotiation. No Link headers. No API catalog. No OAuth discovery metadata. No MCP server card. No agent skills index. No WebMCP. No payment protocol.</p>
+
+      <p>That reads like a report card. Then I went through what the failed checks were each asking for.</p>
+
+      <h2>Most of the rubric isn&rsquo;t written for your website</h2>
+
+      <p>Eight of the twenty checks assume you have an API for agents to call. An <a href="https://modelcontextprotocol.io" target="_blank" rel="noopener">MCP</a> server card describes a server. OAuth discovery metadata describes how to get a token for your protected endpoints. WebMCP exposes your site&rsquo;s <em>actions</em>, like add-to-cart or book-the-slot, as tools an agent can invoke. An agent skills index publishes skills you&rsquo;ve authored.</p>
+
+      <p>We have a marketing site and a Stripe checkout. There&rsquo;s no server for an agent to connect to, no protected API to get a token for, no cart to add to. An MCP server card for a server that doesn&rsquo;t exist is a lie in JSON.</p>
+
+      <p>Four more checks cover agentic commerce: x402, the Machine Payment Protocol, Universal Commerce Protocol, ACP. The scanner was straight with us there. It found no e-commerce signals and marked those informational, excluded from the score.</p>
+
+      <p>So of twenty checks, eight are aspirational, four don&rsquo;t apply, and one is a check most sites misread. <strong>Web Bot Auth</strong> is how a company that <em>operates</em> a crawler proves its bot is really its bot. It&rsquo;s published by the people sending requests, not the people receiving them. We don&rsquo;t run a crawler, so there&rsquo;s nothing for us to publish.</p>
+
+      <p>That leaves seven checks that genuinely apply to a normal website. That&rsquo;s the real denominator.</p>
+
+      <h2>The four things worth doing on any site</h2>
+
+      <h3>1. Content signals in robots.txt</h3>
+
+      <p>Two years ago robots.txt could say one thing: crawl this, don&rsquo;t crawl that. <a href="https://contentsignals.org" target="_blank" rel="noopener">Content Signals</a> splits that into three questions, because they&rsquo;re genuinely different.</p>
+
+      <pre><code>User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /</code></pre>
+
+      <p><code>search=yes</code> means index us and link to us. <code>ai-input=yes</code> means use our pages to answer someone&rsquo;s question and cite us. <code>ai-train=no</code> means don&rsquo;t use our content to train model weights.</p>
+
+      <p>Those are three different answers for us. Being cited in an AI answer is how people find MakerSquare now. Having our copy absorbed into a training set does nothing for us. Before Content Signals there was no way to say one and not the other.</p>
+
+      <p>One thing to watch: robots.txt groups don&rsquo;t inherit. If a bot matches a named <code>User-agent: GPTBot</code> group, it ignores the <code>User-agent: *</code> group completely. Put the signal only in <code>*</code> and every crawler you named by hand, the ones you care most about, never sees it. Repeat it in every group.</p>
+
+      <h3>2. llms.txt, the one the scanner never checked</h3>
+
+      <p>We&rsquo;ve had an <a href="https://llmstxt.org" target="_blank" rel="noopener">llms.txt</a> for months. It&rsquo;s a plain markdown summary at the root of the domain: what we are, who it&rsquo;s for, what students build, prices, dates, how to enroll. When Claude or ChatGPT gets asked about MakerSquare, that file does more work than anything else on the site.</p>
+
+      <p>The scanner never looked for it. Not once, in twenty checks.</p>
+
+      <p>A score is a proxy. A useful one, but still a proxy, and this is the clearest evidence of it I&rsquo;ve seen.</p>
+
+      <p>We also added <code>llms-full.txt</code>, the complete text of every public page in one document, for agents that want everything rather than the summary. Ours is 68 pages. I generate it with a script rather than maintaining it by hand, because a stale llms-full.txt is worse than none.</p>
+
+      <h3>3. Markdown for agents</h3>
+
+      <p>This is the one with real value beyond the scorecard.</p>
+
+      <p>When an agent fetches your page, it gets HTML: nav, footer, cookie banner, inline styles, three analytics scripts, and somewhere in the middle, your content. It burns tokens on markup and sometimes gets the content wrong.</p>
+
+      <p>Content negotiation fixes that. A normal browser sends <code>Accept: text/html</code> and gets your page exactly as it always was. An agent sends <code>Accept: text/markdown</code> and gets clean markdown of the same page. One URL, one source of truth, two representations.</p>
+
+      <p>If you&rsquo;re on <a href="https://developers.cloudflare.com/ai-crawl-control/features/markdown-conversion/" target="_blank" rel="noopener">Cloudflare this is a toggle</a>. We&rsquo;re on Vercel, so it&rsquo;s a small function that fetches the page and converts it.</p>
+
+      <p>Two things I got wrong, in case you&rsquo;re doing this yourself.</p>
+
+      <p>The first cost me a deploy. On Vercel, <a href="https://vercel.com/docs/project-configuration#rewrites" target="_blank" rel="noopener"><code>rewrites</code> are evaluated <em>after</em> the filesystem</a>, which is why they work as SPA fallbacks. So a rewrite pointed at your markdown handler never fires for a page that exists as a static file. It has to be a <code>redirect</code>, which is checked first. Then you need a guard so the agent&rsquo;s followed request doesn&rsquo;t re-enter the same rule and loop.</p>
+
+      <p>The second one is funnier. My converter stripped <code>&lt;button&gt;</code> elements as chrome. Our FAQ page is an accordion, and every question lives inside a button. I generated a beautiful markdown FAQ containing thirty-two answers and no questions. Whatever you build, read the output before you ship it.</p>
+
+      <h3>4. A discovery catalog</h3>
+
+      <p>Last one, and it&rsquo;s ten minutes. A JSON file at <code>/.well-known/ai-catalog.json</code> listing what you offer an agent. In our case that&rsquo;s the llms.txt, the llms-full.txt, the sitemap, and a note that any page can be fetched as markdown. Each entry gets a few example questions it can answer, so registries can index it semantically.</p>
+
+      <p>Then advertise it, in the HTTP <code>Link</code> header on every page and with an <code>Agentmap:</code> line in robots.txt. A file nothing points at is a file nobody finds.</p>
+
+      <h2>How to sort the next standard that shows up</h2>
+
+      <p>More of these are coming. The question I use:</p>
+
+      <p><strong>Does this describe content I already publish, or a service I&rsquo;d have to run?</strong></p>
+
+      <p>Content signals, llms.txt, markdown negotiation, a discovery catalog. Those describe things that already exist. You&rsquo;re labelling reality. Cheap, honest, no maintenance.</p>
+
+      <p>MCP server cards, OAuth metadata, WebMCP, skills indexes, payment protocols. Those describe a service. Implementing them means building and running that service, forever. That&rsquo;s a product decision with a roadmap and an on-call rotation attached. Treating it as a checkbox is how you end up with a manifest pointing at an endpoint that 404s.</p>
+
+      <p>If that doesn&rsquo;t settle it, ask who the standard is for: people receiving requests, or people sending them. That&rsquo;s the one that catches Web Bot Auth.</p>
+
+      <h2>Where we landed</h2>
+
+      <p>We made the four changes. Our score roughly doubled, and it won&rsquo;t reach 100, because reaching 100 means running an MCP server we have no reason to run.</p>
+
+      <p>What we got out of it: agents can read our pages cleanly, our content preferences are stated in machine-readable terms instead of assumed, and one file tells an agent everything we offer it.</p>
+
+      <p>If you&rsquo;ve got an hour and no llms.txt, start there. It won&rsquo;t move your score by a single point.</p>
+
+      <div class="faq-section">
+        <div class="faq-label">Frequently asked questions</div>
+        <div class="faq-item">
+          <div class="faq-q">What does &ldquo;agent-ready&rdquo; actually mean?</div>
+          <div class="faq-a">That an AI agent can find your site, read it without wading through markup, understand what you offer, and know what you permit. Being <em>callable</em> by agents, through APIs, MCP servers, or machine payments, is a separate thing, and most websites don&rsquo;t need it.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Do I need an MCP server for my website?</div>
+          <div class="faq-a">Almost certainly not. MCP is for exposing tools and data an agent can invoke. If you have a marketing site, a blog, or a brochure site, you have content, not tools. An MCP server card pointing at nothing scores you a point and helps no one.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Is llms.txt worth it if the scanners don&rsquo;t check for it?</div>
+          <div class="faq-a">Yes, and it&rsquo;s the clearest example of why a score isn&rsquo;t the goal. llms.txt is what an AI assistant reads to describe your business. Scanners check emerging standards. llms.txt is already doing the work.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Will blocking AI training hurt my search visibility?</div>
+          <div class="faq-a">No, and that&rsquo;s the point of separating the signals. <code>ai-train=no</code> with <code>search=yes, ai-input=yes</code> says don&rsquo;t train on our content, but do index us and do cite us in answers. Those used to be a single yes-or-no. They aren&rsquo;t anymore.</div>
+        </div>
+      </div>
+
+      <div class="post-related" style="margin-top:var(--s9);padding-top:var(--s7);border-top:1px solid rgba(24,24,73,0.06);">
+        <div style="font-size:0.78rem;letter-spacing:0.08em;text-transform:uppercase;color:rgba(24,24,73,0.5);font-weight:700;margin-bottom:var(--s5);">Keep reading</div>
+        <ul style="list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:var(--s4);">
+          <li><a href="/blog/ai-for-seo" style="display:block;font-weight:650;font-size:0.95rem;line-height:1.45;color:var(--navy);text-decoration:none;border:1px solid rgba(24,24,73,0.10);border-radius:12px;padding:14px 16px;height:100%;">AI for SEO: What Actually Works in 2026</a></li>
+          <li><a href="/blog/how-to-use-claude-for-business" style="display:block;font-weight:650;font-size:0.95rem;line-height:1.45;color:var(--navy);text-decoration:none;border:1px solid rgba(24,24,73,0.10);border-radius:12px;padding:14px 16px;height:100%;">How to use Claude for business: a practical guide</a></li>
+          <li><a href="/blog/using-ai-vs-building-with-ai" style="display:block;font-weight:650;font-size:0.95rem;line-height:1.45;color:var(--navy);text-decoration:none;border:1px solid rgba(24,24,73,0.10);border-radius:12px;padding:14px 16px;height:100%;">The difference between using AI and building with AI.</a></li>
+        </ul>
+      </div>
+        <ul style="list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:var(--s4);">
+          <li><a href="/blog/ai-for-content-creators-2026" style="display:block;font-weight:650;font-size:0.95rem;line-height:1.45;color:var(--navy);text-decoration:none;border:1px solid rgba(24,24,73,0.10);border-radius:12px;padding:14px 16px;height:100%;">AI for content creators: beyond writing the first draft</a></li>
+          <li><a href="/blog/ai-for-sales-teams" style="display:block;font-weight:650;font-size:0.95rem;line-height:1.45;color:var(--navy);text-decoration:none;border:1px solid rgba(24,24,73,0.10);border-radius:12px;padding:14px 16px;height:100%;">AI for sales teams: what top performers are building now</a></li>
+          <li><a href="/blog/ai-for-marketing-teams" style="display:block;font-weight:650;font-size:0.95rem;line-height:1.45;color:var(--navy);text-decoration:none;border:1px solid rgba(24,24,73,0.10);border-radius:12px;padding:14px 16px;height:100%;">AI for marketing teams: beyond using ChatGPT</a></li>
+          <li><a href="/use-cases" style="display:block;font-weight:650;font-size:0.95rem;line-height:1.45;color:var(--navy);text-decoration:none;border:1px solid rgba(24,24,73,0.10);border-radius:12px;padding:14px 16px;height:100%;">See AI use cases by industry</a></li>
+        </ul>
+      </div>
+
+      <div class="post-cta">
+        <p>MakerSquare is a 2-week in-person AI builder program in Austin, TX for operators, founders, and professionals - the people who understand their business well enough to build with AI, not just use it. See what two weeks of hands-on building looks like.</p>
+        <div class="post-cta-actions">
+          <a href="https://www.makersquare.ai/curriculum?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_ai-for-seo_curriculum_20260914" class="btn btn-arrow" style="background:var(--white);color:var(--navy);font-weight:700;">Get the curriculum </a>
+          <a href="https://ai-builder-brief.beehiiv.com/?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_ai-for-seo_newsletter_20260914" target="_blank" rel="noopener" class="btn" style="background:transparent;color:rgba(255,255,255,0.65);border:1.5px solid rgba(255,255,255,0.2);">Sign up for the newsletter</a>
+        </div>
+      </div>
+
+      <div class="sources-section">
+        <div class="sources-label">Sources</div>
+        <div class="source-item">
+          <div class="source-num">1</div>
+          <div>
+            <div class="source-name"><a href="https://isitagentready.com" target="_blank" rel="noopener" id="source-1">Cloudflare &mdash; Is Your Site Agent-Ready?</a></div>
+            <div class="source-detail">Agent-readiness scanner used for this audit</div>
+          </div>
+        </div>
+        <div class="source-item">
+          <div class="source-num">2</div>
+          <div>
+            <div class="source-name"><a href="https://contentsignals.org" target="_blank" rel="noopener" id="source-2">Content Signals</a></div>
+            <div class="source-detail">robots.txt directives for search, ai-input and ai-train</div>
+          </div>
+        </div>
+        <div class="source-item">
+          <div class="source-num">3</div>
+          <div>
+            <div class="source-name"><a href="https://llmstxt.org" target="_blank" rel="noopener" id="source-3">llmstxt.org</a></div>
+            <div class="source-detail">The llms.txt proposal</div>
+          </div>
+        </div>
+        <div class="source-item">
+          <div class="source-num">4</div>
+          <div>
+            <div class="source-name"><a href="https://agenticresourcediscovery.org/ai_catalog_spec/" target="_blank" rel="noopener" id="source-4">Agentic Resource Discovery &mdash; AI Catalog spec</a></div>
+            <div class="source-detail">Schema for /.well-known/ai-catalog.json</div>
+          </div>
+        </div>
+        <div class="source-item">
+          <div class="source-num">5</div>
+          <div>
+            <div class="source-name"><a href="https://developers.cloudflare.com/ai-crawl-control/features/markdown-conversion/" target="_blank" rel="noopener" id="source-5">Cloudflare Docs &mdash; Markdown conversion</a></div>
+            <div class="source-detail">Markdown content negotiation for agents</div>
+          </div>
+        </div>
+        <div class="source-item">
+          <div class="source-num">6</div>
+          <div>
+            <div class="source-name"><a href="https://www.rfc-editor.org/rfc/rfc8288.html" target="_blank" rel="noopener" id="source-6">RFC 8288 &mdash; Web Linking</a></div>
+            <div class="source-detail">The Link header format</div>
+          </div>
+        </div>
+        <div class="source-item">
+          <div class="source-num">7</div>
+          <div>
+            <div class="source-name"><a href="https://modelcontextprotocol.io" target="_blank" rel="noopener" id="source-7">Model Context Protocol</a></div>
+            <div class="source-detail">Specification for MCP servers and clients</div>
+          </div>
+        </div>
+        <div class="source-item">
+          <div class="source-num">8</div>
+          <div>
+            <div class="source-name"><a href="https://vercel.com/docs/project-configuration#rewrites" target="_blank" rel="noopener" id="source-8">Vercel &mdash; Project configuration</a></div>
+            <div class="source-detail">Redirect and rewrite evaluation order</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="footer-logo"><img src="../logo-dark.webp" alt="MakerSquare — School of Applied AI" width="348" height="90" loading="lazy"></a><div class="footer-tagline">School of Applied AI</div>
+        <p>In-person AI training in Austin, TX &mdash; 2-week intensive, 3-day workshops, and private team programs.</p>
+        <a href="/enroll" class="btn btn-primary btn-arrow" style="font-size:0.82rem;padding:10px 20px;">Enroll </a>
+      </div>
+      <div>
+        <div class="footer-col-title">Program</div>
+        <ul class="footer-col-links">
+          <li><a href="/use-cases">Use Cases</a></li>
+          <li><a href="/curriculum">Curriculum</a></li>
+          <li><a href="/immersive">Pricing</a></li>
+          <li><a href="/enroll">Enroll</a></li>
+          <li><a href="/scholarship">Scholarship</a></li>
+          <li><a href="/faq">FAQ</a></li>
+          <li><a href="/demo-day">Demo Day</a></li>
+          <li><a href="/workshops">Workshops</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Company</div>
+        <ul class="footer-col-links">
+          <li><a href="/about">About</a></li>
+          <li><a href="/team">Team</a></li>
+          <li><a href="/corporate">Corporate Training</a></li>
+          <li><a href="/comparison">How We Compare</a></li>
+          <li><a href="/ai-training-austin">AI Training in Austin</a></li>
+          <li><a href="/alumni">Alumni</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Learn</div>
+        <ul class="footer-col-links">
+          <li><a href="/events">Events</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="https://ai-builder-brief.beehiiv.com" target="_blank" rel="noopener">Newsletter &mdash; AI Builder Brief</a></li>
+          <li><a href="/guides">Guides</a></li>
+          <li><a href="/quickstart">Claude Quickstart Guide</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Contact</div>
+        <a href="mailto:hello@makersquare.ai" class="footer-contact-email">hello@makersquare.ai</a>
+        <p style="font-size:0.82rem;color:rgba(255,255,255,0.4);">Austin, TX</p>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/company/makersquare-ai" target="_blank" rel="noopener" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>Follow us on LinkedIn</a>
+          <a href="https://www.meetup.com/makersquare-ai/" target="_blank" rel="noopener" aria-label="Meetup"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="width:15px;height:15px;fill:currentColor;flex-shrink:0;"><path d="M19.24 0H4.76A4.76 4.76 0 000 4.76v14.48A4.76 4.76 0 004.76 24h14.48A4.76 4.76 0 0024 19.24V4.76A4.76 4.76 0 0019.24 0zM8.64 16.8c-.48.12-.97-.12-1.2-.56L5.28 11.6a1 1 0 011.8-.88l1.56 3.16 3.84-7.8a1 1 0 011.8.88l-4.2 8.52a1 1 0 01-.44.52zm9.12-1.12a1 1 0 01-1.32.48l-2.16-1.04-1.04 2.16a1 1 0 01-1.8-.88l1.32-2.72 2.72 1.32-.48-2.96a1 1 0 011.96-.32l.64 3.96h.16z"/></svg>Events</a>
+        </div>
+      </div>
+    </div>
+    <div style="border-top:1px solid rgba(255,255,255,0.08);padding:var(--s8) 0;margin-bottom:var(--s6);">
+      <div style="max-width:480px;">
+        <div style="font-size:0.75rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:var(--s3);">AI Builder Brief</div>
+        <div style="font-size:1.05rem;font-weight:700;color:var(--white);margin-bottom:6px;">Get AI Builder Brief free every Tuesday.</div>
+        <div style="font-size:0.85rem;color:rgba(255,255,255,0.5);margin-bottom:var(--s4);">Three AI stories that matter, one prompt to try this week.</div>
+        <a href="https://ai-builder-brief.beehiiv.com/subscribe?utm_source=website&utm_medium=site&utm_campaign=newsletter" target="_blank" rel="noopener" class="btn btn-primary btn-arrow">Subscribe free </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">&copy; 2026 MakerSquare LLC. Austin, TX.</div>
+      <div class="footer-bottom-links">
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.min.js"></script>
+</body>
+</html>
