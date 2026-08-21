@@ -4,12 +4,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="facebook-domain-verification" content="fligau9appze71fwy7uaaw2v12bc4n" />
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-MJTW9WQ3');</script>
+<!-- Google Tag Manager (delayed-load) -->
+<!-- dataLayer is created and gtm.start pushed IMMEDIATELY so queued events are never lost.
+     Only the gtm.js request is deferred: it fires on first user interaction, or after 3500ms,
+     whichever comes first. Do NOT revert to the eager loader - it puts 344KB of JS on the
+     mobile critical path and was measured pushing blog LCP to 6.3s. -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+var done=false,t=null,evts=['scroll','mousemove','mousedown','touchstart','keydown','click'],opts={passive:true,capture:true};
+function load(){if(done)return;done=true;if(t)w.clearTimeout(t);
+for(var k=0;k<evts.length;k++){w.removeEventListener(evts[k],load,opts);}
+var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);}
+for(var k=0;k<evts.length;k++){w.addEventListener(evts[k],load,opts);}
+t=w.setTimeout(load,3500);})(window,document,'script','dataLayer','GTM-MJTW9WQ3');</script>
 <!-- End Google Tag Manager -->
 <!-- Zoho UTM passthrough (modificado: incluye fbclid) -->
 <script>
@@ -19,13 +26,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script>
 window.addEventListener('message',function(e){if(e.data&&e.data.type=='zf_gtm'){window.dataLayer=window.dataLayer||[];window.dataLayer.push(e.data);}});
 </script>
-<!-- X conversion tracking base code -->
-<script>
-!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='https://static.ads-twitter.com/uwt.js',a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
-twq('config','rcjjn');
-</script>
 <title>AI for Accountants: What's Changing in 2026 | MakerSquare</title>
-<meta name="description" content="AI for accountants in 2026 is automating the busywork - reconciliation, categorization, close - and freeing CPAs for advisory work. Here's what's real and what to do about it.">
+<meta name="description" content="AI is automating accounting busywork — reconciliation, categorization, close — and freeing CPAs for advisory work. What is real and what to do.">
 <meta name="robots" content="index, follow">
 <link rel="icon" type="image/png" href="../favicon.png">
 <link rel="icon" type="image/svg+xml" href="../favicon.svg">
@@ -34,7 +36,7 @@ twq('config','rcjjn');
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://www.makersquare.ai/blog/ai-for-accountants">
 <meta property="og:title" content="AI for Accountants: What's Changing in 2026">
-<meta property="og:description" content="AI for accountants in 2026 is automating the busywork - reconciliation, categorization, close - and freeing CPAs for advisory work. Here's what's real and what to do about it.">
+<meta property="og:description" content="AI is automating accounting busywork — reconciliation, categorization, close — and freeing CPAs for advisory work. What is real and what to do.">
 <meta property="og:image" content="https://www.makersquare.ai/images/blog/ai-for-accountants-og.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,7 +49,7 @@ twq('config','rcjjn');
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "AI for Accountants: What's Changing in 2026",
-  "description": "AI for accountants in 2026 is automating the busywork - reconciliation, categorization, close - and freeing CPAs for advisory work. Here's what's real and what to do about it.",
+  "description": "AI is automating accounting busywork \u2014 reconciliation, categorization, close \u2014 and freeing CPAs for advisory work. What is real and what to do.",
   "author": {
     "@type": "Person",
     "name": "Marliis Schneider",
@@ -65,6 +67,7 @@ twq('config','rcjjn');
     }
   },
   "datePublished": "2026-08-20",
+  "dateModified": "2026-08-20",
   "url": "https://www.makersquare.ai/blog/ai-for-accountants",
   "image": "https://www.makersquare.ai/images/blog/ai-for-accountants-og.png",
   "keywords": "ai for accountants, ai in accounting, ai for cpas, accounting automation, ai accounting tools"
@@ -163,6 +166,9 @@ twq('config','rcjjn');
 .post-back a { font-size: 0.82rem; font-weight: 600; color: var(--text-muted); text-decoration: none; display: inline-flex; align-items: center; gap: 6px; transition: color 0.2s; border: none !important; }
 .post-back a:hover { color: var(--indigo); }
 </style>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.makersquare.ai/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.makersquare.ai/blog"}, {"@type": "ListItem", "position": 3, "name": "AI for Accountants: What's Changing in 2026", "item": "https://www.makersquare.ai/blog/ai-for-accountants"}]}
+</script>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -174,13 +180,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <nav class="nav">
   <div class="nav-inner">
-    <a href="/" class="nav-logo" style="align-items:center;"><img src="../logo-light.png" alt="MakerSquare — School of Applied AI"><span class="nav-tagline" style="padding-left:4px;">School of Applied AI</span></a>
+    <a href="/" class="nav-logo" style="align-items:center;"><img src="../logo-light.webp" alt="MakerSquare — School of Applied AI" width="348" height="90"><span class="nav-tagline" style="padding-left:4px;">School of Applied AI</span></a>
     <ul class="nav-links">
       <li><a href="/about">About</a></li>
       <li style="white-space:nowrap;"><a href="/use-cases">Use Cases</a></li>
       <li><a href="/curriculum">Curriculum</a></li>
       <li><a href="/corporate">For Companies</a></li>
-      <li><a href="/pricing">Pricing</a></li>
+      <li><a href="/immersive">Pricing</a></li>
       <li><a href="/blog" class="active">Blog</a></li>
       <li><a href="/enroll" class="nav-apply">Enroll</a></li>
     </ul>
@@ -196,7 +202,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <li><a href="/use-cases">Use Cases</a></li>
     <li><a href="/curriculum">Curriculum</a></li>
     <li><a href="/corporate">For Companies</a></li>
-    <li><a href="/pricing">Pricing</a></li>
+    <li><a href="/immersive">Pricing</a></li>
     <li><a href="/blog">Blog</a></li>
     <li><a href="/enroll">Enroll</a></li>
   </ul>
@@ -217,7 +223,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <span>6 min read</span>
       </div>
       <div class="post-hero-img">
-        <img src="../images/blog/ai-for-accountants-og.png" alt="AI for Accountants: What's Changing in 2026">
+        <img src="../images/blog/ai-for-accountants-og.webp" alt="AI for Accountants: What's Changing in 2026" width="1200" height="630" fetchpriority="high" decoding="async">
       </div>
     </div>
   </div>
@@ -280,6 +286,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
 
+      
+      <!-- Keep reading (internal link cluster) -->
+      <div class="post-related" style="margin-top:var(--s9);padding-top:var(--s7);border-top:1px solid rgba(24,24,73,0.06);">
+        <div style="font-size:0.78rem;letter-spacing:0.08em;text-transform:uppercase;color:rgba(24,24,73,0.5);font-weight:700;margin-bottom:var(--s5);">Keep reading</div>
+        <ul style="list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:var(--s4);">
+          <li><a href="/blog/ai-for-accounting-and-bookkeeping" style="display:block;font-weight:650;font-size:0.95rem;line-height:1.45;color:var(--navy);text-decoration:none;border:1px solid rgba(24,24,73,0.10);border-radius:12px;padding:14px 16px;height:100%;">AI for accounting and bookkeeping: what non-accountants need to know</a></li>
+          <li><a href="/blog/ai-for-finance-teams" style="display:block;font-weight:650;font-size:0.95rem;line-height:1.45;color:var(--navy);text-decoration:none;border:1px solid rgba(24,24,73,0.10);border-radius:12px;padding:14px 16px;height:100%;">AI for finance teams: what to automate first</a></li>
+          <li><a href="/use-cases" style="display:block;font-weight:650;font-size:0.95rem;line-height:1.45;color:var(--navy);text-decoration:none;border:1px solid rgba(24,24,73,0.10);border-radius:12px;padding:14px 16px;height:100%;">See AI use cases by industry</a></li>
+        </ul>
+      </div>
+
       <div class="post-cta">
         <p>MakerSquare is a 2-week in-person AI builder program in Austin, TX for operators, founders, and professionals who want to build real AI tools around their own work - not just use them. See what two weeks of hands-on building looks like.</p>
         <div class="post-cta-actions">
@@ -321,7 +338,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="/" class="footer-logo"><img src="../logo-dark.png" alt="MakerSquare — School of Applied AI"></a><div class="footer-tagline">School of Applied AI</div>
+        <a href="/" class="footer-logo"><img src="../logo-dark.webp" alt="MakerSquare — School of Applied AI" width="348" height="90" loading="lazy"></a><div class="footer-tagline">School of Applied AI</div>
         <p>In-person AI training in Austin, TX &mdash; 2-week intensive, 3-day workshops, and private team programs.</p>
         <a href="/enroll" class="btn btn-primary btn-arrow" style="font-size:0.82rem;padding:10px 20px;">Enroll </a>
       </div>
@@ -330,7 +347,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <ul class="footer-col-links">
           <li><a href="/use-cases">Use Cases</a></li>
           <li><a href="/curriculum">Curriculum</a></li>
-          <li><a href="/pricing">Pricing</a></li>
+          <li><a href="/immersive">Pricing</a></li>
           <li><a href="/enroll">Enroll</a></li>
           <li><a href="/scholarship">Scholarship</a></li>
           <li><a href="/faq">FAQ</a></li>
@@ -345,6 +362,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li><a href="/team">Team</a></li>
           <li><a href="/corporate">Corporate Training</a></li>
           <li><a href="/comparison">How We Compare</a></li>
+          <li><a href="/ai-training-austin">AI Training in Austin</a></li>
           <li><a href="/alumni">Alumni</a></li>
         </ul>
       </div>

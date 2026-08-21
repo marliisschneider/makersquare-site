@@ -4,11 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="facebook-domain-verification" content="fligau9appze71fwy7uaaw2v12bc4n" />
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-MJTW9WQ3');</script>
+<!-- Google Tag Manager (delayed-load) -->
+<!-- dataLayer is created and gtm.start pushed IMMEDIATELY so queued events are never lost.
+     Only the gtm.js request is deferred: it fires on first user interaction, or after 3500ms,
+     whichever comes first. Do NOT revert to the eager loader - it puts 344KB of JS on the
+     mobile critical path and was measured pushing blog LCP to 6.3s. -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+var done=false,t=null,evts=['scroll','mousemove','mousedown','touchstart','keydown','click'],opts={passive:true,capture:true};
+function load(){if(done)return;done=true;if(t)w.clearTimeout(t);
+for(var k=0;k<evts.length;k++){w.removeEventListener(evts[k],load,opts);}
+var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);}
+for(var k=0;k<evts.length;k++){w.addEventListener(evts[k],load,opts);}
+t=w.setTimeout(load,3500);})(window,document,'script','dataLayer','GTM-MJTW9WQ3');</script>
 <!-- End Google Tag Manager -->
-<title>Demo Day | MakerSquare AI Bootcamp Austin — Public AI Product Showcase</title>
-<meta name="description" content="Every MakerSquare cohort closes with a public Demo Day in Austin, TX. Builders present live AI products to investors, operators, and Austin's tech community. Free to attend.">
+<title>Demo Day: Public AI Product Showcase in Austin, TX</title>
+<meta name="description" content="Every MakerSquare cohort closes with a public Demo Day in Austin, TX. Builders present live AI products to investors and operators. Free to attend.">
 <meta name="robots" content="index, follow">
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -155,7 +166,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <nav class="nav">
   <div class="nav-inner">
-    <a href="/" class="nav-logo" style="align-items:center;"><img src="logo-light.png" alt="MakerSquare — School of Applied AI" width="1158" height="300"><span class="nav-tagline" style="padding-left:4px;">School of Applied AI</span></a>
+    <a href="/" class="nav-logo" style="align-items:center;"><img src="logo-light.webp" alt="MakerSquare — School of Applied AI" width="348" height="90"><span class="nav-tagline" style="padding-left:4px;">School of Applied AI</span></a>
     <ul class="nav-links">
       <li style="white-space:nowrap;"><a href="/immersive">2-Week Program</a></li>
       <li><a href="/workshops">Workshops</a></li>
@@ -192,6 +203,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <li><a href="/team">Team</a></li>
     <li><a href="/alumni">Alumni</a></li>
     <li><a href="/comparison">How We Compare</a></li>
+          <li><a href="/ai-training-austin">AI Training in Austin</a></li>
     <li><a href="/blog">Blog</a></li>
     <li><a href="/enroll">Enroll</a></li>
   </ul>
@@ -414,7 +426,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="/" class="footer-logo"><img src="logo-dark.png" alt="MakerSquare — School of Applied AI" width="1158" height="300" loading="lazy"></a><div class="footer-tagline">School of Applied AI</div>
+        <a href="/" class="footer-logo"><img src="logo-dark.webp" alt="MakerSquare — School of Applied AI" width="348" height="90" loading="lazy"></a><div class="footer-tagline">School of Applied AI</div>
         <p>In-person AI training in Austin, TX &mdash; 2-week intensive and private team programs.</p>
         <button type="button" class="btn btn-primary btn-arrow" data-lt-trigger style="font-size:0.82rem;padding:10px 20px;">Schedule An Intro Call </button>
       </div>

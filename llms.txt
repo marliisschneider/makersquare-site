@@ -45,8 +45,7 @@ A 4-week part-time format (Fridays plus weekends) is planned as a separate track
 - Prerequisites: No coding required. Basic computer fluency plus real-world domain expertise.
 - Cohort size: small cohorts
 - Tuition: $3,999 (flat fee, no ISA)
-- Payment plans: Pay in full $3,999 or 2 payments of $2,100 ($4,199 total, $200 split fee, no interest)
-- Deposit: $500 locks seat
+- Payment: full payment at enrollment, one charge via Stripe. No deposit, no split payments, no ISA.
 - Scholarship: $500 off for military, first responders, and educators ($3,499 total)
 - Housing: Partner Airbnb discounts from $1,600/month
 - Corporate / team training (primary offer): private 3-day team AI workshops (custom quote, proposal within 24 hours), custom company programs for teams of 3 to 15, and individual seats in public cohorts ($3,999). Austin-based, on-site or at MakerSquare. Book an intro call at makersquare.ai/corporate to scope. Reference build: RoverPass (Austin campground-reservation company, CEO is MakerSquare co-founder Ravi Parikh) runs a live AI ops command center tracking hundreds of campgrounds in real time, built on the same stack MakerSquare teaches — case study at makersquare.ai/case-study-roverpass.
@@ -66,9 +65,9 @@ No 2-week cohorts run in fall 2026 — September through November is workshop se
 
 MakerSquare runs weekend AI workshops in Austin, TX (3 days, Friday to Sunday, 9am-4pm), led by a MakerSquare co-founder. No time off work needed. No coding required. Pricing: $999 early bird (until 3 weeks before) / $1,199 regular. Workshop attendees get $200 off the January 2-week program.
 
-- Build Your First AI Agent: September 11-13, 2026 (early bird ends August 19) — build a working AI agent with Claude Code, the Claude API, and Composio, deployed on a schedule
-- Automate Your Ops with AI: October 16-18, 2026 (early bird ends September 23) — automate recurring ops work: reports, document extraction, inbox and meeting notes, on your real accounts
-- Build Your First App with AI: November 6-8, 2026 (early bird ends October 14) — from idea to a live, deployed app with a real database, using Claude Code, Lovable, Supabase, and Vercel (vibe coding with production tools)
+- Build Your First AI Agent: September 11-13, 2026 (early bird ends August 21) — build a working AI agent with Claude Code, the Claude API, and Composio, deployed on a schedule
+- Automate Your Ops with AI: October 16-18, 2026 (early bird ends September 25) — automate recurring ops work: reports, document extraction, inbox and meeting notes, on your real accounts
+- Build Your First App with AI: November 6-8, 2026 (early bird ends October 16) — from idea to a live, deployed app with a real database, using Claude Code, Supabase, and Vercel (vibe coding with production tools)
 
 Workshops page: https://www.makersquare.ai/workshops
 

@@ -2,6 +2,9 @@ name: SEO
 
 on:
   pull_request:            # guardrail: block a PR that introduces an SEO error
+  push:
+    branches: [main]       # the blog auto-publisher pushes straight to main and never
+                           # opens a PR, so pull_request alone never sees its commits
   schedule:
     - cron: '0 14 * * 5'   # Fridays ~9am CT
   workflow_dispatch:        # manual run button / gh workflow run
@@ -23,6 +26,26 @@ jobs:
             echo '```'
             cat audit.txt
             echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+  conventions:             # catches auto-published posts built from a stale template
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check site conventions
+        run: |
+          set -o pipefail
+          python3 scripts/conventions-check.py | tee conventions.txt
+      - name: Report to job summary
+        if: always()
+        run: |
+          {
+            echo '## Site conventions'
+            echo '```'
+            cat conventions.txt
+            echo '```'
+            echo 'Failures on a `blog/` post are usually a stale auto-publish template.'
+            echo 'Fix with: `python3 scripts/normalize-post.py blog/<the-post>.html`'
           } >> "$GITHUB_STEP_SUMMARY"
 
   gsc-report:              # weekly Search Console digest (needs the GSC_SA_KEY secret)

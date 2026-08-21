@@ -4,11 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="facebook-domain-verification" content="fligau9appze71fwy7uaaw2v12bc4n" />
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-MJTW9WQ3');</script>
+<!-- Google Tag Manager (delayed-load) -->
+<!-- dataLayer is created and gtm.start pushed IMMEDIATELY so queued events are never lost.
+     Only the gtm.js request is deferred: it fires on first user interaction, or after 3500ms,
+     whichever comes first. Do NOT revert to the eager loader - it puts 344KB of JS on the
+     mobile critical path and was measured pushing blog LCP to 6.3s. -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+var done=false,t=null,evts=['scroll','mousemove','mousedown','touchstart','keydown','click'],opts={passive:true,capture:true};
+function load(){if(done)return;done=true;if(t)w.clearTimeout(t);
+for(var k=0;k<evts.length;k++){w.removeEventListener(evts[k],load,opts);}
+var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);}
+for(var k=0;k<evts.length;k++){w.addEventListener(evts[k],load,opts);}
+t=w.setTimeout(load,3500);})(window,document,'script','dataLayer','GTM-MJTW9WQ3');</script>
 <!-- End Google Tag Manager -->
-<title>2-Week AI Bootcamp for Non-Technical Professionals | MakerSquare</title>
-<meta name="description" content="The MakerSquare Immersive: 2 weeks in person at Capital Factory in Austin, TX. Ship 3 working AI products by Demo Day — no coding background. $3,999, small cohorts.">
+<title>2-Week AI Bootcamp for Non-Technical Professionals</title>
+<meta name="description" content="Two weeks in person at Capital Factory in Austin, TX. Ship 3 working AI products by Demo Day, no coding background needed. $3,999, small cohorts.">
 <meta name="robots" content="index, follow">
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -276,7 +287,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- NAV -->
 <nav class="nav">
   <div class="nav-inner">
-    <a href="/" class="nav-logo" style="align-items:center;"><img src="logo-light.png" alt="MakerSquare — School of Applied AI" width="1158" height="300"><span class="nav-tagline" style="padding-left:4px;">School of Applied AI</span></a>
+    <a href="/" class="nav-logo" style="align-items:center;"><img src="logo-light.webp" alt="MakerSquare — School of Applied AI" width="348" height="90"><span class="nav-tagline" style="padding-left:4px;">School of Applied AI</span></a>
     <ul class="nav-links">
       <li style="white-space:nowrap;"><a href="/immersive">2-Week Program</a></li>
       <li><a href="/workshops">Workshops</a></li>
@@ -313,6 +324,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <li><a href="/team">Team</a></li>
     <li><a href="/alumni">Alumni</a></li>
     <li><a href="/comparison">How We Compare</a></li>
+          <li><a href="/ai-training-austin">AI Training in Austin</a></li>
     <li><a href="/blog">Blog</a></li>
     <li><a href="/enroll">Enroll</a></li>
   </ul>
@@ -768,7 +780,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div style="font-size:0.85rem;color:var(--text-secondary);margin-top:var(--s2);margin-bottom:var(--s4);line-height:1.6;">10 days in person, 9am&ndash;3pm &middot; a live site &middot; an AI agent &middot; an automated workflow &middot; Demo Day at Capital Factory &middot; lifetime alumni network. <a href="/immersive" style="color:var(--indigo);font-weight:600;">See everything included &rarr;</a></div>
         <div style="background:rgba(64,61,216,0.05);border:1px solid rgba(64,61,216,0.15);border-radius:var(--r-md);padding:var(--s3) var(--s4);margin-bottom:var(--s5);font-size:0.85rem;color:var(--navy);line-height:1.55;"><strong style="color:var(--indigo);">Guaranteed:</strong> leave with a live website, a working AI agent, and an automated workflow &mdash; or a full refund.</div>
         <button type="button" class="btn btn-primary btn-block btn-lg btn-arrow" data-lt-trigger>Schedule An Intro Call</button>
-        <div style="text-align:center;font-size:0.75rem;color:var(--text-muted);margin-top:var(--s3);">Pay in full &middot; or 2 payments of $2,100 &middot; $500 scholarship for vets, first responders &amp; educators</div>
+        <div style="text-align:center;font-size:0.75rem;color:var(--text-muted);margin-top:var(--s3);">Pay in full &middot; $500 scholarship for vets, first responders &amp; educators</div>
         <div style="text-align:center;font-size:0.72rem;color:var(--text-muted);margin-top:6px;">Housing &amp; travel not included &mdash; <a href="/housing" style="color:var(--indigo);font-weight:600;">out-of-town options from ~$1,600/mo</a></div>
         <div style="text-align:center;margin-top:var(--s3);">
           <span style="font-size:0.82rem;color:var(--text-secondary);">Not sure yet? </span><button type="button" data-lt-trigger style="background:none;border:none;padding:0;font-size:0.82rem;color:var(--indigo);font-weight:600;cursor:pointer;font-family:inherit;">Book a quick call &rarr;</button>
@@ -1031,12 +1043,35 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- FOOTER -->
 </main>
+
+<section class="section" style="padding-top:0;">
+  <div class="container">
+      <!-- Keep reading (internal link cluster) -->
+      <div class="post-related" style="margin-top:0;padding-top:var(--s7);border-top:1px solid rgba(24,24,73,0.06);">
+        <div style="font-size:0.78rem;letter-spacing:0.08em;text-transform:uppercase;color:rgba(24,24,73,0.5);font-weight:700;margin-bottom:var(--s5);">Deciding on an AI bootcamp</div>
+        <ul style="list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:var(--s4);">
+          <li><a href="/blog/ai-bootcamp-vs-online-course" style="display:block;font-weight:650;font-size:0.95rem;line-height:1.45;color:var(--navy);text-decoration:none;border:1px solid rgba(24,24,73,0.10);border-radius:12px;padding:14px 16px;height:100%;">In-person AI program vs. online course: which actually changes your career?</a></li>
+          <li><a href="/blog/what-do-you-learn-at-an-ai-bootcamp" style="display:block;font-weight:650;font-size:0.95rem;line-height:1.45;color:var(--navy);text-decoration:none;border:1px solid rgba(24,24,73,0.10);border-radius:12px;padding:14px 16px;height:100%;">What do you actually learn at an AI bootcamp? A week-by-week breakdown.</a></li>
+          <li><a href="/blog/best-ai-courses-bootcamps-2026" style="display:block;font-weight:650;font-size:0.95rem;line-height:1.45;color:var(--navy);text-decoration:none;border:1px solid rgba(24,24,73,0.10);border-radius:12px;padding:14px 16px;height:100%;">The best AI courses and bootcamps in 2026: an honest comparison.</a></li>
+          <li><a href="/blog/in-person-ai-learning-vs-self-paced-research" style="display:block;font-weight:650;font-size:0.95rem;line-height:1.45;color:var(--navy);text-decoration:none;border:1px solid rgba(24,24,73,0.10);border-radius:12px;padding:14px 16px;height:100%;">Why in-person AI learning produces better outcomes than self-paced: what the research shows.</a></li>
+          <li><a href="/blog/how-to-learn-ai-without-coding" style="display:block;font-weight:650;font-size:0.95rem;line-height:1.45;color:var(--navy);text-decoration:none;border:1px solid rgba(24,24,73,0.10);border-radius:12px;padding:14px 16px;height:100%;">How to learn AI without knowing how to code</a></li>
+          <li><a href="/blog/non-technical-ai-skills-2026" style="display:block;font-weight:650;font-size:0.95rem;line-height:1.45;color:var(--navy);text-decoration:none;border:1px solid rgba(24,24,73,0.10);border-radius:12px;padding:14px 16px;height:100%;">Non-technical AI skills: what actually matters in 2026</a></li>
+          <li><a href="/blog/using-ai-vs-building-with-ai" style="display:block;font-weight:650;font-size:0.95rem;line-height:1.45;color:var(--navy);text-decoration:none;border:1px solid rgba(24,24,73,0.10);border-radius:12px;padding:14px 16px;height:100%;">The difference between using AI and building with AI.</a></li>
+          <li><a href="/blog/what-another-year-without-ai-skills-actually-costs" style="display:block;font-weight:650;font-size:0.95rem;line-height:1.45;color:var(--navy);text-decoration:none;border:1px solid rgba(24,24,73,0.10);border-radius:12px;padding:14px 16px;height:100%;">What another year without AI skills actually costs.</a></li>
+          <li><a href="/blog/jobs-most-at-risk-from-ai-2026" style="display:block;font-weight:650;font-size:0.95rem;line-height:1.45;color:var(--navy);text-decoration:none;border:1px solid rgba(24,24,73,0.10);border-radius:12px;padding:14px 16px;height:100%;">The 5 jobs most at risk from AI — and what to actually do about it.</a></li>
+          <li><a href="/blog/agentic-ai-courses-2026" style="display:block;font-weight:650;font-size:0.95rem;line-height:1.45;color:var(--navy);text-decoration:none;border:1px solid rgba(24,24,73,0.10);border-radius:12px;padding:14px 16px;height:100%;">Agentic AI Courses in 2026: An Honest Comparison</a></li>
+        </ul>
+      </div>
+
+      </div>
+</section>
+
 <footer class="footer">
 <style>@media(max-width:768px){.footer-grid{grid-template-columns:1fr 1fr;}.footer-brand{grid-column:1/-1;}.footer-brand p{max-width:none;}.footer-social{flex-wrap:wrap;}.footer-col-links a{font-size:0.85rem;}}</style>
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="/" class="footer-logo"><img src="logo-dark.png" alt="MakerSquare — School of Applied AI" width="1158" height="300" loading="lazy"></a><div class="footer-tagline">School of Applied AI</div>
+        <a href="/" class="footer-logo"><img src="logo-dark.webp" alt="MakerSquare — School of Applied AI" width="348" height="90" loading="lazy"></a><div class="footer-tagline">School of Applied AI</div>
         <p>In-person AI training in Austin, TX &mdash; 2-week intensive and private team programs.</p>
         <button type="button" class="btn btn-primary btn-arrow" data-lt-trigger style="font-size:0.82rem;padding:10px 20px;">Schedule An Intro Call</button>
       </div>

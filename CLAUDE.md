@@ -18,10 +18,16 @@ This site relies on a set of marketing / lead-attribution scripts. They are crit
 
 **In `<head>`:**
 
-1. **Google Tag Manager** — `GTM-MJTW9WQ3`, **delayed-load** (Aug 2026): the loader initializes `dataLayer` immediately but defers the gtm.js request until first user interaction or 3.5s, to keep third-party tags off the mobile critical path. Do NOT revert to the eager `(function(w,d,s,l,i)...` snippet — it tanks mobile performance. dataLayer still queues events so nothing is lost.
+1. **Google Tag Manager** — `GTM-MJTW9WQ3`, **delayed-load**. The loader creates `dataLayer` and pushes `gtm.start` immediately, but defers the `gtm.js` **request** until first user interaction (`scroll`, `mousemove`, `mousedown`, `touchstart`, `keydown`, `click`) or 3500ms, whichever comes first. `dataLayer` still queues, so pushes that happen before GTM loads — Zoho `zf_gtm` form events, `msc_chat_open`, `ms_ideas_submit` — are all replayed when it arrives. Identified by the `<!-- Google Tag Manager (delayed-load) -->` comment.
+
+   ⚠️ **Do NOT revert to the eager `(function(w,d,s,l,i)...j.src=...` one-liner.** It puts 344KB of JS (`gtm.js` 155KB + `gtag/js` 189KB) on the mobile critical path. Measured Aug 20 2026: with the eager loader, blog posts ran mobile LCP 5.3–6.3s while the homepage — whose LCP element is text, not an image — sat at 2.9s. Blog perf score was 63.
+
+   **History, so this doesn't regress again.** This doc claimed delayed-load had shipped in Aug 2026, but it had not: all 87 pages were still running the eager snippet as of Aug 20 2026, when it was actually implemented and rolled out. If you are reading this and the greps below fail, someone reverted it — find out why before re-landing, because the tradeoff is real: sessions that bounce in under 3.5s with zero interaction are not measured.
+
+   **Known tradeoff.** Bounced sessions shorter than 3.5s with no interaction go unmeasured. That was accepted deliberately (Ravi, Aug 20 2026) to get blog Core Web Vitals passing. If ad measurement fidelity matters more than CWV for a given campaign, lower the 3500ms or revert — but do it knowingly, and update this section.
 2. **Zoho `zf_gtm` postMessage listener** — pushes form events into `dataLayer` (look for `type == "zf_gtm"`)
 3. **Zoho `ZFLead` UTM + `fbclid` passthrough** — header reads `<!-- Zoho UTM passthrough (modificado: incluye fbclid) -->`
-4. ~~**X (Twitter) conversion pixel**~~ — REMOVED Aug 2026 (ads paused; it hurt mobile perf + best-practices with no ads running). Re-add the `twq(.config.,.rcjjn.)` snippet if X ads resume.
+4. ~~**X (Twitter) conversion pixel**~~ — REMOVED Aug 2026 (ads paused; it hurt mobile perf + best-practices with no ads running). The sweep missed `blog/` at the time; the last 8 blog posts were cleaned 2026-08-20, and `grep -rl "twq(" . --include='*.html'` is now empty. Re-add the `twq(.config.,.rcjjn.)` snippet, and its CSP hosts, if X ads resume.
 
 **Right after `<body>`:**
 
@@ -51,12 +57,56 @@ This site relies on a set of marketing / lead-attribution scripts. They are crit
 Run from the repo root. Each command should print nothing:
 
 ```bash
-grep -L "GTM-MJTW9WQ3" *.html | grep -v HANDOFF
-grep -L "ns.html?id=GTM-MJTW9WQ3" *.html | grep -v HANDOFF
-grep -L "zf_gclid.js" *.html | grep -v HANDOFF
-grep -L "modificado: incluye fbclid" *.html | grep -v HANDOFF
-grep -L 'type == "zf_gtm"' *.html | grep -v HANDOFF
-grep -L "twq('config','rcjjn')" *.html | grep -v HANDOFF
+# every public page, including blog/ and guides/
+pages() { ls *.html blog/*.html guides/*.html | grep -v HANDOFF; }
+
+for pat in "GTM-MJTW9WQ3" "ns.html?id=GTM-MJTW9WQ3" "zf_gclid.js" \
+           "modificado: incluye fbclid" "Google Tag Manager (delayed-load)"; do
+  pages() { ls *.html blog/*.html guides/*.html | grep -v HANDOFF; }
+  missing=$(pages | while read -r f; do grep -qF "$pat" "$f" || echo "$f"; done)
+  [ -z "$missing" ] && echo "OK   $pat" || echo "FAIL $pat -> $missing"
+done
+
+# spacing differs between top-level and blog/, so this one is a regex
+missing=$(pages | while read -r f; do grep -qE "type ?== ?.zf_gtm." "$f" || echo "$f"; done)
+[ -z "$missing" ] && echo "OK   zf_gtm listener" || echo "FAIL zf_gtm -> $missing"
+
+# the eager GTM loader must never come back.
+# NOTE: match on the IIFE close, not on "j.src=" - the delayed loader contains that too,
+# so a looser pattern reports every page as a regression.
+grep -rlF "insertBefore(j,f);})(window" . --include='*.html'
+
+# the retired X pixel must stay gone
+grep -rl "twq(" . --include='*.html'
+```
+
+The first two blocks should print only `OK` lines; the last two should print nothing.
+
+A `for`/`read` loop is used rather than `grep -L file1 file2 ...` on purpose: on a machine where `grep`
+is aliased to `ugrep` (Ravi's is), passing a long unquoted file list makes it warn `File name too long`
+and bury the real result.
+
+⚠️ **These glob `blog/` and `guides/` on purpose.** They used to check top-level `*.html` only, and
+everything under `blog/` silently rotted for months as a result. Found on 2026-08-20: 8 blog posts still
+carried the X pixel that was retired in Aug 2026, `blog/index.html` and
+`blog/what-another-year-without-ai-skills-actually-costs.html` had no `zf_gtm` listener at all, and the
+blog `ItemList` schema listed 12 of 43 posts. If you narrow these globs, that happens again.
+
+Note the last one is a regex (`grep -LE`) rather than a fixed string: top-level pages write
+`type == "zf_gtm"` with spaces, `blog/` writes `e.data.type=='zf_gtm'` without. A fixed-string grep
+false-negatives on half the site.
+
+Also assert the eager GTM loader has not come back — this should print nothing:
+
+```bash
+grep -rl "j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window" . --include='*.html'
+```
+
+Plus these two, to catch a delayed-GTM regression. The first should print nothing; the second should print nothing (no page may carry the eager loader):
+
+```bash
+grep -L "Google Tag Manager (delayed-load)" *.html blog/*.html guides/*.html | grep -v HANDOFF
+grep -rl "j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window" . --include='*.html'
 ```
 
 ---
@@ -65,7 +115,7 @@ grep -L "twq('config','rcjjn')" *.html | grep -v HANDOFF
 
 The Content Security Policy lives in `vercel.json` under the `/(.*)`route's headers. Currently in `Content-Security-Policy-Report-Only` mode — violations show in the browser console but don't block resources yet.
 
-**When adding a new third-party script**, add its host to the appropriate directive — usually `script-src` and `connect-src`. Currently allowed: Zoho (`*.zoho.com`, `*.zohocdn.com`), Google Tag Manager, Google Analytics, DoubleClick, Pagesense, Twitter Ads (`static.ads-twitter.com`, `analytics.twitter.com`).
+**When adding a new third-party script**, add its host to the appropriate directive — usually `script-src` and `connect-src`. Currently allowed: Zoho (`*.zoho.com`, `*.zohocdn.com`), Google Tag Manager, Google Analytics, DoubleClick, Pagesense. Twitter Ads hosts were removed along with the pixel — re-add `static.ads-twitter.com` and `analytics.twitter.com` if X ads resume.
 
 ---
 
@@ -85,6 +135,53 @@ The program moved from admissions → open enrollment. Never use the old languag
 **CTA hierarchy (updated Jul 16, 2026, per Ravi):** ONE primary CTA sitewide — **"Schedule an intro call"** (opens the lt-modal booking form). The nav-right block is byte-identical on all standard pages (ghost **"Enroll"** → /enroll, primary **"Schedule an intro call"** → lt-modal). Earlier variants "Book a Call" / "Schedule an info call" are retired. Secondary is **"Enroll"** (ghost/link to /enroll). Do not add competing CTAs — the founder closes on calls. Corporate page may use "Talk to Our Training Team". NEVER use "Talk to Admissions" — banned language. Consumer workshops pulled from nav/home/footer Jul 2026 (page + Stripe links retained but unlinked); corporate/team workshops remain on /corporate.
 
 ---
+
+## The blog auto-publisher writes from a stale template
+
+`makersquare-ops-bot` publishes one post a day, straight to `main`, from a template that lives outside
+this repo. It is not kept in step with the site, so each new post arrives missing whatever changed since
+the template was last touched. This is the single largest source of rot in `blog/`.
+
+Measured on 2026-08-21: one auto-published post reintroduced the eager GTM loader (in a line-wrapped form
+that a fixed-string grep misses), the retired X pixel, 3 `/pricing` redirect links, three unsized images,
+a PNG hero, no `BreadcrumbList`, no Keep-reading block, and an Article node missing `image` and
+`dateModified`. Four of the eight posts still carrying the X pixel in Aug 2026 were its output.
+
+**Two guards now exist. Neither replaces fixing the template.**
+
+1. `scripts/conventions-check.py` — fails on any regression of the conventions in this file. Wired into
+   CI, and the workflow now triggers `on: push` to `main` as well as `pull_request`, because the bot never
+   opens a PR so `pull_request` alone never saw its commits. Errors are things that are clean today and
+   must stay clean; the known unsized-image backlog on top-level pages warns instead of blocking, so the
+   gate stays trustworthy.
+2. `scripts/normalize-post.py <post.html>` — brings a post up to convention: delayed GTM, X-pixel removal,
+   `/pricing` rewrite, footer Austin link, webp hero with dims and `fetchpriority`, `BreadcrumbList`,
+   Article `image`/`dateModified`, and a Keep-reading block. Idempotent. It inserts a hub-only
+   Keep-reading block, so **add the three cluster siblings by hand** — the script cannot know which
+   cluster a new post belongs to.
+
+**When a post lands and CI goes red:** run `normalize-post.py` on it, add the cluster links, add its
+`.webp` card to `blog/index.html`, and add inbound links from 2-3 sibling posts so it is not an orphan.
+
+## Images
+
+**On-page `<img src>` uses `.webp`. `og:image` and JSON-LD `image` stay `.png`/`.jpg`.**
+
+That split is deliberate. WebP cut the blog hero art 58% (median 45KB to 21KB), but social and
+AI scrapers are less reliable with WebP than browsers are, so the crawler-facing tags keep the
+original raster. Both files live in the repo; neither is dead.
+
+- Blog/guide art: `images/**/foo-og.png` is the source of truth. Generate the sibling with
+  `cwebp -q 82 -m 6 images/blog/foo-og.png -o images/blog/foo-og.webp`, then point the on-page
+  `<img src>` at the `.webp` and leave `og:image` + JSON-LD `image` on the `.png`.
+- **New posts:** the auto-publish script writes `<img src="...-og.png">`. That still works, it is
+  just slower. Run the cwebp step and swap the `src` when you next touch the post.
+- Logos: `logo-light.webp` / `logo-dark.webp` are **348x90** (2x the largest render, 174x45), and
+  the `width`/`height` attributes must say `348`/`90`. The 1158x300 `logo-dark.png` is kept
+  because the JSON-LD publisher logo declares those exact dimensions — do not resize that file.
+- Every `<img>` needs `width` + `height` (CLS), the hero needs `fetchpriority="high"` (it is the
+  LCP element), and everything below the fold needs `loading="lazy"`.
+- JPEGs are capped at 1200px on the long edge, quality 78, progressive. Nothing above that ships.
 
 ## CSS rules — do not break these
 
