@@ -9284,7 +9284,7 @@ If that doesn’t settle it, ask who the standard is for: people receiving reque
 
 ### Where we landed
 
-We made the four changes. Our score roughly doubled, and it won’t reach 100, because reaching 100 means running an MCP server we have no reason to run.
+We made the four changes. The score went from 20 to 47, and the label went from Level 1, Basic Web Presence, to Level 4, Agent-Integrated. It won’t reach 100, because reaching 100 means running an MCP server we have no reason to run. Seven of fifteen scored checks, and the eight we’re missing are the eight that need an API behind them.
 
 What we got out of it: agents can read our pages cleanly, our content preferences are stated in machine-readable terms instead of assumed, and one file tells an agent everything we offer it.
 
