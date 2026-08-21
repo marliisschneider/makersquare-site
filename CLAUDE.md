@@ -196,3 +196,17 @@ Obsidian vault (strategy docs, workshop plans, email copy): `/Users/marliisschne
 `/api/chat` (Vercel serverless) answers visitor questions with Claude Haiku, grounded STRICTLY on the live `/llms.txt` — so keeping llms.txt accurate keeps the bot accurate; there is no second facts file. Widget: `js/ms-chat.js`, included on all indexable pages. It cannot quote prices/dates not present in llms.txt and funnels uncertainty + buying intent to Book a Call. Requires `ANTHROPIC_API_KEY` env var in Vercel (Settings → Environment Variables) — without it the bot returns a graceful book-a-call fallback. Widget pushes `msc_chat_open` to dataLayer for GTM.
 
 `/api/ideas` powers the "What would you build?" generator (homepage, mode=individual) and the instant 3-day team sketch (/corporate, mode=team) via `js/ms-ideas.js` and `[data-ms-ideas]` mount points. Same ANTHROPIC_API_KEY; strict-JSON prompts; both push `ms_ideas_submit` to dataLayer.
+
+
+## Agent readiness (Aug 2026)
+
+Scored via https://isitagentready.com/makersquare.ai. Four pieces, all additive — none of them touch page HTML:
+
+- **`robots.txt` Content Signals** — `search=yes, ai-input=yes, ai-train=no`, repeated in every user-agent group (a bot matching a named group ignores the `*` group entirely, so it must be repeated). Plus an `Agentmap:` line pointing at the catalog.
+- **Markdown negotiation** — a request with `Accept: text/markdown` is 307'd by `vercel.json` to `/api/markdown`, which refetches its own HTML and converts it with `api/_html-to-markdown.mjs`. **It must be a `redirect`, not a `rewrite`:** Vercel checks rewrites *after* the filesystem, so a static page would always win. The `(?!api/)` guard in the source pattern stops the agent's followed request from re-entering the rule.
+- **`.well-known/ai-catalog.json`** — ARD capability manifest; `Link` headers on `/(.*)` advertise it alongside llms.txt and the sitemap.
+- **`llms-full.txt`** — every public page as one markdown doc. Regenerate with `node scripts/build-llms-full.mjs` after meaningful copy changes. `llms.txt` stays hand-written — it is the curated summary *and* the `/api/chat` grounding file; llms-full is the exhaustive companion, not a replacement.
+
+`api/_html-to-markdown.mjs` is regex-based with no npm deps (this repo has no package.json on purpose). Two things it must keep doing: **not** stripping `<button>` (the FAQ accordion puts the actual questions in buttons), and stripping `nav`/`header`/`footer` (per-page boilerplate). After changing it, re-run the builder and skim the diff.
+
+Deliberately **not** implemented: MCP Server Card, OAuth/OIDC discovery, WebMCP, Agent Skills index, DNS-AID, and the four agentic-commerce protocols. They all presuppose an API or storefront for agents to call. Score stays capped around 60/100 until that exists — that's the correct outcome, not a gap to close.

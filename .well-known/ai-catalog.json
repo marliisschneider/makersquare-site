@@ -1,0 +1,61 @@
+{
+  "specVersion": "0.1",
+  "host": {
+    "name": "MakerSquare",
+    "description": "Austin's school of applied AI. In-person builder programs for non-technical professionals: a 2-week immersive cohort, 3-day weekend workshops, and private team training. Students ship a live website, an AI agent, and an automated workflow.",
+    "url": "https://www.makersquare.ai/",
+    "contact": "hello@makersquare.ai"
+  },
+  "entries": [
+    {
+      "id": "urn:air:makersquare.ai:content:llms-txt",
+      "displayName": "MakerSquare site overview (llms.txt)",
+      "description": "Condensed, agent-readable summary of MakerSquare: what the program is, who it is for, what students build, pricing, cohort and workshop dates, location, and enrollment.",
+      "type": "text/markdown",
+      "url": "https://www.makersquare.ai/llms.txt",
+      "representativeQueries": [
+        "What is MakerSquare?",
+        "How much does the MakerSquare AI program cost?",
+        "When does the next MakerSquare cohort start?",
+        "Is there an in-person AI bootcamp in Austin for non-technical people?"
+      ]
+    },
+    {
+      "id": "urn:air:makersquare.ai:content:llms-full-txt",
+      "displayName": "MakerSquare full site content (llms-full.txt)",
+      "description": "Full markdown text of every public MakerSquare page in one document: program details, curriculum, FAQ, comparisons with other AI programs, corporate training, and case studies.",
+      "type": "text/markdown",
+      "url": "https://www.makersquare.ai/llms-full.txt",
+      "representativeQueries": [
+        "What does the MakerSquare curriculum cover day by day?",
+        "How does MakerSquare compare to Wharton or General Assembly?",
+        "What have MakerSquare students actually built?",
+        "Does MakerSquare offer private AI training for company teams?"
+      ]
+    },
+    {
+      "id": "urn:air:makersquare.ai:content:sitemap",
+      "displayName": "MakerSquare sitemap",
+      "description": "XML sitemap listing every indexable page on makersquare.ai. Any page can also be fetched as markdown by sending the Accept: text/markdown request header.",
+      "type": "application/xml",
+      "url": "https://www.makersquare.ai/sitemap.xml",
+      "representativeQueries": [
+        "What pages are on the MakerSquare website?",
+        "Where can I read the MakerSquare FAQ?",
+        "List the MakerSquare blog posts"
+      ]
+    },
+    {
+      "id": "urn:air:makersquare.ai:content:markdown-negotiation",
+      "displayName": "Markdown content negotiation",
+      "description": "Every page on makersquare.ai returns clean markdown instead of HTML when the request carries the Accept: text/markdown header. Useful for reading a specific page without parsing markup.",
+      "type": "text/markdown",
+      "url": "https://www.makersquare.ai/",
+      "representativeQueries": [
+        "Read the MakerSquare pricing page as markdown",
+        "Fetch the MakerSquare curriculum page in plain text",
+        "Get the MakerSquare FAQ without HTML"
+      ]
+    }
+  ]
+}
