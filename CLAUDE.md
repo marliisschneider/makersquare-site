@@ -236,11 +236,11 @@ Consumer workshops are back on the site: nav + More dropdown restored, /workshop
 
 | # | Dates | Topic | Early Bird Closes |
 |---|---|---|---|
-| WS-Sep | Sep 11–13, 2026 (Fri–Sun) | Build Your First AI Agent | Aug 21 |
+| WS-Sep | Sep 11–13, 2026 (Fri–Sun) | Build Your First AI Agent | Aug 26 |
 | WS-Oct | Oct 16–18, 2026 (Fri–Sun) | Automate Your Ops with AI | Sep 25 |
 | WS-Nov | Nov 6–8, 2026 (Fri–Sun) | Build Your First App with AI (vibe coding) | Oct 16 |
 
-**⚠️ The early-bird-close dates above are the source of truth = the Stripe checkout deadlines in workshop-register.html (Aug 21 / Sep 25 / Oct 16). Any date shown on workshops.html, JSON-LD, or social must match these. Stale Wed dates (Sep 9/Oct 14/Nov 4) and earlier closes (Aug 19/Sep 23/Oct 14) have caused site-vs-checkout mismatches twice — verify against the register-page JS before changing.**
+**⚠️ The early-bird-close dates above are the source of truth = the Stripe checkout deadlines in workshop-register.html (Aug 26 / Sep 25 / Oct 16). Any date shown on workshops.html, JSON-LD, or social must match these. Stale Wed dates (Sep 9/Oct 14/Nov 4) and earlier closes (Aug 19/Sep 23/Oct 14) have caused site-vs-checkout mismatches twice — verify against the register-page JS before changing.**
 
 Pricing: Early bird $999 / Regular $1,199. Attendees get $200 off the January 2-week program (code WORKSHOP200). Private team sessions: custom quote only — never publish a price (~$950/person internally, min ~$4,000). **Stripe: all 6 payment links are LIVE (early-bird + regular for Sep, Oct, and Nov) — created Jul 31, 2026. workshop-register.html auto-switches EB→regular by date for all three. The "Reserve a seat" buttons on /workshops route through the Zoho lead form, which redirects to /workshop-register (Stripe) after capture.** Still true: no workshops on the enrollment page.
 

@@ -63,9 +63,9 @@ Site · agent · workflow
 
 ### Can’t do two weeks? Give it a weekend.
 
-Sep early bird $999 — ends Aug 21
+Sep early bird $999 — ends Aug 26
 
-[Next up · Sep 11–13 Build Your First AI Agent Leave with a working agent on your own data, running on a schedule. Early bird $999 — ends Aug 21 →](/workshops)
+[Next up · Sep 11–13 Build Your First AI Agent Leave with a working agent on your own data, running on a schedule. Early bird $999 — ends Aug 26 →](/workshops)
 [Oct 16–18 Automate Your Ops with AI The recurring work — reports, documents, inbox — stops being manual. Early bird $999 — ends Sep 25 →](/workshops)
 [Nov 6–8 Build Your First App with AI Idea to live app with a real database — vibe coding, done properly. Early bird $999 — ends Oct 16 →](/workshops)
 
@@ -1130,7 +1130,7 @@ Sep 11 – 13, 2026
 
 Build Your First AI Agent
 
-Early Bird $999 — ends Aug 21
+Early Bird $999 — ends Aug 26
 
 October
 
@@ -1229,11 +1229,11 @@ Hours
 
 Mins
 
-⏱ until the $999 early bird ends (Aug 21)
+⏱ until the $999 early bird ends (Aug 26)
 
 $999
 
-$1,199 after Aug 21
+$1,199 after Aug 26
 
 ✓ Your first agent deployed on a schedule — by 5pm Day 1
 
@@ -1272,11 +1272,11 @@ Claude Code Claude API Composio GitHub Actions Exa
 
 - A working agent solving your actual problem, demoed on Day 3
 
-Early bird until Aug 21
+Early bird until Aug 26
 
 $999
 
-$1,199 after Aug 21
+$1,199 after Aug 26
 
 [Reserve](https://forms.zohopublic.com/makersquare/form/WorkshopInterestForm/formperma/AYsoiXxKUM7vU5-RS8YLyYj2rwosDB-qYvE7A6z6zV0)
 
@@ -1531,7 +1531,7 @@ And at the end, you’d have a report explaining what’s possible. Not a workin
 For $999, you sit in a room for 3 days and actually build the thing. With your data. With a real instructor. You leave knowing how to do it yourself — and that skill compounds every day after.
 
 [Reserve a seat — from $999](https://forms.zohopublic.com/makersquare/form/WorkshopInterestForm/formperma/AYsoiXxKUM7vU5-RS8YLyYj2rwosDB-qYvE7A6z6zV0)
-Early bird ends Aug 21 · Invoice available on request
+Early bird ends Aug 26 · Invoice available on request
 
 Pricing
 
@@ -1606,7 +1606,7 @@ FAQ
 
 ### Questions people ask before booking.
 
-Why should I do this now and not wait? Because the gap between people who can use AI and people who can’t is widening every month — not every year. The ops manager or founder who learns this in September has a head start on everyone who waits until next year. Also: early bird pricing closes Aug 21 for the AI Agent workshop. Same seats, same instructor — $200 more after that.
+Why should I do this now and not wait? Because the gap between people who can use AI and people who can’t is widening every month — not every year. The ops manager or founder who learns this in September has a head start on everyone who waits until next year. Also: early bird pricing closes Aug 26 for the AI Agent workshop. Same seats, same instructor — $200 more after that.
 
 Which AI workshops are running in Austin in fall 2026? Three 3-day intensives in downtown Austin (Capital Factory / Station Austin, 701 Brazos St): **Build Your First AI Agent** Sep 11–13, **Automate Your Ops with AI** Oct 16–18, and **Build Your First App with AI** Nov 6–8. All Fri–Sun, 9am–4pm. Early bird $999, regular $1,199.
 
@@ -1632,9 +1632,9 @@ The **2-week MakerSquare program** is the full build — 3 complete AI products,
 
 Don’t miss the early bird
 
-### Build Your First AI Agent — Sep 11–13. $999 early bird closes Aug 21.
+### Build Your First AI Agent — Sep 11–13. $999 early bird closes Aug 26.
 
-Small cohort. After Aug 19 it’s $1,199. After it sells out, it’s gone. 3 days in Austin — you leave with a working AI agent that runs without you.
+Small cohort. After Aug 26 it’s $1,199. After it sells out, it’s gone. 3 days in Austin — you leave with a working AI agent that runs without you.
 
 [Reserve my seat — $999](https://forms.zohopublic.com/makersquare/form/WorkshopInterestForm/formperma/AYsoiXxKUM7vU5-RS8YLyYj2rwosDB-qYvE7A6z6zV0)
 [Have a question? Email us](mailto:hello@makersquare.ai)
@@ -9669,9 +9669,9 @@ Free full-length course
 
 <!-- https://www.makersquare.ai/blog/non-technical-ai-skills-2026 -->
 
-# Non-Technical AI Skills: What Actually Matters in 2026
+# The Non-Technical AI Skills That Actually Matter in 2026
 
-> The AI skills that matter are not prompting — they are judgment, workflow design, and knowing when to trust the output. What separates them.
+> The AI skills that matter most aren
 
 [← Blog](/blog)
 
