@@ -119,6 +119,23 @@ def main(path):
         for a in ('<!-- CTA -->\n      <div class="post-cta">', '<div class="post-cta">', '<!-- Sources -->'):
             if a in h: h = h.replace(a, block + a, 1); did.append('Keep-reading block (hub only)'); break
 
+
+    # 8. The blog index card for this post. The publisher writes cards pointing
+    # at the .png with no dimensions, while every older card uses the .webp with
+    # width/height. Fixed here because this is where the .webp gets generated —
+    # the card cannot be corrected before the file it references exists.
+    idx = os.path.join(os.path.dirname(path) or '.', 'index.html')
+    if os.path.exists(idx):
+        ih = open(idx, encoding='utf-8').read()
+        card = re.compile(
+            r"""(<img src="\.\./images/blog/[a-z0-9-]+-og)\.png("[^>]*?onerror="this\.style\.display='none'")(?![^>]*width=)([^>]*)>""")
+        def fixcard(m):
+            return m.group(1) + '.webp' + m.group(2) + m.group(3) + ' width="1200" height="630" loading="lazy" decoding="async">'
+        nh, n = card.subn(fixcard, ih)
+        if n:
+            open(idx, 'w', encoding='utf-8').write(nh)
+            did.append(str(n) + ' blog index card(s)')
+
     open(path, 'w').write(h)
     print(f"{path}: " + (", ".join(did) if did else "already conformant"))
 
