@@ -7,6 +7,10 @@ on:
                            # opens a PR, so pull_request alone never sees its commits
   schedule:
     - cron: '0 14 * * 5'   # Fridays ~9am CT
+    - cron: '0 19 * * 5'   # backstop, Fridays ~2pm CT. GitHub silently dropped the
+                           # 09:00 run on 2026-08-28 — scheduled workflows are
+                           # best-effort and the on-the-hour slots are the most
+                           # congested. The guard below stops the two colliding.
   workflow_dispatch:        # manual run button / gh workflow run
 
 jobs:
@@ -54,11 +58,36 @@ jobs:
     if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     steps:
+      # Two Friday crons means this can fire twice. Skip if a run today already
+      # produced the digest, so the backstop only covers a genuine miss and
+      # never double-posts to Slack.
+      - name: Skip if this week's digest already went out
+        id: dedupe
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          today=$(date -u +%F)
+          done_already=$(gh api "repos/${{ github.repository }}/actions/workflows/seo-audit.yml/runs?per_page=30" \
+            --jq "[.workflow_runs[]
+                   | select(.created_at[0:10] == \"$today\")
+                   | select(.id != ${{ github.run_id }})
+                   | select(.conclusion == \"success\")] | length")
+          echo "successful runs earlier today: $done_already"
+          if [ "$done_already" -gt 0 ]; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            echo "Digest already sent today — skipping." >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
       - uses: actions/checkout@v4
+        if: steps.dedupe.outputs.skip != 'true'
       - uses: actions/setup-python@v5
+        if: steps.dedupe.outputs.skip != 'true'
         with: { python-version: '3.12' }
       - run: pip install --quiet google-api-python-client google-auth
+        if: steps.dedupe.outputs.skip != 'true'
       - name: Weekly Search Console report
+        if: steps.dedupe.outputs.skip != 'true'
         env:
           GSC_SA_KEY: ${{ secrets.GSC_SA_KEY }}
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
@@ -66,7 +95,9 @@ jobs:
           set -o pipefail
           python3 scripts/gsc-report.py | tee gsc.txt
       - name: Report to job summary
-        if: always()
+        # always() so a failed report still surfaces, but not when we skipped —
+        # gsc.txt won't exist and cat would fail the job for no reason.
+        if: always() && steps.dedupe.outputs.skip != 'true'
         run: |
           {
             echo '## Search Console — weekly'
