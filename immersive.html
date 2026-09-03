@@ -944,7 +944,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="cta-final">
       <div class="section-label reveal" style="justify-content:center;">Enroll</div>
       <h2 class="reveal"><!--COHORT:name-->Cohort 3<!--/-->: <!--COHORT:startLong-->January 11, 2027<!--/-->.<br><span style="color:var(--sky);">Enrollment closes <!--COHORT:enrollCloseShort-->January 4<!--/-->.</span></h2>
-      <div class="reveal" style="display:flex;gap:clamp(8px,3vw,24px);justify-content:center;margin:8px 0 28px;width:100%;">
+      <div class="reveal" id="cd-wrap" style="display:flex;gap:clamp(8px,3vw,24px);justify-content:center;margin:8px 0 28px;width:100%;">
         <div style="text-align:center;">
           <div id="cd-days" style="font-size:clamp(1.8rem,7vw,3rem);font-weight:800;color:var(--sky);line-height:1;font-variant-numeric:tabular-nums;">--</div>
           <div style="font-size:0.65rem;color:rgba(255,255,255,0.4);text-transform:uppercase;letter-spacing:0.1em;margin-top:4px;">days</div>
@@ -968,7 +968,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p class="reveal">Stop reading about AI. In 2 weeks you'll have a live website, a working agent, and an automated workflow running, a Demo Day under your belt, and a skill set you own for life.</p>
       <div class="reveal" style="margin-bottom:var(--s4);display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.18);border-radius:100px;padding:12px 24px;font-size:0.9rem;color:rgba(255,255,255,0.9);font-weight:500;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Guaranteed: leave with a live website, a working AI agent, and an automated workflow &mdash; or a full refund.</div>
       <div class="reveal"><button type="button" class="btn btn-primary btn-lg btn-arrow" data-lt-trigger style="font-size:1.05rem;">Schedule An Intro Call</button></div>
-      <div class="cta-details reveal">Aug 3, 2026 &middot; Austin, TX &middot; $3,999 &middot; 2 weeks</div>
+      <div class="cta-details reveal"><!--COHORT:startLong-->January 11, 2027<!--/--> &middot; Austin, TX &middot; $3,999 &middot; 2 weeks</div>
     </div>
   </div>
 </section>
@@ -1353,12 +1353,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </script>
 <script>
 (function(){
-  var deadline = new Date('2026-07-27T23:59:59-05:00');
+  var deadline = new Date('2027-01-04T23:59:59-06:00');
+  var wrap = document.getElementById('cd-wrap');
   var els = ['cd-days','cd-hours','cd-mins','cd-secs'].map(function(id){ return document.getElementById(id); });
   if(!els[0]) return;
+  var SHOW_WITHIN = 21*86400000; // only surface the live timer in the final 21 days
   function tick(){
     var diff = deadline - new Date();
-    if(diff <= 0){ els.forEach(function(el){ if(el) el.textContent='00'; }); return; }
+    if(diff > SHOW_WITHIN || diff <= 0){ if(wrap) wrap.style.display='none'; return; }
+    if(wrap) wrap.style.display='flex';
     els[0].textContent = Math.floor(diff/86400000);
     els[1].textContent = String(Math.floor((diff%86400000)/3600000)).padStart(2,'0');
     els[2].textContent = String(Math.floor((diff%3600000)/60000)).padStart(2,'0');

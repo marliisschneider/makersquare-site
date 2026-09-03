@@ -180,6 +180,14 @@ for (const f of ['index.html', 'immersive.html', 'demo-ppc.html', 'demo-ppc-lega
   );
 }
 
+// --- 3b. countdown deadline = next open cohort's enroll close (23:59 Central)
+for (const f of ['index.html', 'immersive.html']) {
+  edit(f, (src) => src.replace(
+    /var deadline = new Date\('[^']*'\);/,
+    `var deadline = new Date('${nextOpen.enrollClose}T23:59:59-06:00');`
+  ));
+}
+
 // --- report ----------------------------------------------------------------
 console.log(`next open cohort: ${nextOpen.name} (${nextOpen.start} → ${nextOpen.end}), enroll closes ${nextOpen.enrollClose}`);
 if (results.length) results.forEach((r) => console.log('  ' + r));
