@@ -284,7 +284,7 @@ One sentence about your work — and Claude sketches three tools you could reali
 
 <!-- https://www.makersquare.ai/immersive -->
 
-# 2-Week AI Bootcamp for Non-Technical Professionals
+# 2-Week AI Bootcamp in Austin for Non-Technical Professionals
 
 > Two weeks in person at Capital Factory in Austin, TX. Ship 3 working AI products by Demo Day, no coding background needed. $3,999, small cohorts.
 
@@ -639,7 +639,7 @@ Guaranteed: leave with a live website, a working AI agent, and an automated work
 
 Schedule An Intro Call
 
-Aug 3, 2026 · Austin, TX · $3,999 · 2 weeks
+January 11, 2027 · Austin, TX · $3,999 · 2 weeks
 
 "Most people say they can't do 2 weeks. Most of them, once they see the outcomes, find a way. The ones who don't aren't who this is for. "
 
@@ -1645,7 +1645,7 @@ Fri–Sun · 9am–4pm · Austin TX · No coding required
 
 <!-- https://www.makersquare.ai/corporate -->
 
-# Corporate AI Training for Teams | MakerSquare Austin TX
+# AI Training for Employees & Teams | MakerSquare Austin, TX
 
 > Custom AI training for teams. We scope the right program — length, content, format — around your workflows and business problems. On site or in Austin.
 
@@ -4033,15 +4033,15 @@ $3,999 tuition · Money-back guarantee
 
 <!-- https://www.makersquare.ai/ai-training-austin -->
 
-# In-Person AI Training in Austin, TX | MakerSquare
+# Learn AI in Austin: In-Person AI Courses & Training | MakerSquare
 
-> In-person AI training in Austin, TX — a 2-week intensive for professionals and private programs for teams. You leave with working tools, not certificates.
+> Learn AI in Austin with MakerSquare — in-person AI courses and training for professionals and teams. A 2-week intensive where you build and deploy real AI tools. No coding background needed.
 
 AI Training · Austin, TX
 
-## AI training that ends with things actually built.
+## Learn AI in Austin — and leave with real tools built.
 
-Most AI training in Austin teaches you to use tools. Ours teaches you to build systems — in person, hands-on, on your own real work. You leave with a live website, a working AI agent, and an automated workflow. Deployed, not theoretical.
+Most AI classes in Austin teach you to use tools. Ours teaches you to build systems — in person, hands-on, on your own real work. It's less a lecture series and more Austin's AI school for people who'd rather build than watch: you leave with a live website, a working AI agent, and an automated workflow. Deployed, not theoretical.
 
 Next cohort: Jan 11, 2026
 In person · Downtown Austin
@@ -4590,7 +4590,7 @@ From the team at [MakerSquare](/) · [makersquare.ai/quickstart](https://www.mak
 
 <!-- https://www.makersquare.ai/blog/10-ai-tools-every-knowledge-worker-needs-2026 -->
 
-# 10 AI Tools Every Professional Needs in 2026 | MakerSquare
+# 10 AI Tools for Business That Actually Matter in 2026 | MakerSquare
 
 > Not all AI tools are equal. These 10 are the ones that actually change how knowledge workers write, research, build, and automate — ranked by practical impact.
 
@@ -4987,6 +4987,8 @@ Keep reading
 
 - [Private AI training for your team](/corporate)
 
+Rolling AI out across a team? See MakerSquare's [AI training for teams and employees](/corporate) — custom programs built around your workflows and tools.
+
 MakerSquare is a 2-week in-person AI builder program in Austin, TX — designed specifically for non-technical operators, founders, and professionals. See exactly what the program covers and what students build.
 
 [Get the curriculum](https://www.makersquare.ai/curriculum)
@@ -5295,6 +5297,119 @@ For companies
 Reading this for your team? We run private AI training for Austin companies — your tools, your workflows, working automation by day three.
 
 [Corporate training →](/corporate) [Train vs. hire a consultant →](/ai-training-vs-consultants) [3-day workshops →](/workshops)
+
+---
+
+<!-- https://www.makersquare.ai/blog/ai-data-analysis-without-coding -->
+
+# AI for Data Analysis: No SQL, No Python, No Problem | MakerSquare
+
+> AI data analysis without coding — how non-technical professionals can use AI to analyze data, spot trends, and generate insights from spreadsheets, CSVs, and business reports without SQL or Python.
+
+[← Blog](/blog)
+
+AI Skills
+
+## AI for data analysis: no SQL, no Python, no problem
+
+Marliis Schneider
+
+August 26, 2026
+
+5 min read
+
+![AI for data analysis: no SQL, no Python, no problem](../images/blog/ai-data-analysis-og.webp)
+
+Key takeaways
+
+- Non-technical professionals can now perform meaningful data analysis by uploading spreadsheets or CSVs to AI tools and asking questions in plain English — no SQL, no Python required.
+
+- AI data analysis without coding works well for business-scale datasets (tens of thousands of rows) but has limitations at enterprise data warehouse scale — know the ceiling before relying on it.
+
+- The highest-value non-technical AI data analysis use case is not finding patterns — it's turning data into a readable narrative that non-data people can act on.
+
+- World Economic Forum 2025 data found that data literacy is now the third most in-demand skill across industries, and AI is democratizing access to it for non-technical professionals.
+
+For years, the answer to "can you do data analysis without knowing SQL or Python?" was: sort of, with limitations. Excel helped, but had a ceiling. Business intelligence tools helped, but required setup. For most non-technical professionals, serious data analysis meant waiting for the data team.
+
+That's changed. AI data analysis without coding is genuinely useful in 2026 — not as a replacement for a data scientist, but as a tool that lets a marketing manager, operations lead, or business owner answer real questions from their own data without waiting in a queue. The direct answer: yes, you can analyze data meaningfully with AI without writing a single line of code. Here's how, and where the limits are.
+
+### What AI-assisted data analysis actually looks like
+
+The most accessible workflow: export your data as a CSV or Excel file, upload it to Claude or ChatGPT's Advanced Data Analysis feature, and ask your question in plain English. "What are the top 10 products by revenue this quarter?" "Which customer segments have the highest churn rate?" "Is there a correlation between marketing spend and lead volume in this dataset?" The AI performs the analysis and explains what it found.
+
+For Excel and Google Sheets users, the same capability is increasingly built in. Microsoft Copilot in Excel can generate pivot tables, write complex formulas, and build charts from natural language descriptions. Google Sheets' AI features do the same. If your data already lives in a spreadsheet, you may not need to leave it to get AI-assisted analysis.
+
+World Economic Forum's 2025 Future of Jobs report identified data literacy as the third most in-demand skill across industries, and cited AI tools as the primary driver of democratizing access to data analysis for non-technical workers. 1 The tools exist. The barrier now is knowing how to use them, not whether they're capable.
+
+### What AI does well — and where to verify
+
+AI data analysis is strong on mechanics and descriptive analysis: calculating totals, averages, and percentages; identifying trends over time; comparing segments; finding anomalies; building basic visualizations. These are the tasks that previously required formula knowledge or a data team member, and AI handles them reliably.
+
+Where to be careful: AI can misidentify the business meaning of a finding without additional context from you. It might flag a spike in website traffic as a positive trend without knowing that you ran a bot-traffic campaign that week. The analyst skill isn't disappearing — it's shifting from "can I run the analysis" to "can I interpret what the analysis means and direct it toward the right questions."
+
+The workflow that protects you: upload the data, ask the question, review the output, and add business context that the AI doesn't have. "This spike is probably explained by X — does the data support that?" is a good follow-up prompt. Use AI as a fast-moving first analyst, then apply your judgment to what it finds.
+
+### Turning data into narrative: the underrated use case
+
+Here's the non-obvious AI data analysis application that pays off the most for non-technical professionals: turning data into a readable narrative for stakeholders who don't want to look at a spreadsheet. You have the analysis. Now you need to explain what it means in three paragraphs that a department head can read and act on. AI does this extremely well.
+
+The workflow: run your analysis, have AI generate the findings, then ask AI to write a 200-word executive summary explaining the key insights and what they suggest the business should do. Edit for accuracy and your voice. This is the last step of the data pipeline that has historically required writing skill on top of analytical skill — and AI makes it accessible to anyone who can identify the right question to ask.
+
+### What this means for non-technical professionals who work with data
+
+If you've been waiting to engage with your organization's data because you don't know SQL or Python, that's no longer a valid reason to wait. The tools that democratize data analysis are available now, and the learning curve is measured in hours, not semesters.
+
+MakerSquare is a 2-week in-person AI builder program in Austin, TX — built for operators, founders, and professionals who want to build real AI tools, not just use them. Working with data is one of the core threads in the curriculum — specifically, how to analyze and build automations around business data without a technical background. See the [full curriculum](/curriculum) for what that looks like.
+
+The professionals who are most valuable in data-driven organizations in 2026 are not the ones who know the most code — they're the ones who ask the best questions and know how to get the answers. AI is making the second half of that equation much faster.
+
+Frequently asked questions
+
+Can I do data analysis with AI without knowing how to code?
+
+Yes. Modern AI tools like Claude, ChatGPT with data analysis, and specialized tools like Julius AI or Obviously AI can analyze spreadsheets, CSVs, and data tables uploaded directly — no SQL or Python required. You describe what you want to know in plain English, and the AI performs the analysis and explains the results. The limitation is data volume: these tools work best with datasets under a few hundred thousand rows.
+
+What is the best AI tool for data analysis without coding?
+
+For spreadsheet-sized data (under 100,000 rows), Claude or ChatGPT with Advanced Data Analysis handles most business analysis tasks. For larger datasets or more complex visualizations, Julius AI or Obviously AI are purpose-built for non-technical data analysis. For teams that live in Excel or Google Sheets, both now have AI assist features that generate formulas, build pivot tables, and identify trends directly inside the spreadsheet.
+
+How accurate is AI for data analysis?
+
+AI for data analysis is accurate on the mechanics — calculating averages, identifying trends, running correlations, building charts — but can misinterpret the business meaning of what it finds without context from you. The workflow that works: you provide the data and the question, AI performs the analysis and explains what it found, you evaluate whether the finding makes sense given what you know about the business. Never publish AI data analysis output without reviewing it yourself.
+
+What data analysis tasks can non-technical professionals do with AI?
+
+Non-technical professionals can use AI to: identify trends and anomalies in spreadsheet data, calculate and explain statistical summaries, build charts and visualizations from data descriptions, compare performance across time periods or segments, generate Excel/Sheets formulas for complex calculations, and summarize large data exports into readable narrative. These tasks used to require a data analyst — now they take minutes with a well-prompted AI.
+
+Keep reading
+
+- [All MakerSquare posts](/blog)
+
+Working with data is one of the core threads in the MakerSquare curriculum — built for professionals who want to use their own business data without needing a technical team. Download the full curriculum to see what two weeks of applied AI looks like.
+
+[Get the curriculum](https://www.makersquare.ai/curriculum)
+[Join the AI Builder Brief](https://ai-builder-brief.beehiiv.com/)
+
+Sources
+
+1
+
+[Future of Jobs Report 2025](https://www.weforum.org/reports/the-future-of-jobs-report-2025)
+
+World Economic Forum · 2025 · Data literacy ranked third most in-demand skill; AI cited as primary driver of democratization for non-technical workers
+
+2
+
+[State of AI 2025](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai-in-2025)
+
+McKinsey & Company · 2025 · Analysis of AI adoption in data and analytics functions across non-technical roles
+
+3
+
+[Advanced Data Analysis with ChatGPT](https://openai.com/blog/chatgpt-code-interpreter)
+
+OpenAI · 2025 · Documentation and examples for using AI for data analysis without coding
 
 ---
 
@@ -5826,6 +5941,119 @@ Search Engine Land · 2025 · Analysis of Google algorithm updates targeting low
 
 ---
 
+<!-- https://www.makersquare.ai/blog/ai-for-customer-service-teams -->
+
+# AI for Customer Service Teams: What's Working in 2026 | MakerSquare
+
+> AI for customer service in 2026 — what
+
+[← Blog](/blog)
+
+AI at Work
+
+## AI for customer service teams: what's working in 2026
+
+Marliis Schneider
+
+August 25, 2026
+
+5 min read
+
+![AI for customer service teams: what](../images/blog/ai-for-customer-service-og.webp)
+
+Key takeaways
+
+- The customer service AI approaches that are working are AI-assisted human agents and narrowly scoped chatbots for high-volume routine queries — not full automation of complex support.
+
+- AI agent assist tools (which suggest responses to human agents in real time) are producing the most consistent CSAT improvements — typically 15–25% reduction in average handle time without reducing customer satisfaction.
+
+- The most common AI customer service mistake: deploying a chatbot that can't escalate to a human. Customers who hit a dead end become actively hostile rather than just unsatisfied.
+
+- Salesforce's 2025 State of Service report found that high-performing service organizations are 2.8x more likely to have deployed AI agent assist tools than low-performing ones.
+
+Customer service is the function where the gap between "AI hype" and "AI reality" is most visible. On one side, companies have deployed chatbots that trap customers in loops and produce angry social media posts. On the other, a smaller group of companies has used AI to reduce handle time, improve first-contact resolution, and free up agents for the conversations that actually require a human. The difference is not the technology — it's how it's deployed.
+
+The short answer: AI for customer service works well for high-volume routine queries handled by well-scoped chatbots, and for agent assistance tools that support (not replace) human agents on complex cases. It works poorly when it tries to fully automate interactions that require empathy, judgment, or escalation authority.
+
+### What's actually working: AI agent assist
+
+The highest-performing AI application in customer service right now is not chatbots — it's agent assist. These are tools that sit alongside human support agents during live interactions and provide real-time support: suggested response drafts, links to relevant knowledge base articles, automatic sentiment detection, and post-interaction note drafting.
+
+The impact is consistent across studies. Salesforce's 2025 State of Service report found that companies using AI agent assist tools reported 20–30% reduction in average handle time and 18% improvement in first-contact resolution rates, without a corresponding drop in CSAT. 1 The mechanism is straightforward: agents spend less time searching for information and drafting responses, and more time actually talking to customers.
+
+This is the AI deployment model that works at scale — not replacing agents, but making each agent more effective. The best agent assist tools learn from your specific knowledge base and previous successful interactions, so they improve over time.
+
+### Chatbots: the narrower the better
+
+Chatbots work in customer service when they're narrow, well-trained, and have a clear path to human escalation. The chatbots that fail are the ones tasked with handling "all customer service" — an impossibly broad brief that inevitably produces wrong answers, frustrated customers, and a worse outcome than just answering the phone.
+
+The chatbots that work handle a defined set of high-volume queries: order status, refund requests, password resets, appointment scheduling, FAQ answers. These are interactions that are high in volume, low in complexity, and where speed matters more than nuance. A well-trained chatbot that handles 60% of your ticket volume for these query types frees your human team for the 40% that actually needs them.
+
+The critical design decision: every chatbot interaction needs a low-friction path to a human agent. Not buried in a menu. Not available only after three failed attempts. Immediately accessible on request. Customers who can easily reach a human when they need one are far more tolerant of chatbot limitations.
+
+### What's not working: fully automated complex support
+
+The pattern that's generating the most negative customer experience data is companies using AI to fully replace human agents in high-complexity, high-emotion interactions. Billing disputes, service failures, situations where something has gone meaningfully wrong — these require empathy, authority to make decisions, and judgment about what the right outcome actually is. AI doesn't have any of these.
+
+A 2025 Gartner study found that customer satisfaction scores in interactions that were fully AI-handled dropped 12 points compared to human-handled interactions for the same query types, specifically in cases rated medium or high complexity by the customer. 2 The lesson: scope AI to the interactions it can handle well, and preserve human capacity for the ones it can't.
+
+### What this means for customer service teams
+
+The customer service leaders who are getting this right have made a deliberate decision about what AI should and shouldn't do. They've identified their highest-volume, lowest-complexity query types, built narrow chatbots for those, deployed agent assist for everything else, and kept human agents available for escalation at every touchpoint. That's a more deliberate and conservative deployment than most AI vendors will recommend — and it's producing better outcomes.
+
+MakerSquare is a 2-week in-person AI builder program in Austin, TX — built for operators, founders, and professionals who want to build real AI tools, not just use them. Customer service leaders and operations managers attend to build specific AI workflows for their function — including support chatbots and agent assist configurations. The [curriculum](/curriculum) covers what that looks like in practice.
+
+The best AI in customer service is invisible to the customer. They get a faster answer, their agent seems more prepared, and the whole interaction takes less time. That's what good deployment looks like — and it's achievable right now with the tools that exist.
+
+Frequently asked questions
+
+How is AI changing customer service in 2026?
+
+AI is handling a growing share of routine, high-volume support interactions — password resets, order status, FAQ responses, refund status — with faster resolution times than human agents. For complex or emotionally charged interactions, the best-performing companies are using AI to assist human agents in real time (suggesting responses, surfacing relevant knowledge base articles) rather than replacing them.
+
+What AI tools do customer service teams actually use?
+
+The most widely deployed tools are AI-assisted ticket routing and classification (Zendesk, Freshdesk, Intercom), AI chatbots for first-contact resolution (Intercom Fin, Tidio, Drift), agent-assist tools that suggest responses in real time (Salesforce Einstein, Kustomer), and voice AI for call centers (NICE, Genesys). Most companies start with chatbots for the highest-volume, lowest-complexity queries and expand from there.
+
+Does AI in customer service hurt CSAT scores?
+
+Poorly deployed AI does hurt CSAT — specifically, chatbots that trap customers in loops without offering human escalation, and AI that gives wrong answers confidently. Well-deployed AI can improve CSAT by providing instant resolution for simple issues and freeing human agents to spend more time on complex cases. The key design decision: always give customers a clear, low-friction path to a human when they need one.
+
+What is AI agent assist in customer service?
+
+AI agent assist tools sit alongside human agents during live interactions and provide real-time help: suggested responses based on the customer's issue, links to relevant knowledge base articles, sentiment analysis to flag frustrated customers, and summary drafts for post-interaction notes. Studies show agent assist tools reduce average handle time by 20–30% and improve first-contact resolution rates, without requiring agents to be replaced.
+
+Keep reading
+
+- [All MakerSquare posts](/blog)
+
+Join the AI Builder Brief for weekly practical AI insights — including customer service AI, workflow automation, and what's actually working in 2026.
+
+[Get the curriculum](https://www.makersquare.ai/curriculum)
+[Join the AI Builder Brief](https://ai-builder-brief.beehiiv.com/)
+
+Sources
+
+1
+
+[State of Service Report 2025](https://www.salesforce.com/research/state-of-service/)
+
+Salesforce · 2025 · AI agent assist tools produced 20–30% reduction in average handle time and 18% improvement in first-contact resolution
+
+2
+
+[AI in Customer Service: 2025 Outcomes Report](https://www.gartner.com/en/customer-service-support/trends/ai-customer-service)
+
+Gartner · 2025 · CSAT scores 12 points lower in fully AI-handled medium/high-complexity interactions vs. human-handled
+
+3
+
+[Customer Experience Trends Report 2025](https://www.zendesk.com/customer-experience-trends/)
+
+Zendesk · 2025 · Analysis of AI adoption patterns and customer satisfaction outcomes across 50,000 support teams
+
+---
+
 <!-- https://www.makersquare.ai/blog/ai-for-ecommerce-2026 -->
 
 # AI for E-Commerce: What's Actually Working in 2026
@@ -5944,6 +6172,167 @@ For companies
 Reading this for your team? We run private AI training for Austin companies — your tools, your workflows, working automation by day three.
 
 [Corporate training →](/corporate) [Train vs. hire a consultant →](/ai-training-vs-consultants) [3-day workshops →](/workshops)
+
+---
+
+<!-- https://www.makersquare.ai/blog/ai-for-educators-and-coaches -->
+
+# AI for Educators and Coaches: Tools That Save Prep Time and Scale Impact | MakerSquare
+
+> AI for educators and coaches is changing how courses get built and how coaching gets delivered. Here
+
+[← Blog](/blog)
+
+AI for Professionals
+
+## AI for educators and coaches: tools that save prep time and scale impact
+
+Marliis Schneider
+
+August 31, 2026
+
+5 min read
+
+![AI for educators and coaches: tools that save prep time and scale impact](../images/blog/ai-educators-coaches-og.webp)
+
+Teaching and coaching are time-intensive in ways most people outside those fields don't fully appreciate. The visible hour — the class session, the coaching call — is often a fraction of the total time. The preparation, the curriculum development, the follow-up, the administrative documentation: that's where time actually goes. AI for educators and coaches is most valuable precisely there — in the preparation and administrative layers, not the direct relationship itself.
+
+This guide covers what's working in 2026 for educators (K-12, higher ed, corporate trainers, course creators) and coaches (executive, life, business, professional). The applications are distinct enough to treat separately, but the underlying principle is the same: AI handles the production work; the human handles the relationship.
+
+Key takeaways
+
+- AI for educators delivers the most value in curriculum development, assessment creation, and student feedback at scale.
+
+- AI for coaches is highest-leverage for session prep, progress documentation, and scaling content into group or digital programs.
+
+- AI session transcription and summary (Fathom, Otter.ai) is the fastest win for coaches — immediate, low-effort, high-value.
+
+- The live instructional or coaching relationship cannot and should not be automated. That's the premium.
+
+- Educators who use AI most effectively treat it as a curriculum thought partner, not a content generator to publish without review.
+
+### For educators: the biggest time sink AI can address
+
+Ask most educators where their time goes, and the answers are consistent: lesson planning, adapting materials for different learning levels, creating assessments, providing written feedback on student work, and administrative documentation. None of these require the expertise of a skilled educator — they require time. AI addresses time problems effectively.
+
+**Lesson plan and curriculum development.** AI is a strong thought partner for curriculum structure. It can generate a unit plan outline from a learning objective, suggest activities for different learning styles, propose discussion questions, and identify common misconceptions for a given topic. The output is a starting point, not a final product — but it eliminates the blank-page problem that consumes hours of planning time.
+
+A Stanford HAI study on AI in education found that teachers using AI for curriculum planning reduced planning time by 30–40% while reporting that the quality of their lesson plans improved — because AI generated more options than they would have produced alone, giving them more to choose from and build on.
+
+**Assessment and quiz creation.** Creating high-quality assessments — questions at the right difficulty level, well-designed rubrics, varied question formats — is time-intensive. AI can generate first-draft assessments from learning objectives in minutes. The educator reviews for accuracy, adjusts difficulty, and edits for their context. What used to take two hours takes 30 minutes.
+
+**Student feedback at scale.** Written feedback on student work is one of the highest-value activities for learning outcomes and one of the most time-consuming activities for educators. AI doesn't replace this feedback — but it can help structure and accelerate it. Provide AI with a rubric, a student submission, and a few examples of strong feedback, and it generates structured feedback that the educator edits and personalizes. This is particularly valuable in higher-volume settings (corporate trainers, online course creators) where individual feedback at scale is otherwise impractical.
+
+### For educators: what AI can't do (and shouldn't try)
+
+The classroom relationship — reading the room, responding to confusion in real time, building the psychological safety that makes learning possible — is not automatable. Neither is the curriculum judgment that comes from knowing your specific students: their backgrounds, their misconceptions, their learning history with you. AI doesn't know any of that.
+
+The risk educators face is using AI to generate curriculum content at scale without adequate review. AI knows general principles of whatever subject you teach. It doesn't know your specific students, your school culture, your teaching philosophy, or the specific gaps in understanding that a skilled teacher perceives in a room. AI-generated curriculum that's published without educator judgment produces generic content that underserves students.
+
+Use AI to reduce the production time of things you would have created anyway. Don't use it to skip the thinking that makes your teaching distinctive.
+
+### For coaches: the highest-leverage starting point
+
+If you coach and haven't implemented AI session transcription, start there. It's the fastest ROI with the least effort.
+
+Tools like Fathom (for Zoom calls) and Otter.ai automatically transcribe coaching sessions and generate AI summaries that capture key themes, client commitments, and coaching observations. Instead of spending 20–30 minutes after every session writing notes, the AI draft is ready immediately and takes 5 minutes to review and adjust.
+
+Beyond time savings, the quality of session documentation improves. AI captures things that coaches miss because they were actively listening — a specific phrasing the client used to describe their challenge, a commitment made in passing, a pattern that connects to previous sessions. Better documentation means better follow-up, which means better outcomes for clients.
+
+### For coaches: scaling your methodology without scaling your hours
+
+The fundamental constraint for coaches is time: there are only so many 1:1 hours in a week. AI helps coaches escape this constraint by making their methodology more scalable:
+
+**Group programs and digital courses.** AI accelerates the content development work that coaches typically spend months on: writing curriculum, developing exercises, creating worksheets, producing case studies and worked examples. AI-assisted content development doesn't make content creation effortless, but it reduces the production time enough that building a group program becomes feasible alongside an active 1:1 practice.
+
+**Between-session resources.** AI can help coaches develop personalized between-session materials — reflection prompts, practice exercises, reading recommendations — based on what emerged in a session. Coaches who previously relied on memory or hurried post-session notes can now generate tailored resources quickly.
+
+**Progress tracking and reporting.** For coaches working with corporate clients or accountability-focused programs, AI can help synthesize progress notes into structured reports. Coaching progress is often qualitative and hard to document — AI helps structure the documentation without losing the nuance.
+
+### Course creators: the AI use case most online educators underestimate
+
+For educators who sell digital courses or programs, content repurposing is the most underutilized AI application. A single live training session — 60–90 minutes of recorded content — can become:
+
+- A full transcript (AI, immediate)
+
+- A written summary with key frameworks (AI, 10 minutes)
+
+- A set of reflection questions (AI, 5 minutes)
+
+- LinkedIn posts based on the key insights (AI, 15 minutes)
+
+- An email for program participants summarizing what was covered (AI, 10 minutes)
+
+- An FAQ document based on questions asked (AI, 10 minutes)
+
+Without AI, most of this content gets created once, used once, and discarded. The production cost to repurpose it is too high. With AI, the production cost drops to an hour of editing work for content that would have taken a day to create from scratch.
+
+HubSpot's Content Marketing research found that content repurposing is the highest-ROI content activity for educators and knowledge creators — and AI has made it significantly more accessible. The bottleneck is now curation and editing, not production.
+
+### The AI tools worth knowing about
+
+For educators and coaches, these tools cover most of the use cases above:
+
+- **Claude or ChatGPT:** Curriculum development, lesson planning, assessment creation, session prep, between-session resources. The general-purpose AI tools handle most text-based production tasks well.
+
+- **Fathom:** Session transcription and AI summary for Zoom calls. Free for individuals. The summary quality is genuinely useful, not just a transcript dump.
+
+- **Otter.ai:** Session transcription with speaker identification and AI summary. Works across platforms, not just Zoom.
+
+- **Notion AI:** Building knowledge bases, client-facing resources, and collaborative curriculum. AI features integrated directly into where the content lives.
+
+- **Descript:** For course creators recording video content — AI editing, transcript-based editing, and content repurposing tools built in.
+
+- **Loom:** Async video with AI-generated summaries. Strong for coaches sending video follow-ups between sessions.
+
+MakerSquare is a 2-week in-person AI builder program in Austin, TX — built for operators, founders, and professionals who want to build real AI tools, not just use them. Coaches and educators who attend often build custom tools for their specific workflow: client onboarding automations, knowledge base assistants pre-loaded with their methodology, or progress-tracking systems that reduce administrative overhead significantly.
+
+Frequently asked questions
+
+How are educators using AI in 2026?
+
+The most common applications: curriculum and lesson plan development (AI as a thought partner and first-draft generator), assessment and quiz creation, personalized learning path suggestions, student feedback at scale, and administrative task automation (rubric creation, progress report drafting). AI is also being used to develop supplementary learning materials — worked examples, case studies, practice scenarios — that would take significant human time to generate from scratch.
+
+Can AI help coaches scale their practice without losing quality?
+
+Yes, in specific ways. AI can help coaches scale content delivery (group programs, digital courses, asynchronous materials) without scaling time. AI-assisted session prep, progress tracking summaries, and between-session resources allow coaches to serve more clients with the same or better quality at the touchpoints that matter. The live coaching relationship — the human judgment, empathy, and real-time responsiveness — remains what clients pay premium prices for and cannot be automated.
+
+What's the risk of AI in education?
+
+The risks most educators cite: over-reliance on AI-generated content that reduces curriculum distinctiveness, student use of AI to bypass learning (rather than augment it), and AI feedback that lacks the specificity of a skilled teacher who knows the student. The educators navigating these risks best are those who use AI for preparation and administrative work, not for the direct instructional relationship.
+
+What AI tools do coaches use most?
+
+Most commonly: Claude or ChatGPT (session prep, curriculum development, follow-up emails), Notion AI (knowledge base and client-facing resources), Fathom or Otter.ai (session transcription and summary), and Loom with AI tools (async video with AI-generated summaries). Some coaches use Circle or Kajabi with AI features for community management and course delivery.
+
+Keep reading
+
+- [All MakerSquare posts](/blog)
+
+MakerSquare is an in-person AI builder program in Austin, TX. No coding background required. Real products. Real time savings.
+
+[Download the curriculum](https://www.makersquare.ai/curriculum)
+[Join the AI Builder Brief](https://ai-builder-brief.beehiiv.com/)
+
+Sources
+
+1
+
+[Stanford HAI, "AI in Education: What Teachers and Administrators Need to Know" (2025)](https://hai.stanford.edu/education)
+
+hai.stanford.edu
+
+2
+
+[HubSpot, "State of Content Marketing: Content Repurposing ROI" (2025)](https://www.hubspot.com/state-of-marketing)
+
+hubspot.com
+
+3
+
+[ISTE, "AI in Education Report 2025"](https://www.iste.org/resources)
+
+iste.org/resources
 
 ---
 
@@ -6309,6 +6698,121 @@ For companies
 Reading this for your team? We run private AI training for Austin companies — your tools, your workflows, working automation by day three.
 
 [Corporate training →](/corporate) [Train vs. hire a consultant →](/ai-training-vs-consultants) [3-day workshops →](/workshops)
+
+---
+
+<!-- https://www.makersquare.ai/blog/ai-for-hr-and-recruiting-teams -->
+
+# AI for HR and Recruiting Teams: What's Worth Your Time | MakerSquare
+
+> AI for HR teams — a practical breakdown of which recruiting and HR tasks AI actually improves, which ones to avoid, and how non-technical HR pros can get started today.
+
+[← Blog](/blog)
+
+AI at Work
+
+## AI for HR and recruiting teams: what's worth your time
+
+Marliis Schneider
+
+August 23, 2026
+
+5 min read
+
+![AI for HR and recruiting teams: what](../images/blog/ai-for-hr-teams-og.webp)
+
+Key takeaways
+
+- AI for HR teams delivers the most value in writing-heavy tasks: job descriptions, offer letters, onboarding materials, and performance review templates.
+
+- First-pass candidate screening with AI can save 40–60% of sourcing time, but final decisions must stay human — automated ranking creates EEOC compliance risk.
+
+- The highest-ROI starting point for most HR teams is not a specialized HR AI tool — it's a well-prompted general AI like Claude or ChatGPT applied to existing workflows.
+
+- AI cannot replace the relationship and judgment work in HR — it handles the administrative surface area so you have more time for the parts that actually require a person.
+
+HR teams are drowning in writing. Job descriptions, rejection emails, offer letters, onboarding docs, policy updates, performance review templates, employee communications — the volume of text that has to be produced is relentless, and most of it is genuinely similar from one instance to the next. That's exactly the kind of work AI handles well. The short answer to "what's worth your time" for AI for HR teams is: start with the writing, and be careful with the screening.
+
+This guide breaks down the highest-value use cases, where to be cautious, and how to get started without buying a specialized platform you probably don't need yet.
+
+### Where AI actually saves HR teams time
+
+The single biggest time sink in recruiting is writing — and AI is dramatically good at writing. Job descriptions that used to take 45 minutes to draft from scratch take five minutes when you prompt an AI with the role's core responsibilities, required skills, and culture signal words. The output won't be perfect, but it's a solid draft you edit rather than a blank page you fill.
+
+The same applies across the HR document stack. Offer letters, rejection templates, interview question sets, onboarding checklists, 30/60/90-day plan frameworks, new-hire FAQs, employee handbook sections — all of these are high-volume, moderately repeating writing tasks. A 2024 survey by SHRM found that HR professionals spend an average of 14 hours per week on administrative tasks, with a significant portion in document creation and communication drafting. 1 AI doesn't eliminate that work, but it reduces the marginal time per document to a fraction of the original.
+
+For recruiting specifically, AI is also useful for sourcing — writing LinkedIn outreach messages, building Boolean search strings, and generating lists of companies or job titles to target for specific candidate profiles. These are research and writing tasks, and AI handles them well.
+
+### Where to be careful: screening and candidate evaluation
+
+Here's the non-obvious part that most "AI for HR" content glosses over: using AI to score, rank, or filter candidates carries real legal exposure. The EEOC has signaled clearly that employers remain liable for discriminatory impact from automated screening tools, even when a third-party vendor supplied the algorithm. 2 Several cities and states — New York City in particular — have enacted laws requiring bias audits of automated employment decision tools.
+
+This doesn't mean AI has no role in screening. It means the role needs to be carefully defined. AI can help you structure evaluation criteria before you start reviewing applications, summarize long resumes into consistent formats, or generate interview questions calibrated to specific competencies. What it should not do is produce a ranked list of candidates that becomes the basis for who moves forward. That decision — who to interview, who to advance — must stay with a human who can be accountable for it.
+
+The pattern that works: use AI upstream (before you see candidates) to define what you're looking for, and downstream (after you've identified finalists) to prepare for interviews. Keep it out of the middle — the actual sorting and ranking step.
+
+### The tools most HR teams don't need (yet)
+
+There's a growing category of specialized HR AI platforms — tools for AI-assisted interviewing, automated reference checks, predictive attrition modeling, and skills gap analysis. Some of these are genuinely useful for large enterprises with the data infrastructure to support them. Most mid-sized companies don't have that infrastructure, and buying a specialized tool before you've extracted the value from general-purpose AI is putting the cart before the horse.
+
+Before evaluating any HR-specific AI platform, run this test: could we accomplish 80% of what this tool does by giving our HRBP a well-configured Claude or ChatGPT setup and two hours of prompt practice? For most companies under 500 employees, the answer is yes. The specialized tools add value when your volume is high enough, your data is clean enough, and your workflows are documented enough to train on. That's not most companies right now.
+
+According to Gartner's 2025 HR Technology Survey, only 23% of HR teams have fully integrated AI tools into core workflows — the majority are still in pilot or exploration phases. 3 The competitive advantage right now is not having the most sophisticated tool — it's being one of the teams that actually uses what's available.
+
+### What this means for HR and people ops professionals
+
+If you're an HR leader or recruiter trying to figure out where to start, the path is simpler than most AI content suggests. Pick one high-volume writing task — job descriptions, rejection emails, or onboarding docs — and spend one week doing it with AI assistance. Track the time difference. That's your ROI number. Then expand from there.
+
+The deeper skill — knowing how to prompt well, how to build repeatable templates, how to use AI for research without outsourcing your judgment — is what separates teams that see real efficiency gains from teams that tried AI once and moved on. MakerSquare is a 2-week in-person AI builder program in Austin, TX — built for operators, founders, and professionals who want to build real AI tools, not just use them. HR professionals who go through the program leave with working AI-assisted workflows for their specific function, not generic prompt tips. See the [full curriculum](/curriculum) for what that looks like.
+
+The relationship and judgment work in HR — the difficult conversations, the cultural reads, the manager coaching — that stays human. But the administrative surface area doesn't have to. The HR teams winning right now are the ones who've made that distinction clearly and acted on it.
+
+Frequently asked questions
+
+How can HR teams use AI to save time?
+
+The biggest time wins are in writing — job descriptions, offer letters, onboarding materials, performance review templates — and in first-pass screening of large applicant pools. AI won't replace recruiter judgment, but it eliminates the blank-page problem and cuts the time spent on administrative drafting by 40–60% in most workflows.
+
+Is AI safe to use in hiring decisions?
+
+AI tools should assist, not decide. Using AI to rank or score candidates carries real legal risk — the EEOC has made clear that automated screening tools can create disparate impact liability. The safe and effective use is to let AI handle drafting and research while humans make all hiring decisions. Never use AI resume scoring as a definitive filter.
+
+What AI tools are HR teams actually using in 2026?
+
+The most common tools are ChatGPT and Claude for writing (job descriptions, emails, policies), Greenhouse and Lever with built-in AI assist features for ATS workflows, and specialized tools like Findem or Fetcher for sourcing. Most HR teams don't need a specialized HR AI platform — a well-prompted general AI handles 80% of the writing and research tasks.
+
+Can AI help with employee relations and HR policy work?
+
+Yes — AI is useful for drafting policy documents, creating FAQ documents for common employee questions, summarizing employment law updates, and building onboarding guides. The key is treating AI output as a first draft that a human reviews, not a final product. For anything legally sensitive, always have counsel review the output.
+
+Keep reading
+
+- [All MakerSquare posts](/blog)
+
+Want to see exactly how HR and operations teams build AI-assisted workflows at MakerSquare? The curriculum shows what two weeks of applied AI practice actually looks like — role by role.
+
+[Get the curriculum](https://www.makersquare.ai/curriculum)
+[Join the AI Builder Brief](https://ai-builder-brief.beehiiv.com/)
+
+Sources
+
+1
+
+[SHRM HR Benchmarking Report](https://www.shrm.org/topics-tools/research/hr-benchmarking)
+
+Society for Human Resource Management · 2024 · HR professionals spend an average of 14 hours per week on administrative tasks
+
+2
+
+[EEOC Guidance on Automated Employment Decision Tools](https://www.eeoc.gov/laws/guidance/questions-and-answers-clarify-and-provide-common-interpretation-uniform-guidelines)
+
+U.S. Equal Employment Opportunity Commission · 2023 · Employer liability for discriminatory impact from AI screening tools
+
+3
+
+[Gartner HR Technology Survey 2025](https://www.gartner.com/en/human-resources/topics/hr-technology)
+
+Gartner · 2025 · Only 23% of HR teams have fully integrated AI tools into core workflows
 
 ---
 
@@ -7320,6 +7824,119 @@ Reading this for your team? We run private AI training for Austin companies — 
 
 ---
 
+<!-- https://www.makersquare.ai/blog/ai-tools-for-remote-teams -->
+
+# AI Tools for Remote Teams: What's Actually Worth the Subscription | MakerSquare
+
+> AI tools for remote teams — which subscriptions are actually delivering value in 2026, which ones remote teams are canceling, and how to build an AI-assisted distributed team without tool sprawl.
+
+[← Blog](/blog)
+
+AI at Work
+
+## AI tools for remote teams: what's actually worth the subscription
+
+Marliis Schneider
+
+August 28, 2026
+
+5 min read
+
+![AI tools for remote teams: what](../images/blog/ai-tools-remote-teams-og.webp)
+
+Key takeaways
+
+- The AI tools remote teams actually keep long-term are the ones that solve the specific pain points of distributed work: async communication overhead, meeting documentation burden, and cross-timezone coordination.
+
+- Meeting transcription and summary tools (Otter.ai, Fathom) have the highest retention rate of any AI category for remote teams — because they solve a real, daily pain point and require zero behavior change.
+
+- The biggest AI tool mistake for remote teams is adding AI-specific platforms that require everyone to change how they work. The best tools fit into existing workflows — Slack, Notion, Google Docs — rather than replacing them.
+
+- Buffer's 2025 State of Remote Work found that remote teams using AI tools for async communication reported 31% less meeting time and higher team satisfaction scores than those without AI assistance.
+
+Remote teams face a specific set of problems that AI is genuinely well-positioned to help with: the overhead of async communication, the burden of meeting documentation across time zones, the challenge of keeping everyone aligned without constant synchronous calls. The AI tools that are earning their subscriptions for remote teams are the ones that reduce this overhead directly. The ones that aren't are the ones that add more tools to an already fragmented stack.
+
+The direct answer: the AI tools worth paying for in a remote team are meeting transcription tools, AI writing assistance in the tools you already use, and well-configured general AI for research and communication drafting. The tools that rarely justify the cost are AI-specific collaboration platforms that try to replace what's already working.
+
+### The tool category with the highest retention: meeting documentation
+
+Ask any distributed team what consumes the most unnecessary time, and meeting notes is near the top of the list. Everyone has to either attend live (across time zones) or spend 30 minutes reading a thread trying to figure out what was decided. AI meeting tools solve this specifically: they record, transcribe, and summarize automatically, producing a searchable record that anyone can catch up on in five minutes instead of attending a 45-minute call they don't need to be live on.
+
+Tools like Fathom, Otter.ai, and Fireflies.ai all handle this well. The differentiation is minor — Fathom has better AI-generated summaries, Otter.ai has stronger search, Fireflies has more integrations. For most remote teams, any of the three solves the problem. The retention rate for meeting documentation tools is the highest of any AI category because the value is immediate, measurable, and doesn't require changing anyone's existing workflow.
+
+Buffer's 2025 State of Remote Work report found that distributed teams using AI meeting tools reported 31% less meeting time and significantly higher satisfaction scores related to information access and async collaboration. 1
+
+### AI writing assistance built into existing tools
+
+The second category that's holding subscriptions is AI writing assistance — specifically, AI built into the tools remote teams already use rather than a separate AI interface. Notion AI, Google Workspace Duet AI, and Microsoft 365 Copilot all add AI drafting, summarization, and editing capabilities directly inside the platforms where work already happens.
+
+The value for remote teams is specific: async communication lives or dies on the quality of written communication. Meeting notes, project updates, decision summaries, task descriptions — these all need to be clear enough that a team member reading them six hours later in a different time zone can act on them without a follow-up call. AI writing assistance in Notion or Docs raises the average quality of async communication without requiring anyone to open a new tool.
+
+The caveat: teams that don't already live in Notion or Google Workspace shouldn't add these tools just for the AI feature. The AI value is an add-on to an established workflow, not a reason to change the workflow.
+
+### What remote teams are canceling
+
+The AI tool category with the lowest retention for remote teams is AI-specific collaboration platforms — tools designed to replace Slack or Notion or email with an "AI-native" interface. The pitch is usually that AI will automatically organize information, surface relevant context, and reduce the noise of async communication. The reality is that these tools require teams to move their communication to a new platform, which is a massive behavior change that most teams don't sustain.
+
+The pattern: teams sign up, use it enthusiastically for 3–4 weeks, then gradually drift back to Slack and email because that's where their integrations, history, and habits are. At 60 days, usage is low. At 90 days, the subscription is under review. The AI tools that survive are the ones that fit where teams already work.
+
+### What this means for remote team leaders
+
+The principle for AI tool selection in distributed teams: identify the three tasks that cause the most friction in your async workflow, and find the AI tool that fits inside your existing stack to address each one. Don't add a new platform. Add AI capability to the platforms you already have. That's where the retention is.
+
+MakerSquare is a 2-week in-person AI builder program in Austin, TX — built for operators, founders, and professionals who want to build real AI tools, not just use them. Remote team operations, async workflow design, and building AI-assisted communication systems are all covered. See the [curriculum](/curriculum) for what two weeks of applied building looks like.
+
+The distributed teams that are most productive with AI aren't using more tools. They're using fewer tools, more fluently. That's the goal.
+
+Frequently asked questions
+
+What AI tools do remote teams actually use every day?
+
+The highest daily-use AI tools for remote teams are meeting transcription and summary tools (Otter.ai, Fathom, Fireflies), AI writing assistants integrated into existing tools (Notion AI, Google Workspace Duet AI, Microsoft 365 Copilot), and general-purpose AI chat (Claude, ChatGPT). These three categories account for the majority of AI tool usage in remote teams that have moved beyond experimentation.
+
+How do AI tools help remote teams communicate better?
+
+AI helps remote teams communicate better in three specific ways: async video and meeting tools with AI transcription reduce the need to attend every meeting live, AI writing assistants help non-native English speakers write clearer messages, and AI summarization tools allow team members across time zones to catch up on discussions without reading every Slack thread. The compounding benefit of these is less meeting time and more effective async work.
+
+What AI tools should remote teams avoid?
+
+Remote teams should avoid AI tools that add process without removing it — tools that require everyone to change their workflow to accommodate the AI rather than the AI fitting into existing workflows. Specifically: AI-only collaboration platforms that pull teams away from established tools (Slack, Notion, Google Workspace), AI scheduling tools that require all participants to use the same platform, and AI project management tools that duplicate your existing PM system.
+
+How much should a remote team budget for AI tools?
+
+Most remote teams of 5–20 people can cover their core AI tool needs for $100–$300/month. That typically means: one AI writing assistant at the team level (Claude or ChatGPT Teams, ~$25–30/user/month), one meeting documentation tool (~$10–20/user/month), and AI features already included in Notion, Google Workspace, or Microsoft 365. Specialized tools should be added only when general tools have a specific documented limitation.
+
+Keep reading
+
+- [All MakerSquare posts](/blog)
+
+Join the AI Builder Brief — a weekly newsletter covering practical AI tools for teams, operators, and founders who want what actually works, not what's trending.
+
+[Get the curriculum](https://www.makersquare.ai/curriculum)
+[Join the AI Builder Brief](https://ai-builder-brief.beehiiv.com/)
+
+Sources
+
+1
+
+[State of Remote Work 2025](https://buffer.com/state-of-remote-work)
+
+Buffer · 2025 · Remote teams using AI meeting tools reported 31% less meeting time and higher team satisfaction
+
+2
+
+[Teamwork Lab: State of Teams 2025](https://www.atlassian.com/blog/teamwork/remote-work-report)
+
+Atlassian · 2025 · Analysis of AI tool adoption and retention patterns in distributed teams
+
+3
+
+[How Teams Are Using Notion AI](https://www.notion.so/blog/ai-for-teams)
+
+Notion · 2025 · Usage data and workflow patterns from remote teams using AI writing and documentation tools
+
+---
+
 <!-- https://www.makersquare.ai/blog/ai-training-austin-texas -->
 
 # AI Training in Austin, Texas for Small Businesses
@@ -7403,6 +8020,8 @@ Keep reading
 - [Austin's AI moment: what the city's tech shift means for professionals here.](/blog/austin-ai-jobs-skills-2026)
 
 - [In-person AI training in Austin, TX](/ai-training-austin)
+
+Ready to actually build this? MakerSquare runs [in-person AI training and classes in Austin](/ai-training-austin) — a 2-week intensive where non-technical professionals build real, deployed AI tools.
 
 MakerSquare runs an in-person, hands-on AI builder program in Austin — plus corporate cohorts and private team training sized for small and mid-sized businesses. Teams leave with real, deployed AI tools built around their actual business, not a seminar's worth of notes.
 
@@ -7654,6 +8273,8 @@ Keep reading
 
 - [Case study: a job seeker built an AI company-matcher](/case-study-ted-kilgore)
 
+Ready to actually build this? MakerSquare runs [in-person AI training and classes in Austin](/ai-training-austin) — a 2-week intensive where non-technical professionals build real, deployed AI tools.
+
 MakerSquare's cohorts bring together Austin founders, operators, and professionals who are serious about building with AI — not just learning about it. If you're in Austin and trying to get ahead of where this is going, the curriculum is a good place to see what that actually looks like.
 
 [Get the curriculum](https://www.makersquare.ai/curriculum?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_austin-ai-jobs-skills-2026_curriculum_20260728)
@@ -7690,6 +8311,123 @@ For companies
 Reading this for your team? We run private AI training for Austin companies — your tools, your workflows, working automation by day three.
 
 [Corporate training →](/corporate) [Train vs. hire a consultant →](/ai-training-vs-consultants) [3-day workshops →](/workshops)
+
+---
+
+<!-- https://www.makersquare.ai/blog/austin-ai-workforce-development -->
+
+# Why Austin Is Becoming a Hub for AI Workforce Development | MakerSquare
+
+> Austin is emerging as a center for in-person AI training and workforce development — driven by tech migration, a builder culture, and a talent gap that traditional credentials aren
+
+[← Blog](/blog)
+
+AI Training
+
+## Why Austin is becoming a hub for AI workforce development
+
+Marliis Schneider
+
+August 22, 2026
+
+5 min read
+
+![Why Austin is becoming a hub for AI workforce development](../images/blog/austin-ai-workforce-og.webp)
+
+Key takeaways
+
+- Austin's emergence as an AI workforce development hub is driven by a specific combination: high AI skill demand, a dense tech employer base, and a professional population that moves fast and builds things.
+
+- AI-related job postings in Austin grew 120% from 2023 to 2025 — but the supply of practical, applied AI training hasn't kept pace with that demand.
+
+- The in-person AI training programs taking root in Austin serve a fundamentally different audience than online courses: mid-career professionals who want to apply AI to their existing work, not change careers.
+
+- The non-obvious reason Austin is well-positioned: its culture of "build first" attracts professionals who are self-selected to actually do the work, not just consume content about it.
+
+Something specific is happening in Austin's professional education landscape. The city that became a tech hub through company migrations and startup growth is now seeing a second wave: AI workforce development programs building out infrastructure for the working professionals those companies employ.
+
+**Austin is becoming a hub for in-person AI training not because of any single initiative, but because of the convergence of three things: a dense concentration of tech employers creating AI skill demand, a self-selecting professional population that wants to build rather than just learn, and a geography that makes in-person community formation natural.** Here's what's behind it and what it means for professionals in the city.
+
+### The demand side: Austin's AI skill gap
+
+Austin's tech industry concentration accelerated dramatically from 2020–2024. Tesla's Gigafactory and AI division, Apple's campus expansion, Oracle's headquarters relocation, and a consistent pipeline of high-growth startups created one of the densest non-SF tech employer ecosystems in the country.
+
+With that employer concentration came AI adoption pressure. Every company of scale is actively trying to integrate AI into operations, marketing, sales, and product — and most are discovering that their existing workforce, however talented, doesn't have the practical AI skills to execute that integration effectively. According to [LinkedIn's 2025 Jobs on the Rise report](https://www.linkedin.com/business/talent/blog/talent-strategy/jobs-on-the-rise-in-the-us), AI-related job postings in Austin grew 120% from 2023 to 2025 — among the highest growth rates of any metro area in the country.
+
+The supply of trained AI talent hasn't kept pace. UT Austin produces strong computer science and data science graduates, but they're not the primary workforce for the majority of AI use cases inside companies. The actual need is for operations managers, marketers, sales professionals, consultants, and business leaders who can use AI tools to change how they work. That's not a university pipeline problem — it's a continuing education problem.
+
+### The supply side: what Austin's builder culture produces
+
+Cities have cultures, and Austin's is unusually oriented toward building, founding, and moving fast. SXSW, a density of founders, and a steady in-migration of people who deliberately chose Austin over more established tech hubs — these patterns attract people who are self-selected to try things, not just observe them.
+
+This matters for AI training because the biggest barrier to AI skill development is inertia, not knowledge. Most professionals have access to AI tools. Most have read about what's possible. The gap is between reading about it and building something with it. In a culture where "I built this" is a point of pride and "I'm still evaluating" is vaguely embarrassing, that gap closes faster.
+
+A [Brookings Institution analysis of Austin's economic development](https://www.brookings.edu/articles/austin-is-booming-can-it-stay-that-way/) found that the city's growth is driven significantly by its ability to attract and retain early-career and mid-career professionals who are drawn specifically by professional opportunity and a culture of entrepreneurship — not just by lower cost of living. That self-selection produces a professional population that's more likely to invest in skill development and more likely to actually apply what they learn.
+
+### Why in-person training matters in this context
+
+The case for in-person AI training in Austin is not just about the content — it's about the community. When 15 professionals from Austin companies go through a 2-week AI builder program together, they don't just leave with skills. They leave with a peer network of people who are building AI tools in their specific professional context.
+
+That network has compounding value. When you're debugging a workflow, having a colleague who went through the same program and built something similar is more useful than any tutorial. When you're trying to convince your manager that an AI investment is worth it, having peers who made the same investment and can share results is powerful. In-person training creates this in a way that online courses structurally can't.
+
+According to [Emsi Burning Glass's 2025 Austin Workforce Report](https://www.economicmodeling.com/2025/state-of-the-workforce-report-austin/), demand for AI-adjacent skills in Austin's non-technical workforce — operations, marketing, sales, and management — grew faster in 2025 than demand for traditional software engineering skills. The workforce development gap is in the professional population, not the engineering pipeline.
+
+### What this means for Austin professionals
+
+If you're a professional in Austin and you're watching AI adoption accelerate in your industry, the window for building a meaningful skill advantage is narrowing. The people who build real AI skills in the next 12–18 months will have a durable edge over those who wait for the tools to get simpler or the training to get cheaper.
+
+MakerSquare is a 2-week in-person AI builder program in Austin, TX — built for operators, founders, and professionals who want to build real AI tools, not just use them. It's built on the conviction that Austin's professional community is uniquely positioned to lead AI adoption in the mid-market — and that what's missing isn't access to tools, but access to the right kind of training. See the full [curriculum at makersquare.ai/curriculum](https://www.makersquare.ai/curriculum).
+
+The cities that produce the most AI-capable workforces in the next five years won't be the ones with the most AI companies — they'll be the ones with the best infrastructure for turning working professionals into practical AI builders. Austin is building that infrastructure now.
+
+Frequently asked questions
+
+Why is Austin a good place for AI training and workforce development?
+
+Austin is uniquely positioned for AI workforce development because of its convergence of tech industry concentration, a strong builder and entrepreneurship culture, and a large mid-career professional population that wants practical AI skills. The city's growth — Tesla, Apple, Oracle, Dell, and dozens of high-growth startups — has created high AI skill demand without a corresponding supply of practical, applied training. That gap is what the city's emerging AI education ecosystem is filling.
+
+What makes in-person AI training in Austin different from online options?
+
+In-person AI training in Austin offers something online courses structurally can't: a city-specific professional network, real-time feedback from instructors and peers, and access to a tech ecosystem where AI skills are immediately applicable. Participants don't just build skills — they build them alongside other Austin-based professionals, creating a peer network that continues to add value after the program ends.
+
+Is Austin's AI job market growing?
+
+Yes. Austin was ranked among the top 5 US metro areas for tech job growth in 2025, and AI-related job postings in Austin grew 120% from 2023 to 2025. Companies including Tesla, Apple, Oracle, Dell, Samsung, and a dense startup ecosystem are all based in or expanding to Austin — and all are actively seeking professionals with practical AI skills.
+
+What kind of professionals are attending AI training programs in Austin?
+
+The professionals attending in-person AI training programs in Austin are primarily mid-career operators, founders, consultants, and business professionals — not recent graduates or career switchers. They're typically 5–15 years into their careers, see AI as a leverage tool for their existing work, and want practical skills they can apply immediately, not theoretical knowledge or a new credential.
+
+Ready to actually build this? MakerSquare runs [in-person AI training and classes in Austin](/ai-training-austin) — a 2-week intensive where non-technical professionals build real, deployed AI tools.
+
+Keep reading
+
+- [All MakerSquare posts](/blog)
+
+MakerSquare runs cohorts in Austin year-round for the professionals building the next wave of AI-enabled businesses. Join the AI Builder Brief to stay current on what's being built.
+
+[Download the curriculum](https://www.makersquare.ai/curriculum)
+[Join the AI Builder Brief](https://ai-builder-brief.beehiiv.com/)
+
+Sources
+
+1
+
+[LinkedIn Jobs on the Rise 2025](https://www.linkedin.com/business/talent/blog/talent-strategy/jobs-on-the-rise-in-the-us)
+
+LinkedIn · 2025 · AI-related job postings in Austin grew 120% from 2023 to 2025, among the highest growth rates nationally
+
+2
+
+[Austin is Booming — Can It Stay That Way?](https://www.brookings.edu/articles/austin-is-booming-can-it-stay-that-way/)
+
+Brookings Institution · 2024 · Austin's growth driven by entrepreneurs and professionals self-selected for opportunity and builder culture
+
+3
+
+[State of the Austin Workforce 2025](https://www.economicmodeling.com/2025/state-of-the-workforce-report-austin/)
+
+Emsi Burning Glass · 2025 · Demand for AI-adjacent skills in Austin's non-technical workforce grew faster than engineering roles in 2025
 
 ---
 
@@ -7819,6 +8557,485 @@ Pearson · 2026
 [Massive open online course completion rates revisited](https://www.irrodl.org/index.php/irrodl/article/view/1938)
 
 Jordan, K. · IRRODL · 2015
+
+---
+
+<!-- https://www.makersquare.ai/blog/build-ai-assistant-for-your-industry -->
+
+# How to Build a Custom AI Assistant for Your Industry | MakerSquare
+
+> Want to build a custom AI assistant for your industry? Here
+
+[← Blog](/blog)
+
+AI Tools
+
+## How to build a custom AI assistant for your industry
+
+Marliis Schneider
+
+August 29, 2026
+
+5 min read
+
+![How to build a custom AI assistant for your industry](../images/blog/build-custom-ai-assistant-og.webp)
+
+If you've used ChatGPT for work and found yourself re-explaining your business context every session, you're wasting time that a custom AI assistant would eliminate. The good news: building a custom AI assistant for your industry doesn't require a developer, a budget, or months of work. It requires clarity on the problem you're solving and about two hours of focused setup.
+
+This guide walks through how to build a custom AI assistant your team actually uses — from scoping the right use case to writing the system instructions that make it behave consistently.
+
+Key takeaways
+
+- A custom AI assistant solves a specific, repeatable problem — not everything at once.
+
+- You don't need code. Platforms like Claude Projects, ChatGPT GPTs, and Chatbase handle the infrastructure.
+
+- The system prompt is the product. Clear instructions = consistent behavior.
+
+- Load it with your context: SOPs, brand voice guides, sample outputs, internal terminology.
+
+- Test with real edge cases before deploying to your team.
+
+### What "build a custom AI assistant" actually means
+
+Most professionals think building an AI assistant means writing code. It doesn't. A custom AI assistant is, at its core, a general-purpose language model configured with specific instructions and context. You're not training a new model — you're telling an existing one how to behave for your specific use case.
+
+The configuration is mostly writing: system instructions that define the assistant's role, constraints, tone, and format. The context is your documents: SOPs, email templates, product descriptions, brand voice guides, past examples of good outputs. The platform handles everything else.
+
+What makes a custom assistant useful (versus just using the base model) is that it removes the setup cost from every interaction. You don't explain yourself every session. Your team gets consistent, on-brand outputs without knowing how to prompt well.
+
+### Start with a single, specific use case
+
+The number one mistake people make when building a custom AI assistant is trying to make it do everything. An assistant that can "help with any marketing task" will be mediocre at all of them. An assistant that drafts follow-up emails for real estate agents after open houses will be genuinely useful from day one.
+
+Good use cases for a custom AI assistant share three traits:
+
+- **High repetition.** The task happens multiple times a day or week. If it only comes up quarterly, a custom assistant isn't the right investment.
+
+- **Consistent inputs.** The assistant receives similar information each time — customer names, property details, claim types, appointment notes. It doesn't need to figure out wildly different contexts every use.
+
+- **Defined good output.** You know what "right" looks like. If the standard shifts constantly, the assistant can't be calibrated.
+
+Examples by industry: A law firm building an assistant to draft first-pass contract summaries. A healthcare admin team building one to process prior authorization requests. A real estate team building one to generate listing descriptions from property notes. An HR team building one to screen resumes against a consistent rubric. These are all well-scoped, high-repetition tasks with known good outputs.
+
+### Choose the right platform for your use case
+
+Three platforms cover most non-technical use cases without requiring code:
+
+**Claude Projects (Anthropic).** Best for knowledge-intensive, document-heavy assistants. You can upload PDFs, SOPs, and reference documents. Claude is particularly strong at nuanced, multi-step reasoning and following precise formatting instructions. Good for legal, finance, healthcare admin, and anything requiring careful judgment.
+
+**ChatGPT Custom GPTs (OpenAI).** Best for assistants you want to share widely, including with people who aren't technically sophisticated. You can publish a GPT internally or publicly. Strong at creative work, customer-facing content, and assistants that need to search the web or generate images.
+
+**Chatbase.** Best for website chatbots trained on your content. If you need an assistant embedded in your site that answers questions about your products and services, Chatbase handles the infrastructure without code. Less flexible for complex internal workflows.
+
+For most professional service firms and small-to-mid-size businesses, Claude Projects or ChatGPT GPTs are the right starting point. Pick based on the task type, not brand loyalty.
+
+### Write the system prompt — this is where most people underinvest
+
+The system prompt is the instruction set that runs before every conversation. It defines who the assistant is, what it does, what it won't do, and how it formats its outputs. Most people write two or three sentences and wonder why their assistant behaves inconsistently. A good system prompt is one to three pages of clear instruction.
+
+A strong system prompt covers:
+
+- **Role and purpose.** "You are an AI assistant for [Company Name]. Your job is to draft client-facing follow-up emails based on meeting notes the agent provides."
+
+- **What it should always do.** "Always address the client by first name. Always include one specific detail from the notes provided. Always end with a clear next step."
+
+- **What it should never do.** "Never invent details not provided in the notes. Never make promises about pricing. Never use the phrase 'as per our conversation.'"
+
+- **Tone and format.** "Write in a warm, professional tone. No bullet points — use short paragraphs. Maximum 150 words."
+
+- **What to do when uncertain.** "If the notes don't include enough information to draft a complete email, ask one clarifying question rather than guessing."
+
+The clearer your instructions, the more consistent the outputs. Inconsistency in AI assistant behavior almost always traces back to underspecified system prompts.
+
+### Load it with your business context
+
+The knowledge your assistant has access to determines its usefulness for industry-specific tasks. Upload the documents that define how your business works:
+
+- Standard operating procedures
+
+- Brand voice and style guides
+
+- Product or service documentation
+
+- Sample outputs you consider high quality
+
+- FAQ documents with approved answers
+
+- Internal terminology or glossaries
+
+A research note from Anthropic found that AI assistants with rich, well-organized context documentation perform significantly better on domain-specific tasks than those relying on general knowledge alone. The context you upload is effectively the assistant's training for your specific environment.
+
+The documents don't need to be beautifully formatted. A messy-but-complete SOP is more useful than a polished document that leaves out key details. Include everything the assistant would need to make good decisions.
+
+### Test on real edge cases before deploying
+
+Before you put the assistant in front of your team, test it with at least 10–15 real examples — including difficult ones. Use actual inputs from your workflow, not idealized versions. If your assistant handles customer complaint emails, test it on your worst ones. If it drafts contract summaries, test it on the most complex agreements you deal with.
+
+Common failure modes to look for:
+
+- **Inventing details.** Does it fill in information that wasn't provided? This is the most dangerous failure mode for professional service contexts.
+
+- **Tone drift.** Does it maintain the specified voice consistently, or does it shift based on the input?
+
+- **Format inconsistency.** If you specified bullet points, headers, or word limits, does it hold to those across different inputs?
+
+- **Edge case failures.** What happens when the input is incomplete, ambiguous, or unusual? Does it ask for clarification or make assumptions?
+
+When you find failures, go back to the system prompt and add explicit instructions for the case that broke. Iterate until the failure rate is acceptable for your context. "Acceptable" depends on how the outputs are used — if a human always reviews before sending, you can tolerate more. If it's generating autonomous outputs, the threshold has to be much higher.
+
+### Deploy to your team — and manage the transition
+
+The technical setup is often the easy part. The harder part is getting your team to use the assistant consistently enough that it changes how they work. A few practices that help:
+
+- **Build a shared workflow, not just a shared tool.** Document exactly when to use the assistant, what inputs to provide, and how to review the output. The assistant being available isn't enough — there needs to be a clear protocol.
+
+- **Show the output, not the interface.** When introducing the assistant, show people a before/after: here's how long this task took before, here's the result with the assistant. The concrete time difference matters more than explaining how it works.
+
+- **Designate a person to maintain it.** Assistants drift as your business changes. Someone needs to update the system prompt when products change, remove outdated context documents, and add new examples when quality slips.
+
+McKinsey's 2025 AI productivity research found that teams with structured protocols for AI tool use see 2–3x higher adoption rates than teams that simply receive access to the same tools. The protocol is part of the product.
+
+### What this looks like in practice: three industry examples
+
+**A 12-person property management company.** Built a custom assistant that drafts maintenance request responses from a ticket summary. Loaded it with the company's maintenance policy, approved vendor list, and communication standards. System prompt instructs it to never promise specific timelines without checking availability. Team uses it for ~40 responses per week, reviewing before sending. Estimated 6 hours per week saved across the admin team.
+
+**A solo financial advisor.** Built an assistant to draft client communication letters from meeting notes. Context documents include the firm's compliance-reviewed language for common scenarios (rate changes, portfolio adjustments, market commentary). The assistant uses approved phrasings rather than generating novel language that might require compliance review. Saves roughly 30 minutes per client letter.
+
+**A mid-size staffing agency.** Built an assistant to pre-screen resumes by comparing candidate backgrounds to job description requirements. System prompt defines the scoring rubric and instructs the assistant to flag candidates who meet core criteria rather than making final decisions. The assistant handles first-pass screening; recruiters review the flags. First-pass screening time dropped from 45 minutes per role to under 10.
+
+None of these required code. All three were built by operators — not developers — in a few focused hours.
+
+MakerSquare is a 2-week in-person AI builder program in Austin, TX — built for operators, founders, and professionals who want to build real AI tools, not just use them. Building a custom AI assistant is one of the first things students do in the program. By the end of week one, most people have a working assistant their team is already using.
+
+Frequently asked questions
+
+What do I need to build a custom AI assistant?
+
+You need three things: a clearly scoped problem, relevant reference material (documents, SOPs, examples), and a platform to host it. For most non-technical professionals, platforms like Claude.ai Projects, ChatGPT custom GPTs, or Chatbase are sufficient. You do not need to write code.
+
+How is a custom AI assistant different from just using ChatGPT?
+
+A custom AI assistant is configured for a specific task, pre-loaded with your business context, and constrained to behave consistently. Generic AI tools require you to re-explain your context every session. A custom assistant knows your voice, your products, your terminology — and gives consistent outputs without constant prompting.
+
+Can I build a custom AI assistant without a technical background?
+
+Yes. Most modern AI assistant platforms require no coding. You provide the instructions (in plain English), upload reference documents, and configure what the assistant can and cannot do. The hard part is defining the scope — not the technical implementation.
+
+What industries benefit most from custom AI assistants?
+
+Any industry with high volumes of repetitive communication, document processing, or knowledge retrieval benefits significantly. Real estate, healthcare administration, legal services, finance, HR, and customer service see the most measurable impact. The common thread is tasks that require consistent, specialized knowledge rather than creative judgment.
+
+Keep reading
+
+- [All MakerSquare posts](/blog)
+
+MakerSquare is an in-person AI builder program in Austin, TX. Build real tools, not just awareness. Next cohort starts soon.
+
+[Download the curriculum](https://www.makersquare.ai/curriculum)
+[Join the AI Builder Brief](https://ai-builder-brief.beehiiv.com/)
+
+Sources
+
+1
+
+[Anthropic Research on Context and AI Assistant Performance (2025)](https://www.anthropic.com/research)
+
+anthropic.com/research
+
+2
+
+[McKinsey & Company, "The State of AI in 2025: AI's Next Leap" (2025)](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai)
+
+mckinsey.com
+
+3
+
+[OpenAI, "Custom GPTs: Building AI for Your Workflow" (2025)](https://openai.com/enterprise-privacy)
+
+openai.com
+
+---
+
+<!-- https://www.makersquare.ai/blog/build-ai-product-without-technical-cofounder -->
+
+# How to Build an AI Product Without a Technical Co-Founder | MakerSquare
+
+> You can build an AI product without a technical co-founder. Here
+
+[← Blog](/blog)
+
+For Founders
+
+## How to build an AI product without a technical co-founder
+
+Marliis Schneider
+
+August 30, 2026
+
+5 min read
+
+![How to build an AI product without a technical co-founder](../images/blog/build-ai-product-no-cofounder-og.webp)
+
+The most common reason non-technical founders don't build is the assumption that they need a technical co-founder first. In 2026, that assumption is increasingly wrong. The tools available today — AI-assisted coding, no-code platforms, accessible APIs — let determined founders get to a working product without a technical partner. Not every product. Not forever. But far further than most people think.
+
+This isn't a post about no-code versus code or whether you should stay non-technical. It's a practical guide to what's actually possible for a non-technical founder who wants to build an AI product now, not after spending six months searching for a CTO.
+
+Key takeaways
+
+- Non-technical founders are building functional AI products in 2026 using AI coding assistants — particularly Claude Code and Cursor.
+
+- The hard part isn't the technology. It's scoping a problem clearly enough that AI tools can help you build it.
+
+- A focused MVP with one workflow can validate demand before you need a technical hire.
+
+- The standard non-technical stack: Claude Code or Cursor + Supabase + Vercel + Anthropic/OpenAI API.
+
+- Know what you're deferring — security, scale, complex infrastructure — and plan for when you'll need technical help.
+
+### What's changed: why this is possible now
+
+Three things happened in the last 18 months that changed the calculus for non-technical founders:
+
+**AI coding assistants became genuinely useful for building.** Tools like Claude Code and Cursor don't just suggest completions — they write complete features from plain-English descriptions. A non-technical founder who can clearly describe what they want can now produce working code, debug errors, and ship features that would have required a developer two years ago.
+
+**AI model APIs became accessible without infrastructure expertise.** Calling the Anthropic Claude API or OpenAI API from a simple web application requires a few lines of code — code that AI coding tools will write for you. You don't need to understand transformer architecture or machine learning to integrate AI functionality into a product. You need to understand what you want the AI to do.
+
+**The deployment layer simplified dramatically.** Platforms like Vercel (hosting), Supabase (database and authentication), and Stripe (payments) handle the infrastructure concerns that used to require a backend engineer. A non-technical founder can stand up a working web application with a database, user auth, and payment processing without deep technical knowledge.
+
+The combination means a focused, scoped AI product — one workflow, one clear problem — is now buildable by a determined non-technical founder in weeks.
+
+### The real constraint: problem definition, not technical skill
+
+The founders who struggle to build without a technical co-founder usually have a fuzzy product definition, not a skill gap. AI coding tools are powerful, but they execute instructions. If your instructions are vague — "build me an AI tool that helps businesses" — the tools produce something generic and useless.
+
+The non-technical founders who successfully build are the ones who can answer:
+
+- Who specifically is this for? (Not "businesses" — "property managers at firms with 50–500 units.")
+
+- What single task does it perform? (Not "AI assistant" — "generates lease renewal outreach emails from tenant records.")
+
+- What inputs does it take? What does it output?
+
+- What does "good" output look like? What does failure look like?
+
+- How will users access it? (Web app? Slack integration? Email?)
+
+That clarity is the hard work. Once you have it, the technical execution with AI tools becomes significantly more tractable.
+
+### The non-technical founder stack for AI products
+
+This is the stack most non-technical founders are using to build AI products in 2026:
+
+**Claude Code or Cursor for building.** Both are AI coding environments that let you describe what you want in plain English and generate working code. Claude Code is particularly strong for full-application builds and complex, multi-file projects. Cursor is strong for iteration on existing codebases. For a non-technical founder starting from scratch, Claude Code is typically the more accessible entry point.
+
+**Supabase for database and auth.** Supabase provides a Postgres database, user authentication, and file storage with a generous free tier and a UI that non-technical founders can actually navigate. The alternative (setting up your own database server) requires backend expertise you don't have and don't need.
+
+**Vercel for hosting and deployment.** Connect your GitHub repository, push code, and Vercel deploys it automatically. No server configuration. Free tier handles early traffic. Scales when you need it.
+
+**Anthropic Claude API or OpenAI API for AI functionality.** Both are well-documented, have SDKs for common languages, and are accessible enough that AI coding tools can write your integration code for you. The Anthropic API is particularly strong for tasks requiring instruction-following and reasoning; OpenAI's is strong for multi-modal tasks (images, voice).
+
+**Stripe for payments.** If you're charging for your product, Stripe's documentation and SDK are manageable for non-technical founders, especially with AI coding tools to handle implementation. The Stripe Checkout flow minimizes what you need to build.
+
+This stack can produce a functional, deployable web application with AI features, a user database, authentication, and payment processing. It's not enterprise-grade. It's not optimized for millions of users. But it's more than enough to validate whether you have a product people want to pay for.
+
+### What a non-technical founder can build: real examples
+
+These aren't aspirational examples — they're the types of products being built by non-technical founders attending programs like MakerSquare:
+
+**A contract review tool for freelancers.** Users upload a contract PDF. The tool extracts key terms using the Claude API, flags unusual clauses, and generates a plain-English summary. Built on the stack above in about three weeks by a former paralegal with no prior coding experience.
+
+**An AI-powered intake form for therapists.** Instead of a static intake form, the tool conducts a conversational intake using Claude, extracts structured data, and generates a pre-session summary for the therapist. Built by a licensed therapist with no technical background.
+
+**A job description analyzer for hiring managers.** Takes a job description and a resume, outputs a structured comparison highlighting gaps and matches. Built by an HR professional using Claude Code over a weekend.
+
+None of these founders had technical backgrounds. All of them had extremely clear problem definitions, real users to build for, and the willingness to learn enough to direct the AI tools effectively.
+
+### What you're deferring — and when to get technical help
+
+Building without a technical co-founder isn't building without technical constraints. There are real limitations you need to know about and plan for:
+
+**Security.** AI-generated code handles basic security practices but won't catch every vulnerability. If your product handles sensitive personal data (health, financial, legal), you need a security review before handling real users at scale. Plan for this before you reach significant user volumes.
+
+**Infrastructure at scale.** The Supabase + Vercel stack handles thousands of users on free and entry tiers. It doesn't handle hundreds of thousands without configuration expertise. This is a good problem to have, but you need a technical hire or consultant before you hit those numbers.
+
+**Complex integrations.** Connecting to enterprise systems, handling complex webhooks, or building real-time features requires technical depth that AI coding tools can partially handle but can't reliably produce without someone who understands the underlying systems.
+
+**AI evaluation and reliability.** Non-technical founders often underestimate the work of making AI features consistently reliable. Prompt engineering, output validation, error handling, and fallback behavior all require systematic testing and iteration. This is learnable, but it's more work than it looks.
+
+The practical implication: use the non-technical approach to validate that people want the product, that they'll pay for it, and that your core assumption about the problem is correct. Once you have that validation, the case for a technical hire or co-founder is much stronger — and the product you've built gives you something concrete to evaluate candidates against.
+
+### The learning curve is real — but shorter than it used to be
+
+None of this means building an AI product is easy without a technical background. There's a learning curve. You'll get stuck. Error messages will be confusing. Features that seemed simple will be more complex than expected.
+
+What's changed is that the ceiling has risen significantly. A non-technical founder who's willing to spend 20–30 hours learning the fundamentals of how web applications work, how APIs are called, and how to read and debug code can now build products that would have required a full engineering team five years ago. The tools are that much better.
+
+MakerSquare is a 2-week in-person AI builder program in Austin, TX — built for operators, founders, and professionals who want to build real AI tools, not just use them. Many MakerSquare students arrive without technical backgrounds and leave with working products they've built themselves. The goal isn't to turn operators into engineers — it's to give them enough to be dangerous. To build the thing, validate it, and make smart decisions about what to hire for next.
+
+See the full curriculum at [makersquare.ai/curriculum](/curriculum) to understand what's possible in two weeks.
+
+Frequently asked questions
+
+Can a non-technical founder build an AI product?
+
+Yes. The tools available in 2026 — including AI-assisted coding tools like Claude Code, no-code platforms like Bubble and Webflow, and API-accessible AI models — make it possible for non-technical founders to build functional AI products without hiring a developer. The limiting factor is usually clarity of problem definition, not technical skill.
+
+Do I need a technical co-founder to build an AI startup?
+
+Not necessarily. Many AI startups launched in 2024–2026 are led by non-technical founders who use AI coding assistants to build MVPs and hire developers later (after validating demand). The calculus changes at scale — complex infrastructure, security requirements, and technical debt become harder to manage without in-house technical leadership — but early-stage product development is now accessible to determined non-technical founders.
+
+What tools do non-technical founders use to build AI products?
+
+The most commonly used stack for non-technical AI founders: Claude Code or Cursor (AI-assisted coding), Supabase (database and auth), Vercel (hosting), and either no-code UI builders or AI-assisted HTML/CSS. For AI functionality, the Anthropic Claude API and OpenAI API are both accessible without deep technical background. Zapier or Make.com handle integrations.
+
+How long does it take to build a basic AI product without a technical background?
+
+A functional MVP — a working web app with AI features, a database, and basic user flows — typically takes 2–8 weeks for a determined non-technical founder using modern AI coding tools. The range is wide because scope matters enormously. A focused, well-scoped MVP with clear user stories can be built faster than a broader product with unclear requirements.
+
+Keep reading
+
+- [All MakerSquare posts](/blog)
+
+MakerSquare is an in-person AI builder program in Austin, TX. No coding background required. Real products. Real outcomes.
+
+[Download the curriculum](https://www.makersquare.ai/curriculum)
+[Join the AI Builder Brief](https://ai-builder-brief.beehiiv.com/)
+
+Sources
+
+1
+
+[First Round Capital, "The State of the Startup: Solo and Non-Technical Founders" (2025)](https://firstround.com/review)
+
+firstround.com/review
+
+2
+
+[Anthropic, Claude Code Documentation (2025)](https://www.anthropic.com/claude-code)
+
+anthropic.com/claude-code
+
+3
+
+[Y Combinator, "Founder Resources: Building Without a Technical Co-Founder" (2025)](https://www.ycombinator.com/resources)
+
+ycombinator.com/resources
+
+---
+
+<!-- https://www.makersquare.ai/blog/build-chatbot-for-your-business-without-coding -->
+
+# How to Build a Chatbot for Your Business Without Coding | MakerSquare
+
+> How to build a chatbot for your business without coding — a step-by-step guide to choosing the right platform, training it on your content, and deploying it for real use cases.
+
+[← Blog](/blog)
+
+AI Building
+
+## How to build a chatbot for your business without coding
+
+Marliis Schneider
+
+August 24, 2026
+
+5 min read
+
+![How to build a chatbot for your business without coding](../images/blog/build-chatbot-without-coding-og.webp)
+
+Key takeaways
+
+- You can build a functional business chatbot in a few hours using no-code platforms — no developer required, no custom code, no months of lead time.
+
+- The most useful first chatbot for most businesses is not a customer-facing one — it's an internal one trained on your team's documentation, policies, and FAQs.
+
+- The biggest chatbot failure mode is deploying before testing — a bot that gives wrong answers at scale is worse than no bot at all.
+
+- Gartner projects that by 2027, chatbots will be the primary customer service channel for 25% of companies — the businesses figuring this out now will have a meaningful head start.
+
+Building a chatbot for your business used to require a developer, a budget, and several months. In 2026, you can deploy a functional AI chatbot trained on your own content in an afternoon. You don't need to write code. You don't need to understand how AI models work. You need to understand what problem you're solving, what content the chatbot should know, and what to do when it doesn't know something. This guide walks through how to build a chatbot without coding — from deciding what to build to deploying something that actually works.
+
+The direct answer: the fastest path to a working business chatbot is a no-code platform like Chatbase, Tidio, or Intercom Fin. You upload your source content, configure the bot's behavior in plain English, test it against real questions, and embed it where you need it. Total time: 2–4 hours for a well-scoped first version.
+
+### Step 1: Define the use case before picking a tool
+
+The most common mistake is starting with "we need a chatbot" and picking a platform before defining what the chatbot should actually do. A customer support FAQ bot, a lead qualification bot, and an internal HR policy bot are all different products with different content requirements, different failure modes, and different metrics for success.
+
+The questions that should come first: What is the bot supposed to answer? What happens when it can't? Who is the audience? What does success look like in the first 30 days? A narrow, well-defined scope produces a better chatbot than a broad, ambitious one. The internal knowledge base bot that answers 85% of your team's policy questions correctly is more valuable than the customer-facing bot that tries to do everything and does nothing well.
+
+The best first chatbot for most businesses is actually internal — trained on your employee handbook, your product documentation, your onboarding materials — because the stakes are lower, the audience is forgiving, and you learn faster what the bot gets wrong before external customers see it.
+
+### Step 2: Choose your platform and upload your content
+
+For most business chatbot use cases, three no-code platforms cover the field. **Chatbase** is the fastest to set up — you upload documents or paste a website URL, and it builds the knowledge base automatically. Good for internal FAQs and simple customer support. **Tidio** is stronger for e-commerce and website chat, with more integrations and conversation flow design. **Intercom Fin** is the most sophisticated and the most expensive — designed for support teams handling high conversation volume.
+
+For any of these, the setup follows the same pattern: create an account, upload your source content (PDFs, docs, web pages), write a system prompt that defines the bot's persona and scope, test it against real questions, configure the human handoff trigger, and generate the embed code for your site. The whole process for a simple bot is 2–4 hours.
+
+Gartner projects that by 2027, chatbots will be the primary customer service channel for 25% of organizations, up from 4% in 2022. 1 The companies figuring this out now — even imperfectly — are building operational knowledge that will be hard to catch up to.
+
+### Step 3: Test rigorously before deploying
+
+This is the step most people skip, and it's the one that determines whether the chatbot helps or hurts. Before deploying, spend two hours testing the chatbot against every question your target users might actually ask. Include edge cases, ambiguous questions, and questions the bot shouldn't answer. Find the failure modes before your users do.
+
+What to look for: Does the bot answer questions it shouldn't (making up information not in your source content)? Does it fail gracefully when it doesn't know something? Does it escalate to a human at the right point? Is the tone right for your brand?
+
+The most important feature to configure correctly is the out-of-scope response. A chatbot that says "I'm not sure about that — here's how to reach our team directly" is far better than one that fabricates a confident answer. Configure this before you go live and test it explicitly.
+
+### What this means for non-technical business owners
+
+Building a chatbot without coding is genuinely accessible right now. The tools are mature, the setup is documented, and the cost of getting it wrong on a first attempt is low — you iterate and improve. The barrier is not technical. It's knowing what to build, how to train it well, and how to evaluate whether it's working.
+
+MakerSquare is a 2-week in-person AI builder program in Austin, TX — built for operators, founders, and professionals who want to build real AI tools, not just use them. Building a custom AI assistant or chatbot is one of the core projects participants complete. See the [curriculum](/curriculum) to understand what the full build process looks like in a structured environment.
+
+You don't need a developer to start. You need two to three hours, a clear use case, and the discipline to test before you deploy. Most businesses that "can't afford AI" are actually sitting within a weekend of having a working chatbot.
+
+Frequently asked questions
+
+What is the easiest way to build a chatbot for a business without coding?
+
+The easiest approach is using a no-code chatbot platform that connects to an underlying AI model. Tools like Chatbase, Tidio AI, or Intercom's Fin let you upload your business documents (FAQs, product pages, policies), configure the chatbot's behavior in plain language, and embed it on your website — without writing any code. The setup time is typically 1–3 hours for a basic FAQ chatbot.
+
+How much does it cost to build a business chatbot?
+
+No-code chatbot platforms typically cost $30–$200/month for small business use cases, depending on conversation volume and features. Building a custom chatbot through a developer or agency typically costs $5,000–$25,000+ and takes weeks to months. For most small and mid-sized businesses, no-code tools provide 80% of the functionality at 5% of the cost. Start with no-code, then custom-build only if you hit specific limitations.
+
+What are the best no-code chatbot platforms for small businesses?
+
+The most commonly used no-code AI chatbot platforms for small businesses in 2026 are Chatbase (fastest to set up, great for FAQ bots), Tidio AI (strong e-commerce integrations), Intercom Fin (best for support teams), and Voiceflow (more customizable, slight learning curve). For internal-facing chatbots, Notion AI or a custom Claude integration is often simpler. Match the platform to your specific use case.
+
+What are the most common mistakes when building a business chatbot?
+
+The three most common mistakes are: deploying the chatbot before testing it thoroughly on real questions (it will give wrong answers in ways you didn't anticipate), not giving it a clear scope (a chatbot that tries to answer everything is less useful than one trained on a specific topic), and not designing a graceful handoff to a human when the bot reaches its limits. A chatbot that says "I don't know, here's how to reach us" is better than one that guesses.
+
+Keep reading
+
+- [All MakerSquare posts](/blog)
+
+Building a custom AI assistant is one of the core projects at MakerSquare. Download the curriculum to see what the full two-week build looks like — from idea to deployed tool.
+
+[Get the curriculum](https://www.makersquare.ai/curriculum)
+[Join the AI Builder Brief](https://ai-builder-brief.beehiiv.com/)
+
+Sources
+
+1
+
+[Gartner Chatbot Market Forecast](https://www.gartner.com/en/customer-service-support/trends/chatbot-customer-service)
+
+Gartner · 2025 · Chatbots projected to be primary customer service channel for 25% of organizations by 2027
+
+2
+
+[IBM Chatbot Statistics and Business Impact](https://www.ibm.com/blog/chatbot-statistics/)
+
+IBM · 2025 · Analysis of chatbot deployment outcomes, ROI, and common failure patterns
+
+3
+
+[State of Service Report 2025](https://www.salesforce.com/research/state-of-service/)
+
+Salesforce · 2025 · AI and chatbot adoption patterns in customer service across company sizes
 
 ---
 
@@ -8324,6 +9541,119 @@ Anthropic · 2025 · Specificity in AI instructions dramatically outperforms gen
 
 ---
 
+<!-- https://www.makersquare.ai/blog/how-to-evaluate-ai-tools-for-your-business -->
+
+# How to Evaluate AI Tools for Your Business: A Practical Framework | MakerSquare
+
+> How to evaluate AI tools for your business — a practical framework for comparing AI software, avoiding expensive mistakes, and making decisions that hold up beyond the demo.
+
+[← Blog](/blog)
+
+AI Strategy
+
+## How to evaluate AI tools for your business: a practical framework
+
+Marliis Schneider
+
+August 27, 2026
+
+5 min read
+
+![How to evaluate AI tools for your business: a practical framework](../images/blog/how-to-evaluate-ai-tools-og.webp)
+
+Key takeaways
+
+- Most AI tool purchases fail for the same reason most software purchases fail: the people who approved the budget are different from the people who have to use it daily.
+
+- The single most predictive factor in AI tool adoption is whether end users were involved in the evaluation — tools chosen by ICs have 3x higher 90-day retention than tools chosen by managers alone.
+
+- A good AI tool evaluation framework has four phases: define the problem first, test on real workflows second, calculate the ROI math third, and only then decide on commitment.
+
+- Gartner estimates that 60% of enterprise AI software purchased in 2025 will be "underutilized or abandoned" within 18 months — the failure is evaluation and adoption, not capability.
+
+The AI tool market is flooded. There are hundreds of specialized AI tools for every function, every industry, and every use case. Most of them are genuinely impressive in a demo. Most of them will also sit unused 90 days after purchase if the evaluation process wasn't rigorous. Knowing how to evaluate AI tools for your business is not a technical skill — it's a procurement discipline. And most companies are getting it wrong.
+
+The direct answer: the best AI tool evaluation framework has four steps in this order — define the specific problem you're solving, test on your real workflows (not demo data), do the ROI math before committing, and involve the actual end users in the evaluation. Skip any of these and you're buying on vibes.
+
+### Step 1: Define the problem before looking at tools
+
+The most common AI evaluation mistake is starting with "we heard about this tool" rather than "here's the specific problem we're trying to solve." A tool that solves the wrong problem with 95% accuracy is still worthless. Before looking at any AI tool, write a one-paragraph description of the specific workflow you're trying to improve: what's the current process, how long does it take, who does it, and what would "better" look like?
+
+This sounds obvious. In practice, most AI tool evaluations skip it because the tool sounds exciting and the conversation jumps straight to demo scheduling. The paragraph takes 10 minutes and filters out 60% of tools before you waste any evaluation time.
+
+Gartner's 2025 analysis of enterprise software purchasing found that 60% of AI software purchased in the prior year was underutilized or abandoned within 18 months, and the primary cause was misalignment between the tool's capabilities and the specific workflow problem it was supposed to solve. 1
+
+### Step 2: Test on your real workflows, not demo scenarios
+
+Every AI tool looks impressive on its own demo data. The question is whether it works on yours. Before any purchase decision, run the tool through your actual use case: your documents, your data, your team's real questions. Most vendors will allow a 14–30 day trial. Use all of it.
+
+The test should be specific: pick three to five tasks that represent your most common use case for the tool, run them through the trial, and evaluate the output quality honestly. "Could a junior employee on my team produce this output in the same amount of time without the AI?" If yes for most tasks, the tool isn't adding enough value to justify the subscription.
+
+Critically, have the people who will actually use the tool run the evaluation — not the people who will approve the budget. The disconnect between "this looks impressive" (manager) and "this fits how I actually work" (IC) is where most AI tool adoptions die. A 2025 McKinsey survey found that AI tools evaluated by end users had 3x higher 90-day retention than tools chosen by managers without end-user input. 2
+
+### Step 3: Do the ROI math before committing
+
+Every AI tool should be evaluated against a simple question: what specific task does this replace or accelerate, how much time does that task currently take, and what's our cost for that time? If a $200/month tool saves an employee 2 hours per week at a $50/hour blended rate, the annual value is $5,200 against a $2,400 annual cost — the math works. If the same tool saves 20 minutes per week, the math doesn't.
+
+This calculation forces clarity on what the tool is actually for. It also reveals when general-purpose AI (which most teams already pay for) would do the same job without an additional subscription. Most specialized AI tools serve a genuinely narrow use case — the ROI math is the fastest way to find out if you're in that use case or not.
+
+### What this means for business leaders evaluating AI
+
+The businesses making smart AI tool decisions in 2026 are the ones that have developed an internal evaluation discipline — a repeatable process for moving from "this looks interesting" to "this is worth buying" without letting vendor excitement shortcut the real questions. It's not a technical skill. It's a judgment skill.
+
+MakerSquare is a 2-week in-person AI builder program in Austin, TX — built for operators, founders, and professionals who want to build real AI tools, not just use them. One of the most practical skills in the program is AI tool evaluation — understanding what a tool actually does, how to test it rigorously, and how to decide whether to buy, build, or skip. See the [curriculum](/curriculum) for the full picture.
+
+The best AI tool for your business is the one your team will actually use six months from now. Work backward from that, and the evaluation process gets a lot simpler.
+
+Frequently asked questions
+
+What questions should I ask when evaluating an AI tool?
+
+The five most important questions are: (1) Does it solve a specific problem we have today, or is it solving a problem we hope to have? (2) What does implementation actually require — does it integrate with our current stack? (3) Can I test it on our real data before buying? (4) What does the contract commitment look like, and what's the exit? (5) Who in our organization will actually use this, and have we involved them in the evaluation? Most AI tool purchases fail on question 5.
+
+How do I know if an AI tool is actually worth the subscription cost?
+
+Calculate the specific task the tool replaces or accelerates, estimate the time savings per week, multiply by your hourly cost for that work, and compare it to the annual subscription. If the math doesn't work in year 1, the tool isn't worth it. A $500/month AI tool needs to save at least $6,000 of labor value annually to justify itself — which means 60+ hours of work at $100/hour, or meaningful revenue impact.
+
+How long should an AI tool pilot last?
+
+30 days minimum, 60 days ideal. The first two weeks of using any new AI tool are inflated by novelty — people try it on everything. Weeks 3–6 reveal whether it fits into actual daily workflows. If usage is declining at week 6, the tool isn't going to stick regardless of how good the demo was. Measure adoption rate and time-per-task at 30 and 60 days, not during the first week.
+
+Should I buy a specialized AI tool or use a general-purpose one?
+
+Start with general-purpose AI (Claude, ChatGPT) and see how far it gets you. Specialized tools add value when: (1) your use case requires integrations with specific data sources a general AI can't access, (2) you need compliance, security, or audit features specific to your industry, or (3) the volume of a specific task is high enough that a dedicated workflow tool saves meaningful time. Don't buy specialized before you've maxed out general.
+
+Keep reading
+
+- [All MakerSquare posts](/blog)
+
+Join the AI Builder Brief for practical AI insights — including tool evaluations, workflow reviews, and what's actually working for teams in 2026.
+
+[Get the curriculum](https://www.makersquare.ai/curriculum)
+[Join the AI Builder Brief](https://ai-builder-brief.beehiiv.com/)
+
+Sources
+
+1
+
+[Gartner Enterprise Software Utilization Report 2025](https://www.gartner.com/en/information-technology/insights/software-spending)
+
+Gartner · 2025 · 60% of AI software purchased in 2024 underutilized or abandoned within 18 months
+
+2
+
+[AI Tool Adoption Survey 2025](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai)
+
+McKinsey & Company · 2025 · AI tools evaluated by end users show 3x higher 90-day retention vs. manager-selected tools
+
+3
+
+[Forrester Wave: AI Platforms 2025](https://www.forrester.com/report/the-forrester-wave-ai-platforms-q1-2025/)
+
+Forrester Research · 2025 · Framework for evaluating enterprise AI tools and vendor selection criteria
+
+---
+
 <!-- https://www.makersquare.ai/blog/how-to-get-roi-from-ai-at-work -->
 
 # How to Get ROI from AI at Work | MakerSquare
@@ -8592,6 +9922,113 @@ BCG · 2025 · Five or more hours of structured, applied AI practice is the adop
 
 ---
 
+<!-- https://www.makersquare.ai/blog/how-to-make-money-with-ai -->
+
+# How to Make Money With AI: The Honest Version | MakerSquare
+
+> How to make money with AI in 2026, minus the hype. Realistic approaches, real earning ranges, and why the winners aren
+
+[← Blog](/blog)
+
+AI at Work
+
+## How to Make Money With AI: The Honest Version
+
+Marliis Schneider
+
+September 2, 2026
+
+6 min read
+
+![How to Make Money With AI: The Honest Version](../images/blog/how-to-make-money-with-ai-og.webp)
+
+Key takeaways
+
+- AI isn't a shortcut to instant wealth. In almost every case it works as a tool that helps you do more work, higher quality, or faster - the money comes from applying it to a real problem someone will pay to solve.
+
+- Realistic ranges from the field: AI-augmented freelance services $500-$2,000/mo for beginners (within ~90 days) and $5,000-$15,000/mo experienced; workflow-automation retainers $3,000-$10,000/mo with a handful of clients; AI SaaS $5,000-$50,000+/mo but over 12-24 months.
+
+- The people making the most money with AI right now are not the most technically skilled - they're the ones who understood a specific business problem and figured out how AI could solve it.
+
+- The durable opportunities are services and tools that solve a concrete problem repeatedly - not prompt packs or 'wrap an API and hope.'
+
+Search 'how to make money with AI' and you'll drown in listicles promising passive riches. Here's the honest version. The direct answer: the reliable way to make money with AI in 2026 is to use it to solve a specific problem someone already pays to have solved - as a service, an automation, or a product - not to chase a magic income stream. AI makes you faster and lets you do more; it doesn't remove the need for a real problem and a real customer.
+
+### Set the expectation first: it's a lever, not a lottery
+
+The AI market is enormous - at least 1.35 billion people are actively using AI tools in 2026, and the market is on track to generate over $514 billion in revenue this year. That scale creates real opportunity. But as practitioners consistently note, AI isn't a shortcut to instant wealth. In most cases it works best as a tool that helps you produce more work, improve quality, or deliver services faster than before. The money still comes from the boring fundamentals: a problem, a buyer, and something that solves it.
+
+### What's actually working, with real numbers
+
+**AI-augmented services.** The fastest path. Take a service people already buy - writing, design, SEO, research, bookkeeping support - and use AI to deliver it faster and at higher volume. Field estimates: beginners applying AI to freelance services earn roughly $500-$2,000/month within about 90 days; experienced freelancers with AI-augmented offerings reach $5,000-$15,000/month. You're not selling 'AI' - you're selling the outcome, delivered better.
+
+**Business automation for other companies.** Build AI workflows that save small businesses real hours - lead research, customer follow-up, reporting - on a retainer. Estimates land around $3,000-$10,000/month for someone serving 5-10 clients who pay for maintenance and new automations. This rewards understanding a business's operations more than it rewards coding.
+
+**Digital products and AI tools.** The higher ceiling and the longer road. Solo founders who build and sell an AI SaaS tool can reach $5,000-$50,000+/month - but that typically takes 12-24 months to build, not a weekend. This is a real business, not a side hustle.
+
+### The pattern behind who actually wins
+
+Here's the most useful insight in all the data: the people making the most money with AI right now are not necessarily the most technically skilled. They're the ones who understood a specific business problem and figured out how AI could solve it. Domain knowledge - knowing exactly where a real business bleeds time or money - beats technical ability, because the technical part is increasingly something AI handles for you. That's a genuinely hopeful message for operators and domain experts: the barrier isn't 'learn to code,' it's 'find a problem you understand deeply.'
+
+### What this means if you want to actually do it
+
+Don't start by learning AI in the abstract. Start with one problem you understand better than most people - from your industry, your job, or a business you've run - and build the smallest thing that solves it. That's the exact premise of MakerSquare: the people best positioned to build with AI aren't engineers, they're the ones who know the problem. Our [use cases](/use-cases) show what people actually build - working tools around real problems, not theory.
+
+The money in AI isn't hiding in a prompt pack. It's in a problem you already understand and can now, finally, build the solution to.
+
+Frequently asked questions
+
+Can you really make money with AI in 2026?
+
+Yes, but not as a magic income stream. The reliable approaches are AI-augmented services (delivering existing services faster/better), building automations for businesses on retainer, and creating digital products or AI tools. In each case AI is a lever on a real problem and a real customer - not a shortcut to passive wealth.
+
+What's the fastest way to start making money with AI?
+
+AI-augmented services. Take a service people already pay for - writing, design, SEO, research, bookkeeping support - and use AI to deliver it faster and at higher volume. Field estimates put beginners at roughly $500-$2,000/month within about 90 days, scaling from there with experience.
+
+Do I need to know how to code to make money with AI?
+
+No. The people making the most money with AI now aren't the most technical - they're the ones who understood a specific business problem and applied AI to it. Modern tools are directed in plain language, so domain knowledge matters more than coding ability.
+
+How much can you realistically earn with AI?
+
+It varies widely by approach: AI-augmented freelance services $500-$2,000/month (beginner) to $5,000-$15,000/month (experienced); business-automation retainers around $3,000-$10,000/month with 5-10 clients; AI SaaS products $5,000-$50,000+/month but over 12-24 months to build. None are get-rich-quick.
+
+What AI business ideas actually work vs. which are hype?
+
+What works: solving a specific, recurring problem someone pays for - services, automations, or a genuine product. What's mostly hype: prompt packs, 'wrap an API and hope,' and generic content farms. The test is whether there's a real buyer with a real problem, or just a trend you're chasing.
+
+Keep reading
+
+- [All MakerSquare posts](/blog)
+
+MakerSquare is a 2-week in-person AI builder program in Austin, TX for operators and domain experts who want to build real, working AI tools around problems they already understand. See what two weeks of hands-on building looks like.
+
+[Get the curriculum](https://www.makersquare.ai/curriculum?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_how-to-make-money-with-ai_curriculum_20260918)
+[Sign up for the newsletter](https://ai-builder-brief.beehiiv.com/?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_how-to-make-money-with-ai_newsletter_20260918)
+
+Sources
+
+1
+
+[Make Money With AI in 2026: 11 Real Ways That Work](https://rightblogger.com/blog/make-money-ai)
+
+RightBlogger · 2026 · Realistic earning ranges by approach; AI as a tool, not a shortcut
+
+2
+
+[7 Ways People Are Making Money Using AI in 2026](https://www.kdnuggets.com/7-ways-people-are-making-money-using-ai-in-2026)
+
+KDnuggets · 2026 · Services, automation, and product paths; who actually earns
+
+3
+
+[How to Make Money with AI: Proven Ways (2026 Guide)](https://memeburn.com/how-to-make-money-with-ai/)
+
+Memeburn · 2026 · Market scale (1.35B users, $514B revenue) and practical methods
+
+---
+
 <!-- https://www.makersquare.ai/blog/how-to-pitch-ai-training-to-your-manager -->
 
 # How to Pitch AI Training to Your Manager and Get Budget
@@ -8784,6 +10221,8 @@ For companies
 Reading this for your team? We run private AI training for Austin companies — your tools, your workflows, working automation by day three.
 
 [Corporate training →](/corporate) [Train vs. hire a consultant →](/ai-training-vs-consultants) [3-day workshops →](/workshops)
+
+Rolling AI out across a team? See MakerSquare's [AI training for teams and employees](/corporate) — custom programs built around your workflows and tools.
 
 ---
 
@@ -9667,9 +11106,168 @@ Free full-length course
 
 ---
 
+<!-- https://www.makersquare.ai/blog/measuring-ai-upskilling-roi -->
+
+# The ROI of AI Upskilling: What Companies Are Actually Seeing in 2026 | MakerSquare
+
+> What
+
+[← Blog](/blog)
+
+AI Strategy
+
+## The ROI of AI upskilling: what companies are actually seeing in 2026
+
+Marliis Schneider
+
+September 1, 2026
+
+5 min read
+
+![The ROI of AI upskilling: what companies are actually seeing in 2026](../images/blog/ai-upskilling-roi-og.webp)
+
+The AI upskilling ROI question is no longer theoretical. Enough companies have run enough programs with enough rigor to have real data. The answer isn't a single number — it depends enormously on what you define as "upskilling," who you train, and whether the training changes how people actually work. But the patterns are clear enough to be actionable.
+
+This post covers what the research shows, what companies are actually measuring, and what separates the programs that deliver returns from the ones that produce completion certificates and nothing else.
+
+Key takeaways
+
+- BCG's AI at Work research: employees with 5+ hours of structured AI training are 25% more likely to be regular AI users.
+
+- MIT's 2024 controlled study: AI-assisted workers completed tasks 25.1% faster with 40% quality improvement.
+
+- Productivity gains are most measurable on high-frequency, knowledge-work tasks — writing, analysis, research, reporting.
+
+- Training ROI is destroyed when there's no workflow change after the session ends. Knowledge without practice produces nothing.
+
+- The best indicator of upskilling ROI: whether AI tool adoption rate increased, not whether employees completed training.
+
+### What the research actually shows
+
+The most rigorous study on AI's productivity impact comes from MIT's Digital Economy Lab. In a controlled 2024 experiment, professionals using AI assistance completed business writing tasks 25.1% faster than control groups, and independent graders rated the AI-assisted work 40% higher in quality. Crucially, the largest gains went to lower-performing workers — AI leveled up the bottom of the distribution more than the top.
+
+BCG's "AI at Work" research series, which surveys thousands of knowledge workers annually, found that the threshold for durable AI adoption is more than five hours of structured practice. Employees who received fewer than five hours of training had adoption rates similar to those who received no training. The implication: short awareness sessions don't move the needle. Most corporate "AI training" falls well below the threshold where it changes behavior.
+
+Accenture's 2025 workforce AI study found that companies in the top quartile of AI adoption reported 30% higher revenue growth than those in the bottom quartile — but noted that the gap between top and bottom quartile has widened, not narrowed, over the past two years. Adoption isn't spreading evenly. The companies investing in structured, applied upskilling are pulling ahead; the ones relying on organic adoption or minimal training are falling behind.
+
+### How to measure AI upskilling ROI — the right way
+
+Most companies measure training ROI wrong. They track completion rates ("87% of employees completed the AI module"), satisfaction scores ("average 4.2/5 rating"), and occasionally self-reported confidence levels. None of these measure whether behavior changed.
+
+The metrics that actually indicate ROI:
+
+**AI tool adoption rate.** What percentage of trained employees are using AI tools at least weekly, 90 days after training? This is the primary indicator. If adoption didn't increase, the training didn't work — regardless of completion rates or satisfaction scores. Track this at 30, 60, and 90 days post-training.
+
+**Task-level time savings.** For two or three high-frequency tasks in the trained role, measure time-on-task before and after training. A marketing team member who drafts client reports weekly provides a clean before/after comparison. A quantified time saving converts directly to an ROI calculation.
+
+**Output volume and quality.** Does trained staff produce more, faster, at the same or higher quality? This is harder to measure cleanly but meaningful when you can isolate the variable. Companies with output metrics pre-training (reports produced, deals worked, tickets resolved) can measure this directly.
+
+**Retention and engagement signals.** Companies investing significantly in AI upskilling often report secondary retention benefits: LinkedIn Workplace Learning survey data shows AI and tech skills top the list of what employees cite as reasons they stayed at an employer. This benefit is real but harder to attribute directly to upskilling spend.
+
+### What separates high-ROI programs from low-ROI programs
+
+The structural difference between AI training programs that deliver returns and those that don't comes down to four factors:
+
+**Applied practice time.** Programs that require participants to use AI on their actual work — not hypothetical scenarios or generic examples — produce dramatically higher adoption rates than programs that demonstrate AI capabilities and leave practice as "homework." Practice has to be built into the program, not optional. The BCG five-hour threshold applies to structured, applied practice, not passive learning.
+
+**Role specificity.** Generic "AI fundamentals" training teaches people what AI is. Role-specific training teaches them what to use AI for in their actual job. A program that shows a finance team member exactly how to use AI for their specific reporting and analysis tasks produces better adoption than a program that covers general AI capabilities across all functions. The more specific the training, the faster the translation to workflow change.
+
+**Accountability mechanisms.** Programs with no follow-through — no check-ins, no peer accountability, no leadership visibility into adoption — lose most of their impact within 60 days. The half-life of training without reinforcement is short. Programs that build accountability into the structure (cohorts, regular practice reviews, team adoption tracking) maintain their impact significantly longer.
+
+**Leadership modeling.** Employees are much more likely to change how they work if their direct manager is visibly using AI. BCG found that having an AI-active manager is one of the strongest predictors of individual AI adoption. Companies that train only individual contributors without investing in leadership adoption undermine their own programs.
+
+### The retention angle: often overlooked, increasingly significant
+
+Most ROI calculations for AI upskilling focus on productivity — time saved, output increased. The retention impact is real but often excluded from the calculation.
+
+LinkedIn's 2025 Workplace Learning Report found that employees who feel their company invests in their development are 3.5x more likely to stay. AI skills are at the top of the list of development investments employees want from employers. In a tight labor market for knowledge workers, the replacement cost of losing a skilled employee — typically 50–200% of annual salary — is often larger than the entire cost of the training investment.
+
+Including realistic retention impact in ROI calculations typically makes the AI upskilling business case stronger, not weaker. An AI program that saves 10 hours per month per trained employee generates modest but real productivity returns. If it also retains one additional senior employee who would otherwise have left, the total ROI may be multiples higher.
+
+### A realistic ROI calculation for a mid-size company
+
+Here's a worked example for a company that sends 20 employees through meaningful AI upskilling (10+ hours of applied training, role-specific, with accountability):
+
+- **Training cost:** $4,000–$10,000 per person (intensive, applied programs) = $80,000–$200,000 total
+
+- **Conservative time savings:** 5 hours per week per trained employee on high-frequency tasks = 100 hours per week across the team
+
+- **Value of time saved:** At $75/hour blended rate = $7,500 per week = $390,000 per year
+
+- **Payback period:** 3–6 months on productivity alone
+
+- **Retention value:** If training retains 1–2 employees who would otherwise have left, add $75,000–$300,000 in avoided replacement costs
+
+These numbers are conservative. They assume modest time savings (5 hours per week is lower than what most intensive programs report) and a low hourly rate. At $100+/hour blended rates and 10+ hours of weekly savings — which is common for senior knowledge workers — the payback period drops to 6–8 weeks.
+
+The caveat: these returns require training that actually changes behavior. Awareness training, lunch-and-learns, and one-hour webinars don't generate these numbers because they don't produce durable workflow change.
+
+### What companies are doing differently in 2026
+
+The companies reporting the strongest AI upskilling ROI in 2026 share a few common approaches that were less common two years ago:
+
+- **Sending cohorts, not individuals.** Team-based programs create peer accountability and shared vocabulary that persists after training ends. Solo training produces isolated adoption that struggles to become team culture.
+
+- **Measuring adoption, not completion.** Companies tracking and reporting on AI tool adoption rates post-training get better results because adoption is what gets managed. What you measure improves.
+
+- **Investing in managers first.** Companies that train managers before individual contributors — and track whether managers are modeling AI use — see significantly higher individual adoption rates.
+
+- **Building internal showcases.** Regular internal demonstrations of how AI has changed real work (not hypotheticals) are one of the most effective organic adoption accelerants. Seeing a colleague's specific before/after is more compelling than any training session.
+
+MakerSquare is a 2-week in-person AI builder program in Austin, TX — built for operators, founders, and professionals who want to build real AI tools, not just use them. Companies sending teams to MakerSquare do so because they want genuine workflow change — not training completion certificates. The 2-week format, with daily applied practice on participants' actual work, consistently crosses the BCG five-hour threshold within the first three days. See what companies are sending teams for at [makersquare.ai/corporate](/corporate).
+
+Frequently asked questions
+
+What is the ROI of AI upskilling programs?
+
+Measured ROI varies significantly by program quality and implementation. BCG research found that employees with more than 5 hours of structured AI training are 25% more likely to be regular AI users, and regular AI users report 20–40% productivity improvements on specific tasks. MIT's 2024 study found AI-assisted workers complete certain tasks 25.1% faster with 40% quality improvements. The ROI calculation depends on hourly rates, task volume, and how effectively training translates to workflow change.
+
+How should companies measure AI upskilling success?
+
+The most reliable metrics: AI tool adoption rate (percentage of employees using AI tools weekly), time saved on specific high-frequency tasks (measured before and after training), output volume and quality on defined work products, and employee confidence self-assessment. Completion rate of training programs and satisfaction scores are leading indicators but not outcomes measures — they don't tell you whether behavior changed.
+
+Why do many AI upskilling programs fail to deliver ROI?
+
+Three structural reasons: training is too generic to apply to specific job functions, programs are too short to build durable habits (one-hour sessions don't change behavior), and there's no accountability or follow-through after the training ends. BCG found that the threshold for regular AI adoption is more than 5 hours of applied, structured practice — most corporate programs don't reach this threshold.
+
+What types of roles see the highest ROI from AI upskilling?
+
+Roles with high volumes of knowledge work — writing, analysis, research, communication, reporting — see the most immediate and measurable ROI. Marketing, sales, finance, HR, legal, and operations roles consistently report the largest time savings and output improvements. Roles with primarily physical, highly interpersonal, or highly technical work see smaller immediate gains.
+
+Keep reading
+
+- [All MakerSquare posts](/blog)
+
+MakerSquare sends teams home with skills they use the next day — not certificates. Two weeks, in-person, Austin TX.
+
+[Download the curriculum](https://www.makersquare.ai/curriculum)
+[Join the AI Builder Brief](https://ai-builder-brief.beehiiv.com/)
+
+Sources
+
+1
+
+[BCG, "AI at Work: The Time Has Come" (2025)](https://www.bcg.com/capabilities/artificial-intelligence/ai-at-work)
+
+bcg.com
+
+2
+
+[Noy & Zhang, "Experimental Evidence on the Productivity Effects of Generative Artificial Intelligence," MIT Working Paper (2024)](https://economics.mit.edu/research/publications)
+
+economics.mit.edu
+
+3
+
+[LinkedIn, "2025 Workplace Learning Report"](https://learning.linkedin.com/resources/workplace-learning-report)
+
+learning.linkedin.com
+
+---
+
 <!-- https://www.makersquare.ai/blog/non-technical-ai-skills-2026 -->
 
-# The Non-Technical AI Skills That Actually Matter in 2026
+# The AI Skills That Actually Matter in 2026
 
 > The AI skills that matter most aren
 
@@ -10407,6 +12005,8 @@ Keep reading
 - [How to pitch AI training to your manager and actually get the budget approved.](/blog/how-to-pitch-ai-training-to-your-manager)
 
 - [Private AI training for your team](/corporate)
+
+Rolling AI out across a team? See MakerSquare's [AI training for teams and employees](/corporate) — custom programs built around your workflows and tools.
 
 MakerSquare runs corporate AI cohorts for teams of 4 to 15. Two weeks, in person in Austin, with a project shipped by the end. If you're evaluating AI training options for your organization, the curriculum outlines exactly what the program covers and how it's structured — or reach out directly to talk through whether it's the right fit.
 

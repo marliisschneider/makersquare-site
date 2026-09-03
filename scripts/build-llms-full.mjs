@@ -23,7 +23,7 @@ const BASE = 'https://www.makersquare.ai';
 const EXCLUDE = new Set([
   '404.html', 'demo-ppc.html', 'demo-ppc-legal.html', 'demo-ppc-pm.html',
   'quickstart-download.html', 'workshop-register.html', 'HANDOFF.html',
-  'privacy.html', 'terms.html', 'pricing.html', 'apply.html',
+  'privacy.html', 'terms.html', 'pricing.html', 'apply.html', 'thank-you.html',
 ]);
 
 // Ordered so the document reads top-down: what it is, then details, then proof.

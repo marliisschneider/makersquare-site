@@ -48,7 +48,7 @@ This site relies on a set of marketing / lead-attribution scripts. They are crit
 
 ### Public pages (the list)
 
-`404.html`, `about.html`, `ai-training-austin.html`, `ai-training-vs-consultants.html`, `alumni.html`, `apply.html`, `case-study-roverpass.html`, `comparison.html`, `corporate.html`, `curriculum.html`, `demo-day.html`, `demo-night.html`, `demo-ppc.html`, `enroll.html`, `faq.html`, `housing.html`, `index.html`, `immersive.html`, `pricing.html`, `privacy.html`, `quickstart.html`, `quickstart-download.html`, `scholarship.html`, `team.html`, `terms.html`, `use-cases.html`, `workshop-register.html`, `workshops.html`
+`404.html`, `about.html`, `ai-training-austin.html`, `ai-training-vs-consultants.html`, `alumni.html`, `apply.html`, `case-study-roverpass.html`, `comparison.html`, `corporate.html`, `curriculum.html`, `demo-day.html`, `demo-night.html`, `demo-ppc.html`, `enroll.html`, `faq.html`, `housing.html`, `index.html`, `immersive.html`, `pricing.html`, `privacy.html`, `quickstart.html`, `quickstart-download.html`, `scholarship.html`, `team.html`, `terms.html`, `thank-you.html`, `use-cases.html`, `workshop-register.html`, `workshops.html`
 
 `HANDOFF.html` is an internal handoff doc — exempt from these rules.
 
@@ -294,6 +294,37 @@ Obsidian vault (strategy docs, workshop plans, email copy): `/Users/marliisschne
 
 `/api/ideas` powers the "What would you build?" generator (homepage, mode=individual) and the instant 3-day team sketch (/corporate, mode=team) via `js/ms-ideas.js` and `[data-ms-ideas]` mount points. Same ANTHROPIC_API_KEY; strict-JSON prompts; both push `ms_ideas_submit` to dataLayer.
 
+
+## Purchase tracking (Sep 2026)
+
+`thank-you.html` (`/thank-you`, noindex) is the post-Stripe landing page and the ONLY place a GA4
+`purchase` event fires. Before it existed there was no sale tracking at all — six live Stripe
+payment links and zero visibility into revenue.
+
+**It only works if each Stripe payment link redirects to it.** In Stripe → Payment links → each
+link → "After payment" → "Redirect customers to your website", set:
+
+| Workshop | Tier | Stripe link ends | Redirect URL |
+|---|---|---|---|
+| Sep 11–13 | Early bird | `...6wE05` | `https://www.makersquare.ai/thank-you?ws=sep-eb&session_id={CHECKOUT_SESSION_ID}` |
+| Sep 11–13 | Regular | `...6wE06` | `https://www.makersquare.ai/thank-you?ws=sep&session_id={CHECKOUT_SESSION_ID}` |
+| Oct 16–18 | Early bird | `...6wE07` | `https://www.makersquare.ai/thank-you?ws=oct-eb&session_id={CHECKOUT_SESSION_ID}` |
+| Oct 16–18 | Regular | `...6wE08` | `https://www.makersquare.ai/thank-you?ws=oct&session_id={CHECKOUT_SESSION_ID}` |
+| Nov 6–8 | Early bird | `...6wE03` | `https://www.makersquare.ai/thank-you?ws=nov-eb&session_id={CHECKOUT_SESSION_ID}` |
+| Nov 6–8 | Regular | `...6wE04` | `https://www.makersquare.ai/thank-you?ws=nov&session_id={CHECKOUT_SESSION_ID}` |
+
+`{CHECKOUT_SESSION_ID}` is substituted by Stripe and becomes the GA4 `transaction_id`. It is also
+the guard: **no `session_id`, no purchase event**, so a bookmark or a bot hitting `/thank-you`
+never fabricates a sale. localStorage additionally blocks a double-fire on refresh.
+
+Prices in the `WORKSHOPS` map at the bottom of the page mirror `workshop-register.html`. Change one,
+change the other. Adding a workshop = a new key there plus a new Stripe redirect.
+
+The page loads its own gtag instance on a separate dataLayer (`l=msdl`, `send_page_view: false`)
+rather than relying on a GTM tag. Deliberate: GTM is delayed-load, so a buyer who closes the tab
+inside 3.5s would never fire the purchase. Do not "simplify" this into a GTM tag.
+
+`purchase` is a locked key event in GA4 — it counts with no further config.
 
 ## Agent readiness (Aug 2026)
 

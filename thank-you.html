@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>You're registered — MakerSquare</title>
+<!-- Google Tag Manager (delayed-load) -->
+<!-- dataLayer is created and gtm.start pushed IMMEDIATELY so queued events are never lost.
+     Only the gtm.js request is deferred: it fires on first user interaction, or after 3500ms,
+     whichever comes first. Do NOT revert to the eager loader - it puts 344KB of JS on the
+     mobile critical path and was measured pushing blog LCP to 6.3s. -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+var done=false,t=null,evts=['scroll','mousemove','mousedown','touchstart','keydown','click'],opts={passive:true,capture:true};
+function load(){if(done)return;done=true;if(t)w.clearTimeout(t);
+for(var k=0;k<evts.length;k++){w.removeEventListener(evts[k],load,opts);}
+var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);}
+for(var k=0;k<evts.length;k++){w.addEventListener(evts[k],load,opts);}
+t=w.setTimeout(load,3500);})(window,document,'script','dataLayer','GTM-MJTW9WQ3');</script>
+<!-- End Google Tag Manager -->
+<script>
+    let hasLogged = false;
+    window.addEventListener('message', function (){
+        try {
+            var debugMode = false;
+            var u = new URL(event.origin);
+            if (u.host === "forms.zohopublic.com") {
+                var evntData = event.data;
+                if( evntData && evntData.constructor == Object ){
+                    var type = evntData.type;
+                    if(type && type == "zf_gtm"){
+                        var zf_payload_data = evntData.payload;
+                        if(Object.keys(zf_payload_data).length > 0){
+                            var n = zf_payload_data.n;
+                            var e = zf_payload_data.e;
+                            var p = zf_payload_data.p;
+                            var f = zf_payload_data.f;
+                            var a = zf_payload_data.a;
+                            var c = zf_payload_data.c;
+                            var d = zf_payload_data.d;
+                            window.dataLayer = window.dataLayer || [];
+                            window.dataLayer.push({'event': e,'zf_category':c,'zf_page':p,'zf_field':f,'zf_action':a,'zf_formname':n,'zf_data':d});
+                        }
+                    }
+                }
+            }
+        } catch(error) {}
+    }, false);
+</script>
+<!-- Zoho UTM passthrough (modificado: incluye fbclid) -->
+<script type="text/javascript">
+function ZFLead(){}
+ZFLead.utmPValObj=ZFLead.utmPValObj||{};
+ZFLead.utmPNameArr=new Array('utm_source','utm_medium','utm_campaign','utm_term','utm_content','fbclid','gclid');
+ZFLead.prototype.zfutm_getLeadVal=function(pName){var qStr='';try{qStr=window.top.location.search.substring(1)}catch(e){qStr=''}var pNameTemp=pName+'=';var pValue='';if(typeof qStr!=="undefined"&&qStr!==null&&qStr.length>0){var begin=qStr.indexOf(pNameTemp);if(begin!=-1){begin=begin+pNameTemp.length;end=qStr.indexOf('&',begin);if(end==-1){end=qStr.length}pValue=decodeURIComponent(qStr.substring(begin,end))}}if(pValue==undefined||pValue==''){pValue=this.zfutm_gC(pName)}return pValue};
+ZFLead.prototype.zfutm_sC=function(paramName,path,domain,secure){var value=ZFLead.utmPValObj[paramName];if(typeof value!=="undefined"&&value!==null){var cookieStr=paramName+"="+encodeURIComponent(value);var exdate=new Date();exdate.setDate(exdate.getDate()+7);cookieStr+="; expires="+exdate.toGMTString();cookieStr+="; path=/";if(domain){cookieStr+="; domain="+encodeURIComponent(domain)}if(secure){cookieStr+="; secure"}document.cookie=cookieStr}};
+ZFLead.prototype.zfutm_ini=function(){for(var i=0;i<ZFLead.utmPNameArr.length;i++){var zf_pN=ZFLead.utmPNameArr[i];var zf_pV=this.zfutm_getLeadVal(zf_pN);if(typeof zf_pV!=="undefined"&&zf_pV!==null){ZFLead.utmPValObj[zf_pN]=zf_pV}}for(var pkey in ZFLead.utmPValObj){this.zfutm_sC(pkey)}};
+ZFLead.prototype.zfutm_gC=function(cookieName){var cookieArr=document.cookie.split('; ');for(var i=0;i<cookieArr.length;i++){var cookieVals=cookieArr[i].split('=');if(cookieVals[0]===cookieName&&cookieVals[1]){return decodeURIComponent(cookieVals[1])}}};
+ZFLead.prototype.zfutm_gC_enc=function(cookieName){var cookieArr=document.cookie.split('; ');for(var i=0;i<cookieArr.length;i++){var cookieVals=cookieArr[i].split('=');if(cookieVals[0]===cookieName&&cookieVals[1]){return cookieVals[1]}}};
+ZFLead.prototype.zfutm_iframeSprt=function(){var zf_frame=document.getElementsByTagName("iframe");for(var i=0;i<zf_frame.length;++i){if((zf_frame[i].src).indexOf('formperma')>0){var zf_src=zf_frame[i].src;for(var prmIdx=0;prmIdx<ZFLead.utmPNameArr.length;prmIdx++){var utmPm=ZFLead.utmPNameArr[prmIdx];var utmPmregex=new RegExp("[?&]"+utmPm+"=");if(!utmPmregex.test(zf_src)){var utmVal=this.zfutm_gC_enc(ZFLead.utmPNameArr[prmIdx]);if(typeof utmVal!=="undefined"){if(zf_src.indexOf('?')>0){zf_src=zf_src+'&'+utmPm+'='+utmVal}else{zf_src=zf_src+'?'+utmPm+'='+utmVal}}}}if(zf_frame[i].src.length<zf_src.length){zf_frame[i].src=zf_src}}}};
+ZFLead.prototype.zfutm_DHtmlSprt=function(){var zf_formsArr=document.forms;for(var frmInd=0;frmInd<zf_formsArr.length;frmInd++){var zf_form_act=zf_formsArr[frmInd].action;if(zf_form_act&&zf_form_act.indexOf('formperma')>0){for(var prmIdx=0;prmIdx<ZFLead.utmPNameArr.length;prmIdx++){var utmPm=ZFLead.utmPNameArr[prmIdx];var utmVal=this.zfutm_gC(ZFLead.utmPNameArr[prmIdx]);if(typeof utmVal!=="undefined"){var fieldObj=zf_formsArr[frmInd][utmPm];if(fieldObj){fieldObj.value=utmVal}}}}}};
+ZFLead.prototype.zfutm_jsEmbedSprt=function(id){document.getElementById('zforms_iframe_id').removeAttribute("onload");var jsEmbdFrm=document.getElementById("zforms_iframe_id");var embdSrc=jsEmbdFrm.src;for(var prmIdx=0;prmIdx<ZFLead.utmPNameArr.length;prmIdx++){var utmPm=ZFLead.utmPNameArr[prmIdx];var utmVal=this.zfutm_gC_enc(ZFLead.utmPNameArr[prmIdx]);if(typeof utmVal!=="undefined"){if(embdSrc.indexOf('?')>0){embdSrc=embdSrc+'&'+utmPm+'='+utmVal}else{embdSrc=embdSrc+'?'+utmPm+'='+utmVal}}}jsEmbdFrm.src=embdSrc};
+var zfutm_zfLead=new ZFLead();
+zfutm_zfLead.zfutm_ini();
+if(document.readyState=="complete"){zfutm_zfLead.zfutm_iframeSprt();zfutm_zfLead.zfutm_DHtmlSprt()}else{window.addEventListener('load',function(){zfutm_zfLead.zfutm_iframeSprt();zfutm_zfLead.zfutm_DHtmlSprt()},false)}
+</script>
+
+<!-- ────────────────────────────────────────────────────────────────────────
+     GA4 purchase tracking.
+
+     Loaded as its OWN gtag instance on a separate dataLayer (l=msdl) so it
+     cannot collide with the GTM container on window.dataLayer. send_page_view
+     is false because GTM's GA4 config already sends the page_view; without
+     that flag this page would double-count.
+
+     Loading gtag directly (rather than relying on a GTM tag) is deliberate:
+     GTM is delayed-load on this site, so a buyer who closes the tab inside
+     3.5s would never fire the purchase. This fires immediately.
+     ──────────────────────────────────────────────────────────────────────── -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PYX8ZYYW7E&l=msdl"></script>
+<script>
+window.msdl = window.msdl || [];
+function msgtag(){ msdl.push(arguments); }
+msgtag('js', new Date());
+msgtag('config', 'G-PYX8ZYYW7E', { send_page_view: false });
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://forms.zoho.com">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fustat:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fustat:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap"></noscript>
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #181849;
+  color: #fff;
+  min-height: 100vh;
+  padding: 32px 20px 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo { display: block; margin-bottom: 56px; }
+.wrap { width: 100%; max-width: 560px; }
+.tick {
+  width: 52px; height: 52px; border-radius: 50%;
+  background: #403DD8; color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.5rem; margin-bottom: 24px;
+}
+h1 {
+  font-family: 'Fustat', -apple-system, sans-serif;
+  font-weight: 800; font-size: clamp(2rem, 5vw, 2.6rem);
+  letter-spacing: -0.03em; line-height: 1.1; margin-bottom: 14px;
+}
+.sub { color: rgba(255,255,255,0.6); font-size: 1.02rem; line-height: 1.65; margin-bottom: 36px; }
+.detail {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 14px; padding: 24px; margin-bottom: 36px;
+}
+.detail-eyebrow {
+  font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em;
+  text-transform: uppercase; color: #81AAFB; margin-bottom: 10px;
+}
+.detail-title {
+  font-family: 'Fustat', sans-serif; font-weight: 700;
+  font-size: 1.3rem; letter-spacing: -0.02em; margin-bottom: 6px;
+}
+.detail-when { color: rgba(255,255,255,0.55); font-size: 0.92rem; }
+h2 {
+  font-family: 'Fustat', sans-serif; font-weight: 700;
+  font-size: 1.05rem; margin-bottom: 16px;
+}
+ol { list-style: none; counter-reset: s; margin-bottom: 40px; }
+ol li {
+  counter-increment: s; position: relative; padding-left: 38px;
+  margin-bottom: 18px; color: rgba(255,255,255,0.7);
+  font-size: 0.95rem; line-height: 1.6;
+}
+ol li::before {
+  content: counter(s); position: absolute; left: 0; top: -1px;
+  width: 24px; height: 24px; border-radius: 50%;
+  background: rgba(129,170,251,0.15); color: #81AAFB;
+  font-size: 0.75rem; font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+}
+.foot {
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding-top: 24px; color: rgba(255,255,255,0.4);
+  font-size: 0.85rem; line-height: 1.7;
+}
+.foot a { color: #81AAFB; text-decoration: none; }
+.foot a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJTW9WQ3"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<a class="logo" href="https://www.makersquare.ai"><img src="logo-light.webp" alt="MakerSquare" style="height:32px;width:auto;" width="348" height="90"></a>
+
+<div class="wrap">
+  <div class="tick">&#10003;</div>
+  <h1>You're in.</h1>
+  <p class="sub" id="sub">Your seat is confirmed. A receipt is on its way from Stripe, and we'll follow up by email with everything you need before the first morning.</p>
+
+  <div class="detail" id="detail" style="display:none;">
+    <div class="detail-eyebrow" id="d-eyebrow">Your workshop</div>
+    <div class="detail-title" id="d-title"></div>
+    <div class="detail-when" id="d-when"></div>
+  </div>
+
+  <h2>What happens next</h2>
+  <ol>
+    <li>A confirmation and receipt land in your inbox within a few minutes. If you don't see it, check spam for <strong>makersquare.ai</strong>.</li>
+    <li>About a week out, we'll send the pre-work: the accounts to set up and the tools to install, so day one starts with building instead of setup.</li>
+    <li>Bring a laptop and something from your own work you'd like to automate. The best projects come from real problems.</li>
+  </ol>
+
+  <div class="foot">
+    Questions before then? Email <a href="mailto:hello@makersquare.ai">hello@makersquare.ai</a> and we'll reply the same day.<br>
+    <a href="https://www.makersquare.ai">Back to makersquare.ai</a>
+  </div>
+</div>
+
+<script src="https://forms.zoho.com/js/zf_gclid.js"></script>
+
+<script>
+/* ──────────────────────────────────────────────────────────────────────────
+   Workshop catalogue. Keys are the ?ws= slug set in each Stripe payment
+   link's "After payment" redirect. Prices mirror workshop-register.html —
+   if a price changes there, change it here too.
+   ────────────────────────────────────────────────────────────────────────── */
+var WORKSHOPS = {
+  'sep-eb': { id: 'WS-SEP-2026', name: 'Build Your First AI Agent',   when: 'September 11–13, 2026 · Austin, TX', value: 999,  tier: 'Early bird' },
+  'sep':    { id: 'WS-SEP-2026', name: 'Build Your First AI Agent',   when: 'September 11–13, 2026 · Austin, TX', value: 1199, tier: 'Regular'    },
+  'oct-eb': { id: 'WS-OCT-2026', name: 'Automate Your Ops with AI',   when: 'October 16–18, 2026 · Austin, TX',   value: 999,  tier: 'Early bird' },
+  'oct':    { id: 'WS-OCT-2026', name: 'Automate Your Ops with AI',   when: 'October 16–18, 2026 · Austin, TX',   value: 1199, tier: 'Regular'    },
+  'nov-eb': { id: 'WS-NOV-2026', name: 'Build Your First App with AI', when: 'November 6–8, 2026 · Austin, TX',   value: 999,  tier: 'Early bird' },
+  'nov':    { id: 'WS-NOV-2026', name: 'Build Your First App with AI', when: 'November 6–8, 2026 · Austin, TX',   value: 1199, tier: 'Regular'    }
+};
+
+(function () {
+  var q   = new URLSearchParams(window.location.search);
+  var ws  = q.get('ws');
+  var sid = q.get('session_id');
+  var w   = ws ? WORKSHOPS[ws] : null;
+
+  if (w) {
+    document.getElementById('d-title').textContent   = w.name;
+    document.getElementById('d-when').textContent    = w.when;
+    document.getElementById('d-eyebrow').textContent = w.tier + ' · seat confirmed';
+    document.getElementById('detail').style.display  = '';
+    document.title = "You're registered: " + w.name + ' — MakerSquare';
+  }
+
+  /* Only count a purchase when Stripe handed us a real session id. A bare
+     visit to /thank-you (bookmark, bot, shared link) must not fire one.
+     session_id also dedupes a refresh: GA4 ignores a repeated
+     transaction_id, and localStorage stops us sending it twice at all. */
+  if (!w || !sid) return;
+
+  var seen = 'ms_purchase_' + sid;
+  try { if (window.localStorage && window.localStorage.getItem(seen)) return; } catch (e) {}
+
+  var payload = {
+    transaction_id: sid,
+    value: w.value,
+    currency: 'USD',
+    items: [{
+      item_id: w.id,
+      item_name: w.name,
+      item_category: 'Workshop',
+      item_variant: w.tier,
+      price: w.value,
+      quantity: 1
+    }]
+  };
+
+  if (typeof msgtag === 'function') msgtag('event', 'purchase', payload);
+
+  /* Mirrored onto the GTM dataLayer so a Meta/LinkedIn conversion tag can be
+     added later without touching this page. */
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push(Object.assign({ event: 'ms_purchase', workshop: w.id, tier: w.tier }, payload));
+
+  try { if (window.localStorage) window.localStorage.setItem(seen, '1'); } catch (e) {}
+})();
+</script>
+</body>
+</html>
