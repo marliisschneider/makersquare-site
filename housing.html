@@ -387,10 +387,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <!-- Lightbox -->
     <div class="lightbox" id="lightbox" onclick="closeLightboxOutside(event)">
-      <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
-      <button class="lightbox-prev" onclick="shiftLightbox(-1)">&lsaquo;</button>
+      <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close image viewer">&times;</button>
+      <button class="lightbox-prev" onclick="shiftLightbox(-1)" aria-label="Previous image">&lsaquo;</button>
       <img loading="lazy" class="lightbox-img" id="lightboxImg" src="" alt="">
-      <button class="lightbox-next" onclick="shiftLightbox(1)">&rsaquo;</button>
+      <button class="lightbox-next" onclick="shiftLightbox(1)" aria-label="Next image">&rsaquo;</button>
     </div>
   </div>
 </section>
