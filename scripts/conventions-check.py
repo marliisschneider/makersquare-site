@@ -78,6 +78,13 @@ for p in pages():
         if re.search(r'\bwidth=', img) and re.search(r'\bheight=', img): continue
         bucket = errors if p.startswith(('blog/', 'guides/')) else warns
         bucket.append((p, f"img without width/height: {img[:70]}"))
+    # <div> balance. The auto-publisher pasted the second Keep-reading cluster <ul>
+    # after post-related's closing </div>, leaving 8 posts off by one (2026-09) —
+    # a stray/missing <div> silently reflows the CTA + sources out of post-body.
+    opens, closes = len(re.findall(r'<div\b', h)), len(re.findall(r'</div>', h))
+    if opens != closes:
+        bucket = errors if p.startswith(('blog/', 'guides/')) else warns
+        bucket.append((p, f"unbalanced <div>: {opens} open vs {closes} close"))
 
 for p in posts():
     h = open(p).read()
