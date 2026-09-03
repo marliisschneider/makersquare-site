@@ -939,6 +939,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </section>
 
 
+<style>
+/* The guarantee pill uses a 100px radius, which only reads correctly on one
+   line. Below ~520px it wraps, so soften the radius and top-align the shield
+   so a two-line wrap looks like a deliberate callout, not a stretched capsule. */
+.ms-guarantee { text-align: left; }
+@media (max-width: 520px) {
+  .ms-guarantee { font-size: 0.82rem !important; padding: 10px 16px !important; border-radius: 14px !important; align-items: flex-start !important; }
+  .ms-guarantee svg { margin-top: 2px; }
+}
+</style>
 <section class="section section--dark" style="padding:120px 0;">
   <div class="container">
     <div class="cta-final">
@@ -965,8 +975,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div style="font-size:0.65rem;color:rgba(255,255,255,0.4);text-transform:uppercase;letter-spacing:0.1em;margin-top:4px;">sec</div>
         </div>
       </div>
-      <p class="reveal">Stop reading about AI. In 2 weeks you'll have a live website, a working agent, and an automated workflow running, a Demo Day under your belt, and a skill set you own for life.</p>
-      <div class="reveal" style="margin-bottom:var(--s4);display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.18);border-radius:100px;padding:12px 24px;font-size:0.9rem;color:rgba(255,255,255,0.9);font-weight:500;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Guaranteed: leave with a live website, a working AI agent, and an automated workflow &mdash; or a full refund.</div>
+      <p class="reveal" style="text-wrap:balance;margin-bottom:var(--s6);">Stop reading about AI. In 2 weeks you'll have a live website, a working agent, and an automated workflow running, a Demo Day under your belt, and a skill set you own for life.</p>
+      <div class="reveal ms-guarantee" style="margin:0 auto var(--s5);display:inline-flex;align-items:center;gap:9px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.18);border-radius:100px;padding:11px 22px;font-size:0.9rem;line-height:1.4;color:rgba(255,255,255,0.9);font-weight:500;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" style="flex-shrink:0;"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span>Guaranteed: ship all three &mdash; or a full refund.</span></div>
       <div class="reveal"><button type="button" class="btn btn-primary btn-lg btn-arrow" data-lt-trigger style="font-size:1.05rem;">Schedule An Intro Call</button></div>
       <div class="cta-details reveal"><!--COHORT:startLong-->January 11, 2027<!--/--> &middot; Austin, TX &middot; $3,999 &middot; 2 weeks</div>
     </div>
