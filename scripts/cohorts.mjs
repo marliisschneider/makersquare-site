@@ -109,7 +109,7 @@ function stampSingleInstance(src) {
 }
 
 // --- 1. single-instance schema pages --------------------------------------
-for (const f of ['index.html', 'pricing.html', 'curriculum.html', 'scholarship.html']) {
+for (const f of ['index.html', 'immersive.html', 'pricing.html', 'curriculum.html', 'scholarship.html']) {
   edit(f, stampSingleInstance);
 }
 
