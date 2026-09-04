@@ -63,9 +63,9 @@ Site · agent · workflow
 
 ### Can’t do two weeks? Give it a weekend.
 
-Sep early bird $999 — ends Aug 30
+Sep 11–13 · $1,199 · Austin
 
-[Next up · Sep 11–13 Build Your First AI Agent Leave with a working agent on your own data, running on a schedule. Early bird $999 — ends Aug 30 →](/workshops)
+[Next up · Sep 11–13 Build Your First AI Agent Leave with a working agent on your own data, running on a schedule. $1,199 · Sep 11–13 →](/workshops)
 [Oct 16–18 Automate Your Ops with AI The recurring work — reports, documents, inbox — stops being manual. Early bird $999 — ends Sep 25 →](/workshops)
 [Nov 6–8 Build Your First App with AI Idea to live app with a real database — vibe coding, done properly. Early bird $999 — ends Oct 16 →](/workshops)
 
@@ -217,7 +217,7 @@ If you can describe the product clearly, you can ship the first version yourself
 
 Not the right fit if…
 
-— You're after a certificate, not working tools
+— You want a credential to frame, not skills you'll use
 — You want self-paced videos, not a room full of builders
 — Two full weeks in Austin isn't possible right now
 — You'd rather study the theory than ship
@@ -286,7 +286,7 @@ One sentence about your work — and Claude sketches three tools you could reali
 
 # 2-Week AI Bootcamp in Austin for Non-Technical Professionals
 
-> Two weeks in person at Capital Factory in Austin, TX. Ship 3 working AI products by Demo Day, no coding background needed. $3,999, small cohorts.
+> Two weeks in person at Capital Factory in Austin, TX. Build a live website, an AI agent, and an automated workflow by Demo Day, no coding background needed. $3,999, small cohorts.
 
 Cohort 3 · Jan 11 · Austin, TX
 
@@ -336,7 +336,7 @@ Two full weeks off the grid. 9am to 3pm in Austin. Ship real, working AI tools. 
 
 #### Deployed AI Tools
 
-You leave with live AI tools you built yourself. Not exercises. Not a certificate. Real things you can show, sell, or put to work.
+You leave with live AI tools you built yourself. Not exercises. More than a certificate. Real things you can show, sell, or put to work.
 
 #### No Technical Background Needed
 
@@ -460,7 +460,7 @@ Not the right fit if…
 
 Why full immersion
 
-### Not a certificate course. An actual transformation.
+### Not just a certificate. Working tools you actually own.
 
 We get it — 2 weeks is a real commitment. Here's why the immersion pays for itself, and why it's less disruptive than it sounds.
 
@@ -468,7 +468,7 @@ We get it — 2 weeks is a real commitment. Here's why the immersion pays for it
 
 Most "AI programs" are webinars with homework. You leave with buzzwords and nothing working. Real skill is layered — each day builds on the last. Two weeks of full focus is what turns "I've heard of Claude" into "I just shipped this."
 
-The 2 weeks makes you the person who builds — three shipped products, and the skill to keep going.
+The 2 weeks makes you the person who builds — a live website, an AI agent, and an automated workflow, and the skill to keep going.
 
 #### You're not taking 2 weeks off work.
 
@@ -528,7 +528,7 @@ Enrollment Open · Cohort 3 · Jan 11
 
 Cohort 3 · Jan 11 · Austin, TX
 
-Enrollment open — 15 spots, first-come first-served.
+Enrollment open — small cohort, first-come, first-served.
 
 $5,999, discounted to $3,999
 
@@ -635,7 +635,7 @@ sec
 
 Stop reading about AI. In 2 weeks you'll have a live website, a working agent, and an automated workflow running, a Demo Day under your belt, and a skill set you own for life.
 
-Guaranteed: leave with a live website, a working AI agent, and an automated workflow — or a full refund.
+Guaranteed: ship all three — or a full refund.
 
 Schedule An Intro Call
 
@@ -665,7 +665,7 @@ Can my employer pay? Yes. We issue invoices and can provide a proposal letter fo
 
 ### Cohort 3 starts Jan 11. Enrollment closes January 4.
 
-Or come see it first — Demo Day is Fri Jul 17 at Capital Factory, free.
+Or come see it first — Demo Day is Fri Jan 22 at Capital Factory, free.
 
 Schedule An Intro Call
 [RSVP for Demo Day](/demo-day)
@@ -936,7 +936,7 @@ Text-to-speech
 
 #### Real, working tools. Two weeks. Ship something real.
 
-Next cohort: July 6 to 17, 2026. Austin, TX. small cohorts.
+Next cohort: January 11, 2027. Austin, TX. Small cohorts.
 
 Schedule An Intro Call
 
@@ -944,7 +944,7 @@ Coming Soon
 
 ### Can’t take two full weeks off?
 
-A **4-week part-time format**. Fridays plus weekends. Same curriculum. Same three shipped products. Same public Demo Day, built around your work schedule.
+A **4-week part-time format**. Fridays plus weekends. Same curriculum. Same three builds — a live site, an AI agent, an automated workflow. Same public Demo Day, built around your work schedule.
 
 Fri / Sat / Sun, 4 weeks
 Same Demo Day
@@ -1130,7 +1130,7 @@ Sep 11 – 13, 2026
 
 Build Your First AI Agent
 
-Early Bird $999 — ends Aug 30
+$1,199 — enroll now
 
 October
 
@@ -1229,11 +1229,11 @@ Hours
 
 Mins
 
-⏱ until the $999 early bird ends (Aug 30)
+⏱ until the workshop begins (Sep 11)
 
-$999
+$1,199
 
-$1,199 after Aug 30
+3 days · Fri–Sun
 
 ✓ Your first agent deployed on a schedule — by 5pm Day 1
 
@@ -1272,11 +1272,11 @@ Claude Code Claude API Composio GitHub Actions Exa
 
 - A working agent solving your actual problem, demoed on Day 3
 
-Early bird until Aug 30
+Sep 11–13, 2026
 
-$999
+$1,199
 
-$1,199 after Aug 30
+Fri–Sun · Austin TX
 
 [Reserve](https://forms.zohopublic.com/makersquare/form/WorkshopInterestForm/formperma/AYsoiXxKUM7vU5-RS8YLyYj2rwosDB-qYvE7A6z6zV0)
 
@@ -1531,7 +1531,7 @@ And at the end, you’d have a report explaining what’s possible. Not a workin
 For $999, you sit in a room for 3 days and actually build the thing. With your data. With a real instructor. You leave knowing how to do it yourself — and that skill compounds every day after.
 
 [Reserve a seat — from $999](https://forms.zohopublic.com/makersquare/form/WorkshopInterestForm/formperma/AYsoiXxKUM7vU5-RS8YLyYj2rwosDB-qYvE7A6z6zV0)
-Early bird ends Aug 30 · Invoice available on request
+Invoice available on request
 
 Pricing
 
@@ -1606,7 +1606,7 @@ FAQ
 
 ### Questions people ask before booking.
 
-Why should I do this now and not wait? Because the gap between people who can use AI and people who can’t is widening every month — not every year. The ops manager or founder who learns this in September has a head start on everyone who waits until next year. Also: early bird pricing closes Aug 30 for the AI Agent workshop. Same seats, same instructor — $200 more after that.
+Why should I do this now and not wait? Because the gap between people who can use AI and people who can’t is widening every month — not every year. The ops manager or founder who learns this in September has a head start on everyone who waits until next year. The AI Agent workshop runs Sep 11–13, and the group is deliberately small — once the seats go, the next one is October.
 
 Which AI workshops are running in Austin in fall 2026? Three 3-day intensives in downtown Austin (Capital Factory / Station Austin, 701 Brazos St): **Build Your First AI Agent** Sep 11–13, **Automate Your Ops with AI** Oct 16–18, and **Build Your First App with AI** Nov 6–8. All Fri–Sun, 9am–4pm. Early bird $999, regular $1,199.
 
@@ -1632,9 +1632,9 @@ The **2-week MakerSquare program** is the full build — 3 complete AI products,
 
 Don’t miss the early bird
 
-### Build Your First AI Agent — Sep 11–13. $999 early bird closes Aug 30.
+### Build Your First AI Agent — Sep 11–13. Three days. One working agent.
 
-Small cohort. After Aug 30 it’s $1,199. After it sells out, it’s gone. 3 days in Austin — you leave with a working AI agent that runs without you.
+Small cohort, $1,199. After it sells out, it’s gone. 3 days in Austin — you leave with a working AI agent that runs without you.
 
 [Reserve my seat — $999](https://forms.zohopublic.com/makersquare/form/WorkshopInterestForm/formperma/AYsoiXxKUM7vU5-RS8YLyYj2rwosDB-qYvE7A6z6zV0)
 [Have a question? Email us](mailto:hello@makersquare.ai)
@@ -2037,7 +2037,7 @@ Prefer to talk it through now? Book a 15-minute call →
 
 Enroll
 
-## Enrollment is open. Seats are limited.
+## Enrollment is open. Small cohort, first-come, first-served.
 
 Pick a cohort, fill out a short form, and pay full tuition via Stripe. You'll leave with a live website, a working AI agent, and an automated workflow — deployed by Day 14 — or we refund you in full. Confirmation within 24 hours.
 
@@ -2328,7 +2328,7 @@ Limited · 3 spots available
 
 We're offering 3 full scholarships — $4,000 completely free — for people who were laid off in the last 6 months. AI is changing every role. People who learn it now will be ahead.
 
-Apply now
+Secure Your Spot
 
 $4,000
 
@@ -2719,7 +2719,7 @@ MakerSquare is the only multi-week in-person AI builder program currently availa
 
 #### When does the next cohort start?
 
-Cohort 2 starts August 3, 2026. MakerSquare runs 4 cohorts in 2026, from July through December. [See the full schedule →](/enroll)
+Cohort 3 starts January 11, 2027. [See the full schedule →](/enroll)
 
 #### How many people are in each cohort?
 
@@ -2815,7 +2815,7 @@ Pre-work before the program (4 tasks, about 1–1.5 hours): set up your accounts
 
 #### What is Demo Day?
 
-Demo Day is the public event that closes every MakerSquare cohort, held on the Friday evening of Week 2. Each builder presents their capstone AI product live to an audience of Austin's tech community — seed-stage investors, operators, and builders. 5-minute live demos with real feedback. It's free to attend and open to the public. The first Demo Day is July 17, 2026. [Learn about Demo Day →](/demo-day)
+Demo Day is the public event that closes every MakerSquare cohort, held on the Friday evening of Week 2. Each builder presents their capstone AI product live to an audience of Austin's tech community — seed-stage investors, operators, and builders. 5-minute live demos with real feedback. It's free to attend and open to the public. The next Demo Day is January 22, 2027. [Learn about Demo Day →](/demo-day)
 
 Logistics
 
@@ -2847,7 +2847,7 @@ Yes. MakerSquare issues a certificate of completion that is shareable on LinkedI
 
 #### What's the alumni network like?
 
-All MakerSquare graduates get lifetime access to the alumni Slack, where builders across cohorts share what they're building, swap resources, and find collaborators. The cohort itself — a small cohort who spent 2 weeks in the same room, shipping together — tends to stay tight. Cohort 1 graduates in July 2026.
+All MakerSquare graduates get lifetime access to the alumni Slack, where builders across cohorts share what they're building, swap resources, and find collaborators. The cohort itself — a small cohort who spent 2 weeks in the same room, shipping together — tends to stay tight.
 
 #### Will this help me get a job in AI?
 
@@ -2889,7 +2889,7 @@ There are more AI training programs launching every month. This page gives you a
 | What you ship | No deployed products | Certificate, no live product | Portfolio project, varies | 1 project, may not be live | Certificate, no live product | a live website, a working AI agent, and an automated workflow — deployed |
 | Hands-on building | Strategy & theory focused | Some labs, mostly theory | Mixed — lectures + exercises | Mixed, depends on course | Case studies & assignments | Hands-on from Day 1 |
 | No coding required | Business audience, minimal code | Python basics often required | Programming prerequisites vary | Varies by course | Varies by course | Never. Domain expertise is the edge. |
-| Cohort size | Executive group, ~20–40 | Online, varies widely | Online, ~20–50 | Online, ~20–80 | Online, varies widely | 15 people, in the room |
+| Cohort size | Executive group, ~20–40 | Online, varies widely | Online, ~20–50 | Online, ~20–80 | Online, varies widely | a small cohort, in the room |
 | Curriculum freshness | Updated periodically | Updated by semester | Updated infrequently | Fixed per cohort | Updated by intake | Updated every cohort |
 | Public Demo Day | No | No | No | No | No | Yes — Austin tech community |
 | Austin tech network | No | No | No | No | No | In-person, builders & operators |
@@ -3049,7 +3049,7 @@ The core difference
 
 #### Online AI courses have a ~5% completion rate. That's not a motivation problem.
 
-It's a structure problem. When there's no room to show up to, no cohort in the same city, and no consequence for skipping Tuesday's session — most people skip. The content is often fine. The format fails them. In-person with 14 other people who paid real money to be there is a different experience at a structural level.
+It's a structure problem. When there's no room to show up to, no cohort in the same city, and no consequence for skipping Tuesday's session — most people skip. The content is often fine. The format fails them. In-person with a dozen other people who paid real money to be there is a different experience at a structural level.
 
 #### AI skills compound daily. Space them out and you restart every week.
 
@@ -3059,7 +3059,7 @@ What you learn on Day 4 builds directly on Day 3. Stretch that over 12 weeks wit
 
 MakerSquare guarantees that every student leaves with a live website, a working AI agent, and an automated workflow — deployed live on the internet — not exercises, not wireframes, not certificates. If you complete the 2 weeks and don't have working AI tools deployed, you get a full refund. No other program in this comparison ties their money-back guarantee to a specific shipped outcome. That's how confident we are in the format.
 
-#### Cohort 1 starts July 6, 2026. $3,999. Small cohorts. Open enrollment.
+#### Cohort 3 starts January 11, 2027. $3,999. Small cohorts. Open enrollment.
 
 In-person, Austin TX. You leave with a live website, a working AI agent, and an automated workflow — or a full refund. No coding background required.
 
@@ -3520,7 +3520,7 @@ Your turn
 Every use case on this page was built by someone who came in knowing their field, not knowing how to code. 2 weeks later, they shipped real products.
 
 Schedule An Intro Call
-Next cohort: July 6, 2026 · Austin, TX · small cohorts · $3,999
+Next cohort: January 11, 2027 · Austin, TX · small cohorts · $3,999
 
 ---
 
@@ -3654,7 +3654,7 @@ cohorts in 2026
 
 Ready to build?
 
-### Cohort 1 starts July 6, 2026. Enrollment closes June 26.
+### Cohort 3 starts January 11, 2027. Enrollment closes January 4.
 
 No coding test. No interview. Confirmed in 24 hours. Pay full tuition via Stripe.
 
@@ -3922,7 +3922,7 @@ Want to be on stage?
 
 ### The next Demo Day is July 17, 2026.
 
-Cohort 1 starts July 6. small cohorts. Free to attend.
+Cohort 3 starts Jan 11. Small cohorts. Free to attend.
 
 Schedule An Intro Call
 [See the curriculum](/curriculum)
@@ -4020,7 +4020,7 @@ Everyone is talking about AI. Almost no one outside of engineering can demonstra
 
 Join them
 
-### Cohort 1 starts July 6, 2026. Applications now open.
+### Cohort 3 starts January 11, 2027. Enrollment open.
 
 small cohorts. No interview. Confirmed in 24 hours.
 
@@ -4043,7 +4043,7 @@ AI Training · Austin, TX
 
 Most AI classes in Austin teach you to use tools. Ours teaches you to build systems — in person, hands-on, on your own real work. It's less a lecture series and more Austin's AI school for people who'd rather build than watch: you leave with a live website, a working AI agent, and an automated workflow. Deployed, not theoretical.
 
-Next cohort: Jan 11, 2026
+Next cohort: January 11, 2027
 In person · Downtown Austin
 No coding background needed
 
@@ -4369,13 +4369,13 @@ Schedule An Intro Call
 
 > $150 off for tonight
 
-Demo Night offer expires Friday, August 21 at midnight — don't lose your discount.
+Tonight's attendees — use code DEMO150 at checkout for $150 off.
 
 For tonight's attendees only
 
 ## You saw it tonight. Claim your $150 off.
 
-For tonight’s attendees — use code **DEMO150** at checkout. Expires **Fri, Aug 21**.
+For tonight’s attendees — use code **DEMO150** at checkout.
 
 [Next up · Sep 11–13 Build Your First AI Agent 3-day weekend workshop $999 $849 Reserve a seat →](/workshop-register)
 [Oct 16–18 Automate Your Ops with AI 3-day weekend workshop $999 $849 Reserve a seat →](/workshop-register)
@@ -4451,7 +4451,7 @@ The 2-week program · what's included
 
 ### Ready to claim your $150 off?
 
-You've already done the hardest part — showing up to see if it's real. It is. Pick your path and use code DEMO150 before Friday, August 21.
+You've already done the hardest part — showing up to see if it's real. It is. Pick your path and use code DEMO150 at checkout.
 
 Promo code
 
@@ -4462,7 +4462,7 @@ Click to copy
 [Reserve a weekend workshop — $849](/workshop-register)
 [Enroll in the 2-week — $3,849](/enroll)
 
-Offer expires Friday, August 21 at midnight · $150 off with DEMO150
+$150 off with code DEMO150 at checkout
 
 ---
 
@@ -4538,19 +4538,7 @@ Free AI demo nights, builder happy hours, and Demo Days — open to the Austin c
 ![MakerSquare demo night audience at Celis Brewery, Austin](images/events/demo-night-0985.jpg)
 July demo night at Celis Brewery — live demos, full room
 
-[Free · Upcoming](/drinks-and-ai)
-
-Fri, July 17 · 6:00–8:00 PM
-
-### Drinks & AI: Free Live Demos + Builder Networking
-
-Free drinks, live AI product demos by non-coders, and open networking with Austin's builder crowd. Part demo night, part happy hour.
-
-📍 Capital Factory · 701 Brazos St, Austin, TX
-
-[RSVP Free](/drinks-and-ai)
-
-More events coming soon — [follow us on Meetup](https://www.meetup.com/makersquare-ai/) to hear first.
+No public events on the calendar right now — [follow us on Meetup](https://www.meetup.com/makersquare-ai/) to hear about the next demo night first.
 
 ---
 
@@ -7549,6 +7537,113 @@ Omnibound · 2026 · ~60% of searches are zero-click; AI-referred traffic grew 2
 [SEO, AEO, and GEO Statistics for 2026](https://socioapt.com/blog/seo-aeo-and-geo-statistics/)
 
 Socioapt · 2026 · Data on AI citation, entity-based optimization, and brand visibility in AI answers
+
+---
+
+<!-- https://www.makersquare.ai/blog/ai-for-teachers -->
+
+# AI for Teachers: Less Prep, More Teaching | MakerSquare
+
+> AI for teachers in 2026 is cutting hours off lesson planning, grading, and parent communication - so teachers can spend more time actually teaching. Here
+
+[← Blog](/blog)
+
+AI at Work
+
+## AI for Teachers: Less Prep, More Teaching
+
+Marliis Schneider
+
+September 3, 2026
+
+5 min read
+
+![AI for Teachers: Less Prep, More Teaching](../images/blog/ai-for-teachers-og.webp)
+
+Key takeaways
+
+- Teacher adoption of AI nearly doubled in a year - from 32% in 2024 to 61% in 2025 - with K-12 teachers (83%) far ahead of higher-ed faculty (22%).
+
+- The biggest wins are in prep, not teaching: lesson planning (38%), classroom materials (37%), and drafting parent communications are the most common uses.
+
+- Teachers report quality improvements from 57% (grading and feedback) to 74% (administrative work) - and most reinvest the saved time into individualized student feedback.
+
+- The point isn't to automate teaching. It's to automate the hours around teaching so there are more of them left for the part only a teacher can do.
+
+Teaching has always come with a second, invisible job: the hours of planning, grading, and paperwork that happen after the students go home. That's exactly where AI for teachers is landing in 2026 - not in the classroom itself, but in the prep and admin around it. The direct answer: AI saves teachers the most time on lesson planning, generating classroom materials, grading support, and parent communication, and the best teachers are using those recovered hours to give students more individual attention, not less.
+
+### Adoption nearly doubled in a single year
+
+The shift has been fast. Teacher adoption of AI jumped from 32% in 2024 to 61% in 2025 - a 29-point increase in one year. And it's concentrated where the workload is heaviest: 83% of K-12 teachers now use AI tools, compared to 22% of higher-education faculty. This is no longer an early-adopter story. For most K-12 teachers, using AI for prep has quietly become normal.
+
+### Where the time actually goes back
+
+The most common uses tell you exactly where the hours are: research and content gathering (44%), creating lesson plans (38%), summarizing information (38%), and generating classroom materials (37%). Underneath the headline number, teachers most often reach for AI to brainstorm lesson ideas and to create or update lesson plans - the recurring, time-consuming prep that used to eat evenings and weekends.
+
+And the quality holds up. Teachers report quality improvements ranging from 57% for grading and feedback to 74% for administrative work, with 16% or fewer saying quality dropped. In other words, for most teachers this isn't a trade of quality for speed - it's both.
+
+### The part that matters: what the saved time buys
+
+Here's the number that should shape how schools think about this. When teachers save time with AI, they overwhelmingly reinvest it into individualized student feedback, more tailored lessons, parent communication, and - not trivially - their own work-life balance. The saved hours aren't disappearing into 'efficiency.' They're going back into the human parts of teaching that a tool can't do and that teachers rarely had enough time for.
+
+That's the whole case for AI in teaching, and it's a genuinely good one: automate the drafting and the paperwork so there's more of the teacher left for the students. The technology handles the first draft of the worksheet; the teacher handles the kid who's struggling with it.
+
+### What this means for teachers building AI skills
+
+The teachers getting the most from AI aren't the most technical - they're the ones who know their students and curriculum well enough to direct the tool precisely and catch when its output misses. That's a learnable skill. MakerSquare is built on the same idea: the people best positioned to build with AI are the ones who understand the problem deeply, not the ones who can code. See our [use cases](/use-cases) for what that looks like in practice.
+
+The best teachers were never going to be replaced by a worksheet generator. They're going to be the ones who used it to get their evenings back.
+
+Frequently asked questions
+
+How are teachers using AI in 2026?
+
+Most commonly for prep and admin: creating and updating lesson plans (38%), generating classroom materials (37%), research and content gathering (44%), summarizing information, and drafting parent communications. The heaviest uses are the recurring, time-consuming tasks that happen outside class time.
+
+Does AI actually save teachers time?
+
+Yes - and teachers report the quality holds up, with improvements from 57% for grading and feedback to 74% for administrative work, and 16% or fewer reporting a quality drop. Most teachers reinvest the saved time into individualized student feedback and tailored lessons rather than cutting corners.
+
+Will AI replace teachers?
+
+No. AI is landing in the prep and admin around teaching - lesson drafts, materials, grading support, paperwork - not in the human work of actually teaching, responding to a struggling student, or managing a classroom. It gives teachers more time for the parts a tool can't do.
+
+What AI tools are best for teachers?
+
+General assistants (Claude, ChatGPT) handle most lesson-planning, materials, and communication drafting well, and purpose-built education tools add grading and curriculum features. The best starting point is applying a general tool to your single most time-consuming recurring task - usually lesson planning.
+
+Is it okay for teachers to use AI to plan lessons and grade?
+
+Using AI to draft lesson plans, generate materials, and support grading is widely accepted and now common - 60% of educators use AI for planning and grading tasks. The key is that the teacher stays the judgment layer: reviewing, adapting to their actual students, and owning the final feedback.
+
+Keep reading
+
+- [All MakerSquare posts](/blog)
+
+MakerSquare is a 2-week in-person AI builder program in Austin, TX for people who understand their field deeply and want to build real AI tools around it - not just use them. See what two weeks of hands-on building looks like.
+
+[Get the curriculum](https://www.makersquare.ai/curriculum?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_ai-for-teachers_curriculum_20260921)
+[Sign up for the newsletter](https://ai-builder-brief.beehiiv.com/?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_ai-for-teachers_newsletter_20260921)
+
+Sources
+
+1
+
+[How Many Teachers Use AI? AI in Education Statistics](https://textero.io/research/how-many-teachers-use-ai)
+
+Textero · 2026 · Teacher adoption rose from 32% (2024) to 61% (2025); K-12 at 83% vs 22% higher-ed
+
+2
+
+[25 AI in Education Statistics](https://www.engageli.com/blog/ai-in-education-statistics)
+
+Engageli · 2026 · Most common uses: lesson planning, materials, research; quality-improvement data
+
+3
+
+[AI in Education Statistics: 80 Data Points](https://azumo.com/artificial-intelligence/ai-insights/ai-in-education-statistics)
+
+Azumo · 2026 · Time-saving applications and how teachers reinvest recovered time
 
 ---
 
