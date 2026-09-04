@@ -239,7 +239,7 @@ What we offer
 ### Pick how you want to build with AI.
 
 [#### The Immersive Program Our flagship. Two weeks in-person in Austin — you build a live website, an AI agent, and an automated workflow for your own work. No coding background. $3,999 · next cohort Jan 11. Explore the program →](/immersive)
-[#### Weekend Workshops Can’t do two weeks? Build something real in a 3-day weekend — an AI agent, an ops automation, or a live app. In person in Austin. $999 · next Sep 11–13. See the workshops →](/workshops)
+[#### Weekend Workshops Can’t do two weeks? Build something real in a 3-day weekend — an AI agent, an ops automation, or a live app. In person in Austin. $1,199 · next Sep 11–13. See the workshops →](/workshops)
 [#### Corporate / Team Training Send your team to the cohort, book a private team workshop, or run a full custom program on-site anywhere in Texas — built around your real business. Talk to us. Train your team →](/corporate)
 [#### Events Free demo nights and meetups in Austin — see what people build, meet the community, no commitment. Drinks & AI, and more. See what's on →](/events)
 
@@ -4377,7 +4377,7 @@ For tonight's attendees only
 
 For tonight’s attendees — use code **DEMO150** at checkout.
 
-[Next up · Sep 11–13 Build Your First AI Agent 3-day weekend workshop $999 $849 Reserve a seat →](/workshop-register)
+[Next up · Sep 11–13 Build Your First AI Agent 3-day weekend workshop $1,199 $1,049 Reserve a seat →](/workshop-register)
 [Oct 16–18 Automate Your Ops with AI 3-day weekend workshop $999 $849 Reserve a seat →](/workshop-register)
 [Jan 11–22 The 2-Week Program Our flagship immersive $3,999 $3,849 Enroll now →](/enroll)
 
@@ -4405,7 +4405,7 @@ Coming up — weekend workshops
 
 Three days, in person in Austin. Pick a build and walk out Sunday with it running on your own work — no coding background needed.
 
-[Next up · Sep 11–13 Build Your First AI Agent Leave with a working AI agent on your own data, running on a schedule — still going the next Monday. $999 $849 with DEMO150](/workshop-register)
+[Next up · Sep 11–13 Build Your First AI Agent Leave with a working AI agent on your own data, running on a schedule — still going the next Monday. $1,199 $1,049 with DEMO150](/workshop-register)
 [Oct 16–18 Automate Your Ops with AI Reports, documents, inbox — your recurring work stops being manual, on your real accounts. $999 $849 with DEMO150](/workshop-register)
 [Nov 6–8 Build Your First App with AI Idea to a live app with a real database, at a real URL — vibe coding, done properly. $999 $999 also this fall](/workshops)
 

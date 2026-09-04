@@ -140,6 +140,11 @@
 
     var card = document.getElementById('fw-next-price');
     if (card) card.innerHTML = s.price + ' &middot; ' + s.w.dates + ' &rarr;';
+
+    // This card names a price and a date together, so it goes stale the same
+    // way the banner did. Roll it too.
+    var bento = document.getElementById('fw-bento-price');
+    if (bento) bento.innerHTML = s.price + ' \u00b7 next ' + s.w.dates + '.';
   }
 
   function init() { spotlight(); homepageBar(); }
