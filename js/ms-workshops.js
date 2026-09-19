@@ -16,16 +16,6 @@
 
   var WORKSHOPS = [
     {
-      key: 'sep',
-      titleA: 'Build Your First', titleB: 'AI Agent.',
-      dates: 'Sep 11&ndash;13', startLabel: 'Sep 11',
-      start: '2026-09-11T09:00:00-05:00',
-      finish: '2026-09-13T23:59:59-05:00',
-      earlyBirdEnds: '2026-08-30T23:59:59-05:00', earlyBirdLabel: 'Aug 30',
-      desc: 'One weekend &mdash; Sep 11&ndash;13, Fri to Sun in Austin. Walk out Sunday with a working agent running on your own data. No time off work, no boss to ask.',
-      bullet: 'Your first agent deployed on a schedule &mdash; by 5pm Day 1'
-    },
-    {
       key: 'oct',
       titleA: 'Automate Your Ops', titleB: 'with AI.',
       dates: 'Oct 16&ndash;18', startLabel: 'Oct 16',
@@ -47,8 +37,8 @@
     }
   ];
 
-  var EARLY_BIRD = '$999';
-  var REGULAR = '$1,199';
+  var EARLY_BIRD = '$1,199';
+  var REGULAR = '$1,399';
 
   // The next workshop that hasn't finished yet.
   function nextUp(now) {

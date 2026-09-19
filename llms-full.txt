@@ -19,7 +19,7 @@ Contact: hello@makersquare.ai · https://www.makersquare.ai/
 
 > In-person AI builder program in Austin, TX for operators, founders, and professionals. Build real AI products in 2 weeks. No coding required.
 
-Fall workshops enrolling · Next: Sep 11–13 · Austin, TX
+Fall workshops enrolling · Next: Oct 16–18 · Austin, TX
 
 ## You already know your industry. Now learn to build with AI.
 
@@ -31,7 +31,7 @@ No coding test · No interview · Confirmed in 24 hrs
 
 [See the full 2-week curriculum →](/curriculum)
 
-3-day workshops: Sep 11 · Oct 16 · Nov 6 — from $999 [See the lineup →](/workshops)
+3-day workshops: Oct 16 · Nov 6 — from $1,199 [See the lineup →](/workshops)
 
 Cohort 3 starts Jan 11 · Enrollment closes January 4 [See all dates →](/enroll)
 
@@ -63,11 +63,10 @@ Site · agent · workflow
 
 ### Can’t do two weeks? Give it a weekend.
 
-Sep 11–13 · $1,199 · Austin
+Oct 16–18 · $1,199 · Austin
 
-[Next up · Sep 11–13 Build Your First AI Agent Leave with a working agent on your own data, running on a schedule. $1,199 · Sep 11–13 →](/workshops)
-[Oct 16–18 Automate Your Ops with AI The recurring work — reports, documents, inbox — stops being manual. Early bird $999 — ends Sep 25 →](/workshops)
-[Nov 6–8 Build Your First App with AI Idea to live app with a real database — vibe coding, done properly. Early bird $999 — ends Oct 16 →](/workshops)
+[Next up · Oct 16–18 Automate Your Ops with AI The recurring work — reports, documents, inbox — stops being manual. Early bird $1,199 · Oct 16–18 →](/workshops)
+[Nov 6–8 Build Your First App with AI Idea to live app with a real database — vibe coding, done properly. Early bird $1,199 — ends Oct 16 →](/workshops)
 
 Want the full transformation? The 2-week program returns Jan 11. Workshop attendees get $200 off.
 
@@ -239,7 +238,7 @@ What we offer
 ### Pick how you want to build with AI.
 
 [#### The Immersive Program Our flagship. Two weeks in-person in Austin — you build a live website, an AI agent, and an automated workflow for your own work. No coding background. $3,999 · next cohort Jan 11. Explore the program →](/immersive)
-[#### Weekend Workshops Can’t do two weeks? Build something real in a 3-day weekend — an AI agent, an ops automation, or a live app. In person in Austin. $1,199 · next Sep 11–13. See the workshops →](/workshops)
+[#### Weekend Workshops Can’t do two weeks? Build something real in a 3-day weekend — an AI agent, an ops automation, or a live app. In person in Austin. $1,199 · next Oct 16–18. See the workshops →](/workshops)
 [#### Corporate / Team Training Send your team to the cohort, book a private team workshop, or run a full custom program on-site anywhere in Texas — built around your real business. Talk to us. Train your team →](/corporate)
 [#### Events Free demo nights and meetups in Austin — see what people build, meet the community, no commitment. Drinks & AI, and more. See what's on →](/events)
 
@@ -1116,7 +1115,7 @@ From Cohort 1
 
 # AI Workshops in Austin, TX — 3-Day Intensives, Fall 2026
 
-> 3-day in-person AI workshops in Austin, TX. Hands-on skill sprints for operators, ops teams, and builders. Small cohorts. No coding required. From $999.
+> 3-day in-person AI workshops in Austin, TX. Hands-on skill sprints for operators, ops teams, and builders. Small cohorts. No coding required. From $1,199.
 
 AI Workshops in Austin, TX · In-Person · 3 Days
 
@@ -1126,19 +1125,11 @@ One weekend — Friday to Sunday. No time off work, no boss to ask. These worksh
 
 NEXT UP
 
-Sep 11 – 13, 2026
-
-Build Your First AI Agent
-
-$1,199 — enroll now
-
-October
-
 Oct 16 – 18, 2026
 
 Automate Your Ops with AI
 
-Early Bird $999 — ends Sep 25
+Early Bird $1,199 — ends Sep 25
 
 November
 
@@ -1146,9 +1137,9 @@ Nov 6 – 8, 2026
 
 Build Your First App with AI
 
-Early Bird $999 — ends Oct 16
+Early Bird $1,199 — ends Oct 16
 
-[Reserve a seat](https://forms.zohopublic.com/makersquare/form/WorkshopInterestForm/formperma/AYsoiXxKUM7vU5-RS8YLyYj2rwosDB-qYvE7A6z6zV0)
+[Reserve a seat](/workshop-register)
 Private team training
 
 You deploy this on Day 1
@@ -1213,9 +1204,9 @@ You built it yourself, so you can fix it, change it, and build the next one.
 
 Next up · Enrolling now
 
-### Build Your First AI Agent.
+### Automate Your Ops with AI.
 
-One weekend — Sep 11–13, Fri to Sun in Austin. Walk out Sunday with a working agent running on your own data. No time off work, no boss to ask.
+One weekend — Oct 16–18, Fri to Sun in Austin. Walk out Sunday with your recurring ops work running itself. No time off work, no boss to ask.
 
 —
 
@@ -1229,13 +1220,13 @@ Hours
 
 Mins
 
-⏱ until the workshop begins (Sep 11)
+⏱ until the $1,199 early bird ends (Sep 25)
 
 $1,199
 
-3 days · Fri–Sun
+$1,399 after Sep 25
 
-✓ Your first agent deployed on a schedule — by 5pm Day 1
+✓ A weekly report that writes itself from your live sources
 
 ✓ Built on your real data and tools, not toy examples
 
@@ -1254,33 +1245,7 @@ Also this fall
 
 Hands-on, small group, led by a MakerSquare co-founder. Every workshop ends with a working system built on your own work — demoed live on Day 3.
 
-Sep 11–13, 2026 · Next up
-
-Build Your First AI Agent
-
-Fri–Sun · 9am–4pm · Austin TX
-
-For founders, operators, and product people who want AI doing real work for them. You pick a problem from your own work on Day 1. You spend 3 days building an agent that solves it. You demo it live on Day 3.
-
-Claude Code Claude API Composio GitHub Actions Exa
-
-- Your first agent — a personal digest that finds what you care about — running on a schedule by end of Day 1
-
-- An agent working your real data — email, docs, sheets — through Composio
-
-- The judgment that matters: when a problem needs an agent, and when a simple automation wins
-
-- A working agent solving your actual problem, demoed on Day 3
-
-Sep 11–13, 2026
-
-$1,199
-
-Fri–Sun · Austin TX
-
-[Reserve](https://forms.zohopublic.com/makersquare/form/WorkshopInterestForm/formperma/AYsoiXxKUM7vU5-RS8YLyYj2rwosDB-qYvE7A6z6zV0)
-
-Oct 16–18, 2026
+Oct 16–18, 2026 · Next up
 
 Automate Your Ops with AI
 
@@ -1300,11 +1265,11 @@ Claude Code Claude API Composio GitHub Actions Sheets Gmail
 
 Early bird until Sep 25
 
-$999
+$1,199
 
-$1,199 after Sep 25
+$1,399 after Sep 25
 
-[Reserve](https://forms.zohopublic.com/makersquare/form/WorkshopInterestForm/formperma/AYsoiXxKUM7vU5-RS8YLyYj2rwosDB-qYvE7A6z6zV0)
+[Reserve](/workshop-register)
 
 Nov 6–8, 2026
 
@@ -1326,11 +1291,11 @@ Claude Code Supabase Vercel GitHub
 
 Early bird until Oct 16
 
-$999
+$1,199
 
-$1,199 after Oct 16
+$1,399 after Oct 16
 
-[Reserve](https://forms.zohopublic.com/makersquare/form/WorkshopInterestForm/formperma/AYsoiXxKUM7vU5-RS8YLyYj2rwosDB-qYvE7A6z6zV0)
+[Reserve](/workshop-register)
 
 Inside the workshops
 
@@ -1522,15 +1487,15 @@ You leave with something running.
 
 Every workshop ends with a live demo of what you built. Not a plan. Not notes. Something that runs. Plus 30 days of Slack access to the instructor if you hit a wall after you’re back at work.
 
-Let’s talk about $999
+Let’s talk about $1,199
 
 #### An AI consultant charges $250–$400 an hour. Three days of their time: $15,000.
 
 And at the end, you’d have a report explaining what’s possible. Not a working system. Not the skills to maintain it. A PDF.
 
-For $999, you sit in a room for 3 days and actually build the thing. With your data. With a real instructor. You leave knowing how to do it yourself — and that skill compounds every day after.
+For $1,199, you sit in a room for 3 days and actually build the thing. With your data. With a real instructor. You leave knowing how to do it yourself — and that skill compounds every day after.
 
-[Reserve a seat — from $999](https://forms.zohopublic.com/makersquare/form/WorkshopInterestForm/formperma/AYsoiXxKUM7vU5-RS8YLyYj2rwosDB-qYvE7A6z6zV0)
+[Reserve a seat — from $1,199](/workshop-register)
 Invoice available on request
 
 Pricing
@@ -1547,13 +1512,13 @@ Early Bird
 
 Until 3 weeks before start date
 
-$999 per person
+$1,199 per person
 
 Regular
 
 After early bird closes
 
-$1,199 per person
+$1,399 per person
 
 Invoice available on request. Email [hello@makersquare.ai](mailto:hello@makersquare.ai) for PO-based payment.
 
@@ -1606,9 +1571,9 @@ FAQ
 
 ### Questions people ask before booking.
 
-Why should I do this now and not wait? Because the gap between people who can use AI and people who can’t is widening every month — not every year. The ops manager or founder who learns this in September has a head start on everyone who waits until next year. The AI Agent workshop runs Sep 11–13, and the group is deliberately small — once the seats go, the next one is October.
+Why should I do this now and not wait? Because the gap between people who can use AI and people who can’t is widening every month — not every year. The ops manager or founder who learns this this fall has a head start on everyone who waits until next year. Automate Your Ops runs Oct 16–18, and the group is deliberately small — once the seats go, the next one is November.
 
-Which AI workshops are running in Austin in fall 2026? Three 3-day intensives in downtown Austin (Capital Factory / Station Austin, 701 Brazos St): **Build Your First AI Agent** Sep 11–13, **Automate Your Ops with AI** Oct 16–18, and **Build Your First App with AI** Nov 6–8. All Fri–Sun, 9am–4pm. Early bird $999, regular $1,199.
+Which AI workshops are running in Austin in fall 2026? Two more 3-day intensives in downtown Austin this fall (Capital Factory / Station Austin, 701 Brazos St): **Automate Your Ops with AI** Oct 16–18, and **Build Your First App with AI** Nov 6–8. All Fri–Sun, 9am–4pm. Early bird $1,199, regular $1,399.
 
 Do I need a technical background? No. If you can use a spreadsheet, you can build in these workshops. These aren’t for engineers — they’re for people who know their domain and want AI working for them in it.
 
@@ -1632,11 +1597,11 @@ The **2-week MakerSquare program** is the full build — 3 complete AI products,
 
 Don’t miss the early bird
 
-### Build Your First AI Agent — Sep 11–13. Three days. One working agent.
+### Automate Your Ops with AI — Oct 16–18. Three days. Your busywork, gone.
 
-Small cohort, $1,199. After it sells out, it’s gone. 3 days in Austin — you leave with a working AI agent that runs without you.
+Small cohort, early bird $1,199 until Sep 25. 3 days in Austin — you leave with your recurring ops work running itself, on your real accounts.
 
-[Reserve my seat — $999](https://forms.zohopublic.com/makersquare/form/WorkshopInterestForm/formperma/AYsoiXxKUM7vU5-RS8YLyYj2rwosDB-qYvE7A6z6zV0)
+[Reserve my seat — $1,199](/workshop-register)
 [Have a question? Email us](mailto:hello@makersquare.ai)
 
 Fri–Sun · 9am–4pm · Austin TX · No coding required
@@ -4377,8 +4342,8 @@ For tonight's attendees only
 
 For tonight’s attendees — use code **DEMO150** at checkout.
 
-[Next up · Sep 11–13 Build Your First AI Agent 3-day weekend workshop $1,199 $1,049 Reserve a seat →](/workshop-register)
-[Oct 16–18 Automate Your Ops with AI 3-day weekend workshop $999 $849 Reserve a seat →](/workshop-register)
+[Next up · Oct 16–18 Automate Your Ops with AI 3-day weekend workshop $1,199 $1,049 Reserve a seat →](/workshop-register)
+[Nov 6–8 Build Your First App with AI 3-day weekend workshop $1,199 $1,049 Reserve a seat →](/workshop-register)
 [Jan 11–22 The 2-Week Program Our flagship immersive $3,999 $3,849 Enroll now →](/enroll)
 
 Your promo code
@@ -4405,9 +4370,8 @@ Coming up — weekend workshops
 
 Three days, in person in Austin. Pick a build and walk out Sunday with it running on your own work — no coding background needed.
 
-[Next up · Sep 11–13 Build Your First AI Agent Leave with a working AI agent on your own data, running on a schedule — still going the next Monday. $1,199 $1,049 with DEMO150](/workshop-register)
-[Oct 16–18 Automate Your Ops with AI Reports, documents, inbox — your recurring work stops being manual, on your real accounts. $999 $849 with DEMO150](/workshop-register)
-[Nov 6–8 Build Your First App with AI Idea to a live app with a real database, at a real URL — vibe coding, done properly. $999 $999 also this fall](/workshops)
+[Next up · Oct 16–18 Automate Your Ops with AI Reports, documents, inbox — your recurring work stops being manual, on your real accounts. $1,199 $1,049 with DEMO150](/workshop-register)
+[Nov 6–8 Build Your First App with AI Idea to a live app with a real database, at a real URL — vibe coding, done properly. $1,199 $1,049 with DEMO150](/workshop-register)
 
 [Full workshop lineup & curriculum →](/workshops)
 
@@ -4459,7 +4423,7 @@ DEMO150
 
 Click to copy
 
-[Reserve a weekend workshop — $849](/workshop-register)
+[Reserve a weekend workshop — $1,049](/workshop-register)
 [Enroll in the 2-week — $3,849](/enroll)
 
 $150 off with code DEMO150 at checkout
@@ -5288,6 +5252,115 @@ Reading this for your team? We run private AI training for Austin companies — 
 
 ---
 
+<!-- https://www.makersquare.ai/blog/ai-business-ideas -->
+
+# AI Business Ideas With a Real Moat | MakerSquare
+
+> AI business ideas that aren
+
+[← Blog](/blog)
+
+AI at Work
+
+## AI Business Ideas With a Real Moat
+
+Marliis Schneider
+
+September 14, 2026
+
+6 min read
+
+![AI Business Ideas With a Real Moat](../images/blog/ai-business-ideas-og.webp)
+
+Key takeaways
+
+- The problem with most 'AI business ideas' lists: they're thin wrappers around a model anyone can copy in a weekend. No moat, no business.
+
+- The defensible AI businesses share a pattern - they own something the AI doesn't: proprietary data, a specific workflow, deep domain trust, or a distribution channel.
+
+- The biggest opportunity isn't building the next AI tool - it's using AI to deliver an existing service dramatically better in a niche you understand.
+
+- Domain expertise is the moat in 2026. The technical part is increasingly a commodity; knowing exactly whose problem to solve is not.
+
+Search 'AI business ideas' and you'll get a hundred variations of 'build an AI tool that does X.' Most are traps - because if the whole business is a thin layer over a model anyone can access, anyone can copy it by the weekend. The direct answer: the AI businesses worth starting in 2026 aren't the ones with the cleverest AI - they're the ones that own something the AI doesn't, in a niche the founder understands better than anyone.
+
+### Why most AI business ideas have no moat
+
+The uncomfortable truth about the 'wrap an API' business: the core capability - the AI model - is available to your competitors at the same price it's available to you. If your product is just a nicer interface on a prompt, you have no durable advantage. The tools that survive add something the model can't replicate. The ones that don't are a feature waiting to be absorbed by a bigger platform. Before pursuing any AI idea, the first question isn't 'can AI do this?' - it's 'what do I have that a competitor with the same AI doesn't?'
+
+### The four things a defensible AI business actually owns
+
+**Proprietary data.** If your product gets better from data only you have - your customers' behavior, a dataset you built, feedback that compounds - competitors can't just copy the prompt. The data is the moat.
+
+**A specific workflow.** Owning a complete, painful workflow end-to-end (not just one AI step) creates switching costs. Once a business runs its operations through you, a slightly-better AI wrapper isn't worth the disruption of leaving.
+
+**Domain trust.** In fields where being wrong is expensive - legal, medical, financial - customers buy from someone they trust to get it right, not from whoever has the newest model. Deep credibility in a niche is a moat AI can't manufacture.
+
+**Distribution.** If you already have the audience or relationships a product needs - an existing customer base, a community, a channel - you can win even with a simpler tool, because getting in front of the right buyers is half the battle.
+
+### The most underrated idea: better delivery of an existing service
+
+Here's the opportunity most idea lists miss because it isn't glamorous: don't build a new AI product - use AI to deliver an existing service dramatically better in a niche you know. Bookkeeping for a specific industry, done in half the time. Market research for a particular kind of buyer, done in a day instead of two weeks. This works because you're not betting on owning technology - you're betting on owning the customer relationship and the domain knowledge, with AI as the thing that makes your margins and speed unbeatable. That's a real moat, and it's available to operators, not just engineers.
+
+### What this means if you're looking for an idea
+
+Stop looking for an AI idea and start looking at problems you understand better than most people. The technical capability is increasingly a commodity; the scarce thing is knowing exactly whose problem to solve and how. That's the entire premise of MakerSquare - the best people to build with AI aren't engineers, they're domain experts. Our [use cases](/use-cases) show what people actually build when they start from a real problem.
+
+The best AI business idea isn't the one with the best AI. It's the one only you were positioned to build.
+
+Frequently asked questions
+
+What makes a good AI business idea in 2026?
+
+One that owns something the AI model doesn't - proprietary data, a complete workflow with switching costs, deep domain trust, or existing distribution. Since the AI capability itself is available to everyone at the same price, the moat has to come from elsewhere. 'Can AI do this?' is the wrong first question; 'what do I have that a competitor with the same AI doesn't?' is the right one.
+
+Why do most AI startups fail?
+
+Many are thin wrappers over a model anyone can access, so they have no durable advantage and get copied or absorbed by a bigger platform. The ones that last add proprietary data, own a full workflow, hold domain trust, or have distribution - something the AI alone can't replicate.
+
+What's the easiest AI business to start?
+
+Using AI to deliver an existing service dramatically better in a niche you already understand - bookkeeping for a specific industry, market research for a particular buyer, and so on. You compete on domain knowledge and the customer relationship, with AI making you faster and higher-margin, rather than betting on owning technology.
+
+Do I need to be technical to start an AI business?
+
+No - and it may be an advantage not to over-index on it. The technical capability is increasingly a commodity; the scarce, defensible thing is deep knowledge of a specific problem and customer. Domain expertise is the moat in 2026, which favors operators and specialists over generalist engineers.
+
+Is it too late to start an AI business in 2026?
+
+No - but the easy 'wrap an API' window has closed. The durable opportunities now are in niches where you own data, workflow, trust, or distribution. Those are still wide open, because they depend on domain knowledge and relationships that can't be spun up overnight.
+
+Keep reading
+
+- [All MakerSquare posts](/blog)
+
+MakerSquare is a 2-week in-person AI builder program in Austin, TX for operators and domain experts who want to build a real AI business around a problem they already understand deeply. See what two weeks of hands-on building looks like.
+
+[Get the curriculum](https://www.makersquare.ai/curriculum?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_ai-business-ideas_curriculum_20261014)
+[Sign up for the newsletter](https://ai-builder-brief.beehiiv.com/?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_ai-business-ideas_newsletter_20261014)
+
+Sources
+
+1
+
+[Make Money With AI in 2026: Real Ways That Work](https://rightblogger.com/blog/make-money-ai)
+
+RightBlogger · 2026 · Which AI business models actually generate durable income
+
+2
+
+[7 Ways People Are Making Money Using AI in 2026](https://www.kdnuggets.com/7-ways-people-are-making-money-using-ai-in-2026)
+
+KDnuggets · 2026 · Services vs. products and where defensibility comes from
+
+3
+
+[The State of AI in 2025](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai)
+
+McKinsey · 2025 · Where AI creates durable value vs. commoditized capability
+
+---
+
 <!-- https://www.makersquare.ai/blog/ai-data-analysis-without-coding -->
 
 # AI for Data Analysis: No SQL, No Python, No Problem | MakerSquare
@@ -5674,6 +5747,115 @@ aicpa-cima.com
 [Deloitte, "CFO Signals: AI in Finance Function" (2025)](https://www2.deloitte.com/us/en/pages/finance/articles/cfo-survey.html)
 
 deloitte.com
+
+---
+
+<!-- https://www.makersquare.ai/blog/ai-for-architects -->
+
+# AI for Architects: Faster From Concept to Drawing | MakerSquare
+
+> AI for architects in 2026: where it speeds real work - concepts, rendering, space planning, docs - and where 70% of architects say it still needs supervision.
+
+[← Blog](/blog)
+
+AI at Work
+
+## AI for Architects: Faster From Concept to Drawing
+
+Marliis Schneider
+
+September 18, 2026
+
+5 min read
+
+![AI for Architects: Faster From Concept to Drawing](../images/blog/ai-for-architects-og.webp)
+
+Key takeaways
+
+- 60% of architecture firms now actively use AI, and 86% of AI users report measurable time savings - with more than half saving at least five hours a week.
+
+- The strongest uses are early and repetitive: concept exploration and moodboards, rendering, space planning, and scheduling/cost documentation.
+
+- The honest limit: 70% of architects say AI visualizations require constant professional supervision to match design intent, and 48% cite unreliable output as their biggest obstacle.
+
+- AI accelerates the drawing and the admin around design - it doesn't make the design decisions, which remain the architect's.
+
+Architecture is a field where AI's strengths and limits are both unusually visible. It can generate a hundred concept images in minutes; it also confidently produces things that don't structurally or aesthetically make sense. The direct answer: AI genuinely speeds the early, iterative, and administrative parts of architectural work - concepts, rendering, space planning, documentation - while the design judgment and the supervision of AI's output stay firmly with the architect.
+
+### Adoption and real time savings
+
+The profession has moved past experimentation: 60% of architecture firms now actively use AI, and 84% plan to increase AI investment within two years. The payoff is concrete - 86% of AI users report measurable time savings, with more than half saving at least five hours a week (larger firms tend to save more). That's meaningful time reclaimed from the repetitive parts of practice and returned to design.
+
+### Where AI actually helps in the workflow
+
+**Concept exploration.** Tools like Midjourney let architects generate and explore dozens of directions for a moodboard or early concept in the time it used to take to sketch one - useful for widening the option space before committing.
+
+**Rendering.** AI rendering from models (SketchUp, Revit) produces client-ready visuals far faster than traditional rendering, compressing a slow, expensive step.
+
+**Space planning.** AI space-planning tools generate and test layout options against constraints quickly.
+
+**Documentation.** The unglamorous but time-heavy work - scheduling, cost estimation - is where tools like Revit's AI features quietly save hours.
+
+### The honest limit every architect should hold onto
+
+This is a field where overtrusting AI is a real risk, and architects know it. 70% say AI visualizations require constant professional supervision to ensure they accurately reflect the design intent, and 48% of designers cite poor or unreliable output as their single biggest obstacle. The lesson isn't to avoid AI - it's to use it as a fast, tireless assistant for options and production while keeping the architect as the judgment layer. AI generates possibilities; the architect decides which are actually good, buildable, and true to the brief. That supervision isn't overhead - it's the job.
+
+### What this means for architects building AI skills
+
+The architects getting the most from AI are the ones who know exactly where it helps and where it can't be trusted - which is a matter of design judgment, not technical skill. That's the MakerSquare premise: the best people to build with AI are the domain experts. Our [use cases](/use-cases) show what building purpose-fit tools around a real professional workflow looks like.
+
+AI won't design the building. It'll get you to the drawing faster so you have more time to design it well.
+
+Frequently asked questions
+
+How are architects using AI in 2026?
+
+The strongest uses are concept exploration and moodboards (tools like Midjourney), rendering from models like SketchUp and Revit, AI space planning, and documentation such as scheduling and cost estimation. 60% of firms now actively use AI, concentrated on the early, iterative, and administrative parts of the workflow.
+
+Does AI save architects time?
+
+Yes - 86% of architecture AI users report measurable time savings, and more than half save at least five hours a week, with larger firms often saving more. The gains come from speeding rendering, concept iteration, and documentation, reclaiming time from repetitive work for design.
+
+Can AI replace architects?
+
+No. AI accelerates the drawing, rendering, and admin around design, but 70% of architects say AI visualizations require constant professional supervision to match design intent. The design judgment - what's good, buildable, and true to the brief - stays with the architect. AI generates options; the architect decides.
+
+What's the biggest problem with AI in architecture?
+
+Reliability. 48% of designers cite poor or unreliable output as their biggest obstacle, and 70% say AI visualizations need constant supervision. The tools are excellent for generating options fast but can't be trusted to get design intent right on their own - which is why the architect stays the judgment layer.
+
+Do architects need to code to use AI tools?
+
+No. The leading AI tools for architecture are used visually and in plain language. The valuable skill is knowing where AI helps and where its output can't be trusted - design judgment - rather than technical ability.
+
+Keep reading
+
+- [All MakerSquare posts](/blog)
+
+MakerSquare is a 2-week in-person AI builder program in Austin, TX for professionals who want to build AI into their real workflow - and know exactly where to keep their own judgment. See what two weeks of hands-on building looks like.
+
+[Get the curriculum](https://www.makersquare.ai/curriculum?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_ai-for-architects_curriculum_20261023)
+[Sign up for the newsletter](https://ai-builder-brief.beehiiv.com/?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_ai-for-architects_newsletter_20261023)
+
+Sources
+
+1
+
+[The 2026 Archviz Pulse: 10 Stats Defining Design](https://blog.chaos.com/statistics-ai-architectural-design-and-visualization)
+
+Chaos · 2026 · 60% firm adoption; time savings; supervision requirement data
+
+2
+
+[How Architects Use and Will Use AI in 2026](https://www.ribaj.com/intelligence/how-architects-use-and-will-use-ai-in-2026-and-beyond/)
+
+RIBA Journal · 2026 · Practitioner use cases across concept, rendering, and docs
+
+3
+
+[Top AI Tools for Architects in 2026 by Use Case](https://blog.chaos.com/ai-tools-for-architects)
+
+Chaos · 2026 · Tool landscape and obstacles including output reliability
 
 ---
 
@@ -6804,6 +6986,329 @@ Gartner · 2025 · Only 23% of HR teams have fully integrated AI tools into core
 
 ---
 
+<!-- https://www.makersquare.ai/blog/ai-for-inventory-management -->
+
+# AI for Inventory Management: Stop Guessing What to Reorder | MakerSquare
+
+> AI for inventory management in 2026: cut forecast errors 30-50%, reduce stockouts, and free up cash tied in dead stock - using your own sales data. Here
+
+[← Blog](/blog)
+
+AI at Work
+
+## AI for Inventory Management: Stop Guessing What to Reorder
+
+Marliis Schneider
+
+September 11, 2026
+
+5 min read
+
+![AI for Inventory Management: Stop Guessing What to Reorder](../images/blog/ai-for-inventory-management-og.webp)
+
+Key takeaways
+
+- Retailers using AI-powered inventory management report 30-50% cuts in forecast errors and around a 30% reduction in stockouts.
+
+- It frees cash, too: predictive demand modeling is delivering 20-30% lower total inventory levels - less money frozen in stock that isn't moving.
+
+- 52% of retail companies have already integrated AI inventory management, making it one of the most proven, least hyped AI wins in commerce.
+
+- You don't need enterprise software. The core input is your own sales history - which most businesses already have and underuse.
+
+Inventory is where a lot of small and mid-sized businesses quietly lose money twice - once on the sales they miss when a product's out of stock, and again on the cash frozen in stock that isn't selling. AI is unusually good at this exact problem. The direct answer: AI inventory management uses your own sales history to forecast demand far more accurately than gut feel or simple reorder rules, cutting both stockouts and dead stock at the same time.
+
+### One of AI's most proven, least hyped wins
+
+Unlike a lot of AI use cases still stuck in pilots, inventory forecasting is delivering measured results at scale. 52% of retail companies have integrated AI-powered inventory management, and the outcomes are concrete: 30-50% cuts in forecast errors, around a 30% reduction in stockout situations, and 20-30% lower total inventory levels through predictive demand modeling. This isn't a flashy chatbot - it's forecasting math applied to data you already have, and it pays back on both sides of the ledger.
+
+### Why it works: patterns humans miss
+
+Manual inventory planning relies on a person's memory of last season, a spreadsheet, and a rule of thumb. AI does something people can't do well at scale: it reads the actual patterns in your sales history - seasonality, day-of-week effects, the lift from a promotion, the slow decline of a fading product - and turns them into a demand forecast for each item. Where a human sets one reorder point and forgets it, AI adjusts the forecast as the data changes. That's why forecast errors drop so sharply: the model is working from evidence, not intuition.
+
+### The two-sided payoff
+
+**Fewer stockouts = recovered sales.** Every empty shelf or 'out of stock' page is a sale handed to a competitor. Cutting stockouts ~30% directly recovers revenue you were already losing invisibly.
+
+**Lower inventory = freed cash.** Carrying 20-30% less stock while still meeting demand means cash that was frozen in the warehouse is available for the business. For a small business, that liquidity can matter more than the efficiency itself.
+
+The reason both improve together is that better forecasting removes the need to over-order 'just in case' - you can hold less and still not run out, because the forecast is trustworthy.
+
+### What this means if you carry inventory
+
+The key input is something you almost certainly already have and underuse: your own sales history. You don't need enterprise software to start applying AI to it. This is exactly the kind of tool MakerSquare builders create - connecting AI to real business data to do something specific and valuable. Our [use cases](/use-cases) show what building that looks like, without a data science team.
+
+The businesses that stop losing money on inventory won't be the ones with the biggest systems. They'll be the ones who finally put their own sales data to work.
+
+Frequently asked questions
+
+How does AI improve inventory management?
+
+AI reads the real patterns in your sales history - seasonality, day-of-week effects, promotion lift, product decline - and forecasts demand for each item far more accurately than gut feel or fixed reorder rules. Retailers using it report 30-50% lower forecast errors, ~30% fewer stockouts, and 20-30% lower inventory levels.
+
+Does AI inventory forecasting actually work?
+
+Yes - it's one of the most proven AI applications in commerce, not a pilot-stage experiment. 52% of retail companies have integrated AI inventory management, with measured results: sharp cuts in forecast errors and stockouts, and meaningfully lower carrying levels. It pays back on both lost sales and frozen cash.
+
+What data do I need to use AI for inventory?
+
+Mainly your own sales history - which most businesses already have and underuse. The more history and detail (dates, items, promotions), the better the forecast. You don't need enterprise software to begin applying AI to that data.
+
+Can a small business use AI for inventory, or is it just for big retailers?
+
+Small businesses can absolutely use it - and often benefit most, because freeing cash tied up in stock matters more at smaller scale. The core input (your sales history) is something you already have, and modern tools don't require a data science team to apply AI to it.
+
+How much can AI reduce stockouts and overstock?
+
+Reported results are around a 30% reduction in stockouts and 20-30% lower total inventory levels, driven by 30-50% more accurate demand forecasts. Both improve together because a trustworthy forecast removes the need to over-order 'just in case' - you hold less and still don't run out.
+
+Keep reading
+
+- [All MakerSquare posts](/blog)
+
+MakerSquare is a 2-week in-person AI builder program in Austin, TX for operators who want to build a real AI tool around their own business data - like turning sales history into demand forecasts. See what two weeks of hands-on building looks like.
+
+[Get the curriculum](https://www.makersquare.ai/curriculum?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_ai-for-inventory-management_curriculum_20261007)
+[Sign up for the newsletter](https://ai-builder-brief.beehiiv.com/?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_ai-for-inventory-management_newsletter_20261007)
+
+Sources
+
+1
+
+[42 AI in Retail Statistics You Need to Know in 2026](https://www.ringly.io/blog/ai-in-retail-statistics-2026)
+
+Ringly · 2026 · 52% integrated AI inventory; 30-50% forecast-error cuts; stockout and inventory-level data
+
+2
+
+[AI in Retail Statistics 2026](https://www.allaboutai.com/resources/ai-statistics/ai-in-retail/)
+
+AllAboutAI · 2026 · Adoption and operational-impact data across retail AI
+
+3
+
+[AI in the Consumer Retail Industry Statistics 2026](https://gitnux.org/ai-in-the-consumer-retail-industry-statistics/)
+
+Gitnux · 2026 · Supply chain, forecasting, and carrying-cost impact figures
+
+---
+
+<!-- https://www.makersquare.ai/blog/ai-for-lead-generation -->
+
+# AI for Lead Generation: More Pipeline, Less Grunt Work | MakerSquare
+
+> AI for lead generation in 2026: what actually works for research, scoring, and outreach. Real B2B data on quality, conversion, and where AI helps most.
+
+[← Blog](/blog)
+
+AI at Work
+
+## AI for Lead Generation: More Pipeline, Less Grunt Work
+
+Marliis Schneider
+
+September 8, 2026
+
+5 min read
+
+![AI for Lead Generation: More Pipeline, Less Grunt Work](../images/blog/ai-for-lead-generation-og.webp)
+
+Key takeaways
+
+- 61% of B2B teams now use AI for lead scoring - up from 23% in 2024 - and 55% of businesses using generative AI for lead gen report getting better-quality leads.
+
+- The B2B conversion math is brutal: lead-to-customer averages under 1% (about 1 in 106), so quality of leads and follow-up beats raw volume every time.
+
+- AI's real leverage is the grunt work: researching and enriching prospects, scoring and prioritizing, and drafting personalized outreach at a scale a person can't match by hand.
+
+- AI search-referral traffic converts about 22% higher than organic - another reason being cited by AI answers matters for pipeline, not just brand.
+
+Lead generation has always been mostly grind: researching prospects, figuring out who's worth the time, and writing enough personalized outreach to fill a pipeline. That's precisely the part AI is good at now. The direct answer: AI helps most with the volume-heavy front end of lead gen - researching and enriching prospects, scoring which are worth pursuing, and drafting personalized outreach at scale - so your team spends its time on the conversations most likely to close.
+
+### AI-assisted prospecting went mainstream
+
+The shift is well underway: 61% of B2B teams now use AI for lead scoring, up from 23% in 2024. And it's not just adoption for its own sake - 55% of businesses using generative AI for lead generation report getting better-quality leads, and a similar share of teams using AI chat/capture report an increase in high-quality lead volume. The tooling is also spreading fast: Forrester projects 62% of B2B websites will deploy conversational AI lead capture by 2027, up from 14% in early 2026.
+
+### Why quality matters more than volume (the conversion math)
+
+Here's the context that makes AI's role clear. The median B2B website converts at 2.9%, MQL-to-SQL runs about 13% at the median, and lead-to-customer across all sources averages just 0.94% - roughly one in 106 captured leads becomes closed-won revenue. With a funnel that leaky, generating more raw leads isn't the win; generating and prioritizing better ones is. That's exactly where AI earns its keep - not by flooding the top of the funnel, but by scoring and enriching so your team works the right leads.
+
+Cost reinforces the point. The median B2B cost-per-lead hit $213 in early 2026, ranging from about $98 for organic content to $487 for account-based marketing. When each lead is expensive, wasting rep time on unqualified ones is the real cost - and AI scoring directly attacks it.
+
+### Where AI actually plugs into the workflow
+
+**Research and enrichment.** AI can pull together what's known about a prospect - company, role, recent signals - in seconds, turning an hour of manual research into a minute of review.
+
+**Scoring and prioritization.** Instead of a rep guessing, AI ranks leads by fit and intent so the best ones get worked first.
+
+**Personalized outreach at scale.** The thing reps never have time to do well - a genuinely tailored first message for every lead - is exactly what AI drafts from the research, for a human to review and send.
+
+One more angle worth noting: AI search-referral traffic converts about 22% higher than organic, so being cited in AI answers isn't just brand visibility - it's a higher-converting pipeline source.
+
+### What this means if you own the pipeline
+
+The highest-leverage AI lead-gen work - research, scoring, tailored outreach - is buildable by someone who understands your customer and sales motion, not just an engineer. That's the MakerSquare premise, and it's a pattern our builders make directly: our [use cases](/use-cases) include an agent that researches an account and drafts the outreach, ready for a human to send.
+
+The teams that win at lead gen won't be the ones generating the most leads. They'll be the ones whose reps only ever talk to the right ones.
+
+Frequently asked questions
+
+How is AI used for lead generation in 2026?
+
+Mainly for the volume-heavy front end: researching and enriching prospects automatically, scoring and prioritizing leads by fit and intent, and drafting personalized outreach at scale. 61% of B2B teams now use AI for lead scoring, up from 23% in 2024.
+
+Does AI actually improve lead quality?
+
+Yes - 55% of businesses using generative AI for lead generation report getting better-quality leads, and a similar share of teams using AI chat/capture report more high-quality lead volume. Given how leaky B2B funnels are (lead-to-customer averages under 1%), better lead quality and prioritization matter more than raw volume.
+
+What's the best use of AI in sales prospecting?
+
+Prioritization and personalization. AI scoring ensures reps work the highest-fit leads first (critical when the median B2B cost-per-lead is $213), and AI-drafted, research-based outreach lets you personalize every message - something reps rarely have time to do by hand. A human still reviews and sends.
+
+Can AI write personalized outreach that actually works?
+
+It can draft genuinely tailored first messages from prospect research faster than any rep could by hand - the key is keeping a human in the loop to review and send, not blasting AI messages unedited. Used that way, it lets you personalize at a scale that was previously impossible.
+
+Do I need a technical team to use AI for lead generation?
+
+No. The most valuable AI lead-gen work - research, scoring, tailored outreach - can be built by someone who understands your customer and sales process. The tools are directed in plain language, so knowledge of your sales motion matters more than technical skill.
+
+Keep reading
+
+- [All MakerSquare posts](/blog)
+
+MakerSquare is a 2-week in-person AI builder program in Austin, TX where operators build real tools - like an agent that researches accounts and drafts outreach - around their own sales motion. See what two weeks of hands-on building looks like.
+
+[Get the curriculum](https://www.makersquare.ai/curriculum?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_ai-for-lead-generation_curriculum_20261002)
+[Sign up for the newsletter](https://ai-builder-brief.beehiiv.com/?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_ai-for-lead-generation_newsletter_20261002)
+
+Sources
+
+1
+
+[AI Lead Generation Statistics (2026)](https://click-vision.com/ai-lead-generation-statistics)
+
+Click-Vision · 2026 · 61% use AI for lead scoring; 55% report better-quality leads
+
+2
+
+[B2B Lead Generation Statistics 2026](https://www.digitalapplied.com/blog/b2b-lead-generation-statistics-2026-data-points)
+
+Digital Applied · 2026 · Conversion benchmarks, cost-per-lead, and funnel math
+
+3
+
+[Lead Generation Statistics 2026: Benchmarks & Trends](https://martal.ca/lead-generation-statistics-lb/)
+
+Martal · 2026 · Conversational AI capture growth and AI-referral conversion data
+
+---
+
+<!-- https://www.makersquare.ai/blog/ai-for-market-research -->
+
+# AI for Market Research: Six Angles, One Answer | MakerSquare
+
+> AI for market research in 2026: synthesize sources in minutes instead of weeks. What AI does well, where it needs a human, and how to run research that holds up.
+
+[← Blog](/blog)
+
+AI at Work
+
+## AI for Market Research: Six Angles, One Answer
+
+Marliis Schneider
+
+September 16, 2026
+
+5 min read
+
+![AI for Market Research: Six Angles, One Answer](../images/blog/ai-for-market-research-og.webp)
+
+Key takeaways
+
+- AI's real edge in research isn't one better search - it's running many angles at once and synthesizing them into a single answer in minutes.
+
+- 38% of knowledge workers now use generative AI daily, up from 11% in 2024 - research and synthesis is one of the most common uses.
+
+- The trap is treating AI research as final. It's excellent at gathering and structuring; a human still verifies the sources and makes the call.
+
+- The workflow that holds up: AI runs the breadth (multiple angles, fast synthesis), you supply the judgment (what's credible, what it means, what to do).
+
+Market research has always faced the same tension: doing it properly takes weeks, but decisions can't wait weeks. AI collapses that tradeoff - but only if you use it for what it's actually good at. The direct answer: AI's real leverage in market research is running many angles on a question simultaneously and synthesizing them into one coherent answer in minutes, while you stay the judgment layer that verifies sources and decides what it means.
+
+### Why 'six angles, one answer' beats one better search
+
+Most people use AI for research like a faster Google - one question, one answer. That undersells it badly. The real unlock is breadth: instead of asking one broad question, you have AI investigate the same problem from several specific angles at once - the market size, the main competitors, what customers complain about, what's changing, what the skeptics say - and then merge everything into a single synthesized view. A person can't hold six research threads in parallel; AI can, and then it compiles them. That's a genuinely different capability, not just a speed-up, and it's why research is one of the most common daily uses of AI - now that 38% of knowledge workers use generative AI daily, up from 11% in 2024.
+
+### What AI does well - and where it stops
+
+**AI is strong at:** gathering information across many sources fast, structuring it into a comparable format, surfacing themes and contradictions you'd miss reading serially, and drafting the research summary. This is the tedious, time-heavy 80% of research.
+
+**AI is not reliable for:** judging which sources are actually credible, catching when a confident-sounding claim is wrong or outdated, and making the decision the research is meant to inform. It will present a plausible synthesis whether or not the underlying sources are solid. That verification-and-judgment layer is exactly where your expertise now adds the most value.
+
+### The workflow that produces research you can trust
+
+The reliable pattern is a division of labor. Let AI run the breadth - the multiple angles, the fast gathering, the first-pass synthesis. Then you do three things a person has to: spot-check the key claims against real sources, apply judgment about what's credible and what it means for your specific situation, and make the call. Research that skips the human verification step is fast and risky; research that uses AI for breadth and a human for judgment is fast and sound. The second is a genuine competitive advantage - the analysis a competitor spends two weeks on, done in an afternoon and still trustworthy.
+
+### What this means for how you make decisions
+
+Getting real value here is a workflow skill, not a technical one - knowing how to direct the breadth and where to apply your own judgment. It's the same principle MakerSquare is built on, and our builders take it further: our [use cases](/use-cases) include agents that run multiple research angles and compile them automatically, so the whole 'six angles, one answer' loop becomes a tool you run on demand.
+
+The best market research isn't the fastest or the most thorough. It's the fastest one you can still stand behind.
+
+Frequently asked questions
+
+How is AI used for market research?
+
+Its biggest strength is running many angles on a question at once - market size, competitors, customer complaints, trends, counterarguments - and synthesizing them into a single answer in minutes. AI gathers across sources, structures the information, surfaces themes and contradictions, and drafts the summary. A human then verifies and decides.
+
+Can AI replace market research?
+
+No - it replaces the time-heavy gathering and synthesis, not the judgment. AI is excellent at breadth and structure but unreliable at judging which sources are credible or catching outdated claims. The research that holds up uses AI for the breadth and a human for verification and the actual decision.
+
+What's the best way to use AI for research?
+
+Don't ask one broad question - have AI investigate the same problem from several specific angles at once, then synthesize them. After that, spot-check the key claims against real sources and apply your own judgment about what's credible and what it means. Breadth from AI, judgment from you.
+
+Is AI-generated research reliable?
+
+Only as reliable as its sources - and AI will present a confident synthesis whether or not those sources are solid. It's strong for gathering and structuring, but it can surface outdated or wrong claims convincingly. That's why a human verification pass on the key facts is essential before acting on AI research.
+
+Do I need technical skills to use AI for market research?
+
+No. The valuable skill is a workflow one - knowing how to direct AI across multiple research angles and where to apply your own judgment. The tools are used in plain language, so understanding your market and your decision matters more than technical ability.
+
+Keep reading
+
+- [All MakerSquare posts](/blog)
+
+MakerSquare is a 2-week in-person AI builder program in Austin, TX where operators build real tools - like an agent that runs multiple research angles and compiles them - around the decisions they actually make. See what two weeks of hands-on building looks like.
+
+[Get the curriculum](https://www.makersquare.ai/curriculum?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_ai-for-market-research_curriculum_20261019)
+[Sign up for the newsletter](https://ai-builder-brief.beehiiv.com/?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_ai-for-market-research_newsletter_20261019)
+
+Sources
+
+1
+
+[60 AI Statistics and Trends for 2026](https://datafield.dev/blog/ai-statistics-trends-2026.html)
+
+DataField · 2026 · 38% of knowledge workers use generative AI daily, up from 11% in 2024
+
+2
+
+[AI Adoption Statistics: Business & Enterprise Data 2026](https://aibusinessweekly.net/p/ai-adoption-statistics)
+
+AI Business Weekly · 2026 · Research and synthesis as leading knowledge-work uses
+
+3
+
+[The State of AI in 2025](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai)
+
+McKinsey · 2025 · Where AI adds value across analysis and knowledge work
+
+---
+
 <!-- https://www.makersquare.ai/blog/ai-for-marketing-teams -->
 
 # AI Tools for Marketing Teams: Beyond Using ChatGPT
@@ -6922,6 +7427,117 @@ McKinsey & Company · 2024 · 20–30% campaign performance improvement and 40�
 [AI at Work 2025: Momentum Builds, but Gaps Remain](https://www.bcg.com/publications/2025/ai-at-work-momentum-builds-but-gaps-remain)
 
 BCG · 2025 · AI adoption gap between organizations using AI systematically vs. occasionally widens every quarter
+
+---
+
+<!-- https://www.makersquare.ai/blog/ai-for-nonprofits -->
+
+# AI for Nonprofits: Do More With the Team You Have | MakerSquare
+
+> AI for nonprofits in 2026: 92% now use AI but only 7% see major impact. Where it actually helps - grants, donor comms, reporting - and how to close the gap.
+
+[← Blog](/blog)
+
+AI at Work
+
+## AI for Nonprofits: Do More With the Team You Have
+
+Marliis Schneider
+
+September 15, 2026
+
+5 min read
+
+![AI for Nonprofits: Do More With the Team You Have](../images/blog/ai-for-nonprofits-og.webp)
+
+Key takeaways
+
+- 92% of nonprofits now use AI - but only 7% report major impact, and 65% describe their use as reactive and individual rather than strategic.
+
+- The gap isn't access, it's coordination: 81% use AI individually without shared workflows, and 47% have no AI governance policy at all.
+
+- The clearest wins are grant writing (already used by ~25% of nonprofit pros), donor communications, impact reporting, and inbox triage.
+
+- One real caveat for fundraising: 23% of foundations won't accept grant applications with AI-generated content, so AI should assist the draft, not replace your voice.
+
+Nonprofits run lean, which makes AI's promise - do more with the team you have - especially appealing. Almost all of them have started. Far fewer are getting real value. The direct answer: nearly every nonprofit now uses AI, but the ones seeing impact aren't using different tools - they've moved from scattered individual use to a shared, deliberate approach on a few high-value tasks like grants, donor communication, and reporting.
+
+### Adoption is nearly universal - impact isn't
+
+The headline from the 2026 nonprofit AI research is a gap. 92% of nonprofits now use AI, but only 7% report major improvements in organizational capability, and 79% see just small-to-moderate efficiency gains. The reason is in the next numbers: 65% characterize their AI use as reactive and individual rather than strategic, 81% use AI individually without shared workflows, and 47% have no AI governance policy. In other words, everyone's using it a little; almost no one is using it deliberately. That gap is the whole opportunity.
+
+### Where AI actually helps a nonprofit
+
+The highest-value uses are concrete and time-heavy - exactly the work that pulls a small team away from the mission:
+
+**Grant writing.** Already the leading use - about 25% of nonprofit professionals use AI for grants, and 60% express strong interest. AI drafts, tailors proposals to each funder, and checks against requirements, turning weeks of writing into days.
+
+**Donor communications.** Personalized thank-yous, updates, and appeals at a scale a two-person development team can't manage by hand.
+
+**Impact reporting.** Turning program data into the clear narratives funders and boards want, without a week of manual write-up.
+
+**Inbox and admin triage.** The quiet time-sink of any small org, handled so staff time goes to relationships instead.
+
+### The fundraising caveat worth knowing
+
+One important nuance specific to nonprofits: AI-generated content isn't universally welcome in fundraising. 23% of foundations will not accept grant applications containing generative-AI content (with most still undecided), and donor sentiment is mixed - some say AI use would make them less likely to give. The takeaway isn't 'avoid AI' - it's use AI to accelerate the draft and the research, while keeping the voice, the story, and the relationship authentically yours. AI as the assistant, not the author.
+
+### What this means for your organization
+
+The nonprofits that close the impact gap won't be the ones that adopt more tools - they'll be the ones that pick two or three high-value tasks and build a real, shared way of doing them with AI. That's a capability you can build in-house, and it's the MakerSquare premise: the people best placed to build with AI are the ones who understand the mission and the work. Our [use cases](/use-cases) show what building that kind of tool looks like.
+
+The goal was never to use AI for its own sake. It's to give a stretched team back the hours the mission actually needs.
+
+Frequently asked questions
+
+How are nonprofits using AI in 2026?
+
+The most common and highest-value uses are grant writing (about 25% of nonprofit pros already use AI here), donor communications, impact reporting, and inbox/admin triage. 92% of nonprofits use AI in some form, but most use is still individual and reactive rather than a deliberate, shared workflow.
+
+Why aren't nonprofits seeing bigger results from AI?
+
+Not access - coordination. 92% use AI but only 7% report major impact, because 65% describe their use as reactive and individual, 81% use it without shared workflows, and 47% have no governance policy. The organizations seeing impact moved from scattered use to a deliberate approach on a few tasks.
+
+Can nonprofits use AI for grant writing?
+
+Yes, and it's the leading use case - but with a caveat. AI is excellent at drafting, tailoring proposals to funders, and checking requirements. However, 23% of foundations won't accept applications with AI-generated content (most are undecided), so use AI to accelerate the draft while keeping the voice and story authentically yours.
+
+Does using AI hurt donor trust?
+
+It can if handled carelessly - donor sentiment is mixed, with some saying AI use would make them less likely to give. The safe approach is AI as an assistant that speeds research and drafting, while the actual relationship, story, and voice stay human. Transparency and keeping communications personal matter.
+
+Do small nonprofits need technical staff to use AI?
+
+No. The highest-value uses (grants, donor comms, reporting) are directed in plain language, and the real work is deciding which tasks to apply AI to and building a shared way of doing them. Understanding the mission and the workflow matters more than technical skill.
+
+Keep reading
+
+- [All MakerSquare posts](/blog)
+
+MakerSquare is a 2-week in-person AI builder program in Austin, TX for people who understand their mission and want to build real AI tools around the work - not just experiment. See what two weeks of hands-on building looks like.
+
+[Get the curriculum](https://www.makersquare.ai/curriculum?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_ai-for-nonprofits_curriculum_20261016)
+[Sign up for the newsletter](https://ai-builder-brief.beehiiv.com/?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_ai-for-nonprofits_newsletter_20261016)
+
+Sources
+
+1
+
+[2026 Nonprofit AI Adoption Report](https://virtuous.org/blog/2026-nonprofit-ai-adoption-report/)
+
+Virtuous & Fundraising.AI · 2026 · Survey of 346 nonprofits; adoption vs. impact gap
+
+2
+
+[Nonprofit AI Adoption Hits 92% but Only 7% See Major Impact](https://www.nonprofitpro.com/article/nonprofit-ai-adoption-hits-92-but-only-7-see-major-impact/)
+
+NonProfit PRO · 2026 · Individual vs. strategic use and governance gaps
+
+3
+
+[2026 AI Marketing & Fundraising Statistics for Nonprofits](https://www.nptechforgood.com/101-best-practices/ai-marketing-fundraising-statistics-for-nonprofits/)
+
+Nonprofit Tech for Good · 2026 · Grant-writing use and foundation-acceptance data
 
 ---
 
@@ -7053,6 +7669,216 @@ Salesforce · 2025 · 35% of employees feel confident using AI for their specifi
 [Gartner Top 10 Strategic Technology Trends for 2025](https://www.gartner.com/en/articles/gartner-top-10-strategic-technology-trends-for-2025)
 
 Gartner · 2025 · Agentic AI workflows now accessible to non-technical professionals
+
+---
+
+<!-- https://www.makersquare.ai/blog/ai-for-presentations -->
+
+# AI for Presentations: From Blank Slide to First Draft | MakerSquare
+
+> AI for presentations in 2026: what actually saves time on decks, where AI-generated slides fall short, and how to use them without losing hours to cleanup.
+
+[← Blog](/blog)
+
+AI at Work
+
+## AI for Presentations: From Blank Slide to First Draft
+
+Marliis Schneider
+
+September 10, 2026
+
+5 min read
+
+![AI for Presentations: From Blank Slide to First Draft](../images/blog/ai-for-presentations-og.webp)
+
+Key takeaways
+
+- The median time a business user spends on a presentation dropped from 4.2 hours in 2023 to 38 minutes in 2026 - and most of that is now review, not building.
+
+- AI now generates an estimated 47 million business presentations per month, up from ~11 million in 2024; enterprise adoption has crossed 60%.
+
+- The catch: in many cases the time saved on generation is lost again in revision and cleanup. AI gets you to a strong first draft, not a finished deck.
+
+- The winning workflow is AI for the 80% (structure, first-pass slides, speaker notes) plus a human for the 20% that matters (the argument, the data, the brand).
+
+Few work tasks are as universally dreaded as building a deck from a blank slide. AI has made a real dent here - but not in the way the hype suggests. The direct answer: AI is excellent at getting you from nothing to a solid first draft of a presentation in minutes, but it doesn't produce a finished, ready-to-present deck. The time win is real; the trap is assuming the output is done when it's actually 80% there.
+
+### The time savings are genuinely dramatic
+
+The numbers are striking. The median time a business user spends on a presentation fell from 4.2 hours in 2023 to 38 minutes in 2026 - and critically, most of that remaining time is now spent reviewing rather than building. Prep time for a standard 10-slide deck dropped from 2-3 hours to under 2 hours (and near-instant for a rough first pass). AI now generates an estimated 47 million business presentations per month, up from roughly 11 million in 2024, with enterprise adoption past 60% and mid-market leading at 68%. Building decks with AI has quietly become the default.
+
+### The honest catch: generation isn't the whole job
+
+Here's what the hype leaves out, and it's important. In several documented cases, the time saved by AI-generated slides was lost again in revision and cleanup. The core finding from tool testing: AI can automate much of the creation process, but brand control, data accuracy, export stability, and workflow fit determine whether a tool actually saves time or just moves the work. A deck that looks done in 30 seconds but has your numbers slightly wrong, your brand colors off, and a story that doesn't quite land isn't done - and fixing those can eat the time you saved.
+
+### The workflow that actually works: AI for the 80%
+
+The right mental model is AI for the 80%, human for the 20%. Let AI handle the parts that are genuinely tedious and low-judgment: structuring the flow from your rough notes, generating a first pass of every slide, drafting speaker notes, and suggesting where a chart or visual belongs. Then you own the 20% that actually determines whether the presentation works: is the argument right, are the numbers accurate, does it sound like you, is it on-brand. That division plays to both sides - AI's speed on the scaffolding, your judgment on the substance.
+
+The mistake is treating the AI draft as the deliverable. The win is treating it as the fastest possible starting point - which, at 38 minutes down from over 4 hours, is a very good deal.
+
+### What this means for how you work
+
+Getting real value from AI presentations - knowing what to delegate, what to keep, and how to direct the tool - is a practical skill, not a technical one. It's the same principle MakerSquare is built on: the leverage comes from judgment about the work, not from coding. Our [use cases](/use-cases) show how operators build AI into the real tasks they do every week.
+
+The best presenters won't be the ones who let AI make the whole deck. They'll be the ones who let it make the first draft and spent their saved hours making the argument land.
+
+Frequently asked questions
+
+How much time does AI save on presentations?
+
+A lot: the median time a business user spends on a presentation dropped from 4.2 hours in 2023 to 38 minutes in 2026, with most of that now spent reviewing rather than building. But some of the savings can be lost to revision and cleanup if you treat the AI draft as finished rather than as a strong starting point.
+
+Are AI-generated presentations actually good?
+
+They're good first drafts, not finished decks. AI handles structure, first-pass slides, and speaker notes well, but brand control, data accuracy, and whether the argument lands still need a human. The quality is strong for scaffolding and weaker for the substance that determines whether the presentation works.
+
+What's the best way to use AI for slides?
+
+AI for the 80%, human for the 20%. Let AI structure the flow, draft every slide, and write speaker notes from your notes; then you own the argument, verify the data, fix the branding, and make it sound like you. Treating the AI draft as a starting point rather than the deliverable is the key.
+
+What's the downside of AI presentation tools?
+
+The main risk is that time saved on generation gets lost in cleanup - wrong numbers, off-brand styling, a story that doesn't quite land, or export/format issues. AI automates creation but not judgment, so a deck that looks done in seconds often still needs real review before it's presentable.
+
+Do I need design skills to make presentations with AI?
+
+No - AI handles layout and first-pass design. What you need is judgment about the content: is the argument clear, are the numbers right, does it fit your brand and audience. That's more about knowing your material than about design or technical skill.
+
+Keep reading
+
+- [All MakerSquare posts](/blog)
+
+MakerSquare is a 2-week in-person AI builder program in Austin, TX for operators and professionals who want to put AI to work on the real tasks they do every week. See what two weeks of hands-on building looks like.
+
+[Get the curriculum](https://www.makersquare.ai/curriculum?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_ai-for-presentations_curriculum_20261005)
+[Sign up for the newsletter](https://ai-builder-brief.beehiiv.com/?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_ai-for-presentations_newsletter_20261005)
+
+Sources
+
+1
+
+[State of AI Presentations in 2026](https://2slides.com/blog/state-of-ai-presentations-2026-trends-stats-predictions)
+
+2Slides · 2026 · Time-per-presentation drop; 47M decks/month; adoption thresholds
+
+2
+
+[75+ Presentation Statistics for 2026](https://www.presentations.ai/blog/presentation-statistics)
+
+Presentations.ai · 2026 · Prep-time benchmarks and AI adoption data
+
+3
+
+[Best AI Presentation Builders of 2026 (Tested)](https://www.nextdocs.io/blogs/best-ai-presentation-builders-2026)
+
+NextDocs · 2026 · Tool testing on where time is saved vs. lost to cleanup
+
+---
+
+<!-- https://www.makersquare.ai/blog/ai-for-product-managers -->
+
+# AI for Product Managers: Ship More, Grind Less | MakerSquare
+
+> AI for product managers in 2026: what actually works for PRDs, user feedback analysis, and prioritization - so PMs spend less time on busywork and more on the product.
+
+[← Blog](/blog)
+
+AI at Work
+
+## AI for Product Managers: Ship More, Grind Less
+
+Marliis Schneider
+
+September 5, 2026
+
+5 min read
+
+![AI for Product Managers: Ship More, Grind Less](../images/blog/ai-for-product-managers-og.webp)
+
+Key takeaways
+
+- 73% of product managers now use AI tools weekly or daily, and 60% regularly delegate repetitive tasks to AI - it's gone from experiment to default in about a year.
+
+- The proven uses are specific: drafting PRDs, analyzing thousands of pieces of user feedback at once, roadmap prioritization, and competitive intelligence.
+
+- AI-augmented PM roles show ~40% productivity gains, versus ~12% from traditional automation alone - the lift comes from judgment work, not just task-shaving.
+
+- The job is shifting toward synthesis and judgment - deciding what to build and why - while AI absorbs the drafting and the data-crunching around it.
+
+Product management has always been part craft, part administrative grind - the PRDs, the feedback triage, the status synthesis. AI in 2026 is aimed squarely at the grind. The direct answer: AI helps PMs most with drafting PRDs, analyzing large volumes of user feedback, prioritizing roadmaps, and competitive research - freeing time for the judgment work (deciding what to build and why) that AI can't do and that is the actual job.
+
+### It became a default tool, fast
+
+The adoption curve is steep. 73% of product managers now use AI tools on a weekly or daily basis, up from scattered experimentation in 2024, and 60% of product owners regularly delegate repetitive tasks to AI. Notably, 78% of product owners want more automation for routine tasks - the demand is running ahead of the tooling, which is a strong signal the value is real.
+
+### Where AI actually earns its place in the workflow
+
+The use cases are concrete, not vague. AI is being used to write and structure PRDs from rough notes; to analyze thousands of customer comments automatically and surface trends and unmet needs faster than manual review ever could; to prioritize roadmaps using predictive analytics that forecast feature impact from historical and market data; and to run competitive intelligence continuously instead of in occasional bursts. Each of these targets a piece of the job that used to swallow hours - reading every support ticket, hand-summarizing feedback, rebuilding the same doc structure.
+
+The productivity numbers back it up: AI-augmented product roles show around 40% productivity improvement, compared to roughly 12% from traditional automation alone. The gap matters - it means the gains aren't just from shaving minutes off tasks, but from AI helping with the analysis and synthesis that used to be a bottleneck.
+
+### The shift: from document-producer to decision-maker
+
+Here's the part that should shape how you think about the role. As AI absorbs the drafting and the data-crunching, the premium on a PM's actual judgment goes up, not down. Deciding which unmet need is worth solving, reading what customers mean rather than what they said, making the call when the data is ambiguous - that's the irreplaceable core, and it's exactly what more of your week frees up for. Employment forecasts reflect this: AI-related product management roles are projected to grow at over 20% annually. The role isn't shrinking; it's concentrating on the parts that need a person.
+
+### What this means for PMs building AI skills
+
+The PMs who get the most from AI aren't the most technical - they understand their product, users, and roadmap well enough to direct AI precisely and catch where it's wrong. That's a learnable, high-leverage skill. MakerSquare is built on exactly this premise, and our [use cases](/use-cases) include building tools that pull from real product and user data - the kind of thing a PM can actually put to work.
+
+The best PMs won't be replaced by a PRD generator. They'll be the ones who used it to spend their week on the decisions that actually move the product.
+
+Frequently asked questions
+
+How are product managers using AI in 2026?
+
+The most common uses are drafting and structuring PRDs, analyzing large volumes of user feedback to surface trends and unmet needs, roadmap prioritization using predictive analytics, and continuous competitive intelligence. AI targets the repetitive, high-volume parts of the job rather than the decision-making.
+
+Does AI make product managers more productive?
+
+Yes - AI-augmented PM roles show around 40% productivity improvement, compared to roughly 12% from traditional automation alone. The larger gain comes from AI helping with analysis and synthesis (like reading thousands of feedback comments) rather than just automating small tasks.
+
+Will AI replace product managers?
+
+No. AI absorbs the drafting and data-crunching; the core of the job - deciding what to build and why, interpreting what users actually need, making judgment calls under ambiguity - stays human. AI-related PM roles are projected to grow over 20% annually, so the role is concentrating on judgment, not disappearing.
+
+What AI tools should a product manager use?
+
+General assistants (Claude, ChatGPT) cover most PRD drafting, feedback synthesis, and research well, and there are purpose-built PM tools for roadmap and feedback analysis. The best starting point is applying AI to your single most time-consuming recurring task - usually feedback analysis or PRD drafting.
+
+Do product managers need to learn to code to use AI?
+
+No. The PMs getting the most value understand their product and users well enough to direct AI precisely and catch its mistakes - the tools are directed in plain language. Product judgment matters far more than technical skill here.
+
+Keep reading
+
+- [All MakerSquare posts](/blog)
+
+MakerSquare is a 2-week in-person AI builder program in Austin, TX for people who understand their domain deeply and want to build real AI tools around it. See what two weeks of hands-on building looks like.
+
+[Get the curriculum](https://www.makersquare.ai/curriculum?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_ai-for-product-managers_curriculum_20260925)
+[Sign up for the newsletter](https://ai-builder-brief.beehiiv.com/?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_ai-for-product-managers_newsletter_20260925)
+
+Sources
+
+1
+
+[Product Manager AI Adoption 2026](https://aimojo.io/product-manager-ai-adoption/)
+
+AIMojo · 2026 · 73% of PMs use AI weekly/daily; 60% delegate repetitive tasks; productivity data
+
+2
+
+[AI Adoption in Product Management: What the 2026 Data Shows](https://www.ideaplan.io/blog/ai-adoption-product-management-2026-data)
+
+IdeaPlan · 2026 · Use cases across PRDs, feedback analysis, and prioritization
+
+3
+
+[AI for Product Managers: 2026 Guide](https://www.chatprd.ai/learn/ai-for-product-managers)
+
+ChatPRD · 2026 · Practical applications and the shift toward judgment work
 
 ---
 
@@ -7300,6 +8126,111 @@ Reading this for your team? We run private AI training for Austin companies — 
 
 ---
 
+<!-- https://www.makersquare.ai/blog/ai-for-retail -->
+
+# AI for Retail: What's Working in Stores in 2026 | MakerSquare
+
+> AI for retail in 2026 - real data on what
+
+[← Blog](/blog)
+
+AI at Work
+
+## AI for Retail: What's Working in Stores in 2026
+
+Marliis Schneider
+
+September 4, 2026
+
+5 min read
+
+![AI for Retail: What](../images/blog/ai-for-retail-og.webp)
+
+Key takeaways
+
+- 89% of retail and CPG companies are now using or testing AI, with active deployment at 58% - up 16 points in a single year.
+
+- The clearest ROI is in inventory: retailers using AI-powered inventory management report 30-50% cuts in forecast errors, ~30% fewer stockouts, and 20-30% lower inventory levels.
+
+- On the revenue side, 89% of retailers report AI-driven revenue gains; personalization leaders see up to 40% higher revenue than non-AI peers.
+
+- The winning move for a smaller retailer isn't matching a big chain's AI budget - it's picking one high-pain area (usually inventory or personalization) and actually deploying it.
+
+For retailers, AI in 2026 has moved from trend decks to the back office and the shelf. The direct answer: the clearest, most proven wins in retail AI are inventory forecasting (fewer stockouts, less dead stock) and personalization (more revenue per customer) - and a smaller retailer gets far more from deploying one of those well than from chasing every AI feature at once.
+
+### Adoption is now the majority, not the edge
+
+89% of retail and CPG companies are actively using or testing AI, and active deployment - not just experimentation - reached 58% in 2026, up 16 points from the prior year. The retail AI market itself hit $18.4 billion. Translation: using AI in retail operations has become table stakes among larger players, which is exactly why smaller retailers can't afford to treat it as optional much longer.
+
+### Inventory: the clearest, least glamorous win
+
+The most reliable ROI in retail AI isn't a flashy chatbot - it's forecasting. 52% of retail companies have integrated AI-powered inventory management, and the results are concrete: 30-50% cuts in forecast errors, around a 30% reduction in stockouts, and 20-30% lower total inventory levels through predictive demand modeling. That's money on both sides of the equation - fewer lost sales from empty shelves, and less cash tied up in stock that isn't moving. For most retailers, this is where AI pays for itself first.
+
+### Personalization and pricing: revenue on the front end
+
+On the customer side, the numbers are equally real. 89% of retailers report AI-driven revenue gains, and the leaders in AI personalization achieve up to 40% higher revenue than non-AI peers - with more typical personalization efforts driving a 5-15% lift. Dynamic pricing is another lever: AI-driven pricing can increase profits by around 10% and sales by 13%. And on service, 79% of brands say AI-driven conversational commerce has increased their sales.
+
+The common thread: these gains come from connecting AI to a retailer's actual data - real sales history, real customer behavior, real inventory - not from a generic tool bolted on top.
+
+### What this means for a smaller retailer
+
+You don't need a chain's AI budget to capture most of the value. Pick the area where you bleed the most - usually inventory (dead stock and stockouts) or personalization (leaving revenue on the table with one-size-fits-all) - and deploy one real solution around your own data. That's the same principle MakerSquare teaches: the people who get results from AI aren't the most technical, they're the ones who know exactly where their business hurts. Our [use cases](/use-cases) show what building that kind of tool actually looks like.
+
+The retailers who pull ahead won't be the ones with the most AI features. They'll be the ones who fixed their most expensive problem first.
+
+Frequently asked questions
+
+What is AI used for in retail in 2026?
+
+The most proven uses are inventory and demand forecasting (fewer stockouts, less dead stock), personalization (product recommendations and tailored marketing), dynamic pricing, and AI-assisted customer service. Inventory forecasting tends to deliver the clearest, fastest ROI for most retailers.
+
+How much can AI improve retail revenue?
+
+89% of retailers report AI-driven revenue gains. Personalization leaders see up to 40% higher revenue than non-AI peers, with more typical efforts driving a 5-15% lift. AI-driven dynamic pricing can add roughly 10% to profits and 13% to sales. Results depend heavily on connecting AI to your real sales and customer data.
+
+What's the best place for a small retailer to start with AI?
+
+Usually inventory management or personalization - whichever is your bigger pain. AI inventory tools cut forecast errors 30-50% and stockouts ~30%; personalization recovers revenue lost to one-size-fits-all. Pick the one costing you the most and deploy it fully rather than spreading thin across features.
+
+Does AI inventory management actually work?
+
+Yes - it's one of retail AI's most reliable wins. 52% of retailers have integrated AI inventory management, reporting 30-50% lower forecast errors, ~30% fewer stockouts, and 20-30% lower inventory levels. It saves money on both ends: fewer lost sales and less cash trapped in unsold stock.
+
+Do I need a technical team to use AI in my retail business?
+
+No. The retailers getting results are the ones who know exactly where their business loses money and apply AI there - the tools are increasingly directed in plain language and connect to your existing systems. Domain knowledge of your own operation matters more than technical skill.
+
+Keep reading
+
+- [All MakerSquare posts](/blog)
+
+MakerSquare is a 2-week in-person AI builder program in Austin, TX for operators who want to build real AI tools around their own business data - not just use them. See what two weeks of hands-on building looks like.
+
+[Get the curriculum](https://www.makersquare.ai/curriculum?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_ai-for-retail_curriculum_20260923)
+[Sign up for the newsletter](https://ai-builder-brief.beehiiv.com/?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_ai-for-retail_newsletter_20260923)
+
+Sources
+
+1
+
+[AI in Retail Statistics 2026](https://www.allaboutai.com/resources/ai-statistics/ai-in-retail/)
+
+AllAboutAI · 2026 · $18.4B market; 89% using/testing AI; 58% active deployment
+
+2
+
+[42 AI in Retail Statistics You Need to Know in 2026](https://www.ringly.io/blog/ai-in-retail-statistics-2026)
+
+Ringly · 2026 · Inventory forecast-error cuts, stockout reduction, revenue and cost data
+
+3
+
+[31 Personalized Shopping Experience Statistics](https://www.envive.ai/post/personalized-shopping-experience-statistics)
+
+Envive · 2026 · Personalization revenue lift and AI-leader vs non-AI comparison
+
+---
+
 <!-- https://www.makersquare.ai/blog/ai-for-sales-teams -->
 
 # AI for Sales Teams: What Top Performers Build Now
@@ -7423,6 +8354,109 @@ McKinsey & Company · 2024 · AI adoption in sales and marketing driving measura
 
 ---
 
+<!-- https://www.makersquare.ai/blog/ai-for-scheduling -->
+
+# AI for Scheduling: Give Back the Calendar Tetris | MakerSquare
+
+> AI for scheduling in 2026: automate booking, reminders, and rebooking. Real data on hours saved, fewer no-shows, and where it pays off for small businesses.
+
+[← Blog](/blog)
+
+AI at Work
+
+## AI for Scheduling: Give Back the Calendar Tetris
+
+Marliis Schneider
+
+September 12, 2026
+
+5 min read
+
+![AI for Scheduling: Give Back the Calendar Tetris](../images/blog/ai-for-scheduling-og.webp)
+
+Key takeaways
+
+- Small business owners spend about 7.4 hours a week on scheduling; AI automation cuts that to under 2 - a 50-60% time saving.
+
+- AI-driven reminders and smart booking reduce no-shows by 30-50%, which for appointment businesses is direct recovered revenue.
+
+- The ROI is unusually high: businesses report an average 312% return within the first 12 months of deploying AI booking.
+
+- This is one of the lowest-friction AI wins - it automates a specific, universally hated task rather than requiring you to rethink how you work.
+
+Scheduling is the kind of work nobody misses when it's gone. The back-and-forth to find a time, the reminders, the reshuffling when someone cancels - it's pure overhead, and it's exactly what AI handles well. The direct answer: AI scheduling automates booking, reminders, and rebooking end to end, cutting the hours you spend on it by more than half and sharply reducing no-shows - one of the clearest, lowest-friction AI wins available to a small business.
+
+### The time it gives back is real and large
+
+The numbers are hard to argue with. Small business owners spend about 7.4 hours a week on scheduling; AI automation cuts that to under 2 hours - a 50-60% reduction. Put differently, staff save an average of 23 hours per month when AI takes over routine scheduling. That's most of a workweek, every month, returned to actual work.
+
+### Fewer no-shows = recovered revenue
+
+For any business that runs on appointments - clinics, salons, agencies, contractors, advisors - the second win matters as much as the first. AI-driven reminders and smart scheduling reduce no-shows by 30-50%. A no-show isn't just an empty slot; it's revenue that can't be recovered and a hole in the day that was already paid for in staff time. Cutting no-shows by a third or more is money straight back to the bottom line, which is a big part of why businesses report an average 312% ROI within the first year of deploying AI booking.
+
+### Why scheduling is such a clean AI win
+
+Most AI adoption stalls because it asks people to change how they work. Scheduling is different - it automates a bounded, rules-based task that everyone already wants gone, without touching the parts of the job that need judgment. The AI handles: finding mutually open times, sending confirmations and reminders, rescheduling cancellations, and filling gaps from a waitlist. None of that requires a human, and all of it eats time when done by hand. That combination - high pain, low judgment, bounded scope - is exactly what makes an AI use case succeed rather than get abandoned.
+
+### What this means for your business
+
+If you or your staff spend real hours coordinating times, scheduling is one of the safest first places to put AI to work - low risk, fast payback, no reengineering. It's the kind of specific, bounded tool MakerSquare builders create around a real business need. Our [use cases](/use-cases) show what building that looks like, tailored to how you actually book.
+
+Nobody ever grew a business by being better at calendar Tetris. This is a task worth handing off entirely.
+
+Frequently asked questions
+
+How much time does AI scheduling actually save?
+
+A lot for a bounded task: small business owners spend about 7.4 hours a week on scheduling, and AI cuts that to under 2 - a 50-60% reduction. Staff save an average of 23 hours per month when AI handles routine scheduling. It's one of the highest time-to-effort payoffs in small-business AI.
+
+Does AI scheduling reduce no-shows?
+
+Yes - AI-driven reminders and smart scheduling reduce no-shows by 30-50%. For appointment-based businesses that's direct recovered revenue, since a no-show is a paid-for slot that can't be refilled after the fact. Reduced no-shows are a big reason AI booking shows an average 312% first-year ROI.
+
+What can AI scheduling actually do?
+
+Find mutually open times, send confirmations and reminders, reschedule cancellations, and fill gaps from a waitlist - the full booking loop, automatically. It handles the coordination and communication that eats hours by hand, without needing a person in the loop for routine bookings.
+
+Is AI scheduling worth it for a small business?
+
+For most appointment- or meeting-heavy businesses, yes - it's one of the lowest-friction AI wins. It automates a bounded, universally disliked task (rather than requiring you to change how you work), with fast payback from both hours saved and fewer no-shows.
+
+Do I need technical skills to set up AI scheduling?
+
+No. Modern AI scheduling tools are built to connect to your existing calendar and be configured in plain language. The main decisions are about your business rules (availability, buffers, reminders), not code - so operational knowledge matters more than technical skill.
+
+Keep reading
+
+- [All MakerSquare posts](/blog)
+
+MakerSquare is a 2-week in-person AI builder program in Austin, TX for operators who want to automate the specific, time-eating tasks in their business - and build the tool that does it. See what two weeks of hands-on building looks like.
+
+[Get the curriculum](https://www.makersquare.ai/curriculum?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_ai-for-scheduling_curriculum_20261009)
+[Sign up for the newsletter](https://ai-builder-brief.beehiiv.com/?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_ai-for-scheduling_newsletter_20261009)
+
+Sources
+
+1
+
+[AI Appointment Booking Statistics 2026](https://agentzap.ai/blog/ai-booking-statistics)
+
+AgentZap · 2026 · Time saved, no-show reduction, and 312% first-year ROI figures
+
+2
+
+[AI Automation for Small Business Statistics 2026](https://deantek.co/blog/ai-automation-small-business-statistics-2026)
+
+Deantek · 2026 · Owner scheduling-time reduction and administrative cost savings
+
+3
+
+[60 Online Scheduling Statistics (2026)](https://schedulingkit.com/statistics/scheduling-statistics)
+
+SchedulingKit · 2026 · Scheduling market and automation adoption data
+
+---
+
 <!-- https://www.makersquare.ai/blog/ai-for-seo -->
 
 # AI for SEO: What Actually Works in 2026 | MakerSquare
@@ -7540,6 +8574,117 @@ Socioapt · 2026 · Data on AI citation, entity-based optimization, and brand vi
 
 ---
 
+<!-- https://www.makersquare.ai/blog/ai-for-small-business -->
+
+# AI for Small Business: Where to Actually Start | MakerSquare
+
+> AI for small business in 2026: 89% of small businesses now use AI, but most stall. Here
+
+[← Blog](/blog)
+
+AI at Work
+
+## AI for Small Business: Where to Actually Start
+
+Marliis Schneider
+
+September 7, 2026
+
+5 min read
+
+![AI for Small Business: Where to Actually Start](../images/blog/ai-for-small-business-og.webp)
+
+Key takeaways
+
+- 89% of small businesses now use AI in some form - up from 36% in 2023 - but only about 8% reach advanced adoption. Most stall after one or two experiments with no real strategy.
+
+- The businesses that get results started with one specific problem, not 'we should do AI.' A single use case, implemented and measured, before expanding.
+
+- The lowest-barrier, highest-ROI entry points: content creation (marketing copy, emails), customer service (FAQs, after-hours messages), and data analysis/reporting.
+
+- The top barrier isn't cost - it's knowledge and confidence, cited by 44% of small business owners. The skills gap is bigger than the money gap.
+
+Almost every small business has now tried AI, and most are stuck. The direct answer to where to start: pick one specific, painful, repetitive problem - not an 'AI strategy' - and solve just that with AI, then measure it before you expand. The businesses seeing real returns didn't roll out AI everywhere. They fixed one thing well.
+
+### Nearly everyone has started - almost no one has scaled
+
+Adoption is basically universal now: 89% of small businesses use AI in some form, up from 36% in 2023 and 58% in 2024. But depth is rare - only about 8% reach advanced adoption, with most businesses investing in one or two use cases without a broader strategy and then plateauing. That gap between 'we've tried AI' and 'AI meaningfully runs part of our business' is exactly where the opportunity sits for any owner willing to go one step deeper than their competitors.
+
+### Where AI actually lands first (and should)
+
+The data shows clear, low-barrier entry points where the ROI is immediate and measurable:
+
+**Content creation.** The most common use - 68% of small businesses use AI for marketing content, plus emails, social posts, and product descriptions. Zero setup, instant time savings.
+
+**Customer service.** 51% of AI-adopting small businesses use it here - FAQs, after-hours messages, first-response triage. The ROI is visible fast: fewer missed messages, faster replies, more captured leads.
+
+**Data analysis and reporting.** 62% use AI for data tasks - turning sales numbers into plain-English summaries and forecasts without a analyst. Faster reporting is one of the most measurable wins available.
+
+These share a trait: low barrier to entry, no custom build, no technical team. Ease of adoption is the main reason AI lands in these areas first for small teams - and that's a feature, not a compromise. Start where the friction is lowest and the payback is fastest.
+
+### The real barrier isn't money - it's knowing how
+
+Here's the finding that should reframe how you think about this: the top barrier to AI adoption isn't cost. It's lack of knowledge and confidence, cited by 44% of small business owners. The skills gap is more significant than the cost gap. Most of the highest-value AI tools are cheap or free - what's missing is knowing which problem to point them at and how. That's good news, because a skills gap is closeable in a way a budget gap often isn't.
+
+### What this means for your business
+
+You don't need an AI strategy deck or a consultant. You need one problem you know is costing you time or money, and the confidence to build a solution to just that. That's the entire premise of MakerSquare: the people best placed to build with AI aren't technical specialists, they're operators who know exactly where their business hurts. Our [use cases](/use-cases) show what small businesses actually build - working tools around one real problem at a time.
+
+The small businesses that pull ahead won't be the ones with the biggest AI plans. They'll be the ones who fixed one expensive problem and then fixed the next.
+
+Frequently asked questions
+
+Where should a small business start with AI?
+
+With one specific, repetitive, painful problem - not a broad 'AI strategy.' The lowest-barrier, highest-ROI entry points are content creation (marketing copy, emails), customer service (FAQs, after-hours messages), and data analysis/reporting. Implement and measure one use case before expanding.
+
+How many small businesses actually use AI?
+
+89% use AI in some form as of 2026, up from 36% in 2023. But only about 8% reach advanced adoption - most stall after one or two experiments. The opportunity is in going one step deeper than the typical business, not in being first to try it.
+
+What's the biggest barrier to AI for small businesses?
+
+Not cost - knowledge and confidence, cited by 44% of small business owners. Most high-value AI tools are cheap or free; what's missing is knowing which problem to apply them to and how. The skills gap is bigger and more fixable than the budget gap.
+
+What AI tools are best for a small business on a budget?
+
+For most small businesses, start with a general assistant (Claude, ChatGPT) applied to your single biggest time drain, plus your existing software's built-in AI features. The best first tool is whichever addresses your most painful recurring task - usually content, customer response, or reporting - not the most feature-rich platform.
+
+Do I need to hire someone technical to use AI in my small business?
+
+No. The businesses getting results are run by operators who know exactly where they lose time and apply AI there - the tools are directed in plain language. Understanding your own operation matters more than technical skill for the highest-value first use cases.
+
+Keep reading
+
+- [All MakerSquare posts](/blog)
+
+MakerSquare is a 2-week in-person AI builder program in Austin, TX for small business owners and operators who want to build a real AI tool around one problem they actually have. See what two weeks of hands-on building looks like.
+
+[Get the curriculum](https://www.makersquare.ai/curriculum?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_ai-for-small-business_curriculum_20260930)
+[Sign up for the newsletter](https://ai-builder-brief.beehiiv.com/?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_ai-for-small-business_newsletter_20260930)
+
+Sources
+
+1
+
+[Small Business AI Adoption Statistics for 2026](https://capsulecrm.com/blog/small-business-ai-adoption-statistics/)
+
+Capsule CRM · 2026 · 89% adoption; ~8% advanced; most common use cases and entry points
+
+2
+
+[AI Adoption Statistics for Small Businesses: 2026 Report](https://stealthagents.com/research/ai-adoption-statistics-small-businesses)
+
+Stealth Agents · 2026 · Use-case breakdown across content, service, and data analysis
+
+3
+
+[AI Adoption Statistics for Small Business 2026](https://www.lilachbullock.com/ai-adoption-statistics-small-business/)
+
+Lilach Bullock · 2026 · Knowledge/confidence as the top barrier (44% of owners)
+
+---
+
 <!-- https://www.makersquare.ai/blog/ai-for-teachers -->
 
 # AI for Teachers: Less Prep, More Teaching | MakerSquare
@@ -7644,6 +8789,117 @@ Engageli · 2026 · Most common uses: lesson planning, materials, research; qual
 [AI in Education Statistics: 80 Data Points](https://azumo.com/artificial-intelligence/ai-insights/ai-in-education-statistics)
 
 Azumo · 2026 · Time-saving applications and how teachers reinvest recovered time
+
+---
+
+<!-- https://www.makersquare.ai/blog/ai-prompt-examples -->
+
+# AI Prompt Examples You'll Actually Reuse | MakerSquare
+
+> AI prompt examples for real work tasks - copy-paste prompts for email, summaries, research, and planning, plus the simple structure that makes any prompt better.
+
+[← Blog](/blog)
+
+AI at Work
+
+## AI Prompt Examples You'll Actually Reuse
+
+Marliis Schneider
+
+September 13, 2026
+
+6 min read
+
+![AI Prompt Examples You](../images/blog/ai-prompt-examples-og.webp)
+
+Key takeaways
+
+- A good prompt has four parts: role, context, task, and format. Miss any of them and the output gets generic.
+
+- The prompts worth saving aren't clever one-liners - they're templates for the tasks you do every week (email, summaries, research, planning).
+
+- The single highest-leverage move: after any output, ask the AI to critique its own work like a tough editor, then revise. It costs one line and noticeably improves the result.
+
+- These examples work in Claude, ChatGPT, and Gemini - the structure matters more than the tool.
+
+Most 'best AI prompts' lists are full of clever tricks you'll use once. This isn't that. The direct answer: the prompts worth keeping are simple templates for the tasks you already do every week, built on one reliable structure - and a handful of them will do more for your output than any prompt-engineering course.
+
+### The structure behind every good prompt
+
+Before the examples, the pattern they all share. A strong prompt gives the AI four things: a **role** ('you are a sharp B2B copywriter'), **context** (who it's for, what you're trying to achieve), a specific **task** ('write three subject-line options'), and a **format** ('as a bulleted list, under 10 words each'). Vague prompts skip context and format, which is exactly why they return generic answers. Nail those four and the quality jumps immediately - regardless of which AI you use.
+
+### Prompts for the tasks you actually repeat
+
+**Turn rough notes into a clear email:** 'You're writing on my behalf. Here are my rough notes: [paste]. Write a concise, friendly email to [who] that gets [goal]. Keep it under 150 words and sound like a real person, not a template.'
+
+**Summarize a long document into decisions:** 'Summarize the document below for a busy [role]. Give me: the 3 key points, any decisions required, and anything that needs my attention - as short bullets. Document: [paste].'
+
+**Research a topic from multiple angles:** 'I'm researching [topic] to decide [decision]. Give me the strongest case for it, the strongest case against, what most people get wrong, and what I should look into next.'
+
+**Draft a plan:** 'Help me plan [project]. Ask me up to 5 clarifying questions first, then give me a step-by-step plan with the riskiest step flagged.' (Getting the AI to ask questions first is an underused move that dramatically improves the plan.)
+
+**Prep for a hard conversation:** 'I need to talk to [who] about [situation]. Play them and push back on my points so I can practice. Start by asking me what outcome I want.'
+
+### The one follow-up that beats a better prompt
+
+Here's the highest-leverage habit, and it's not a prompt at all - it's a follow-up. After the AI gives you any draft, add: 'Now critique this like a tough editor - what's weak, generic, or missing? Then rewrite it addressing those points.' The model didn't get smarter between drafts; you just made it do what a good editor does before calling something finished. Most people skip this step and ship the first draft. Don't.
+
+### What this means for getting real value from AI
+
+The people who get the most from AI aren't collecting hundreds of prompts - they've saved five or six that fit their actual work and reuse them constantly. Building that small, personal library is a practical skill, and it's the same idea MakerSquare is built on: leverage comes from applying AI to work you understand, not from technical wizardry. Our [use cases](/use-cases) show where that goes next - wrapping your best prompts into tools you run on demand.
+
+The best prompt isn't the cleverest one. It's the one you'll still be using next month.
+
+Frequently asked questions
+
+What makes a good AI prompt?
+
+Four parts: a role for the AI, context (who it's for and what you're trying to achieve), a specific task, and a desired format. Vague prompts usually skip context and format, which is why they return generic output. Adding those two elements is the fastest way to improve any prompt.
+
+What are the best AI prompts for work?
+
+The most useful are reusable templates for tasks you repeat weekly: turning rough notes into a clean email, summarizing a document into key points and decisions, researching a topic from multiple angles, drafting a plan (with the AI asking clarifying questions first), and prepping for a hard conversation. Save the few that fit your actual job.
+
+How do I get better results from ChatGPT or Claude?
+
+Two moves. First, structure the prompt with role, context, task, and format. Second - and highest-leverage - after you get a draft, ask the AI to critique its own work like a tough editor and then revise. That single follow-up noticeably improves output and costs one line.
+
+Do the same prompts work in ChatGPT, Claude, and Gemini?
+
+Largely yes - the structure matters more than the tool. A well-built prompt (role, context, task, format) produces good results across all the major assistants. Save your prompts as templates and they'll carry between tools with minor tweaks.
+
+How many prompts do I actually need?
+
+Fewer than you'd think. The people getting the most from AI usually reuse five or six prompts that fit their real work, rather than collecting hundreds. Build a small personal library for your recurring tasks and refine it over time.
+
+Keep reading
+
+- [All MakerSquare posts](/blog)
+
+MakerSquare is a 2-week in-person AI builder program in Austin, TX where operators go from good prompts to real tools - wrapping the work they do every week into something they run on demand. See what two weeks of hands-on building looks like.
+
+[Get the curriculum](https://www.makersquare.ai/curriculum?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_ai-prompt-examples_curriculum_20261012)
+[Sign up for the newsletter](https://ai-builder-brief.beehiiv.com/?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_ai-prompt-examples_newsletter_20261012)
+
+Sources
+
+1
+
+[How Work About Work Gets in the Way of Real Work](https://asana.com/resources/why-work-about-work-is-bad)
+
+Asana · 2026 · Context on the repetitive work AI-prompt templates target
+
+2
+
+[Best AI SEO and Content Statistics 2026](https://www.demandsage.com/ai-seo-statistics/)
+
+DemandSage · 2026 · AI tool adoption among professionals for everyday work tasks
+
+3
+
+[2026 Small Business AI Outlook Report](https://www.business.com/articles/ai-usage-smb-workplace-study/)
+
+Business.com · 2026 · Time saved by workers using AI on routine tasks
 
 ---
 
@@ -7919,6 +9175,119 @@ Reading this for your team? We run private AI training for Austin companies — 
 
 ---
 
+<!-- https://www.makersquare.ai/blog/ai-tools-for-productivity -->
+
+# AI Productivity Tools: The Short List That's Worth It | MakerSquare
+
+> AI productivity tools in 2026: what actually saves time. Real data on hours recovered, why casual users get 2 hours and power users get 9, and how to be the latter.
+
+[← Blog](/blog)
+
+AI at Work
+
+## AI Productivity Tools: The Short List That's Worth It
+
+Marliis Schneider
+
+September 17, 2026
+
+5 min read
+
+![AI Productivity Tools: The Short List That](../images/blog/ai-tools-for-productivity-og.webp)
+
+Key takeaways
+
+- 75% of knowledge workers now use AI at work - but the time saved varies wildly: average users get about 2.2 hours a week, deliberate power users get 9 or more.
+
+- The gap isn't the tools - it's how deliberately they're used. That gap is the whole game.
+
+- The most reliable time wins are concentrated: email (about 3.6 hours/week, a 31% cut), summaries and notes, drafting, and research.
+
+- A bloated stack of AI apps doesn't help. A few tools used deeply beat a dozen used shallowly.
+
+Every week brings a new 'top 50 AI tools' list. Almost none of it matters. The direct answer: the productivity gain from AI has very little to do with how many tools you have and everything to do with how deliberately you use a few - the difference between the average user and the power user is about 7 hours a week, on the same tools.
+
+### The number that should reframe everything
+
+75% of knowledge workers now use AI at work. But the time it saves them splits dramatically: average users save about 2.2 hours a week, while deliberate power users save 9 or more. Workers using AI every day report a third saving at least four hours weekly, and those on production AI agents recover a median 6.4 hours per week. Same tools, wildly different returns. The variable isn't the software - it's whether someone built AI into how they actually work, or just occasionally opens a chatbot. Chasing more tools is optimizing the wrong thing.
+
+### Where the reliable time wins actually are
+
+The savings concentrate in a few high-frequency tasks, not exotic use cases:
+
+**Email.** The biggest single win - knowledge workers using AI save about 3.6 hours a week on email, a 31% reduction. Triage, drafts, and follow-ups.
+
+**Summaries and notes.** Turning meetings, documents, and threads into the key points and action items in seconds.
+
+**Drafting.** First versions of anything written - proposals, updates, posts - so you edit instead of starting cold.
+
+**Research and synthesis.** Gathering and structuring information across sources, fast.
+
+Notice these aren't tools - they're tasks. The power users picked a couple of tools and applied them relentlessly to these, rather than collecting apps.
+
+### The productivity paradox (and how not to fall into it)
+
+Here's the honest caveat. Despite individual time savings, a landmark study of 6,000 executives found 89% of firms saw zero measurable productivity impact from AI. How can both be true? Because saved minutes leak away if they're not deliberately redirected, and because scattered, shallow use never compounds. The businesses and people who beat the paradox did two things: used a few tools deeply on high-frequency tasks, and consciously reinvested the saved time into higher-value work. That's the difference between the 2.2-hour user and the 9-hour one.
+
+### What this means for you
+
+Don't build a bigger AI stack. Pick two or three tools, apply them hard to your most frequent tasks, and be deliberate about what you do with the time back. Becoming a power user is a practical skill, not a technical one - which is exactly what MakerSquare teaches. Our [use cases](/use-cases) show the next step: turning your best repeated workflows into tools you run on demand.
+
+The most productive people with AI don't have the most tools. They have the fewest, used the most.
+
+Frequently asked questions
+
+What are the best AI productivity tools in 2026?
+
+The most valuable aren't a long list - they're a few tools applied deeply to high-frequency tasks: email (the biggest win, ~3.6 hours/week saved), summaries and notes, drafting, and research. General assistants (Claude, ChatGPT) plus your existing software's built-in AI cover most of it. Depth of use beats breadth of tools.
+
+How much time does AI actually save at work?
+
+It varies enormously by how deliberately you use it: average users save about 2.2 hours a week, daily users often 4+, and deliberate power users 9 or more. Employees with enterprise AI accounts save 40-60 minutes a day. The tools are similar; the difference is how thoroughly they're built into your workflow.
+
+Why isn't AI improving my productivity?
+
+Usually because use is shallow and scattered, and saved time leaks away. A study of 6,000 executives found 89% of firms saw zero measurable productivity impact despite adoption. The fix: use a few tools deeply on your most frequent tasks, and consciously redirect the time saved into higher-value work.
+
+Do I need a lot of AI tools to be productive?
+
+No - the opposite. Power users get far more from a couple of tools used relentlessly than casual users get from a dozen used occasionally. A bloated AI stack adds decision overhead without adding output. Pick two or three and go deep.
+
+What's the single biggest AI productivity win?
+
+Email, for most knowledge workers - AI saves around 3.6 hours a week on it, a 31% reduction, through triage, drafting, and follow-ups. It's high-frequency, repetitive, and well-suited to AI, which is exactly the profile of a task where AI pays off.
+
+Keep reading
+
+- [All MakerSquare posts](/blog)
+
+MakerSquare is a 2-week in-person AI builder program in Austin, TX where operators go from casual AI use to power use - turning their most frequent workflows into real tools. See what two weeks of hands-on building looks like.
+
+[Get the curriculum](https://www.makersquare.ai/curriculum?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_ai-tools-for-productivity_curriculum_20261021)
+[Sign up for the newsletter](https://ai-builder-brief.beehiiv.com/?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_ai-tools-for-productivity_newsletter_20261021)
+
+Sources
+
+1
+
+[AI Productivity Tools Adoption Statistics 2026](https://stealthagents.com/research/ai-productivity-tools-adoption-statistics-2026)
+
+Stealth Agents · 2026 · 75% of knowledge workers use AI; time-saved ranges by user type
+
+2
+
+[AI Productivity Statistics 2026: Time Savings and ROI](https://blog.saner.ai/ai-productivity-statistics/)
+
+Saner · 2026 · Email time savings, power-user gap, and the productivity paradox
+
+3
+
+[25 AI-Driven Productivity Gains Statistics](https://www.thisandthat.chat/blog/ai-driven-productivity-gains-statistics/)
+
+This+That · 2026 · Task-level time savings and enterprise measurement findings
+
+---
+
 <!-- https://www.makersquare.ai/blog/ai-tools-for-remote-teams -->
 
 # AI Tools for Remote Teams: What's Actually Worth the Subscription | MakerSquare
@@ -8092,7 +9461,7 @@ Frequently asked questions
 
 How much does AI training cost for a small business in Austin?
 
-In-person, hands-on AI training programs in Austin typically run from $999 for a 3-day workshop to around $4,000 per person for a 2-week intensive that produces deployed, working AI products. One-day seminars are cheaper (often free or under $200) but rarely build lasting capability on their own.
+In-person, hands-on AI training programs in Austin typically run from $1,199 for a 3-day workshop to around $4,000 per person for a 2-week intensive that produces deployed, working AI products. One-day seminars are cheaper (often free or under $200) but rarely build lasting capability on their own.
 
 Is there in-person AI training available in Austin, Texas?
 
@@ -9633,6 +11002,115 @@ Zapier · 2025 · Non-technical professionals now the majority of multi-step aut
 [Anthropic AI Research](https://www.anthropic.com/research)
 
 Anthropic · 2025 · Specificity in AI instructions dramatically outperforms generic prompting for task performance
+
+---
+
+<!-- https://www.makersquare.ai/blog/how-to-build-an-ai-agent -->
+
+# How to Build an AI Agent: A Plain-English Guide | MakerSquare
+
+> How to build an AI agent in 2026, explained without the jargon. What an agent actually is, the core loop, and how a non-engineer can build a useful one.
+
+[← Blog](/blog)
+
+AI at Work
+
+## How to Build an AI Agent: A Plain-English Guide
+
+Marliis Schneider
+
+September 6, 2026
+
+6 min read
+
+![How to Build an AI Agent: A Plain-English Guide](../images/blog/how-to-build-an-ai-agent-og.webp)
+
+Key takeaways
+
+- An AI agent is just a model given a goal, a set of tools, and permission to loop - take an action, see the result, decide the next action - until the goal is met.
+
+- The momentum is real: Gartner expects 40% of enterprise applications to include task-specific AI agents by the end of 2026, up from under 5% in 2025.
+
+- But there's a gap between demo and durable: nearly two-thirds of enterprises have experimented with agents, yet fewer than 10% have scaled them to real value. The difference is scoping.
+
+- You don't need to be an engineer. The hard part of a useful agent isn't the code - it's clearly defining the goal, the tools, and the stopping conditions, which a domain expert is best placed to do.
+
+'AI agent' is one of the most hyped and least clearly explained terms in tech right now. Let's fix that. The direct answer: an AI agent is an AI model that's been given a goal, a set of tools it can use, and permission to work in a loop - taking an action, observing the result, and deciding the next action - until it reaches the goal or hits a stopping condition. That's the whole idea. Everything else is detail.
+
+### What an agent actually is (vs. a chatbot)
+
+A regular AI chat answers one question at a time - you ask, it responds, done. An agent is different in one specific way: it can take actions and react to what happens. Give it the goal 'find 20 companies hiring for this role and save them to a list,' plus tools (web search, a place to save data) and a stopping condition (20 companies, or 15 tool calls), and it will search, read results, decide it needs more, search again, and keep going until it's done. The loop - act, observe, decide, repeat - is what makes it an agent rather than a chatbot.
+
+### The momentum, and the honest caveat
+
+Agents are the biggest story in enterprise AI. Gartner expects 40% of enterprise applications to include task-specific AI agents by the end of 2026, up from less than 5% in 2025, and nearly 79% of companies report using AI agents in some form. But here's the caveat worth internalizing before you build one: nearly two-thirds of enterprises have experimented with agents, yet fewer than 10% have scaled them to deliver real value. The failures aren't usually technical - they're scoping failures. Agents given fuzzy goals and unlimited latitude wander; agents given a sharp goal, the right tools, and clear limits work.
+
+### The four things every useful agent needs
+
+**1. A specific goal.** Not 'help with marketing' - 'draft a personalized outreach email for each new lead in this spreadsheet.' Vague goals are the number-one reason agents fail.
+
+**2. The right tools.** An agent is only as capable as the tools you give it - web search, reading a database, sending a draft, running a calculation. Give it exactly what the task needs, no more.
+
+**3. Stopping conditions.** When is it done, and what's the ceiling? '30 candidates found, or 20 tool calls' keeps it from looping forever or going off the rails. This single guardrail separates reliable agents from expensive runaway ones.
+
+**4. A human checkpoint.** The best agents do the work and then hand it to a person to approve - especially anything customer-facing. That's not a limitation; it's the design that actually ships.
+
+### Why a non-engineer is well-positioned to build one
+
+Notice what the hard part actually is. It's not writing code - modern tools handle much of that. It's defining the goal precisely, choosing the right tools, and setting sensible limits. That's judgment about the work itself, which a person who understands the problem is far better at than a generalist engineer. This is exactly what MakerSquare teaches: our [use cases](/use-cases) include building working agents around real tasks, scoped tightly enough to actually be trusted.
+
+The people building agents that survive past the demo aren't the best coders. They're the ones who scoped the job so precisely that the agent couldn't help but succeed.
+
+Frequently asked questions
+
+What is an AI agent, in simple terms?
+
+An AI agent is an AI model given a goal, a set of tools it can use, and permission to work in a loop - take an action, observe the result, decide the next action - until it reaches the goal or hits a stopping condition. Unlike a chatbot that answers one question, an agent can take actions and react to what happens.
+
+How do you build an AI agent without coding?
+
+Modern tools handle much of the technical work, so the real task is defining four things clearly: a specific goal, the exact tools the agent needs, stopping conditions (when it's done and its ceiling), and a human checkpoint for approval. Getting those right - which is judgment about the work, not code - is what makes an agent useful.
+
+Why do most AI agents fail?
+
+Usually scoping, not technology. Nearly two-thirds of enterprises have experimented with agents but fewer than 10% have scaled them. Agents given fuzzy goals and unlimited latitude wander and produce unreliable results; agents given a sharp goal, the right tools, and clear limits work. The fix is tighter scoping, not more sophisticated code.
+
+What's the difference between an AI agent and a chatbot?
+
+A chatbot answers one prompt at a time - you ask, it responds. An agent can take actions and react to the results in a loop, working toward a goal across multiple steps (search, read, decide, act again) until it's done. The action-and-react loop is the defining difference.
+
+Do I need to be technical to build an AI agent?
+
+No. The hard part of a reliable agent isn't the code - it's defining the goal precisely, choosing the right tools, and setting stopping conditions and checkpoints. That's judgment about the task itself, which a domain expert who understands the problem is best positioned to provide.
+
+Keep reading
+
+- [All MakerSquare posts](/blog)
+
+MakerSquare is a 2-week in-person AI builder program in Austin, TX where operators and domain experts build real, working AI agents around their own tasks - scoped tightly enough to actually trust. See what two weeks of hands-on building looks like.
+
+[Get the curriculum](https://www.makersquare.ai/curriculum?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_how-to-build-an-ai-agent_curriculum_20260928)
+[Sign up for the newsletter](https://ai-builder-brief.beehiiv.com/?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_how-to-build-an-ai-agent_newsletter_20260928)
+
+Sources
+
+1
+
+[AI Agents Statistics 2026](https://sqmagazine.co.uk/ai-agents-statistics/)
+
+SQ Magazine · 2026 · Gartner 40%-of-apps forecast; ~79% of companies using agents
+
+2
+
+[Agentic AI Statistics 2026: Adoption, ROI, and Market Size](https://unicoconnect.com/blogs/agentic-ai-statistics-2026)
+
+Unico Connect · 2026 · Experimentation-vs-scale gap; enterprise adoption data
+
+3
+
+[Agentic AI Adoption Statistics for 2026](https://firstpagesage.com/reports/agentic-ai-adoption-statistics/)
+
+First Page Sage · 2026 · ROI and production-deployment findings
 
 ---
 
