@@ -246,7 +246,9 @@ t=w.setTimeout(load,3500);})(window,document,'script','dataLayer','GTM-MJTW9WQ3'
   .dn-hero .dn-hero-left > * { max-width: 100% !important; }
 }
 @media (max-width: 900px) {
-  .dn-offer-grid { grid-template-columns: 1fr 1fr; }
+  /* inline repeat(3,1fr) beats a plain media rule — !important forces 2-up, and guard overflow in this band */
+  .dn-offer-grid { grid-template-columns: 1fr 1fr !important; }
+  body { overflow-x: hidden; }
 }
 </style>
 </head>
