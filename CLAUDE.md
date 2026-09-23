@@ -236,9 +236,11 @@ Consumer workshops are back on the site: nav + More dropdown restored, /workshop
 
 | # | Dates | Topic | Early Bird Closes |
 |---|---|---|---|
-| WS-Sep | Sep 11–13, 2026 (Fri–Sun) | Build Your First AI Agent | Aug 26 |
-| WS-Oct | Oct 16–18, 2026 (Fri–Sun) | Automate Your Ops with AI | Sep 25 |
-| WS-Nov | Nov 6–8, 2026 (Fri–Sun) | Build Your First App with AI (vibe coding) | Oct 16 |
+| WS-Sep | Sep 11–13, 2026 (Fri–Sun) | Build Your First AI Agent *(ran — historical, do not rename)* | Aug 26 |
+| WS-Oct | Oct 16–18, 2026 (Fri–Sun) | **Ship Your First AI App** | Sep 25 |
+| WS-Nov | Nov 6–8, 2026 (Fri–Sun) | **Ship Your First AI App** | Oct 16 |
+
+**⚠️ Standardized Sep 22, 2026 (Ravi): every workshop from Oct 16–18 forward is the SAME product — "Ship Your First AI App", taught with the Ten Boxes framework.** Dates change; the topic does not. Do not reintroduce per-date topics ("Automate Your Ops with AI", "Build Your First App with AI") — they split the funnel and the SEO across two pages' worth of intent. The curriculum is the Ten Boxes deck: Day 1 ship a live URL, Day 2 database + logins + payment, Day 3 agents, automations, tests and security. Canonical deck: https://ten-boxes.pages.dev. Product name is the outcome ("Ship Your First AI App") for search intent; "the Ten Boxes" is the method name used inside copy, never as the page title. Past workshops keep their original names in `thank-you.html` analytics IDs and `certificate/*` — those are records, not listings.
 
 **⚠️ The early-bird-close dates above are the source of truth = the Stripe checkout deadlines in workshop-register.html (Aug 26 / Sep 25 / Oct 16). Any date shown on workshops.html, JSON-LD, or social must match these. Stale Wed dates (Sep 9/Oct 14/Nov 4) and earlier closes (Aug 19/Sep 23/Oct 14) have caused site-vs-checkout mismatches twice — verify against the register-page JS before changing.**
 

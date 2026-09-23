@@ -65,8 +65,8 @@ Site · agent · workflow
 
 Oct 16–18 · $1,199 · Austin
 
-[Next up · Oct 16–18 Automate Your Ops with AI The recurring work — reports, documents, inbox — stops being manual. Early bird $1,199 · Oct 16–18 →](/workshops)
-[Nov 6–8 Build Your First App with AI Idea to live app with a real database — vibe coding, done properly. Early bird $1,199 — ends Oct 16 →](/workshops)
+[Next up · Oct 16–18 Ship Your First AI App The recurring work — reports, documents, inbox — stops being manual. Early bird $1,199 · Oct 16–18 →](/workshops)
+[Nov 6–8 Ship Your First AI App Idea to live app with a real database — vibe coding, done properly. Early bird $1,199 — ends Oct 16 →](/workshops)
 
 Want the full transformation? The 2-week program returns Jan 11. Workshop attendees get $200 off.
 
@@ -1113,9 +1113,9 @@ From Cohort 1
 
 <!-- https://www.makersquare.ai/workshops -->
 
-# AI Workshops in Austin, TX — 3-Day Intensives, Fall 2026
+# Ship Your First AI App — 3-Day AI Workshop in Austin, TX
 
-> 3-day in-person AI workshops in Austin, TX. Hands-on skill sprints for operators, ops teams, and builders. Small cohorts. No coding required. From $1,199.
+> One 3-day AI workshop in Austin, TX, run on repeating weekends. Learn the ten boxes every software product fills and leave with a real app live on a real URL — database, logins, payments and agents included. No coding required. From $1,199.
 
 AI Workshops in Austin, TX · In-Person · 3 Days
 
@@ -1127,7 +1127,7 @@ NEXT UP
 
 Oct 16 – 18, 2026
 
-Automate Your Ops with AI
+Ship Your First AI App
 
 Early Bird $1,199 — ends Sep 25
 
@@ -1135,9 +1135,11 @@ November
 
 Nov 6 – 8, 2026
 
-Build Your First App with AI
+Ship Your First AI App
 
 Early Bird $1,199 — ends Oct 16
+
+Same workshop both weekends. Pick whichever one works.
 
 [Reserve a seat](/workshop-register)
 Private team training
@@ -1204,9 +1206,9 @@ You built it yourself, so you can fix it, change it, and build the next one.
 
 Next up · Enrolling now
 
-### Automate Your Ops with AI.
+### Ship Your First AI App.
 
-One weekend — Oct 16–18, Fri to Sun in Austin. Walk out Sunday with your recurring ops work running itself. No time off work, no boss to ask.
+One weekend — Oct 16–18, Fri to Sun in Austin. Walk out Sunday with a real app live on a real URL — database, logins and payments included. No time off work, no boss to ask.
 
 —
 
@@ -1226,7 +1228,7 @@ $1,199
 
 $1,399 after Sep 25
 
-✓ A weekly report that writes itself from your live sources
+✓ Your app live on a real URL, with a real database behind it
 
 ✓ Built on your real data and tools, not toy examples
 
@@ -1241,27 +1243,27 @@ Capital Factory · 701 Brazos St, downtown Austin
 
 Also this fall
 
-### Two more weekends. Same promise.
+### Two weekends. Same workshop.
 
-Hands-on, small group, led by a MakerSquare co-founder. Every workshop ends with a working system built on your own work — demoed live on Day 3.
+One curriculum, run on repeating dates. Hands-on, small group, led by a MakerSquare co-founder. Every weekend ends with a working system built on your own work — demoed live on Day 3.
 
 Oct 16–18, 2026 · Next up
 
-Automate Your Ops with AI
+Ship Your First AI App
 
 Fri–Sun · 9am–4pm · Austin TX
 
-For operators and business owners whose week is eaten by recurring work. Three days automating it: meeting notes that file themselves, reports that assemble from live data, documents read and extracted, inbox triage — taught by the co-founder who runs a live AI ops command center inside his own company.
+Every software product fills the same ten boxes. Three days learning all ten and using them — Friday you ship a live URL, Saturday it gets a database, logins and a real payment, Sunday you give it hands: agents and automations that run your recurring work without you. You leave with an app on a real domain and a map you can place any new tool into.
 
-Claude Code Claude API Composio GitHub Actions Sheets Gmail
+Claude Code Supabase Vercel GitHub Clerk Stripe MCP Composio
 
-- Your most repetitive workflow, automated by end of Day 1
+- Day 1 — your app live on a real URL
 
-- Documents — invoices, forms, transcripts — extracted to structured data
+- Day 2 — a real database, logins and a test payment, with the rules that keep your data yours
 
-- A weekly report that writes itself from your live sources
+- Day 3 — agents and automations doing your recurring work, on your real accounts
 
-- Everything running on your real accounts, demoed on Day 3
+- The ten boxes: a map that still works when every tool name changes
 
 Early bird until Sep 25
 
@@ -1273,21 +1275,21 @@ $1,399 after Sep 25
 
 Nov 6–8, 2026
 
-Build Your First App with AI
+Ship Your First AI App
 
 Fri–Sun · 9am–4pm · Austin TX
 
-For founders and owners who’ve been waiting for a technical co-founder. Describe it, build it, ship it: three days from idea to a live app with a real database behind it — the “vibe coding” skill everyone’s talking about, done properly with production tools. Last workshop before the January cohort — attendees get $200 off the 2-week program.
+Every software product fills the same ten boxes. Three days learning all ten and using them — Friday you ship a live URL, Saturday it gets a database, logins and a real payment, Sunday you give it hands: agents and automations that run your recurring work without you. You leave with an app on a real domain and a map you can place any new tool into. Last workshop before the January cohort — attendees get $200 off the 2-week program.
 
-Claude Code Supabase Vercel GitHub
+Claude Code Supabase Vercel GitHub Clerk Stripe MCP Composio
 
-- Your app live on a real URL by end of Day 1
+- Day 1 — your app live on a real URL
 
-- A real database behind it — live forms writing real rows, with the safety rules that keep your data yours
+- Day 2 — a real database, logins and a test payment, with the rules that keep your data yours
 
-- Day 3: polish, your own product decisions, and a live demo
+- Day 3 — agents and automations doing your recurring work, on your real accounts
 
-- The skill that compounds: you can keep shipping after you leave
+- The ten boxes: a map that still works when every tool name changes
 
 Early bird until Oct 16
 
@@ -1571,9 +1573,9 @@ FAQ
 
 ### Questions people ask before booking.
 
-Why should I do this now and not wait? Because the gap between people who can use AI and people who can’t is widening every month — not every year. The ops manager or founder who learns this this fall has a head start on everyone who waits until next year. Automate Your Ops runs Oct 16–18, and the group is deliberately small — once the seats go, the next one is November.
+Why should I do this now and not wait? Because the gap between people who can use AI and people who can’t is widening every month — not every year. The ops manager or founder who learns this this fall has a head start on everyone who waits until next year. Ship Your First AI App runs Oct 16–18, and the group is deliberately small — once the seats go, the next one is November.
 
-Which AI workshops are running in Austin in fall 2026? Two more 3-day intensives in downtown Austin this fall (Capital Factory / Station Austin, 701 Brazos St): **Automate Your Ops with AI** Oct 16–18, and **Build Your First App with AI** Nov 6–8. All Fri–Sun, 9am–4pm. Early bird $1,199, regular $1,399.
+Which AI workshops are running in Austin in fall 2026? The same 3-day workshop on two more weekends in downtown Austin this fall (Capital Factory / Station Austin, 701 Brazos St): **Ship Your First AI App** Oct 16–18, and **Ship Your First AI App** Nov 6–8. All Fri–Sun, 9am–4pm. Early bird $1,199, regular $1,399.
 
 Do I need a technical background? No. If you can use a spreadsheet, you can build in these workshops. These aren’t for engineers — they’re for people who know their domain and want AI working for them in it.
 
@@ -1597,9 +1599,9 @@ The **2-week MakerSquare program** is the full build — 3 complete AI products,
 
 Don’t miss the early bird
 
-### Automate Your Ops with AI — Oct 16–18. Three days. Your busywork, gone.
+### Ship Your First AI App — Oct 16–18. Three days. You leave with it live.
 
-Small cohort, early bird $1,199 until Sep 25. 3 days in Austin — you leave with your recurring ops work running itself, on your real accounts.
+Small cohort, early bird $1,199 until Sep 25. 3 days in Austin — you leave with a real app on a real domain, and the map to build the next one.
 
 [Reserve my seat — $1,199](/workshop-register)
 [Have a question? Email us](mailto:hello@makersquare.ai)
@@ -4342,8 +4344,8 @@ For tonight's attendees only
 
 For tonight’s attendees — use code **DEMO150** at checkout.
 
-[Next up · Oct 16–18 Automate Your Ops with AI 3-day weekend workshop $1,199 $1,049 Reserve a seat →](/workshop-register)
-[Nov 6–8 Build Your First App with AI 3-day weekend workshop $1,199 $1,049 Reserve a seat →](/workshop-register)
+[Next up · Oct 16–18 Ship Your First AI App 3-day weekend workshop $1,199 $1,049 Reserve a seat →](/workshop-register)
+[Nov 6–8 Ship Your First AI App 3-day weekend workshop $1,199 $1,049 Reserve a seat →](/workshop-register)
 [Jan 11–22 The 2-Week Program Our flagship immersive $3,999 $3,849 Enroll now →](/enroll)
 
 Your promo code
@@ -4370,8 +4372,8 @@ Coming up — weekend workshops
 
 Three days, in person in Austin. Pick a build and walk out Sunday with it running on your own work — no coding background needed.
 
-[Next up · Oct 16–18 Automate Your Ops with AI Reports, documents, inbox — your recurring work stops being manual, on your real accounts. $1,199 $1,049 with DEMO150](/workshop-register)
-[Nov 6–8 Build Your First App with AI Idea to a live app with a real database, at a real URL — vibe coding, done properly. $1,199 $1,049 with DEMO150](/workshop-register)
+[Next up · Oct 16–18 Ship Your First AI App Reports, documents, inbox — your recurring work stops being manual, on your real accounts. $1,199 $1,049 with DEMO150](/workshop-register)
+[Nov 6–8 Ship Your First AI App Idea to a live app with a real database, at a real URL — vibe coding, done properly. $1,199 $1,049 with DEMO150](/workshop-register)
 
 [Full workshop lineup & curriculum →](/workshops)
 
@@ -6224,6 +6226,109 @@ Zendesk · 2025 · Analysis of AI adoption patterns and customer satisfaction ou
 
 ---
 
+<!-- https://www.makersquare.ai/blog/ai-for-doctors -->
+
+# AI for Doctors: Less Charting, More Patients | MakerSquare
+
+> AI for doctors in 2026: physician adoption crossed 63%. Where AI actually helps - ambient documentation, notes, admin - and where clinical judgment stays human.
+
+[← Blog](/blog)
+
+AI at Work
+
+## AI for Doctors: Less Charting, More Patients
+
+Marliis Schneider
+
+September 19, 2026
+
+5 min read
+
+![AI for Doctors: Less Charting, More Patients](../images/blog/ai-for-doctors-og.webp)
+
+Key takeaways
+
+- Physician AI adoption crossed 63% in 2026 - healthcare has passed the early-majority threshold, and documentation is the leading use.
+
+- The biggest win is ambient clinical documentation: AI listens to the visit and drafts the note, giving back the hours doctors lose to charting.
+
+- That matters because charting is a top driver of burnout - documentation burden is why many clinicians cut caseloads or leave.
+
+- AI drafts and organizes; the diagnosis, the treatment decision, and the patient relationship stay with the physician. That line is non-negotiable.
+
+For doctors, the AI story in 2026 isn't about diagnosis - it's about getting the computer out of the exam room. The direct answer: AI's clearest, safest value for physicians is taking over clinical documentation - listening to the visit and drafting the note - so doctors spend less time charting and more time with patients, while every clinical judgment stays human.
+
+### Adoption has crossed into the majority
+
+Healthcare, often a slow adopter, has moved fast here: physician AI adoption crossed 63% in 2026, past the early-majority threshold. The reason it spread isn't experimental enthusiasm - it's that AI addresses one of medicine's most hated, most measurable problems: the documentation burden.
+
+### The killer app: ambient documentation
+
+The single most valuable use is ambient clinical documentation - AI that listens to the doctor-patient conversation (with consent) and generates a structured draft note the physician reviews and signs. This attacks a genuine crisis. Charting is a leading driver of physician burnout; doctors routinely spend hours after clinic finishing notes - the infamous 'pajama time.' More than a quarter of clinicians have reduced their caseloads to accommodate administrative work, and nearly half say they could see more patients if documentation were lighter. AI documentation gives that time back directly: the note is drafted by the time the visit ends, and the doctor edits rather than writes from scratch. Fewer hours charting means less burnout and, often, capacity to see more patients.
+
+### The line that doesn't move
+
+Here's the non-negotiable part. AI in the clinic drafts, organizes, and summarizes; it does not diagnose, decide treatment, or replace clinical judgment. A drafted note still requires the physician's review and sign-off - not as a formality, but because the doctor is accountable for its accuracy and for the care it documents. The winning pattern is AI for the administrative layer, physician for the medicine. Used that way, AI reads as relief from the paperwork, not a threat to the practice of medicine - which is exactly why adoption has been so fast.
+
+### What this means for physicians building AI skills
+
+The physicians getting the most value understand their own workflow and where AI safely fits versus where it can't - clinical judgment, not technical skill, is the deciding factor. That's the MakerSquare premise: domain experts are the best builders. Our [use cases](/use-cases) show what building tools around a real professional workflow looks like, with the human kept firmly in the loop.
+
+AI won't practice medicine. It'll get the charting out of the way so doctors can.
+
+Frequently asked questions
+
+How are doctors using AI in 2026?
+
+The leading use is ambient clinical documentation - AI listens to the visit (with consent) and drafts the clinical note the physician reviews and signs - plus other administrative tasks like summaries and inbox triage. Physician AI adoption crossed 63% in 2026, driven mainly by relief from the documentation burden.
+
+Can AI replace doctors?
+
+No. AI in the clinic drafts, organizes, and summarizes - it does not diagnose, decide treatment, or replace clinical judgment. Every AI-drafted note requires physician review and sign-off because the doctor remains accountable for accuracy and care. The winning pattern is AI for the paperwork, physician for the medicine.
+
+Does AI documentation actually reduce physician burnout?
+
+It directly targets a top driver of it. Charting is a leading cause of burnout - more than a quarter of clinicians have cut caseloads for administrative work, and nearly half say they could see more patients with lighter documentation. AI drafting the note by the end of the visit gives that time back, reducing after-hours 'pajama time.'
+
+Is AI safe to use in a medical practice?
+
+For administrative tasks like documentation, yes - when used as an assistant with physician review and sign-off, and with appropriate patient consent and privacy safeguards. The safety line is clear: AI handles the drafting and organizing; it does not make clinical decisions, which stay with the physician.
+
+Do doctors need technical skills to use AI?
+
+No. AI documentation tools are designed to fit clinical workflow and require no coding. The valuable judgment - where AI safely helps versus where clinical decision-making must stay human - comes from medical expertise, not technical skill.
+
+Keep reading
+
+- [All MakerSquare posts](/blog)
+
+MakerSquare is a 2-week in-person AI builder program in Austin, TX for professionals who want to build AI into their real workflow while keeping their own judgment where it belongs. See what two weeks of hands-on building looks like.
+
+[Get the curriculum](https://www.makersquare.ai/curriculum?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_ai-for-doctors_curriculum_20261026)
+[Sign up for the newsletter](https://ai-builder-brief.beehiiv.com/?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_ai-for-doctors_newsletter_20261026)
+
+Sources
+
+1
+
+[60 AI Statistics and Trends for 2026](https://datafield.dev/blog/ai-statistics-trends-2026.html)
+
+DataField · 2026 · Healthcare crossed 63% physician AI adoption
+
+2
+
+[AI in Behavioral Health: National Clinician Survey](https://www.icanotes.com/2026/06/26/ai-in-behavioral-health/)
+
+ICANotes · 2026 · Documentation burden, caseload reduction, and time-saving data
+
+3
+
+[The State of AI in 2025](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai)
+
+McKinsey · 2025 · AI value in service operations and documentation-heavy work
+
+---
+
 <!-- https://www.makersquare.ai/blog/ai-for-ecommerce-2026 -->
 
 # AI for E-Commerce: What's Actually Working in 2026
@@ -6503,6 +6608,109 @@ hubspot.com
 [ISTE, "AI in Education Report 2025"](https://www.iste.org/resources)
 
 iste.org/resources
+
+---
+
+<!-- https://www.makersquare.ai/blog/ai-for-engineers -->
+
+# AI for Engineers: Beyond Autocomplete | MakerSquare
+
+> AI for engineers in 2026: where coding assistants genuinely speed real work, the trust and quality tradeoffs, and why judgment matters more than ever.
+
+[← Blog](/blog)
+
+AI at Work
+
+## AI for Engineers: Beyond Autocomplete
+
+Marliis Schneider
+
+September 22, 2026
+
+5 min read
+
+![AI for Engineers: Beyond Autocomplete](../images/blog/ai-for-engineers-og.webp)
+
+Key takeaways
+
+- 85% of professional developers now use AI coding tools, and daily users save around 4 hours a week - the gains are real and concentrated among people who use it constantly.
+
+- But there's a paradox: AI increases individual output without automatically increasing company productivity, and AI-coauthored pull requests show ~1.7x more issues.
+
+- Trust is falling as usage rises - only 29% of developers trust AI output, down from 40% in 2024.
+
+- The engineers getting durable value use AI for scoped, verifiable work and keep human judgment on architecture, review, and correctness. Output is easy; correctness is the job.
+
+For engineers, AI has moved well past autocomplete - and the honest picture is more interesting than the hype. The direct answer: AI coding tools deliver real, measurable speedups on scoped tasks, but the value concentrates among people who use them daily and who keep tight human judgment on quality - because more code produced is not the same as more working software shipped.
+
+### Adoption is near-total, and the gains are real
+
+This isn't a debate about whether to use AI anymore. 85% of professional developers regularly use AI tools for coding, and 62% rely on at least one AI coding assistant daily. The productivity is measurable: controlled experiments show 30-55% speedups on scoped tasks like writing functions, generating tests, and boilerplate, and daily AI users save around 4 hours a week (senior engineers slightly more). For the well-defined, repetitive parts of the job, the tools genuinely work.
+
+### The paradox worth taking seriously
+
+Here's what separates a useful take from a hype piece. Research consistently finds AI coding assistants increase individual developer output but not necessarily company productivity. More code, faster, doesn't automatically become more value shipped - because software throughput is gated by review, integration, correctness, and coordination, not just typing speed. And there's a quality cost: CodeRabbit's data found roughly 1.7x more issues in AI-coauthored pull requests. Generating code faster while generating more defects can be a wash - or worse - if the review layer doesn't scale with it.
+
+### Trust is falling as usage rises
+
+The most telling number: even as adoption climbs, only 29% of developers trust AI output, down from 40% in 2024. That's not cynicism - it's calibration. Engineers using these tools heavily have learned exactly where they're reliable (scoped, verifiable tasks) and where they're not (anything requiring system context, correctness guarantees, or architectural judgment). Falling trust alongside rising use is a sign of a maturing tool relationship, not a failing one: people know what to hand off and what to keep.
+
+### What this means for how engineers work with AI
+
+The engineers getting durable value share a pattern: they use AI aggressively for scoped, verifiable work - functions, tests, boilerplate, refactors they can check - and keep human judgment firmly on architecture, review, security, and correctness. Output is now cheap; correctness, taste, and system judgment are the job. That mirrors the MakerSquare thesis from the other side: the leverage is in judgment about the work, not raw generation. Our [use cases](/use-cases) show operators building real tools with AI - the same principle, applied by people who own the problem.
+
+AI writes the code faster than ever. Deciding whether it's the right code is still the engineer's job - and it just got more valuable.
+
+Frequently asked questions
+
+How are software engineers using AI in 2026?
+
+AI coding tools are embedded in editors, CI/CD, and documentation workflows - 85% of professional developers use them regularly. The strongest uses are scoped, verifiable tasks: writing functions, generating tests, boilerplate, and refactors, where controlled experiments show 30-55% speedups. Daily users save around 4 hours a week.
+
+Does AI actually make engineers more productive?
+
+It reliably increases individual output on scoped tasks, but research finds it doesn't automatically increase company productivity - throughput is gated by review, integration, and correctness, not typing speed. Gains concentrate among daily users and senior engineers; occasional use produces only marginal benefit.
+
+Is AI-generated code reliable?
+
+It needs review. CodeRabbit's data found roughly 1.7x more issues in AI-coauthored pull requests, and developer trust in AI output has fallen to 29% (from 40% in 2024). AI is reliable for scoped, verifiable work but not for tasks needing system context or correctness guarantees - which is why human review matters more, not less.
+
+Will AI replace software engineers?
+
+No. AI makes code generation cheap, which shifts the value toward the parts it can't do: architecture, review, security, correctness, and judgment about whether the code is the right code. Engineering throughput is limited by those, not by typing - so the human judgment layer becomes more valuable, not less.
+
+Why is developer trust in AI falling even as usage rises?
+
+It's calibration, not cynicism. Heavy users have learned precisely where AI is reliable (scoped, verifiable tasks) and where it isn't (system context, correctness). Falling trust alongside rising use reflects a mature understanding of what to hand off and what to keep - a healthy sign, not a failing tool.
+
+Keep reading
+
+- [All MakerSquare posts](/blog)
+
+MakerSquare is a 2-week in-person AI builder program in Austin, TX where the leverage is judgment about the work, not raw code generation - for operators and domain experts building real tools. See what two weeks of hands-on building looks like.
+
+[Get the curriculum](https://www.makersquare.ai/curriculum?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_ai-for-engineers_curriculum_20261102)
+[Sign up for the newsletter](https://ai-builder-brief.beehiiv.com/?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_ai-for-engineers_newsletter_20261102)
+
+Sources
+
+1
+
+[AI Coding Productivity Statistics 2026](https://www.getpanto.ai/blog/ai-coding-productivity-statistics)
+
+Panto AI · 2026 · Adoption, time-saved by user type, and speedup ranges
+
+2
+
+[The AI Productivity Paradox Research Report](https://www.faros.ai/blog/ai-software-engineering)
+
+Faros AI · 2026 · Output vs. company productivity; where gains concentrate
+
+3
+
+[AI Coding Adoption 2026: 50 Statistics From 7 Surveys](https://www.digitalapplied.com/blog/ai-coding-adoption-statistics-2026-50-data-points)
+
+Digital Applied · 2026 · Trust decline and AI-PR defect data
 
 ---
 
@@ -8792,6 +9000,107 @@ Azumo · 2026 · Time-saving applications and how teachers reinvest recovered ti
 
 ---
 
+<!-- https://www.makersquare.ai/blog/ai-for-therapists -->
+
+# AI for Therapists: The Admin, Not the Therapy | MakerSquare
+
+> AI for therapists in 2026: automate notes and scheduling to reclaim 45-60 minutes a day - while the therapy itself stays human. What
+
+[← Blog](/blog)
+
+AI at Work
+
+## AI for Therapists: The Admin, Not the Therapy
+
+Marliis Schneider
+
+September 20, 2026
+
+5 min read
+
+![AI for Therapists: The Admin, Not the Therapy](../images/blog/ai-for-therapists-og.webp)
+
+Key takeaways
+
+- AI note tools (generating SOAP and progress notes from sessions) save therapists 45-60 minutes a day of administrative time.
+
+- That time matters: more than a quarter of clinicians have reduced caseloads for admin work, and nearly half say they could see more clients with lighter documentation.
+
+- The line is firm and increasingly legal: several states now prohibit AI from providing therapy or making therapeutic decisions. AI handles the paperwork, not the care.
+
+- The right frame: AI as the assistant that takes the administrative load off the humans doing the actual therapy.
+
+Mental health care in 2026 has a clear and careful consensus on AI: it should not act as a therapist, but it can take the administrative weight off the ones who do. The direct answer: AI's safe, valuable role for therapists is documentation and scheduling - drafting session notes and handling admin so clinicians reclaim close to an hour a day - while the therapeutic relationship and every clinical decision stay entirely human.
+
+### The administrative crisis AI actually addresses
+
+Behavioral health is under real operational strain, and paperwork is a big part of it. More than a quarter of clinicians have reduced their caseloads over the past year to accommodate administrative work, and nearly half say they could see more patients if documentation requirements were lighter. Into that gap, AI documentation tools like Mentalyc and Upheal generate SOAP and progress notes from session recordings, saving therapists 45-60 minutes per day of administrative time. For a clinician stretched thin, that's the difference between paperwork after every session and being present for the next client.
+
+### The line - now written into law
+
+This is a field where the boundary isn't just ethical, it's increasingly legal. In 2025 Illinois became the first state to prohibit AI from providing therapy or making therapeutic decisions, followed by Nevada and Utah. The professional consensus is unambiguous: AI should not act as a therapist. That's not a limitation to work around - it's the correct design. The therapeutic relationship, clinical judgment, and care itself are human, full stop. What AI can safely do is everything around the therapy: notes, scheduling, reminders, and admin.
+
+There's a reason this matters beyond compliance. More than 1 in 5 Americans now use AI chatbots for mental health support, and 58% of them didn't follow up with a provider afterward - a real risk that underscores why the profession draws the line so firmly. For a practicing therapist, the responsible use of AI is unambiguous: let it handle the load that keeps you from clients, and keep the care itself yours.
+
+### What this means for therapists
+
+Used correctly, AI gives a therapist back close to an hour a day and some breathing room in an overstretched system - without touching the work that only a clinician can do. Knowing exactly where that line sits is clinical judgment, not technical skill, which is the MakerSquare premise. Our [use cases](/use-cases) show what building administrative tools around a real practice looks like, with the human firmly in charge of the care.
+
+AI won't do the therapy. It'll give the therapist back the hour they've been spending on notes.
+
+Frequently asked questions
+
+How can therapists use AI in 2026?
+
+Safely and valuably for administration - primarily documentation (AI tools generate SOAP and progress notes from sessions, saving 45-60 minutes a day) plus scheduling, reminders, and admin. AI should not provide therapy or make clinical decisions; it handles the load around the care so clinicians have more time for clients.
+
+Can AI replace therapists?
+
+No - and in several states it's now illegal for AI to act as a therapist. Illinois, Nevada, and Utah have prohibited AI from providing therapy or making therapeutic decisions. The professional consensus is clear: the therapeutic relationship and clinical judgment are human. AI's role is administrative, not clinical.
+
+How much time does AI save therapists?
+
+AI documentation tools that generate notes from sessions save therapists about 45-60 minutes per day of administrative time. That's significant given that many clinicians have cut caseloads for paperwork and say they could see more clients with lighter documentation.
+
+Is it ethical for therapists to use AI?
+
+Yes, for administrative tasks used responsibly - documentation with client consent and privacy safeguards, scheduling, and admin. The ethical (and increasingly legal) line is that AI must not act as the therapist or make clinical decisions. Used to reduce paperwork rather than replace care, it's widely accepted.
+
+Do therapists need technical skills to use AI tools?
+
+No. AI documentation tools are built for clinical workflows and require no coding. The important judgment - where AI safely helps versus where care must stay human - comes from clinical training, not technical ability.
+
+Keep reading
+
+- [All MakerSquare posts](/blog)
+
+MakerSquare is a 2-week in-person AI builder program in Austin, TX for professionals who want to build AI into the administrative side of their work while keeping the care itself human. See what two weeks of hands-on building looks like.
+
+[Get the curriculum](https://www.makersquare.ai/curriculum?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_ai-for-therapists_curriculum_20261028)
+[Sign up for the newsletter](https://ai-builder-brief.beehiiv.com/?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_ai-for-therapists_newsletter_20261028)
+
+Sources
+
+1
+
+[AI in Behavioral Health: National Clinician Survey Report](https://www.icanotes.com/2026/06/26/ai-in-behavioral-health/)
+
+ICANotes · 2026 · Documentation time saved; caseload and administrative-burden data
+
+2
+
+[AI in Mental Health & Therapy Statistics (2026)](https://www.brilo.ai/resources/ai-therapist-statistics)
+
+Brilo AI · 2026 · Patient AI use, provider follow-up, and state regulation
+
+3
+
+[AI Therapy Statistics 2026: Usage, Effectiveness & Safety](https://psychology.com/ai-therapy-statistics/)
+
+Psychology.com · 2026 · Safety consensus and the administrative-vs-clinical line
+
+---
+
 <!-- https://www.makersquare.ai/blog/ai-prompt-examples -->
 
 # AI Prompt Examples You'll Actually Reuse | MakerSquare
@@ -10877,6 +11186,115 @@ For companies
 Reading this for your team? We run private AI training for Austin companies — your tools, your workflows, working automation by day three.
 
 [Corporate training →](/corporate) [Train vs. hire a consultant →](/ai-training-vs-consultants) [3-day workshops →](/workshops)
+
+---
+
+<!-- https://www.makersquare.ai/blog/how-to-build-a-website-with-ai -->
+
+# How to Build a Website With AI (No Coding) | MakerSquare
+
+> How to build a website with AI in 2026, for people who don
+
+[← Blog](/blog)
+
+AI at Work
+
+## How to Build a Website With AI (No Coding)
+
+Marliis Schneider
+
+September 21, 2026
+
+5 min read
+
+![How to Build a Website With AI (No Coding)](../images/blog/how-to-build-a-website-with-ai-og.webp)
+
+Key takeaways
+
+- Building a website with AI cuts production time by about 70% and shrinks the learning curve from hours to roughly 15 minutes.
+
+- 67% of business owners now prefer AI website builders over traditional development from scratch - it's become the default for non-technical founders.
+
+- The workflow is straightforward: describe your business and goal in plain language, let AI generate a full first draft, then direct edits conversationally.
+
+- AI builds the site fast; you still own the decisions that matter - the message, the offer, the specific proof - which is exactly where a non-coder has the advantage.
+
+Not long ago, a small business needing a website faced a bad menu: learn to code, wrestle with a clunky builder, or pay someone thousands. AI collapsed those options. The direct answer: in 2026 you can build a real website by describing your business in plain language, letting AI generate a complete first draft, and then directing changes conversationally - no code, and roughly 70% faster than traditional development.
+
+### Why this became the default
+
+The shift is decisive. 67% of business owners now prefer AI website builders over building from scratch, and more than 62% of users prefer no-code or low-code solutions generally. The reason is speed and access: using AI during website creation reduces production time by about 70%, and it shrinks the learning curve from 4-8 hours to roughly 15 minutes. No-code projects finish 74% faster on average - about 3 weeks versus 15. For a non-technical founder, the barrier that used to stop a website from existing is essentially gone.
+
+### The actual workflow, start to finish
+
+**1. Describe the business.** Tell the AI builder what you do, who it's for, and what you want visitors to do (book, buy, contact). The more specific, the better the first draft.
+
+**2. Let it generate a full draft.** Modern AI builders produce a complete multi-page site - structure, copy, images, layout - from that description in minutes. It won't be final, but it's a real starting point, not a blank template.
+
+**3. Direct edits conversationally.** Instead of hunting through menus, you say what you want: 'make the hero focus on the free consultation,' 'add a testimonials section,' 'change the tone to be warmer.' The AI applies it.
+
+**4. Own the substance.** AI handles design and structure; you supply the parts only you know - the actual offer, the specific proof, the real story. This is the 20% that determines whether the site converts.
+
+### Where you still have to make the calls
+
+The honest caveat: AI will happily generate a generic, plausible-looking site that says nothing specific. A good-looking site that doesn't clearly state what you do, for whom, and why to choose you won't convert - and AI can't decide those things for you. The parts that matter most are judgment calls about your business: your positioning, your offer, your proof. That's not a weakness of the no-code approach - it's where a non-technical founder who actually understands the business has the edge over a generic template or a disengaged freelancer.
+
+### What this means if you need a site
+
+You don't need to learn to code or hire out to get a real website live this week. And building your own site is often the first step toward building more with AI - the same skill of directing a tool in plain language applies everywhere. That's exactly what MakerSquare teaches; our [use cases](/use-cases) show where it goes next, from a website to real tools deployed live.
+
+The website was never really about the code. It was about knowing what to say - and that part was always yours.
+
+Frequently asked questions
+
+Can you really build a website with AI and no coding?
+
+Yes. In 2026, AI website builders generate a complete site from a plain-language description of your business, and you refine it conversationally - no code required. It's about 70% faster than traditional development, and 67% of business owners now prefer AI builders to building from scratch.
+
+How does building a website with AI work?
+
+Four steps: describe your business, audience, and goal; let the AI generate a full multi-page first draft (structure, copy, images); direct edits conversationally ('make the hero about the free consultation'); and supply the substance only you know - your offer, proof, and story. AI handles design and structure; you handle the message.
+
+How long does it take to build a website with AI?
+
+Much less than traditional development - AI cuts production time by about 70%, and no-code projects finish roughly 74% faster (about 3 weeks vs 15 for traditional builds). A basic site can come together in a single sitting, since the learning curve drops from hours to around 15 minutes.
+
+What's the catch with AI website builders?
+
+AI will happily produce a generic, good-looking site that says nothing specific - and a site that doesn't clearly state what you do, for whom, and why to choose you won't convert. AI can't decide your positioning, offer, or proof; those judgment calls are yours. The design is easy; the message is the real work.
+
+Do I need design skills to build a website with AI?
+
+No - AI handles layout, structure, and visual design. What you need is clarity on your business: what you offer, who it's for, and why someone should choose you. Those decisions, not design or coding skill, determine whether the site works - and they favor someone who actually understands the business.
+
+Keep reading
+
+- [All MakerSquare posts](/blog)
+
+MakerSquare is a 2-week in-person AI builder program in Austin, TX where non-technical founders go from building a website to deploying real, working AI tools. See what two weeks of hands-on building looks like.
+
+[Get the curriculum](https://www.makersquare.ai/curriculum?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_how-to-build-a-website-with-ai_curriculum_20261030)
+[Sign up for the newsletter](https://ai-builder-brief.beehiiv.com/?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_how-to-build-a-website-with-ai_newsletter_20261030)
+
+Sources
+
+1
+
+[AI Website Builder Statistics: Growth and Adoption](https://www.hostinger.com/blog/ai-website-builder-statistics)
+
+Hostinger · 2026 · 70% faster production; learning-curve and preference data
+
+2
+
+[No-Code Tools 2026: AI Revolution for Faster Building](https://buildez.ai/blog/no-code-tools-ai-revolution-2026)
+
+BuildEZ · 2026 · No-code project speed and non-technical builder growth
+
+3
+
+[100+ AI Website Builder Statistics 2026](https://rudys.ai/ai-website-builder-statistics)
+
+Rudys.AI · 2026 · Owner preference for AI builders and market data
 
 ---
 

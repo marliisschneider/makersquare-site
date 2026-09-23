@@ -65,8 +65,10 @@ No 2-week cohorts run in fall 2026 — September through November is workshop se
 
 MakerSquare runs weekend AI workshops in Austin, TX (3 days, Friday to Sunday, 9am-4pm), led by a MakerSquare co-founder. No time off work needed. No coding required. Pricing: $1,199 early bird (until 3 weeks before) / $1,399 regular. Workshop attendees get $200 off the January 2-week program.
 
-- Automate Your Ops with AI: October 16-18, 2026 (early bird ends September 25) — automate recurring ops work: reports, document extraction, inbox and meeting notes, on your real accounts
-- Build Your First App with AI: November 6-8, 2026 (early bird ends October 16) — from idea to a live, deployed app with a real database, using Claude Code, Supabase, and Vercel (vibe coding with production tools)
+One standard workshop, "Ship Your First AI App", run on repeating weekends. Same curriculum every date. It teaches the ten boxes every software product fills: Friday you ship a live URL, Saturday you add a real database, logins and a test payment, Sunday you add agents and automations that run your recurring work. Tools: Claude Code, Supabase, Vercel, GitHub, Clerk, Stripe, MCP, Composio.
+
+- Ship Your First AI App: October 16-18, 2026 (early bird ends September 25)
+- Ship Your First AI App: November 6-8, 2026 (early bird ends October 16)
 
 Workshops page: https://www.makersquare.ai/workshops
 
