@@ -65,8 +65,8 @@ Site · agent · workflow
 
 Oct 16–18 · $1,199 · Austin
 
-[Next up · Oct 16–18 Ship Your First AI App The recurring work — reports, documents, inbox — stops being manual. Early bird $1,199 · Oct 16–18 →](/workshops)
-[Nov 6–8 Ship Your First AI App Idea to live app with a real database — vibe coding, done properly. Early bird $1,199 — ends Oct 16 →](/workshops)
+[Next up · Oct 16–18 Ship Your First AI App Ten boxes, one weekend — a live app with a database, logins and payments. Early bird $1,199 · Oct 16–18 →](/workshops)
+[Nov 6–8 Ship Your First AI App Ten boxes, one weekend — a live app with a database, logins and payments. Early bird $1,199 — ends Oct 16 →](/workshops)
 
 Want the full transformation? The 2-week program returns Jan 11. Workshop attendees get $200 off.
 
@@ -1121,7 +1121,7 @@ AI Workshops in Austin, TX · In-Person · 3 Days
 
 ## While you’re waiting to “figure out AI,” your competitors already have it running.
 
-One weekend — Friday to Sunday. No time off work, no boss to ask. These workshops don’t teach you *about* AI. You sit down with your actual data, your actual tools, and your actual problem — and you build something that’s running before you leave the room.
+One weekend — Friday to Sunday. No time off work, no boss to ask. This workshop doesn’t teach you *about* AI. You sit down with your actual data, your actual tools, and your actual problem — and you build something that’s running before you leave the room.
 
 NEXT UP
 
@@ -1299,139 +1299,53 @@ $1,399 after Oct 16
 
 [Reserve](/workshop-register)
 
-Inside the workshops
+Inside the workshop
 
-### Pick a workshop. See exactly what your three days look like.
+### One curriculum, every date. Here is exactly what your three days look like.
 
-Sep · AI Agent
-Oct · Ops Automation
-Nov · Your First App
+Every product you have ever used fills the same ten boxes. Over three days you learn all ten and use them on something of your own.
 
 01
 
-Your first agent — deployed before you leave
+Day 1 — From nothing to live
 
-- ✓ What an agent actually is: a goal, tools, and a loop — taught visually, so it clicks
+- ✓ The ten boxes: the map of what every software product is made of — so every new tool you meet after this has a place to go
 
-- ✓ The ladder: when you need an agent, when a simple automation wins — run on *your* problem before lunch
+- ✓ Claude Code in the terminal, reading and running your project — before lunch, even if you have never opened a terminal
 
-- ✓ Build the Personal Scout: an agent that searches, judges, and emails you a digest
+- ✓ The loop that does the work: it runs the code, reads the error, fixes it, repeats. You describe the outcome
 
-- ✓ Deploy it on a schedule — it runs itself every Monday, long after the workshop
+- ✓ Your CLAUDE.md — write your rules once and stop repeating yourself every session
 
-- ✓ Break it on purpose — and learn to read why an agent decided badly
-
-02
-
-Your agent, on your real work
-
-- ✓ Flowchart your real task — trigger, steps, decision points — confirmed 1:1 with the instructor
-
-- ✓ Build the core on your real data and tools from minute one — no toy data
-
-- ✓ Spot-checks and visible reasoning, so you can trust what it tells you
-
-- ✓ Access without the keys: least privilege, drafts-not-sends, and prompt injection shown live
-
-- ✓ Memory between runs — so it never sends you the same thing twice
-
-03
-
-Make it a product. Ship it.
-
-- ✓ From “works when I run it” to “runs without me”
-
-- ✓ Wire it to where it lives: a schedule, a button, or straight into your inbox, Slack, or sheets
-
-- ✓ Know what it costs to run — real numbers, no surprises
-
-- ✓ A runbook you wrote — so when it breaks in three weeks, you know where to look
-
-- ✓ Demo it live to the room — and explain the loop in your own words
-
-01
-
-Map your week. Automate the worst of it.
-
-- ✓ The recurring-work audit: your actual week on paper, every repeating task ranked by *hours × dread*
-
-- ✓ What to automate and what to leave alone — the boring middle is the target; the judgment stays yours
-
-- ✓ Connect your real accounts — safely
-
-- ✓ Build automation #1 from the top of your list — running before you leave
-
-- ✓ The review step: it drafts, you approve — until it’s earned autonomy
+- ✓ Your app deployed to a live URL before you leave
 
 02
 
-Documents in. Structured data out.
+Day 2 — Make it a real product
 
-- ✓ Read a pile — invoices, forms, transcripts — and get clean, structured records
+- ✓ A real database behind it — live forms writing real rows, with the safety rules that keep your data yours
 
-- ✓ The matching problem: connecting what it reads to records you already have — where the time always goes
+- ✓ Logins you did not have to build: real sign-up, real accounts, real password resets
 
-- ✓ When the extraction is wrong — and how you catch it before it matters
+- ✓ Take a test payment end to end — and see exactly what changes when you go live
 
-- ✓ Meeting notes that file themselves
+- ✓ Reviewing work you cannot read: what changed, does it still run, make it prove it
 
-03
-
-Reports that write themselves. Everything on a schedule.
-
-- ✓ The weekly report, assembled from your live sources
-
-- ✓ Put it all on a schedule — the work happens whether you’re there or not
-
-- ✓ When it breaks — and it will: reading what went wrong
-
-- ✓ What it costs to run — real numbers
-
-- ✓ Show your work: demo the full system live to the room
-
-01
-
-Idea to live URL
-
-- ✓ Decide what you’re actually building — cut it to what ships in three days, pick its one job
-
-- ✓ Something people visit, or something you work in — picking the simpler side, deliberately
-
-- ✓ Write the real content first — real words, not lorem ipsum, so it never reads as a template
-
-- ✓ Build it in plain English: one change at a time, be specific
-
-- ✓ Deployed to a live URL before you leave
-
-02
-
-Give it a real database
-
-- ✓ The aha: your app *remembers* — live forms writing real rows
-
-- ✓ Why a database and not a spreadsheet
-
-- ✓ The tiny bit of SQL you’ll ever need
-
-- ✓ The data-safety rules you leave with
-
-- ✓ See it back: live data flowing through your own product
+- ✓ Break your own app on purpose — two accounts, and try to reach the other one’s data
 
 03
 
-Make it yours. Then ship it.
+Day 3 — Make it run without you
 
-- ✓ Polish where it counts — the details users actually notice
+- ✓ Give the agent hands: MCP and Composio wiring it into Gmail, Slack, your sheets and your CRM
 
-- ✓ Your product decisions: what’s in, what waits
+- ✓ Give it eyes: live search and real company data, so it stops making things up
 
-- ✓ Handle the ugly cases — empty states, bad input, missing data
+- ✓ Build one automation that does a real job unattended, on your real accounts
 
-- ✓ What it costs, and what to do when it breaks
+- ✓ Keys and secrets — and the honest limits of asking an AI to check your security
 
-- ✓ Keep shipping after you leave — then demo your live app to the room
-
-Every day ends with something running — and Day 3 always ends with you demoing it live to the room.
+- ✓ What it costs to run, what to do when it breaks — then demo it live to the room
 
 Where you’ll build
 
@@ -1474,9 +1388,9 @@ Who’s teaching it
 
 Ravi Parikh
 
-Co-founder, MakerSquare · CEO & Founder, RoverPass
+Co-founder, MakerSquare · CEO & Founder, RoverPass · Founder, Parikh Financial
 
-Ravi co-founded the original MakerSquare, which trained thousands of developers before Hack Reactor acquired it. Today he runs **RoverPass**, an Austin campground platform that operates a [live AI ops command center](/case-study-roverpass) on the same stack you’ll use in this room.
+Ravi co-founded the original MakerSquare, which trained thousands of developers before Hack Reactor acquired it. Today he runs **RoverPass**, an Austin campground platform that operates a [live AI ops command center](/case-study-roverpass) on the same stack you’ll use in this room. He also runs **Parikh Financial**, a fractional CFO and bookkeeping firm, on the same automations.
 
 He isn’t a trainer who read about this. He builds with Claude Code, Supabase, Vercel and MCP every working day — and the ten boxes you’ll learn are the ones he uses to ship.
 
@@ -1500,7 +1414,7 @@ You don’t build on a sample dataset. You bring a real repeating task from your
 
 Real instructor. Real unblocking.
 
-When you get stuck — and you will — a real instructor unblocks you in real time. Not a forum post. Not a YouTube comment. Someone in the room who knows exactly what’s wrong and fixes it with you.
+When you get stuck — and you will — Ravi unblocks you in real time. Not a forum post. Not a YouTube comment. Someone in the room who knows exactly what’s wrong and fixes it with you.
 
 03
 
@@ -1563,7 +1477,7 @@ Private team training
 
 #### Want to train your whole team?
 
-Same 3-day curriculum, built around your team’s tools, industry, and specific use cases. You pick the topic. You pick the dates. We bring the instructor and the curriculum to you — in Austin or on-site.
+The same 3-day curriculum, built around your team’s tools, industry and specific use cases. You pick the dates. We bring the instructor and the curriculum to you — in Austin or on-site.
 
 Team size
 
@@ -1594,7 +1508,7 @@ FAQ
 
 Why should I do this now and not wait? Because the gap between people who can use AI and people who can’t is widening every month — not every year. The ops manager or founder who learns this this fall has a head start on everyone who waits until next year. Ship Your First AI App runs Oct 16–18, and the group is deliberately small — once the seats go, the next one is November.
 
-Which AI workshops are running in Austin in fall 2026? The same 3-day workshop on two more weekends in downtown Austin this fall (Capital Factory / Station Austin, 701 Brazos St): **Ship Your First AI App** Oct 16–18, and **Ship Your First AI App** Nov 6–8. All Fri–Sun, 9am–4pm. Early bird $1,199, regular $1,399.
+Which AI workshops are running in Austin in fall 2026? One workshop, **Ship Your First AI App**, on two more weekends in downtown Austin this fall (Capital Factory / Station Austin, 701 Brazos St): **Oct 16–18** and **Nov 6–8**. Same curriculum both dates — pick whichever weekend works. All Fri–Sun, 9am–4pm. Early bird $1,199, regular $1,399.
 
 Do I need a technical background? No. If you can use a spreadsheet, you can build in these workshops. These aren’t for engineers — they’re for people who know their domain and want AI working for them in it.
 
@@ -1608,7 +1522,7 @@ Can my company pay by invoice? Yes. Email [hello@makersquare.ai](mailto:hello@ma
 
 What’s the refund policy? Full refund up to 14 days before the workshop start date. 50% refund up to 48 hours before. No refund after the workshop begins.
 
-Is this a vibe coding bootcamp? The November workshop is, in the sense people usually mean it — you describe what you want and an AI writes the code. The difference from most vibe coding you have seen is that you leave with the app actually deployed at a real URL, on a real database, using the tools engineers use: Claude Code, Supabase and Vercel. Three days, no coding background required. It is a workshop rather than a bootcamp: 3 days, not weeks. If you want the longer version, that is the [2-week program](/immersive).
+Is this a vibe coding bootcamp? Yes, in the sense people usually mean it — you describe what you want and an AI writes the code. The difference from most vibe coding you have seen is that you leave with the app actually deployed at a real URL, on a real database, using the tools engineers use: Claude Code, Supabase and Vercel. Three days, no coding background required. It is a workshop rather than a bootcamp: 3 days, not weeks. If you want the longer version, that is the [2-week program](/immersive).
 
 Want to go deeper?
 
@@ -4389,10 +4303,10 @@ Coming up — weekend workshops
 
 ### Can’t do two weeks? Build it in a weekend.
 
-Three days, in person in Austin. Pick a build and walk out Sunday with it running on your own work — no coding background needed.
+Three days, in person in Austin. Same curriculum either weekend — walk out Sunday with a real app running on your own work. No coding background needed.
 
-[Next up · Oct 16–18 Ship Your First AI App Reports, documents, inbox — your recurring work stops being manual, on your real accounts. $1,199 $1,049 with DEMO150](/workshop-register)
-[Nov 6–8 Ship Your First AI App Idea to a live app with a real database, at a real URL — vibe coding, done properly. $1,199 $1,049 with DEMO150](/workshop-register)
+[Next up · Oct 16–18 Ship Your First AI App Ten boxes, one weekend — a live app with a database, logins and payments, on your own work. $1,199 $1,049 with DEMO150](/workshop-register)
+[Nov 6–8 Ship Your First AI App Ten boxes, one weekend — a live app with a database, logins and payments, on your own work. $1,199 $1,049 with DEMO150](/workshop-register)
 
 [Full workshop lineup & curriculum →](/workshops)
 
