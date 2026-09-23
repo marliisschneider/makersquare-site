@@ -1245,7 +1245,7 @@ Also this fall
 
 ### Two weekends. Same workshop.
 
-One curriculum, run on repeating dates. Hands-on, small group, led by a MakerSquare co-founder. Every weekend ends with a working system built on your own work — demoed live on Day 3.
+One curriculum, run on repeating dates. Hands-on, small group, led by MakerSquare co-founder Ravi Parikh. Every weekend ends with a working system built on your own work — demoed live on Day 3.
 
 Oct 16–18, 2026 · Next up
 
@@ -1464,6 +1464,25 @@ A painful, repeating task from your actual work — and the real data it runs on
 
 ![Jennifer Francis](images/cohort2/avatar-jennifer.jpg?v=1)
 **Jennifer Francis** · Cohort 2 graduate
+
+Who’s teaching it
+
+### Taught by Ravi Parikh.
+
+![Ravi Parikh, co-founder of MakerSquare and CEO of RoverPass](ravi-parikh.jpg)
+[Ravi on LinkedIn →](https://www.linkedin.com/in/raviparikh1/)
+
+Ravi Parikh
+
+Co-founder, MakerSquare · CEO & Founder, RoverPass
+
+Ravi co-founded the original MakerSquare, which trained thousands of developers before Hack Reactor acquired it. Today he runs **RoverPass**, an Austin campground platform that operates a [live AI ops command center](/case-study-roverpass) on the same stack you’ll use in this room.
+
+He isn’t a trainer who read about this. He builds with Claude Code, Supabase, Vercel and MCP every working day — and the ten boxes you’ll learn are the ones he uses to ship.
+
+Built & sold a bootcamp
+Operating founder, not a trainer
+Austin, TX
 
 Why this works
 

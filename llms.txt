@@ -63,7 +63,7 @@ No 2-week cohorts run in fall 2026 — September through November is workshop se
 
 ## Fall 2026 Workshops (3-Day Intensives)
 
-MakerSquare runs weekend AI workshops in Austin, TX (3 days, Friday to Sunday, 9am-4pm), led by a MakerSquare co-founder. No time off work needed. No coding required. Pricing: $1,199 early bird (until 3 weeks before) / $1,399 regular. Workshop attendees get $200 off the January 2-week program.
+MakerSquare runs weekend AI workshops in Austin, TX (3 days, Friday to Sunday, 9am-4pm), led by MakerSquare co-founder Ravi Parikh (also CEO and founder of RoverPass, an Austin campground platform running a live AI ops command center on this same stack). No time off work needed. No coding required. Pricing: $1,199 early bird (until 3 weeks before) / $1,399 regular. Workshop attendees get $200 off the January 2-week program.
 
 One standard workshop, "Ship Your First AI App", run on repeating weekends. Same curriculum every date. It teaches the ten boxes every software product fills: Friday you ship a live URL, Saturday you add a real database, logins and a test payment, Sunday you add agents and automations that run your recurring work. Tools: Claude Code, Supabase, Vercel, GitHub, Clerk, Stripe, MCP, Composio.
 

@@ -185,6 +185,8 @@ original raster. Both files live in the repo; neither is dead.
 
 ## CSS rules — do not break these
 
+- **⚠️ Cache-bust every JS and CSS change with a `?v=` bump.** `vercel.json` serves `/js/` and `/css/` as `public, max-age=31536000, immutable` — a returning visitor's browser holds those files for a **year**. The stylesheet already does this (`css/style.min.css?v=11`); the JS did not, which is why `js/ms-workshops.js` kept serving stale workshop names and an expired **$999** price to anyone who had visited before (fixed Sep 22, 2026 — now `?v=2`). `js/ms-workshops.js` drives the spotlight title, copy and price, so a stale copy is a pricing bug, not a cosmetic one. **Change a file under `js/` or `css/` → bump its `?v=` in every page that references it, in the same commit.**
+
 - **`css/style.min.css` is minified — do not edit it directly.** Override with inline `style=""` attributes on elements when needed.
 - **`nav-apply` class must stay as-is.** The nav "Enroll" button uses class `nav-apply` (not `nav-enroll`) — renaming it breaks nav styling.
 - **3-column grid:** Default CSS has `repeat(2,...)`. For 3-column grids, override inline with `style="grid-template-columns:repeat(auto-fit,minmax(250px,1fr));"` — NEVER a fixed `repeat(3,...)` inline: inline styles beat the stylesheet's mobile media queries, so a fixed 3-column inline grid stays 3-across on phones (bug fixed sitewide Jul 24, 2026). auto-fit collapses to 2/1 columns on its own.
