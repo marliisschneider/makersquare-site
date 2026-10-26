@@ -1114,7 +1114,7 @@ From Cohort 1
 
 # Ship Your First AI App — 3-Day AI Workshop in Austin, TX
 
-> One 3-day AI workshop in Austin, TX, run on repeating weekends. Learn the ten boxes every software product fills and leave with a real app live on a real URL — database, logins, payments and agents included. No coding required. From $1,199.
+> A 3-day AI workshop in Austin, TX. Build a real app — live URL, database, logins, payments — in one weekend. No coding required. From $1,199.
 
 AI Workshops in Austin, TX · In-Person · 3 Days
 
@@ -3668,7 +3668,7 @@ Free to attend · Open to the public · Austin, TX
 
 Next Demo Day
 
-July 17, 2026
+January 22, 2027
 
 Friday evening · Austin, TX · Free
 
@@ -3806,11 +3806,11 @@ Alumni
 
 MakerSquare graduates aren't just people who took a course. They shipped real AI products, demoed live in front of Austin's tech community, and went back to their industries with a skill most of their peers don't have yet.
 
-#### Cohort 1 graduates July 17, 2026.
+#### Alumni stories are coming to this page.
 
-Alumni profiles, testimonials, and project showcases from Cohort 1 will be published here after Demo Day. The first 15 MakerSquare builders present their live AI products on July 17, 2026 in Austin, TX.
+Profiles, testimonials, and project showcases from our builders are on the way. In the meantime, see what the program builds — and join the next cohort in Austin.
 
-[Join Cohort 1](/enroll)
+[Join the next cohort](/enroll)
 
 Real builds
 

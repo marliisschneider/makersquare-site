@@ -75,6 +75,12 @@ Enrollment for each cohort closes one week before its start date: Cohort 3 enrol
 
 Cohorts run Monday through Friday, 9am to 3pm, with optional Saturday office hours (10am to 1pm).
 
+## Refunds & Guarantee
+
+- Outcome guarantee (2-week program): build and deploy your three products — a live website, an AI agent, and an automated workflow — by the end of the program, or get a full refund. You ship, or you don't pay.
+- 2-week program refund policy: 50% refund up to Day 1; no refund once the program begins.
+- Workshop refund policy: full refund up to 14 days before the workshop; 50% refund up to 48 hours before; no refund once it begins.
+
 ## Demo Day
 
 Every cohort ends with a public Demo Day at Capital Factory (701 Brazos St, Austin). Each builder presents their capstone AI product to an audience of seed-stage investors, Austin tech hub leaders, and operators. 5-minute live demos with real feedback from people who build and invest.

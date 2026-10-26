@@ -9,8 +9,8 @@
     "enrollUrl": "https://www.makersquare.ai/enroll",
     "demoUrl": "https://www.makersquare.ai/demo-day",
     "ogImage": "https://www.makersquare.ai/og-image.jpg",
-    "demoStartSuffix": "T18:00:00-05:00",
-    "demoEndSuffix": "T21:00:00-05:00"
+    "demoStartSuffix": "T18:00:00-06:00",
+    "demoEndSuffix": "T21:00:00-06:00"
   },
   "cohorts": [
     {
