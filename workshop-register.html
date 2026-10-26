@@ -239,21 +239,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="cards">
 
   <div class="card">
-    <div class="card-eyebrow">Oct 16–18, 2026 &middot; Austin TX</div>
-    <div class="card-title">Ship Your First AI App</div>
-    <div class="card-divider"></div>
-    <div class="card-price" id="wsoct-price">$1,199</div>
-    <div class="card-tier" id="wsoct-tier">Early bird &mdash; ends Sep 25</div>
-    <a class="card-btn" id="wsoct-btn" href="mailto:hello@makersquare.ai?subject=Reserve%20my%20seat%20—%20Automate%20Your%20Ops%20(Oct%2014–16)" style="background:rgba(64,61,216,0.35);">Payment opens soon &mdash; hold my seat &rarr;</a>
-  </div>
-
-  <div class="card">
-    <div class="card-eyebrow">Nov 6–8, 2026 &middot; Austin TX</div>
+    <div class="card-eyebrow">Nov 20–22, 2026 &middot; Austin TX</div>
     <div class="card-title">Ship Your First AI App</div>
     <div class="card-divider"></div>
     <div class="card-price" id="wsnov-price">$1,199</div>
-    <div class="card-tier" id="wsnov-tier">Early bird &mdash; ends Oct 16</div>
-    <a class="card-btn" id="wsnov-btn" href="mailto:hello@makersquare.ai?subject=Reserve%20my%20seat%20—%20Build%20Your%20First%20App%20(Nov%204–6)" style="background:rgba(64,61,216,0.35);">Payment opens soon &mdash; hold my seat &rarr;</a>
+    <div class="card-tier" id="wsnov-tier">Early bird &mdash; ends Oct 30</div>
+    <a class="card-btn" id="wsnov-btn" href="mailto:hello@makersquare.ai?subject=Reserve%20my%20seat%20—%20Ship%20Your%20First%20AI%20App%20(Nov%2020–22)" style="background:rgba(64,61,216,0.35);">Payment opens soon &mdash; hold my seat &rarr;</a>
   </div>
 
 </div>
@@ -263,18 +254,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </p>
 
 <!-- ─── STRIPE PAYMENT LINKS ──────────────────────────────────────────────────
-  All 3 workshops LIVE (created Jul 31, 2026): each has an early-bird + regular
-  Stripe link. The date logic below auto-switches EB → regular at each deadline
-  (Sep→Aug 30, Oct→Sep 25, Nov→Oct 16). The "payment opens soon" fallback in
-  apply() only triggers if a url field is ever blanked — all are filled now.
+  One workshop (Ship Your First AI App, Nov 20–22). Early-bird + regular Stripe
+  links; the date logic below auto-switches EB → regular when the early bird
+  ends (Oct 30). The same links are reused from the Nov 6–8 date (price is
+  unchanged); only the displayed date moved. The "payment opens soon" fallback
+  in apply() only triggers if a url field is ever blanked — both are filled.
 ──────────────────────────────────────────────────────────────────────────── -->
 <script>
-const WSOCT = {
-  earlyBird: { ends: new Date('2026-09-25T23:59:59'), url: 'https://buy.stripe.com/28E14m7gTeiZ30N7Oh6wE0c', price: '$1,199',   tier: 'Early bird — ends Sep 25' },
-  regular:   {                                         url: 'https://buy.stripe.com/3cI00iat5deVeJvb0t6wE0b', price: '$1,399', tier: 'Regular price' },
-};
 const WSNOV = {
-  earlyBird: { ends: new Date('2026-10-16T23:59:59'), url: 'https://buy.stripe.com/aFabJ0gRt1wd44R5G96wE0a', price: '$1,199',   tier: 'Early bird — ends Oct 16' },
+  earlyBird: { ends: new Date('2026-10-30T23:59:59'), url: 'https://buy.stripe.com/aFabJ0gRt1wd44R5G96wE0a', price: '$1,199',   tier: 'Early bird — ends Oct 30' },
   regular:   {                                         url: 'https://buy.stripe.com/14A6oG8kX6QxcBngkN6wE09', price: '$1,399', tier: 'Regular price' },
 };
 
@@ -295,7 +283,6 @@ function apply(prefix, ws) {
   document.getElementById(prefix + '-tier').textContent  = a.tier;
 }
 
-apply('wsoct', WSOCT);
 apply('wsnov', WSNOV);
 </script>
 <script type="text/javascript" src="https://forms.zoho.com/js/zf_gclid.js" defer></script>

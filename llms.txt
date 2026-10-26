@@ -67,8 +67,7 @@ MakerSquare runs weekend AI workshops in Austin, TX (3 days, Friday to Sunday, 9
 
 One standard workshop, "Ship Your First AI App", run on repeating weekends. Same curriculum every date. It teaches the ten boxes every software product fills: Friday you ship a live URL, Saturday you add a real database, logins and a test payment, Sunday you add agents and automations that run your recurring work. Tools: Claude Code, Supabase, Vercel, GitHub, Clerk, Stripe, MCP, Composio.
 
-- Ship Your First AI App: October 16-18, 2026 (early bird ends September 25)
-- Ship Your First AI App: November 6-8, 2026 (early bird ends October 16)
+- Ship Your First AI App: November 20-22, 2026 (early bird ends October 30) — the last workshop of 2026
 
 Workshops page: https://www.makersquare.ai/workshops
 

@@ -16,23 +16,13 @@
 
   var WORKSHOPS = [
     {
-      key: 'oct',
-      titleA: 'Ship Your First', titleB: 'AI App.',
-      dates: 'Oct 16&ndash;18', startLabel: 'Oct 16',
-      start: '2026-10-16T09:00:00-05:00',
-      finish: '2026-10-18T23:59:59-05:00',
-      earlyBirdEnds: '2026-09-25T23:59:59-05:00', earlyBirdLabel: 'Sep 25',
-      desc: 'One weekend &mdash; Oct 16&ndash;18, Fri to Sun in Austin. Walk out Sunday with a real app live on a real URL &mdash; database, logins and payments included. No time off work, no boss to ask.',
-      bullet: 'Your app live on a real URL, with a real database behind it'
-    },
-    {
       key: 'nov',
       titleA: 'Ship Your First', titleB: 'AI App.',
-      dates: 'Nov 6&ndash;8', startLabel: 'Nov 6',
-      start: '2026-11-06T09:00:00-06:00',
-      finish: '2026-11-08T23:59:59-06:00',
-      earlyBirdEnds: '2026-10-16T23:59:59-05:00', earlyBirdLabel: 'Oct 16',
-      desc: 'One weekend &mdash; Nov 6&ndash;8, Fri to Sun in Austin. Walk out Sunday with a real app live on a real URL &mdash; database, logins and payments included. No time off work, no boss to ask.',
+      dates: 'Nov 20&ndash;22', startLabel: 'Nov 20',
+      start: '2026-11-20T09:00:00-06:00',
+      finish: '2026-11-22T23:59:59-06:00',
+      earlyBirdEnds: '2026-10-30T23:59:59-05:00', earlyBirdLabel: 'Oct 30',
+      desc: 'One weekend &mdash; Nov 20&ndash;22, Fri to Sun in Austin. Walk out Sunday with a real app live on a real URL &mdash; database, logins and payments included. No time off work, no boss to ask.',
       bullet: 'Your app live on a real URL, with a real database behind it'
     }
   ];
