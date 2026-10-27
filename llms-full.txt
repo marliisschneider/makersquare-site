@@ -133,16 +133,22 @@ Demo Night in Austin draws a full house
 ![Cohort 1 student presenting the product he built and deployed on the classroom screen](images/cohort1/c1-0950.jpg)
 Week 1: presenting a product that’s already live
 
+![A MakerSquare Cohort 1 builder presenting their finished AI product at Demo Day in Austin](images/cohort1/c1-1067.jpg)
 Demo Day, July 17 — Ted presenting what he built
 
+![Two MakerSquare Cohort 1 builders working together at the whiteboard](images/cohort1/c1-0959.jpg)
 AI Builders — the shirt isn’t aspirational
 
+![A MakerSquare Cohort 1 builder demoing their product on the big screen at Demo Day](images/cohort1/c1-1050.jpg)
 Cameron demoing his build — Demo Day, July 17
 
+![MakerSquare Cohort 1 students building during the 2-week program in Austin](images/cohort1/c1-0953.jpg)
 Supabase keys and row-level security, Day 4
 
+![Guests at a MakerSquare demo night at Capital Factory in Austin](images/events/demo-night-0984.jpg)
 Demo Night in Austin draws a full house
 
+![A MakerSquare Cohort 1 student presenting the product they built and deployed](images/cohort1/c1-0950.jpg)
 Week 1: presenting a product that’s already live
 
 Cohort 2 · Built in two weeks
@@ -181,13 +187,13 @@ An agent that handles every incoming RFI and submittal email — reads it, downl
 
 ![Building on real work, from day one](images/cohort2/c2-build.jpg?v=1) Building on real work, from day one
 
-Cohort 2 in the room, downtown Austin
+![MakerSquare Cohort 2 students building in the classroom at Capital Factory](images/cohort2/c2-room.jpg?v=1) Cohort 2 in the room, downtown Austin
 
-Chris walks the room through his shelter dashboard
+![A MakerSquare Cohort 2 builder presenting their AI project at Demo Day](images/cohort2/c2-chris-present.jpg?v=1) Chris walks the room through his shelter dashboard
 
-Jennifer presenting the agent she built
+![A MakerSquare Cohort 2 builder demoing their finished product on screen](images/cohort2/c2-jennifer-present.jpg?v=1) Jennifer presenting the agent she built
 
-Building on real work, from day one
+![MakerSquare Cohort 2 students building during the 2-week program](images/cohort2/c2-build.jpg?v=1) Building on real work, from day one
 
 [Build yours — next cohort Jan 11](/enroll)
 
@@ -284,7 +290,7 @@ One sentence about your work — and Claude sketches three tools you could reali
 
 # 2-Week AI Bootcamp in Austin for Non-Technical Professionals
 
-> Two weeks in person at Capital Factory in Austin, TX. Build a live website, an AI agent, and an automated workflow by Demo Day, no coding background needed. $3,999, small cohorts.
+> Two weeks in person at Capital Factory, Austin. Build a live website, an AI agent, and an automated workflow by Demo Day — no coding needed. $3,999.
 
 Cohort 3 · Jan 11 · Austin, TX
 
@@ -2714,7 +2720,7 @@ All MakerSquare graduates get lifetime access to the alumni Slack, where builder
 
 #### Will this help me get a job in AI?
 
-MakerSquare is not a job placement bootcamp. It's a builder program for professionals who want to use AI in their current work or build something new. That said, demonstrating 3 shipped AI products at Demo Day in front of Austin's tech community has real value for anyone looking to transition into AI-adjacent roles or showcase AI fluency to current or future employers.
+MakerSquare is not a job placement bootcamp. It's a builder program for professionals who want to use AI in their current work or build something new. That said, demonstrating three shipped builds — a live website, an AI agent, and an automated workflow — at Demo Day in front of Austin's tech community has real value for anyone looking to transition into AI-adjacent roles or showcase AI fluency to current or future employers.
 
 #### What if I don't ship all three builds?
 
@@ -3617,7 +3623,7 @@ CEO, LenderBox · Mentor
 
 Founded and bootstrapped Rethink into a leading Salesforce-based platform through a private equity exit. Now operating across commercial real estate and investing in early-stage tech from pre-seed through Series C, with deep expertise across real estate, finance, and enterprise software.
 
-Additional advisors from Austin's operator, investor, and AI community are being assembled and will be announced before Cohort 1. Interested in advising? Reach out.
+Additional advisors from Austin's operator, investor, and AI community are being assembled and announced on a rolling basis. Interested in advising? Reach out.
 
 Mentors & guest speakers
 
@@ -4240,7 +4246,7 @@ For tonight's attendees only
 
 For tonight’s attendees — use code **DEMO150** at checkout.
 
-[Next up · Nov 20–22 Ship Your First AI App 3-day weekend workshop $1,199 $1,049 Reserve a seat →](/workshop-register)
+[Next up · Nov 20–22 Ship Your First AI App 3-day weekend workshop $150 off with DEMO150 Reserve a seat →](/workshop-register)
 [Jan 11–22 The 2-Week Program Our flagship immersive $3,999 $3,849 Enroll now →](/enroll)
 
 Your promo code
@@ -4267,7 +4273,7 @@ Coming up — weekend workshops
 
 Three days, in person in Austin — walk out Sunday with a real app running on your own work. No coding background needed. The last workshop of the year.
 
-[Next up · Nov 20–22 Ship Your First AI App Ten boxes, one weekend — a live app with a database, logins and payments, on your own work. $1,199 $1,049 with DEMO150](/workshop-register)
+[Next up · Nov 20–22 Ship Your First AI App Ten boxes, one weekend — a live app with a database, logins and payments, on your own work. $150 off with DEMO150](/workshop-register)
 
 [Full workshop lineup & curriculum →](/workshops)
 
@@ -4319,7 +4325,7 @@ DEMO150
 
 Click to copy
 
-[Reserve a weekend workshop — $1,049](/workshop-register)
+[Reserve a weekend workshop — $150 off](/workshop-register)
 [Enroll in the 2-week — $3,849](/enroll)
 
 $150 off with code DEMO150 at checkout
