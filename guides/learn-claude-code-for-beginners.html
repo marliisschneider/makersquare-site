@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="facebook-domain-verification" content="fligau9appze71fwy7uaaw2v12bc4n" />
+<!-- Google Tag Manager (delayed-load) -->
+<!-- dataLayer is created and gtm.start pushed IMMEDIATELY so queued events are never lost.
+     Only the gtm.js request is deferred: it fires on first user interaction, or after 3500ms,
+     whichever comes first. Do NOT revert to the eager loader - it puts 344KB of JS on the
+     mobile critical path and was measured pushing blog LCP to 6.3s. -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+var done=false,t=null,evts=['scroll','mousemove','mousedown','touchstart','keydown','click'],opts={passive:true,capture:true};
+function load(){if(done)return;done=true;if(t)w.clearTimeout(t);
+for(var k=0;k<evts.length;k++){w.removeEventListener(evts[k],load,opts);}
+var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);}
+for(var k=0;k<evts.length;k++){w.addEventListener(evts[k],load,opts);}
+t=w.setTimeout(load,3500);})(window,document,'script','dataLayer','GTM-MJTW9WQ3');</script>
+<!-- End Google Tag Manager -->
+<!-- Zoho UTM passthrough (modificado: incluye fbclid) -->
+<script>
+(function(){var p=new URLSearchParams(window.location.search);var keys=['utm_source','utm_medium','utm_campaign','utm_content','utm_term','fbclid'];var stored={};keys.forEach(function(k){if(p.get(k))stored[k]=p.get(k);});if(Object.keys(stored).length){try{sessionStorage.setItem('zf_utm',JSON.stringify(stored));}catch(e){}}})();
+</script>
+<!-- Zoho zf_gtm postMessage listener -->
+<script>
+window.addEventListener('message',function(e){if(e.data&&e.data.type=='zf_gtm'){window.dataLayer=window.dataLayer||[];window.dataLayer.push(e.data);}});
+</script>
+<title>Learn Claude Code: A Beginner's Guide for Non-Engineers</title>
+<meta name="description" content="Install Claude Code, run your first session, and build three small projects. A step-by-step guide for beginners who have never written code.">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/png" href="../favicon.png">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="canonical" href="https://www.makersquare.ai/guides/learn-claude-code-for-beginners">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.makersquare.ai/guides/learn-claude-code-for-beginners">
+<meta property="og:title" content="How to learn Claude Code without being an engineer">
+<meta property="og:description" content="Install Claude Code, run your first session, and build three small projects. A step-by-step guide for beginners who have never written code.">
+<meta property="og:image" content="https://www.makersquare.ai/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://forms.zoho.com">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap"></noscript>
+<link rel="stylesheet" href="../css/style.min.css?v=11">
+<style>
+.guide-hero { padding: calc(var(--nav-height) + var(--s10)) 0 var(--s4); border-bottom: 1px solid rgba(24,24,73,0.06); }
+.guide-hero-inner { max-width: 760px; margin: 0 auto; }
+.guide-tag { display: inline-flex; align-items: center; gap: 8px; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--indigo); margin-bottom: var(--s4); }
+.guide-tag::before { content: ''; width: 7px; height: 7px; background: var(--indigo); border-radius: 2px; }
+.guide-title { font-size: clamp(1.8rem, 3.5vw, 2.6rem); font-weight: 800; color: var(--navy); line-height: 1.15; letter-spacing: -0.03em; margin-bottom: var(--s4); }
+.guide-meta { display: flex; align-items: center; gap: var(--s3); font-size: 0.82rem; color: var(--text-muted); flex-wrap: wrap; }
+.guide-meta-dot { width: 3px; height: 3px; border-radius: 50%; background: var(--text-muted); }
+.guide-body-wrap { padding: var(--s6) 0 var(--s10); }
+.guide-body { max-width: 760px; margin: 0 auto; }
+.guide-body p { font-size: 1rem; color: #2d2d4e; line-height: 1.85; margin-bottom: var(--s5); }
+.guide-body h2 { font-size: 1.2rem; font-weight: 700; color: var(--navy); letter-spacing: -0.02em; margin-top: var(--s9); margin-bottom: var(--s4); padding-top: var(--s7); border-top: 1px solid rgba(24,24,73,0.06); }
+.guide-body h2:first-of-type { border-top: none; padding-top: 0; margin-top: var(--s6); }
+.guide-body a { color: var(--indigo); text-decoration: none; border-bottom: 1px solid rgba(64,61,216,0.25); transition: border-color 0.2s; }
+.guide-body a:hover { border-bottom-color: var(--indigo); }
+.guide-body strong { color: var(--navy); font-weight: 700; }
+.step-block { display: flex; gap: var(--s5); margin-bottom: var(--s6); }
+.step-num { flex-shrink: 0; width: 32px; height: 32px; background: var(--indigo); border-radius: 50%; font-size: 0.82rem; font-weight: 800; color: var(--white); display: flex; align-items: center; justify-content: center; margin-top: 2px; font-family: var(--font-display); }
+.step-content { flex: 1; }
+.step-title { font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: var(--s2); line-height: 1.4; }
+.step-body { font-size: 0.95rem; color: #2d2d4e; line-height: 1.8; }
+.step-body p { margin-bottom: var(--s3); font-size: 0.95rem; }
+.code-block { background: #0f0f23; border-radius: var(--r-lg); padding: var(--s5) var(--s6); margin: var(--s4) 0; overflow-x: auto; }
+.code-block pre { font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace; font-size: 0.82rem; color: #e0e0f0; line-height: 1.7; margin: 0; white-space: pre; }
+.code-block .comment { color: #6b7280; }
+.code-block .key { color: #81AAFB; }
+.code-block .val { color: #a5f3b0; }
+.callout { background: rgba(64,61,216,0.04); border: 1px solid rgba(64,61,216,0.15); border-left: 3px solid var(--indigo); border-radius: 0 var(--r-md) var(--r-md) 0; padding: var(--s4) var(--s5); margin: var(--s5) 0; }
+.callout p { font-size: 0.9rem; color: #3a3a6e; line-height: 1.7; margin: 0; }
+.callout strong { color: var(--indigo); }
+.mode-card { border: 1px solid rgba(24,24,73,0.1); border-radius: var(--r-lg); padding: var(--s5); margin-bottom: var(--s4); }
+.mode-card-header { display: flex; align-items: center; gap: var(--s3); margin-bottom: var(--s3); }
+.mode-badge { display: inline-block; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 3px 10px; border-radius: 20px; background: var(--navy); color: var(--white); }
+.mode-shortcut { font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace; font-size: 0.78rem; background: rgba(24,24,73,0.06); padding: 2px 8px; border-radius: 6px; color: var(--navy); font-weight: 600; }
+.mode-title { font-size: 0.95rem; font-weight: 700; color: var(--navy); }
+.mode-desc { font-size: 0.88rem; color: #2d2d4e; line-height: 1.7; }
+.guide-nav { display: flex; justify-content: space-between; align-items: center; padding-top: var(--s7); border-top: 1px solid rgba(24,24,73,0.06); margin-top: var(--s9); gap: var(--s4); flex-wrap: wrap; }
+.guide-nav-link { font-size: 0.85rem; font-weight: 600; color: var(--indigo); text-decoration: none; display: inline-flex; align-items: center; gap: 6px; border: none !important; }
+.guide-nav-link:hover { color: var(--navy); }
+.post-cta { background: var(--navy); border-radius: var(--r-xl); padding: var(--s8); margin-top: var(--s9); text-align: center; }
+.post-cta p { color: rgba(255,255,255,0.65); font-size: 0.95rem; line-height: 1.7; margin-bottom: var(--s5); max-width: 520px; margin-left: auto; margin-right: auto; }
+.post-cta-actions { display: flex; gap: var(--s3); justify-content: center; flex-wrap: wrap; }
+.post-back { margin-bottom: var(--s6); }
+.code-block.wrap pre { white-space: pre-wrap; word-break: break-word; }
+.mode-card-header { flex-wrap: wrap; }
+.step-content, .mode-card, .mode-desc { min-width: 0; }
+.mode-desc p { font-size: 0.88rem; line-height: 1.7; margin-bottom: var(--s3); }
+.guide-body code.ic, .step-body code.ic, .mode-desc code.ic { background: rgba(64,61,216,0.08); padding: 2px 6px; border-radius: 4px; font-size: 0.85em; font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace; color: var(--navy); }
+.post-back a { font-size: 0.82rem; font-weight: 600; color: var(--text-muted); text-decoration: none; display: inline-flex; align-items: center; gap: 6px; transition: color 0.2s; border: none !important; }
+.post-back a:hover { color: var(--indigo); }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How to Learn Claude Code Without Being an Engineer",
+  "description": "Install Claude Code, run your first session, and build three small projects. A step-by-step guide for beginners who have never written code.",
+  "image": "https://www.makersquare.ai/og-image.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "MakerSquare",
+    "url": "https://www.makersquare.ai"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "MakerSquare",
+    "url": "https://www.makersquare.ai",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.makersquare.ai/logo-dark.png",
+      "width": 1158,
+      "height": 300
+    }
+  },
+  "url": "https://www.makersquare.ai/guides/learn-claude-code-for-beginners",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.makersquare.ai/guides/learn-claude-code-for-beginners"
+  },
+  "datePublished": "2026-11-03",
+  "dateModified": "2026-11-03",
+  "about": {
+    "@type": "SoftwareApplication",
+    "name": "Claude Code",
+    "applicationCategory": "DeveloperApplication",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Anthropic"
+    }
+  }
+}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.makersquare.ai/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://www.makersquare.ai/guides"}, {"@type": "ListItem", "position": 3, "name": "How to Learn Claude Code Without Being an Engineer", "item": "https://www.makersquare.ai/guides/learn-claude-code-for-beginners"}]}
+</script>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJTW9WQ3"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<script src="https://forms.zoho.com/js/zf_gclid.js" defer></script>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo" style="align-items:center;"><img src="../logo-light.webp" alt="MakerSquare — School of Applied AI" width="348" height="90"><span class="nav-tagline" style="padding-left:4px;">School of Applied AI</span></a>
+    <ul class="nav-links">
+      <li><a href="/about">About</a></li>
+      <li style="white-space:nowrap;"><a href="/use-cases">Use Cases</a></li>
+      <li><a href="/curriculum">Curriculum</a></li>
+      <li><a href="/corporate">For Teams</a></li>
+      <li><a href="/immersive">Pricing</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/enroll" class="nav-apply">Enroll</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="/enroll" class="btn btn-primary btn-arrow" style="white-space:nowrap;">Secure Your Spot </a>
+      <button class="nav-hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu">
+  <ul class="mobile-menu-links">
+    <li><a href="/about">About</a></li>
+    <li><a href="/use-cases">Use Cases</a></li>
+    <li><a href="/curriculum">Curriculum</a></li>
+    <li><a href="/corporate">For Teams</a></li>
+    <li><a href="/immersive">Pricing</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="/enroll">Enroll</a></li>
+  </ul>
+  <a href="/enroll" class="btn btn-primary btn-block btn-lg" style="margin-top:24px;">Secure Your Spot</a>
+</div>
+<main>
+
+<!-- HERO -->
+<section class="guide-hero section">
+  <div class="container">
+    <div class="guide-hero-inner">
+      <div class="post-back"><a href="/guides">&#8592; Guides</a></div>
+      <div class="guide-tag">Getting Started · Guide 1 of 7</div>
+      <h1 class="guide-title">How to learn Claude Code without being an engineer.</h1>
+      <div class="guide-meta">
+        <span>MakerSquare</span>
+        <span class="guide-meta-dot"></span>
+        <span>10 min read</span>
+        <span class="guide-meta-dot"></span>
+        <span>Beginner</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GUIDE BODY -->
+<div class="guide-body-wrap">
+  <div class="container">
+    <div class="guide-body">
+
+      <p>Claude Code is Anthropic's coding agent. You tell it what you want in plain English. It reads the files in a folder on your computer, writes new ones, edits existing ones, and runs commands. You watch, approve, and check the result.</p>
+
+      <p>You do not need to write code to use it. You need to say clearly what you want and check whether you got it. If you have ever briefed a contractor, you already have the core skill.</p>
+
+      <p>This guide gets you from nothing installed to three small things built. Every command below was checked against <a href="https://code.claude.com/docs/en/setup" target="_blank" rel="noopener">Anthropic's setup docs</a> on November 3, 2026.</p>
+
+      <h2>What you need before you start</h2>
+
+      <div class="step-block">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <div class="step-title">A paid Claude plan or an API account</div>
+          <div class="step-body">Claude Code works with a Claude Pro, Max, Ultra, Team, or Enterprise plan, or a Claude Console account with prepaid API credits. The free claude.ai plan does not include Claude Code. The learning material is free. The tool is not.</div>
+        </div>
+      </div>
+
+      <div class="step-block">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <div class="step-title">A Mac, Windows, or Linux computer</div>
+          <div class="step-body">macOS 13 or newer, Windows 10 (version 1809) or newer, or a recent Ubuntu or Debian. At least 4 GB of RAM and an internet connection.</div>
+        </div>
+      </div>
+
+      <div class="step-block">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <div class="step-title">About an hour for the first session</div>
+          <div class="step-body">Most of that hour goes to the terminal, not Claude Code. That time pays off once and you don't spend it again.</div>
+        </div>
+      </div>
+
+      <div class="callout">
+        <p><strong>Don't want the terminal at all?</strong> Anthropic also ships Claude Code as a <a href="https://code.claude.com/docs/en/desktop-quickstart" target="_blank" rel="noopener">desktop app</a>, a VS Code extension, and on the web at claude.ai/code. They work. This guide uses the terminal because Anthropic's docs and most of the help online assume you're there. It's also where we teach it.</p>
+      </div>
+
+      <h2>Step 1: Get comfortable in the terminal</h2>
+
+      <p>The terminal is a window where you type commands instead of clicking. It looks hostile because it gives you no buttons. You only need five commands to get around.</p>
+
+      <div class="step-block">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <div class="step-title">Open it</div>
+          <div class="step-body">On a Mac, press <code class="ic">Cmd+Space</code>, type <code class="ic">Terminal</code>, and press Enter. On Windows, open the Start menu, type <code class="ic">PowerShell</code>, and press Enter.</div>
+        </div>
+      </div>
+
+      <div class="step-block">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <div class="step-title">Learn where you are and how to move</div>
+          <div class="step-body">
+            <div class="code-block"><pre><span class="key">pwd</span>              <span class="comment"># where am I right now?</span>
+<span class="key">ls</span>               <span class="comment"># what's in this folder?</span>
+<span class="key">mkdir</span> <span class="val">projects</span>   <span class="comment"># make a new folder called projects</span>
+<span class="key">cd</span> <span class="val">projects</span>      <span class="comment"># go into it</span>
+<span class="key">cd</span> <span class="val">..</span>            <span class="comment"># go back up one level</span></pre></div>
+            <p>These work in the Mac Terminal and in Windows PowerShell. None of them can damage anything. Type them until they feel boring.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="step-block">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <div class="step-title">Open the current folder in a normal window</div>
+          <div class="step-body">On a Mac, type <code class="ic">open .</code> On Windows, type <code class="ic">explorer .</code> The dot means "this folder." It's the fastest way to see that the terminal and your regular files are the same thing.</div>
+        </div>
+      </div>
+
+      <p>Anthropic has a longer <a href="https://code.claude.com/docs/en/terminal-guide" target="_blank" rel="noopener">terminal guide for first-timers</a> if you want more practice.</p>
+
+      <h2>Step 2: Install Claude Code</h2>
+
+      <p>Copy the line for your computer, paste it into the terminal, and press Enter.</p>
+
+      <div class="code-block"><pre><span class="comment"># Mac, Linux, or WSL</span>
+<span class="val">curl -fsSL https://claude.ai/install.sh | bash</span>
+
+<span class="comment"># Windows PowerShell</span>
+<span class="val">irm https://claude.ai/install.ps1 | iex</span></pre></div>
+
+      <div class="step-block">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <div class="step-title">Wait. It shows no progress.</div>
+          <div class="step-body">The installer downloads quietly. When your prompt comes back, it's done.</div>
+        </div>
+      </div>
+
+      <div class="step-block">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <div class="step-title">Close the terminal and open a new one</div>
+          <div class="step-body">
+            <p>Then check the install:</p>
+            <div class="code-block wrap"><pre><span class="val">claude --version</span></pre></div>
+            <p>You should see a version number followed by <code class="ic">(Claude Code)</code>. If you see "command not found," the new terminal can't find Claude Code yet. Anthropic's <a href="https://code.claude.com/docs/en/troubleshoot-install" target="_blank" rel="noopener">install troubleshooting page</a> walks through the fix.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="step-block">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <div class="step-title">Windows only: install Git for Windows</div>
+          <div class="step-body">Anthropic recommends <a href="https://git-scm.com/downloads/win" target="_blank" rel="noopener">Git for Windows</a> so Claude Code can use its Bash tool. Without it, Claude Code falls back to PowerShell. You'll want git anyway for Step 5.</div>
+        </div>
+      </div>
+
+      <div class="callout">
+        <p><strong>Already use Homebrew on a Mac?</strong> <code class="ic">brew install --cask claude-code</code> works too. Homebrew installs don't update on their own, so run <code class="ic">brew upgrade claude-code</code> now and then. The installer above updates itself.</p>
+      </div>
+
+      <h2>Step 3: Start your first session</h2>
+
+      <p>Claude Code always works inside one folder. Make a practice folder and start it there.</p>
+
+      <div class="code-block"><pre><span class="key">mkdir</span> <span class="val">my-first-project</span>
+<span class="key">cd</span> <span class="val">my-first-project</span>
+<span class="key">claude</span></pre></div>
+
+      <div class="step-block">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <div class="step-title">Log in</div>
+          <div class="step-body">The first time, Claude Code opens your browser to sign in. Use the account with your paid plan. You only do this once.</div>
+        </div>
+      </div>
+
+      <div class="step-block">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <div class="step-title">Ask it something before you ask it to build</div>
+          <div class="step-body">
+            <p>Type a question and press Enter:</p>
+            <div class="code-block wrap"><pre><span class="val">what can Claude Code do, and what should a beginner try first?</span></pre></div>
+            <p>This costs nothing and shows you how it answers. It can also answer questions about itself, so use it as your help desk.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="step-block">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <div class="step-title">Know the five controls that matter</div>
+          <div class="step-body">
+            <div class="code-block"><pre><span class="key">Esc</span>           <span class="comment"># stop Claude mid-task so you can redirect it</span>
+<span class="key">Esc Esc</span>       <span class="comment"># (empty prompt) open the rewind menu to undo edits</span>
+<span class="key">Shift+Tab</span>     <span class="comment"># switch permission mode (more on this below)</span>
+<span class="key">/clear</span>        <span class="comment"># start a fresh conversation</span>
+<span class="key">/exit</span>         <span class="comment"># leave Claude Code</span></pre></div>
+            <p>To pick up where you left off later, run <code class="ic">claude -c</code> from the same folder.</p>
+          </div>
+        </div>
+      </div>
+
+      <h2>Step 4: Build three small things</h2>
+
+      <p>Tutorials teach you a tool. Small real projects teach you how to work with it. Each of these takes one session and teaches something different. Start a new folder for each one.</p>
+
+      <div class="mode-card">
+        <div class="mode-card-header">
+          <span class="mode-badge">Build 1</span>
+          <span class="mode-shortcut">teaches: describe, look, adjust</span>
+        </div>
+        <div class="mode-title" style="margin-bottom:6px;">A one-page website about something you know</div>
+        <div class="mode-desc">
+          <p>Your side business, your neighborhood, a hobby. The subject doesn't matter. Being able to judge the result does.</p>
+          <div class="code-block wrap"><pre><span class="val">Make a single index.html page for my dog-walking business in East Austin. Sections: what I offer, prices, service area, and how to book. Use a clean layout with large text. No frameworks, just one HTML file.</span></pre></div>
+          <p>Open it with <code class="ic">open index.html</code> (Mac) or <code class="ic">start index.html</code> (Windows). Then ask for changes in plain English: "make the prices a table," "the header is too big." That loop is most of the job.</p>
+        </div>
+      </div>
+
+      <div class="mode-card">
+        <div class="mode-card-header">
+          <span class="mode-badge">Build 2</span>
+          <span class="mode-shortcut">teaches: running code, checking output</span>
+        </div>
+        <div class="mode-title" style="margin-bottom:6px;">A cleanup script for a messy spreadsheet export</div>
+        <div class="mode-desc">
+          <p>Put a <strong>copy</strong> of a CSV export in the folder. Customer list, transactions, anything with duplicates or bad formatting.</p>
+          <div class="code-block wrap"><pre><span class="val">Read customers.csv. Write a script that removes duplicate rows by email address and saves the result as customers-clean.csv. Run it, then tell me how many rows you removed and show me three examples.</span></pre></div>
+          <p>Now Claude Code runs commands, not just edits files. Check its count against the file yourself. If it needs to install something to run the script, it will say so. Read what it wants to install before you approve it.</p>
+        </div>
+      </div>
+
+      <div class="mode-card">
+        <div class="mode-card-header">
+          <span class="mode-badge">Build 3</span>
+          <span class="mode-shortcut">teaches: planning, memory, shipping</span>
+        </div>
+        <div class="mode-title" style="margin-bottom:6px;">A small tool you'll use next week</div>
+        <div class="mode-desc">
+          <p>A quote calculator for your service, a checklist page for a process you repeat, a page that formats your weekly numbers. Something with a real user: you.</p>
+          <p>Start in plan mode (press <code class="ic">Shift+Tab</code> until it says plan). Claude researches and proposes a plan without changing files. Push back on the plan before it builds. Then run <code class="ic">/init</code> to create a CLAUDE.md file so the next session remembers the project. Our <a href="/guides/how-to-set-up-claude-md">CLAUDE.md guide</a> shows what to put in it.</p>
+          <p>When it works, put it online. The <a href="/guides/deploy-with-vercel-and-github">Vercel and GitHub guide</a> gets you a live URL.</p>
+        </div>
+      </div>
+
+      <h2>Step 5: The walls everyone hits</h2>
+
+      <div class="step-block">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <div class="step-title">"I'm afraid I'll break my computer"</div>
+          <div class="step-body">Typing <code class="ic">pwd</code>, <code class="ic">ls</code>, and <code class="ic">cd</code> can't break anything. The real risk is Claude deleting or overwriting files, and you control that through permissions. Work in a dedicated project folder, and keep copies of anything you can't lose somewhere else.</div>
+        </div>
+      </div>
+
+      <div class="step-block">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <div class="step-title">Permission prompts, or the lack of them</div>
+          <div class="step-body">
+            <p>The permission mode decides what Claude can do without asking. <strong>Manual</strong> asks before every edit and command. <strong>Plan</strong> only reads and proposes. <strong>Auto</strong> runs most things on its own with background safety checks. Recent versions start new terminal sessions in Auto.</p>
+            <p>For your first few sessions, press <code class="ic">Shift+Tab</code> until you're in Manual. Seeing every step is how you learn what it's doing. When a prompt shows a command you don't recognize, press <code class="ic">Esc</code> to decline and ask "what does that command do?" first.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="step-block">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <div class="step-title">Git, and why you need it on day one</div>
+          <div class="step-body">
+            <p>The rewind menu (<code class="ic">Esc Esc</code> or <code class="ic">/rewind</code>) undoes Claude's file edits within a session. Anthropic is clear that it isn't a replacement for version control. Changes made by commands it runs aren't always tracked. Git is your real undo button.</p>
+            <p>You don't have to learn git commands first. Ask Claude:</p>
+            <div class="code-block wrap"><pre><span class="val">Set up git in this folder and commit everything with a clear message. From now on, commit after each change that works.</span></pre></div>
+            <p>Then read our <a href="/guides/git-workflow-for-non-coders">git workflow for non-coders</a> so you know what it's doing.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="step-block">
+        <div class="step-num">4</div>
+        <div class="step-content">
+          <div class="step-title">It says it's done, and it isn't</div>
+          <div class="step-body">Claude Code will sometimes report success on something that doesn't work. Never take "done" on faith. Open the page, check the file, count the rows. A good habit is to ask "how do I check this worked?" before you move on.</div>
+        </div>
+      </div>
+
+      <div class="step-block">
+        <div class="step-num">5</div>
+        <div class="step-content">
+          <div class="step-title">It forgets everything between sessions</div>
+          <div class="step-body">Each session starts fresh. A CLAUDE.md file in the folder fixes most of this, because Claude reads it at the start of every session. Run <code class="ic">/clear</code> between unrelated tasks too. A long conversation about one thing makes it worse at the next.</div>
+        </div>
+      </div>
+
+      <div class="step-block">
+        <div class="step-num">6</div>
+        <div class="step-content">
+          <div class="step-title">Vague requests get vague results</div>
+          <div class="step-body">"Fix the bug" gets a guess. "When I submit the form with an empty email, the page goes blank. Make it show an error instead" gets a fix. Our guide to <a href="/guides/how-to-write-prompts-that-work">prompts that work</a> applies here word for word.</div>
+        </div>
+      </div>
+
+      <h2>How to keep going for free</h2>
+
+      <p>Once the three builds work, you've learned the basics. These are the free resources worth your time, all from Anthropic:</p>
+
+      <div class="step-block">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <div class="step-title">Claude Code 101 on Claude Academy</div>
+          <div class="step-body"><a href="https://academy.claude.com/courses/claude-code-101" target="_blank" rel="noopener">Anthropic's self-paced intro course</a>: 12 lessons, about an hour and a half. It assumes a little command-line familiarity, which you now have.</div>
+        </div>
+      </div>
+
+      <div class="step-block">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <div class="step-title">Claude Code in Action</div>
+          <div class="step-body"><a href="https://anthropic.skilljar.com/claude-code-in-action" target="_blank" rel="noopener">The follow-on course</a> for people already using it, covering longer tasks, configuration, and automating repeat work. Take it after a few weeks of real use.</div>
+        </div>
+      </div>
+
+      <div class="step-block">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <div class="step-title">The official docs</div>
+          <div class="step-body">Start with the <a href="https://code.claude.com/docs/en/quickstart" target="_blank" rel="noopener">quickstart</a> and <a href="https://code.claude.com/docs/en/best-practices" target="_blank" rel="noopener">best practices</a>. They're written for engineers, but after this guide you'll follow them.</div>
+        </div>
+      </div>
+
+      <p>The resource that matters most is a backlog of your own small problems. Keep a list of tasks you do by hand that annoy you. Each week, pick one and hand it to Claude Code. You'll learn more from that than from another course.</p>
+
+      <h2>If you'd rather learn it in a room</h2>
+
+      <p>Some people do fine alone with the free material. Others start it twice and stall. If that's you, the problem is usually structure, not content. MakerSquare's <a href="/immersive">2-week in-person program in Austin</a> teaches Claude Code in the terminal from day one, alongside GitHub, Vercel, and Supabase, and you build on your own project the whole time.</p>
+
+      <div class="guide-nav">
+        <a href="/guides" class="guide-nav-link" style="color:var(--text-muted);">&#8592; All guides</a>
+        <a href="/guides/how-to-set-up-claude-md" class="guide-nav-link">Next: How to set up a CLAUDE.md file &#8594;</a>
+      </div>
+
+      
+      <!-- Keep reading (internal link cluster) -->
+      <div class="post-related" style="margin-top:var(--s9);padding-top:var(--s7);border-top:1px solid rgba(24,24,73,0.06);">
+        <div style="font-size:0.78rem;letter-spacing:0.08em;text-transform:uppercase;color:rgba(24,24,73,0.5);font-weight:700;margin-bottom:var(--s5);">Keep reading</div>
+        <ul style="list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:var(--s4);">
+          <li><a href="/guides/how-to-set-up-claude-md" style="display:block;font-weight:650;font-size:0.95rem;line-height:1.45;color:var(--navy);text-decoration:none;border:1px solid rgba(24,24,73,0.10);border-radius:12px;padding:14px 16px;height:100%;">How to set up a CLAUDE.md file — and why it changes everything.</a></li>
+          <li><a href="/guides/git-workflow-for-non-coders" style="display:block;font-weight:650;font-size:0.95rem;line-height:1.45;color:var(--navy);text-decoration:none;border:1px solid rgba(24,24,73,0.10);border-radius:12px;padding:14px 16px;height:100%;">The git workflow every non-coder needs: add, commit, push.</a></li>
+          <li><a href="/guides/deploy-with-vercel-and-github" style="display:block;font-weight:650;font-size:0.95rem;line-height:1.45;color:var(--navy);text-decoration:none;border:1px solid rgba(24,24,73,0.10);border-radius:12px;padding:14px 16px;height:100%;">How to deploy your project with Vercel and GitHub in 10 minutes.</a></li>
+          <li><a href="/guides" style="display:block;font-weight:650;font-size:0.95rem;line-height:1.45;color:var(--navy);text-decoration:none;border:1px solid rgba(24,24,73,0.10);border-radius:12px;padding:14px 16px;height:100%;">All MakerSquare build guides</a></li>
+        </ul>
+      </div>
+
+      <!-- CTA -->
+      <div class="post-cta">
+        <p>Claude Code is the main build tool in MakerSquare's 2-week program in Austin. Students open it on day one and use it to ship their own project, with a real database and a live URL.</p>
+        <div class="post-cta-actions">
+          <a href="https://www.makersquare.ai/immersive" class="btn btn-arrow" style="background:var(--white);color:var(--navy);font-weight:700;">See the 2-week program </a>
+          <a href="https://www.makersquare.ai/curriculum" class="btn" style="background:transparent;color:rgba(255,255,255,0.65);border:1.5px solid rgba(255,255,255,0.2);">See the curriculum</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="footer-logo"><img src="../logo-dark.webp" alt="MakerSquare — School of Applied AI" width="348" height="90" loading="lazy"></a><div class="footer-tagline">School of Applied AI</div>
+        <p>2-week in-person AI intensive in Austin, TX for operators, founders, and professionals.</p>
+        <a href="/enroll" class="btn btn-primary btn-arrow" style="font-size:0.82rem;padding:10px 20px;">Enroll </a>
+      </div>
+      <div>
+        <div class="footer-col-title">Program</div>
+        <ul class="footer-col-links">
+          <li><a href="/use-cases">Use Cases</a></li>
+          <li><a href="/curriculum">Curriculum</a></li>
+          <li><a href="/immersive">Pricing</a></li>          <li><a href="/enroll">Enroll</a></li>
+          <li><a href="/scholarship">Scholarship</a></li>
+          <li><a href="/faq">FAQ</a></li>
+          <li><a href="/demo-day">Demo Day</a></li>
+          <li><a href="/workshops">Workshops</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Company</div>
+        <ul class="footer-col-links">
+          <li><a href="/about">About</a></li>
+          <li><a href="/team">Team</a></li>
+          <li><a href="/corporate">Corporate Training</a></li>
+          <li><a href="/comparison">How We Compare</a></li>
+          <li><a href="/ai-training-austin">AI Training in Austin</a></li>
+          <li><a href="/alumni">Alumni</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Learn</div>
+        <ul class="footer-col-links">
+          <li><a href="/events">Events</a></li><li><a href="/blog">Blog</a></li>
+          <li><a href="https://ai-builder-brief.beehiiv.com" target="_blank" rel="noopener">Newsletter &mdash; AI Builder Brief</a></li>
+          <li><a href="/guides" class="active">Guides</a></li>
+          <li><a href="/quickstart">Claude Quickstart Guide</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Contact</div>
+        <a href="mailto:hello@makersquare.ai" class="footer-contact-email">hello@makersquare.ai</a>
+        <p style="font-size:0.82rem;color:rgba(255,255,255,0.6);">Austin, TX</p>
+        <div class="footer-social"><a href="https://www.linkedin.com/company/makersquare-ai" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>Follow us on LinkedIn</a><a href="https://www.meetup.com/makersquare-ai/" target="_blank" rel="noopener" aria-label="Events on Meetup"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="width:15px;height:15px;fill:currentColor;flex-shrink:0;"><path d="M19.24 0H4.76A4.76 4.76 0 000 4.76v14.48A4.76 4.76 0 004.76 24h14.48A4.76 4.76 0 0024 19.24V4.76A4.76 4.76 0 0019.24 0zM8.64 16.8c-.48.12-.97-.12-1.2-.56L5.28 11.6a1 1 0 011.8-.88l1.56 3.16 3.84-7.8a1 1 0 011.8.88l-4.2 8.52a1 1 0 01-.44.52zm9.12-1.12a1 1 0 01-1.32.48l-2.16-1.04-1.04 2.16a1 1 0 01-1.8-.88l1.32-2.72 2.72 1.32-.48-2.96a1 1 0 011.96-.32l.64 3.96h.16z"/></svg>Events</a></div>
+      </div>
+    </div>
+    <!-- ═══ FOOTER NEWSLETTER ═══ -->
+    <div style="border-top:1px solid rgba(255,255,255,0.08);padding:var(--s8) 0;margin-bottom:var(--s6);">
+      <div style="max-width:480px;">
+        <div style="font-size:0.75rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.6);margin-bottom:var(--s3);">AI Builder Brief</div>
+        <div style="font-size:1.05rem;font-weight:700;color:var(--white);margin-bottom:6px;">Get AI Builder Brief free every Tuesday.</div>
+        <div style="font-size:0.85rem;color:rgba(255,255,255,0.5);margin-bottom:var(--s4);">Three AI stories that matter, one prompt to try this week.</div>
+        <a href="https://ai-builder-brief.beehiiv.com/subscribe?utm_source=website&utm_medium=site&utm_campaign=newsletter" target="_blank" rel="noopener" class="btn btn-primary btn-arrow">Subscribe free </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">&copy; 2026 MakerSquare LLC. Austin, TX.</div>
+      <div class="footer-bottom-links">
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.min.js?v=2"></script>
+</body>
+</html>
