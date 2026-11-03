@@ -13259,7 +13259,7 @@ Faculty come from the business school, the Institute for Human-Centered AI, engi
 
 #### Wharton Generative AI and Business Transformation (Philadelphia, PA)
 
-**Format:** four days in Philadelphia. **Tuition:** $13,500. **Next listed dates:** November 16 to 19, 2026.
+**Format:** four days in Philadelphia. **Tuition:** $13,500. **Dates:** run periodically; check Wharton's site for the next session.
 
 Led by faculty from the Wharton AI and Analytics Initiative. Sessions mix lectures, group activities, case studies, and industry panels, with topics running from large language models and retrieval-augmented generation to workflow redesign and AI governance. Wharton names C-suite leaders, product, marketing, sales, and strategy executives, and consultants as the audience.
 
@@ -13291,7 +13291,7 @@ Covers agentic AI systems, how to drive AI adoption inside an organization, and 
 
 #### Stony Brook AI for Business: An Executive Workshop (New York, NY)
 
-**Format:** one day, November 20, 2026, 8:30am to 5:30pm, at the SUNY Global Center on East 55th Street in Manhattan. **Tuition:** $1,500, or $1,200 each for three or more people from one company. Seats are capped at 30.
+**Format:** one day, 8:30am to 5:30pm, at the SUNY Global Center on East 55th Street in Manhattan. **Tuition:** $1,500, or $1,200 each for three or more people from one company. Seats are capped at 30. Check Stony Brook's site for the next date.
 
 Stony Brook is direct about what this is. You will not learn to code or do hands-on development. You will leave with a shortlist of AI opportunities for your organization and a written 90-day plan with named owners. Expect 45 to 60 minutes of pre-work.
 
