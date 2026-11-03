@@ -1680,7 +1680,7 @@ Try it now
 
 Claude drafts a workshop outline for your team on the spot. The real proposal comes from us within 24 hours.
 
-Different team? Customer service, recruiting, legal — if the work happens on a computer, there’s a version of this for it.
+Different team? Customer service, recruiting, legal — if the work happens on a computer, there’s a version of this for it. Training your leadership team first? Read [what an AI bootcamp for executives should cover](/ai-bootcamp-for-executives).
 
 Talk to Our Training Team — tell us about yours
 
@@ -3900,6 +3900,388 @@ $3,999 tuition · Money-back guarantee
 
 ---
 
+<!-- https://www.makersquare.ai/ai-bootcamp-for-executives -->
+
+# AI Bootcamp for Executives: Hands-On, Austin | MakerSquare
+
+> An AI bootcamp for executives should put you on the tools: build one workflow, learn what AI costs to run, leave with a plan. For you or your team.
+
+AI bootcamp · Executives
+
+## An AI bootcamp for executives: build one real workflow before you bet the budget.
+
+Most executive AI programs are lectures and case studies. They are good for vocabulary. They rarely prepare a leader for the questions that arrive the following Monday. Which of our workflows is worth automating first? What will it cost to run? Can our people maintain it, or are we signing up for a consultant forever? What data are we allowed to send to a model?
+
+The fastest way to calibrated answers is to build one workflow yourself, on your own business, with an experienced builder next to you. Below is what that kind of program should cover and how to choose one.
+
+Next cohort: January 11, 2027
+In person · Austin, TX
+No coding background needed
+
+[For your leadership team Private 3-day workshop You and your direct reports, on your tools and data. Working automation by day three. Corporate training →](/corporate)
+[For you, hands on The 2-week program Ten days in Austin, building on your own business, with a live demo on the last Friday. See the program →](/immersive)
+
+What it should cover
+
+### What an executive AI program should leave you able to do.
+
+Judge any program, ours included, by whether you could do these six things afterward without calling a vendor.
+
+Judgment
+
+#### Spot an inflated AI claim
+
+Know what current models do well, where they fail, and how they differ, well enough to push back on a pitch deck.
+
+Our curriculum: Week 1, Monday
+
+Priorities
+
+#### Pick the first workflow
+
+Rank your workflows by return and pick the one or two where AI actually moves a number. It is easy to start with the wrong one.
+
+Corporate programs: Phase 1
+
+Cost
+
+#### Know what a build involves
+
+Once you have deployed a site, wired up a database and connected an agent yourself, a six-month quote for a simple internal tool reads differently.
+
+Week 1, Wednesday & Thursday
+
+Risk
+
+#### Set data and access rules
+
+What can go to which model, who sees what, and where a human signs off before anything reaches a customer.
+
+Week 2, Thursday
+
+Make or buy
+
+#### Train or hire
+
+When an outside consultant is the right call, and when the capability belongs in your own people. We wrote [an honest comparison](/ai-training-vs-consultants).
+
+Corporate programs
+
+Adoption
+
+#### Make it stick
+
+A weekly and quarterly rhythm so the tools your team builds are still in use six months later.
+
+Corporate programs: the AiOS method
+
+What you could build
+
+### What a leader could build in the room.
+
+Examples scoped to what the curriculum covers. Your build runs on your own business.
+
+Briefing
+
+#### Monday numbers brief
+
+Your weekly numbers land in a database. Claude writes a short brief on what moved and the likely reasons, and it is in your inbox before the first meeting.
+
+Supabase Claude Gmail
+
+Inbox
+
+#### Inbox triage
+
+Incoming email is sorted, prioritized and answered in draft. Nothing is sent until you approve it.
+
+Composio Gmail Claude
+
+Operations
+
+#### An exception watcher
+
+AI watches activity across the business and surfaces only what needs a person. RoverPass, an Austin company, runs an ops command center built on this pattern.
+
+Claude APIs Dashboards
+
+Illustrative examples, not alumni projects. Read [the RoverPass case study](/case-study-roverpass) (disclosure: its CEO co-founded MakerSquare).
+
+Formats
+
+### Three ways leaders do this with us.
+
+Most leaders start here
+
+#### Your leadership team, 3 days
+
+A private workshop for you and your direct reports, built around your own tools and workflows. You leave with working automation and a clear view of what to build next. Custom quote, written proposal within 24 hours.
+
+[Corporate training →](/corporate)
+
+Company-wide
+
+#### A custom program
+
+Sequential cohorts of 3 to 15 people, one team at a time, each building a tool for its own function. Scoped with you before anything is scheduled, on-site or in Austin.
+
+[See how it works →](/corporate)
+
+Hands on, personally
+
+#### The 2-week cohort
+
+Ten days in Austin alongside founders and operators, $3,999. Two weeks out of the office is a lot to ask of a senior leader. The ones who do it tend to be founders or operators who want to build personally.
+
+[The 2-week program →](/immersive)
+
+### Senior operators from our cohorts, in their words.
+
+> “The biggest win isn’t what I built — it’s what I can do going forward. There’s nothing they could hand me that I couldn’t build a solution for.”
+
+![Chris Cox](images/cohort2/avatar-chris.jpg?v=1) **Chris Cox** · Director of System Performance, Hesed House · Cohort 2
+
+> “Each of us entered the first day with our own unique product to build step by step — we weren’t learning a generic one-size-fits-all solution.”
+
+![Ted Kilgore](images/cohort1/avatar-ted.jpg?v=3) **Ted Kilgore** · Executive Leadership Consultant, The HT Group · Cohort 1
+
+How to choose
+
+### How to choose an AI program as an executive.
+
+1. **Will you touch the tools?**If the agenda is all talks and panels, you will leave with opinions and no calibration. One afternoon of building teaches more about cost and risk than a week of slides.
+
+2. **Is the material your business or someone else’s?**Case studies about large companies are interesting. A workflow from your own operation, built in the room, is what you can act on.
+
+3. **Is governance specific?**Ask how the program handles proprietary data. A real answer names tools, retention settings and review steps.
+
+4. **Does your team come too?**A leader who learns alone comes back to a team that has not. Programs that train the leadership group together move faster afterward.
+
+5. **What is left behind?**Look for documentation, a maintenance guide and a prioritized list of what to build next, so the work continues after the trainers leave.
+
+When university executive education is the better pick: if you want a recognized credential, a peer network from large companies, or board-level strategy framing, a business school program will serve you better. We are the option for leaders who want to build.
+
+The MakerSquare option
+
+### Built in Austin, delivered at your office or ours.
+
+Private workshops and custom programs are quoted per engagement, with a written proposal within 24 hours of the first call. Everything your team builds belongs to your company. Individual seats in the 2-week cohort:
+
+- 2 weeks, Monday to Friday, 9am to 3pm, in person in Austin
+
+- $3,999 tuition, paid in full ($3,499 with the [scholarship](/scholarship) for veterans, first responders and educators)
+
+- Next cohort starts January 11, 2027; enrollment closes January 4
+
+- Small cohort, with an instructor in the room all day
+
+- Ship a live website, a working AI agent and an automated workflow, or a full refund
+
+- Demo Day on the final Friday, in front of Austin’s tech community
+
+[Private training for your team](/corporate) Schedule an intro call
+
+Quick answers
+
+### AI training for executives, answered.
+
+#### Is there an AI bootcamp just for executives?
+
+Our public 2-week cohort mixes founders, operators and professionals. For a leadership-only group, we run private 3-day workshops and custom programs for your team. See [corporate training](/corporate).
+
+#### Do executives need a technical background?
+
+No. The only requirement is knowing your business well. We provide the technical layer, and you direct the tools in plain English.
+
+#### How much does executive AI training cost?
+
+A seat in the 2-week cohort is $3,999. Private workshops and custom programs are quoted per engagement based on team size, length and how custom the build is, with a written proposal within 24 hours.
+
+#### How do you handle our proprietary data?
+
+We work within your security requirements: on your infrastructure, with AI tools that do not retain data, or under whatever rules your legal and IT teams set. We settle this during scoping, before anything is signed.
+
+### Start with one workflow. We will help you pick it.
+
+Book a 45-minute call. Bring the process that eats the most hours, and we will tell you what a first build would look like.
+
+Schedule an Intro Call
+[For Companies](/corporate)
+
+---
+
+<!-- https://www.makersquare.ai/ai-course-for-product-managers -->
+
+# AI Course for Product Managers: What to Learn | MakerSquare
+
+> What an AI course for product managers should teach: prototyping, evals, feedback agents. How to choose one, and our 2-week in-person option in Austin.
+
+AI course · Product managers
+
+## The AI course for product managers who want to ship the prototype themselves.
+
+Most AI courses for PMs teach prompting and a strategy framework. That covers about a week of the job. The harder parts come after: turning a feature idea into something a user can click, deciding whether model output is good enough to ship, and getting a pile of feedback into a shape you can reason about.
+
+This page lays out what a good course should cover, what you should be able to build by the end, and how to compare options. Our 2-week in-person program in Austin is one of them.
+
+Next cohort: January 11, 2027
+In person · Austin, TX
+No coding background needed
+
+[For you The 2-week program Ten days in Austin. You build on your own product’s data and demo it live on the last Friday. See the program →](/immersive)
+[For a product team Private team training A 3-day workshop or custom program for your PMs, built on the tools your team already uses. Train the team →](/corporate)
+
+What a good course covers
+
+### Six skills a product manager should leave with.
+
+Each one maps to a day in our curriculum, so you can hold any other course to the same list.
+
+Models
+
+#### How models actually behave
+
+Where Claude, GPT and Gemini differ, where they make things up, and why the same prompt gives different answers. You will be writing specs for AI features, so you need a feel for what the model can carry.
+
+Our curriculum: Week 1, Monday
+
+Specs
+
+#### A PRD a builder can work from
+
+Scoped tightly enough that Claude Code can build from it and clear enough that an engineer can review it. Scope before you build.
+
+Week 1, Tuesday
+
+Prototype
+
+#### From idea to a live URL
+
+Describe a page in plain English, build it with Claude Code, push to GitHub, deploy on Vercel. By the afternoon you have a link you can send to five users.
+
+Week 1, Wednesday
+
+Data
+
+#### Real data behind the prototype
+
+A Supabase table, a form, a dashboard, and logins with row-level security. User tests run on something that works instead of a mockup.
+
+Week 1, Thursday
+
+Connections
+
+#### AI wired into your tools
+
+Composio connects Claude to Gmail, Slack, HubSpot and 200+ other tools without integration code. Your feedback, tickets and notes stop living in five places.
+
+Week 2, Monday
+
+Quality
+
+#### Evals
+
+How to test whether an AI feature is good enough to ship before engineering spends a sprint on it. Plenty of PM courses skip this. It is the skill your engineers will respect most.
+
+Week 2, Thursday
+
+What you could build
+
+### Three builds that fit a PM’s week.
+
+Examples scoped to what the curriculum covers. In the program you pick your own, and it runs on your product’s data.
+
+Agent
+
+#### Feedback triage agent
+
+Pulls support emails and Slack threads, has Claude tag each one by theme and severity, and writes the rows to a database. A dashboard shows which themes grew this week and links back to the source messages.
+
+Composio Claude Supabase
+
+Prototype
+
+#### A feature prototype with real data
+
+Your next feature idea, built from your PRD with Claude Code and deployed with a real database behind it. You run the user test on Thursday instead of waiting for a sprint slot.
+
+Claude Code Vercel Supabase
+
+Automation
+
+#### Competitor change monitor
+
+A browser script visits competitor pricing and changelog pages on a schedule. Claude summarizes what changed, and a digest lands in Slack before your Monday planning meeting.
+
+Playwright Render Slack
+
+Illustrative examples, not alumni projects. See [what graduates actually built](/alumni).
+
+How to choose
+
+### How to choose an AI course as a product manager.
+
+1. **Ask where the final project lives.**If the answer is a slide deck or a notebook, you are buying a strategy course. That can be fine. Just know which one you are paying for.
+
+2. **Check whether you work on your own data.**Toy datasets teach the tool. Your own tickets, docs and metrics teach you where it breaks, which is the part you need at work.
+
+3. **Look for evals and data handling on the syllabus.**If you will put AI in front of customers, you need both. A course that skips them leaves you dependent on engineering for every quality call.
+
+4. **Count the hours with an instructor.**Recorded video is cheap to produce. Live help when your deploy fails is what costs money, and it is usually what gets people unstuck.
+
+5. **Be honest about your time.**A self-paced online course costs less and fits around a job. It works well if you are self-driven and need one specific skill. It tends to stall the first time something breaks and nobody is there to ask.
+
+One case where we are the wrong pick: if your job is managing a team that trains its own machine-learning models, look for an AI product management course built around data science workflows. Ours is about building products on top of existing models like Claude.
+
+The MakerSquare option
+
+### Two weeks in Austin, building on your own product.
+
+Our program is a full-time, in-person cohort for people who know their domain and want to build with AI themselves. PMs fit it well, because writing the spec is already half the job.
+
+- 2 weeks, Monday to Friday, 9am to 3pm, in person in Austin
+
+- $3,999 tuition, paid in full ($3,499 with the [scholarship](/scholarship) for veterans, first responders and educators)
+
+- Next cohort starts January 11, 2027; enrollment closes January 4
+
+- Small cohort, with an instructor in the room all day
+
+- Ship a live website, a working AI agent and an automated workflow, or a full refund
+
+- Demo Day on the final Friday, in front of Austin’s tech community
+
+[See the 2-week program](/immersive) Schedule an intro call
+
+Quick answers
+
+### AI courses for product managers, answered.
+
+#### Do product managers need to code to take an AI course?
+
+No. You will work in a terminal with Claude Code from the first week, but you describe what you want in plain English and review what it writes. Knowing your product and users matters more than syntax.
+
+#### How long does an AI course for product managers take?
+
+Ours is two weeks, full time: ten days, 9am to 3pm. If two weeks away is not realistic, our [3-day workshops](/workshops) cover a shorter version of the build path.
+
+#### How much does it cost?
+
+Tuition is $3,999, paid in full. Veterans, first responders and educators pay $3,499 with the [scholarship](/scholarship). Training for a whole product team is quoted separately on [our corporate page](/corporate).
+
+#### Will this change how I work with engineers?
+
+It usually does. After you have deployed to Vercel, wired up a Supabase database and tested an agent yourself, your specs get tighter and you can tell a one-day change from a one-month one.
+
+### Cohort 3 starts Jan 11. Bring the feature you keep waiting on.
+
+Book a short call and tell us what you want to build. We will tell you honestly whether two weeks gets you there.
+
+Schedule an Intro Call
+[See the curriculum](/curriculum)
+
+---
+
 <!-- https://www.makersquare.ai/ai-training-austin -->
 
 # Learn AI in Austin: In-Person AI Courses & Training | MakerSquare
@@ -4006,6 +4388,192 @@ Yes — private 3-day workshops and custom programs for teams of 3 to 15, built 
 ### Cohort 3 starts Jan 11. Enrollment closes January 4.
 
 Fifteen seats, in person in Austin. Or bring the training to your whole team.
+
+Schedule an Intro Call
+[For Companies](/corporate)
+
+---
+
+<!-- https://www.makersquare.ai/ai-training-for-project-managers -->
+
+# AI Training for Project Managers (In Person) | MakerSquare
+
+> AI training for project managers: automate status reports, meeting notes and risk logs. What to learn, what to build, how to choose. In person in Austin.
+
+AI training · Project managers
+
+## AI training for project managers that takes the status chasing off your plate.
+
+A project manager’s AI problem is specific. The information you need already exists, scattered across Slack, email, the tracker and last week’s meetings. The job is collecting it, reconciling it, and rewriting it for four different audiences.
+
+Generic AI training teaches you to paste all of that into a chatbot. The training worth paying for teaches you to connect AI to where the information lives, so the first draft is waiting for you and your time goes to the calls only you can make.
+
+Next cohort: January 11, 2027
+In person · Austin, TX
+No coding background needed
+
+[For a PMO or delivery team Private team training A 3-day workshop on your own tracker, inboxes and reporting format. Working automation by day three. Train the team →](/corporate)
+[For you The 2-week program Ten days in Austin, building on your own projects, with a live demo on the last Friday. See the program →](/immersive)
+
+What good training covers
+
+### What AI training for project managers should actually teach.
+
+Notice that almost none of it is about prompts. It is about plumbing, review steps, and knowing which drafts can go out on their own.
+
+Connections
+
+#### Getting AI into your systems
+
+Composio connects Claude to Gmail, Slack and 200+ other tools without integration code, so status comes from the source instead of from your memory.
+
+Our curriculum: Week 2, Monday
+
+Meetings
+
+#### Turning meetings into action items
+
+Whisper transcribes the recording, Claude pulls out decisions, owners and dates, and the result goes where the team will see it.
+
+Week 2, Tuesday
+
+Portals
+
+#### Data from tools with no API
+
+Client portals, vendor sites and permitting systems often have no clean export. Playwright lets a script log in, read the page and record what changed.
+
+Week 2, Tuesday
+
+Data
+
+#### One place for project data
+
+A Supabase table and a dashboard that the team can read without asking you. Status lives in one place instead of in four spreadsheets.
+
+Week 1, Thursday
+
+Consistency
+
+#### The same report format every week
+
+A Claude Skill holds your report structure and tone, so Friday’s update reads like last Friday’s no matter who runs it.
+
+Week 1, Thursday
+
+Control
+
+#### Review gates and data safety
+
+Which drafts go out automatically and which wait for your approval. What client data is allowed near a model. How to test that the output is right.
+
+Week 2, Thursday
+
+What you could build
+
+### Four builds that take back your Friday afternoon.
+
+Examples scoped to what the curriculum covers. In the program you build on your own projects and tools.
+
+Agent
+
+#### Friday status drafter
+
+Pulls what closed and what slipped from your tracker, plus the relevant Slack threads. Drafts the executive version and the team version, then holds both for your approval.
+
+Composio Claude Skill Render
+
+Pipeline
+
+#### Meeting-to-actions
+
+Upload a recording. Whisper transcribes it, Claude extracts decisions, owners and due dates, posts them to the project channel and logs each one as a row.
+
+Whisper Claude Slack Supabase
+
+Web app
+
+#### Risk and change log with a front door
+
+A simple site where anyone can file a risk or change request. Entries land in a database, Claude flags the ones with no owner or a date already past, and a dashboard shows what is open.
+
+Vercel Supabase Claude
+
+Automation
+
+#### Portal watcher
+
+A script checks a client or permitting portal every morning and posts only what changed since yesterday. Nobody has to log in to look.
+
+Playwright Render
+
+Illustrative examples, not alumni projects. See [what graduates actually built](/alumni).
+
+### A project manager from Cohort 2, in her words.
+
+> “I could take a real-world problem, build a solution for it, and do it in two weeks — something that felt unfathomable before.”
+
+![Jennifer Francis](images/cohort2/avatar-jennifer.jpg?v=1) **Jennifer Francis** · Construction & Facilities PM · Cohort 2
+
+How to choose
+
+### How to choose AI training as a project manager.
+
+1. **Separate the certificate from the capability.**Several bodies now sell AI credentials for project managers, and a credential can help on a r&eacute;sum&eacute;. Ask the provider what you will have running at work on the Monday after.
+
+2. **Ask about PDUs before you pay.**If you need professional development units for a certification renewal, get it in writing from the provider that the course qualifies. Do not assume.
+
+3. **Prefer the pattern over one vendor’s AI button.**Your company may change trackers in two years. Training that teaches you how to connect AI to any system with an API or a login carries over. A tour of one product’s AI features does not.
+
+4. **Make sure the review step is taught.**An automated update that goes to a client with a wrong date costs more than the hour it saved. Good training covers where a human signs off.
+
+5. **Count how many people need it.**If three or more people on the PMO want this, a private session built on your own tracker usually beats sending individuals to a public course one at a time.
+
+For the longer case on where AI helps project managers and where it does not, read [AI for project managers: automate the admin](/blog/ai-for-project-managers).
+
+The MakerSquare option
+
+### Two ways to train with us.
+
+Come on your own to the 2-week cohort in Austin, or bring your team for a private workshop built on your tools. Private sessions are quoted per engagement, with a written proposal within 24 hours of the first call. The 2-week cohort:
+
+- 2 weeks, Monday to Friday, 9am to 3pm, in person in Austin
+
+- $3,999 tuition, paid in full ($3,499 with the [scholarship](/scholarship) for veterans, first responders and educators)
+
+- Next cohort starts January 11, 2027; enrollment closes January 4
+
+- Small cohort, with an instructor in the room all day
+
+- Ship a live website, a working AI agent and an automated workflow, or a full refund
+
+- Demo Day on the final Friday, in front of Austin’s tech community
+
+[Private training for your team](/corporate)[See the 2-week program](/immersive)
+
+Quick answers
+
+### AI training for project managers, answered.
+
+#### Do project managers need technical skills for AI training?
+
+No. You need to know your projects, your stakeholders and where the hours go. The tools are directed in plain English, and an instructor is in the room when something breaks.
+
+#### Which project management tools does this work with?
+
+If a tool has an API, Composio can usually reach it; it connects Claude to 200+ apps, including Gmail and Slack. If it only has a web login, Playwright can read it. In a private team session we build on the tools you already use.
+
+#### How much does AI training for project managers cost?
+
+A seat in the 2-week cohort is $3,999. Private workshops and custom programs for teams are quoted per engagement, depending on team size and length. See [corporate training](/corporate).
+
+#### Will AI replace project managers?
+
+We do not think so. AI is good at collecting status and drafting updates. Deciding what to cut when a timeline slips, and handling the stakeholder who will not like it, still needs a person.
+
+### Bring the report you rewrite every week. We will help you retire it.
+
+Book a short call. Tell us about your projects and your team, and we will suggest the right format: a private workshop or a seat in Cohort 3.
 
 Schedule an Intro Call
 [For Companies](/corporate)
@@ -9552,6 +10120,8 @@ No. The PMs getting the most value understand their product and users well enoug
 
 Keep reading
 
+- [Choosing an AI course as a product manager](/ai-course-for-product-managers)
+
 - [All MakerSquare posts](/blog)
 
 MakerSquare is a 2-week in-person AI builder program in Austin, TX for people who understand their domain deeply and want to build real AI tools around it. See what two weeks of hands-on building looks like.
@@ -9666,6 +10236,8 @@ Keep reading
 - [AI for operations professionals: automate what's slowing you down](/blog/ai-for-operations-professionals)
 
 - [See AI use cases by industry](/use-cases)
+
+- [What AI training for project managers should cover](/ai-training-for-project-managers)
 
 MakerSquare runs an in-person, hands-on AI builder program in Austin — plus corporate cohorts and private team training. Project managers leave having built a real tool around their own projects, not a slide deck of AI tips.
 
