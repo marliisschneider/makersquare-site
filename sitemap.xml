@@ -118,7 +118,7 @@
   </url>
   <url>
     <loc>https://www.makersquare.ai/blog</loc>
-    <lastmod>2026-07-09</lastmod>
+    <lastmod>2026-11-03</lastmod>
   </url>
   <url>
     <loc>https://www.makersquare.ai/blog/ai-bootcamp-vs-online-course</loc>
@@ -309,6 +309,12 @@
   <url>
     <loc>https://www.makersquare.ai/blog/how-to-pitch-ai-training-to-your-manager</loc>
     <lastmod>2026-08-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.makersquare.ai/blog/best-in-person-ai-bootcamps-2026</loc>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
