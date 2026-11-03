@@ -31,7 +31,7 @@ No coding test · No interview · Confirmed in 24 hrs
 
 [See the full 2-week curriculum →](/curriculum)
 
-3-day workshop: Nov 20–22 — from $1,199 [See the details →](/workshops)
+3-day workshop: Nov 20–22 — $1,199 early bird through Nov 7 [See the details →](/workshops)
 
 Cohort 3 starts Jan 11 · Enrollment closes January 4 [See all dates →](/enroll)
 
@@ -65,7 +65,7 @@ Site · agent · workflow
 
 Nov 20–22 · $1,199 · Austin
 
-[Next up · Nov 20–22 Ship Your First AI App Ten boxes, one weekend — a live app with a database, logins and payments. The last workshop of the year. Early bird $1,199 · Nov 20–22 →](/workshops)
+[Next up · Nov 20–22 Ship Your First AI App Ten boxes, one weekend — a live app with a database, logins and payments. The last workshop of the year. Early bird $1,199 through Sat, Nov 7 · Nov 20–22 →](/workshops)
 
 Want the full transformation? The 2-week program returns Jan 11. Workshop attendees get $200 off.
 
@@ -1120,7 +1120,7 @@ From Cohort 1
 
 # Ship Your First AI App — 3-Day AI Workshop in Austin, TX
 
-> A 3-day AI workshop in Austin, TX. Build a real app — live URL, database, logins, payments — in one weekend. No coding required. From $1,199.
+> A 3-day AI workshop in Austin, TX. Build a real app — live URL, database, logins, payments — in one weekend. No coding required. $1,399 ($1,199 early bird through Nov 7).
 
 AI Workshops in Austin, TX · In-Person · 3 Days
 
@@ -1134,7 +1134,7 @@ Nov 20 – 22, 2026
 
 Ship Your First AI App
 
-Early Bird $1,199 — ends Oct 30
+Early bird $1,199 — reopened through Sat, Nov 7
 
 [Reserve a seat](/workshop-register)
 Private team training
@@ -1217,11 +1217,11 @@ Hours
 
 Mins
 
-⏱ until the $1,199 early bird ends (Oct 30)
+⏱ until the $1,199 early bird ends (Sat, Nov 7)
 
 $1,199
 
-$1,399 after Oct 30
+Reopened through Sat, Nov 7, then $1,399
 
 ✓ Your app live on a real URL, with a real database behind it
 
@@ -1260,11 +1260,11 @@ Claude Code Supabase Vercel GitHub Clerk Stripe MCP Composio
 
 - The ten boxes: a map that still works when every tool name changes
 
-Early bird until Oct 30
+Early bird · through Sat, Nov 7
 
 $1,199
 
-$1,399 after Oct 30
+$1,399 from Sun, Nov 8
 
 [Reserve](/workshop-register)
 
@@ -1399,14 +1399,14 @@ And at the end, you’d have a report explaining what’s possible. Not a workin
 
 For $1,199, you sit in a room for 3 days and actually build the thing. With your data. With a real instructor. You leave knowing how to do it yourself — and that skill compounds every day after.
 
-[Reserve a seat — from $1,199](/workshop-register)
+[Reserve a seat — $1,199](/workshop-register)
 Invoice available on request
 
 Pricing
 
 ### Earlier is cheaper. Same seats, same instructor.
 
-Price is based on when you register, not who you are. No negotiating — just book the early bird before it closes.
+Price is based on when you register, not who you are. No negotiating. We reopened the early bird for Agent Night (Nov 5) through Saturday, Nov 7. Sunday it goes to $1,399, and it won’t be extended again.
 
 #### Workshop Seats
 
@@ -1414,13 +1414,13 @@ Open to individuals and companies. Buy multiple seats at the same tier — no sp
 
 Early Bird
 
-Until 3 weeks before start date
+Reopened through Sat, Nov 7
 
 $1,199 per person
 
 Regular
 
-After early bird closes
+From Sun, Nov 8
 
 $1,399 per person
 
@@ -1477,7 +1477,7 @@ FAQ
 
 Why should I do this now and not wait? Because the gap between people who can use AI and people who can’t is widening every month — not every year. The ops manager or founder who learns this this fall has a head start on everyone who waits until next year. Ship Your First AI App runs Nov 20–22 — the last workshop of the year, and the group is deliberately small. Once the seats go, the next date is in the new year.
 
-Which AI workshops are running in Austin in fall 2026? One workshop, **Ship Your First AI App**, one more weekend in downtown Austin this fall (Capital Factory / Station Austin, 701 Brazos St): **Nov 20–22**. Fri–Sun, 9am–4pm. Early bird $1,199 until Oct 30, regular $1,399.
+Which AI workshops are running in Austin in fall 2026? One workshop, **Ship Your First AI App**, one more weekend in downtown Austin this fall (Capital Factory / Station Austin, 701 Brazos St): **Nov 20–22**. Fri–Sun, 9am–4pm. Early bird $1,199 reopened through Sat, Nov 7; regular $1,399.
 
 Do I need a technical background? No. If you can use a spreadsheet, you can build in these workshops. These aren’t for engineers — they’re for people who know their domain and want AI working for them in it.
 
@@ -1499,11 +1499,11 @@ The **2-week MakerSquare program** is the full build — 3 complete AI products,
 
 [See the 2-week program](/curriculum)
 
-Don’t miss the early bird
+Early bird reopened through Sat, Nov 7
 
 ### Ship Your First AI App — Nov 20–22. Three days. You leave with it live.
 
-Small cohort, early bird $1,199 until Oct 30. 3 days in Austin — you leave with a real app on a real domain, and the map to build the next one.
+Small cohort, early bird $1,199 through Saturday, Nov 7, then $1,399. 3 days in Austin — you leave with a real app on a real domain, and the map to build the next one.
 
 [Reserve my seat — $1,199](/workshop-register)
 [Have a question? Email us](mailto:hello@makersquare.ai)
@@ -1932,9 +1932,9 @@ Pay in full via Stripe
 
 Confirmed in 24 hrs
 
-Pick your cohort
+Next cohort
 
-### Pick your cohort. Any start date.
+### Two cohorts in. The next starts January 11.
 
 Completed
 

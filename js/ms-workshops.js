@@ -21,7 +21,9 @@
       dates: 'Nov 20&ndash;22', startLabel: 'Nov 20',
       start: '2026-11-20T09:00:00-06:00',
       finish: '2026-11-22T23:59:59-06:00',
-      earlyBirdEnds: '2026-10-30T23:59:59-05:00', earlyBirdLabel: 'Oct 30',
+      // Early bird closed Oct 30, then was reopened Nov 3 for Agent Night
+      // (Nov 5) through Sat Nov 7. Final: do not extend again.
+      earlyBirdEnds: '2026-11-07T23:59:59-06:00', earlyBirdLabel: 'Sat, Nov 7',
       desc: 'One weekend &mdash; Nov 20&ndash;22, Fri to Sun in Austin. Walk out Sunday with a real app live on a real URL &mdash; database, logins and payments included. No time off work, no boss to ask.',
       bullet: 'Your app live on a real URL, with a real database behind it'
     }
@@ -77,7 +79,7 @@
     set('sps-title', s.w.titleA + '<br><span style="color:#81AAFB;">' + s.w.titleB + '</span>');
     set('sps-desc', s.w.desc);
     set('sps-price', s.price);
-    set('sps-price-note', s.ebActive ? REGULAR + ' after ' + s.w.earlyBirdLabel : '3 days &middot; Fri&ndash;Sun');
+    set('sps-price-note', s.ebActive ? 'Reopened through ' + s.w.earlyBirdLabel + ', then ' + REGULAR : '3 days &middot; Fri&ndash;Sun');
     set('sps-b1', '<span>&#10003;</span>' + s.w.bullet);
     set('sps-cd-label', s.label);
 
@@ -119,7 +121,7 @@
     })();
 
     var card = document.getElementById('fw-next-price');
-    if (card) card.innerHTML = s.price + ' &middot; ' + s.w.dates + ' &rarr;';
+    if (card) card.innerHTML = (s.ebActive ? 'Early bird ' + s.price + ' through ' + s.w.earlyBirdLabel : s.price) + ' &middot; ' + s.w.dates + ' &rarr;';
 
     // This card names a price and a date together, so it goes stale the same
     // way the banner did. Roll it too.
@@ -127,7 +129,20 @@
     if (bento) bento.innerHTML = s.price + ' \u00b7 next ' + s.w.dates + '.';
   }
 
-  function init() { spotlight(); homepageBar(); }
+  /* ---------------------------------------------------- static early-bird copy
+   * Hard-coded early-bird lines are marked data-eb-closed="<regular text>".
+   * Once the early bird ends they swap to it, so the site flips to $1,399 at
+   * the deadline without a deploy. */
+  function staticCopy() {
+    var w = nextUp(new Date());
+    if (!w || state(w, new Date()).ebActive) return;
+    var els = document.querySelectorAll('[data-eb-closed]');
+    for (var i = 0; i < els.length; i++) els[i].innerHTML = els[i].getAttribute('data-eb-closed');
+    var gone = document.querySelectorAll('[data-eb-hide]');
+    for (var j = 0; j < gone.length; j++) gone[j].style.display = 'none';
+  }
+
+  function init() { spotlight(); homepageBar(); staticCopy(); }
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
   } else {

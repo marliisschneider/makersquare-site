@@ -243,7 +243,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="card-title">Ship Your First AI App</div>
     <div class="card-divider"></div>
     <div class="card-price" id="wsnov-price">$1,199</div>
-    <div class="card-tier" id="wsnov-tier">Early bird &mdash; ends Oct 30</div>
+    <div class="card-tier" id="wsnov-tier">Early bird &mdash; reopened through Sat, Nov 7</div>
     <a class="card-btn" id="wsnov-btn" href="mailto:hello@makersquare.ai?subject=Reserve%20my%20seat%20—%20Ship%20Your%20First%20AI%20App%20(Nov%2020–22)" style="background:rgba(64,61,216,0.35);">Payment opens soon &mdash; hold my seat &rarr;</a>
   </div>
 
@@ -256,13 +256,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- ─── STRIPE PAYMENT LINKS ──────────────────────────────────────────────────
   One workshop (Ship Your First AI App, Nov 20–22). Early-bird + regular Stripe
   links; the date logic below auto-switches EB → regular when the early bird
-  ends (Oct 30). The same links are reused from the Nov 6–8 date (price is
+  ends (closed Oct 30, reopened Nov 3 for Agent Night through Sat Nov 7 11:59pm
+  CT; final, don't extend again). Deactivate the EB Stripe link after it ends. The same links are reused from the Nov 6–8 date (price is
   unchanged); only the displayed date moved. The "payment opens soon" fallback
   in apply() only triggers if a url field is ever blanked — both are filled.
 ──────────────────────────────────────────────────────────────────────────── -->
 <script>
 const WSNOV = {
-  earlyBird: { ends: new Date('2026-10-30T23:59:59'), url: 'https://buy.stripe.com/aFabJ0gRt1wd44R5G96wE0a', price: '$1,199',   tier: 'Early bird — ends Oct 30' },
+  earlyBird: { ends: new Date('2026-11-07T23:59:59-06:00'), url: 'https://buy.stripe.com/aFabJ0gRt1wd44R5G96wE0a', price: '$1,199',   tier: 'Early bird — reopened through Sat, Nov 7' },
   regular:   {                                         url: 'https://buy.stripe.com/14A6oG8kX6QxcBngkN6wE09', price: '$1,399', tier: 'Regular price' },
 };
 
