@@ -13214,7 +13214,7 @@ How we built this list. Every program below runs its AI course in person, in a c
 | Columbia Leadership Intelligence in the Era of AI | New York, NY | 4 days | $10,550 |
 | Berkeley Haas AI for Executives | Berkeley, CA | 3 days | $6,500 |
 | Deep Atlas Immersive | San Francisco or New York | 1 week | $4,499 |
-| MakerSquare Immersive | Austin, TX | 2 weeks | $3,999 |
+| MakerSquare Immersive Our program | Austin, TX | 2 weeks | $3,999 |
 | Georgia Tech Scheller AI for Business | Atlanta, GA | 3 days | $2,495 |
 | FAU Certificate in AI in Business | Boca Raton, FL | 3 days | $2,495 |
 | Stony Brook AI for Business workshop | New York, NY | 1 day | $1,500 |
@@ -13225,13 +13225,35 @@ The table is sorted by tuition, not by quality. We have not ranked these program
 
 These are closest to what most people mean by "bootcamp." Most of the day goes to hands-on work, and you leave with something running.
 
+![Cohort 1 Demo Day at Capital Factory in Austin, with a student presenting on the big screen](../images/cohort1/c1-1050.jpg)
+Our program
+
 #### MakerSquare Immersive (Austin, TX)
 
-**Format:** two weeks in person at Capital Factory in downtown Austin, Monday to Friday, 9am to 3pm. **Tuition:** $3,999. **Next cohort:** January 11 to 22, 2027, with enrollment closing January 4.
+- 2 weeks in person
 
-This is our program. It is built for non-technical professionals: operators, founders, marketers, lawyers, finance people. No coding background is required. Each person builds on a problem from their own work and ships a live website, a working AI agent, and an automated workflow, then demos them at a public Demo Day at the end of week two. Housing is not included. When enough out-of-town students enroll in a cohort, we help arrange housing for them; the [housing page](/housing) has the details.
+- Capital Factory, Austin
+
+- $3,999
+
+- No coding needed
+
+**Format:** two weeks in person at Capital Factory in downtown Austin, Monday to Friday, 9am to 3pm. **Next cohort:** January 11 to 22, 2027, with enrollment closing January 4.
+
+This is our program. It is built for non-technical professionals: operators, founders, marketers, lawyers, finance people. Each person works on a problem from their own job and ships three things:
+
+- **A live website** on a real URL
+
+- **A working AI agent** that does a real task
+
+- **An automated workflow** that runs without you
+
+Then they demo it at a public Demo Day at the end of week two, like the one in the photo. Housing is not included. When enough out-of-town students enroll in a cohort, we help arrange housing for them; the [housing page](/housing) has the details.
 
 **Best for:** people who want to build AI tools for their own work and can step away for two weeks.
+
+[See the program](/immersive)
+[View the curriculum](/curriculum)
 
 #### Deep Atlas Immersive (San Francisco or New York)
 
