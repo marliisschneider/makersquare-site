@@ -275,6 +275,23 @@ window.addEventListener('message',function(e){if(e.data&&e.data.type=='zf_gtm'){
   ]
 }
 </script>
+<style>
+.ms-feature{margin:var(--s6,24px) 0 var(--s8,40px);border:1px solid rgba(64,61,216,0.25);border-radius:20px;overflow:hidden;background:linear-gradient(180deg,rgba(64,61,216,0.07),rgba(64,61,216,0.015));box-shadow:0 12px 32px -16px rgba(24,24,73,0.25);scroll-margin-top:90px}
+.ms-feature-photo{position:relative;margin:0;aspect-ratio:16/9;overflow:hidden;background:var(--navy)}
+.ms-feature-photo img{width:100%;height:100%;object-fit:cover;display:block}
+.ms-feature-tag{position:absolute;top:14px;left:14px;padding:5px 12px;border-radius:99px;background:var(--indigo);color:#fff;font-size:0.75rem;font-weight:700;letter-spacing:0.02em}
+.ms-feature-body{padding:22px 20px 24px}
+.ms-feature-body h3{margin-top:0}
+.ms-feature-facts{list-style:none;padding:0;margin:12px 0 16px;display:flex;flex-wrap:wrap;gap:8px}
+.ms-feature-facts li{margin:0;padding:6px 12px;border-radius:99px;background:#fff;border:1px solid rgba(64,61,216,0.2);color:var(--navy);font-size:0.82rem;font-weight:600}
+.ms-feature-builds{margin:8px 0 14px;padding-left:1.1em}
+.ms-feature-builds li{margin:4px 0}
+.ms-feature-ctas{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.ms-feature .ms-feature-ctas a.btn-primary,.ms-feature .ms-feature-ctas a.btn-primary:hover{color:#fff;text-decoration:none}
+.ms-feature .ms-feature-ctas a.btn{text-decoration:none}
+.ms-feature-body h3{font-size:1.35rem;line-height:1.25}
+@media (min-width:720px){.ms-feature-body{padding:28px 32px 30px}}
+</style>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -375,7 +392,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <tr style="border-top:1px solid rgba(24,24,73,0.06);"><td style="padding:9px 8px;vertical-align:top;">Columbia Leadership Intelligence in the Era of AI</td><td style="padding:9px 8px;vertical-align:top;">New York, NY</td><td style="padding:9px 8px;vertical-align:top;">4 days</td><td style="padding:9px 8px;vertical-align:top;">$10,550</td></tr>
             <tr style="border-top:1px solid rgba(24,24,73,0.06);"><td style="padding:9px 8px;vertical-align:top;">Berkeley Haas AI for Executives</td><td style="padding:9px 8px;vertical-align:top;">Berkeley, CA</td><td style="padding:9px 8px;vertical-align:top;">3 days</td><td style="padding:9px 8px;vertical-align:top;">$6,500</td></tr>
             <tr style="border-top:1px solid rgba(24,24,73,0.06);"><td style="padding:9px 8px;vertical-align:top;">Deep Atlas Immersive</td><td style="padding:9px 8px;vertical-align:top;">San Francisco or New York</td><td style="padding:9px 8px;vertical-align:top;">1 week</td><td style="padding:9px 8px;vertical-align:top;">$4,499</td></tr>
-            <tr style="border-top:1px solid rgba(24,24,73,0.06);"><td style="padding:9px 8px;vertical-align:top;">MakerSquare Immersive</td><td style="padding:9px 8px;vertical-align:top;">Austin, TX</td><td style="padding:9px 8px;vertical-align:top;">2 weeks</td><td style="padding:9px 8px;vertical-align:top;">$3,999</td></tr>
+            <tr style="border-top:1px solid rgba(24,24,73,0.06);background:rgba(64,61,216,0.07);box-shadow:inset 3px 0 0 var(--indigo);"><td style="padding:9px 8px;vertical-align:top;font-weight:700;color:var(--navy);"><a href="#makersquare" style="color:inherit;text-decoration:none;">MakerSquare Immersive</a> <span style="display:inline-block;margin-left:4px;padding:1px 7px;border-radius:99px;background:var(--indigo);color:#fff;font-size:0.68rem;font-weight:600;vertical-align:1px;white-space:nowrap;">Our program</span></td><td style="padding:9px 8px;vertical-align:top;font-weight:600;">Austin, TX</td><td style="padding:9px 8px;vertical-align:top;font-weight:600;">2 weeks</td><td style="padding:9px 8px;vertical-align:top;font-weight:600;">$3,999</td></tr>
             <tr style="border-top:1px solid rgba(24,24,73,0.06);"><td style="padding:9px 8px;vertical-align:top;">Georgia Tech Scheller AI for Business</td><td style="padding:9px 8px;vertical-align:top;">Atlanta, GA</td><td style="padding:9px 8px;vertical-align:top;">3 days</td><td style="padding:9px 8px;vertical-align:top;">$2,495</td></tr>
             <tr style="border-top:1px solid rgba(24,24,73,0.06);"><td style="padding:9px 8px;vertical-align:top;">FAU Certificate in AI in Business</td><td style="padding:9px 8px;vertical-align:top;">Boca Raton, FL</td><td style="padding:9px 8px;vertical-align:top;">3 days</td><td style="padding:9px 8px;vertical-align:top;">$2,495</td></tr>
             <tr style="border-top:1px solid rgba(24,24,73,0.06);"><td style="padding:9px 8px;vertical-align:top;">Stony Brook AI for Business workshop</td><td style="padding:9px 8px;vertical-align:top;">New York, NY</td><td style="padding:9px 8px;vertical-align:top;">1 day</td><td style="padding:9px 8px;vertical-align:top;">$1,500</td></tr>
@@ -387,10 +404,34 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <h2>Programs where you build things</h2>
       <p>These are closest to what most people mean by "bootcamp." Most of the day goes to hands-on work, and you leave with something running.</p>
 
-      <h3>MakerSquare Immersive (Austin, TX)</h3>
-      <p><strong>Format:</strong> two weeks in person at Capital Factory in downtown Austin, Monday to Friday, 9am to 3pm. <strong>Tuition:</strong> $3,999. <strong>Next cohort:</strong> January 11 to 22, 2027, with enrollment closing January 4.</p>
-      <p>This is our program. It is built for non-technical professionals: operators, founders, marketers, lawyers, finance people. No coding background is required. Each person builds on a problem from their own work and ships a live website, a working AI agent, and an automated workflow, then demos them at a public Demo Day at the end of week two. Housing is not included. When enough out-of-town students enroll in a cohort, we help arrange housing for them; the <a href="/housing">housing page</a> has the details.</p>
-      <p><strong>Best for:</strong> people who want to build AI tools for their own work and can step away for two weeks.</p>
+      <div id="makersquare" class="ms-feature">
+        <figure class="ms-feature-photo">
+          <img src="../images/cohort1/c1-1050.jpg" alt="Cohort 1 Demo Day at Capital Factory in Austin, with a student presenting on the big screen" width="1200" height="900" loading="lazy" decoding="async">
+          <span class="ms-feature-tag">Our program</span>
+        </figure>
+        <div class="ms-feature-body">
+          <h3>MakerSquare Immersive (Austin, TX)</h3>
+          <ul class="ms-feature-facts">
+            <li>2 weeks in person</li>
+            <li>Capital Factory, Austin</li>
+            <li>$3,999</li>
+            <li>No coding needed</li>
+          </ul>
+          <p><strong>Format:</strong> two weeks in person at Capital Factory in downtown Austin, Monday to Friday, 9am to 3pm. <strong>Next cohort:</strong> January 11 to 22, 2027, with enrollment closing January 4.</p>
+          <p>This is our program. It is built for non-technical professionals: operators, founders, marketers, lawyers, finance people. Each person works on a problem from their own job and ships three things:</p>
+          <ul class="ms-feature-builds">
+            <li><strong>A live website</strong> on a real URL</li>
+            <li><strong>A working AI agent</strong> that does a real task</li>
+            <li><strong>An automated workflow</strong> that runs without you</li>
+          </ul>
+          <p>Then they demo it at a public Demo Day at the end of week two, like the one in the photo. Housing is not included. When enough out-of-town students enroll in a cohort, we help arrange housing for them; the <a href="/housing">housing page</a> has the details.</p>
+          <p><strong>Best for:</strong> people who want to build AI tools for their own work and can step away for two weeks.</p>
+          <div class="ms-feature-ctas">
+            <a href="/immersive" class="btn btn-primary btn-arrow">See the program</a>
+            <a href="/curriculum" class="btn">View the curriculum</a>
+          </div>
+        </div>
+      </div>
 
       <h3>Deep Atlas Immersive (San Francisco or New York)</h3>
       <p><strong>Format:</strong> one full-time week in person, Saturday to Wednesday, 9am to 6:30pm. <strong>Tuition:</strong> $4,499. <strong>Next cohorts:</strong> December 5 in San Francisco and January 23 in New York.</p>
