@@ -6,7 +6,7 @@ Read this before editing any HTML file in this repo. General working preferences
 
 **Never `git commit --amend` in this repo.** Marliis may push the queue at any moment; amending a commit she already pushed forks history and lands her in a merge-conflict dialog (happened Jul 22, 2026). Follow-up changes always go in a NEW commit — even when they refine the previous one.
 
-**Exception: `~/makersquare-blog-auto-publish.sh`.** The scheduled blog-publishing automation still pushes automatically, on purpose — it's narrow (only ever touches `blog/` and `sitemap.xml`), deterministic (pulls from a pre-written, pre-reviewed draft on a pre-approved editorial schedule), and never touches any other page. That's a different risk profile from an interactive session editing arbitrary files, which is what this rule is guarding against. If you're an interactive session (human or AI) making ad hoc edits — anywhere, including to blog files — the no-push rule applies to you. If you're that specific script running on its own schedule, it doesn't.
+**The blog auto-publisher is retired (Nov 2026).** `~/makersquare-blog-auto-publish.sh` used to be the one exception to the no-push rule. It is no longer approved to push: the template-driven "AI for <role>" posts it shipped were thin and earned almost no search traffic. 50 low-value posts, nearly all its output, were removed and 301-redirected in Nov 2026. Its queue (`scripts/q4_schedule.json`) is empty. Do not re-enable it or refill the queue without sign-off from Marliis and Ravi. New posts go through a normal PR like any other page.
 
 ---
 
@@ -136,11 +136,12 @@ The program moved from admissions → open enrollment. Never use the old languag
 
 ---
 
-## The blog auto-publisher writes from a stale template
+## The blog auto-publisher wrote from a stale template (retired Nov 2026)
 
-`makersquare-ops-bot` publishes one post a day, straight to `main`, from a template that lives outside
-this repo. It is not kept in step with the site, so each new post arrives missing whatever changed since
-the template was last touched. This is the single largest source of rot in `blog/`.
+`makersquare-ops-bot` published one post a day, straight to `main`, from a template that lives outside
+this repo. It is retired (see the top of this file); this section stays as history and because the
+guards below still apply to any new post. The template was not kept in step with the site, so each post arrived
+missing whatever had changed since the template was last touched. It was the single largest source of rot in `blog/`.
 
 Measured on 2026-08-21: one auto-published post reintroduced the eager GTM loader (in a line-wrapped form
 that a fixed-string grep misses), the retired X pixel, 3 `/pricing` redirect links, three unsized images,
