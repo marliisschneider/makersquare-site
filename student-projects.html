@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="facebook-domain-verification" content="fligau9appze71fwy7uaaw2v12bc4n" />
+<!-- Google Tag Manager (delayed-load) -->
+<!-- dataLayer is created and gtm.start pushed IMMEDIATELY so queued events are never lost.
+     Only the gtm.js request is deferred: it fires on first user interaction, or after 3500ms,
+     whichever comes first. Do NOT revert to the eager loader - it puts 344KB of JS on the
+     mobile critical path and was measured pushing blog LCP to 6.3s. -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+var done=false,t=null,evts=['scroll','mousemove','mousedown','touchstart','keydown','click'],opts={passive:true,capture:true};
+function load(){if(done)return;done=true;if(t)w.clearTimeout(t);
+for(var k=0;k<evts.length;k++){w.removeEventListener(evts[k],load,opts);}
+var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);}
+for(var k=0;k<evts.length;k++){w.addEventListener(evts[k],load,opts);}
+t=w.setTimeout(load,3500);})(window,document,'script','dataLayer','GTM-MJTW9WQ3');</script>
+<!-- End Google Tag Manager -->
+<title>What Non-Technical Professionals Built in a 2-Week AI Bootcamp</title>
+<meta name="description" content="Student projects from MakerSquare's 2-week AI bootcamp in Austin: a sales prospecting agent, a job-search shortlist agent, a shelter case dashboard and a construction email agent.">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="canonical" href="https://www.makersquare.ai/student-projects">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="MakerSquare">
+<meta property="og:url" content="https://www.makersquare.ai/student-projects">
+<meta property="og:title" content="What Non-Technical Professionals Built in a 2-Week AI Bootcamp">
+<meta property="og:description" content="Four working tools from MakerSquare Cohorts 1 and 2, who built them, and how each one is put together.">
+<meta property="og:image" content="https://www.makersquare.ai/images/cohort2/c2-grads.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="What Non-Technical Professionals Built in a 2-Week AI Bootcamp">
+<meta name="twitter:description" content="Four working tools from MakerSquare Cohorts 1 and 2, who built them, and how each one is put together.">
+<meta name="twitter:image" content="https://www.makersquare.ai/images/cohort2/c2-grads.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://forms.zoho.com">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap"></noscript>
+<link rel="stylesheet" href="css/style.min.css?v=11">
+<style>
+.sp-wrap { max-width: 880px; }
+.sp-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: var(--s5); }
+.sp-chip { display: inline-flex; align-items: center; background: var(--light-bg); border: 1px solid rgba(24,24,73,0.08); border-radius: 999px; padding: 7px 14px; font-size: 0.78rem; font-weight: 600; color: var(--text-secondary); }
+.sp-jump { display: flex; flex-wrap: wrap; gap: 8px; margin-top: var(--s6); }
+.sp-jump a { font-size: 0.8rem; font-weight: 600; color: var(--indigo); background: rgba(64,61,216,0.06); border: 1px solid rgba(64,61,216,0.12); border-radius: 999px; padding: 6px 14px; text-decoration: none; }
+.sp-jump a:hover { background: rgba(64,61,216,0.12); }
+.sp-build { background: var(--white); border: 1px solid rgba(24,24,73,0.08); border-radius: var(--r-xl); padding: clamp(20px, 4vw, 40px); margin-top: var(--s8); scroll-margin-top: 96px; }
+.sp-build:first-of-type { margin-top: 0; }
+.sp-tag { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--indigo); }
+.sp-build h2 { font-family: var(--font-display); font-size: clamp(1.35rem, 3.2vw, 1.85rem); font-weight: 800; letter-spacing: -0.02em; color: var(--navy); line-height: 1.2; margin-top: var(--s2); }
+.sp-who { display: flex; align-items: center; gap: 12px; margin-top: var(--s4); }
+.sp-who img { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+.sp-who div { font-size: 0.86rem; color: var(--text-secondary); line-height: 1.45; }
+.sp-who strong { color: var(--navy); display: block; font-size: 0.95rem; }
+.sp-build h3 { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--navy); margin-top: var(--s6); }
+.sp-build p, .sp-build li { font-size: 0.95rem; color: var(--text-secondary); line-height: 1.7; }
+.sp-build p { margin-top: var(--s2); }
+.sp-build ul { margin-top: var(--s2); padding-left: 1.2em; }
+.sp-build li { margin-top: 6px; }
+.sp-build li strong { color: var(--navy); }
+.sp-quote { margin-top: var(--s6); border-left: 3px solid var(--indigo); padding: 4px 0 4px 18px; }
+.sp-quote blockquote { margin: 0; font-size: 1rem; line-height: 1.6; color: var(--navy); font-weight: 500; }
+.sp-quote figcaption { margin-top: 8px; font-size: 0.8rem; color: var(--text-secondary); }
+.sp-more { display: inline-block; margin-top: var(--s5); font-weight: 600; font-size: 0.9rem; color: var(--indigo); text-decoration: none; }
+.sp-more:hover { text-decoration: underline; }
+.sp-photo { margin: var(--s6) 0 0; }
+.sp-photo img { width: 100%; height: auto; border-radius: var(--r-lg); display: block; }
+.sp-photo.tall img { max-height: 520px; object-fit: cover; }
+.sp-photo figcaption { font-size: 0.8rem; color: var(--text-secondary); margin-top: 8px; }
+.sp-reviews { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: var(--s5); margin-top: var(--s6); }
+.sp-review { background: var(--white); border: 1px solid rgba(24,24,73,0.08); border-radius: var(--r-xl); padding: clamp(20px, 3vw, 28px); }
+.sp-review blockquote { margin: 0; font-size: 0.97rem; line-height: 1.6; color: var(--navy); }
+.sp-review .sp-meta { margin-top: var(--s4); font-size: 0.82rem; color: var(--text-secondary); line-height: 1.5; }
+.sp-review .sp-meta strong { color: var(--navy); }
+.sp-review p { font-size: 0.9rem; color: var(--text-secondary); line-height: 1.65; margin-top: var(--s3); }
+.sp-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: var(--s4); margin-top: var(--s6); }
+.sp-step { background: var(--white); border: 1px solid rgba(24,24,73,0.08); border-radius: var(--r-lg); padding: 20px; }
+.sp-step .sp-when { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--indigo); }
+.sp-step h3 { font-size: 1.05rem; font-weight: 700; color: var(--navy); margin-top: 6px; }
+.sp-step p { font-size: 0.9rem; color: var(--text-secondary); line-height: 1.65; margin-top: 6px; }
+.sp-faq-q { font-weight: 700; color: var(--navy); font-size: 0.98rem; margin-top: var(--s5); }
+.sp-faq-a { font-size: 0.92rem; color: var(--text-secondary); line-height: 1.7; margin-top: 6px; }
+.sp-cta-row { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: var(--s5); }
+.sp-body-text { font-size: 0.97rem; color: var(--text-secondary); line-height: 1.75; margin-top: var(--s4); }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "What Non-Technical Professionals Built in a 2-Week AI Bootcamp",
+  "description": "Four working tools built by MakerSquare Cohort 1 and Cohort 2 students in Austin, with what each one does and how it is put together.",
+  "image": "https://www.makersquare.ai/images/cohort2/c2-grads.jpg",
+  "datePublished": "2026-11-04",
+  "dateModified": "2026-11-04",
+  "author": {
+    "@type": "Organization",
+    "name": "MakerSquare",
+    "url": "https://www.makersquare.ai/"
+  },
+  "publisher": {
+    "@type": "EducationalOrganization",
+    "name": "MakerSquare",
+    "url": "https://www.makersquare.ai/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.makersquare.ai/logo-dark.png",
+      "width": 1158,
+      "height": 300
+    }
+  },
+  "mainEntityOfPage": "https://www.makersquare.ai/student-projects",
+  "about": {
+    "@type": "Course",
+    "name": "MakerSquare 2-Week AI Builder Program",
+    "url": "https://www.makersquare.ai/immersive",
+    "provider": {
+      "@type": "EducationalOrganization",
+      "name": "MakerSquare",
+      "url": "https://www.makersquare.ai/"
+    }
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "name": "MakerSquare student projects",
+    "numberOfItems": 4,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "CreativeWork",
+          "name": "AI prospecting agent",
+          "url": "https://www.makersquare.ai/student-projects#cameron",
+          "description": "Researches a target account and saves a personalized outreach email as a Gmail draft for the account executive to review.",
+          "creator": {
+            "@type": "Person",
+            "name": "Cameron Dowd",
+            "jobTitle": "SaaS account executive"
+          },
+          "dateCreated": "2026-07-17",
+          "keywords": "AI agent, Claude, Supabase, Composio, Gmail"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "CreativeWork",
+          "name": "JobFit",
+          "url": "https://www.makersquare.ai/student-projects#ted",
+          "description": "Takes a resume, target role and location and returns 30 best-fit companies with a fit rationale and a hiring signal for each.",
+          "creator": {
+            "@type": "Person",
+            "name": "Ted Kilgore"
+          },
+          "dateCreated": "2026-07-17",
+          "keywords": "AI agent, Claude, Supabase, job search"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "CreativeWork",
+          "name": "Shelter case-manager dashboard and email-to-record agent",
+          "url": "https://www.makersquare.ai/student-projects#chris",
+          "description": "A case-manager dashboard plus an agent that turns incoming email into structured guest records and flags uncertain matches for a person to confirm. Built on de-identified data.",
+          "creator": {
+            "@type": "Person",
+            "name": "Chris Cox",
+            "jobTitle": "Director of System Performance",
+            "worksFor": {
+              "@type": "Organization",
+              "name": "Hesed House"
+            }
+          },
+          "dateCreated": "2026-08-14",
+          "keywords": "AI agent, dashboard, Supabase, Composio, nonprofit"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@type": "CreativeWork",
+          "name": "RFI and submittal email agent",
+          "url": "https://www.makersquare.ai/student-projects#jennifer",
+          "description": "Reads RFI and submittal emails in Outlook, downloads and renames the file to the project naming convention, files it, and logs the record to the right project hub for confirmation.",
+          "creator": {
+            "@type": "Person",
+            "name": "Jennifer Francis",
+            "jobTitle": "Construction and facilities project manager"
+          },
+          "dateCreated": "2026-08-14",
+          "keywords": "AI agent, Outlook, Composio, construction project management"
+        }
+      }
+    ]
+  }
+}
+</script>
+<script>
+    let hasLogged = false;
+    window.addEventListener('message', function (){
+        try {
+            var debugMode = false;
+            var u = new URL(event.origin);
+            if (u.host === "forms.zohopublic.com") {
+                var evntData = event.data;
+                if(debugMode) {
+                    if(!hasLogged) { console.log("%cForms - Post Message Debugging", "border-width: 2px; border-style: dashed; padding: 20px;"); hasLogged = true; }
+                    console.log("%cEvent received :: Event Data : ", "background-color: rgb(175 193 239); color: #2908fa", evntData);
+                }
+                if( evntData && evntData.constructor == Object ){
+                    var type = evntData.type;
+                    if(type && type == "zf_gtm"){
+                        var zf_payload_data = evntData.payload;
+                        if(Object.keys(zf_payload_data).length > 0){
+                            var n = zf_payload_data.n; var e = zf_payload_data.e; var p = zf_payload_data.p;
+                            var f = zf_payload_data.f; var a = zf_payload_data.a; var c = zf_payload_data.c; var d = zf_payload_data.d;
+                            window.dataLayer = window.dataLayer || [];
+                            window.dataLayer.push({'event': e,'zf_category':c,'zf_page':p,'zf_field':f,'zf_action':a,'zf_formname':n,'zf_data':d});
+                        }
+                    }
+                }
+            }
+        } catch(error) {}
+    }, false);
+</script>
+<!-- Zoho UTM passthrough (modificado: incluye fbclid) -->
+<script type="text/javascript">
+function ZFLead(){}
+ZFLead.utmPValObj=ZFLead.utmPValObj||{};
+ZFLead.utmPNameArr=new Array('utm_source','utm_medium','utm_campaign','utm_term','utm_content','fbclid','gclid');
+ZFLead.prototype.zfutm_getLeadVal=function(pName){var qStr='';try{qStr=window.top.location.search.substring(1)}catch(e){qStr=''}var pNameTemp=pName+'=';var pValue='';if(typeof qStr!=="undefined"&&qStr!==null&&qStr.length>0){var begin=qStr.indexOf(pNameTemp);if(begin!=-1){begin=begin+pNameTemp.length;end=qStr.indexOf('&',begin);if(end==-1){end=qStr.length}pValue=decodeURIComponent(qStr.substring(begin,end))}}if(pValue==undefined||pValue==''){pValue=this.zfutm_gC(pName)}return pValue};
+ZFLead.prototype.zfutm_sC=function(paramName,path,domain,secure){var value=ZFLead.utmPValObj[paramName];if(typeof value!=="undefined"&&value!==null){var cookieStr=paramName+"="+encodeURIComponent(value);var exdate=new Date();exdate.setDate(exdate.getDate()+7);cookieStr+="; expires="+exdate.toGMTString();cookieStr+="; path=/";if(domain){cookieStr+="; domain="+encodeURIComponent(domain)}if(secure){cookieStr+="; secure"}document.cookie=cookieStr}};
+ZFLead.prototype.zfutm_ini=function(){for(var i=0;i<ZFLead.utmPNameArr.length;i++){var zf_pN=ZFLead.utmPNameArr[i];var zf_pV=this.zfutm_getLeadVal(zf_pN);if(typeof zf_pV!=="undefined"&&zf_pV!==null){ZFLead.utmPValObj[zf_pN]=zf_pV}}for(var pkey in ZFLead.utmPValObj){this.zfutm_sC(pkey)}};
+ZFLead.prototype.zfutm_gC=function(cookieName){var cookieArr=document.cookie.split('; ');for(var i=0;i<cookieArr.length;i++){var cookieVals=cookieArr[i].split('=');if(cookieVals[0]===cookieName&&cookieVals[1]){return decodeURIComponent(cookieVals[1])}}};
+ZFLead.prototype.zfutm_gC_enc=function(cookieName){var cookieArr=document.cookie.split('; ');for(var i=0;i<cookieArr.length;i++){var cookieVals=cookieArr[i].split('=');if(cookieVals[0]===cookieName&&cookieVals[1]){return cookieVals[1]}}};
+ZFLead.prototype.zfutm_iframeSprt=function(){var zf_frame=document.getElementsByTagName("iframe");for(var i=0;i<zf_frame.length;++i){if((zf_frame[i].src).indexOf('formperma')>0){var zf_src=zf_frame[i].src;for(var prmIdx=0;prmIdx<ZFLead.utmPNameArr.length;prmIdx++){var utmPm=ZFLead.utmPNameArr[prmIdx];var utmPmregex=new RegExp("[?&]"+utmPm+"=");if(!utmPmregex.test(zf_src)){var utmVal=this.zfutm_gC_enc(ZFLead.utmPNameArr[prmIdx]);if(typeof utmVal!=="undefined"){if(zf_src.indexOf('?')>0){zf_src=zf_src+'&'+utmPm+'='+utmVal}else{zf_src=zf_src+'?'+utmPm+'='+utmVal}}}}if(zf_frame[i].src.length<zf_src.length){zf_frame[i].src=zf_src}}}};
+ZFLead.prototype.zfutm_DHtmlSprt=function(){var zf_formsArr=document.forms;for(var frmInd=0;frmInd<zf_formsArr.length;frmInd++){var zf_form_act=zf_formsArr[frmInd].action;if(zf_form_act&&zf_form_act.indexOf('formperma')>0){for(var prmIdx=0;prmIdx<ZFLead.utmPNameArr.length;prmIdx++){var utmPm=ZFLead.utmPNameArr[prmIdx];var utmVal=this.zfutm_gC(ZFLead.utmPNameArr[prmIdx]);if(typeof utmVal!=="undefined"){var fieldObj=zf_formsArr[frmInd][utmPm];if(fieldObj){fieldObj.value=utmVal}}}}}};
+ZFLead.prototype.zfutm_jsEmbedSprt=function(id){document.getElementById('zforms_iframe_id').removeAttribute("onload");var jsEmbdFrm=document.getElementById("zforms_iframe_id");var embdSrc=jsEmbdFrm.src;for(var prmIdx=0;prmIdx<ZFLead.utmPNameArr.length;prmIdx++){var utmPm=ZFLead.utmPNameArr[prmIdx];var utmVal=this.zfutm_gC_enc(ZFLead.utmPNameArr[prmIdx]);if(typeof utmVal!=="undefined"){if(embdSrc.indexOf('?')>0){embdSrc=embdSrc+'&'+utmPm+'='+utmVal}else{embdSrc=embdSrc+'?'+utmPm+'='+utmVal}}}jsEmbdFrm.src=embdSrc};
+var zfutm_zfLead=new ZFLead();
+zfutm_zfLead.zfutm_ini();
+if(document.readyState=="complete"){zfutm_zfLead.zfutm_iframeSprt();zfutm_zfLead.zfutm_DHtmlSprt()}else{window.addEventListener('load',function(){zfutm_zfLead.zfutm_iframeSprt();zfutm_zfLead.zfutm_DHtmlSprt()},false)}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.makersquare.ai/"}, {"@type": "ListItem", "position": 2, "name": "Alumni", "item": "https://www.makersquare.ai/alumni"}, {"@type": "ListItem", "position": 3, "name": "Student projects", "item": "https://www.makersquare.ai/student-projects"}]}
+</script>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJTW9WQ3"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo" style="align-items:center;"><img src="logo-light.webp" alt="MakerSquare — School of Applied AI" width="348" height="90"><span class="nav-tagline" style="padding-left:4px;">School of Applied AI</span></a>
+    <ul class="nav-links">
+      <li style="white-space:nowrap;"><a href="/immersive">2-Week Program</a></li>
+      <li><a href="/workshops">Workshops</a></li>
+      <li style="white-space:nowrap;"><a href="/corporate">For Companies</a></li>
+      <li style="white-space:nowrap;"><a href="/use-cases">Use Cases</a></li>
+      <li><a href="/curriculum">Curriculum</a></li>
+      <li class="nav-dd">
+        <button type="button" class="nav-dd-toggle" aria-haspopup="true" aria-expanded="false">More <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-dd-menu">
+          <a href="/events">Events</a>
+          <a href="/about">About</a>
+          <a href="/team">Team</a>
+          <a href="/alumni">Alumni</a>
+          <a href="/comparison">How We Compare</a>
+          <a href="/blog">Blog</a>
+        </div>
+      </li>
+    </ul>
+    <div class="nav-right">
+      <a href="/enroll" class="btn btn-ghost" style="white-space:nowrap;font-size:0.85rem;">Enroll</a>
+      <button type="button" class="btn btn-primary btn-arrow" data-lt-trigger style="white-space:nowrap;font-size:0.95rem;padding:12px 26px;">Schedule An Intro Call</button>
+      <button class="nav-hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu">
+  <ul class="mobile-menu-links">
+    <li><a href="/immersive">2-Week Program</a></li>
+        <li><a href="/corporate">For Companies</a></li>
+    <li><a href="/use-cases">Use Cases</a></li>
+    <li><a href="/curriculum">Curriculum</a></li>
+        <li><a href="/workshops">Workshops</a></li><li><a href="/events">Events</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/team">Team</a></li>
+    <li><a href="/alumni">Alumni</a></li>
+    <li><a href="/comparison">How We Compare</a></li>
+          <li><a href="/ai-training-austin">AI Training in Austin</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="/enroll">Enroll</a></li>
+  </ul>
+  <button type="button" class="btn btn-primary btn-block btn-lg" data-lt-trigger style="margin-top:24px;">Schedule An Intro Call</button>
+</div>
+<main>
+<nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="/alumni">Alumni</a></li><li class="sep">/</li><li class="current">Student projects</li></ol></nav>
+<section class="section" style="padding-top:calc(var(--nav-h,72px) + var(--s8));">
+  <div class="container sp-wrap">
+    <div class="section-label reveal">Student projects &middot; Cohorts 1 and 2</div>
+    <h1 class="reveal" style="font-family:var(--font-display);font-size:clamp(1.9rem,4.5vw,3rem);font-weight:800;letter-spacing:-0.02em;color:var(--navy);line-height:1.15;margin-top:var(--s3);">What non-technical professionals built in a <span class="text-accent">2-week AI bootcamp.</span></h1>
+    <p class="reveal sp-body-text" style="font-size:1.05rem;max-width:700px;">Everyone who comes to MakerSquare brings one real problem from their own work. Two weeks later they demo a working tool at a public Demo Day in Austin. Here are four of those tools: who built them, what they do, and how each one is put together.</p>
+    <p class="reveal sp-body-text" style="max-width:700px;">The builders came from sales, a job search, homeless services and construction. We describe each build the way it actually shipped, including the parts that still need a human to say yes.</p>
+    <div class="sp-chips reveal">
+      <span class="sp-chip">Cohort 1 &middot; July 6&ndash;17, 2026</span>
+      <span class="sp-chip">Cohort 2 &middot; August 3&ndash;14, 2026</span>
+      <span class="sp-chip">In person, Austin TX</span>
+    </div>
+    <nav class="sp-jump reveal" aria-label="Jump to a project">
+      <a href="#cameron">Sales prospecting agent</a>
+      <a href="#ted">Job-search shortlist agent</a>
+      <a href="#chris">Shelter case dashboard</a>
+      <a href="#jennifer">Construction email agent</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#how">How the builds work</a>
+    </nav>
+  </div>
+</section>
+
+<section class="section" style="background:var(--light-bg);">
+  <div class="container sp-wrap">
+
+    <article id="cameron" class="sp-build reveal">
+      <div class="sp-tag">Sales &middot; Cohort 1</div>
+      <h2>Cameron Dowd built an AI prospecting agent that drafts outreach into Gmail</h2>
+      <div class="sp-who"><img src="images/cohort1/avatar-cameron.jpg?v=3" alt="Cameron Dowd" width="48" height="48" loading="lazy"><div><strong>Cameron Dowd</strong>SaaS account executive</div></div>
+      <h3>The problem</h3>
+      <p>A good cold email starts with research: what the company does, what changed lately, and why they would care now. Done properly, that takes hours a week. Skipped, the email reads like everyone else&#8217;s.</p>
+      <h3>What he built</h3>
+      <p>A web app where Cameron adds a target account. An agent researches the company, the result lands as a row on his kanban board, and a personalized email waits in his Gmail drafts. He reads it and decides whether to send.</p>
+      <h3>How it&#8217;s put together</h3>
+      <ul>
+        <li><strong>Website and board:</strong> a site on Vercel with a kanban board that reads and writes a Supabase table of the accounts he is actually working.</li>
+        <li><strong>A research Skill:</strong> deployed as its own small web service. Give it a company name and it returns six fields: industry, size range, growth signals, hiring status, tech-stack hints and recent news.</li>
+        <li><strong>The agent:</strong> calls that Skill and web search until it has all six fields plus two buying triggers. It stops after four tool calls, so a run can&#8217;t wander off.</li>
+        <li><strong>Gmail through Composio:</strong> the output is a draft. Sending stays Cameron&#8217;s decision.</li>
+      </ul>
+      <figure class="sp-photo">
+        <img src="images/cohort1/c1-1050.webp" alt="Cameron presenting his build on the big screen to a full room at Cohort 1 Demo Day, July 17, 2026" width="1200" height="900" loading="lazy" decoding="async">
+        <figcaption>Cameron demoing his build at Cohort 1 Demo Day, July 17, 2026.</figcaption>
+      </figure>
+      <figure class="sp-quote">
+        <blockquote>&#8220;The most valuable part was building the base &mdash; then taking that base to build the agent.&#8221;</blockquote>
+        <figcaption>Cameron Dowd, Cohort 1 feedback session</figcaption>
+      </figure>
+      <a class="sp-more" href="/case-study-cameron-dowd">Read Cameron&#8217;s case study &rarr;</a>
+    </article>
+
+    <article id="ted" class="sp-build reveal">
+      <div class="sp-tag">Job search &middot; Cohort 1</div>
+      <h2>Ted Kilgore built JobFit, an agent that shortlists 30 best-fit companies from a resume</h2>
+      <div class="sp-who"><img src="images/cohort1/avatar-ted.jpg?v=3" alt="Ted Kilgore" width="48" height="48" loading="lazy"><div><strong>Ted Kilgore</strong>Built it for his own job search</div></div>
+      <h3>The problem</h3>
+      <p>A job search rewards aim, and most job tools reward volume. Ted wanted a short list of companies that fit his background and were actually hiring, so his time went to the right 30 instead of 300.</p>
+      <h3>What he built</h3>
+      <p>JobFit. Ted enters his resume, a target role and a location, then clicks Generate Shortlist. The agent fills a kanban board with 30 companies, each with a reason it fits and a link to a real hiring signal.</p>
+      <h3>How it&#8217;s put together</h3>
+      <ul>
+        <li><strong>Website and board:</strong> a site on Vercel with a Supabase table of target companies behind the kanban.</li>
+        <li><strong>A matching Skill:</strong> deployed as a web service. Each call returns five ranked companies with a size estimate, location match, hiring signal and fit rationale.</li>
+        <li><strong>The agent:</strong> runs the Skill six times from six different search angles to reach 30 unique companies, with a cap of 20 tool calls.</li>
+      </ul>
+      <figure class="sp-quote">
+        <blockquote>&#8220;The jump from simple chatting to programmatic engagement always seemed beyond my reach &mdash; but after only 10 days, MakerSquare has helped me over that mountain.&#8221;</blockquote>
+        <figcaption>Ted Kilgore, Cohort 1, on LinkedIn</figcaption>
+      </figure>
+      <a class="sp-more" href="/case-study-ted-kilgore">Read Ted&#8217;s case study &rarr;</a>
+    </article>
+
+    <article id="chris" class="sp-build reveal">
+      <div class="sp-tag">Nonprofit operations &middot; Cohort 2</div>
+      <h2>Chris Cox built a case-manager dashboard and an email-to-record agent for a homeless shelter</h2>
+      <div class="sp-who"><img src="images/cohort2/avatar-chris.jpg?v=1" alt="Chris Cox" width="48" height="48" loading="lazy"><div><strong>Chris Cox</strong>Director of System Performance, Hesed House</div></div>
+      <h3>The problem</h3>
+      <p>Information about shelter guests arrives in email. Getting each update into the right guest&#8217;s record is manual work, and case managers need one place to see where every guest stands.</p>
+      <h3>What he built</h3>
+      <p>A dashboard that puts guest records in one view, and an agent that reads incoming email, pulls out a structured record, matches it to the right guest and adds it to the dashboard. When the agent isn&#8217;t sure which guest an email is about, it flags the record for a person to confirm.</p>
+      <h3>How it&#8217;s put together</h3>
+      <ul>
+        <li><strong>De-identified data only:</strong> shelter records hold regulated personal information, so during the program real names never went to a free-tier cloud service or to an AI model. Chris built and tested everything on de-identified records.</li>
+        <li><strong>Dashboard:</strong> a Supabase database behind a site deployed on Vercel.</li>
+        <li><strong>Gmail through Composio:</strong> read and draft permissions only. The agent can&#8217;t send or delete anything.</li>
+        <li><strong>What came next:</strong> he finished early and left with plans for two more agents, a weekly digest of grants the shelter qualifies for and a finder for voucher-friendly housing.</li>
+      </ul>
+      <figure class="sp-photo tall">
+        <img src="images/cohort2/c2-chris-present.webp" alt="Chris Cox walking the room through his shelter dashboard on a wall screen, Cohort 2" width="900" height="1200" loading="lazy" decoding="async">
+        <figcaption>Chris walking the room through his dashboard, Cohort 2.</figcaption>
+      </figure>
+      <figure class="sp-quote">
+        <blockquote>&#8220;The biggest win isn&#8217;t what I built &mdash; it&#8217;s what I can do going forward. There&#8217;s nothing they could hand me that I couldn&#8217;t build a solution for.&#8221;</blockquote>
+        <figcaption>Chris Cox, Cohort 2</figcaption>
+      </figure>
+    </article>
+
+    <article id="jennifer" class="sp-build reveal">
+      <div class="sp-tag">Construction project management &middot; Cohort 2</div>
+      <h2>Jennifer Francis built an agent that files every RFI and submittal email</h2>
+      <div class="sp-who"><img src="images/cohort2/avatar-jennifer.jpg?v=1" alt="Jennifer Francis" width="48" height="48" loading="lazy"><div><strong>Jennifer Francis</strong>Construction &amp; facilities project manager</div></div>
+      <h3>The problem</h3>
+      <p>On a construction project, RFIs and submittals arrive by email all day. Each one meant four manual steps: download the file, rename it to the naming convention, save it in the right folder, and retype the details into the project hub.</p>
+      <h3>What she built</h3>
+      <p>An Outlook agent that does all four. It reads the email, downloads the file, renames it to her convention (a name like <code>Project_RFI_0123_2026-08-13.pdf</code>), saves it, decides whether it is an RFI or a submittal, and logs the record to the matching hub marked &#8220;needs confirm.&#8221;</p>
+      <h3>How it&#8217;s put together</h3>
+      <ul>
+        <li><strong>Outlook through Composio:</strong> she built and demoed it on a test Outlook account. The pipeline is the same one a work inbox would run.</li>
+        <li><strong>What it pulls from each email:</strong> item ID, project, description, responsible party, date received and due date, plus the spec division for submittals.</li>
+        <li><strong>Nothing goes out:</strong> the agent never sends or forwards. Every record waits for Jennifer&#8217;s quick confirm.</li>
+      </ul>
+      <figure class="sp-photo tall">
+        <img src="images/cohort2/c2-grads.webp" alt="Cohort 2 graduates Jennifer Francis and Chris Cox standing together in front of a wall screen" width="900" height="1200" loading="lazy" decoding="async">
+        <figcaption>Jennifer and Chris, Cohort 2, August 14, 2026.</figcaption>
+      </figure>
+      <figure class="sp-quote">
+        <blockquote>&#8220;I could take a real-world problem, build a solution for it, and do it in two weeks &mdash; something that felt unfathomable before.&#8221;</blockquote>
+        <figcaption>Jennifer Francis, Cohort 2</figcaption>
+      </figure>
+    </article>
+
+  </div>
+</section>
+
+<section id="reviews" class="section" style="scroll-margin-top:72px;">
+  <div class="container sp-wrap">
+    <div class="section-label reveal">Public reviews</div>
+    <h2 class="reveal" style="color:var(--navy);margin-top:var(--s3);">Two more graduates, in their own words</h2>
+    <p class="reveal sp-body-text">These come from reviews posted on <a href="https://www.coursereport.com/schools/makersquare-school-of-applied-ai" target="_blank" rel="noopener" style="color:var(--indigo);font-weight:600;">Course Report</a>, quoted as written.</p>
+    <div class="sp-reviews">
+      <div class="sp-review reveal">
+        <blockquote>&#8220;One of the biggest takeaways was learning a terminal-first workflow that lets me stay much more LLM agnostic.&#8221;</blockquote>
+        <p>Rohan runs a marketing agency that produces a high volume of content for itself and its clients. In his words, model quality varies across the writing and editing steps, &#8220;so being able to switch between them without rebuilding the workflow is valuable.&#8221; He left with a plan for an agentic content engine he intends to build out.</p>
+        <div class="sp-meta"><strong>Rohan K.</strong><br>Founder &amp; CEO, Austin marketing agency &middot; 2-week program, Cohort 2<br>Course Report, August 27, 2026</div>
+      </div>
+      <div class="sp-review reveal">
+        <blockquote>&#8220;Ravi opened up categories that we hadn&#8217;t considered and helped us learn tools to actually get an application up and running, along with several agents.&#8221;</blockquote>
+        <p>Tony took our 3-day workshop, Build Your First AI Agent, in September 2026. He went in worried it would be slides read aloud and wrote that it &#8220;definitely felt like an advanced course.&#8221;</p>
+        <div class="sp-meta"><strong>Tony Perez</strong><br>3-day workshop, September 11&ndash;13, 2026<br>Course Report, September 25, 2026</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="how" class="section" style="background:var(--light-bg);scroll-margin-top:72px;">
+  <div class="container sp-wrap">
+    <div class="section-label reveal">How the builds work</div>
+    <h2 class="reveal" style="color:var(--navy);margin-top:var(--s3);">One build pattern, pointed at four different jobs</h2>
+    <p class="reveal sp-body-text">A sales agent, a job-search agent, a shelter dashboard and a construction inbox agent look like four different products. Underneath, all four were built in the same order, with the same tools, in the same two weeks. That order is how we teach people to build AI agents.</p>
+    <div class="sp-steps">
+      <div class="sp-step reveal"><div class="sp-when">Week 1 &middot; Wednesday</div><h3>A live website</h3><p>Built in plain English with Claude Code, pushed to GitHub, deployed on Vercel. Everyone has a public URL by the end of the day.</p></div>
+      <div class="sp-step reveal"><div class="sp-when">Week 1 &middot; Thursday&ndash;Friday</div><h3>A database and a first Skill</h3><p>A Supabase table wired to the site, and a Claude Skill that does the one judgment call the tool depends on. Product 1 ships Friday.</p></div>
+      <div class="sp-step reveal"><div class="sp-when">Week 2</div><h3>The agent</h3><p>It fetches its own input through Composio (Gmail, Outlook), uses the Skill to decide, writes results back to the database, and can run on a schedule with GitHub Actions.</p></div>
+      <div class="sp-step reveal"><div class="sp-when">Week 2 &middot; Friday</div><h3>Demo Day</h3><p>A short live demo in front of a public Austin audience, then certificates.</p></div>
+    </div>
+    <h3 class="reveal" style="color:var(--navy);font-size:1.15rem;margin-top:var(--s8);">What the four builds have in common</h3>
+    <ul class="reveal" style="margin-top:var(--s3);padding-left:1.2em;">
+      <li class="sp-body-text" style="margin-top:6px;"><strong style="color:var(--navy);">A person approves the last step.</strong> Cameron&#8217;s agent writes drafts. Chris&#8217;s flags uncertain matches. Jennifer&#8217;s marks every record &#8220;needs confirm.&#8221;</li>
+      <li class="sp-body-text" style="margin-top:6px;"><strong style="color:var(--navy);">Least-privilege connections.</strong> The agents can read and draft. None of them can send or delete on their own.</li>
+      <li class="sp-body-text" style="margin-top:6px;"><strong style="color:var(--navy);">The problem came from the builder&#8217;s own week.</strong> Each one is a task the builder did by hand, often, before the program.</li>
+    </ul>
+    <p class="reveal sp-body-text">The <a href="/curriculum" style="color:var(--indigo);font-weight:600;">curriculum</a> shows every day in detail.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container sp-wrap">
+    <div class="section-label reveal">Common questions</div>
+    <h2 class="reveal" style="color:var(--navy);margin-top:var(--s3);">About building your own</h2>
+    <div class="reveal">
+      <div class="sp-faq-q">Do I need to know how to code?</div>
+      <div class="sp-faq-a">No. The program is built for professionals without a coding background. You describe what you want in plain English and Claude Code writes the code.</div>
+    </div>
+    <div class="reveal">
+      <div class="sp-faq-q">What will I build?</div>
+      <div class="sp-faq-a">A tool for a problem from your own work. In the pre-work you define that problem and what &#8220;solved&#8221; looks like, and gather real inputs from your job, so the website, database and agent you build all point at it.</div>
+    </div>
+    <div class="reveal">
+      <div class="sp-faq-q">When and where is the next cohort?</div>
+      <div class="sp-faq-a"><!--COHORT:name-->Cohort 3<!--/--> starts <!--COHORT:startLong-->January 11, 2027<!--/-->, in person at Capital Factory in downtown Austin, 9am to 3pm, Monday to Friday. Enrollment closes <!--COHORT:enrollCloseShort-->January 4<!--/-->. Tuition is $3,999. The <a href="/immersive" style="color:var(--indigo);font-weight:600;">program page</a> has the details.</div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:linear-gradient(180deg,#1d1d5c,#181849);">
+  <div class="container" style="max-width:720px;text-align:center;">
+    <h2 class="reveal" style="color:var(--white);">Bring your own problem. <!--COHORT:name-->Cohort 3<!--/--> starts <!--COHORT:startShort-->Jan 11<!--/-->.</h2>
+    <p class="reveal" style="color:rgba(255,255,255,0.65);font-size:0.95rem;line-height:1.7;margin-top:var(--s3);">Two weeks, in person in Austin, with an instructor beside you while you build. Tell us what you would build on a short intro call.</p>
+    <div class="sp-cta-row reveal">
+      <button type="button" class="btn btn-primary btn-lg btn-arrow" data-lt-trigger>Schedule An Intro Call</button>
+      <a href="/enroll" class="btn btn-lg" style="color:var(--white);border:1px solid rgba(255,255,255,0.3);">Enroll</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="footer">
+<style>@media(max-width:768px){.footer-grid{grid-template-columns:1fr 1fr;}.footer-brand{grid-column:1/-1;}.footer-brand p{max-width:none;}.footer-social{flex-wrap:wrap;}.footer-col-links a{font-size:0.85rem;}}</style>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="footer-logo"><img src="logo-dark.webp" alt="MakerSquare — School of Applied AI" width="348" height="90" loading="lazy"></a><div class="footer-tagline">School of Applied AI</div>
+        <p>In-person AI training in Austin, TX &mdash; 2-week intensive and private team programs.</p>
+        <button type="button" class="btn btn-primary btn-arrow" data-lt-trigger style="font-size:0.82rem;padding:10px 20px;">Schedule An Intro Call </button>
+      </div>
+      <div>
+        <div class="footer-col-title">Program</div>
+        <ul class="footer-col-links">
+          <li><a href="/use-cases">Use Cases</a></li>
+          <li><a href="/curriculum">Curriculum</a></li>
+          <li><a href="/immersive">Pricing</a></li>          <li><a href="/enroll">Enroll</a></li>
+          <li><a href="/scholarship">Scholarship</a></li>
+          <li><a href="/faq">FAQ</a></li>
+          <li><a href="/demo-day">Demo Day</a></li>
+            </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Company</div>
+        <ul class="footer-col-links">
+          <li><a href="/about">About</a></li>
+          <li><a href="/team">Team</a></li>
+          <li><a href="/corporate">Corporate Training</a></li>
+          <li><a href="/comparison">How We Compare</a></li>
+          <li><a href="/alumni">Alumni</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Learn</div>
+        <ul class="footer-col-links">
+          <li><a href="/events">Events</a></li><li><a href="/blog">Blog</a></li>
+          <li><a href="https://ai-builder-brief.beehiiv.com" target="_blank" rel="noopener">Newsletter &mdash; AI Builder Brief</a></li>
+          <li><a href="/guides">Guides</a></li>
+          <li><a href="/quickstart">Claude Quickstart Guide</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Contact</div>
+        <a href="mailto:hello@makersquare.ai" class="footer-contact-email">hello@makersquare.ai</a>
+        <p style="font-size:0.82rem;color:rgba(255,255,255,0.6);">Austin, TX</p>
+        <div class="footer-social"><a href="https://www.linkedin.com/company/makersquare-ai" target="_blank" rel="noopener" style="white-space:nowrap;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>Follow us on LinkedIn</a><a href="https://www.meetup.com/makersquare-ai/" target="_blank" rel="noopener" aria-label="Events on Meetup" style="white-space:nowrap;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="width:15px;height:15px;fill:currentColor;flex-shrink:0;"><path d="M19.24 0H4.76A4.76 4.76 0 000 4.76v14.48A4.76 4.76 0 004.76 24h14.48A4.76 4.76 0 0024 19.24V4.76A4.76 4.76 0 0019.24 0zM8.64 16.8c-.48.12-.97-.12-1.2-.56L5.28 11.6a1 1 0 011.8-.88l1.56 3.16 3.84-7.8a1 1 0 011.8.88l-4.2 8.52a1 1 0 01-.44.52zm9.12-1.12a1 1 0 01-1.32.48l-2.16-1.04-1.04 2.16a1 1 0 01-1.8-.88l1.32-2.72 2.72 1.32-.48-2.96a1 1 0 011.96-.32l.64 3.96h.16z"/></svg>Events</a></div>
+      </div>
+    </div>
+    <!-- ═══ FOOTER NEWSLETTER ═══ -->
+    <div style="border-top:1px solid rgba(255,255,255,0.08);padding:var(--s8) 0;margin-bottom:var(--s6);">
+      <div style="max-width:480px;">
+        <div style="font-size:0.75rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.6);margin-bottom:var(--s3);">AI Builder Brief</div>
+        <div style="font-size:1.05rem;font-weight:700;color:var(--white);margin-bottom:6px;">Get AI Builder Brief free every Tuesday.</div>
+        <div style="font-size:0.85rem;color:rgba(255,255,255,0.5);margin-bottom:var(--s4);">Three AI stories that matter, one prompt to try this week.</div>
+        <a href="https://ai-builder-brief.beehiiv.com/subscribe?utm_source=website&utm_medium=site&utm_campaign=newsletter" target="_blank" rel="noopener" class="btn btn-primary btn-arrow">Subscribe free </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">&copy; 2026 MakerSquare LLC. Austin, TX.</div>
+      <div class="footer-bottom-links">
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Schedule An Intro Call modal -->
+<div id="lt-modal" class="cm-modal" role="dialog" aria-modal="true" aria-labelledby="lt-modal-title" aria-hidden="true">
+  <div class="cm-modal__backdrop" data-lt-close></div>
+  <div class="cm-modal__dialog">
+    <button type="button" class="cm-modal__close" aria-label="Close" data-lt-close>&times;</button>
+    <div class="cm-modal__head">
+      <h3 id="lt-modal-title">Book your call</h3>
+      <p>Grab a time that works and tell us about your goals. It's a relaxed intro call with our team — we walk you through the program and help you figure out if it's the right fit. No prep needed.</p>
+    </div>
+    <div class="cm-modal__body">
+      <div id="zf_div_bookcall"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var modal = document.getElementById('lt-modal');
+  if(!modal) return;
+  var iframeMounted = false;
+  var lastFocused = null;
+
+  function mountIframe(){
+    if(iframeMounted) return;
+    iframeMounted = true;
+    try{
+      var f = document.createElement('iframe');
+      var ifrmSrc = 'https://forms.zohopublic.com/makersquare/form/Bookyourcall/formperma/QhUmSj0eZVSD4t1kRDrV8BfgTOxUamerj-v7ZB2_K_w?zf_rszfm=1';
+      try{
+        if (typeof ZFAdvLead != 'undefined' && typeof zfutm_zfAdvLead != 'undefined') {
+          for (var i = 0; i < ZFAdvLead.utmPNameArr.length; i++) {
+            var utmPm = ZFAdvLead.utmPNameArr[i];
+            utmPm = (ZFAdvLead.isSameDomian && (ZFAdvLead.utmcustPNameArr.indexOf(utmPm) == -1)) ? 'zf_' + utmPm : utmPm;
+            var utmVal = zfutm_zfAdvLead.zfautm_gC_enc(ZFAdvLead.utmPNameArr[i]);
+            if (typeof utmVal !== 'undefined' && utmVal !== '') {
+              ifrmSrc += (ifrmSrc.indexOf('?') > 0 ? '&' : '?') + utmPm + '=' + utmVal;
+            }
+          }
+        }
+        if (typeof ZFLead !== 'undefined' && typeof zfutm_zfLead !== 'undefined') {
+          for (var j = 0; j < ZFLead.utmPNameArr.length; j++) {
+            var utmPm2 = ZFLead.utmPNameArr[j];
+            var utmVal2 = zfutm_zfLead.zfutm_gC_enc(ZFLead.utmPNameArr[j]);
+            if (typeof utmVal2 !== 'undefined' && utmVal2 !== '') {
+              ifrmSrc += (ifrmSrc.indexOf('?') > 0 ? '&' : '?') + utmPm2 + '=' + utmVal2;
+            }
+          }
+        }
+      }catch(e){}
+      f.src = ifrmSrc;
+      f.style.border = 'none';
+      f.style.height = '800px';
+      f.style.width = '100%';
+      f.style.maxWidth = '560px';
+      f.style.display = 'block';
+      f.style.transition = 'all 0.5s ease';
+      f.setAttribute('aria-label', 'Schedule An Intro Call - 45 minutes');
+      var d = document.getElementById('zf_div_bookcall');
+      d.appendChild(f);
+      window.addEventListener('message', function(e){
+        var evntData = e.data;
+        if (evntData && evntData.constructor == String) {
+          var zf_ifrm_data = evntData.split('|');
+          if (zf_ifrm_data.length == 2 || zf_ifrm_data.length == 3) {
+            var zf_perma = zf_ifrm_data[0];
+            var zf_ifrm_ht_nw = (parseInt(zf_ifrm_data[1], 10) + 15) + 'px';
+            var iframe = document.getElementById('zf_div_bookcall').getElementsByTagName('iframe')[0];
+            if (iframe && (iframe.src).indexOf('formperma') > 0 && (iframe.src).indexOf(zf_perma) > 0) {
+              if (iframe.style.height != zf_ifrm_ht_nw) {
+                iframe.style.height = zf_ifrm_ht_nw;
+              }
+            }
+          }
+        }
+      }, false);
+    }catch(e){}
+  }
+
+  function openModal(trigger){
+    lastFocused = trigger || document.activeElement;
+    mountIframe();
+    modal.classList.add('open');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('cm-modal-open');
+    var closeBtn = modal.querySelector('.cm-modal__close');
+    if(closeBtn) closeBtn.focus();
+  }
+
+  function closeModal(){
+    modal.classList.remove('open');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('cm-modal-open');
+    if(lastFocused && lastFocused.focus) lastFocused.focus();
+  }
+
+  document.querySelectorAll('[data-lt-trigger]').forEach(function(btn){
+    btn.addEventListener('click', function(){ openModal(btn); });
+  });
+
+  modal.querySelectorAll('[data-lt-close]').forEach(function(el){
+    el.addEventListener('click', closeModal);
+  });
+
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && modal.classList.contains('open')) closeModal();
+  });
+})();
+</script>
+<script src="js/main.min.js?v=2"></script>
+<script type="text/javascript" src="https://forms.zoho.com/js/zf_gclid.js" defer> </script>
+<script defer src="/js/ms-chat.js?v=6"></script>
+</body>
+</html>
+

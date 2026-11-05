@@ -22,6 +22,12 @@ Over 2 weeks (10 teaching days), students build and deploy three things: a live 
 2. Product 2 (Day 9, Thursday of Week 2): A workflow or automation combining Composio, Playwright, or voice AI with the builder's real data.
 3. Capstone (Day 10, Demo Day Friday): Most ambitious product combining Claude Code, agentic APIs, and the full stack. Presented at public Demo Day.
 
+What past students built (full write-ups at https://www.makersquare.ai/student-projects):
+- Cameron Dowd (SaaS account executive, Cohort 1, Jul 2026): an AI prospecting agent. He adds a target account; the agent researches it and saves a personalized outreach email as a Gmail draft for him to review.
+- Ted Kilgore (Cohort 1, Jul 2026): JobFit. Resume + target role + location in; 30 best-fit companies out, each with a fit rationale and a hiring-signal link.
+- Chris Cox (Director of System Performance, Hesed House, Cohort 2, Aug 2026): a shelter case-manager dashboard plus an agent that turns incoming email into structured guest records and flags uncertain matches. Built on de-identified data.
+- Jennifer Francis (construction & facilities PM, Cohort 2, Aug 2026): an Outlook agent that downloads each RFI/submittal file, renames it to the project convention, files it, and logs the record to the right hub for her to confirm.
+
 ## Curriculum Overview
 
 - Pre-work: 3 self-paced steps (set up accounts, run your first expert-level conversation with Claude, define your capstone problem)
@@ -119,6 +125,7 @@ Ravi Parikh — Co-founder, MakerSquare. Austin-based serial entrepreneur; co-fo
 - [Comparison](https://www.makersquare.ai/comparison)
 - [Corporate Training](https://www.makersquare.ai/corporate)
 - [Workshops (fall 2026 lineup)](https://www.makersquare.ai/workshops)
+- [Student Projects (what Cohorts 1 and 2 built)](https://www.makersquare.ai/student-projects)
 - [Case Study (RoverPass AI ops command center)](https://www.makersquare.ai/case-study-roverpass)
 - [Case Study (Cameron Dowd — sales AE built an AI prospecting tool)](https://www.makersquare.ai/case-study-cameron-dowd)
 - [Case Study (Ted Kilgore — job seeker built an AI company-matcher)](https://www.makersquare.ai/case-study-ted-kilgore)
