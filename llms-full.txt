@@ -4996,6 +4996,298 @@ No public events on the calendar right now — [follow us on Meetup](https://www
 
 ---
 
+<!-- https://www.makersquare.ai/learn-ai -->
+
+# How to Learn AI in 2026: A Beginner's Path That Works | MakerSquare
+
+> How to learn AI as a working adult: what to learn in what order, how long each step takes, what to skip, and how to choose free, online, or in-person.
+
+Learning path
+
+## How to learn AI: an honest path for beginners who are serious about it.
+
+Marliis Schneider
+
+Updated November 4, 2026
+
+14 min read
+
+The short answer
+
+The best way to learn AI as a working adult is to use it on your real work every day, in this order: prompting, a paid chat assistant like Claude or ChatGPT, Claude Code, a website you put online, an agent, and an automation. Start free. Add structure when you stall. Most people need 60 to 100 hours of hands-on practice to get through all six. Self-study spreads that over four to six months. A full-time in-person program compresses it into two weeks.
+
+Search "how to learn AI" and most of what comes back is a roadmap for becoming a machine learning engineer: learn Python, then linear algebra, then statistics, then neural networks. That advice is correct for that goal. It is the wrong advice for most people asking the question.
+
+We teach non-technical professionals to build with AI: lawyers, sales reps, operators, founders, people changing careers. This page is the path we would give a friend. It covers what to learn, in what order, how long each step really takes, what to skip, and how to choose between free, online, and in-person learning. We run an in-person program, and it is one option at the end. For a lot of readers, the free path is the right one.
+
+### First, decide which kind of "learning AI" you mean
+
+There are two different skills hiding under the same search, and they take very different amounts of time.
+
+Path A
+
+Use and build with AI tools
+
+You want AI to do real work for you: draft, research, analyze, build a website, run a workflow, act as an agent. No math. Little or no traditional coding. Realistic time to real skill: **2 weeks full-time or 4 to 6 months part-time.**
+
+For: managers, operators, founders, marketers, lawyers, finance people, career changers. **This page is for you.**
+
+Path B
+
+Build AI models
+
+You want to train and tune models, work as an ML engineer, or do research. That means Python, linear algebra, probability, and deep learning frameworks. Realistic time: **12 to 24 months** of steady study, more without a technical background.
+
+Start with [fast.ai's Practical Deep Learning](https://course.fast.ai/) (free) or Andrew Ng's [Machine Learning Specialization](https://www.coursera.org/specializations/machine-learning-introduction) on Coursera.
+
+If you are not sure, you are almost certainly Path A. Path B people usually already know they want to write Python every day. Everything below is Path A.
+
+### The path at a glance
+
+Most people who end up good at this move through four stages. You do not have to do all four. You do have to do them in this order, because each one only works if the one before it is done.
+
+| Stage | What it gets you | Realistic time | Typical cost |
+| --- | --- | --- | --- |
+| 1. Free self-study | Daily habits with a chat assistant, basic prompting | 2 to 4 weeks, 3 to 5 hrs/week | $0 to $20/month |
+| 2. Structured course | A complete map of the tools, fewer blind spots | 2 to 6 weeks | $0 to $500 |
+| 3. Real projects | Things that run: a site, an agent, an automation | 1 to 3 months part-time | $20 to $100/month in tools |
+| 4. Intensive or in-person | Speed, feedback, and a finished project you can show | 3 days to 2 weeks full-time | $1,200 to $25,000 |
+
+Stage 4 is optional. Some people go straight from stage 1 to stage 4 because they know they will not finish alone. Others never need it. We cover how to decide further down.
+
+### What to learn, in what order
+
+Six skills, each building on the last. For each one: what it is, how long it realistically takes, and how you know you are done.
+
+1
+
+Prompting: giving AI clear instructions
+
+Prompting is writing a good brief. Say who the AI should act as, what you want, what good looks like, and what to avoid. Give it your real material: the email thread, the spreadsheet, the contract. Then ask it to ask you questions before it starts.
+
+**Time:** 1 to 2 weeks of daily use. You do not need a course for this. You need 20 real tasks.
+
+**You are done when** you can get a usable first draft of a real work document in three tries or fewer.
+
+**Read:** [How to write prompts that work](/guides/how-to-write-prompts-that-work) and our [prompt examples](/blog/ai-prompt-examples).
+
+2
+
+Claude or ChatGPT as a daily work tool
+
+Pick one and pay for it. Claude Pro and ChatGPT Plus are both $20 a month, and the paid tiers are where the useful features live: file uploads, longer documents, projects that remember your context, and deep research. Learn to set up a project with your own reference documents so you stop re-explaining your job every session.
+
+**Time:** 2 to 4 weeks, overlapping with step 1.
+
+**You are done when** you reach for it before you reach for a search engine, and at least one weekly task takes half as long as it used to.
+
+**Read:** [Claude vs. ChatGPT vs. Gemini for work](/blog/claude-vs-chatgpt-vs-gemini-for-work-2026) and the free [Claude quickstart](/quickstart).
+
+3
+
+Claude Code: AI that works on files and builds things
+
+This is where you move from using AI to building with it. Claude Code is Anthropic's coding agent. You describe what you want in plain English, and it writes and edits files, runs commands, and tells you what it did. You are the person who decides what to build and checks that it works. You need a paid Claude plan to use it.
+
+**Time:** one weekend (6 to 10 hours) to your first working build. Four to six weeks of regular use to feel comfortable. The terminal is the scary part for most people, and it stops being scary after about an hour.
+
+**You are done when** you have built three small things that you use, without copying a tutorial line by line.
+
+**Read:** [Learn Claude Code: a beginner's guide for non-engineers](/guides/learn-claude-code-for-beginners). If you prefer a visual editor, [how to use Cursor as a non-coder](/guides/how-to-use-cursor-as-a-non-coder) covers the same idea in an app.
+
+4
+
+Build a website and put it online
+
+A project is not real until it has a URL. Build a simple site with Claude Code, save it to GitHub, and deploy it on Vercel. Both have free tiers. Once that works, add a database with Supabase so your site can store sign-ups, orders, or records. This step teaches you how real software is put together, which makes every later step easier.
+
+**Time:** 1 to 2 days for your first live site. Another week to add a database and logins.
+
+**You are done when** you can send someone a link to something you built and it works on their phone.
+
+**Read:** [How to build a website with AI](/blog/how-to-build-a-website-with-ai), then the guides to [git for non-coders](/guides/git-workflow-for-non-coders), [deploying with Vercel and GitHub](/guides/deploy-with-vercel-and-github), and [setting up Supabase](/guides/how-to-set-up-supabase).
+
+5
+
+Agents: AI that takes steps on its own
+
+An agent is an AI that has tools and decides which to use. It can search, read your files, call an API, and loop until a job is done. Start with one narrow, boring job: research ten companies and fill in a spreadsheet, or read incoming requests and draft replies for you to approve. Broad "do everything" agents fail. Narrow ones work.
+
+**Time:** 2 to 4 weeks part-time after steps 3 and 4.
+
+**You are done when** an agent finishes one real task end to end and you trust the output enough to check it instead of redo it.
+
+**Read:** [How to build an AI agent](/blog/how-to-build-an-ai-agent) and [how to set up a CLAUDE.md file](/guides/how-to-set-up-claude-md), which is how you give an agent standing instructions.
+
+6
+
+Automations: work that runs without you
+
+An automation is an agent or script that runs on a schedule or when something happens: a new email, a form submission, Monday at 8am. This is where AI starts saving hours per week instead of minutes per task. You can do this with visual tools like Zapier or Make, or by having Claude Code write it. Pick one approach and stick with it for a month.
+
+**Time:** 2 to 4 weeks part-time.
+
+**You are done when** something you used to do by hand every week now happens on its own, and you get a note when it fails.
+
+**Read:** [AI automation for non-engineers](/blog/ai-automation-for-non-engineers).
+
+**Why this order?** Each step reuses the one before it. Agents are prompting plus tools. Automations are agents plus a trigger. A website teaches you files, git, and deployment, which is how agents and automations get shipped. People who jump to agents first usually come back to step 1 a month later.
+
+### How long it really takes to learn AI
+
+The honest number is **60 to 100 hours of hands-on practice** to get through all six steps at a working level. Watching videos does not count toward that number. Building does.
+
+| Pace | Hours per week | Calendar time for steps 1 to 6 |
+| --- | --- | --- |
+| Evenings and weekends | 4 to 5 | 4 to 6 months, if you don't stall |
+| Serious side project | 10 | 2 to 3 months |
+| Full-time intensive | 30 to 40 | 2 weeks, then a few weeks of practice |
+
+The hours are about the same either way. What changes is calendar time and your odds of finishing. Self-paced learning has a well-documented completion problem. A 2019 study in *Science* of MIT and Harvard's online courses on edX found that [about 3% of people who enrolled finished](https://www.science.org/doi/10.1126/science.aav7958). Most people who stall do not stall because the material is hard. They stall in week three, when work gets busy and nobody notices they stopped.
+
+One more honest note: you will not be "done." The tools change every few months. The goal is to get past the point where a new tool scares you. After step 6, picking up a new one takes an afternoon.
+
+### What to skip
+
+Knowing what not to learn saves more time than any course. If you are on Path A, skip these:
+
+**Math and Python before you build anything.** You do not need linear algebra to use Claude Code, the same way you do not need to understand combustion to drive. If you later want Path B, you can add it.
+
+**Long "how AI works" theory courses.** Two hours of background is useful. Twenty hours is procrastination. One good explainer video is enough to start.
+
+**Certificate collecting.** Employers and clients care what you built. A live link beats a badge.
+
+**Lists of 500 prompts.** Copying someone else's prompts does not teach you to write a good brief for your own work.
+
+**Trying every new tool.** A new model or app launches every week. Pick one chat assistant and one build tool, learn them well, and switch only when you hit a wall.
+
+**Learning three automation platforms.** Zapier, Make, and n8n solve the same problem. Pick one approach.
+
+**Building a chatbot nobody asked for.** Build something for a task you, or someone you know, does every week. Real users give real feedback.
+
+### A 30-day starter plan for beginners
+
+If you want to start this week, here is the first month. Plan on about 4 to 5 hours a week.
+
+Week 1
+
+Prompt on real work
+
+Use a free Claude or ChatGPT account on three tasks you already do: an email, a summary, a plan. Rewrite each prompt until the output is usable.
+
+Week 2
+
+Go paid, set up a project
+
+Upgrade one assistant to the $20 plan. Create a project with your role, your company, and three reference documents. Use it daily.
+
+Week 3
+
+Install Claude Code
+
+Follow the [beginner's guide](/guides/learn-claude-code-for-beginners). Build a one-page website about something you know well.
+
+Week 4
+
+Ship it and pick the next problem
+
+Put the site online with [Vercel and GitHub](/guides/deploy-with-vercel-and-github). Write down one weekly task you would hand to an agent. That is month two.
+
+### How to pick a format
+
+The content is mostly the same everywhere. What you are buying when you pay for a course is structure, feedback, and a deadline. Pick the cheapest format that gets you to the end.
+
+| Format | Cost | Best for | Watch out for |
+| --- | --- | --- | --- |
+| Free self-study | $0 to $20/month | Self-starters, people testing whether AI matters for their work | No one notices when you stop |
+| Self-paced online course | $0 to $500 | Filling a specific gap, learning on your own schedule | Low completion; lots of watching, little building |
+| Live online cohort | $500 to $2,500 | People who need a schedule but can't travel | Easy to keep your camera off and fall behind |
+| In-person workshop (1 to 3 days) | $1,200 to $2,500 | A fast start on one skill, like shipping a first app | Too short to cover all six steps |
+| In-person intensive (1 to 2 weeks) | $3,999 to $25,000 | People who want all six steps and a finished project, fast | You need the time off, plus travel if it isn't local |
+
+Three questions settle it for most people:
+
+1
+
+Have you started a self-paced course before and not finished?
+
+If yes, another self-paced course will probably end the same way. Pay for structure: a live cohort or an in-person program.
+
+2
+
+Do you have a specific thing you want to build?
+
+If yes, pick a program where you build your own project, not a class exercise. If no, stay with free self-study for a month until you find one.
+
+3
+
+Can you take one or two weeks away from work?
+
+If yes, an intensive is the fastest route by far. If no, a live online cohort or a weekend workshop fits better.
+
+For side-by-side comparisons of real programs, see [the best AI courses and bootcamps in 2026](/blog/best-ai-courses-bootcamps-2026), [the best in-person AI bootcamps in the US](/blog/best-in-person-ai-bootcamps-2026), and [AI bootcamp vs. online course](/blog/ai-bootcamp-vs-online-course).
+
+### Free resources worth your time
+
+You can get through steps 1 to 3 without paying for anything except a $20 assistant plan. These are the free materials we point people to:
+
+**[Anthropic's free courses](https://academy.claude.com/).** Short courses on using Claude well, plus Claude Code 101 once you reach step 3.
+
+**[AI for Everyone](https://www.coursera.org/learn/ai-for-everyone) by Andrew Ng.** About six hours of plain-English background. Free to audit on Coursera. This is the one theory course worth taking.
+
+**[Elements of AI](https://www.elementsofai.com/).** A free course from the University of Helsinki on what AI can and cannot do, with no math required.
+
+**[MakerSquare guides](/guides).** Step-by-step walkthroughs for Claude Code, Cursor, git, Vercel, and Supabase, written for people who have never coded.
+
+**Your own backlog.** Keep a list of tasks at work that annoy you. Each week, hand one to AI. This teaches more than any course on this list.
+
+### Where MakerSquare fits
+
+We run one option on this path: a [2-week, in-person program](/immersive) at Capital Factory in downtown Austin. It covers all six steps above in ten days, Monday to Friday, 9am to 3pm. You build on a problem from your own work and leave with three things running: a live website, a working AI agent, and an automated workflow. You present them at a public Demo Day on the last Friday. Tuition is $3,999. The next cohort starts January 11, 2027, and enrollment closes January 4.
+
+Many of our students are not from Austin. They fly in for the two weeks, and our [housing page](/housing) covers where people stay.
+
+It is not the right fit for everyone. If you want to train models, look at Path B. If you can't take two weeks off, start with the free path above or a [3-day workshop](/workshops). If you have never used ChatGPT or Claude, spend two weeks on steps 1 and 2 first. You'll get far more out of any program.
+
+### Questions people ask about learning AI
+
+#### Is AI hard to learn?
+
+Using and building with AI tools is not hard. It is unfamiliar. The first hour in a terminal feels uncomfortable, and most people are past it by the end of a weekend. Building AI models from scratch is hard, and that path takes a year or more of math and Python.
+
+#### How long does it take to learn AI?
+
+For a non-technical professional, about 60 to 100 hours of hands-on practice gets you from first prompts to running your own agents and automations. Part-time at 4 to 5 hours a week, that is 4 to 6 months. A full-time intensive compresses it into two weeks.
+
+#### Do I need to know how to code or do math to learn AI?
+
+No, unless you want to become a machine learning engineer. To use and build with AI tools, you need to write clear instructions and check the results. Tools like Claude Code write the code. Our post on [how to learn AI without coding](/blog/how-to-learn-ai-without-coding) goes deeper.
+
+#### What is the best AI tool to learn first?
+
+Start with a paid plan for one chat assistant, Claude or ChatGPT, at $20 a month. Once that is a daily habit, learn Claude Code. Those two cover most of what a non-technical professional will build.
+
+#### Can I learn AI for free?
+
+Mostly. The courses and guides above are free, and free tiers of Claude and ChatGPT cover step 1. To go further you will want a paid assistant plan at about $20 a month, which Claude Code requires. Hosting a first project on Vercel and Supabase is free.
+
+Keep reading
+
+- [Learn Claude Code: a beginner's guide for non-engineers](/guides/learn-claude-code-for-beginners)
+
+- [Using AI vs. building with AI: what's the difference?](/blog/using-ai-vs-building-with-ai)
+
+- [The best AI courses and bootcamps in 2026](/blog/best-ai-courses-bootcamps-2026)
+
+- [The best in-person AI bootcamps in the US (2026)](/blog/best-in-person-ai-bootcamps-2026)
+
+Want to do all six steps in two weeks, in a room with an instructor? Book a short call and tell us what you want to build. We will tell you honestly whether the program fits.
+
+Schedule an intro call
+[See the 2-week program](/immersive)
+
+---
+
 <!-- https://www.makersquare.ai/quickstart -->
 
 # Free Claude Quickstart Guide | MakerSquare
@@ -5624,6 +5916,8 @@ Key takeaways
 Online AI courses have a completion rate between 3 and 6 percent. That's not a criticism — it's a structural fact about what the format is optimized for. The question worth asking isn't whether online learning is good or bad. It's whether it can deliver what you're actually trying to accomplish. If the goal is exposure to AI concepts, a self-paced course is a reasonable starting point. If the goal is to change how you work, the completion data makes a strong case for a different format.
 
 This isn't a knock on online learning as a category. It's a structural argument: what online courses are optimized for and what in-person intensives are optimized for are not the same thing. Understanding the difference makes it easier to choose the right one for the right goal.
+
+If you have not decided what you need to learn yet, read [how to learn AI](/learn-ai) first. It covers the skills in order, how long each takes, and when a paid format is worth it.
 
 At our Demo Night last week, one of the people who enrolled told us she'd already taken two online AI courses — good ones, well-reviewed, from credible platforms. She understood how AI worked. She just couldn't point to anything that had changed about how she actually did her job. That gap is the structural problem this post is about.
 
@@ -8413,6 +8707,8 @@ Key takeaways
 
 The AI education market is enormous, confusing, and full of programs that use similar language to describe very different things. This comparison is an attempt to make it useful: organized by format rather than provider, honest about what each category does and doesn't deliver, and clear about who each is actually right for. There are no affiliate links here and no paid placements — MakerSquare is included because we run a program, and we've tried to describe it with the same objectivity we'd apply to the others.
 
+If you are still deciding what to learn before picking a program, start with [how to learn AI: an honest path for beginners](/learn-ai). It lays out the skills in order and what each one realistically takes.
+
 ### Category 1: Free and self-paced (Coursera, fast.ai, DeepLearning.AI, YouTube)
 
 Free and self-paced programs are the right starting point if you're not yet sure whether AI is relevant to your work, or if you have high self-direction and a specific conceptual gap you want to fill. DeepLearning.AI's specializations are genuinely well-constructed. fast.ai's practical deep learning course is among the best freely available technical resources. Coursera's AI and machine learning tracks from Stanford and Google are thorough.
@@ -9961,6 +10257,8 @@ The single biggest misconception holding professionals back from learning AI is 
 
 The short answer: start with a tool, apply it to a real task you already do, and practice until your output is better with AI than without it. That's it. Everything else is optional until you've done that.
 
+If you want the full sequence, with what to learn in what order and how long each step takes, see our [step-by-step path for learning AI](/learn-ai).
+
 ### Why coding isn't the bottleneck it used to be
 
 Five years ago, getting meaningful value from AI required either technical skill or a technical co-founder. APIs were the only real access point. Today the interface has completely changed. Claude, ChatGPT, Gemini, and similar tools are designed for people who think in plain English, not Python. You describe what you want, and the model does the work.
@@ -10570,6 +10868,8 @@ This is why the BCG research finding is so relevant: 79% of professionals who re
 ### When self-paced learning makes sense for AI
 
 In-person programs are not always the right answer. Self-paced online learning makes sense for AI if you're exploring whether the field is relevant to your work before committing time or money, if you need to fill a very specific, narrow knowledge gap (understanding how a particular API works, learning the syntax of a specific tool), or if the cost and time commitment of an in-person program isn't currently feasible.
+
+If you go the self-paced route, our [free path for learning AI](/learn-ai) lists what to learn in order, what to skip, and a 30-day starter plan.
 
 What self-paced learning reliably produces for AI: familiarity. Knowledge of what the tools are and what they can do. A general sense of how the field works. What it rarely produces: changed workflow, reliable applied skill, the judgment to evaluate AI outputs and iterate on them effectively. If familiarity is the goal, online is efficient. If capability is the goal, the format needs to match.
 
@@ -11200,6 +11500,8 @@ There's a meaningful difference between occasionally using AI and having AI embe
 Workflow design as a skill means being able to look at a recurring task and ask: what are the inputs? What's the output format? Which steps could AI handle reliably? How do I verify quality? What's the fastest way to get from input to finished output?
 
 This doesn't require coding. Tools like Make, Zapier, and Claude Projects allow non-technical professionals to build genuinely sophisticated workflows without writing a line of code. The constraint is design thinking, not technical skill. And design thinking is learnable — but it's learned through practice, not by reading about it.
+
+For a week-by-week way to build these skills, see our [learning path for AI beginners](/learn-ai).
 
 ### What this means for professionals who want to close the gap
 

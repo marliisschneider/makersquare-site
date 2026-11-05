@@ -48,7 +48,7 @@ This site relies on a set of marketing / lead-attribution scripts. They are crit
 
 ### Public pages (the list)
 
-`404.html`, `about.html`, `ai-bootcamp-for-executives.html`, `ai-course-for-product-managers.html`, `ai-training-austin.html`, `ai-training-for-project-managers.html`, `ai-training-vs-consultants.html`, `alumni.html`, `apply.html`, `case-study-roverpass.html`, `comparison.html`, `corporate.html`, `curriculum.html`, `demo-day.html`, `demo-night.html`, `demo-ppc.html`, `enroll.html`, `faq.html`, `housing.html`, `index.html`, `immersive.html`, `pricing.html`, `privacy.html`, `quickstart.html`, `quickstart-download.html`, `scholarship.html`, `team.html`, `terms.html`, `thank-you.html`, `use-cases.html`, `workshop-register.html`, `workshops.html`
+`404.html`, `about.html`, `ai-bootcamp-for-executives.html`, `ai-course-for-product-managers.html`, `ai-training-austin.html`, `ai-training-for-project-managers.html`, `ai-training-vs-consultants.html`, `alumni.html`, `apply.html`, `case-study-roverpass.html`, `comparison.html`, `corporate.html`, `curriculum.html`, `demo-day.html`, `demo-night.html`, `demo-ppc.html`, `enroll.html`, `faq.html`, `housing.html`, `index.html`, `immersive.html`, `learn-ai.html`, `pricing.html`, `privacy.html`, `quickstart.html`, `quickstart-download.html`, `scholarship.html`, `team.html`, `terms.html`, `thank-you.html`, `use-cases.html`, `workshop-register.html`, `workshops.html`
 
 `HANDOFF.html` is an internal handoff doc — exempt from these rules.
 
@@ -272,6 +272,7 @@ B2B is a primary motion. "For Teams" in main nav → `/corporate`: (1) private 3
 | `scholarship.html` | `/scholarship` | $500 discount for vets/first responders/educators |
 | `use-cases.html` | `/use-cases` | Industry-specific AI use cases |
 | `faq.html` | `/faq` | FAQ |
+| `learn-ai.html` | `/learn-ai` | SEO hub: how to learn AI (links out to guides + course roundups) |
 | `demo-day.html` | `/demo-day` | Demo Day info |
 | `alumni.html` | `/alumni` | Alumni showcase |
 | `about.html` | `/about` | About MakerSquare |
