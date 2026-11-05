@@ -305,6 +305,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.makersquare.ai/student-projects</loc>
+    <lastmod>2026-11-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.makersquare.ai/case-study-ted-kilgore</loc>
     <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
