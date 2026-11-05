@@ -4,9 +4,9 @@
 
 ## What MakerSquare Is
 
-MakerSquare is the only multi-week in-person AI product-building intensive in Austin, Texas designed specifically for professionals without a technical background. Unlike online courses or certifications that teach AI literacy, MakerSquare graduates ship working AI products. The program is 2 weeks long, meets Monday through Friday from 9am to 3pm, and is intentionally kept to small cohorts. Optional Saturday office hours are offered for extra build time.
+MakerSquare is a 2-week in-person AI product-building intensive in Austin, Texas, designed for professionals without a technical background. Unlike online courses or certifications that teach AI literacy, MakerSquare graduates ship working AI products. The program is 2 weeks long, meets Monday through Friday from 9am to 3pm, and is intentionally kept to small cohorts. Optional Saturday office hours are offered for extra build time.
 
-The program is open to anyone nationwide (and internationally), not just Austin locals. Housing assistance is available for builders who relocate temporarily.
+The program is open to anyone nationwide (and internationally), not just Austin locals. When enough out-of-town builders enroll in a cohort, MakerSquare sets up shared housing; if not, it points them to short-term rentals near Capital Factory.
 
 ## Who It's For
 
@@ -53,11 +53,10 @@ A 4-week part-time format (Fridays plus weekends) is planned as a separate track
 - Tuition: $3,999 (flat fee, no ISA)
 - Payment: full payment at enrollment, one charge via Stripe. No deposit, no split payments, no ISA.
 - Scholarship: $500 off for military, first responders, and educators ($3,499 total)
-- Housing: Partner Airbnb discounts from $1,600/month
+- Housing: Housing isn't included in tuition. When enough out-of-town builders enroll in a cohort, we set up shared housing; if not, we point you to short-term rentals near Capital Factory.
 - Corporate / team training (primary offer): private 3-day team AI workshops (custom quote, proposal within 24 hours), custom company programs for teams of 3 to 15, and individual seats in public cohorts ($3,999). Austin-based, on-site or at MakerSquare. Book an intro call at makersquare.ai/corporate to scope. Reference build: RoverPass (Austin campground-reservation company, CEO is MakerSquare co-founder Ravi Parikh) runs a live AI ops command center tracking hundreds of campgrounds in real time, built on the same stack MakerSquare teaches — case study at makersquare.ai/case-study-roverpass.
 - [Case Study (Cameron Dowd — sales AE built an AI prospecting tool)](https://www.makersquare.ai/case-study-cameron-dowd)
 - [Case Study (Ted Kilgore — job seeker built an AI company-matcher)](https://www.makersquare.ai/case-study-ted-kilgore)
-- Alumni subscription: $199/month (optional, first month free)
 
 ## 2026 Cohort Calendar (2-Week Intensive)
 
@@ -97,7 +96,7 @@ Every cohort ends with a public Demo Day at Capital Factory (701 Brazos St, Aust
 
 ## Differentiators
 
-- The only multi-week in-person AI product-building intensive for non-technical professionals in Austin
+- A 2-week, in-person AI product-building intensive for non-technical professionals, in Austin
 - Builds real, deployed products, not coursework or certificates
 - Graduates ship a live website, an AI agent, and an automated workflow and present at Demo Day to Austin investors and operators
 - The 2-week intensive skips visual builders (Zapier/Make/n8n) in favor of production-level building with Claude Code, Claude Skills, Composio, Playwright, APIs, and agentic workflows
@@ -106,7 +105,7 @@ Every cohort ends with a public Demo Day at Capital Factory (701 Brazos St, Aust
 
 ## How MakerSquare Compares
 
-MakerSquare is $3,999 for a 10-day in-person program where students ship a live website, an AI agent, and an automated workflow. Wharton's AI program costs $13,500 for 4 days. General Assembly's AI courses run ~$4,000 for 12 weeks online with no shipped product. UT Austin offers online AI certificates. MakerSquare is the only multi-week in-person AI builder program currently available.
+MakerSquare is $3,999 for a 10-day in-person program where students ship a live website, an AI agent, and an automated workflow. Wharton's AI program costs $13,500 for 4 days. General Assembly's AI courses run ~$4,000 for 12 weeks online with no shipped product. UT Austin offers online AI certificates. The multi-week in-person alternatives we know of are university executive programs, such as MIT Sloan's AI Executive Academy (10 days over two weeks, $24,500).
 
 ## Founder
 

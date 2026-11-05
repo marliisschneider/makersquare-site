@@ -164,7 +164,7 @@ Director of System Performance · Hesed House (homeless shelter)
 
 What he built
 
-An ops dashboard plus two agents for the shelter — one that scouts grant and funding opportunities, one that finds voucher-friendly housing for guests — each dropping a weekly digest in his inbox, so staff stop hunting ten sites by hand.
+A case-manager dashboard for the shelter, plus an agent that reads incoming email, turns each update into a structured guest record, and flags anything it isn’t sure about for a person to confirm. He left with plans for two more agents.
 
 > “The biggest win isn’t what I built — it’s what I can do going forward. There’s nothing they could hand me that I couldn’t build a solution for.”
 
@@ -183,7 +183,7 @@ An agent that handles every incoming RFI and submittal email — reads it, downl
 
 ![Chris walks the room through his shelter dashboard](images/cohort2/c2-chris-present.jpg?v=1) Chris walks the room through his shelter dashboard
 
-![Jennifer presenting the agent she built](images/cohort2/c2-jennifer-present.jpg?v=1) Jennifer presenting the agent she built
+![Jennifer Francis presenting to Cohort 2 at Capital Factory](images/cohort2/c2-jennifer-present.jpg?v=1) Jennifer Francis, Cohort 2
 
 ![Building on real work, from day one](images/cohort2/c2-build.jpg?v=1) Building on real work, from day one
 
@@ -191,7 +191,7 @@ An agent that handles every incoming RFI and submittal email — reads it, downl
 
 ![A MakerSquare Cohort 2 builder presenting their AI project at Demo Day](images/cohort2/c2-chris-present.jpg?v=1) Chris walks the room through his shelter dashboard
 
-![A MakerSquare Cohort 2 builder demoing their finished product on screen](images/cohort2/c2-jennifer-present.jpg?v=1) Jennifer presenting the agent she built
+![A MakerSquare Cohort 2 builder demoing their finished product on screen](images/cohort2/c2-jennifer-present.jpg?v=1) Jennifer Francis, Cohort 2
 
 ![MakerSquare Cohort 2 students building during the 2-week program](images/cohort2/c2-build.jpg?v=1) Building on real work, from day one
 
@@ -546,7 +546,7 @@ $5,999, discounted to $3,999
 Schedule An Intro Call
 Pay in full · $500 scholarship for vets, first responders & educators
 
-Housing & travel not included — [out-of-town options from ~$1,600/mo](/housing)
+Housing & travel not included — [how housing works for out-of-town builders](/housing)
 
 Not sure yet? Book a quick call →
 
@@ -1633,7 +1633,7 @@ Talk to Our Training Team
 
 ![Supabase keys and row-level security, Day 4](images/cohort1/c1-0953.jpg) Supabase keys and row-level security, Day 4
 
-![Jennifer presenting the agent she built](images/cohort2/c2-jennifer-present.jpg?v=1) Jennifer presenting the agent she built
+![Jennifer Francis presenting to Cohort 2 at Capital Factory](images/cohort2/c2-jennifer-present.jpg?v=1) Jennifer Francis, Cohort 2
 
 ![Demo Night in Austin draws a full house](images/events/demo-night-0984.jpg) Demo Night in Austin draws a full house
 
@@ -1647,7 +1647,7 @@ Chris walking the room through his shelter dashboard
 
 Supabase keys and row-level security, Day 4
 
-Jennifer presenting the agent she built
+Jennifer Francis, Cohort 2
 
 Demo Night in Austin draws a full house
 
@@ -1959,7 +1959,7 @@ Confirmed in 24 hrs
 
 Next cohort
 
-### Two cohorts in. The next starts January 11.
+### Two cohorts in. The next starts January 11, 2027.
 
 Completed
 
@@ -1970,14 +1970,14 @@ Demo Day: Fri Jul 17 eve
 
 Graduated July 17
 
-Enrollment Closed
+Completed
 
 Cohort 2
 
 Aug 3 – Aug 14, 2026
 Demo Day: Fri Aug 14 eve
 
-Closed July 27 · Starts Aug 3
+Graduated August 14
 
 Open Now — Enrolling
 
@@ -2379,149 +2379,37 @@ Apply for discount
 
 # Student Housing in Austin TX | MakerSquare AI Bootcamp
 
-> Find housing near MakerSquare in Austin, Texas. Partner Airbnb discounts, furnished apartments, shared houses, and hotel options. Neighborhood guide for out of town students.
+> Coming to MakerSquare from out of town? How housing works for the 2-week program in Austin, plus a guide to neighborhoods near Capital Factory.
 
 Housing
 
-## Coming from out of town? We've got you covered.
+## Coming from out of town? Here’s how housing works.
 
-MakerSquare is in Austin, but builders come from across Texas and beyond. We work with a curated list of Airbnb hosts who offer discounted rates for enrolled builders. Each property is vetted for workspace quality, internet speed, and proximity. Full list with booking codes shared after admission.
+Housing isn’t included in tuition. When enough out-of-town builders enroll in a cohort, we set up shared housing. If not, we point you to short-term rentals near Capital Factory in downtown Austin, where the program runs.
 
 📍 East Austin
 
-10-20% off
-
-~10 min
-
-From campus
-
-10-20%
-
-Below standard Airbnb
-
-4 wks
-
-Housing available
-
-Wi-Fi
-
-Verified at each property
-
-Featured Property
-
-### East Austin Modern Bungalow
-
-One of our top partner properties. Fully furnished, fast Wi-Fi, 10 min from campus. Available at a discounted rate for enrolled builders.
-
-![East Austin Modern Bungalow — living area](https://assets.guesty.com/image/upload/v1721669613/oe6asaof4jb7pmquw4g9.jpg)
-
-![East Austin Modern Bungalow — interior](https://assets.guesty.com/image/upload/v1721669614/lrfl1iz5ivvphrucqpe7.jpg)
-
-![East Austin Modern Bungalow — bedroom](https://assets.guesty.com/image/upload/v1721669613/zkurfw7jxxr34fdpazqi.jpg)
-
-![East Austin Modern Bungalow — kitchen](https://assets.guesty.com/image/upload/v1721669614/kafjkl0agl2caitee6w3.jpg)
-
-![East Austin Modern Bungalow — workspace](https://assets.guesty.com/image/upload/v1721669614/cn9btehse7uwgei0vs3a.jpg)
-
-![East Austin Modern Bungalow — bathroom](https://assets.guesty.com/image/upload/v1721669613/ldnsnrtbxcsyhraqkhmq.jpg)
-
-![East Austin Modern Bungalow — exterior](https://assets.guesty.com/image/upload/v1721669613/pv4dazxrhj2awtimoudu.jpg)
-
-![East Austin Modern Bungalow — see more photos](https://assets.guesty.com/image/upload/v1721669613/jlrcxox5z7nqpmvjnw9u.jpg)
-+9 more
-
-×
-‹
-
-›
+Capital Factory
 
 Options
 
-### Housing that fits how you want to live.
+### Two ways it usually goes.
 
-Most Popular
+When the cohort has enough out-of-town builders
 
-#### Furnished Studio or 1BR
+#### Shared housing
 
-Private furnished apartment near campus with a dedicated workspace. Ideal for builders who want their own space evenings and weekends.
+When enough out-of-town builders enroll in the same cohort, we set up shared housing so you live with your classmates. We’ll tell you whether it’s on for your cohort once out-of-town enrollment is clear.
 
-~$2,800
+Otherwise
 
-/ month
+#### Short-term rental near Capital Factory
 
-MakerSquare rate. ~15% below standard pricing.
+If your cohort doesn’t have shared housing, we’ll point you to short-term rentals near Capital Factory, 701 Brazos St in downtown Austin. You book directly with the host.
 
-Private workspace with 200+ Mbps internet
+Questions about housing for your cohort? Email us.
 
-Fully furnished, kitchen included
-
-Flexible check-in/out around program dates
-
-10-15 minute drive to campus
-
-Walking distance to coffee shops
-
-Shared Option
-
-#### Shared House, Central Austin
-
-Private room in a furnished home shared with 2-3 other MakerSquare builders. Built-in community, split costs.
-
-~$1,600
-
-/ month
-
-MakerSquare rate. Shared with enrolled students.
-
-Private bedroom, shared common areas
-
-High-speed internet throughout
-
-Shared study space and kitchen
-
-Housemates are fellow builders
-
-15 minute drive to campus
-
-Weekly Stay
-
-#### Boutique Hotel Near Campus
-
-Group rate at a well-located Austin boutique hotel. For builders who prefer a hotel experience.
-
-~$120
-
-/ night
-
-Group rate. Book through our housing coordinator.
-
-Daily housekeeping and concierge
-
-Flexible cancellation policy
-
-Business-grade internet
-
-Fitness center access
-
-Custom
-
-#### Arrange Your Own
-
-Many builders commute from within Austin or find their own rental. We share the campus location and neighborhood map after admission.
-
-—
-
-No coordination needed.
-
-Full campus address shared post-admission
-
-Neighborhood recommendations provided
-
-Parking info available
-
-Not sure which option is right for you? Our housing coordinator can help.
-
-[Contact our housing coordinator](mailto:housing@makersquare.ai)
+[Email us about housing](mailto:housing@makersquare.ai)
 housing@makersquare.ai
 
 Location
@@ -2537,43 +2425,43 @@ Location
 
 Getting set up
 
-### Three steps. We handle the rest.
+### How it works. Three steps.
 
 01
 
-#### Tell us your preference
+#### Enroll and tell us you’re traveling
 
-Private studio, shared house, or hotel. Budget, dates, any requirements.
+Let us know you’re coming from out of town and your dates.
 
 02
 
-#### Receive matched listings
+#### We check your cohort
 
-Curated options with MakerSquare discount codes. All vetted for Wi-Fi and workspace.
+If enough out-of-town builders are in your cohort, we set up shared housing and send you the details.
 
 03
 
-#### Book directly, arrive ready
+#### Or book a short-term rental
 
-You book with the host. We confirm everything is set before Day 1.
+If not, we point you to short-term rentals near Capital Factory. You book directly with the host.
 
 Housing FAQ
 
 ### Common questions.
 
-Do I need to arrange housing to attend? No. Many builders live in or near Austin already. Housing assistance is for those relocating temporarily for the program.
+Do I need to arrange housing to attend? No. Many builders live in or near Austin already. This page is for builders relocating temporarily for the program.
 
-When should I book? Wait until you're admitted. We share the full partner list with discount codes after admission. Booking 3-4 weeks before Day 1 is typical.
+When should I book? Enroll first. We’ll tell you whether shared housing is on for your cohort once out-of-town enrollment is clear. Plan to book 3–4 weeks before Day 1.
 
-Can I extend my stay beyond the program? Yes. Most hosts offer extended stay rates. Many builders stay an extra week or two to explore Austin after Demo Day.
+Can I extend my stay beyond the program? That’s between you and your host. If you’re in a short-term rental, ask the host before you book.
 
-Is there a housing fee from MakerSquare? No. Housing is between you and the host. We negotiate discounts and vet properties, but there's no MakerSquare fee on top.
+Is there a housing fee from MakerSquare? No. Housing isn’t included in tuition, and MakerSquare doesn’t add a fee on top.
 
-Are there family-friendly options? Yes. Several partner properties accommodate families. Let us know your situation and we'll match you with the right listings.
+Are there family-friendly options? If you’re bringing family, a short-term rental near Capital Factory is usually the better fit. Email housing@makersquare.ai and we’ll point you to options.
 
 #### Questions about housing?
 
-Our housing coordinator can help you find the right option.
+Email us and we’ll point you in the right direction.
 
 [Email housing@makersquare.ai](mailto:housing@makersquare.ai)
 Or enroll first and we'll walk you through housing options after you secure your spot.
@@ -2609,7 +2497,7 @@ MakerSquare is Austin’s school of applied AI for non-technical professionals. 
 
 #### What makes MakerSquare different from online AI courses?
 
-MakerSquare is the only multi-week in-person AI builder program currently available. Online courses teach concepts; MakerSquare graduates ship a live website, a working AI agent, and an automated workflow — deployed. The in-person, immersive format — 9am to 3pm, Monday through Friday for 2 weeks — means you actually build rather than just watch videos. You also leave with a cohort network and a public Demo Day presentation that online courses can't replicate.
+MakerSquare is two weeks in person, 9am to 3pm, and you build on a problem from your own work. Online courses teach concepts; MakerSquare graduates ship a live website, a working AI agent, and an automated workflow — deployed. The in-person, immersive format — 9am to 3pm, Monday through Friday for 2 weeks — means you actually build rather than just watch videos. You also leave with a cohort network and a public Demo Day presentation that online courses can't replicate.
 
 #### When does the next cohort start?
 
@@ -2673,7 +2561,7 @@ Yes. A $500 Service Scholarship is available for military veterans, active duty 
 
 #### Are there any additional fees beyond tuition?
 
-Yes, two things outside of tuition: (1) approximately $15–30 in AI service fees during the program — Claude, Whisper, and ElevenLabs API usage — paid directly to those services; (2) housing if you're coming from out of town, which runs approximately $1,600/month with partner discounts. No income share agreements, no hidden fees.
+Yes, two things outside of tuition: (1) approximately $15–30 in AI service fees during the program — Claude, Whisper, and ElevenLabs API usage — paid directly to those services; (2) housing if you're coming from out of town. When enough out-of-town builders enroll in a cohort, we set up shared housing; if not, we point you to short-term rentals near Capital Factory. No income share agreements, no hidden fees.
 
 Curriculum & what you build
 
@@ -2715,7 +2603,7 @@ Logistics
 
 #### Where is MakerSquare located in Austin?
 
-MakerSquare is in Austin, TX. Exact location details are shared with enrolled students. The campus is near downtown Austin, accessible by car and ride-share. Partner housing is available nearby.
+MakerSquare is in Austin, TX. Exact location details are shared with enrolled students. The campus is near downtown Austin, accessible by car and ride-share. Housing isn’t included in tuition. When enough out-of-town builders enroll in a cohort, we set up shared housing; if not, we point you to short-term rentals near Capital Factory.
 
 #### Is housing included?
 
@@ -2772,7 +2660,7 @@ Schedule An Intro Call
 
 There are more AI training programs launching every month. This page gives you an honest, specific comparison — price, format, duration, and what you actually walk away with — so you can decide which one is right for you.
 
-**MakerSquare is the only multi-week in-person AI builder program currently available.** Every other multi-week program is online, evenings, or async — lecture decks and video calls, not building. If you want immersive, in-person, and long enough to actually change how you work — there is currently one option.
+**Two weeks, in person, building from day one.** Most multi-week AI programs are online, evenings, or async. The in-person multi-week programs we know of are university executive sessions, such as MIT Sloan’s AI Executive Academy at $24,500. MakerSquare is $3,999 in Austin, and you build on a problem from your own work. [See every in-person program we compared →](/blog/best-in-person-ai-bootcamps-2026)
 
 | | Wharton AI Generative AI for Business | UT Austin AI & ML / Exec Ed | General Assembly AI/ML Part-Time | Section / Maven Live Online Cohorts | GetSmarter University short courses | MakerSquare Austin, TX · In-Person |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -3686,7 +3574,7 @@ Apply to join us as a mentor, guest speaker, Demo Day judge, investor, or hiring
 
 > Every MakerSquare cohort closes with a public Demo Day in Austin, TX. Builders present live AI products to investors and operators. Free to attend.
 
-4 cohorts in 2026.
+Every cohort ends on stage.
 
 ## Demo Day. The moment builders go public.
 
@@ -3788,9 +3676,9 @@ Demo Days are held at a venue in Austin's tech community. This is what an evenin
 ![Evening tech event at Capital Factory Austin — speaker on stage with audience](capital-factory-event.jpg)
 An evening event at Capital Factory — Austin's premier startup hub and a regular venue for the Austin tech community.
 
-2026 Schedule
+Demo Day calendar
 
-### 8 Demo Days. July through December 2026.
+### One Demo Day per cohort. Next up: January 22, 2027.
 
 Every cohort closes with a public Demo Day on the Friday evening of Week 2. All events are in Austin, TX. All are free to attend.
 
@@ -3814,7 +3702,7 @@ Friday evening · Free
 
 Want to be on stage?
 
-### The next Demo Day is July 17, 2026.
+### The next Demo Day is January 22, 2027.
 
 Cohort 3 starts Jan 11. Small cohorts. Free to attend.
 
@@ -3876,11 +3764,9 @@ When someone asks "who built your AI tool?" — the answer leads back to MakerSq
 
 A certificate of completion shareable directly to LinkedIn. More importantly, you have live, deployed AI tools — a stronger signal than any credential.
 
-Optional · $49/month
-
 #### Stay current as AI evolves
 
-Curriculum updates as tools change, monthly live sessions, job board access, and peer review. Cancel anytime. First month free after graduation. [See details →](/immersive)
+Curriculum updates as tools change, monthly live sessions, job board access, and peer review. [See details →](/immersive)
 
 #### Office hours access
 
