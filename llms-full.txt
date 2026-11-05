@@ -3744,33 +3744,17 @@ Non-technical professionals, two weeks, real deployed tools. Here’s what two o
 
 Alumni benefits
 
-### What you get for life after Demo Day.
+### What you keep after Demo Day.
 
-Graduation isn't the end. MakerSquare alumni stay connected to each other, to the Austin tech community, and to everything being built in future cohorts.
+Graduation isn't the end. MakerSquare alumni stay connected to each other in the alumni Slack.
 
 #### Lifetime alumni Slack
 
 Permanent access to the MakerSquare alumni network — builders across every cohort, sharing what they're shipping, answering each other's questions, and finding collaborators.
 
-#### Demo Day access — every cohort
-
-Priority invites to every future Demo Day. Watch what each new cohort builds, stay current on what's possible with AI, and keep showing up in the room where Austin's builders and investors gather.
-
-#### Referral network
-
-When someone asks "who built your AI tool?" — the answer leads back to MakerSquare. Alumni refer each other for consulting work, collaborations, and hiring. The cohort becomes a permanent professional network.
-
 #### Shareable certificate
 
 A certificate of completion shareable directly to LinkedIn. More importantly, you have live, deployed AI tools — a stronger signal than any credential.
-
-#### Stay current as AI evolves
-
-Curriculum updates as tools change, monthly live sessions, job board access, and peer review. [See details →](/immersive)
-
-#### Office hours access
-
-Alumni can drop into future cohort office hours on Saturdays. When you're building something new six months later and hit a wall, the instructors and the room are still available to you.
 
 Outcomes
 
@@ -3782,7 +3766,7 @@ Most alumni return to their jobs and immediately start deploying AI tools to the
 
 #### Launch something new
 
-For founders, the capstone product often becomes the foundation of their company. With a working product, a Demo Day presentation, and a network in the room — many Cohort 1 builders come in with an idea and leave with a prototype live at a URL.
+For founders, the capstone product often becomes the foundation of their company. With a working product, a Demo Day presentation, and a network in the room — builders come in with an idea and leave with a prototype live at a URL.
 
 #### Lead AI for their team
 
