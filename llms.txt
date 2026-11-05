@@ -122,6 +122,7 @@ Ravi Parikh — Co-founder, MakerSquare. Austin-based serial entrepreneur; co-fo
 - [Case Study (RoverPass AI ops command center)](https://www.makersquare.ai/case-study-roverpass)
 - [Case Study (Cameron Dowd — sales AE built an AI prospecting tool)](https://www.makersquare.ai/case-study-cameron-dowd)
 - [Case Study (Ted Kilgore — job seeker built an AI company-matcher)](https://www.makersquare.ai/case-study-ted-kilgore)
+- [How to Learn AI (step-by-step path for beginners)](https://www.makersquare.ai/learn-ai)
 - [AI Training in Austin (individuals + teams)](https://www.makersquare.ai/ai-training-austin)
 - [Train Your Team vs. Hire an AI Consultant](https://www.makersquare.ai/ai-training-vs-consultants)
 - [AI Course for Product Managers](https://www.makersquare.ai/ai-course-for-product-managers)
