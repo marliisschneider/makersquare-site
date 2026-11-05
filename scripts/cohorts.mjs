@@ -13,7 +13,7 @@
  * No dependencies, no build step, no Vercel config — pure Node built-ins so it
  * never runs on deploy and can't break the static build.
  */
-import { readFileSync, writeFileSync } from 'node:fs';
+import { readFileSync, writeFileSync, readdirSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
@@ -51,6 +51,7 @@ const TOKENS = {
   enrollCloseShort: monthDay(nextOpen.enrollClose),
   endShort: short(nextOpen.end),
   startLong2: long(nextOpen.start),
+  demoLong: long(nextDemo.end), // next upcoming Demo Day (= a cohort's end date)
 };
 
 // --- helpers ---------------------------------------------------------------
@@ -169,16 +170,35 @@ edit('index.html', (src) => {
     b = b.replace(/(\n(\s*))"eventStatus":/, `$1"image": ["${prog.ogImage}"],$1"url": "${prog.demoUrl}",$1"performer": {"@type": "PerformingGroup", "name": "MakerSquare ${nextDemo.name} graduates"},$1"eventStatus":`);
   if (!b.includes('"validFrom"'))
     b = b.replace('"availability": "https://schema.org/InStock", "name": "Free admission"', `"availability": "https://schema.org/InStock", "validFrom": "${nextDemo.start}", "name": "Free admission"`);
+  else
+    b = b.replace(/"validFrom": "[^"]*"/, `"validFrom": "${nextDemo.start}"`);
+  b = b.replace(/"@id": "https:\/\/www\.makersquare\.ai\/#demo-day-c\d+"/, `"@id": "https://www.makersquare.ai/#demo-day-c${nextDemo.id}"`);
   return src.slice(0, open) + b + src.slice(end + 1);
 });
 
 // --- 3. visible banner markers --------------------------------------------
-for (const f of ['index.html', 'immersive.html', 'demo-ppc.html', 'demo-ppc-legal.html', 'demo-ppc-pm.html', 'corporate.html', 'ai-training-austin.html', 'enroll.html', 'ai-course-for-product-managers.html', 'ai-training-for-project-managers.html', 'ai-bootcamp-for-executives.html', 'learn-ai.html', 'student-projects.html']) {
+// Every top-level page that carries a <!--COHORT:token-->...<!--/--> marker is
+// stamped. Discovered by scanning, not a hand-kept list: a hand list once missed
+// 7 pages (about, alumni, comparison, curriculum, demo-day, pricing, use-cases),
+// so their markers silently never updated.
+const markerPages = readdirSync(ROOT)
+  .filter((f) => f.endsWith('.html'))
+  .filter((f) => readFileSync(join(ROOT, f), 'utf8').includes('<!--COHORT:'))
+  .sort();
+for (const f of markerPages) {
   edit(f, (src) =>
     src.replace(/(<!--COHORT:(\w+)-->)([\s\S]*?)(<!--\/-->)/g, (m, openTag, tok, _inner, closeTag) =>
       TOKENS[tok] !== undefined ? `${openTag}${TOKENS[tok]}${closeTag}` : m)
   );
 }
+
+// --- 3a. faq.html FAQPage JSON-LD -----------------------------------------
+// HTML comment markers can't live inside a JSON string, so the two dated FAQ
+// answers in the schema are stamped by pattern instead.
+edit('faq.html', (src) => src
+  .replace(/("text": "(?:[^"\\]|\\.)*?)Cohort \d+ starts [A-Z][a-z]+ \d{1,2}, \d{4}\./, `$1${nextOpen.name} starts ${long(nextOpen.start)}.`)
+  .replace(/("text": "(?:[^"\\]|\\.)*?)The next Demo Day is [A-Z][a-z]+ \d{1,2}, \d{4}\./, `$1The next Demo Day is ${long(nextDemo.end)}.`)
+);
 
 // --- 3b. countdown deadline = next open cohort's enroll close (23:59 Central)
 for (const f of ['index.html', 'immersive.html']) {
