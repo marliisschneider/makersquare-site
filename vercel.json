@@ -39,6 +39,256 @@
       "permanent": true
     },
     {
+      "source": "/blog/ai-for-doctors",
+      "destination": "/blog/ai-for-healthcare-professionals-2026",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ai-for-nurses",
+      "destination": "/blog/ai-for-healthcare-professionals-2026",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ai-for-dentists",
+      "destination": "/blog/ai-for-healthcare-professionals-2026",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ai-for-pharmacists",
+      "destination": "/blog/ai-for-healthcare-professionals-2026",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ai-for-therapists",
+      "destination": "/blog/ai-for-healthcare-professionals-2026",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ai-for-veterinarians",
+      "destination": "/blog",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ai-for-graphic-designers",
+      "destination": "/blog/ai-for-content-creators-2026",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ai-for-photographers",
+      "destination": "/blog/ai-for-content-creators-2026",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ai-for-podcasters",
+      "destination": "/blog/ai-for-content-creators-2026",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ai-for-writers",
+      "destination": "/blog/ai-for-content-creators-2026",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ai-for-social-media-managers",
+      "destination": "/blog/ai-for-marketing-teams",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ai-for-seo",
+      "destination": "/blog/ai-for-marketing-teams",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ai-for-market-research",
+      "destination": "/blog/ai-for-marketing-teams",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ai-for-lead-generation",
+      "destination": "/blog/ai-for-sales-teams",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ai-for-retail",
+      "destination": "/blog/ai-for-ecommerce-2026",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ai-for-inventory-management",
+      "destination": "/blog/ai-for-ecommerce-2026",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ai-for-real-estate-investors",
+      "destination": "/blog/ai-for-real-estate-agents",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ai-for-property-managers",
+      "destination": "/blog/ai-for-real-estate-agents",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ai-for-teachers",
+      "destination": "/blog/ai-for-educators-and-coaches",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ai-for-product-managers",
+      "destination": "/ai-course-for-product-managers",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ai-for-accountants",
+      "destination": "/blog/ai-for-accounting-and-bookkeeping",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ai-for-small-business",
+      "destination": "/blog/ai-for-business-owners-non-technical",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ai-tools-for-entrepreneurs",
+      "destination": "/blog/ai-for-business-owners-non-technical",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ai-for-contractors",
+      "destination": "/blog/ai-for-business-owners-non-technical",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ai-for-breweries",
+      "destination": "/blog/ai-for-business-owners-non-technical",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ai-for-interior-designers",
+      "destination": "/blog/ai-for-business-owners-non-technical",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ai-for-architects",
+      "destination": "/blog",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ai-for-engineers",
+      "destination": "/blog",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ai-for-insurance-agents",
+      "destination": "/blog",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ai-for-financial-advisors",
+      "destination": "/blog",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ai-for-nonprofits",
+      "destination": "/blog",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ai-for-grant-writing",
+      "destination": "/blog",
+      "permanent": true
+    },
+    {
+      "source": "/blog/free-ai-tools-for-business",
+      "destination": "/blog/10-ai-tools-every-knowledge-worker-needs-2026",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ai-tools-for-productivity",
+      "destination": "/blog/10-ai-tools-every-knowledge-worker-needs-2026",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ai-for-email-management",
+      "destination": "/blog/10-ai-tools-every-knowledge-worker-needs-2026",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ai-for-scheduling",
+      "destination": "/blog/10-ai-tools-every-knowledge-worker-needs-2026",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ai-for-presentations",
+      "destination": "/blog/10-ai-tools-every-knowledge-worker-needs-2026",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ai-for-note-taking",
+      "destination": "/blog/ai-tools-for-remote-teams",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ai-for-proposal-writing",
+      "destination": "/blog/ai-for-freelancers-and-consultants",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-make-money-with-ai",
+      "destination": "/blog/ai-for-freelancers-and-consultants",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-start-an-ai-business",
+      "destination": "/blog",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ai-business-ideas",
+      "destination": "/blog",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-build-an-ai-agent",
+      "destination": "/blog/ai-automation-for-non-engineers",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-build-a-website-with-ai",
+      "destination": "/guides/deploy-with-vercel-and-github",
+      "permanent": true
+    },
+    {
+      "source": "/blog/build-chatbot-for-your-business-without-coding",
+      "destination": "/blog/build-ai-assistant-for-your-industry",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ai-for-operations-professionals",
+      "destination": "/blog/ai-workflows-for-small-teams",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ai-for-customer-service-teams",
+      "destination": "/blog",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ai-for-hr-and-recruiting-teams",
+      "destination": "/blog",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ai-data-analysis-without-coding",
+      "destination": "/blog",
+      "permanent": true
+    },
+    {
+      "source": "/blog/learn-claude-code-without-coding",
+      "destination": "/guides/learn-claude-code-for-beginners",
+      "permanent": true
+    },
+    {
       "source": "/",
       "has": [
         {
