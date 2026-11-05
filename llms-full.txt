@@ -5105,7 +5105,7 @@ A project is not real until it has a URL. Build a simple site with Claude Code, 
 
 **You are done when** you can send someone a link to something you built and it works on their phone.
 
-**Read:** [How to build a website with AI](/blog/how-to-build-a-website-with-ai), then the guides to [git for non-coders](/guides/git-workflow-for-non-coders), [deploying with Vercel and GitHub](/guides/deploy-with-vercel-and-github), and [setting up Supabase](/guides/how-to-set-up-supabase).
+**Read:** the guides to [git for non-coders](/guides/git-workflow-for-non-coders), [deploying with Vercel and GitHub](/guides/deploy-with-vercel-and-github), and [setting up Supabase](/guides/how-to-set-up-supabase).
 
 5
 
@@ -5117,7 +5117,7 @@ An agent is an AI that has tools and decides which to use. It can search, read y
 
 **You are done when** an agent finishes one real task end to end and you trust the output enough to check it instead of redo it.
 
-**Read:** [How to build an AI agent](/blog/how-to-build-an-ai-agent) and [how to set up a CLAUDE.md file](/guides/how-to-set-up-claude-md), which is how you give an agent standing instructions.
+**Read:** [AI automation for non-engineers](/blog/ai-automation-for-non-engineers) and [how to set up a CLAUDE.md file](/guides/how-to-set-up-claude-md), which is how you give an agent standing instructions.
 
 6
 
@@ -5245,7 +5245,7 @@ You can get through steps 1 to 3 without paying for anything except a $20 assist
 
 We run one option on this path: a [2-week, in-person program](/immersive) at Capital Factory in downtown Austin. It covers all six steps above in ten days, Monday to Friday, 9am to 3pm. You build on a problem from your own work and leave with three things running: a live website, a working AI agent, and an automated workflow. You present them at a public Demo Day on the last Friday. Tuition is $3,999. The next cohort starts January 11, 2027, and enrollment closes January 4.
 
-Many of our students are not from Austin. They fly in for the two weeks, and our [housing page](/housing) covers where people stay.
+Many of our students are not from Austin. They fly in for the two weeks, and the [out-of-town section](/immersive#out-of-town) covers where people stay.
 
 It is not the right fit for everyone. If you want to train models, look at Path B. If you can't take two weeks off, start with the free path above or a [3-day workshop](/workshops). If you have never used ChatGPT or Claude, spend two weeks on steps 1 and 2 first. You'll get far more out of any program.
 
