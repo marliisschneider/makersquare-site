@@ -3325,7 +3325,7 @@ Founder & CEO, MakerSquare
 [Featured in Built In “The Biggest Winners of the AI Revolution Aren’t Engineers” Read Marliis’s article →](https://builtin.com/articles/ai-rewards-domain-knowledge)
 
 ![Marliis Schneider presenting live demos to a full room at MakerSquare](images/events/demo-night-0984.jpg)
-Marliis running our July demo night — Austin, 2026
+Marliis running our June demo night — Austin, 2026
 
 ### The gap that started everything.
 
@@ -3609,7 +3609,7 @@ What it looks like
 
 ### A real room. Real demos.
 
-From our July demo night in Austin — non-engineers presenting live products to a full house.
+From our June demo night in Austin — non-engineers presenting live products to a full house.
 
 ![Audience watching a live demo on two screens at an Austin brewery](images/events/demo-night-0987.jpg)
 ![A presenter walking the room through a live product on two screens](images/events/demo-night-0984.jpg)
@@ -4867,7 +4867,7 @@ Fri Jul 17 · 6–8pm · Capital Factory, 701 Brazos St, Austin.
 Free AI demo nights, builder happy hours, and Demo Days — open to the Austin community. Come meet the people building real tools with AI, no coding background required.
 
 ![MakerSquare demo night audience at Celis Brewery, Austin](images/events/demo-night-0985.jpg)
-July demo night at Celis Brewery — live demos, full room
+June demo night at Celis Brewery — live demos, full room
 
 No public events on the calendar right now — [follow us on Meetup](https://www.meetup.com/makersquare-ai/) to hear about the next demo night first.
 
