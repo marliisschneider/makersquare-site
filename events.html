@@ -108,7 +108,11 @@ if(document.readyState=="complete"){zfutm_zfLead.zfutm_iframeSprt();zfutm_zfLead
 .evx-card-body p{font-size:.92rem;color:var(--text-secondary);line-height:1.6;margin-bottom:var(--s4)}
 .evx-where{font-size:.82rem;color:var(--text-muted);margin-bottom:var(--s5)}
 .evx-empty{text-align:center;color:var(--text-muted);font-size:.9rem;margin-top:var(--s8)}
-@media(max-width:720px){.evx-card{grid-template-columns:1fr}.evx-card-body{padding:0 var(--s6) var(--s6)}}
+.evx-past-h{font-family:var(--font-display);font-size:1.6rem;color:var(--navy);letter-spacing:-.02em;margin:var(--s10) 0 var(--s5)}
+.evx-past-list{display:flex;flex-direction:column;gap:var(--s6)}
+.evx-tag-past{background:var(--navy);color:var(--white)}
+.evx-card-past .evx-card-body p:last-child{margin-bottom:0}
+@media(max-width:720px){.evx-card{grid-template-columns:1fr}.evx-card-body{padding:0 var(--s6) var(--s6)}.evx-past-h{margin-top:var(--s8)}}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.makersquare.ai/"},{"@type":"ListItem","position":2,"name":"Events","item":"https://www.makersquare.ai/events"}]}
@@ -179,6 +183,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div></section>
 <div class="evx-wrap">
   <p class="evx-empty">No public events on the calendar right now — <a href="https://www.meetup.com/makersquare-ai/" target="_blank" rel="noopener" style="color:var(--indigo);font-weight:600;">follow us on Meetup</a> to hear about the next demo night first.</p>
+
+  <h2 class="evx-past-h">Past events</h2>
+  <div class="evx-past-list">
+    <article class="evx-card evx-card-past">
+      <div class="evx-card-img"><span class="evx-tag evx-tag-past">Past · Free</span><img src="images/events/claude-code-101-2026-11-05.webp" alt="Attendees building AI agents on laptops at MakerSquare's Claude Code 101 night, Capital Factory, Austin" loading="lazy" width="1200" height="900"></div>
+      <div class="evx-card-body">
+        <div class="evx-date">Thu, Nov 5, 2026 · 6:00–8:00 PM</div>
+        <h2>Build Your First AI Agent (No Coding) · Claude Code 101</h2>
+        <p>A hands-on night for complete beginners. Everyone brought a laptop, described the agent they wanted to Claude Code, and left with a working one running on their own machine.</p>
+        <div class="evx-where">📍 Capital Factory · 701 Brazos St, Austin, TX</div>
+        <p><a href="https://www.meetup.com/makersquare-ai/events/317179116/" target="_blank" rel="noopener" style="color:var(--indigo);font-weight:600;font-size:.88rem;">See the event on Meetup →</a></p>
+      </div>
+    </article>
+  </div>
 </div>
 </main>
 <footer class="footer">
