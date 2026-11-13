@@ -2,6 +2,8 @@
 
 Read this before editing any HTML file in this repo. General working preferences (voice, git commits, session ritual, etc.) are in the global `~/.claude/CLAUDE.md`.
 
+**Design: read `DESIGN-GUIDE.md` before building or redesigning any public page.** It has the colors, type, breakpoints, page structure, components, and a pre-ship checklist (screenshots at 390 / 820 / 1440).
+
 **Do NOT `git push` (as of Jul 20, 2026).** Commit locally with proper messages, then tell Marliis what's queued — she reviews and makes the final push herself. Pushes auto-deploy to production.
 
 **Never `git commit --amend` in this repo.** Marliis may push the queue at any moment; amending a commit she already pushed forks history and lands her in a merge-conflict dialog (happened Jul 22, 2026). Follow-up changes always go in a NEW commit — even when they refine the previous one.
