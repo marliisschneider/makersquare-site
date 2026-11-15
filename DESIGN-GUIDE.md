@@ -136,3 +136,4 @@ Use at most 2–3 dark sections per page. A page should read mostly light.
 4. **`font-family:'Fustat', sans-serif`** hard-coded 6 times instead of the token.
 5. **Homepage on phones:** a large gap opens between "You already know your" and "industry." in the H1, and the chat bubble covers the dates row near the bottom of the first screen.
 6. Two hero styles (light and dark) are mixed without a rule. Section 6 now sets one.
+7. At 820px wide the footer overflows by 4px (horizontal scroll) on every page, including the homepage.
