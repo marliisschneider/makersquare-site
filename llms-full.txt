@@ -2660,7 +2660,7 @@ Schedule An Intro Call
 
 There are more AI training programs launching every month. This page gives you an honest, specific comparison — price, format, duration, and what you actually walk away with — so you can decide which one is right for you.
 
-**Two weeks, in person, building from day one.** Most multi-week AI programs are online, evenings, or async. The in-person multi-week programs we know of are university executive sessions, such as MIT Sloan’s AI Executive Academy at $24,500. MakerSquare is $3,999 in Austin, and you build on a problem from your own work. [See every in-person program we compared →](/blog/best-in-person-ai-bootcamps-2026)
+**Two weeks, in person, building from day one.** Most multi-week AI programs are online, evenings, or async. The in-person multi-week programs we know of are university executive sessions, such as MIT Sloan’s AI Executive Academy at $24,500. MakerSquare is $3,999 in Austin, and you build on a problem from your own work. [See every program we compared →](/blog/best-ai-courses-bootcamps-2026)
 
 | | Wharton AI Generative AI for Business | UT Austin AI & ML / Exec Ed | General Assembly AI/ML Part-Time | Section / Maven Live Online Cohorts | GetSmarter University short courses | MakerSquare Austin, TX · In-Person |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -5960,7 +5960,7 @@ Can you take one or two weeks away from work?
 
 If yes, an intensive is the fastest route by far. If no, a live online cohort or a weekend workshop fits better.
 
-For side-by-side comparisons of real programs, see [the best AI courses and bootcamps in 2026](/blog/best-ai-courses-bootcamps-2026), [the best in-person AI bootcamps in the US](/blog/best-in-person-ai-bootcamps-2026), and [AI bootcamp vs. online course](/blog/ai-bootcamp-vs-online-course).
+For side-by-side comparisons of real programs, see [the best AI bootcamps in 2026](/blog/best-ai-courses-bootcamps-2026) and [AI bootcamp vs. online course](/blog/ai-bootcamp-vs-online-course).
 
 ### Free resources worth your time
 
@@ -6012,9 +6012,7 @@ Keep reading
 
 - [Using AI vs. building with AI: what's the difference?](/blog/using-ai-vs-building-with-ai)
 
-- [The best AI courses and bootcamps in 2026](/blog/best-ai-courses-bootcamps-2026)
-
-- [The best in-person AI bootcamps in the US (2026)](/blog/best-in-person-ai-bootcamps-2026)
+- [The best AI bootcamps in 2026: price, length, and who each is for](/blog/best-ai-courses-bootcamps-2026)
 
 Want to do all six steps in two weeks, in a room with an instructor? Book a short call and tell us what you want to build. We will tell you honestly whether the program fits.
 
@@ -9638,192 +9636,62 @@ Emsi Burning Glass · 2025 · Demand for AI-adjacent skills in Austin's non-tech
 
 <!-- https://www.makersquare.ai/blog/best-ai-courses-bootcamps-2026 -->
 
-# Best AI and Coding Bootcamps in 2026 (Honest Comparison)
+# Best AI Bootcamps in 2026: Price, Length, Who Each Is For
 
-> The best AI and coding bootcamps in 2026, compared by format, cost, and what you build. In-person, online, and AI tracks. No affiliate links.
+> The best AI bootcamps in 2026, compared on price, length, and format. 14 programs, online and in person, with every price checked on the program
 
 [← Blog](/blog)
 
 AI at Work
 
-## The best AI courses and bootcamps in 2026: an honest comparison.
+## The best AI bootcamps in 2026: price, length, and who each is for
 
-Marliis Schneider
+Ravi Parikh
 
-August 15, 2026
+Updated November 17, 2026
 
-5 min read
+12 min read
 
-![The best AI courses and bootcamps in 2026: an honest comparison.](../images/blog/best-ai-courses-bootcamps-2026-og.webp)
+![The best AI bootcamps in 2026: price, length, and who each is for](../images/blog/best-ai-courses-bootcamps-2026-og.webp)
 
 Key takeaways
 
-- No AI program is right for everyone. The right one depends on your goal: exploring (online, free), building skills for your current role (cohort program), or career change (bootcamp).
-
-- Free and self-paced programs have completion rates under 15%. If you're serious about developing AI skill rather than AI familiarity, the format you choose matters more than the curriculum.
-
-- In-person programs cost more and take more time, but produce consistently higher skill transfer. The data on structured vs. unstructured learning is unambiguous on this.
-
-- The most important question before choosing any program: what do I want to be able to do differently in 90 days? That question determines which format is right — not the reputation of the provider.
-
-The AI education market is enormous, confusing, and full of programs that use similar language to describe very different things. This comparison is an attempt to make it useful: organized by format rather than provider, honest about what each category does and doesn't deliver, and clear about who each is actually right for. There are no affiliate links here and no paid placements — MakerSquare is included because we run a program, and we've tried to describe it with the same objectivity we'd apply to the others.
-
-If you are still deciding what to learn before picking a program, start with [how to learn AI: an honest path for beginners](/learn-ai). It lays out the skills in order and what each one realistically takes.
-
-### Category 1: Free and self-paced (Coursera, fast.ai, DeepLearning.AI, YouTube)
-
-Free and self-paced programs are the right starting point if you're not yet sure whether AI is relevant to your work, or if you have high self-direction and a specific conceptual gap you want to fill. DeepLearning.AI's specializations are genuinely well-constructed. fast.ai's practical deep learning course is among the best freely available technical resources. Coursera's AI and machine learning tracks from Stanford and Google are thorough.
-
-The honest limitation: completion rates run under 15% for self-paced online courses, and most learners who do finish still struggle to apply what they learned to real work. If you've already tried a self-paced course and found yourself with a half-finished certificate and no changed workflow, that's not a motivation problem — it's a format problem. The curriculum was fine; the structure wasn't right for skill transfer.
-
-### Category 2: Online cohort programs (Maven, Reforge, Live courses)
-
-Online cohort programs add structure that self-paced courses don't have: a defined timeline, peer accountability, and a cohort of people going through the same material. Reforge runs cohort-based programs for product and growth professionals that have a strong reputation for rigor. Maven offers a wider range of cohort programs across topics including AI.
-
-The limitation of online cohorts compared to in-person: the accountability is real but softer. You're held to a schedule, but you're not in a room with people who can see whether you're actually building something. For professionals with strong self-direction, online cohorts are a meaningful step up from self-paced. For professionals who know they need more external structure to follow through, they often produce the same stall point as self-paced courses.
-
-### Category 3: Traditional bootcamps adding AI tracks
-
-Many of the established coding bootcamps — General Assembly, Flatiron, Hack Reactor, App Academy — have added AI tracks to their existing programs. These vary widely in quality. The best ones integrate AI tools into a software development curriculum that was already strong. The weaker ones are traditional coding bootcamps with AI buzzwords added to the marketing without meaningful curriculum change.
-
-The audience fit issue: traditional bootcamps are designed for career changers who want to become software engineers. The AI tracks within them are usually designed with the same audience in mind. If the goal is to become a developer, this is the right category. If the goal is to add AI capability to an existing professional career — as a lawyer, operator, marketer, or founder — the curriculum is generally not designed for you.
-
-### Category 4: In-person AI-specific programs (MakerSquare)
-
-In-person AI intensives are the newest category and the smallest. MakerSquare is the program we know best and the one we'd describe as the in-person option for professionals and operators rather than aspiring engineers. Two weeks, in person in Austin, $3,999, with no coding background required and a project shipped by the end.
-
-What in-person programs deliver that online options don't: the research is consistent on this. BCG found that structured training programs produce 67% higher ROI than unstructured ones. MIT and Harvard research on online course completion found sub-6% completion rates at scale. The format difference — accountability, compression, peer learning, a room of people held to the same timeline — produces different skill transfer than online alternatives. The tradeoff is cost and time commitment.
-
-### How to choose based on your actual goal
-
-If you want to explore AI before committing time or money: start with DeepLearning.AI's free Introduction to Machine Learning or any of Coursera's free audit options. Spend two weeks, see if the material is relevant to your work, and reassess.
-
-If you want to build skills for your current role and have strong self-direction: an online cohort (Maven, Reforge) is worth the investment. You get structure without requiring travel or time away from work.
-
-If you want to build with AI and need external accountability to follow through: in-person is the right format. The research supports it and the personal experience of most professionals who've tried both confirms it. MakerSquare is two weeks and built for this specific scenario.
-
-If you want to become a software engineer or AI researcher: a traditional bootcamp with a strong technical track is the right category — not this list.
-
-Frequently asked questions
-
-What is the best AI bootcamp in 2026?
-
-Depends on the goal. For career changers wanting to become developers: traditional bootcamps with strong technical AI tracks (Hack Reactor, App Academy). For professionals wanting to add AI to an existing career: MakerSquare's two-week in-person program. For learners with strong self-direction: DeepLearning.AI or Maven cohorts. The right program is the one matched to your specific goal and learning style.
-
-How much do AI courses and bootcamps cost in 2026?
-
-Self-paced online courses: free to $500. Online cohort programs: $500–$3,000 depending on provider and topic. Traditional coding bootcamps with AI tracks: $10,000–$20,000. In-person AI intensives like MakerSquare: $3,999 for two weeks.
-
-Is an AI bootcamp worth the money?
-
-For most professionals who have already tried self-paced options without success, yes. The format — in-person, structured, with a project shipped by the end — produces measurably higher skill transfer than self-paced alternatives. The relevant comparison is not bootcamp cost vs. online course cost. It's bootcamp cost vs. the cost of another year of attempting to develop AI skills without structure.
-
-Can I learn AI skills for free?
-
-You can learn about AI for free. DeepLearning.AI, fast.ai, and Coursera offer genuinely good content at no cost. The research on completion rates and skill transfer suggests that most learners who try this approach develop familiarity rather than capability. If the goal is capability — changed workflow, built tools, reliable applied skill — the free self-paced format rarely gets there.
-
-Keep reading
-
-- [The best in-person AI bootcamps in the US (2026): 11 programs by city](/blog/best-in-person-ai-bootcamps-2026)
-
-- [Why in-person AI learning produces better outcomes than self-paced: what the research shows.](/blog/in-person-ai-learning-vs-self-paced-research)
-
-- [How to learn AI without knowing how to code](/blog/how-to-learn-ai-without-coding)
-
-- [Non-technical AI skills: what actually matters in 2026](/blog/non-technical-ai-skills-2026)
-
-- [The 2-week AI bootcamp in Austin](/immersive)
-
-- [Agentic AI Courses in 2026: An Honest Comparison](/blog/agentic-ai-courses-2026)
-
-MakerSquare is the in-person option for professionals who want to build with AI rather than study it. Two weeks, in Austin, $3,999, with a project shipped by the end. The curriculum is available to review — it's the most transparent description of what you'll actually do, day by day.
-
-[Get the curriculum](https://www.makersquare.ai/curriculum?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_best-ai-courses-bootcamps-2026_curriculum_20260804)
-[Sign up for the newsletter](https://ai-builder-brief.beehiiv.com/?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_best-ai-courses-bootcamps-2026_newsletter_20260804)
-
-Sources
-
-1
-
-[HarvardX and MITx: The First Year of Open Online Courses](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2381263)
-
-Ho, A. et al. · MIT & Harvard · 2014
-
-2
-
-[AI at Work: Why Strategy Matters More Than Tools](https://www.bcg.com/publications/2026/ai-at-work-why-strategy-matters-more-than-tools)
-
-BCG · June 2026
-
-3
-
-[AI Readiness Report 2026](https://www.pearson.com/content/dam/global-store/global/resources/ai-readiness/AI-Readiness-Report-2026.pdf)
-
-Pearson · 2026
-
-4
-
-[Massive open online course completion rates revisited](https://www.irrodl.org/index.php/irrodl/article/view/1938)
-
-Jordan, K. · IRRODL · 2015
-
----
-
-<!-- https://www.makersquare.ai/blog/best-in-person-ai-bootcamps-2026 -->
-
-# Best In-Person AI Bootcamps in the US (2026)
-
-> 11 in-person AI programs across the US, compared by city, length, tuition, and who each fits. Plus what to budget if you travel. No affiliate links.
-
-[← Blog](/blog)
-
-AI at Work
-
-## The best in-person AI bootcamps in the US (2026)
-
-Marliis Schneider
-
-November 3, 2026
-
-11 min read
-
-![The best in-person AI bootcamps in the US (2026)](../images/blog/best-in-person-ai-bootcamps-2026-og.webp)
-
-Key takeaways
-
-- Real in-person AI programs in the US fall into two groups. University executive programs teach AI strategy in 1 to 10 days. A smaller set of bootcamps has you build working AI tools in the room.
+- AI bootcamps come in three kinds: programs where you build AI tools for the job you already have, programs that train you to become an AI engineer, and business school programs on AI strategy. Pick the kind before you compare prices.
 
 - Tuition on this list runs from $1,500 for a one-day workshop in Manhattan to $24,500 for MIT Sloan's 10-day AI Executive Academy in Cambridge.
 
-- Most programs are open to non-technical professionals. Deep Atlas is the exception here; it is built for working software engineers.
+- Most programs here take people with no coding background. Deep Atlas and Fullstack Academy expect some programming or math.
 
-- If none of these is in your city, budget for tuition plus flights, lodging, and meals. Only Stanford's fee on this list includes lodging.
+- Length runs from one day to six months. Short in-person programs mean stepping away from work; longer online ones fit around it.
 
-Search for an in-person AI bootcamp and Google mostly shows you what is near you. That is useful if you live in Boston or San Francisco. It is less useful if you live somewhere with no program at all, which is most of the country. Our own students travel to Austin from other states for two weeks of training, so we put the in-person options from across the country in one place.
+There is no single best AI bootcamp, because the label covers three different products. Some programs teach you to build AI tools for the job you already have. Some train you to become an AI engineer. Business schools sell short programs on AI strategy for executives. This page compares 14 programs across all three, online and in person, so you can pick the kind first and then compare price and length.
 
-How we built this list. Every program below runs its AI course in person, in a classroom, in a US city. We left out online-only courses and blended programs where the in-person part is a short add-on to months of online work. Every date, price, length, and audience line comes from the program's own page, checked on November 3, 2026. Links are in the sources at the bottom. There are no affiliate links. We run MakerSquare, so it is on the list, and we have described it the same way as the others.
+How we built this list. Every price, length, and audience line comes from the program's own page. We first checked the in-person programs on November 3, 2026, and rechecked all of them, plus the online programs, on November 17, 2026. Links are in the sources at the bottom. There are no affiliate links. We run MakerSquare, so it is on the list, and we have described it the same way as the others.
 
-### The list at a glance
+### The best AI bootcamps at a glance
 
-| Program | City | Length | Tuition |
-| --- | --- | --- | --- |
-| MIT Sloan AI Executive Academy | Cambridge, MA | 10 days | $24,500 |
-| Stanford GSB AI program | Stanford, CA | 1 week | $18,500 (incl. lodging, meals) |
-| Wharton Generative AI and Business Transformation | Philadelphia, PA | 4 days | $13,500 |
-| Kellogg Leading with AI | Chicago, IL | 4 days | $12,500 |
-| Columbia Leadership Intelligence in the Era of AI | New York, NY | 4 days | $10,550 |
-| Berkeley Haas AI for Executives | Berkeley, CA | 3 days | $6,500 |
-| Deep Atlas Immersive | San Francisco or New York | 1 week | $4,499 |
-| MakerSquare Immersive Our program | Austin, TX | 2 weeks | $3,999 |
-| Georgia Tech Scheller AI for Business | Atlanta, GA | 3 days | $2,495 |
-| FAU Certificate in AI in Business | Boca Raton, FL | 3 days | $2,495 |
-| Stony Brook AI for Business workshop | New York, NY | 1 day | $1,500 |
+| Program | Kind | Format | Length | Tuition |
+| --- | --- | --- | --- | --- |
+| MakerSquare Immersive Our program | Build for your job | In person, Austin | 2 weeks, full-time | $3,999 |
+| TripleTen AI Automation | Build for your job | Online, part-time | 4 months, about 20 hrs/week | From $5,950 |
+| BrainStation AI Certification | Build for your job | Live online, or New York, Toronto, London | 5 weeks, 3 hrs/week | On request |
+| Georgia Tech Scheller AI for Business | Build for your job | In person, Atlanta | 3 days | $2,495 |
+| FAU Certificate in AI in Business | Build for your job | Boca Raton or live online | 3 days | $2,495 |
+| Deep Atlas Immersive | Become an AI engineer | In person, San Francisco or New York | 1 week, full-time | $4,499 |
+| Fullstack Academy AI & Machine Learning | Become an AI engineer | Live online, evenings | 23 weeks | $4,995 upfront ($9,995 list) |
+| MIT Sloan AI Executive Academy | AI strategy for leaders | In person, Cambridge, MA | 10 days | $24,500 |
+| Stanford GSB AI program | AI strategy for leaders | In person, Stanford, CA | 1 week | $18,500 (incl. lodging, meals) |
+| Kellogg Leading with AI | AI strategy for leaders | In person, Chicago | 4 days | $12,500 |
+| Columbia Leadership Intelligence in the Era of AI | AI strategy for leaders | In person, New York | 4 days | $10,550 |
+| Berkeley Haas AI for Executives | AI strategy for leaders | In person, Berkeley, CA | 3 days | $6,500 |
+| Wharton Generative AI and Business Transformation | AI strategy for leaders | In person, Philadelphia | 4 days | On request |
+| Stony Brook AI for Business workshop | AI strategy for leaders | In person, New York | 1 day | $1,500 |
 
-The table is sorted by tuition, not by quality. We have not ranked these programs against each other, because they are built for different people. The sections below say who each one fits.
+The table is grouped by kind, not ranked. These programs are built for different people, so the sections below say who each one fits.
 
-### Programs where you build things
+### AI bootcamps where you build tools for your own job
 
-These are closest to what most people mean by "bootcamp." Most of the day goes to hands-on work, and you leave with something running.
+These are closest to what most people mean by "bootcamp." Most of the time goes to hands-on work, no coding background is required, and you leave with something running.
 
 ![Cohort 1 Demo Day at Capital Factory in Austin, with a student presenting on the big screen](../images/cohort1/c1-1050.jpg)
 Our program
@@ -9855,13 +9723,23 @@ Then they demo it at a public Demo Day at the end of week two, like the one in t
 [See the program](/immersive)
 [View the curriculum](/curriculum)
 
-#### Deep Atlas Immersive (San Francisco or New York)
+#### TripleTen AI Automation (online)
 
-**Format:** one full-time week in person, Saturday to Wednesday, 9am to 6:30pm. **Tuition:** $4,499. **Next cohorts:** December 5 in San Francisco and January 23 in New York.
+**Format:** four months, part-time and fully online, about 20 hours a week. **Tuition:** from $5,950 upfront, with monthly and pay-later options.
 
-Deep Atlas is written for professional software engineers who want to move into applied AI. Its page says the typical applicant has several years of engineering experience, and people from other roles do well "if they're competent programmers." The in-person week focuses on agentic AI engineering. The rest of its machine learning curriculum is self-paced, before or after the week.
+TripleTen says the course has no prerequisites and that 80% of its students come from non-tech backgrounds. It starts with prompting and no-code tools like Zapier and Make, then moves to APIs, webhooks, AI agents, and robotic process automation with UiPath, and ends with a capstone project.
 
-**Best for:** engineers who already code and want a fast, intense week on building AI systems.
+It is built for career changers. Career coaching is included, and TripleTen offers a tuition refund if you do not have a relevant job 10 months after graduating, with conditions in its terms of use.
+
+**Best for:** people who want to move into an AI automation job and need to study around a full-time schedule.
+
+#### BrainStation Artificial Intelligence Certification (online, New York, Toronto, London)
+
+**Format:** five weeks, three hours of live instruction a week, online or in person. **Tuition:** not listed; you contact BrainStation to reserve a date, and it mentions financing and partial scholarships.
+
+BrainStation says no coding or data science experience is needed and that the course is about applying AI tools, not building models. Topics run from prompt engineering to AI workflows, agents, and no-code automation with tools like Make. It offers an employer sponsorship package with a syllabus and an expense justification letter for people asking their company to pay.
+
+**Best for:** professionals who want a short, structured grounding in AI tools without leaving work.
 
 #### Georgia Tech Scheller AI for Business (Atlanta, GA)
 
@@ -9879,7 +9757,27 @@ Florida Atlantic University runs each session both on campus and online, so choo
 
 **Best for:** South Florida professionals who want a broad AI survey with some labs, close to home.
 
-### University executive programs
+### AI bootcamps that train you to become an AI engineer
+
+These are for people who want AI engineering to be their job. Expect to write code from the first week.
+
+#### Deep Atlas Immersive (San Francisco or New York)
+
+**Format:** one full-time week in person, Saturday to Wednesday, 9am to 6:30pm. **Tuition:** $4,499. **Next cohorts:** December 5 in San Francisco and January 23 in New York.
+
+Deep Atlas is written for professional software engineers who want to move into applied AI. Its page says the typical applicant has several years of engineering experience, and people from other roles do well "if they're competent programmers." The in-person week focuses on agentic AI engineering. The rest of its machine learning curriculum is self-paced, before or after the week.
+
+**Best for:** engineers who already code and want a fast, intense week on building AI systems.
+
+#### Fullstack Academy AI & Machine Learning Bootcamp (online)
+
+**Format:** 23 weeks, live online, Monday, Wednesday, and Thursday from 8 to 11pm Eastern. **Tuition:** $4,995 if paid upfront or $5,995 in installments, from a $9,995 list price. **Next cohort:** December 7, 2026 to May 27, 2027; apply by November 20.
+
+The curriculum covers Python, machine learning, generative and agentic AI, and MLOps across 25+ projects, with 1:1 career coaching. The page says no prior tech experience is needed, but its admissions section asks for some programming or intermediate math (linear algebra, probability, and statistics).
+
+**Best for:** career changers with some math or coding who want an AI or machine learning job and can study three evenings a week for six months.
+
+### University executive programs on AI strategy
 
 These are run by business schools for managers and executives. Expect faculty lectures, case studies, group work, and peers at a similar career stage. You leave with frameworks and a plan more often than with a working tool. Several review each registration before confirming a seat.
 
@@ -9898,14 +9796,6 @@ A joint program from MIT Sloan and the Schwarzman College of Computing. It cover
 Faculty come from the business school, the Institute for Human-Centered AI, engineering, law, and medicine. Stanford describes it as non-technical and says it is ideal for people with little or no technical AI expertise. Seats are confirmed on a rolling basis.
 
 **Best for:** senior executives deciding where AI investment makes sense. It is the only program on this list where the fee covers lodging, so the gap with cheaper options is smaller than the tuition suggests.
-
-#### Wharton Generative AI and Business Transformation (Philadelphia, PA)
-
-**Format:** four days in Philadelphia. **Tuition:** $13,500. **Dates:** run periodically; check Wharton's site for the next session.
-
-Led by faculty from the Wharton AI and Analytics Initiative. Sessions mix lectures, group activities, case studies, and industry panels, with topics running from large language models and retrieval-augmented generation to workflow redesign and AI governance. Wharton names C-suite leaders, product, marketing, sales, and strategy executives, and consultants as the audience.
-
-**Best for:** executives who need to set a company-wide generative AI plan.
 
 #### Kellogg Leading with AI (Chicago, IL)
 
@@ -9931,6 +9821,14 @@ Covers agentic AI systems, how to drive AI adoption inside an organization, and 
 
 **Best for:** leaders who want a short, current strategy program in the Bay Area at about half the price of the longer ones.
 
+#### Wharton Generative AI and Business Transformation (Philadelphia, PA)
+
+**Format:** four days in Philadelphia. **Tuition:** no longer shown on the program page, which now asks you to contact Wharton for dates and fees. It was listed at $13,500 when we checked on November 3, 2026.
+
+Led by faculty from the Wharton AI and Analytics Initiative. Sessions mix lectures, group activities, case studies, and industry panels, with topics running from large language models and prompt engineering to organizational adoption and AI governance. Wharton names C-suite leaders, product, marketing, sales, and strategy executives, and consultants as the audience.
+
+**Best for:** executives who need to set a company-wide generative AI plan.
+
 #### Stony Brook AI for Business: An Executive Workshop (New York, NY)
 
 **Format:** one day, 8:30am to 5:30pm, at the SUNY Global Center on East 55th Street in Manhattan. **Tuition:** $1,500, or $1,200 each for three or more people from one company. Seats are capped at 30. Check Stony Brook's site for the next date.
@@ -9939,63 +9837,69 @@ Stony Brook is direct about what this is. You will not learn to code or do hands
 
 **Best for:** VPs and directors in the New York area who need an AI plan and can spare one day, not a week.
 
-### How to choose an in-person AI program
+### If you would rather start free and on your own
 
-Start with what you want to be able to do when you get back. If the answer is "decide what my company should do about AI," a business school program fits. If it is "build the tool myself," pick one of the build programs. The two goals call for different programs.
+Free, self-paced courses from DeepLearning.AI, fast.ai, and Coursera's audit options are a good way to find out whether AI matters for your work before you pay for anything. They are not bootcamps: there is no cohort, no schedule, and no one reviewing your work. Few people finish them. In Harvard and MIT's study of their first year of open online courses, about 5% of registrants earned a certificate.
+
+### How to choose an AI bootcamp
+
+Start with what you want to be able to do when you finish. If the answer is "decide what my company should do about AI," a business school program fits. If it is "build the tool myself," pick a build program. If it is "get hired as an AI engineer," pick an engineering track. The three goals call for different programs.
 
 Then check these five things on the program's own page:
 
-- **Prerequisites.** Deep Atlas expects you to program. Most of the others say no technical background is needed.
+- **Prerequisites.** Deep Atlas expects you to program, and Fullstack Academy asks for some programming or math. Most of the others say no technical background is needed.
 
 - **Share of hands-on time.** Read the sample schedule. Lectures and panels are useful, but they do not leave you with a working tool.
 
-- **What you leave with.** A certificate, a 90-day plan, or something deployed. Programs say this plainly if you look.
+- **What you leave with.** A certificate, a 90-day plan, a portfolio, or something deployed. Programs say this plainly if you look.
 
-- **Cohort size and peers.** Executive programs put you with other senior leaders. Smaller build cohorts give each person more instructor time.
+- **Weekly hours.** A part-time online program asks for 3 to 20 hours a week for months. A full-time in-person one asks for days or weeks away from your job. Pick the one you can finish.
 
 - **Whether in-person is the only format.** Some schools sell the same session online and on campus. If the room is the reason you are going, make sure you are booking the room.
 
-### Is an in-person AI program worth traveling for?
+### What an AI bootcamp costs beyond tuition
 
-It can be, if you budget for the whole trip and not just the tuition. The total cost is:
+For an online program, the extra cost is your time: TripleTen's 20 hours a week for four months adds up to about 320 hours of evenings and weekends. For an in-person program, budget for the whole trip:
 
 **Tuition + travel + lodging + meals + time away from work.**
 
 Lodging is the biggest swing. Stanford's $18,500 includes private accommodations and all meals. Kellogg's $12,500 does not include accommodations. At MakerSquare, tuition is $3,999, and you also pay roughly $15 to $30 in AI service fees during the program plus your own housing for two weeks. Length matters too. A three-day program means two or three hotel nights. A two-week program means two weeks of rent somewhere.
 
-What you get for that spend is time with no other job to do. You are not checking in between meetings or watching a recording at 10pm. For many people that focus is the reason to go in person at all, and it is easier to protect when you are in another city. If you cannot step away for the length of a program, a shorter one close to home is the better choice, even if it covers less.
+What you get for that spend is time with no other job to do. You are not checking in between meetings or watching a recording at 10pm. For many people that focus is the reason to go in person at all. If you cannot step away for the length of a program, a part-time online one is the better choice, even if it takes longer.
 
-One practical step before you book: confirm the dates are still open and the price has not changed. Program pages update often, and the dates above were current on November 3, 2026.
+One practical step before you book: confirm the dates are still open and the price has not changed. Program pages update often, and the details above were current on November 17, 2026.
 
 Frequently asked questions
 
-Is there an in-person AI bootcamp near me?
+What is the best AI bootcamp in 2026?
 
-Maybe. The programs on this list run in Austin, Atlanta, Boca Raton, Cambridge, Chicago, New York, Philadelphia, San Francisco, Berkeley, and Stanford. If you are not near one of those cities, plan to travel. Stanford is the only program here whose fee includes lodging.
+It depends on what you want to do afterward. To build AI tools for the job you already have, look at MakerSquare (two weeks in person in Austin) or, online, TripleTen AI Automation and BrainStation. To become an AI engineer, look at Fullstack Academy or Deep Atlas. To set AI strategy for a company, look at the business school programs from MIT Sloan, Stanford, Kellogg, Columbia, Berkeley, Wharton, and Stony Brook.
 
-How much does an in-person AI bootcamp cost?
+How much does an AI bootcamp cost?
 
-On this list, tuition runs from $1,500 for Stony Brook's one-day workshop in Manhattan to $24,500 for MIT Sloan's 10-day AI Executive Academy. Multi-day hands-on programs sit between $2,495 and $4,499. Add travel, lodging, and meals if the program is not in your city.
+On this list, tuition runs from $1,500 for Stony Brook's one-day workshop in Manhattan to $24,500 for MIT Sloan's 10-day AI Executive Academy. Hands-on programs for non-engineers sit between $2,495 and $5,950. BrainStation and Wharton give prices on request. Add travel, lodging, and meals for an in-person program outside your city.
 
 Do I need to know how to code?
 
-For most programs here, no. MakerSquare, Georgia Tech, FAU, Stanford, and Stony Brook all say no coding or technical background is needed. Deep Atlas is the exception; it is built for working software engineers.
+For most programs here, no. MakerSquare, TripleTen, BrainStation, Georgia Tech, FAU, Stanford, and Stony Brook all say no coding or technical background is needed. Deep Atlas is built for working software engineers, and Fullstack Academy's admissions section asks for some programming or intermediate math.
 
 What is the difference between an executive AI program and an AI bootcamp?
 
 Executive programs from business schools focus on strategy, investment decisions, and leading AI adoption, mostly through lectures, cases, and group work. Bootcamps put most of the time into hands-on building, so you leave with working tools. Some programs, like Georgia Tech's, mix both.
 
-Is it worth traveling to another city for AI training?
+Is there an in-person AI bootcamp near me?
 
-It is worth it when you need focused time away from your normal workload and the program matches your goal. Budget for tuition, travel, lodging, and meals together. Only Stanford's fee on this list includes lodging.
+Maybe. The in-person programs on this list run in Austin, Atlanta, Boca Raton, Cambridge, Chicago, New York, Philadelphia, San Francisco, Berkeley, and Stanford, and BrainStation also teaches in Toronto and London. If you are not near one of those cities, plan to travel or pick a live online program. Stanford is the only program here whose fee includes lodging.
 
 Keep reading
 
-- [The best AI courses and bootcamps in 2026: an honest comparison.](/blog/best-ai-courses-bootcamps-2026)
+- [What do you actually learn at an AI bootcamp? A week-by-week breakdown.](/blog/what-do-you-learn-at-an-ai-bootcamp)
+
+- [AI bootcamp vs. online course: which one fits you](/blog/ai-bootcamp-vs-online-course)
 
 - [Why in-person AI learning produces better outcomes than self-paced: what the research shows.](/blog/in-person-ai-learning-vs-self-paced-research)
 
-- [What do you actually learn at an AI bootcamp? A week-by-week breakdown.](/blog/what-do-you-learn-at-an-ai-bootcamp)
+- [Agentic AI Courses in 2026: An Honest Comparison](/blog/agentic-ai-courses-2026)
 
 - [The 2-week AI bootcamp in Austin](/immersive)
 
@@ -10003,76 +9907,100 @@ Keep reading
 
 If you want to build AI tools for your own work, MakerSquare is two weeks in person in Austin, $3,999, with no coding background required. The next cohort starts January 11, 2027. The curriculum shows what you do each day.
 
-[Get the curriculum](https://www.makersquare.ai/curriculum?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_best-in-person-ai-bootcamps-2026_curriculum_20261103)
-[Sign up for the newsletter](https://ai-builder-brief.beehiiv.com/?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_best-in-person-ai-bootcamps-2026_newsletter_20261103)
+[Get the curriculum](https://www.makersquare.ai/curriculum?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_best-ai-courses-bootcamps-2026_curriculum_20261117)
+[Sign up for the newsletter](https://ai-builder-brief.beehiiv.com/?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_best-ai-courses-bootcamps-2026_newsletter_20261117)
 
-Sources (program pages, checked November 3, 2026)
+Sources (program pages, checked November 17, 2026)
 
 1
-
-[MIT Sloan AI Executive Academy](https://executive.mit.edu/course/ai-executive-academy/a05U1000002o7uoIAA.html)
-
-MIT Sloan Executive Education · Cambridge, MA
-
-2
-
-[Stanford GSB: Harnessing AI for Breakthrough Innovation and Strategic Impact](https://www.gsb.stanford.edu/exec-ed/programs/harnessing-ai-breakthrough-innovation-strategic-impact)
-
-Stanford Graduate School of Business · Stanford, CA
-
-3
-
-[Wharton: Generative AI and Business Transformation](https://executiveeducation.wharton.upenn.edu/for-individuals/all-programs/generative-ai-and-business-transformation/)
-
-Wharton Executive Education · Philadelphia, PA
-
-4
-
-[Kellogg: Leading with AI](https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/leadai.aspx)
-
-Kellogg Executive Education · Chicago, IL
-
-5
-
-[Columbia: Leadership Intelligence in the Era of AI](https://execed.business.columbia.edu/programs/leadership-intelligence-ai-era)
-
-Columbia Business School Executive Education · New York, NY
-
-6
-
-[Berkeley Haas: AI for Executives Program](https://executive.berkeley.edu/programs/ai-executives-program)
-
-Berkeley Executive Education · Berkeley, CA
-
-7
-
-[Deep Atlas Immersive](https://www.deepatlas.ai/)
-
-Deep Atlas · San Francisco, CA and New York, NY
-
-8
 
 [MakerSquare Immersive](https://www.makersquare.ai/immersive)
 
 MakerSquare · Austin, TX
 
-9
+2
+
+[TripleTen: AI Automation Course](https://tripleten.com/ai-automation/)
+
+TripleTen · Online
+
+3
+
+[BrainStation: Artificial Intelligence Certification](https://brainstation.io/course/online/artificial-intelligence)
+
+BrainStation · Online, New York, Toronto, London
+
+4
 
 [Georgia Tech Scheller: AI for Business](https://www.scheller.gatech.edu/explore-programs/executive-edu/offerings-for-individuals/ai-for-business/index.html)
 
 Georgia Tech Scheller College of Business · Atlanta, GA
 
-10
+5
 
 [FAU: Certificate in Artificial Intelligence in Business](https://business.fau.edu/executive-education/professional-development/course-offerings/business-and-data-analytics/artificial-intelligence-in-business/)
 
 Florida Atlantic University College of Business · Boca Raton, FL
 
+6
+
+[Deep Atlas Immersive](https://www.deepatlas.ai/)
+
+Deep Atlas · San Francisco, CA and New York, NY
+
+7
+
+[Fullstack Academy: AI & Machine Learning Bootcamp](https://www.fullstackacademy.com/programs/ai-machine-learning-bootcamp)
+
+Fullstack Academy · Online
+
+8
+
+[MIT Sloan AI Executive Academy](https://executive.mit.edu/course/ai-executive-academy/a05U1000002o7uoIAA.html)
+
+MIT Sloan Executive Education · Cambridge, MA
+
+9
+
+[Stanford GSB: Harnessing AI for Breakthrough Innovation and Strategic Impact](https://www.gsb.stanford.edu/exec-ed/programs/harnessing-ai-breakthrough-innovation-strategic-impact)
+
+Stanford Graduate School of Business · Stanford, CA
+
+10
+
+[Kellogg: Leading with AI](https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/leadai.aspx)
+
+Kellogg Executive Education · Chicago, IL
+
 11
+
+[Columbia: Leadership Intelligence in the Era of AI](https://execed.business.columbia.edu/programs/leadership-intelligence-ai-era)
+
+Columbia Business School Executive Education · New York, NY
+
+12
+
+[Berkeley Haas: AI for Executives Program](https://executive.berkeley.edu/programs/ai-executives-program)
+
+Berkeley Executive Education · Berkeley, CA
+
+13
+
+[Wharton: Generative AI and Business Transformation](https://executiveeducation.wharton.upenn.edu/for-individuals/all-programs/generative-ai-and-business-transformation/)
+
+Wharton Executive Education · Philadelphia, PA
+
+14
 
 [Stony Brook: AI for Business, An Executive Workshop](https://ai.stonybrook.edu/resources/ai-for-business)
 
 Stony Brook University · New York, NY
+
+15
+
+[HarvardX and MITx: The First Year of Open Online Courses](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2381263)
+
+Ho, A. et al. · Harvard & MIT · 2014
 
 ---
 
