@@ -94,6 +94,11 @@
       "permanent": true
     },
     {
+      "source": "/blog/best-in-person-ai-bootcamps-2026",
+      "destination": "/blog/best-ai-courses-bootcamps-2026",
+      "permanent": true
+    },
+    {
       "source": "/blog/ai-for-seo",
       "destination": "/blog/ai-for-marketing-teams",
       "permanent": true
