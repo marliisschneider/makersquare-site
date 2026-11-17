@@ -514,4 +514,10 @@
     <loc>https://www.makersquare.ai/ai-training-recruiters-staffing-agencies</loc>
     <lastmod>2026-11-17</lastmod>
   </url>
+  <url>
+    <loc>https://www.makersquare.ai/blog/ai-for-small-business</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
