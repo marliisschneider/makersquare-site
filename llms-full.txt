@@ -9646,7 +9646,7 @@ AI at Work
 
 ## The best AI bootcamps in 2026: price, length, and who each is for
 
-Ravi Parikh
+Shaan Shah
 
 Updated November 17, 2026
 
@@ -9664,9 +9664,11 @@ Key takeaways
 
 - Length runs from one day to six months. Short in-person programs mean stepping away from work; longer online ones fit around it.
 
-There is no single best AI bootcamp, because the label covers three different products. Some programs teach you to build AI tools for the job you already have. Some train you to become an AI engineer. Business schools sell short programs on AI strategy for executives. This page compares 14 programs across all three, online and in person, so you can pick the kind first and then compare price and length.
+In 2012 I put about $10K on a credit card to go to a code school in Chicago, so I wouldn't have to ask my parents for the money. A year later I co-founded MakerSquare in Austin. After Hack Reactor bought us, I ran its online sales. So I've been the student, the founder, and the person selling the seats, and in all three jobs I got the same question: which bootcamp should I do?
 
-How we built this list. Every price, length, and audience line comes from the program's own page. We first checked the in-person programs on November 3, 2026, and rechecked all of them, plus the online programs, on November 17, 2026. Links are in the sources at the bottom. There are no affiliate links. We run MakerSquare, so it is on the list, and we have described it the same way as the others.
+The answer depends on what you want to do afterward, because "AI bootcamp" now covers three different products. Some programs teach you to build AI tools for the job you already have. Some train you to become an AI engineer. Business schools sell short programs on AI strategy for executives. Below are 14 programs across all three, online and in person, so you can pick the kind first and then compare price and length.
+
+**How I built this list.** Every price, length, and audience line comes from the program's own page. My co-founder Ravi checked the in-person programs on November 3, 2026, and I rechecked all of them, plus the online ones, on November 17. Links are in the sources at the bottom. There are no affiliate links. I run growth at MakerSquare, so it's on the list, and I've described it the same way as the others.
 
 ### The best AI bootcamps at a glance
 
@@ -9708,7 +9710,7 @@ Our program
 
 **Format:** two weeks in person at Capital Factory in downtown Austin, Monday to Friday, 9am to 3pm. **Next cohort:** January 11 to 22, 2027, with enrollment closing January 4.
 
-This is our program. It is built for non-technical professionals: operators, founders, marketers, lawyers, finance people. Each person works on a problem from their own job and ships three things:
+This is our program. It's built for non-technical professionals: operators, founders, marketers, lawyers, finance people. Each person works on a problem from their own job and ships three things:
 
 - **A live website** on a real URL
 
@@ -9905,7 +9907,7 @@ Keep reading
 
 - [Coming to Austin from out of town: housing options](/housing)
 
-If you want to build AI tools for your own work, MakerSquare is two weeks in person in Austin, $3,999, with no coding background required. The next cohort starts January 11, 2027. The curriculum shows what you do each day.
+Stuck between two programs? Email me at [shaan@makersquare.ai](mailto:shaan@makersquare.ai), tell me which two and what you want to build, and I'll give you my honest take, even if it isn't us. If it is us: MakerSquare is two weeks in person in Austin, $3,999, no coding background required, and the next cohort starts January 11, 2027.
 
 [Get the curriculum](https://www.makersquare.ai/curriculum?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_best-ai-courses-bootcamps-2026_curriculum_20261117)
 [Sign up for the newsletter](https://ai-builder-brief.beehiiv.com/?utm_source=blog&utm_medium=organic_content&utm_campaign=Blog_B2B_ORG_AI-Bootcamp_ATX_EN_Leads&utm_content=MS_best-ai-courses-bootcamps-2026_newsletter_20261117)
