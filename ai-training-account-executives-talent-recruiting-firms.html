@@ -218,7 +218,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   .rp-card p{font-size:0.9rem;color:var(--text-secondary);line-height:1.65;}
   .rp-link{color:var(--indigo);font-weight:700;font-size:0.85rem;margin-top:auto;padding-top:var(--s3);}
   .rp-brands{display:flex;flex-wrap:wrap;justify-content:center;gap:var(--s3) var(--s7);margin-top:var(--s4);}
-  .rp-brands span{font-family:var(--font-display);font-weight:800;font-size:1.05rem;color:var(--text-muted);letter-spacing:-0.01em;white-space:nowrap;}
+  .rp-brands{align-items:center;}
+  .rp-brands img{display:block;height:auto;max-width:42vw;filter:grayscale(1);opacity:0.7;transition:filter .2s,opacity .2s;}
+  .rp-brands img:hover{filter:none;opacity:1;}
+  @media (max-width:600px){.rp-brands{gap:var(--s4) var(--s5);}.rp-brands img{zoom:0.72;}}
   .rp-faq{background:var(--white);border:1px solid rgba(24,24,73,0.08);border-radius:var(--r-lg);padding:var(--s5);}
   .rp-faq h3{font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:var(--s2);}
   .rp-faq p{font-size:0.9rem;color:var(--text-secondary);line-height:1.65;}
@@ -244,7 +247,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container" style="max-width:980px;text-align:center;">
     <p class="reveal" style="font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-muted);">Built for account executives at firms like</p>
     <div class="rp-brands reveal">
-      <span>Robert Half</span><span>Randstad</span><span>Toptal</span><span>Upwork</span><span>Korn Ferry</span><span>Hays</span><span>Michael Page</span><span>Kforce</span><span>Insight Global</span><span>Beacon Hill</span>
+      <img src="/images/logos/robert-half.svg" alt="Robert Half" width="153" height="22"><img src="/images/logos/randstad.svg" alt="Randstad" width="148" height="22"><img src="/images/logos/toptal.png" alt="Toptal" width="110" height="30"><img src="/images/logos/upwork.svg" alt="Upwork" width="110" height="30"><img src="/images/logos/korn-ferry.svg" alt="Korn Ferry" width="107" height="31"><img src="/images/logos/hays.svg" alt="Hays" width="89" height="37"><img src="/images/logos/michael-page.svg" alt="Michael Page" width="136" height="24"><img src="/images/logos/kforce.png" alt="Kforce" width="119" height="28"><img src="/images/logos/insight-global.svg" alt="Insight Global" width="120" height="28"><img src="/images/logos/beacon-hill.svg" alt="Beacon Hill" width="139" height="24">
     </div>
     <p class="reveal" style="font-size:0.85rem;color:var(--text-secondary);margin-top:var(--s4);">and talent marketplaces and boutique agencies of every size.</p>
     <p style="font-size:0.7rem;color:var(--text-muted);margin-top:var(--s3);">Company names describe who the training is for. MakerSquare isn&#8217;t affiliated with these companies.</p>

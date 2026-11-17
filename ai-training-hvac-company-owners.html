@@ -166,7 +166,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   .rp-link{color:var(--indigo);font-weight:700;font-size:0.85rem;margin-top:auto;padding-top:var(--s3);}
   .rp-stat{font-family:var(--font-display);font-size:1.8rem;font-weight:800;color:var(--indigo);letter-spacing:-0.02em;}
   .rp-brands{display:flex;flex-wrap:wrap;justify-content:center;gap:var(--s3) var(--s7);margin-top:var(--s4);}
-  .rp-brands span{font-family:var(--font-display);font-weight:800;font-size:1.05rem;color:var(--text-muted);letter-spacing:-0.01em;white-space:nowrap;}
+  .rp-brands{align-items:center;}
+  .rp-brands img{display:block;height:auto;max-width:42vw;filter:grayscale(1);opacity:0.7;transition:filter .2s,opacity .2s;}
+  .rp-brands img:hover{filter:none;opacity:1;}
+  @media (max-width:600px){.rp-brands{gap:var(--s4) var(--s5);}.rp-brands img{zoom:0.72;}}
   .rp-faq{background:var(--white);border:1px solid rgba(24,24,73,0.08);border-radius:var(--r-lg);padding:var(--s5);}
   .rp-faq h3{font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:var(--s2);}
   .rp-faq p{font-size:0.9rem;color:var(--text-secondary);line-height:1.65;}
@@ -191,7 +194,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container" style="max-width:980px;text-align:center;">
     <p class="reveal" style="font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-muted);">Built for owners and leaders at companies like</p>
     <div class="rp-brands reveal">
-      <span>Service Experts</span><span>One Hour Heating &amp; Air Conditioning</span><span>Aire Serv</span><span>ARS/Rescue Rooter</span><span>Apex Service Partners</span><span>Wrench Group</span><span>Sila Services</span>
+      <img src="/images/logos/service-experts.png" alt="Service Experts" width="130" height="25"><img src="/images/logos/one-hour.png" alt="One Hour Heating &amp; Air Conditioning" width="96" height="34"><img src="/images/logos/aire-serv.svg" alt="Aire Serv" width="105" height="31"><img src="/images/logos/ars.png" alt="ARS/Rescue Rooter" width="82" height="40"><img src="/images/logos/apex.png" alt="Apex Service Partners" width="87" height="38"><img src="/images/logos/wrench-group.svg" alt="Wrench Group" width="108" height="31"><img src="/images/logos/sila.png" alt="Sila Services" width="62" height="40">
     </div>
     <p class="reveal" style="font-size:0.85rem;color:var(--text-secondary);margin-top:var(--s4);">and every two-truck shop that wants to run like one.</p>
     <p style="font-size:0.7rem;color:var(--text-muted);margin-top:var(--s3);">Company names describe who the training is for. MakerSquare isn&#8217;t affiliated with these companies.</p>
