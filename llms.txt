@@ -54,7 +54,7 @@ A 4-week part-time format (Fridays plus weekends) is planned as a separate track
 - Payment: full payment at enrollment, one charge via Stripe. No deposit, no split payments, no ISA.
 - Scholarship: $500 off for military, first responders, and educators ($3,499 total)
 - Housing: Housing isn't included in tuition. When enough out-of-town builders enroll in a cohort, we set up shared housing; if not, we point you to short-term rentals near Capital Factory.
-- Corporate / team training (primary offer): private 3-day team AI workshops (custom quote, proposal within 24 hours), custom company programs for teams of 3 to 15, and individual seats in public cohorts ($3,999). Austin-based, on-site or at MakerSquare. Book an intro call at makersquare.ai/corporate to scope. Reference build: RoverPass (Austin campground-reservation company, CEO is MakerSquare co-founder Ravi Parikh) runs a live AI ops command center tracking hundreds of campgrounds in real time, built on the same stack MakerSquare teaches — case study at makersquare.ai/case-study-roverpass.
+- Corporate / team training (primary offer): private 3-day team AI workshops (custom quote, proposal within 24 hours), custom company programs for teams of 3 to 15, and individual seats in public cohorts ($3,999). Austin-based, on-site or at MakerSquare. Book an intro call at makersquare.ai/corporate to scope. 1:1 training is also available: one instructor on your schedule, in person in Austin or online, quoted after the intro call. Reference build: RoverPass (Austin campground-reservation company, CEO is MakerSquare co-founder Ravi Parikh) runs a live AI ops command center tracking hundreds of campgrounds in real time, built on the same stack MakerSquare teaches — case study at makersquare.ai/case-study-roverpass.
 - [Case Study (Cameron Dowd — sales AE built an AI prospecting tool)](https://www.makersquare.ai/case-study-cameron-dowd)
 - [Case Study (Ted Kilgore — job seeker built an AI company-matcher)](https://www.makersquare.ai/case-study-ted-kilgore)
 
@@ -134,6 +134,10 @@ Ravi Parikh — Co-founder, MakerSquare. Austin-based serial entrepreneur; co-fo
 - [AI Course for Product Managers](https://www.makersquare.ai/ai-course-for-product-managers)
 - [AI Training for Project Managers](https://www.makersquare.ai/ai-training-for-project-managers)
 - [AI Bootcamp for Executives (individuals + leadership teams)](https://www.makersquare.ai/ai-bootcamp-for-executives)
+- [AI Training by Role (hub: pick your job)](https://www.makersquare.ai/ai-training-by-role)
+- [AI Training for Account Executives at Talent & Recruiting Firms](https://www.makersquare.ai/ai-training-account-executives-talent-recruiting-firms)
+- [AI Training for HVAC Company Owners & Leaders](https://www.makersquare.ai/ai-training-hvac-company-owners)
+- [AI Training for Recruiters at Staffing & Recruiting Agencies](https://www.makersquare.ai/ai-training-recruiters-staffing-agencies)
 - [Scholarship](https://www.makersquare.ai/scholarship)
 - [Housing](https://www.makersquare.ai/housing)
 - [Team](https://www.makersquare.ai/team)

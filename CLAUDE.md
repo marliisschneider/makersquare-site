@@ -50,7 +50,7 @@ This site relies on a set of marketing / lead-attribution scripts. They are crit
 
 ### Public pages (the list)
 
-`404.html`, `about.html`, `ai-bootcamp-for-executives.html`, `ai-course-for-product-managers.html`, `ai-training-austin.html`, `ai-training-for-project-managers.html`, `ai-training-vs-consultants.html`, `alumni.html`, `apply.html`, `case-study-roverpass.html`, `comparison.html`, `corporate.html`, `curriculum.html`, `demo-day.html`, `demo-night.html`, `demo-ppc.html`, `enroll.html`, `faq.html`, `housing.html`, `index.html`, `immersive.html`, `learn-ai.html`, `pricing.html`, `privacy.html`, `quickstart.html`, `quickstart-download.html`, `scholarship.html`, `student-projects.html`, `team.html`, `terms.html`, `thank-you.html`, `use-cases.html`, `workshop-register.html`, `workshops.html`
+`404.html`, `about.html`, `ai-bootcamp-for-executives.html`, `ai-training-account-executives-talent-recruiting-firms.html`, `ai-training-by-role.html`, `ai-training-hvac-company-owners.html`, `ai-training-recruiters-staffing-agencies.html`, `ai-course-for-product-managers.html`, `ai-training-austin.html`, `ai-training-for-project-managers.html`, `ai-training-vs-consultants.html`, `alumni.html`, `apply.html`, `case-study-roverpass.html`, `comparison.html`, `corporate.html`, `curriculum.html`, `demo-day.html`, `demo-night.html`, `demo-ppc.html`, `enroll.html`, `faq.html`, `housing.html`, `index.html`, `immersive.html`, `learn-ai.html`, `pricing.html`, `privacy.html`, `quickstart.html`, `quickstart-download.html`, `scholarship.html`, `student-projects.html`, `team.html`, `terms.html`, `thank-you.html`, `use-cases.html`, `workshop-register.html`, `workshops.html`
 
 `HANDOFF.html` is an internal handoff doc — exempt from these rules.
 
