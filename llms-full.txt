@@ -9662,7 +9662,7 @@ Key takeaways
 
 - Length runs from one day to nine months. Short in-person programs mean stepping away from work; longer online ones fit around it.
 
-In 2012 I put about $10K on a credit card to go to a code school in Chicago, so I wouldn't have to ask my parents for the money. A year later I co-founded MakerSquare in Austin. After Hack Reactor bought us, I ran its online sales. So I've been the student, the founder, and the person selling the seats, and in all three jobs I got the same question: which bootcamp should I do?
+In 2012 I learned to code at a coding school in Chicago. A year later I co-founded MakerSquare, a coding bootcamp in Austin. When Hack Reactor bought us, I ran sales for its online bootcamp. So I've been a bootcamp student, a bootcamp founder, and the person selling bootcamp seats, and in every one of those jobs people asked me the same thing: which bootcamp should I do?
 
 The answer depends on what you want to do afterward, because "AI bootcamp" now covers three different products. Some programs teach you to build AI tools for the job you already have. Some train you to become an AI engineer. Business schools sell short programs on AI strategy for executives. Below are 18 programs across all three, online and in person, so you can pick the kind first and then compare price and length.
 
