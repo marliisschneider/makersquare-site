@@ -9658,7 +9658,7 @@ Key takeaways
 
 - You don't need to code for the build programs or the business school programs. Most engineering bootcamps expect some programming or math first.
 
-In 2012 I put about $10K on a credit card to learn to code at a coding school in Chicago. A year later I co-founded MakerSquare, a coding bootcamp in Austin. When Hack Reactor bought us, I ran sales for its online bootcamp. So I've been a bootcamp student, a bootcamp founder, and the person selling bootcamp seats, and in every one of those jobs people asked me the same thing: which bootcamp should I do?
+In 2012 I put about $10K on a credit card to learn to code at a coding school in Chicago. A year later I co-founded MakerSquare, a coding bootcamp in Austin. Hack Reactor bought us in January 2015, and I ran sales for its online bootcamp. That summer I also went through Hack Reactor's bootcamp as a student. So I've been a bootcamp student (twice), a bootcamp founder, and the person selling bootcamp seats, and in every one of those jobs people asked me the same thing: which bootcamp should I do?
 
 The answer depends on what you want to do afterward. "AI bootcamp" now covers three different things: programs where you build AI tools for the job you already have, programs that train you to become an AI engineer, and business school programs on AI strategy. Below are 18 programs across all three.
 
