@@ -11171,7 +11171,7 @@ Keep reading
 
 - [Non-technical AI skills: what actually matters in 2026](/blog/non-technical-ai-skills-2026)
 
-- [The difference between using AI and building with AI.](/blog/using-ai-vs-building-with-ai)
+- [Building With AI vs. Using AI: What's the Difference?](/blog/using-ai-vs-building-with-ai)
 
 - [What another year without AI skills actually costs.](/blog/what-another-year-without-ai-skills-actually-costs)
 
@@ -11737,7 +11737,7 @@ Keep reading
 
 - [Non-technical AI skills: what actually matters in 2026](/blog/non-technical-ai-skills-2026)
 
-- [The difference between using AI and building with AI.](/blog/using-ai-vs-building-with-ai)
+- [Building With AI vs. Using AI: What's the Difference?](/blog/using-ai-vs-building-with-ai)
 
 - [The 2-week AI bootcamp in Austin](/immersive)
 
@@ -11928,7 +11928,7 @@ Keep reading
 
 - [How to use Claude for business: a practical guide](/blog/how-to-use-claude-for-business)
 
-- [The difference between using AI and building with AI.](/blog/using-ai-vs-building-with-ai)
+- [Building With AI vs. Using AI: What's the Difference?](/blog/using-ai-vs-building-with-ai)
 
 - [AI for content creators: beyond writing the first draft](/blog/ai-for-content-creators-2026)
 
@@ -12369,7 +12369,7 @@ Using AI means occasionally prompting a chatbot for help with a task. Having AI 
 
 Keep reading
 
-- [The difference between using AI and building with AI.](/blog/using-ai-vs-building-with-ai)
+- [Building With AI vs. Using AI: What's the Difference?](/blog/using-ai-vs-building-with-ai)
 
 - [What another year without AI skills actually costs.](/blog/what-another-year-without-ai-skills-actually-costs)
 
@@ -12408,87 +12408,111 @@ McKinsey Global Institute · 2023 · Knowledge worker productivity as the primar
 
 <!-- https://www.makersquare.ai/blog/using-ai-vs-building-with-ai -->
 
-# The Difference Between Using AI and Building With AI
+# Building With AI vs. Using AI: What's the Difference?
 
-> Using AI and building with AI are different skill levels with different outcomes. The distinction that separates users from people pulling ahead.
+> Using AI means prompting a tool every time. Building with AI means making a tool that does the task for you every week. Examples, and how to start without code.
 
 [← Blog](/blog)
 
 AI Skills
 
-## The difference between using AI and building with AI.
+## Building With AI vs. Using AI: What's the Difference?
 
 Marliis Schneider
 
 July 8, 2026
 
-5 min read
+4 min read
 
-![The difference between using AI and building with AI.](../images/blog/using-vs-building-ai-og.webp)
+![Using AI vs. building with AI, next to a photo of MakerSquare student Chris Cox presenting the dashboard he built](../images/blog/using-vs-building-ai-hero.jpg)
 
 Key takeaways
 
-- Using AI and building with AI are two distinct skill levels — one produces one-time outputs, the other creates systems that produce outputs repeatedly.
+- Using AI: you open a chat (maybe a Claude Project or a custom GPT with your files loaded) and ask each time. Building with AI: you make a tool that starts on its own, works inside your real tools, and does the task every time it comes up.
 
-- Builders don't need to know how to code. The core skill is problem decomposition: understanding what you need to automate clearly enough to describe it.
+- You don't need to know how to code. You need to know your task well enough to explain the steps to a new hire.
 
-- The compounding advantage of building versus using is dramatic: a builder who automates a recurring 3-hour task reclaims those hours every week. A user saves 30 minutes each time.
+- Start with something you do every week, the same way each time. That's where a build pays you back.
 
-- BCG research shows that employees who move beyond basic AI use to applied, structured practice see dramatically different productivity outcomes — the jump from user to builder is where the real returns live.
+Most people we meet use AI the same way. They open ChatGPT or Claude, paste something in, copy the answer out, and repeat that tomorrow. You may also use [Projects in Claude](https://support.claude.com/en/articles/9517075-what-are-projects), or [Projects](https://help.openai.com/en/articles/10169521-projects-in-chatgpt) and custom GPTs in ChatGPT, so it already knows your files, your instructions and how you like things written. That's using AI, and it helps a lot. You write faster and research faster.
 
-Most of the conversation about AI right now is about using it — better prompts, better tools, better workflows. That conversation is useful. But there's a second conversation that's happening more quietly among the people who are actually pulling ahead: the difference between using AI and building with AI.
-
-Using AI vs building with AI isn't a technical distinction. It's a strategic one. And it's the single biggest determinant of who will be structurally ahead in two years versus who will still be doing the same tasks the same way, just slightly faster.
+Building with AI goes a step further. Even with a good Project set up, you still have to open the chat, ask, and move the answer to wherever it goes. A build does those steps for you. It starts on its own (a new lead, a new email, every Monday at 8 AM), works with your real tools like Gmail, Outlook or your CRM, and puts the result where it belongs. You set it up once and it keeps running.
 
 ### What using AI looks like
 
-Using AI means you interact with AI tools to complete tasks. You open Claude, write a prompt, get an output, refine it, use it. You do this for emails, for research, for first drafts, for summarizing documents. Each time you use it, you get something useful. Each time is also a fresh start — you bring the context, you guide the process, you evaluate the output.
+At a minimum, using AI looks like this. Say you're in sales. A new lead comes in. You open ChatGPT or Claude and paste in their LinkedIn, your notes, and your directions: what to say, how long to make it, how you like to sound. It writes a follow-up email. You fix the parts it got wrong, copy it into Gmail, and send it. Then the next lead comes in and you paste all of that in again.
 
-This is genuinely valuable. Research from MIT in 2025 found that knowledge workers using AI on appropriate tasks cut first-draft time by 25-40% on average. If you're writing 10 documents a week and each one takes you half the time it used to, you have reclaimed real hours. That's not nothing.
-
-But it has a ceiling. The efficiency gains from using AI are fundamentally additive. Each instance of using AI saves some time on that instance. The time saving doesn't compound. The process doesn't get better on its own. Next week you'll run the same prompt for the same kind of document and save roughly the same amount of time.
+Or maybe you're further along and use it more efficiently. You've set up a Claude Project or a custom GPT, so your directions and example emails are already saved, and you don't have to paste your instructions every time. But you're still the one doing the work, one lead at a time. You notice the lead came in, open the chat, paste in their info, check the email, and copy it into Gmail. Next week you save the same 20 minutes on the same kind of email.
 
 ### What building with AI looks like
 
-Building with AI means creating a system — a tool, a workflow, an automated process — that uses AI to solve a recurring problem without requiring you to re-do the work each time. Instead of asking Claude to summarize competitor news every Monday morning, you build a tool that pulls the news, runs the summary, and delivers it to your inbox automatically. You do the work once. The system runs indefinitely.
+Now say you build a tool instead. Here's what happens when a new lead emails you:
 
-This doesn't require coding in the traditional sense. Tools like Claude, Cursor, and Replit now let non-technical people describe what they want to build and get working code in return. The skill that matters is not syntax. It's problem decomposition: understanding what you need clearly enough to describe it, what the inputs and outputs should be, what "good" looks like. That's a professional skill. It's the same thing a good project manager or operator already does.
+1. The tool reads the email to see what the person wants, and looks up who they are.
 
-Anthropic's 2026 workforce research identified operators and knowledge workers as the professionals with the highest potential AI leverage — specifically because their work involves structured, recurring processes that are well-suited to automation. The constraint is not that their work can't be automated. It's that most of them have only learned to use AI, not build with it.
+2. It follows your team's rules for that kind of request. Every team has them, written down or not: a pricing question gets one kind of answer, a demo request gets another.
 
-### Why the distinction matters more than it seems
+3. It writes the reply in your voice, because it learned from emails you've already sent.
 
-The compounding math is where the real difference lives. A consultant who uses AI to help write client reports saves maybe 45 minutes per report. A consultant who builds an AI tool that structures, pulls from previous reports, integrates client data, and generates a first-pass report in five minutes has not just saved time — she has changed the economics of her practice. She can take more clients, or invest those hours in relationship work that actually grows the business.
+4. It saves the reply in your Gmail drafts.
 
-This plays out across industries. A sales manager who uses AI to write follow-up emails saves some time per email. A sales manager who builds an AI tool that pulls CRM context, identifies the right follow-up timing, and drafts role-specific emails for each lead has built something with leverage. One is a productivity tool. The other is a competitive advantage.
+You open Gmail, read the draft, change anything you want, and hit send. You never opened a chat. You set it up once, and it does this for every lead.
 
-BCG's research on AI ROI found that organizations where employees had moved from basic use to applied, structured AI work saw dramatically different outcomes — 67% higher ROI than peers who had only deployed tool access. The jump from user to builder is where those returns come from.
+People are already building tools like this for their own work:
 
-### What this means for professionals who want to stay ahead
+- **[Evelyn at Credix](https://medium.com/credix/i-was-too-busy-creating-reports-i-needed-to-automate-3da39b85e15d) (customer support):** her weekly support report took hours. Now every Sunday her tool pulls the data, works out the numbers, writes the report and posts a summary in Slack. She spends a few minutes reviewing it and adding her take.
 
-The practical question is: how do you develop builder skills if you're not technical? The honest answer is that it takes more than experimenting with ChatGPT for a few weeks. It requires learning to think in systems — identifying recurring problems, designing solutions, testing and iterating on them. That's teachable. It's not innate.
+- **[Cameron Dowd](/student-projects#cameron) (SaaS account executive):** researching each company before a cold email took hours a week. Now he adds a target account, his tool researches the company, and a personal email waits in his Gmail drafts for him to read and send.
 
-MakerSquare is a 2-week in-person AI builder program in Austin, TX — we work with operators, founders, and professionals who want to build real AI tools, not just use them. Every student leaves with real, working AI tools they built during the program. The [curriculum](https://www.makersquare.ai/curriculum) is built around the builder mindset: what problem are you solving, what does the tool need to do, how do you know it's working?
+- **[OpusClip's revenue team](https://claude.com/customers/opusclip) (10 people, none had written production code):** they used to review 5–10% of sales calls by hand. Their tool now reviews every call and preps renewal briefs automatically.
 
-Using AI is a skill worth having. Building with AI is a different and more durable advantage — one that compounds over time in a way that using never will.
+- **[Jennifer Francis](/student-projects#jennifer) (construction project manager):** every RFI and submittal email meant four manual steps. Her Outlook agent now downloads the file, renames it to her naming convention, saves it to the right folder, and logs it in the right project hub for her to confirm.
+
+- **[Jared Sires](https://claude.com/resources/articles/how-anthropic-uses-claude-gtm-engineering) (account executive at Anthropic):** he was answering customer emails until 9 or 10 PM every night. He built a tool inside Gmail that drafts replies in his voice, using the latest product details. It saves him 10–15 hours a week, and most of Anthropic's sales team now uses his tools.
+
+- **[Ted Kilgore](/student-projects#ted) (job seeker):** he wanted to aim his search instead of applying everywhere. He enters his resume, a target role and a location, and his tool builds a shortlist of 30 companies that fit his background, each with a link to a real hiring signal.
+
+- **[An account manager at ABC Legal](https://claude.com/resources/articles/how-abc-legal-turned-every-employee-into-a-builder-with-claude-managed-agents):** had never automated anything. In about an hour, they built an agent that pulls a customer's records and delivers them every day, a chore they used to do by hand.
+
+- **[Chris Cox](/student-projects#chris) (Hesed House, a homeless shelter):** updates about shelter guests arrive by email. His agent reads each one, pulls out a record, and matches it to the right guest on a dashboard for case managers. When it isn't sure, it flags the record for a person to check.
+
+Each one started as a task the person was already doing by hand every week. You can see more builds like these on our [student projects page](/student-projects).
+
+### Do you need to code?
+
+No. Our students build with [Claude Code](https://www.anthropic.com/claude-code): you describe what you want in plain English, and it writes and runs the code. The hard part is knowing your own task well enough to explain it. What goes in, what comes out, and what a good result looks like. If you can train a new hire on it, you can describe it to Claude.
+
+### Which tasks are worth building?
+
+Ask yourself two questions about a task:
+
+1. Do I do it every week (or every day)?
+
+2. Could I explain the steps to a new hire in one or a couple of detailed emails?
+
+Two yeses and it's a good first build. For one-offs, like a tricky email or a quick summary of a long doc, keep using AI in a chat. Build for the work that keeps coming back.
+
+### Where to start
+
+Pick one task from your week that passes the test. Write the steps down like you're training someone. Then open Claude Code and ask it to build step 1 only. Get that working, then add step 2. That's how Jennifer built hers: read the email, then grab the file, then rename it, one piece at a time.
+
+If you'd rather build it with people next to you, that's what we do at MakerSquare. We run weekend workshops and a 2-week immersive in Austin (next cohort: Jan 11–22). You leave with a tool that works on your real tasks. Here's the [curriculum](https://www.makersquare.ai/curriculum).
+
+What's the one task you'd hand off first? [Grab 15 minutes with us](https://makersquare.zohobookings.com/DemoCall/#/DemoCall) and tell us. We'll tell you how we'd build it.
 
 Frequently asked questions
 
 What is the difference between using AI and building with AI?
 
-Using AI means interacting with AI tools to complete tasks — writing prompts, getting outputs, refining results. Building with AI means creating systems, workflows, or tools that use AI to solve a recurring problem, automating something that would otherwise require repeated manual intervention. A builder's work compounds over time. A user's work doesn't.
+Using AI means you ask ChatGPT or Claude for help each time you need something, even if a Claude Project or custom GPT already knows your files and instructions. Building with AI means you make a tool that handles a recurring task on its own, inside your real tools, like drafting an email in Gmail for every new lead or filing documents from your Outlook inbox.
 
 Do you need to know how to code to build with AI?
 
-No. Modern AI development tools — Claude, Cursor, Replit, and similar platforms — allow non-technical people to build functional AI tools with minimal or no traditional coding. The skill that matters is problem decomposition: understanding what you want to build clearly enough to describe it. That's a professional skill, not a technical one.
+No. Tools like Claude Code write and run the code from plain-English instructions. What you need is a clear picture of the task: what goes in, what comes out, and what a good result looks like.
 
-What can you build with AI without coding?
+What can a beginner build with AI?
 
-Without writing traditional code, non-technical builders are currently creating custom AI chatbots for their workflows, document processing tools, automated research summaries, internal knowledge bases, client onboarding tools, and data analysis pipelines. The constraint is not technical skill — it's knowing what problem to solve and what a good solution looks like.
-
-Why does building with AI produce better outcomes than just using it?
-
-When you use AI, you get a one-time output. When you build with AI, you create a system that produces outputs repeatedly without additional effort. A builder who automates a 3-hour weekly research process has reclaimed those 3 hours permanently. A user who does the same research manually with AI assistance each week saves maybe 30 minutes each time. The compounding difference is enormous over time.
+MakerSquare students have built a prospecting agent that drafts sales emails, a tool that shortlists best-fit companies from a resume, an Outlook agent that files construction RFIs and submittals, and a shelter dashboard that turns emails into guest records. Start with a task you do every week, the same way each time.
 
 Keep reading
 
@@ -12500,30 +12524,10 @@ Keep reading
 
 - [The 2-week AI bootcamp in Austin](/immersive)
 
-MakerSquare is built around the builder mindset — 2 weeks in person in Austin, and you leave with deployed AI tools. See what students build and how the program is structured.
+MakerSquare teaches you to build with AI, in person in Austin. Weekend workshops and a 2-week immersive, and you leave with a tool that works. See what students build and how the program runs.
 
 [Get the curriculum](https://www.makersquare.ai/curriculum)
 [Sign up for the newsletter](https://ai-builder-brief.beehiiv.com/)
-
-Sources
-
-1
-
-[Labor Market Impacts of AI: A New Measure and Early Evidence](https://www.anthropic.com/research/labor-market-impacts)
-
-Anthropic · Massenkoff & McCrory · March 2026 · Operators and knowledge workers as high-leverage AI adopters
-
-2
-
-[AI at Work: Why Strategy Matters More Than Tools](https://www.bcg.com/publications/2026/ai-at-work-why-strategy-matters-more-than-tools)
-
-BCG · 4th annual AI at Work survey · June 2026 · 67% higher ROI for organizations with applied AI practice
-
-3
-
-[Generative AI at Work](https://www.nber.org/papers/w31161)
-
-Brynjolfsson, Li, Raymond · NBER Working Paper · 2023 · AI productivity gains compound with skill development
 
 For companies
 
