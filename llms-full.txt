@@ -4828,6 +4828,18 @@ No coding background needed · Train in the slow season · In Austin or online
 
 [Riley Plumbing Heating & Air booked 75% more of its calls after putting AI on the phones →](https://www.servicetitan.com/blog/webinar-recap-riley-plumbing-ai-blueprint)
 
+![An HVAC company owner working through paperwork on a laptop in his shop office, a service van parked outside the window](/images/roles/hvac-owner-hero.jpg)
+
+What AI will do for you
+
+☎
+
+**Missed call answered, 7:42 PM** AC not cooling. Booked for Tue 9 AM.
+
+✓
+
+**Estimate follow-up drafted** $8,400 system replacement, quoted 3 days ago. Ready for you to review.
+
 Built for owners and leaders at companies like
 
 ![Service Experts](/images/logos/service-experts.png)![One Hour Heating & Air Conditioning](/images/logos/one-hour.png)![Aire Serv](/images/logos/aire-serv.svg)![ARS/Rescue Rooter](/images/logos/ars.png)![Apex Service Partners](/images/logos/apex.png)![Wrench Group](/images/logos/wrench-group.svg)![Sila Services](/images/logos/sila.png)
@@ -4846,13 +4858,13 @@ Today
 
 Keep the phones answered and the board full
 
-You make sure every call gets booked, reshuffle the dispatch board when a no-heat call comes in, and lose sleep over the calls that go to voicemail after hours.
+You make sure every call gets booked and reshuffle the dispatch board when a no-heat call comes in. Calls that come in after hours go to voicemail. Across home services, a third of calls longer than 15 seconds never reach a person ([Invoca, 2026](https://www.invoca.com/reports/the-invoca-home-services-lead-conversion-benchmarks-report-2026)).
 
 After the course
 
 #### You’ll text back every missed call within a minute
 
-When a call goes unanswered, your tool texts the customer, asks for the address, the system’s age, and what’s wrong, and leaves a ready-to-book ticket for your CSR to confirm first thing in the morning.
+When a call goes unanswered, your tool texts the customer and asks for the address, the system’s age, and what’s wrong. It leaves a ready-to-book ticket for your CSR to confirm first thing in the morning.
 
 Today
 
@@ -4864,7 +4876,7 @@ After the course
 
 #### You’ll fill spring and fall without making the calls yourself
 
-Every week it pulls members due for a tune-up, estimates nobody followed up on, and customers with systems over 12 years old, then drafts a personal text or email for each one with open dates. You approve what goes out.
+Every week it pulls members due for a tune-up, estimates nobody followed up on, and customers with systems over 12 years old. Then it drafts a personal text or email for each one with open dates. You approve what goes out.
 
 Today
 
@@ -5030,7 +5042,7 @@ Build something for your own shop. A tool that follows up on open estimates or w
 
 #### Why build AI tools instead of buying them?
 
-Keep the software you already pay for. Build the pieces it doesn't do, like a Monday numbers report or follow-up rules that match how your shop works. You own what you build, you pay for what it uses instead of another monthly add-on, and you learn enough to tell which vendor AI features are worth buying.
+Keep the software you already pay for. Build the pieces it doesn't do, like a Monday numbers report or follow-up rules that match how your shop works. You own what you build and pay for what it uses instead of another monthly add-on. You also learn enough to tell which vendor AI features are worth buying.
 
 #### Do I need to know how to code?
 
