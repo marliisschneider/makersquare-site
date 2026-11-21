@@ -4181,26 +4181,38 @@ Schedule an Intro Call
 
 <!-- https://www.makersquare.ai/ai-training-account-executives-talent-recruiting-firms -->
 
-# AI Training for Account Executives at Talent & Recruiting Firms | MakerSquare
+# AI Training for Account Executives at Recruiting Firms
 
-> Hands-on AI training for account executives at talent marketplaces, recruiting, and staffing firms. Build research, call-note, and follow-up tools for your own pipeline. In Austin or online.
+> AI training for account executives at recruiting and staffing firms. Build research, call-note, and follow-up tools for your own pipeline. Austin or online.
 
 AI Training · Sales & Account Executives
 
-## AI training for account executives at talent & recruiting firms.
+## AI training for account executives at recruiting firms.
 
-Most of your day goes to prospect research, discovery calls, writing briefs, and chasing follow-ups across dozens of open deals. We teach you to build AI tools that do the research and paperwork, so more of your day goes to calls.
+At a recruiting firm, you win companies that need to hire, and your recruiters find the people. Most of your day goes to researching companies, first calls with hiring managers (discovery calls), and chasing follow-ups. We teach you to build AI tools that do the research and paperwork, so more of your day goes to calls.
 
 Schedule An Intro Call
 See training options
 
 No coding background needed · In Austin or online · For you or your whole team
 
+![An account executive in a headset working at her laptop on a busy open-plan sales floor](/images/roles/ae-recruiting-hero.jpg)
+
+What AI will do for you
+
+★
+
+**3 companies on your list are hiring again** A short research summary and a first email drafted for each.
+
+✓
+
+**Call follow-up drafted** Recap, next steps, and the 2 candidates they asked about. Ready to send.
+
 Built for account executives at firms like
 
 ![Robert Half](/images/logos/robert-half.svg)![Randstad](/images/logos/randstad.svg)![Toptal](/images/logos/toptal.png)![Upwork](/images/logos/upwork.svg)![Korn Ferry](/images/logos/korn-ferry.svg)![Hays](/images/logos/hays.svg)![Michael Page](/images/logos/michael-page.svg)![Kforce](/images/logos/kforce.png)![Insight Global](/images/logos/insight-global.svg)![Beacon Hill](/images/logos/beacon-hill.svg)
 
-and talent marketplaces and boutique agencies of every size.
+and online talent marketplaces and small agencies of every size.
 
 Company names describe who the training is for. MakerSquare isn’t affiliated with these companies.
 
@@ -4212,116 +4224,140 @@ Today After the course
 
 Today
 
-Find and open new accounts
+Win new clients
 
-You research target companies, make high-volume calls, emails, and LinkedIn touches, work referrals, and reactivate former clients to keep the pipeline full.
-
-After the course
-
-#### You’ll know which accounts are hiring before you pick up the phone
-
-Every morning your agent checks your target accounts’ career pages and news for the roles your firm fills, ranks them by fit, and drafts an opener that names the actual openings. It can lead with an anonymized profile of your strongest candidate. You approve what gets sent.
-
-Today
-
-Grow and keep accounts
-
-You check in after placements, run business reviews, solve problems early, and find the next order inside each client.
+You research companies you want as clients (target accounts) and reach out by phone, email, and LinkedIn, a lot. You also ask for referrals and win back past clients, so enough deals keep coming in (your pipeline). It takes a lot of calls. In IT staffing, 1,000 sales calls bring in about four new roles to fill ([Staffing Industry Analysts, 2025](https://www.staffingindustry.com/editorial/it-staffing-report/solving-the-sales-problem-in-it-staffing)).
 
 After the course
 
-#### You’ll catch churn early and spot the next order
+#### You’ll know which companies are hiring before you call
 
-A weekly check flags assignments ending soon, clients whose orders dropped, and accounts posting roles you didn’t get. New placements get check-ins at day one, week one, and month one, with your follow-up drafted.
+Every morning your AI assistant (an agent) checks your target companies’ job pages and news for the roles your firm fills. It ranks them by fit and drafts a first email that names their actual openings. It can lead with an anonymous profile of your strongest candidate. You approve what gets sent.
 
 Today
 
-Deliver candidates with your recruiters
+Keep clients and grow them
 
-You pass requirements to the recruiting team, present candidates, coordinate interviews, collect feedback, and manage offers.
+You check in after someone you found starts the job (a placement). You meet with clients to review how things are going, fix problems early, and look for their next open role.
 
 After the course
 
-#### You’ll get a ranked shortlist with the case already written
+#### You’ll spot clients drifting away (churn) and find their next role
 
-Your tool reads the job order, searches your candidate database, ranks the best matches, and drafts the submittal note on why each one fits, plus the emails to schedule interviews and chase feedback.
+A weekly check flags contracts ending soon, clients sending you fewer roles, and clients posting jobs they didn’t give you. New hires get check-ins on day one, week one, and month one, with your follow-up drafted.
 
 Today
 
-Run intake and discovery calls
+Work with your recruiters to fill roles
 
-You meet hiring managers, often 10 or more a week, to learn the role, budget, timeline, and must-haves, then turn that into a job order your recruiters can work.
+You pass the client’s requirements to your recruiters, present candidates to the client, set up interviews, collect feedback, and handle offers.
 
 After the course
 
-#### You’ll turn every intake call into a complete job order
+#### You’ll get a ranked shortlist with the reasons already written
 
-Your call transcript fills in every field of your intake form: skills, pay or bill rate, schedule, interview steps, deal-breakers. It lists the questions you forgot to ask. Any change to a rate or salary waits for your approval before it touches the CRM.
+Your tool reads the role description (job order), searches your candidate database, and ranks the best matches. It drafts a note to the client on why each one fits (the submittal), plus the emails to set up interviews and chase feedback.
 
 Today
 
-Keep the CRM and reports current
+Learn what the client needs (intake calls)
 
-You log every call, meeting, and next step, and report pipeline and activity to your manager each week.
+You meet hiring managers, often 10 or more a week, to learn the role, budget, timeline, and requirements. Then you turn that into a role description your recruiters can work from.
+
+After the course
+
+#### You’ll turn every intake call into a complete role description
+
+The written record of your call (transcript) fills in your intake form for you. That covers skills, pay and bill rate (what the client pays your firm), schedule, interview steps, and deal-breakers. It lists the questions you forgot to ask. Any rate change waits for your approval before it goes into your customer database (CRM).
+
+Today
+
+Keep records and reports up to date
+
+You log every call, meeting, and next step in your CRM, and report your deals and activity to your manager each week.
 
 After the course
 
 #### You’ll stop typing your week into the CRM
 
-An hourly agent drafts replies to client emails in your voice. Another reads your calls and email, fills in stages and next steps, and builds your Friday pipeline report for you to add commentary.
+One AI assistant checks your inbox every hour and drafts replies to clients in your voice. Another reads your calls and emails, updates each deal’s status and next steps, and builds your Friday deals report for you to add notes.
 
 Today
 
 Negotiate and close
 
-You negotiate rates, contracts, and terms, and get the client to a signed agreement.
+You negotiate rates, contracts, and terms, and get the client to sign.
 
 After the course
 
 #### You’ll quote with the numbers in front of you
 
-Before the call, you get a one-page brief: past orders, rates you have filled at, your margin floor, and what the client said on earlier calls. After it, a one-page recap the hiring manager can forward to whoever signs.
+Before the call, you get a one-page summary: past roles, rates you’ve filled at, the lowest rate you’ll accept (your margin floor), and what the client said on earlier calls. After it, you get a one-page recap the hiring manager can forward to whoever signs.
 
 Already happening
 
-### Sellers who build their own AI are pulling ahead.
+### Account executives who build their own AI are pulling ahead.
 
-165% more job orders
+165% more roles to fill
 
-Thatcher Associates, a recruitment firm, runs about 20 AI agents built with Claude Code. They spot hiring signals, research companies, and propose next steps for consultants to approve.
+Thatcher Associates, a recruitment firm, runs about 20 AI assistants built with Claude Code. They spot companies that are starting to hire (hiring signals), research them, and suggest next steps for consultants to approve.
 
 [Read the case study →](https://careers.recruiterflow.com/case-studies/how-thatcher-associates-built-an-ai-native-recruitment-operation-with-recruiterflow)
 
 231 open roles found
 
-Account reps at Vaco, a staffing firm, automated the career-page checks they used to do by hand. Across 1,400 target accounts, it found 231 roles to pitch and saved over 200 hours of research.
+Account reps at Vaco, a staffing firm, automated the job-page checks they used to do by hand. Across 1,400 target companies, it found 231 open roles to pitch and saved over 200 hours of research.
 
 [Read the case study →](https://www.tiga.ai/resources/vaco-custom-buying-signals-automation)
 
 ~60 hours a week
 
-A business development rep at Anthropic runs five scheduled agents that route leads, draft replies, update Salesforce, and write meeting follow-ups. He reviews everything before it sends.
+A sales rep at Anthropic who books meetings for the team (business development rep) runs five AI assistants on a schedule. They sort new leads, draft replies, update Salesforce, and write meeting follow-ups. He reviews everything before it sends.
 
 [Read how he set it up →](https://claude.com/resources/articles/how-an-anthropic-japan-business-development-representative-runs-his-day)
 
+Build or buy?
+
+### Keep your CRM. Build what it doesn’t do.
+
+Recruiting software like Bullhorn now sells AI add-ons, and some are worth buying. Learning to build gets you the rest.
+
+Your CRM stays
+
+#### It keeps the records. You build around it.
+
+Bullhorn, Salesforce, or HubSpot keeps your contacts and deals. You build what fits how you sell: a morning list of companies that are hiring, research summaries in your format, and follow-ups in your voice.
+
+You own it
+
+#### Change it the same afternoon
+
+What you build runs on your own accounts. Want it to watch a new industry or write shorter emails? You change it yourself, without waiting for the next software release.
+
+Buy smarter
+
+#### Know which AI add-ons are worth paying for
+
+Once you’ve built an AI assistant yourself, you know how much work it takes. When a vendor pitches one, you can tell a real feature from a good demo.
+
 How you learn it
 
-### You build on your real accounts
+### You build on your real clients and deals
 
-You describe what you want in plain English, and Claude Code writes the code. We teach you how to check it, fix it when it breaks, and deploy it. Composio connects your tools to Gmail, Slack, and CRMs like HubSpot, Salesforce, and Zoho. GitHub Actions runs the daily jobs on a schedule. An instructor works next to you the whole time, and each tool you build runs on your own email and pipeline by the time you leave.
+You describe what you want in plain English, and Claude Code writes the code. We teach you how to check it, fix it when it breaks, and deploy it. Your tools connect to Gmail, Slack, and CRMs like HubSpot, Salesforce, and Zoho (through Composio). Daily jobs run on a schedule on their own (with GitHub Actions). An instructor works next to you the whole time, and each tool you build works on your own email and deals by the time you leave.
 
 From a graduate
 
 ### An account executive already built this. No coding background.
 
-> “I knew I was going to learn cool functionality — that’s why I came in. But I was scared it wouldn’t be as applicable to me. It definitely is. I needed the first week and a half to get the concepts — then it all consolidated into building my own agent. I’d recommend it to everyone.”
+> “I knew I was going to learn cool functionality. That’s why I came in. But I was scared it wouldn’t be as applicable to me. It definitely is. I needed the first week and a half to get the concepts, then it all consolidated into building my own agent. I’d recommend it to everyone.”
 
 ![Cameron Dowd](images/cohort1/avatar-cameron.jpg?v=3)
 **Cameron Dowd** · SaaS account executive · Cohort 1
 
 What he built
 
-An AI prospecting tool. He adds a target account, an agent researches the company and what has changed there, then drafts outreach in his voice and saves it as a Gmail draft for him to review and send. Built and deployed in two weeks, presented at Demo Day.
+An AI tool for finding new clients (prospecting). He adds a company he wants to sell to, and an AI assistant researches it and what has changed there. Then it drafts an email in his voice and saves it in Gmail for him to review and send. Built and launched in two weeks, presented at Demo Day.
 
 [Read Cameron’s case study →](/case-study-cameron-dowd)
 
@@ -4335,7 +4371,7 @@ We help you pick on the intro call, based on your role, your team, and how much 
 
 #### Weekend workshop
 
-Friday to Sunday. You leave with a working app live on a real URL, plus your first agent. Good for one AE who wants to start without taking time off.
+Friday to Sunday. You leave with a working app live on a real URL, plus your first AI assistant. Good for one account executive who wants to start without taking time off.
 
 [See the workshop →](/workshops)
 
@@ -4351,7 +4387,7 @@ Your office
 
 #### Private team training
 
-For sales teams of 3 to 15. We run it on site, built around your CRM, your pipeline, and the tools your team already uses.
+For sales teams of 3 to 15. We run it on site, built around your CRM, your deals, and the tools your team already uses.
 
 [See team training →](/corporate)
 
@@ -4369,7 +4405,11 @@ Questions
 
 #### How can an account executive learn AI?
 
-Build something for your own pipeline. A research agent for your own prospect list teaches you how the tools work and leaves you with something you use every week. All four of our formats work this way: weekend workshop, 2-week immersive, private team training, and 1:1.
+Build something for your own deals. A tool that researches the companies on your list teaches you how the tools work and leaves you with something you use every week. All four of our formats work this way: weekend workshop, 2-week immersive, private team training, and 1:1.
+
+#### Why build AI tools instead of buying them?
+
+Keep the CRM you already pay for. Bullhorn and others sell AI add-ons, and some are worth it. Build the pieces they don’t do, like a morning list of companies hiring in your market or follow-ups in your own voice. You also learn enough to judge which add-ons are worth buying.
 
 #### Do I need to know how to code?
 
@@ -4377,7 +4417,7 @@ No. Most of our students have never written code. You describe what you want in 
 
 #### Will it work with our CRM?
 
-Usually. We connect tools through Composio, which works with HubSpot, Salesforce, Zoho, Gmail, Slack, and hundreds of other apps. Tell us your stack on the intro call and we'll confirm.
+Usually. Your tools can connect to HubSpot, Salesforce, Zoho, Gmail, Slack, and hundreds of other apps. If you use Bullhorn or another recruiting system, tell us on the intro call and we'll check.
 
 #### Can my whole sales team train together?
 
@@ -4391,7 +4431,7 @@ The weekend workshop and the 2-week immersive are in person in Austin. 1:1 train
 
 The 2-week immersive is $3,999 and the weekend workshop is $1,399. Team and 1:1 training are quoted after the intro call.
 
-### Tell us about your pipeline.
+### Tell us about your clients.
 
 On the intro call we look at your role and your team, then suggest the workshop, the immersive, team training, or 1:1. If none of them fit, we'll tell you.
 
@@ -4813,7 +4853,7 @@ Schedule an Intro Call
 
 # AI Training for HVAC Company Owners & Leaders | MakerSquare
 
-> Hands-on AI training for HVAC company owners and managers. Build tools that follow up on estimates, fill shoulder season, and report your numbers every week. In Austin or online.
+> AI training for HVAC owners and managers. Build tools that follow up on estimates, fill shoulder season, and report your numbers every week. Austin or online.
 
 AI Training · HVAC Owners & Leaders
 
@@ -4976,7 +5016,7 @@ How you learn it
 
 ### You build on your real business
 
-You describe what you want in plain English, and Claude Code writes the code. We teach you how to check it, fix it when it breaks, and deploy it. Your tools connect to Gmail, Google Sheets, and QuickBooks, and to ServiceTitan, Housecall Pro, or Jobber where your plan allows it. GitHub Actions runs the weekly jobs on a schedule. An instructor works next to you the whole time, and each tool runs on your own business by the time you leave.
+You describe what you want in plain English, and Claude Code writes the code. We teach you how to check it, fix it when it breaks, and deploy it. Your tools connect to Gmail, Google Sheets, and QuickBooks, and to ServiceTitan, Housecall Pro, or Jobber where your plan allows it (through Composio). Weekly jobs run on a schedule on their own (with GitHub Actions). An instructor works next to you the whole time, and each tool runs on your own business by the time you leave.
 
 Close to home
 
@@ -5074,32 +5114,44 @@ Schedule An Intro Call
 
 <!-- https://www.makersquare.ai/ai-training-recruiters-staffing-agencies -->
 
-# AI Training for Recruiters at Staffing & Recruiting Agencies | MakerSquare
+# AI Training for Recruiters at Staffing Agencies
 
-> Hands-on AI training for agency recruiters. Build tools that rank candidates from your own database, draft submittals in minutes, and flag contractors to redeploy. In Austin or online.
+> Hands-on AI training for agency recruiters. Build tools that rank candidates from your database, draft submittals in minutes, and flag contractors to redeploy.
 
 AI Training · Agency Recruiters
 
-## AI training for recruiters at staffing & recruiting agencies.
+## AI training for recruiters at staffing agencies.
 
-The first strong submittal usually wins the placement. We teach you to build AI tools that handle the searching, screening, and resume formatting, so you submit faster and spend more time with candidates.
+When a company asks your agency to fill a role, the first strong candidate you send usually gets the hire (first strong submittal wins the placement). We teach you to build AI tools that find candidates, check their fit, and format their resumes. You send people faster and spend more time talking to them.
 
 Schedule An Intro Call
 See training options
 
-No coding background needed · Weekend option, no desk time lost · In Austin or online
+No coding background needed · Weekend option, so you don’t miss a workday · In Austin or online
 
 [One staffing firm cut submittals from an hour to 5 minutes and grew weekly gross profit 23% →](https://www.bullhorn.com/customers/employment-enterprises-inc/)
+
+![A recruiter interviewing a candidate across a small office table, laptop and printed resume in front of him](/images/roles/recruiter-agency-hero.jpg)
+
+What AI will do for you
+
+★
+
+**12 people in your database fit a new role** Ranked by fit. The top 3 are available now.
+
+✓
+
+**Candidate ready to send, 9:14 AM** Resume formatted the way the client likes, with a note on why they fit.
 
 Built for recruiters at agencies like
 
 ![Robert Half](/images/logos/robert-half.svg)![Randstad](/images/logos/randstad.svg)![Adecco](/images/logos/adecco.svg)![ManpowerGroup](/images/logos/manpowergroup.svg)![Kelly](/images/logos/kelly.svg)![Insight Global](/images/logos/insight-global.svg)![TEKsystems](/images/logos/teksystems.svg)![Aerotek](/images/logos/aerotek.png)![Kforce](/images/logos/kforce.png)![Beacon Hill](/images/logos/beacon-hill.svg)
 
-and boutique search firms and two-person desks too.
+and small search firms and two-person agencies too.
 
 Firm names describe who the training is for. MakerSquare isn’t affiliated with these companies.
 
-Your desk, with AI
+Your work, with AI
 
 ### What recruiters do today. What you’ll do after our course.
 
@@ -5107,75 +5159,75 @@ Today After the course
 
 Today
 
-Submit candidates
+Send candidates to the client
 
-You write the candidate summary, reformat the resume into the client’s template, and get it to the account manager or client before another agency does.
-
-After the course
-
-#### You’ll send a client-ready submittal in minutes
-
-It combines the job order, the resume, and your screening notes into the client’s format with a short fit summary. You read it, adjust anything that sounds off, and send it.
-
-Today
-
-Source candidates
-
-You search your database, LinkedIn, job boards, and referrals, and keep a bench warm for the roles your desk fills most.
+You put together each candidate’s package for the client (the submittal): a short summary plus their resume, reformatted the way the client wants. You try to get it there before another agency does.
 
 After the course
 
-#### You’ll start every order with a ranked list from your own database
+#### You’ll have a candidate ready to send in minutes
 
-It searches your ATS for past candidates and contractors whose assignments end soon, ranks them against the must-haves, and quotes the line from each resume that earned the match, so you can check the reasoning in seconds.
+It combines the role description (job order), the resume, and your call notes into the client’s format, with a short note on why they fit. You read it, fix anything that sounds off, and send it.
 
 Today
 
-Reach out and screen
+Find candidates (sourcing)
 
-You call, text, and email candidates all day, then screen for skills, availability, pay expectations, and work authorization.
+You look for people in your own database, on LinkedIn, on job boards, and through referrals. You also keep a list of good people ready for the roles you fill most (your bench).
 
 After the course
 
-#### You’ll send outreach that mentions their actual work
+#### You’ll start every new role with a ranked list from your own database
 
-It drafts a short message for each candidate that references their real experience, and checks your inbox and ATS so nobody gets contacted twice. After a screen, your call notes fill in skills, availability, pay, and authorization for you.
+It searches your candidate database (ATS) for past candidates and for contractors whose current job ends soon. It ranks them against the role’s requirements (must-haves) and quotes the resume line behind each match, so you can check its thinking in seconds.
 
 Today
 
-Prep, debrief, and close
+Reach out and screen candidates
 
-You prep candidates for each interview, debrief both sides, handle counteroffers, and get the offer accepted and the start date confirmed.
+You call, text, and email candidates all day. On each call you check their skills, when they can start, the pay they want, and whether they can legally work here (work authorization).
+
+After the course
+
+#### You’ll send messages that mention their actual work
+
+It drafts a short message for each person that mentions their real experience. It checks your inbox and database first, so nobody gets contacted twice. After a call, your notes fill in their skills, start date, pay, and work authorization for you.
+
+Today
+
+Get candidates from interview to offer
+
+You prepare candidates for each interview and get feedback from both sides afterward (the debrief). You handle competing offers (counteroffers), get the offer accepted, and lock in the start date.
 
 After the course
 
 #### You’ll never let a candidate go quiet between rounds
 
-Each interview gets a prep sheet built from the client’s past feedback. A daily check flags anyone who hasn’t heard from you in two days and anyone who mentioned another offer, with your follow-up drafted.
+Each interview gets a prep sheet based on what this client said about past candidates. A daily check flags anyone you haven’t talked to in two days, and anyone who mentioned another offer, with your follow-up drafted.
 
 Today
 
-Keep the ATS current and redeploy
+Keep records current and place contractors again
 
-You log every call and submittal, check in on people on assignment, and line up their next role before the current one ends.
+You log every call and every candidate you send. You check in on contractors while they’re working (on assignment) and line up their next job before the current one ends (redeployment).
 
 After the course
 
-#### You’ll redeploy contractors before they walk
+#### You’ll line up contractors’ next jobs before their current ones end
 
-Every Monday you get a list of assignments ending in the next 30 days, each matched to open orders that fit. Notes from your calls and emails land in the ATS without you typing them.
+Every Monday you get a list of contracts ending in the next 30 days, each matched to open roles that fit. Notes from your calls and emails go into your database without you typing them.
 
 Today
 
-Take the order and check it’s fillable
+Take a new role and check if you can fill it
 
-You confirm the scope, must-haves, pay or bill rate, start date, and interview steps with the account manager or client before you spend a day sourcing.
+Before you spend a day searching, you confirm the details with the client or your account manager. That means the job, the requirements, the pay and bill rate (what the client pays your agency), the start date, and the interview steps.
 
 After the course
 
-#### You’ll know if an order is fillable before you start
+#### You’ll know if a role can be filled before you start
 
-Your tool reads the job order and checks it against your own past placements: what similar roles paid, how long they took, which must-haves knocked out most candidates. It drafts the questions to send back before you burn a day on a search that can’t close.
+Your tool reads the new role and compares it to roles you’ve filled before. It shows what they paid, how long they took, and which requirements ruled out the most people. Then it drafts questions for the client, so you don’t spend a day on a search that can’t succeed.
 
 Already happening
 
@@ -5183,51 +5235,51 @@ Already happening
 
 11 days → 3
 
-Recruiter Sarah Sheikh Jauhar built a Claude screening agent inside a client’s ATS. It scores each applicant against a rubric and explains why. Time from application to first interview fell from 11 days to 3, and each recruiter got back about 12 hours a week.
+Recruiter Sarah Sheikh Jauhar built an AI screening tool with Claude inside a client’s candidate database (ATS). It scores each applicant against a checklist (rubric) and explains why. Time from application to first interview fell from 11 days to 3, and each recruiter got back about 12 hours a week.
 
 [Read her post →](https://www.linkedin.com/posts/sarah-sheikh-jauhar-6034a722_six-weeks-ago-i-built-an-ai-recruiting-agent-activity-7444419976050057216-z_pV)
 
 60 min → 5
 
-Employment Enterprises, a DC staffing firm, uses Bullhorn’s AI to turn the job, resume, and interview notes into a client-ready submittal. Weekly gross profit rose 23%, and job board spend fell 38% because recruiters now source from their own database.
+Employment Enterprises, a DC staffing firm, uses the AI built into Bullhorn (its recruiting software). It turns the job, resume, and interview notes into a candidate summary ready for the client. Weekly gross profit rose 23%, and job board spending fell 38% because recruiters now find people in their own database.
 
 [Read the case study →](https://www.bullhorn.com/customers/employment-enterprises-inc/)
 
 Zero code written
 
-Recruiter Kathleen Nolan built a sourcing agent in Claude Code that searches the web and scores candidates against her own criteria, then used it on a live search. “I’m not an engineer. I don’t write code.”
+Recruiter Kathleen Nolan used Claude Code to build a tool that searches the web for candidates and scores them against her own criteria. Then she used it on a real search. “I’m not an engineer. I don’t write code.”
 
 [Read her post →](https://www.linkedin.com/posts/kathleennolanrecruiting_hiring-ai-futureofwork-activity-7435730991454932992-V7qZ)
 
 Your rules stay in charge
 
-### You decide who gets submitted. The tools do the prep.
+### You decide who goes to the client. The tools do the busywork.
 
 Recruiting runs on candidate trust and client trust. Everything we teach you to build keeps both.
 
 Nothing sends on its own
 
-#### Every message and submittal waits for you
+#### Every message waits for your OK
 
-Outreach, submittals, and offer emails are saved as drafts. You read them and hit send. A client never sees anything you haven’t approved.
+Messages to candidates, candidate packages for clients, and offer emails are saved as drafts. You read them and hit send. A client never sees anything you haven’t approved.
 
-Defensible screening
+Screening you can explain
 
-#### Your must-haves, with the evidence quoted
+#### Your requirements, with the proof quoted
 
-Matches are scored against the requirements you wrote down, and each score quotes the resume line behind it. If a client or your compliance team asks why someone was passed over, you have the answer.
+Candidates are scored against the requirements you wrote down, and each score quotes the resume line behind it. If a client or your compliance team asks why someone wasn’t sent, you have the answer.
 
 Candidate data
 
 #### Built inside the accounts you already use
 
-Your tools work with your ATS, inbox, and calendar under your own logins, so candidate records stay where your agency already keeps them. We help you check your agency’s AI policy before you build.
+Your tools work with your candidate database, inbox, and calendar under your own logins, so candidate records stay where your agency already keeps them. We help you check your agency’s AI policy before you build.
 
 How you learn it
 
-### You build on your real orders
+### You build on your real open roles
 
-You describe what you want in plain English, and Claude Code writes the code. We teach you how to check it, fix it when it breaks, and deploy it. Your tools connect to Gmail, Outlook, Google Sheets, and Slack, and to ATS platforms like Bullhorn, Recruiterflow, or JobAdder where your agency’s plan allows API access. GitHub Actions runs the daily checks on a schedule. An instructor works next to you, and each tool runs on your own desk by the time you leave.
+You describe what you want in plain English, and Claude Code writes the code. We teach you how to check it, fix it when it breaks, and deploy it. Your tools connect to Gmail, Outlook, Google Sheets, and Slack, and to recruiting software like Bullhorn, Recruiterflow, or JobAdder if your plan allows it (through Composio). Daily checks run on a schedule on their own (with GitHub Actions). An instructor works next to you, and each tool works on your own roles by the time you leave.
 
 From a graduate
 
@@ -5235,25 +5287,25 @@ From a graduate
 
 Ted Kilgore · Cohort graduate
 
-Ted built JobFit at MakerSquare: give it a resume and a target role, and it researches and ranks 30 companies by fit, with live hiring signals. Claude does the matching and reasoning, Exa does the research, and he presented it at Demo Day at Capital Factory.
+Ted built JobFit at MakerSquare. Give it a resume and a target role, and it researches and ranks 30 companies by fit, including who’s hiring right now. Claude does the matching, AI web search does the research, and he presented it at Demo Day at Capital Factory.
 
 [Read Ted’s case study →](/case-study-ted-kilgore)
 
 The same idea on your desk
 
-Turn it around: start from a job order instead of a resume, and get your best-fit candidates ranked from your own database, with the reason for each one written out.
+Turn it around: start from an open role instead of a resume, and get your best-fit candidates ranked from your own database, with the reason for each one written out.
 
 Training options
 
 ### Four ways to train
 
-Most recruiters who train on their own start with the weekend workshop, so they don’t lose a week on the desk. Agencies usually bring the training in-house. We help you pick on the intro call.
+Most recruiters who train on their own start with the weekend workshop, so they don’t miss a week of work. Agencies usually bring the training in-house. We help you pick on the intro call.
 
 3 days · Austin
 
 #### Weekend workshop
 
-Friday to Sunday. You leave with a working app live on a real URL, plus your first agent, and you’re back on the desk Monday.
+Friday to Sunday. You leave with a working app live on a real URL, plus your first agent, and you’re back at work Monday.
 
 [See the workshop →](/workshops)
 
@@ -5261,7 +5313,7 @@ Friday to Sunday. You leave with a working app live on a real URL, plus your fir
 
 #### Immersive program
 
-Monday to Friday, 9am to 3pm. You build three tools on your own desk and present them at Demo Day. Next cohort starts January 11, 2027.
+Monday to Friday, 9am to 3pm. You build three tools for your own work and present them at Demo Day. Next cohort starts January 11, 2027.
 
 [See the program →](/immersive)
 
@@ -5269,7 +5321,7 @@ Your office
 
 #### Private team training
 
-For recruiting teams of 3 to 15. We build around your ATS, your verticals, and your submittal templates.
+For recruiting teams of 3 to 15. We build around your candidate database (ATS), the industries you hire for, and your client templates.
 
 [See team training →](/corporate)
 
@@ -5287,15 +5339,15 @@ Questions
 
 #### How can a recruiter learn AI?
 
-Build something for your own desk. A tool that ranks candidates from your database for a live order, or drafts submittals from your screening notes, teaches you how AI works and saves you time the week you finish. All four of our formats work this way: weekend workshop, 2-week immersive, private team training, and 1:1.
+Build something for your own work, like a tool that ranks candidates from your database for an open role, or one that drafts candidate summaries from your call notes. It teaches you how AI works and saves you time the week you finish. All four of our formats work this way: weekend workshop, 2-week immersive, private team training, and 1:1.
 
 #### Will AI replace recruiters?
 
-It replaces the prep: searching, reformatting, and logging. Clients still hire agencies for the conversations, the judgment about who will actually show up and stay, and the close. Recruiters who build their own tools get more of their day back for that work.
+It replaces the prep: searching, reformatting resumes, and logging calls. Companies still hire agencies for the conversations, the judgment about who will show up and stay, and closing the offer. Recruiters who build their own tools get more of their day back for that work.
 
 #### Is it safe to use candidate data?
 
-The tools you build run under your own logins and work with your ATS and inbox, so candidate records stay where your agency already keeps them. Nothing goes to a client or candidate without your approval. Check your agency's AI policy first, and we'll help you build within it.
+The tools you build run under your own logins and work with your candidate database (ATS) and inbox, so candidate records stay where your agency already keeps them. Nothing goes to a client or candidate without your approval. Check your agency's AI policy first, and we'll help you build within it.
 
 #### Do I need to know how to code?
 
@@ -5303,17 +5355,17 @@ No. Most of our students have never written code. You describe what you want in 
 
 #### Will it work with Bullhorn or our ATS?
 
-Usually. Bullhorn, Recruiterflow, JobAdder, and most ATS platforms offer API access on some plans, and Gmail, Outlook, and Google Sheets connect easily. Tell us your stack on the intro call and we'll check.
+Usually. Bullhorn, Recruiterflow, JobAdder, and most recruiting software can connect on some plans, and Gmail, Outlook, and Google Sheets connect easily. Tell us what you use on the intro call and we'll check.
 
 #### Can our whole recruiting team train together?
 
-Yes. Private team training is for groups of 3 to 15 and runs at your office, built around your ATS and the roles you fill. We quote it after the intro call.
+Yes. Private team training is for groups of 3 to 15 and runs at your office, built around your software and the roles you fill. We quote it after the intro call.
 
 #### What does it cost?
 
 The 2-week immersive is $3,999 and the weekend workshop is $1,399. Team and 1:1 training are quoted after the intro call.
 
-### Tell us about your desk.
+### Tell us about the roles you fill.
 
 On the intro call we look at the roles you fill and how your agency works, then suggest the workshop, the immersive, team training, or 1:1. If none of them fit, we’ll tell you.
 
