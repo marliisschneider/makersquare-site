@@ -40,27 +40,27 @@
     },
     {
       "source": "/blog/ai-for-doctors",
-      "destination": "/blog/ai-for-healthcare-professionals-2026",
+      "destination": "/ai-training-by-role",
       "permanent": true
     },
     {
       "source": "/blog/ai-for-nurses",
-      "destination": "/blog/ai-for-healthcare-professionals-2026",
+      "destination": "/ai-training-by-role",
       "permanent": true
     },
     {
       "source": "/blog/ai-for-dentists",
-      "destination": "/blog/ai-for-healthcare-professionals-2026",
+      "destination": "/ai-training-by-role",
       "permanent": true
     },
     {
       "source": "/blog/ai-for-pharmacists",
-      "destination": "/blog/ai-for-healthcare-professionals-2026",
+      "destination": "/ai-training-by-role",
       "permanent": true
     },
     {
       "source": "/blog/ai-for-therapists",
-      "destination": "/blog/ai-for-healthcare-professionals-2026",
+      "destination": "/ai-training-by-role",
       "permanent": true
     },
     {
@@ -70,22 +70,22 @@
     },
     {
       "source": "/blog/ai-for-graphic-designers",
-      "destination": "/blog/ai-for-content-creators-2026",
+      "destination": "/ai-training-by-role",
       "permanent": true
     },
     {
       "source": "/blog/ai-for-photographers",
-      "destination": "/blog/ai-for-content-creators-2026",
+      "destination": "/ai-training-by-role",
       "permanent": true
     },
     {
       "source": "/blog/ai-for-podcasters",
-      "destination": "/blog/ai-for-content-creators-2026",
+      "destination": "/ai-training-by-role",
       "permanent": true
     },
     {
       "source": "/blog/ai-for-writers",
-      "destination": "/blog/ai-for-content-creators-2026",
+      "destination": "/ai-training-by-role",
       "permanent": true
     },
     {
@@ -115,22 +115,22 @@
     },
     {
       "source": "/blog/ai-for-retail",
-      "destination": "/blog/ai-for-ecommerce-2026",
+      "destination": "/ai-training-by-role",
       "permanent": true
     },
     {
       "source": "/blog/ai-for-inventory-management",
-      "destination": "/blog/ai-for-ecommerce-2026",
+      "destination": "/ai-training-by-role",
       "permanent": true
     },
     {
       "source": "/blog/ai-for-real-estate-investors",
-      "destination": "/blog/ai-for-real-estate-agents",
+      "destination": "/ai-training-by-role",
       "permanent": true
     },
     {
       "source": "/blog/ai-for-property-managers",
-      "destination": "/blog/ai-for-real-estate-agents",
+      "destination": "/ai-training-by-role",
       "permanent": true
     },
     {
@@ -316,6 +316,36 @@
       ],
       "destination": "/api/markdown?path=/:path",
       "permanent": false
+    },
+    {
+      "source": "/blog/ai-for-ecommerce-2026",
+      "destination": "/ai-training-by-role",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ai-for-real-estate-agents",
+      "destination": "/ai-training-by-role",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ai-for-content-creators-2026",
+      "destination": "/ai-training-by-role",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ai-for-healthcare-professionals-2026",
+      "destination": "/ai-training-by-role",
+      "permanent": true
+    },
+    {
+      "source": "/blog/build-ai-product-without-technical-cofounder",
+      "destination": "/ai-training-by-role",
+      "permanent": true
+    },
+    {
+      "source": "/blog/jobs-most-at-risk-from-ai-2026",
+      "destination": "/ai-training-by-role",
+      "permanent": true
     }
   ],
   "headers": [
