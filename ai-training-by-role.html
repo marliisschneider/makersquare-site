@@ -167,17 +167,47 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   .rp-faq{background:var(--white);border:1px solid rgba(24,24,73,0.08);border-radius:var(--r-lg);padding:var(--s5);}
   .rp-faq h3{font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:var(--s2);}
   .rp-faq p{font-size:0.9rem;color:var(--text-secondary);line-height:1.65;}
+
+  .rp-hero-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:var(--s7);align-items:center;}
+  .rp-hero-text{text-align:left;}
+  .rp-hero-text .section-label{justify-content:flex-start;}
+  .rp-hero-text .rp-ctas{justify-content:flex-start;}
+  .rp-hero-media{position:relative;border-radius:var(--r-xl);overflow:hidden;box-shadow:0 12px 40px rgba(24,24,73,0.14);}
+  .rp-hero-media img{display:block;width:100%;height:auto;aspect-ratio:1/1.05;object-fit:cover;object-position:42% 60%;}
+  .rp-notes{position:absolute;left:20px;right:20px;bottom:20px;display:flex;flex-direction:column;gap:10px;max-width:330px;text-align:left;}
+  .rp-note{display:flex;gap:12px;align-items:flex-start;background:rgba(255,255,255,0.96);border-radius:14px;padding:12px 14px;box-shadow:0 8px 24px rgba(0,0,0,0.18);}
+  .rp-note-dot{flex:none;width:30px;height:30px;border-radius:9px;background:var(--indigo);color:#fff;display:flex;align-items:center;justify-content:center;font-size:0.95rem;}
+  .rp-note b{display:block;font-size:0.82rem;color:var(--navy);font-weight:700;line-height:1.3;}
+  .rp-note span{display:block;font-size:0.78rem;color:var(--text-secondary);line-height:1.4;margin-top:2px;}
+  .rp-notes-label{align-self:flex-start;background:rgba(24,24,73,0.85);color:#fff;font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:6px 12px;border-radius:999px;}
+  .hub-tiles{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+  .hub-tile{position:relative;display:block;border-radius:var(--r-lg);overflow:hidden;box-shadow:0 10px 30px rgba(24,24,73,0.14);}
+  .hub-tile img{display:block;width:100%;height:100%;aspect-ratio:1/1;object-fit:cover;transition:transform 0.4s ease;}
+  .hub-tile--wide{grid-column:1/-1;}
+  .hub-tile--wide img{aspect-ratio:2.1/1;object-position:42% 55%;}
+  .hub-tile:hover img{transform:scale(1.04);}
+  .hub-tile-label{position:absolute;left:12px;bottom:12px;background:rgba(255,255,255,0.96);color:var(--navy);font-size:0.8rem;font-weight:700;padding:7px 12px;border-radius:999px;box-shadow:0 6px 18px rgba(0,0,0,0.18);}
+  @media (max-width:900px){.rp-hero-grid{grid-template-columns:1fr;gap:var(--s6);}.rp-hero-text{text-align:center;}.rp-hero-text .section-label,.rp-hero-text .rp-ctas{justify-content:center;}.rp-hero-media img{aspect-ratio:4/3;}}
+  @media (max-width:640px){.hub-tile-label{font-size:0.72rem;padding:6px 10px;left:8px;bottom:8px;white-space:nowrap;}}
+  @media (max-width:640px){.rp-notes-label{background:var(--navy);}.rp-notes{position:static;max-width:none;padding:12px;background:var(--cloud);}.rp-hero-media img{aspect-ratio:4/3;object-position:30% 60%;}}
   </style>
   <div class="container">
-    <div style="max-width:820px;margin:0 auto;text-align:center;">
-      <div class="section-label reveal" style="justify-content:center;">AI Training &middot; By Role</div>
+    <div class="rp-hero-grid">
+    <div class="rp-hero-text">
+      <div class="section-label reveal">AI Training &middot; By Role</div>
       <h1 class="reveal" style="font-size:clamp(2rem,4vw,3rem);">AI training for your job.<br><span class="text-gradient">Pick the role closest to yours.</span></h1>
-      <p class="section-sub reveal" style="max-width:640px;margin-left:auto;margin-right:auto;">See what people in your role do today, and what they&#8217;ll be able to do after our course.</p>
-      <div class="reveal" style="display:flex;align-items:center;justify-content:center;gap:var(--s4);margin-top:var(--s5);flex-wrap:wrap;">
+      <p class="section-sub reveal">See what people in your role do today, and what they&#8217;ll be able to do after our course.</p>
+      <div class="reveal rp-ctas" style="display:flex;align-items:center;gap:var(--s4);margin-top:var(--s5);flex-wrap:wrap;">
         <button type="button" class="btn btn-primary btn-lg btn-arrow" data-lt-trigger>Schedule An Intro Call</button>
         <a href="#roles" class="btn btn-ghost btn-lg">Browse roles</a>
       </div>
       <p class="reveal" style="font-size:0.8rem;color:var(--text-muted);margin-top:var(--s3);">No coding background needed &nbsp;&middot;&nbsp; In Austin or online &nbsp;&middot;&nbsp; For you or your whole team</p>
+    </div>
+    <div class="hub-tiles reveal">
+      <a class="hub-tile" href="/ai-training-account-executives-talent-recruiting-firms"><img src="/images/roles/ae-recruiting-hero.jpg" alt="An account executive in a headset at her laptop on a sales floor" width="1440" height="816" fetchpriority="high" decoding="async" style="object-position:40% 50%;"><span class="hub-tile-label">Account executives &rarr;</span></a>
+      <a class="hub-tile" href="/ai-training-recruiters-staffing-agencies"><img src="/images/roles/recruiter-agency-hero.jpg" alt="A recruiter interviewing a candidate" width="1440" height="816" decoding="async" style="object-position:62% 45%;"><span class="hub-tile-label">Recruiters &rarr;</span></a>
+      <a class="hub-tile hub-tile--wide" href="/ai-training-hvac-company-owners"><img src="/images/roles/hvac-owner-hero.jpg" alt="An HVAC company owner at a desk in the shop office" width="1440" height="816" decoding="async"><span class="hub-tile-label">HVAC company owners &rarr;</span></a>
+    </div>
     </div>
   </div>
 </section>
