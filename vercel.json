@@ -24,6 +24,16 @@
       "permanent": true
     },
     {
+      "source": "/review",
+      "destination": "https://www.coursereport.com/write-a-review",
+      "permanent": false
+    },
+    {
+      "source": "/feedback",
+      "destination": "https://docs.google.com/forms/d/e/1FAIpQLSfHPYlhrWcNratRMDByaE4oMFYBFDudcZ28QZ4yLSb5lx4Oww/viewform",
+      "permanent": false
+    },
+    {
       "source": "/blog/why-your-ai-pilot-failed",
       "destination": "/blog/why-your-companys-ai-training-isnt-working",
       "permanent": true
