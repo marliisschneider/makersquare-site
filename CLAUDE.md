@@ -4,11 +4,11 @@ Read this before editing any HTML file in this repo. General working preferences
 
 **Design: read `DESIGN-GUIDE.md` before building or redesigning any public page.** It has the colors, type, breakpoints, page structure, components, and a pre-ship checklist (screenshots at 390 / 820 / 1440).
 
-**Do NOT `git push` (as of Jul 20, 2026).** Commit locally with proper messages, then tell Marliis what's queued — she reviews and makes the final push herself. Pushes auto-deploy to production.
+**Pushing (updated Nov 22, 2026).** Shaan pushes to `main` himself; no approval from Marliis or Ravi is needed. Pushes auto-deploy to production, so run the pre-ship checklist in `DESIGN-GUIDE.md` and the site's checks before pushing (automated pre-push tests are planned: MakerSquare-Ops tracker item 2h). Work happens in this folder (`~/Code/makersquare-site`) on `main`; the old `makersquare-site-bootcamps` worktree was removed.
 
-**Never `git commit --amend` in this repo.** Marliis may push the queue at any moment; amending a commit she already pushed forks history and lands her in a merge-conflict dialog (happened Jul 22, 2026). Follow-up changes always go in a NEW commit — even when they refine the previous one.
+**Never `git commit --amend` on pushed commits.** Amending a commit that's already on GitHub forks history and causes merge conflicts (happened Jul 22, 2026). Follow-up changes always go in a NEW commit, even when they refine the previous one.
 
-**The blog auto-publisher is retired (Nov 2026).** `~/makersquare-blog-auto-publish.sh` used to be the one exception to the no-push rule. It is no longer approved to push: the template-driven "AI for <role>" posts it shipped were thin and earned almost no search traffic. 50 low-value posts, nearly all its output, were removed and 301-redirected in Nov 2026. Its queue (`scripts/q4_schedule.json`) is empty. Do not re-enable it or refill the queue without sign-off from Marliis and Ravi. New posts go through a normal PR like any other page.
+**The blog auto-publisher is retired (Nov 2026).** `~/makersquare-blog-auto-publish.sh` used to push blog posts automatically. It is no longer approved to push: the template-driven "AI for <role>" posts it shipped were thin and earned almost no search traffic. 50 low-value posts, nearly all its output, were removed and 301-redirected in Nov 2026. Its queue (`scripts/q4_schedule.json`) is empty. Do not re-enable it or refill the queue without sign-off from Shaan and Ravi. New posts follow the blog playbook (`~/Code/MakerSquare-Ops/work-tracker/blog-post-playbook.md`).
 
 ---
 
@@ -293,7 +293,7 @@ B2B is a primary motion. "For Teams" in main nav → `/corporate`: (1) private 3
 
 ## Reference
 
-Obsidian vault (strategy docs, workshop plans, email copy): `/Users/marliisschneider/Desktop/makersquare-brain/`
+Obsidian vault (strategy docs, workshop plans, email copy): `~/Code/MakerSquare-Ops/brain/` (merged from makersquare-brain, Nov 2026)
 - `Marketing/Workshops-Strategy.md` — canonical workshop reference
 
 
